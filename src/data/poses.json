@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Downward Dog",
+    "image": "downward-dog.jpg",
+    "description": "A foundational yoga pose that strengthens and stretches.",
+    "benefits": "Strengthens the arms, shoulders, and legs, and improves flexibility.",
+    "category": "Strength"
+  },
+  {
+    "id": 2,
+    "name": "Tree Pose",
+    "image": "tree-pose.jpg",
+    "description": "A balancing pose that improves focus and stability.",
+    "benefits": "Improves balance and strengthens the legs and core.",
+    "category": "Balance"
+  }
+]
