@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import PoseList from "./components/PoseList";
 import PosePage from "./components/PosePage";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -18,6 +19,8 @@ const App = () => {
           <Route path="/pose/:id" element={<><PoseList /><PosePage /></>} />
         </Routes>
       </div>
+
+      <Footer/>
 
     </Router>
   );
