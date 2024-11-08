@@ -9,19 +9,19 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <Router>
-
       <Header />
 
       <div className="flex">
-        <Routes>
-          <Route path="/" element={<><PoseList /><Hero /></>}/>
-          <Route path="/categories/:category" element={<><PoseList /><Hero /></>} />
-          <Route path="/pose/:id" element={<><PoseList /><PosePage /></>} />
-        </Routes>
+       
+          <Routes>
+            <Route path="/" element={<> <PoseList /> <Hero /></>}/>
+            <Route path="/categories/:categoryType/:categoryValue" element={<> <PoseList /> <Hero /></>} />
+            <Route path="/pose/:id" element={<> <PoseList /> <PosePage /></>} />
+          </Routes>
+   
       </div>
 
-      <Footer/>
-
+      <Footer />
     </Router>
   );
 };

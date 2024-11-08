@@ -2,17 +2,34 @@
   {
     "id": 1,
     "name": "Downward Dog",
-    "image": "downward-dog.jpg",
-    "description": "A foundational yoga pose that strengthens and stretches.",
-    "benefits": "Strengthens the arms, shoulders, and legs, and improves flexibility.",
-    "category": "Strength"
+    "image": "https://example.com/downward-dog.jpg",
+    "desc": "A foundational yoga pose that strengthens the entire body and stretches the hamstrings, calves, and back.",
+    "chakra": ["Root", "Crown"],
+    "type": [
+      "Inversion"
+    ],
+    "benefit": [
+      "Grounding"
+    ],
+    "part": [
+      "Spine"
+    ]
   },
   {
     "id": 2,
     "name": "Tree Pose",
-    "image": "tree-pose.jpg",
-    "description": "A balancing pose that improves focus and stability.",
-    "benefits": "Improves balance and strengthens the legs and core.",
-    "category": "Balance"
+    "image": "https://example.com/tree-pose.jpg",
+    "desc": "A standing balance pose that strengthens the legs and core while improving focus and stability.",
+    "chakra": ["Root", "Crown"],
+    "type": [
+      "Standing"
+    ],
+    "benefit": [
+      "Balance",
+      "Posture"
+    ],
+    "part": [
+      "Legs"
+    ]
   }
 ]
