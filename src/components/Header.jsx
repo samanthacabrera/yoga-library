@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import posesData from "../data/poses.json";
+import Search from "./Search";
 
 const Header = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -88,6 +89,9 @@ const Header = () => {
                     )}
                 </div>
             </nav>
+            <div className="absolute top-2 right-4">
+                <Search />
+            </div>
         </div>
     );
 };
