@@ -5,15 +5,9 @@
     "image": "https://example.com/downward-dog.jpg",
     "desc": "A foundational yoga pose that strengthens the entire body and stretches the hamstrings, calves, and back.",
     "chakra": ["Root", "Crown"],
-    "type": [
-      "Inversion"
-    ],
-    "benefit": [
-      "Strength"
-    ],
-    "part": [
-      "Spine"
-    ]
+    "type": ["Inversion"],
+    "benefit": ["Strength"],
+    "part": ["Spine"]
   },
   {
     "id": 2,
@@ -21,15 +15,88 @@
     "image": "https://example.com/tree-pose.jpg",
     "desc": "A standing balance pose that strengthens the legs and core while improving focus and stability.",
     "chakra": ["Root", "Crown"],
-    "type": [
-      "Standing"
-    ],
-    "benefit": [
-      "Balance",
-      "Posture"
-    ],
-    "part": [
-      "Legs"
-    ]
+    "type": ["Standing"],
+    "benefit": ["Balance", "Posture"],
+    "part": ["Legs"]
+  },
+  {
+    "id": 3,
+    "name": "Warrior I",
+    "image": "https://example.com/warrior-i.jpg",
+    "desc": "A powerful standing pose that builds strength and stability in the legs, hips, and shoulders.",
+    "chakra": ["Root", "Heart"],
+    "type": ["Standing"],
+    "benefit": ["Strength", "Stability"],
+    "part": ["Legs", "Shoulders"]
+  },
+  {
+    "id": 4,
+    "name": "Warrior II",
+    "image": "https://example.com/warrior-ii.jpg",
+    "desc": "A grounding pose that opens the hips and shoulders, improving focus and endurance.",
+    "chakra": ["Root", "Heart"],
+    "type": ["Standing"],
+    "benefit": ["Balance", "Stamina"],
+    "part": ["Legs", "Shoulders"]
+  },
+  {
+    "id": 5,
+    "name": "Child's Pose",
+    "image": "https://example.com/child-pose.jpg",
+    "desc": "A resting pose that stretches the back, hips, and thighs, providing relaxation and grounding.",
+    "chakra": ["Root"],
+    "type": ["Restorative"],
+    "benefit": ["Relaxation"],
+    "part": ["Back", "Hips"]
+  },
+  {
+    "id": 6,
+    "name": "Cobra Pose",
+    "image": "https://example.com/cobra.jpg",
+    "desc": "A gentle backbend that opens the chest and strengthens the spine, shoulders, and arms.",
+    "chakra": ["Heart"],
+    "type": ["Backbend"],
+    "benefit": ["Flexibility"],
+    "part": ["Spine", "Chest"]
+  },
+  {
+    "id": 7,
+    "name": "Bridge Pose",
+    "image": "https://example.com/bridge.jpg",
+    "desc": "A backbend that opens the chest and shoulders, strengthens the glutes, and promotes flexibility in the spine.",
+    "chakra": ["Heart"],
+    "type": ["Backbend"],
+    "benefit": ["Strength", "Flexibility"],
+    "part": ["Spine", "Glutes"]
+  },
+  {
+    "id": 8,
+    "name": "Triangle Pose",
+    "image": "https://example.com/triangle.jpg",
+    "desc": "A standing pose that stretches and strengthens the legs, opens the hips, and improves stability.",
+    "chakra": ["Root", "Heart"],
+    "type": ["Standing"],
+    "benefit": ["Balance", "Flexibility"],
+    "part": ["Legs", "Hips"]
+  },
+  {
+    "id": 9,
+    "name": "Seated Forward Bend",
+    "image": "https://example.com/seated-forward-bend.jpg",
+    "desc": "A seated stretch that lengthens the spine and hamstrings while calming the mind.",
+    "chakra": ["Root"],
+    "type": ["Seated"],
+    "benefit": ["Flexibility", "Calmness"],
+    "part": ["Spine", "Hamstrings"]
+  },
+  {
+    "id": 10,
+    "name": "Mountain Pose",
+    "image": "https://example.com/mountain.jpg",
+    "desc": "A foundational standing pose that promotes alignment, grounding, and awareness.",
+    "chakra": ["Root"],
+    "type": ["Standing"],
+    "benefit": ["Posture", "Awareness"],
+    "part": ["Whole Body"]
   }
 ]
