@@ -2,89 +2,61 @@ import React from "react";
 
 const Resources = () => {
     return (
-        <div className="flex flex-col items-center p-8 space-y-12 text-gray-900">
-            <h1 className="text-4xl tracking-wide text-black">Resources</h1>
-            <p className="max-w-md text-center text-gray-700 leading-tight">
-                A curated collection of tutorials, articles, and ways to support our yoga library. 
-                Dive in, find something that resonates, and consider helping us grow this community.
+        <div className="flex flex-col p-6 space-y-8 text-gray-800">
+            <div>
+            <h1 className="text-3xl font-light text-black uppercase tracking-widest">Resources</h1>
+            <p className="max-w-lg leading-relaxed">
+                Handpicked tutorials and articles to deepen your yoga journey. Explore, learn, and elevate your practice.
             </p>
 
+            </div>
+            
             {/* Tutorials Section */}
-            <div className="w-full max-w-3xl">
-                <h2 className="text-2xl mb-2 text-black uppercase">Yoga Tutorials</h2>
-                <ul className="space-y-4 text-lg leading-snug">
-                    <li>
-                        <a
-                            href=""
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-black underline hover:no-underline"
-                        >
+            <div className="w-full max-w-2xl">
+                <h2 className="text-lg font-medium uppercase tracking-wide">Yoga Tutorials</h2>
+                <ul className="space-y-5">
+                    <li className="flex flex-col space-y-1">
+                        <a href="" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
                             SoCal Yogi
                         </a>
-                        <p className="text-gray-600">Direct, accessible routines that balance traditional and modern yoga.</p>
+                        <p className="text-sm">Balanced routines that blend traditional and modern yoga.</p>
                     </li>
-                    <li>
-                        <a
-                            href="https://www.youtube.com/c/yogawithadriene"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-black underline hover:no-underline"
-                        >
+                    <li className="flex flex-col space-y-1">
+                        <a href="https://www.youtube.com/c/yogawithadriene" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
                             Yoga with Adriene
                         </a>
-                        <p className="text-gray-600">Gentle, inclusive, and thoughtful practices for any level.</p>
+                        <p className="text-sm">Inclusive, beginner-friendly practices for every level.</p>
                     </li>
-                    <li>
-                        <a
-                            href="https://www.youtube.com/c/breatheandflow"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-black underline hover:no-underline"
-                        >
+                    <li className="flex flex-col space-y-1">
+                        <a href="https://www.youtube.com/c/breatheandflow" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
                             Breathe and Flow
                         </a>
-                        <p className="text-gray-600">Strength-focused, flow-based tutorials for dynamic practice.</p>
+                        <p className="text-sm">Dynamic flows and strength-building sequences.</p>
                     </li>
                 </ul>
             </div>
 
             {/* Articles Section */}
-            <div className="w-full max-w-3xl">
-                <h2 className="text-2xl mb-2 text-black uppercase">Articles & Guides</h2>
-                <ul className="space-y-4 text-lg leading-snug">
-                    <li>
-                        <a
-                            href="https://www.yogajournal.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-black underline hover:no-underline"
-                        >
+            <div className="w-full max-w-2xl">
+                <h2 className="text-lg font-medium text-black uppercase tracking-wide">Articles & Guides</h2>
+                <ul className="space-y-5">
+                    <li className="flex flex-col space-y-1">
+                        <a href="https://www.yogajournal.com/" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
                             Yoga Journal
                         </a>
-                        <p className="text-gray-600">Explore yoga philosophy, sequences, and expert insights.</p>
+                        <p className="text-sm">In-depth insights into yoga philosophy, poses, and lifestyle.</p>
                     </li>
-                    <li>
-                        <a
-                            href="https://www.mindbodygreen.com/yoga"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-black underline hover:no-underline"
-                        >
+                    <li className="flex flex-col space-y-1">
+                        <a href="https://www.mindbodygreen.com/yoga" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
                             MindBodyGreen Yoga
                         </a>
-                        <p className="text-gray-600">Articles connecting yoga to holistic health and mindfulness.</p>
+                        <p className="text-sm">Articles on yoga, mindfulness, and holistic wellness.</p>
                     </li>
-                    <li>
-                        <a
-                            href="https://www.yogiapproved.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-black underline hover:no-underline"
-                        >
+                    <li className="flex flex-col space-y-1">
+                        <a href="https://www.yogiapproved.com/" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
                             YogiApproved
                         </a>
-                        <p className="text-gray-600">Guides and challenges to deepen your practice at home.</p>
+                        <p className="text-sm">Guides and resources for deepening your home practice.</p>
                     </li>
                 </ul>
             </div>
