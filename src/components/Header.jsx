@@ -90,7 +90,6 @@ const Header = () => {
                     )}
                 </div>
                 <Link to="/resources" >Resources</Link>
-                <Link to="/donate">Donate</Link>
             </nav>
             <div className="absolute top-2 right-4">
                 <Search />
