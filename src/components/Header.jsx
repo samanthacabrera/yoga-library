@@ -40,16 +40,16 @@ const Header = () => {
                     </button>
                     
                     {isDropdownOpen && (
-                        <div className="absolute bg-white border rounded-lg shadow-lg mt-2 grid grid-cols-3 gap-4 p-4 w-80">
+                        <div className="absolute bg-white border rounded-lg shadow-lg mt-2 grid grid-cols-3 gap-8 p-4 w-96">
                             <div>
-                                <h3 className="text-lg mb-2">Type</h3>
+                                <h3 className="text-lg bg-gray-100 rounded p-1 mb-2">Type</h3>
                                 {categories.type.map((category) => {
                                     const path = `/categories/type/${category.toLowerCase()}`;
                                     return (
                                         <button
                                             key={category}
                                             onClick={() => handleLinkClick(path)}
-                                            className="block px-4 py-2 hover:underline text-left w-full"
+                                            className="block py-2 hover:underline text-left w-full"
                                         >
                                             {category}
                                         </button>
@@ -57,14 +57,14 @@ const Header = () => {
                                 })}
                             </div>
                             <div>
-                                <h3 className="text-lg mb-2">Benefit</h3>
+                                <h3 className="text-lg bg-gray-100 rounded p-1 mb-2">Benefit</h3>
                                 {categories.benefit.map((category) => {
                                     const path = `/categories/benefit/${category.toLowerCase()}`;
                                     return (
                                         <button
                                             key={category}
                                             onClick={() => handleLinkClick(path)}
-                                            className="block px-4 py-2 hover:underline text-left w-full"
+                                            className="block py-2 hover:underline text-left w-full"
                                         >
                                             {category}
                                         </button>
@@ -72,14 +72,14 @@ const Header = () => {
                                 })}
                             </div>
                             <div>
-                                <h3 className="text-lg mb-2">Part</h3>
+                                <h3 className="text-lg bg-gray-100 rounded p-1 mb-2">Part</h3>
                                 {categories.part.map((category) => {
                                     const path = `/categories/part/${category.toLowerCase()}`;
                                     return (
                                         <button
                                             key={category}
                                             onClick={() => handleLinkClick(path)}
-                                            className="block px-4 py-2 hover:underline text-left w-full"
+                                            className="block py-2 hover:underline text-left w-full"
                                         >
                                             {category}
                                         </button>
@@ -89,6 +89,7 @@ const Header = () => {
                         </div>
                     )}
                 </div>
+                <Link to="/beginners-guide">Beginner's Guide</Link>
                 <Link to="/resources" >Resources</Link>
             </nav>
             <div className="absolute top-2 right-4">

@@ -7,6 +7,7 @@ import DailyPose from "./components/DailyPose";
 import CategoryPage from "./components/CategoryPage";
 import PosePage from "./components/PosePage";
 import Footer from "./components/Footer";
+import Guide from "./components/Guide";
 import Resources from "./components/Resources";
 
 
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/pose-of-the-day" element={<><PoseList /> <DailyPose /></>} />
             <Route path="/categories/:categoryType/:categoryValue" element={<> <PoseList /> <CategoryPage /></>} />
             <Route path="/pose/:id" element={<> <PoseList /> <PosePage /></>} />
+            <Route path="/beginners-guide" element={<> <PoseList /> <Guide /></>} />
             <Route path="/resources" element={<><PoseList /> <Resources /></>} />
           </Routes>
    
