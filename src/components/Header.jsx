@@ -33,7 +33,6 @@ const Header = () => {
                 >
                     All Poses
                 </Link>
-                <Link to="/pose-of-the-day" >Pose of the Day</Link>
                 <div className="relative inline-block">
                     <button onClick={toggleDropdown} className="mr-4">
                         Pose Categories

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Downward Dog",
+    "desc": "Downward Dog is a foundational pose in yoga that provides a full-body stretch and strengthens key muscle groups. The pose targets the hamstrings, calves, back, and arms, helping to increase flexibility and stability. It’s often used as a transition pose between other asanas, promoting length and alignment in the spine while helping to calm the mind."
+  },
+  {
+    "id": 2,
+    "name": "Tree Pose",
+    "desc": "Tree Pose is a standing balance that improves focus, stability, and posture. By rooting one foot firmly into the ground while balancing on the other, you engage the core and lower body, strengthening the legs and improving your sense of balance. This pose also stretches the inner thighs and helps open the hips, promoting grounding and mindfulness."
+  },
+  {
+    "id": 3,
+    "name": "Warrior I",
+    "desc": "Warrior I is a powerful standing pose that builds strength and stability in the legs, hips, and shoulders. It requires deep lunging while keeping the back leg straight, which strengthens the legs and promotes hip flexibility. The arms are extended overhead, helping to engage the upper body and increase strength and stability throughout the entire body."
+  },
+  {
+    "id": 4,
+    "name": "Warrior II",
+    "desc": "Warrior II is a dynamic standing pose that engages both strength and flexibility. This pose opens the hips, stretches the legs, and strengthens the core and upper body. The arms are extended to the sides, promoting shoulder strength and encouraging mindfulness and focus. It also enhances balance, stamina, and concentration while stretching the inner thighs."
+  },
+  {
+    "id": 5,
+    "name": "Child's Pose",
+    "desc": "Child's Pose is a gentle resting pose that provides a deep stretch to the back, hips, and thighs. It encourages relaxation by lengthening the spine and calming the nervous system. Often used as a resting pose between more challenging postures, Child’s Pose helps to release tension, promote grounding, and enhance flexibility."
+  },
+  {
+    "id": 6,
+    "name": "Cobra Pose",
+    "desc": "Cobra Pose is a gentle backbend that opens the chest and strengthens the spine, shoulders, and arms. It helps to counteract the effects of sitting or slouching, improving posture and flexibility in the spine. This pose also energizes the body and helps alleviate lower back tension while enhancing circulation to the chest and heart."
+  },
+  {
+    "id": 7,
+    "name": "Bridge Pose",
+    "desc": "Bridge Pose is a backbend that opens the chest, strengthens the glutes, and enhances flexibility in the spine. It also stretches the shoulders and chest while toning the lower back and legs. This pose improves posture, relieves tension in the back, and helps improve circulation in the body, offering a grounding and energizing effect."
+  },
+  {
+    "id": 8,
+    "name": "Triangle Pose",
+    "desc": "Triangle Pose is a standing pose that stretches the legs, hips, and sides of the body, improving balance and stability. The arms are extended in two directions, helping to lengthen the spine and open the chest. This pose encourages flexibility in the legs and hips while also engaging the core muscles for balance and control."
+  },
+  {
+    "id": 9,
+    "name": "Seated Forward Bend",
+    "desc": "Seated Forward Bend is a calming seated stretch that targets the hamstrings, spine, and lower back. By folding forward over the legs, you lengthen the spine and stretch the entire back side of the body. This pose helps to relieve stress, improve flexibility, and calm the mind, making it a great choice for relaxation and restorative practices."
+  },
+  {
+    "id": 10,
+    "name": "Mountain Pose",
+    "desc": "Mountain Pose is a simple yet powerful standing pose that promotes good posture and alignment. By standing tall with feet grounded and arms by your sides, you engage the entire body, focusing on lengthening the spine and finding balance. This pose encourages mindfulness, enhances body awareness, and helps to create a strong foundation for other standing poses."
+  },
+  {
+    "id": 11,
+    "name": "Chair Pose",
+    "desc": "Chair Pose is an energizing standing pose that strengthens the legs, glutes, and core while building heat in the body. It challenges your balance as you sink into a squat-like position, activating the lower body and encouraging endurance. This pose helps to tone the legs, improve posture, and increase flexibility in the lower back and hips."
+  },
+  {
+    "id": 12,
+    "name": "Camel Pose",
+    "desc": "Camel Pose is a deep backbend that opens the chest, shoulders, and hips while stretching the entire front of the body. It requires flexibility in the spine and hips, promoting strength and openness. Camel Pose encourages a deeper connection to the breath and helps to release tension in the lower back while promoting a sense of emotional openness and clarity."
+  },
+  {
+    "id": 13,
+    "name": "Boat Pose",
+    "desc": "Boat Pose is an intense core-strengthening pose that targets the abdominal muscles, helping to improve balance and stability. By lifting the legs and upper body into a V-shape, this pose challenges both strength and endurance. It helps build a strong core while toning the thighs and improving focus and concentration."
+  },
+  {
+    "id": 14,
+    "name": "Plank Pose",
+    "desc": "Plank Pose is a full-body strength pose that engages the core, shoulders, arms, and legs. This pose helps to build stability and endurance, improving overall body strength. By holding the body in a straight line from head to heels, Plank Pose strengthens the abdominal muscles, tones the arms and shoulders, and enhances posture."
+  },
+  {
+    "id": 15,
+    "name": "Bow Pose",
+    "desc": "Bow Pose is a deep backbend that stretches the chest, abdomen, and thighs while strengthening the back and improving posture. By lifting the chest and legs simultaneously, this pose promotes flexibility in the spine and hips while activating the core and glutes. It helps open the heart and lungs, improving breathing and circulation."
+  },
+  {
+    "id": 16,
+    "name": "Crow Pose",
+    "desc": "Crow Pose is an arm balance that strengthens the arms, wrists, and core while enhancing focus and concentration. By balancing on the hands with the knees resting on the upper arms, this pose requires stability and control. It helps to build upper body strength and confidence, while also improving balance and focus."
+  },
+  {
+    "id": 17,
+    "name": "Happy Baby",
+    "desc": "Happy Baby is a restorative pose that stretches the inner thighs, hips, and lower back. It promotes relaxation by releasing tension in the hips and lower body, helping to relax and calm the nervous system. This pose is often used to wind down after a yoga session, promoting gentle stretching and soothing the body and mind."
+  },
+  {
+    "id": 18,
+    "name": "Butterfly Pose",
+    "desc": "Butterfly Pose is a seated posture that targets the inner thighs, hips, and groin. By bringing the soles of the feet together and gently pressing the knees toward the ground, this pose stretches the hip flexors and promotes flexibility in the lower body. It also encourages relaxation and mindfulness, helping to relieve stress and tension in the body."
+  },
+  {
+    "id": 19,
+    "name": "Headstand",
+    "desc": "Headstand is an advanced inversion that strengthens the arms, shoulders, and core while increasing blood flow to the brain. This pose challenges both balance and strength, requiring stability in the upper body and a strong core. Headstand helps to improve focus, concentration, and circulation, while also promoting a sense of confidence and empowerment."
+  },
+  {
+    "id": 20,
+    "name": "Reclined Twist",
+    "desc": "Reclined Twist is a gentle twisting pose that helps release tension in the spine, hips, and lower back. By lying on the back and twisting the body to one side, this pose helps improve spinal mobility and digestion. It also calms the nervous system, promotes relaxation, and helps to detoxify the body by stimulating the internal organs."
+  }
+]

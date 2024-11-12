@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import posesData from '../data/poses.json';
+import descriptions from '../data/descriptions.json'; 
 
 const PosePage = () => {
   const { id } = useParams();
@@ -10,13 +11,17 @@ const PosePage = () => {
     return <div>Pose not found</div>;
   }
 
+  const poseDesc = descriptions.find(d => d.id === pose.id);
+
   return (
     <div className="flex flex-col min-h-screen w-full space-y-2 p-6">
       <h2 className="text-4xl">{pose.name}</h2>
       
       {pose.image && <img src={pose.image} alt={pose.name} />}
       
-      {pose.desc && <p><strong>Description:</strong> {pose.desc}</p>}
+      {poseDesc && poseDesc.desc && (
+        <p><strong>Description:</strong> {poseDesc.desc}</p>
+      )}
 
       {pose.benefit.length > 0 && (
         <div>

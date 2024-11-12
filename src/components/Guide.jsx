@@ -2,16 +2,16 @@ import React from "react";
 
 const Guide = () => {
     return (
-        <div className="flex flex-col px-8 py-12 space-y-12 font-sans text-gray-800">
+        <div className="flex flex-col p-8 space-y-8 text-gray-800">
             <div className="w-full max-w-5xl space-y-4">
-                <h1 className="text-3xl font-semibold text-gray-900 tracking-wide uppercase">Beginner's Guide to Yoga</h1>
+                <h1 className="text-4xl tracking-tight mb-1">Beginner's Guide to Yoga</h1>
                 <p>
                     Welcome to your yoga journey. This guide introduces you to essential concepts, terms, types of yoga, and practical advice on beginning your practice confidently and mindfully.
                 </p>
             </div>
 
             <div className="w-full max-w-5xl space-y-4">
-                <h2 className="text-xl font-medium text-gray-900 uppercase mb-3">What is Yoga?</h2>
+                <h2 className="text-xl mb-1 font-medium">What is Yoga?</h2>
                 <p>
                     Yoga is an ancient practice originating in India, aimed at creating a sense of unity within the mind, body, and spirit. It includes various techniques such as physical postures (asanas), breath control exercises (pranayama), and meditation. Yoga not only supports physical health by improving flexibility, strength, and balance but also promotes mental clarity and emotional resilience.
                 </p>
@@ -22,8 +22,8 @@ const Guide = () => {
 
 
             <div className="w-full max-w-5xl space-y-4">
-                <h2 className="text-xl font-medium text-gray-900 uppercase mb-3">Common Yoga Terms</h2>
-                <ul className="pl-0 lg:pl-8 space-y-4 py-4">
+                <h2 className="text-xl mb-1 font-medium">Common Yoga Terms</h2>
+                <ul className="space-y-4 py-4">
                     <li><strong>Asana:</strong> The physical postures or poses in yoga, like Mountain Pose (Tadasana) and Downward-Facing Dog (Adho Mukha Svanasana). Asanas help build strength, flexibility, and stability.</li>
                     <li><strong>Pranayama:</strong> Breath control exercises that enhance mental focus, relaxation, and energy flow. Examples include Ujjayi (victorious breath) and Nadi Shodhana (alternate nostril breathing).</li>
                     <li><strong>Vinyasa:</strong> A style of yoga that links movement with breath in a smooth, flowing sequence. In a Vinyasa class, each movement is coordinated with inhalation or exhalation.</li>
@@ -32,7 +32,7 @@ const Guide = () => {
             </div>
 
             <div className="w-full max-w-5xl space-y-4">
-                <h2 className="text-xl font-medium text-gray-900 uppercase mb-3">Types of Yoga</h2>
+                <h2 className="text-xl mb-1 font-medium">Types of Yoga</h2>
                 <p>
                     There are several styles of yoga, each with a different approach to physical postures and meditation. Some are more dynamic and physically demanding, while others focus on relaxation and mindfulness. Each type of yoga offers unique benefits that can help improve flexibility, strength, and mental clarity.
                 </p>
@@ -54,7 +54,7 @@ const Guide = () => {
             </div>
 
             <div className="w-full max-w-5xl space-y-4">
-                <h2 className="text-xl font-medium text-gray-900 uppercase mb-3">Yoga Basics for Beginners</h2>
+                <h2 className="text-xl mb-1 font-medium">Yoga Basics for Beginners</h2>
                 <p>
                     Start with foundational poses such as Mountain Pose, Downward-Facing Dog, and Child’s Pose. These simple postures help build awareness of alignment, balance, and breath. Consistency is essential in yoga; even practicing for 5-10 minutes a day can lead to significant improvements.
                 </p>
@@ -64,7 +64,7 @@ const Guide = () => {
             </div>
 
             <div className="w-full max-w-5xl space-y-4">
-                <h2 className="text-xl font-medium text-gray-900 uppercase mb-3">Safe Practice Tips</h2>
+                <h2 className="text-xl mb-1 font-medium">Safe Practice Tips</h2>
                 <p>
                     Listening to your body is one of the most important aspects of practicing yoga. It’s essential to remember that yoga is not about achieving perfect poses, but about fostering mindfulness and self-awareness. If you feel any pain or discomfort during a pose, ease out of it and adjust your alignment.
                 </p>
@@ -80,7 +80,7 @@ const Guide = () => {
             </div>
 
             <div className="w-full max-w-5xl space-y-4">
-                <h2 className="text-xl font-medium text-gray-900 uppercase mb-3">Building a Consistent Practice</h2>
+                <h2 className="text-xl mb-1 font-medium">Building a Consistent Practice</h2>
                 <p>
                     Consistency is key in yoga. Start with short, daily practices, focusing on poses or sequences that feel manageable. Gradually build the duration and variety of your practice as you grow more comfortable. Setting aside a regular time, like morning or evening, can help make yoga a natural part of your routine.
                 </p>

@@ -2,9 +2,9 @@ import React from "react";
 
 const Resources = () => {
     return (
-        <div className="flex flex-col p-6 space-y-8 text-gray-800">
+        <div className="flex flex-col p-8 space-y-8">
             <div>
-            <h1 className="text-3xl mb-1 font-medium uppercase tracking-wider">Resources</h1>
+            <h1 className="text-4xl mb-1">Resources</h1>
             <p className="max-w-lg leading-relaxed">
                 Handpicked tutorials and articles to deepen your yoga journey. Explore, learn, and elevate your practice.
             </p>
@@ -12,7 +12,7 @@ const Resources = () => {
             </div>
             
             <div className="w-full max-w-2xl">
-                <h2 className="text-xl mb-1 font-medium tracking-wide">Yoga Tutorials</h2>
+                <h2 className="text-xl mb-1 font-medium">Yoga Tutorials</h2>
                 <ul className="space-y-5">
                     <li className="flex flex-col space-y-1">
                         <a href="https://www.youtube.com/@SoCalYogi" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
@@ -36,7 +36,7 @@ const Resources = () => {
             </div>
 
             <div className="w-full max-w-2xl">
-                <h2 className="text-xl mb-1 font-medium tracking-wide">Articles & Blogs</h2>
+                <h2 className="text-xl mb-1 font-medium">Articles & Blogs</h2>
                 <ul className="space-y-5">
                     <li className="flex flex-col space-y-1">
                         <a href="https://www.yogajournal.com/" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
@@ -60,7 +60,7 @@ const Resources = () => {
             </div>
 
             <div className="w-full max-w-2xl">
-                <h2 className="text-xl mb-1 font-medium tracking-wide">Meditation Guides</h2>
+                <h2 className="text-xl mb-1 font-medium">Meditation Guides</h2>
                 <ul className="space-y-5">
                     <li className="flex flex-col space-y-1">
                         <a href="https://www.headspace.com/" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
