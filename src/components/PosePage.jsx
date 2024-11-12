@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import posesData from '../data/poses.json';
 import descriptions from '../data/descriptions.json'; 
+import sanskirts from '../data/sanskirts.json'
 import benefits from '../data/benefits.json';
 import precautions from '../data/precautions.json';
 import modifications from '../data/modifications.json';
@@ -16,6 +17,7 @@ const PosePage = () => {
   }
 
   const poseDesc = descriptions.find(d => d.id === pose.id);
+  const poseSanskirt = sanskirts.find(s => s.id === pose.id);
   const poseBenefit = benefits.find(b => b.id === pose.id);
   const posePrecaution = precautions.find(p => p.id === pose.id);
   const poseModification = modifications.find(m => m.id === pose.id);
@@ -23,7 +25,7 @@ const PosePage = () => {
 
   return (
     <div className="flex flex-col min-h-screen w-full max-w-2xl space-y-6 p-6">
-      <h2 className="text-4xl">{pose.name}</h2>
+      <h2 className="text-4xl">{pose.name} <span>({poseSanskirt.sanskrit_name})</span></h2>
       
       {/* {pose.image && <img src={pose.image} alt={pose.name} />} */}
       

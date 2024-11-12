@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Downward Dog",
+    "sanskrit_name": "Adho Mukha Svanasana",
+    "context": "Adho Mukha Svanasana translates to 'Downward Facing Dog' in Sanskrit. 'Adho' means 'downward,' 'Mukha' means 'face,' and 'Svana' means 'dog.' This pose is often associated with a full-body stretch and is a key pose in yoga, especially in the Surya Namaskar (Sun Salutation) sequence."
+  },
+  {
+    "id": 2,
+    "name": "Tree Pose",
+    "sanskrit_name": "Vrksasana",
+    "context": "Vrksasana means 'Tree Pose' in Sanskrit. 'Vrksa' means 'tree,' and 'Asana' means 'pose.' This balancing posture symbolizes rootedness and grounding, similar to the steady and grounded nature of a tree."
+  },
+  {
+    "id": 3,
+    "name": "Warrior I",
+    "sanskrit_name": "Virabhadrasana I",
+    "context": "Virabhadrasana I is the Sanskrit name for Warrior I Pose. 'Virabhadra' refers to a powerful warrior created by Lord Shiva. The posture embodies strength, focus, and courage, resembling the stance of a warrior."
+  },
+  {
+    "id": 4,
+    "name": "Warrior II",
+    "sanskrit_name": "Virabhadrasana II",
+    "context": "Virabhadrasana II, or Warrior II Pose, is an extension of Warrior I, symbolizing readiness and strength. It is named after the mythical warrior, Virabhadra, who is a fierce manifestation of Lord Shiva."
+  },
+  {
+    "id": 5,
+    "name": "Child's Pose",
+    "sanskrit_name": "Balasana",
+    "context": "Balasana is the Sanskrit name for Child's Pose. 'Bala' means 'child,' and 'Asana' means 'pose.' This pose is a resting position and is often used to relax and stretch the back."
+  },
+  {
+    "id": 6,
+    "name": "Cobra Pose",
+    "sanskrit_name": "Bhujangasana",
+    "context": "Bhujangasana is the Sanskrit term for Cobra Pose. 'Bhujanga' means 'serpent' or 'cobra,' and 'Asana' means 'pose.' This backbend is named for the raised hood of a cobra."
+  },
+  {
+    "id": 7,
+    "name": "Bridge Pose",
+    "sanskrit_name": "Setu Bandhasana",
+    "context": "Setu Bandhasana means Bridge Pose in Sanskrit. 'Setu' means 'bridge,' and 'Bandha' means 'lock' or 'bond.' This pose mimics the shape of a bridge and is often used to open the chest and hips."
+  },
+  {
+    "id": 8,
+    "name": "Triangle Pose",
+    "sanskrit_name": "Trikonasana",
+    "context": "Trikonasana is the Sanskrit name for Triangle Pose. 'Trikona' means 'three angles,' and 'Asana' means 'pose.' This pose creates a triangular shape with the body, stretching the legs, hips, and torso."
+  },
+  {
+    "id": 9,
+    "name": "Seated Forward Bend",
+    "sanskrit_name": "Paschimottanasana",
+    "context": "Paschimottanasana is the Seated Forward Bend in Sanskrit. 'Paschima' means 'west' or 'back,' and 'Uttana' means 'intense stretch.' This pose stretches the hamstrings, spine, and back."
+  },
+  {
+    "id": 10,
+    "name": "Mountain Pose",
+    "sanskrit_name": "Tadasana",
+    "context": "Tadasana is Mountain Pose in Sanskrit. 'Tada' means 'mountain,' and 'Asana' means 'pose.' It is a foundational standing pose that emphasizes posture and body alignment."
+  },
+  {
+    "id": 11,
+    "name": "Chair Pose",
+    "sanskrit_name": "Utkatasana",
+    "context": "Utkatasana translates to Chair Pose in Sanskrit. 'Utkata' means 'powerful' or 'fierce,' and 'Asana' means 'pose.' The pose mimics sitting in a chair, building strength in the legs and core."
+  },
+  {
+    "id": 12,
+    "name": "Camel Pose",
+    "sanskrit_name": "Ustrasana",
+    "context": "Ustrasana is the Sanskrit name for Camel Pose. 'Ustra' means 'camel,' and 'Asana' means 'pose.' This backbend stretches the chest and opens the heart."
+  },
+  {
+    "id": 13,
+    "name": "Boat Pose",
+    "sanskrit_name": "Navasana",
+    "context": "Navasana is Boat Pose in Sanskrit. 'Nava' means 'boat,' and 'Asana' means 'pose.' This posture strengthens the core, mimicking the stability and balance of a boat."
+  },
+  {
+    "id": 14,
+    "name": "Plank Pose",
+    "sanskrit_name": "Kumbhakasana",
+    "context": "Kumbhakasana is the Sanskrit term for Plank Pose. 'Kumbhaka' means 'breath retention,' and 'Asana' means 'pose.' It is a strengthening pose for the core and shoulders."
+  },
+  {
+    "id": 15,
+    "name": "Bow Pose",
+    "sanskrit_name": "Dhanurasana",
+    "context": "Dhanurasana is Bow Pose in Sanskrit. 'Dhanura' means 'bow,' and 'Asana' means 'pose.' This backbend resembles an archer's bow, stretching the chest and legs."
+  },
+  {
+    "id": 16,
+    "name": "Crow Pose",
+    "sanskrit_name": "Bakasana",
+    "context": "Bakasana is the Sanskrit name for Crow Pose. 'Baka' means 'crane' or 'crow,' and 'Asana' means 'pose.' This arm balance strengthens the core and arms."
+  },
+  {
+    "id": 17,
+    "name": "Happy Baby",
+    "sanskrit_name": "Ananda Balasana",
+    "context": "Ananda Balasana is the Sanskrit term for Happy Baby Pose. 'Ananda' means 'bliss,' and 'Bala' means 'child.' This pose is known for its calming and joyful effects."
+  },
+  {
+    "id": 18,
+    "name": "Butterfly Pose",
+    "sanskrit_name": "Baddha Konasana",
+    "context": "Baddha Konasana is Butterfly Pose in Sanskrit. 'Baddha' means 'bound,' and 'Kona' means 'angle.' It stretches the hips and thighs and is often used for relaxation."
+  },
+  {
+    "id": 19,
+    "name": "Headstand",
+    "sanskrit_name": "Sirsasana",
+    "context": "Sirsasana is the Sanskrit name for Headstand. 'Sirsa' means 'head,' and 'Asana' means 'pose.' This inversion is often called the 'king of asanas' and builds strength and focus."
+  },
+  {
+    "id": 20,
+    "name": "Reclined Twist",
+    "sanskrit_name": "Supta Matsyendrasana",
+    "context": "Supta Matsyendrasana is Reclined Twist in Sanskrit. 'Supta' means 'reclined,' 'Matsyendra' refers to the sage Matsyendra, and 'Asana' means 'pose.' This twisting pose helps release tension in the spine."
+  }
+]
