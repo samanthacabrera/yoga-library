@@ -18,25 +18,25 @@ const CategoryPage = () => {
   const formattedCategoryValue = categoryValue.charAt(0).toUpperCase() + categoryValue.slice(1);
 
   return (
-    <div className="p-4">
-      <h2 className="text-2xl mb-4">
+    <div className="p-6">
+      <h2 className="text-4xl mb-1">
         {categoryType === "type"
           ? `Explore ${formattedCategoryValue} Yoga Poses`
           : `Explore Yoga Poses for ${formattedCategoryValue}`}
       </h2>
-      
+
       {filteredPoses.length === 0 ? (
         <p>No poses found for this category.</p>
       ) : (
-        <ul className="space-y-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 py-8">
           {filteredPoses.map((pose) => (
-            <li key={pose.id}>
-              <Link to={`/pose/${pose.id}`} className="hover:underline">
+            <div key={pose.id} className="hover:underline">
+              <Link to={`/pose/${pose.id}`}>
                 {pose.name}
               </Link>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
