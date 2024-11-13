@@ -37,6 +37,10 @@ const PosePage = () => {
         <p><strong>Benefits:</strong> {poseBenefit.benefit}</p>
       )}
 
+      {poseSanskirt && poseSanskirt.context && (
+        <p><strong>History:</strong> {poseSanskirt.context}</p>
+      )}
+
       {posePrecaution && posePrecaution.precaution && (
         <p><strong>Precautions: </strong> {posePrecaution.precaution}</p>
       )}
