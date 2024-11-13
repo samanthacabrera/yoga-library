@@ -56,41 +56,42 @@ const PosePage = () => {
         </div>
       )}
 
+  <div className="bg-gray-100 p-4 rounded-lg shadow-sm">
+    <p><strong>Tags:</strong></p>
+
+    {pose.benefit.length > 0 && (
       <div>
-      <p><strong>Tags:</strong></p>
-      {pose.benefit.length > 0 && (
-        <div>
-          - Benefits -
-          <ul className="flex space-x-2">
-            {pose.benefit.map((benefit, index) => (
-              <li key={index}>{benefit}</li>
-            ))}
-          </ul>
-        </div>
-      )}
-
-      {pose.part.length > 0 && (
-        <div>
-          - Parts of the body -
-          <ul className="flex space-x-2">
-            {pose.part.map((part, index) => (
-              <li key={index}>{part}</li>
-            ))}
-          </ul>
-        </div>
-      )}
-
-      {pose.type.length > 0 && (
-        <div>
-          - Pose Type - 
-          <ul className="flex space-x-2">
-            {pose.type.map((type, index) => (
-              <li key={index}>{type}</li>
-            ))}
-          </ul>
-        </div>
-      )}
+        <p className="text-gray-500 my-1">Benefits</p>
+        <ul className="flex flex-wrap gap-2">
+          {pose.benefit.map((benefit, index) => (
+            <li key={index} className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors">{benefit}</li>
+          ))}
+        </ul>
       </div>
+    )}
+
+    {pose.part.length > 0 && (
+      <div>
+        <p className="text-gray-500 my-1">Parts of the body</p>
+        <ul className="flex flex-wrap gap-2">
+          {pose.part.map((part, index) => (
+            <li key={index} className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors">{part}</li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    {pose.type.length > 0 && (
+      <div>
+        <p className="text-gray-500 my-1">Pose Type</p>
+        <ul className="flex flex-wrap gap-2">
+          {pose.type.map((type, index) => (
+            <li key={index} className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors">{type}</li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </div>
     </div>
   );
 };
