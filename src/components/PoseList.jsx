@@ -10,7 +10,7 @@ const PoseList = () => {
   }, []);
 
   return (
-    <div className="flex flex-col flex-col-grow min-w-44 lg:min-w-64 overflow-y-scroll space-y-4 p-4 bg-gray-100">
+    <div className="flex flex-col flex-col-grow min-w-44 lg:min-w-64 overflow-y-scroll space-y-2 p-4 bg-gray-100">
       {poses.length === 0 ? (
         <p>No poses available.</p>
       ) : (
