@@ -1,115 +1,6 @@
 [
   {
     "id": 1,
-    "name": "Downward Dog",
-    "cues": [
-      "Start on all fours with your wrists directly under your shoulders and your knees under your hips. Spread your fingers wide and press firmly into the mat.",
-      "On an inhale, tuck your toes and lift your hips towards the ceiling, aiming to form an inverted 'V' shape with your body.",
-      "As you exhale, press your heels towards the floor, but don't worry if they don’t touch the mat. Keep your spine long and draw your chest toward your thighs.",
-      "Inhale and ensure that your neck is relaxed, with your head between your arms. Your gaze should be directed toward your navel or your thighs.",
-      "Exhale and engage your core to maintain stability, keeping your body active throughout the entire pose.",
-      "Breathe deeply and evenly in and out through the nose for 5 to 10 breaths, focusing on elongating your spine and deepening the stretch in your hamstrings."
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Tree Pose",
-    "cues": [
-      "Begin standing tall in Mountain Pose, with your feet together and your arms at your sides.",
-      "On an inhale, slowly shift your weight into your left foot and raise your right foot off the ground, bringing the sole of your foot to your inner left thigh, calf, or ankle (avoid placing it directly on your knee).",
-      "Exhale and bring your hands into a prayer position at your heart center or extend them overhead, palms facing each other, to increase the challenge.",
-      "Keep your gaze steady and focused on a point ahead to help maintain balance.",
-      "Inhale and lengthen your spine, lifting through the crown of your head. Engage your core to stabilize.",
-      "Exhale and relax your shoulders, making sure that your standing leg is straight and engaged.",
-      "Continue to breathe deeply and steadily in and out through your nose, holding the pose for 5 to 10 breaths before switching sides."
-    ]
-  },
-  {
-    "id": 3,
-    "name": "Warrior I",
-    "cues": [
-      "Start in a standing position and step your feet about 3 to 4 feet apart, keeping your feet parallel to each other.",
-      "On an inhale, turn your right foot out 90 degrees and bend your right knee so that your thigh is parallel to the floor, ensuring that your knee is directly over your ankle.",
-      "As you exhale, press the back foot firmly into the mat, with the left leg straight and active. Keep your hips facing forward, square your shoulders to the front of the mat.",
-      "Inhale and lift your arms overhead, palms facing each other or open to the sides. Reach through the fingertips, elongating your torso.",
-      "Exhale and draw your navel towards your spine to engage your core and maintain balance.",
-      "Breathe steadily in and out through your nose, holding the pose for 5 to 10 breaths before switching sides."
-    ]
-  },
-  {
-    "id": 4,
-    "name": "Warrior II",
-    "cues": [
-      "From Warrior I, exhale and open your hips and shoulders to face the long edge of the mat, turning your back foot out slightly and keeping it rooted into the ground.",
-      "Inhale and extend your arms out to the sides, keeping them parallel to the floor, with your palms facing down.",
-      "Exhale and bend your front knee deeply, ensuring the knee is directly over the ankle. Keep your back leg straight and strong.",
-      "Engage your core and lift through the chest, while keeping your shoulders relaxed and your gaze forward over your front hand.",
-      "Breathe deeply and consistently in and out through your nose, focusing on deepening the stretch and building strength in your legs.",
-      "Hold the pose for 5 to 10 breaths before switching sides."
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Child's Pose",
-    "cues": [
-      "Begin in a kneeling position with your big toes touching and knees spread apart, wider than hip-width, if needed for more comfort.",
-      "On an inhale, lengthen your spine and reach your arms forward on the mat.",
-      "As you exhale, slowly lower your torso towards the mat, resting your forehead on the ground or a block. Extend your arms fully or bring them alongside your body with palms facing up.",
-      "Inhale and gently press your hips back toward your heels, creating length in the spine.",
-      "Exhale and relax your chest and shoulders, allowing them to soften into the mat.",
-      "Breathe deeply and evenly, allowing your body to relax further with each exhalation, staying in the pose for 5 to 10 breaths."
-    ]
-  },
-  {
-    "id": 6,
-    "name": "Cobra Pose",
-    "cues": [
-      "Begin by lying face down with your legs extended behind you, tops of your feet pressing into the mat. Place your hands under your shoulders with your elbows bent and close to your body.",
-      "On an inhale, press into your hands and slowly lift your chest off the ground, keeping your elbows bent and hugging them towards your ribs.",
-      "Exhale and lengthen your spine as you reach the crown of your head toward the ceiling. Engage your legs and press the tops of your feet into the mat for stability.",
-      "Inhale and lift your chest a little higher, if comfortable, without over-arching your back.",
-      "Exhale and release any tension in your shoulders, keeping your elbows slightly bent to avoid straining your arms.",
-      "Breathe deeply in and out through your nose, holding for 5 to 10 breaths, and then gently lower your chest back to the mat."
-    ]
-  },
-  {
-    "id": 7,
-    "name": "Bridge Pose",
-    "cues": [
-      "Begin lying on your back with your knees bent and feet flat on the floor, hip-width apart, and your arms by your sides.",
-      "On an inhale, press your feet into the mat and lift your hips towards the ceiling, creating a straight line from your knees to your shoulders.",
-      "Exhale and engage your glutes and core to lift your pelvis higher, ensuring your knees are aligned with your hips and not splaying outward.",
-      "Inhale and lengthen your spine, lifting your chest slightly towards your chin, and press your arms into the floor for added stability.",
-      "Exhale and relax your face, jaw, and neck, avoiding any tension in your upper body.",
-      "Continue to breathe deeply and steadily in and out through your nose, holding the pose for 5 to 10 breaths before lowering your hips back to the mat."
-    ]
-  },
-  {
-    "id": 8,
-    "name": "Triangle Pose",
-    "cues": [
-      "Start standing with your feet about 3 to 4 feet apart, arms extended out to the sides.",
-      "On an inhale, lengthen your spine and reach both arms wide.",
-      "Exhale and extend your torso over your right leg, bringing your right hand toward your shin, ankle, or a block. Keep your left arm reaching toward the ceiling, with your gaze toward your left hand.",
-      "Inhale and keep your chest open, creating a long line from your left hand to your right foot.",
-      "Exhale and engage your legs, rooting down into your feet to deepen the stretch and keep your balance.",
-      "Breathe deeply in and out through your nose, holding the pose for 5 to 10 breaths before switching sides."
-    ]
-  },
-  {
-    "id": 9,
-    "name": "Seated Forward Bend",
-    "cues": [
-      "Begin seated with your legs extended straight in front of you and your feet flexed.",
-      "Inhale and lengthen your spine, reaching through the crown of your head.",
-      "As you exhale, slowly hinge forward from your hips, keeping your spine long and your chest open.",
-      "Inhale and elongate your spine further, drawing your torso toward your thighs.",
-      "Exhale and gently fold deeper, reaching for your feet or shins, while relaxing your neck and jaw.",
-      "Breathe deeply and steadily in and out through your nose, staying in the pose for 5 to 10 breaths."
-    ]
-  },
-  {
-    "id": 10,
     "name": "Mountain Pose",
     "cues": [
       "Stand tall with your feet together and arms at your sides. Ground down through your feet, feeling the connection to the earth.",
@@ -121,127 +12,1088 @@
     ]
   },
   {
-    "id": 11,
-    "name": "Chair Pose",
+    "id": 2,
+    "name": "Downward-Facing Dog",
     "cues": [
-      "Start standing in Mountain Pose with your feet together and arms at your sides.",
-      "On an inhale, reach your arms overhead, palms facing each other or arms parallel.",
-      "As you exhale, bend your knees and lower your hips as if sitting back into an imaginary chair, keeping your knees aligned with your ankles.",
-      "Inhale and draw your belly button in, engaging your core to support your spine.",
-      "Exhale and relax your shoulders, avoiding tension in your neck.",
-      "Inhale and lengthen your spine, lifting through the crown of your head.",
-      "Exhale and ensure your weight is balanced in your heels, not your toes.",
-      "Breathe deeply and steadily, keeping your chest open and your knees from collapsing inward. Hold the pose for 5 to 10 breaths before standing up."
+      "Start in a tabletop position with your hands directly under your shoulders and your knees under your hips.",
+      "Tuck your toes and lift your hips up and back, aiming to form an inverted V shape with your body.",
+      "Press firmly into your hands, spreading your fingers wide, and push your chest towards your thighs.",
+      "Engage your core and straighten your legs, keeping a slight bend in the knees if needed to protect your lower back.",
+      "Relax your head between your arms, aligning your ears with your upper arms, and keep a slight gaze towards your feet.",
+      "Breathe deeply and evenly, holding for 5 to 10 breaths, grounding your heels towards the floor."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Plank Pose",
+    "cues": [
+      "Start in a high push-up position with your wrists directly under your shoulders and your body in a straight line from head to heels.",
+      "Engage your core and squeeze your glutes to prevent your hips from sagging.",
+      "Spread your fingers wide and press firmly into the floor, activating your arms.",
+      "Keep your neck in a neutral position, gazing slightly ahead of you to avoid straining the neck.",
+      "Hold the pose, breathing deeply, and focus on maintaining a strong, straight line from head to heels."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Four-Limbed Staff Pose",
+    "cues": [
+      "Start in plank pose, ensuring your wrists are directly under your shoulders and your body is in a straight line.",
+      "Lower your body slowly towards the ground, keeping your elbows close to your ribs and your body in a straight line.",
+      "Keep your core engaged and avoid letting your belly drop towards the floor.",
+      "As you lower down, keep your shoulders over your wrists and maintain strong legs and feet.",
+      "Exhale as you lower, and inhale as you prepare to transition to the next pose."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Upward-Facing Dog",
+    "cues": [
+      "Start by lying on your belly, hands placed under your shoulders, and elbows bent at a 90-degree angle.",
+      "Inhale and press your palms into the floor as you straighten your arms and lift your chest off the ground.",
+      "Roll your shoulders back, opening up your chest and engaging your core for stability.",
+      "Press the tops of your feet into the floor while keeping your thighs lifted and your legs active.",
+      "Look slightly upward, keeping your neck long and your gaze relaxed."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Child's Pose",
+    "cues": [
+      "Start by kneeling on the mat with your big toes touching and knees wide apart.",
+      "Sit back onto your heels, lengthening your spine as you reach your arms forward on the mat.",
+      "Lower your forehead to the floor, keeping your neck relaxed.",
+      "Breathe deeply and allow your body to sink into the floor with each exhale, releasing any tension in your back and hips.",
+      "Stay here for several breaths, allowing your body to rest and rejuvenate."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Warrior I",
+    "cues": [
+      "Start in a standing position with your feet wide apart, feet parallel to the mat.",
+      "Step one foot back, bending the front knee to 90 degrees while keeping your back leg straight.",
+      "Align your hips and shoulders square to the front, reaching your arms overhead with palms facing each other.",
+      "Engage your core and press into the front foot, rooting down through the back heel.",
+      "Breathe deeply, focusing on lengthening the spine and opening the chest."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Warrior II",
+    "cues": [
+      "From Warrior I, open your hips and shoulders to face the side, bringing your arms parallel to the floor with palms facing down.",
+      "Bend your front knee to 90 degrees, ensuring that the knee is stacked over the ankle.",
+      "Press into the outer edge of your back foot while keeping your back leg straight and strong.",
+      "Engage your core and maintain a long, straight spine, reaching through your fingers.",
+      "Gaze over your front hand, breathing deeply and focusing on strength and stability."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Warrior III",
+    "cues": [
+      "Start from Warrior I and shift your weight onto your front foot.",
+      "Begin to lift your back leg off the floor, keeping it straight and strong, while bringing your torso forward.",
+      "Reach your arms forward, creating a straight line from your fingertips to your lifted heel.",
+      "Engage your core to keep your hips square and your torso aligned with your lifted leg.",
+      "Focus on balance, breathing deeply, and holding the pose with control for several breaths."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Extended Side Angle",
+    "cues": [
+      "From Warrior II, reach your front arm forward, then lower it to the floor or a block beside your front foot.",
+      "Extend your top arm overhead, creating a straight line from your back heel to your fingertips.",
+      "Ensure that your front knee is bent at 90 degrees and your back leg is straight and strong.",
+      "Open your chest toward the ceiling, keeping your torso long and your gaze upward or forward.",
+      "Breathe deeply, maintaining length in the spine and opening through the side body."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Reverse Warrior",
+    "cues": [
+      "From Warrior II, flip your front palm to face up and reach your arm overhead.",
+      "Lean back, bringing your front arm along your ear, and keeping your back leg strong and straight.",
+      "Maintain a deep bend in your front knee, but avoid overextending your lower back.",
+      "Reach through the fingers and create a stretch along the entire side body.",
+      "Keep your chest open and breathe deeply as you feel the stretch in the hips, legs, and arms."
     ]
   },
   {
     "id": 12,
-    "name": "Camel Pose",
+    "name": "Triangle Pose",
     "cues": [
-      "Begin in a kneeling position with your knees hip-width apart and your thighs parallel to each other.",
-      "On an inhale, press your hips forward and lift your chest toward the ceiling, gently arching your back.",
-      "As you exhale, reach your hands back to your heels or place them on your lower back for support, depending on flexibility.",
-      "Inhale and lengthen your spine, keeping your pelvis tucked slightly forward for stability.",
-      "Exhale and soften your shoulders away from your ears, deepening the backbend without straining your lower back.",
-      "Breathe steadily and deeply in and out through your nose, holding the pose for 5 to 10 breaths.",
-      "To exit, slowly come back up by engaging your core and lifting your torso up while keeping your hands on your lower back for support."
+      "Start with your feet wide apart, and angle your feet so that your front foot faces forward and your back foot is at a 45-degree angle.",
+      "Reach your arms wide, then tilt your torso over your front leg, keeping your spine long.",
+      "Place your hand on your shin, ankle, or a block, and extend your top arm toward the ceiling, creating a straight line with your arms.",
+      "Engage your legs and core, ensuring that both legs are straight and strong.",
+      "Look up toward your top hand, or gaze forward if that feels more comfortable, and breathe deeply."
     ]
   },
   {
     "id": 13,
-    "name": "Boat Pose",
+    "name": "Half Moon Pose",
     "cues": [
-      "Begin seated with your knees bent and feet flat on the mat, hip-width apart.",
-      "On an inhale, lift your feet off the mat, bringing your shins parallel to the floor.",
-      "Exhale and lean back slightly, keeping your spine straight. Engage your core, lifting your chest toward your thighs.",
-      "Inhale and straighten your legs if possible, keeping them parallel to the floor. Reach your arms forward, parallel to the ground.",
-      "Exhale and keep your core engaged, ensuring your back is not rounded and your chest remains open.",
-      "Breathe deeply in and out through your nose, holding the pose for 5 to 10 breaths. To challenge yourself, you can extend your arms overhead or try straightening both legs."
+      "From Warrior II, shift your weight onto your front leg, then lift your back leg parallel to the floor.",
+      "Place your hand on the floor or a block beneath your shoulder, and extend your top arm toward the ceiling.",
+      "Engage your core to keep your torso open and your body in a straight line.",
+      "Keep your back leg straight and active, reaching your foot towards the ceiling.",
+      "Focus on balance and lengthening your spine, holding the pose with control and steady breath."
     ]
   },
   {
     "id": 14,
-    "name": "Plank Pose",
+    "name": "Chair Pose",
     "cues": [
-      "Start in a push-up position with your hands directly under your shoulders and your feet hip-width apart.",
-      "On an inhale, engage your core and lift your body into a straight line from head to heels.",
-      "Exhale and press your heels toward the back of the room, keeping your legs straight and your thighs engaged.",
-      "Inhale and make sure your shoulders are away from your ears, with your elbows slightly bent to avoid locking them.",
-      "Exhale and draw your navel towards your spine, keeping your core engaged to prevent your lower back from sinking.",
-      "Breathe steadily in and out through your nose, holding the pose for 5 to 10 breaths, ensuring your body stays in one straight line without sagging in the middle."
+      "Stand with your feet together or hip-width apart and bend your knees deeply as if sitting into a chair.",
+      "Keep your weight in your heels, and ensure that your knees are behind your toes.",
+      "Reach your arms straight up overhead, keeping them engaged and shoulders relaxed.",
+      "Tuck your tailbone slightly and engage your core to support your lower back.",
+      "Hold the pose, keeping your chest lifted and breathing deeply, sinking deeper into the chair with each exhale."
     ]
   },
   {
     "id": 15,
-    "name": "Bow Pose",
+    "name": "Goddess Pose",
     "cues": [
-      "Begin lying on your stomach with your arms by your sides and your legs extended.",
-      "On an inhale, bend your knees and reach your arms back to grasp your ankles, or place your hands on the tops of your feet.",
-      "Exhale and gently lift your chest and legs off the ground, using your arms to pull your feet towards your body.",
-      "Inhale and press your feet into your hands to lift your chest higher, creating a deep backbend.",
-      "Exhale and engage your legs, keeping them active and reaching your chest further forward without collapsing your lower back.",
-      "Breathe deeply and steadily in and out through your nose, holding the pose for 5 to 10 breaths before gently releasing back to the mat."
+      "Start by stepping your feet wide apart, with your toes turned out at a 45-degree angle.",
+      "Bend your knees deeply, keeping them aligned over your toes, and lower your hips down towards the floor.",
+      "Reach your arms out to the sides at shoulder height, palms facing down, and bend your elbows to 90 degrees.",
+      "Engage your core and maintain a strong, steady breath as you hold the pose.",
+      "Press into your feet and focus on the strength and energy flowing through your legs and arms."
     ]
   },
   {
     "id": 16,
-    "name": "Crow Pose",
+    "name": "High Lunge",
     "cues": [
-      "Start in a squat position with your feet slightly apart and your hands on the mat in front of you.",
-      "On an inhale, bend your elbows slightly and lift your hips toward the ceiling, bringing your knees towards your upper arms.",
-      "Exhale and carefully shift your weight forward, lifting one foot off the ground, then the other, finding your balance.",
-      "Inhale and engage your core to maintain stability while keeping your gaze forward and your body steady.",
-      "Exhale and keep your arms strong, supporting the weight of your body with your hands.",
-      "Breathe deeply in and out through your nose, holding the pose for 3 to 5 breaths before gently lowering back down."
+      "Start in a standing position and step one foot back, bending your front knee to 90 degrees while keeping your back leg straight.",
+      "Lift your arms overhead, keeping your shoulders relaxed and chest open.",
+      "Press into your front foot and lift your back leg, ensuring your hips stay square to the front.",
+      "Engage your core and lengthen your spine as you settle deeper into the lunge.",
+      "Breathe deeply, maintaining balance and stability through the hips and legs."
     ]
   },
   {
     "id": 17,
-    "name": "Happy Baby",
+    "name": "Low Lunge",
     "cues": [
-      "Begin lying on your back with your knees bent and your feet flat on the mat.",
-      "On an inhale, bring your knees toward your chest and grab the outsides of your feet with your hands.",
-      "Exhale and gently pull your knees toward the floor, keeping your ankles directly over your knees.",
-      "Inhale and keep your feet flexed while pressing your lower back into the mat for added stretch.",
-      "Exhale and relax your head, neck, and shoulders, ensuring they stay grounded on the mat.",
-      "Breathe deeply and steadily in and out through your nose, holding the pose for 5 to 10 breaths, gently rocking from side to side if desired."
+      "Start in a standing position, step one foot back, and bend your front knee to 90 degrees.",
+      "Lower your back knee to the floor, keeping your hips square and shoulders relaxed.",
+      "Reach your arms overhead, palms facing each other, and engage your core for stability.",
+      "Press into your front foot and gently press your hips forward to deepen the stretch in the hip flexors.",
+      "Breathe deeply, and hold the pose, keeping your chest lifted and your gaze forward."
     ]
   },
   {
     "id": 18,
-    "name": "Butterfly Pose",
+    "name": "Pyramid Pose",
     "cues": [
-      "Begin seated with your legs extended straight in front of you.",
-      "On an inhale, bend your knees and bring the soles of your feet together, letting your knees fall open to the sides.",
-      "Exhale and gently lower your torso towards your feet, keeping your spine long and your chest open.",
-      "Inhale and lengthen your spine, drawing your torso closer to your feet.",
-      "Exhale and relax into the stretch, allowing your knees to soften toward the floor.",
-      "Breathe deeply and steadily in and out through your nose, holding the pose for 5 to 10 breaths, letting the hips and groin release tension."
+      "Start by standing with your feet wide apart, turning one foot out and keeping the other foot slightly turned in.",
+      "Square your hips towards your front foot and begin to hinge from your hips, reaching your torso forward.",
+      "Place your hands on your front shin, ankle, or a block, and extend your spine long.",
+      "Keep your back leg straight and strong, with your hips grounded and shoulders relaxed.",
+      "Hold the pose and focus on lengthening the spine and stretching the hamstrings while breathing deeply."
     ]
   },
   {
     "id": 19,
-    "name": "Headstand",
+    "name": "Wide-Legged Forward Fold",
     "cues": [
-      "Begin on your hands and knees, then interlace your fingers and place your forearms on the mat, creating a tripod shape with your head and hands.",
-      "On an inhale, place the crown of your head gently on the mat and lift your knees off the floor, walking your feet closer to your body.",
-      "Exhale and slowly begin to raise your legs, keeping your core engaged for support.",
-      "Inhale and lift your legs into the air, stacking your hips over your shoulders. Engage your legs and keep them straight.",
-      "Exhale and ensure your body is stable, maintaining a straight line from head to feet.",
-      "Breathe deeply and steadily in and out through your nose, holding the pose for 3 to 5 breaths, then carefully lower your legs back down."
+      "Start with your feet wide apart, with your toes turned in slightly and your heels facing out.",
+      "Hinge from your hips, keeping your spine long, and fold forward towards the floor.",
+      "Place your hands on the floor or grab your ankles, and relax your neck, letting your head hang heavy.",
+      "Press your feet into the floor, keeping your legs straight but not locked, and engage your thighs.",
+      "Breathe deeply and hold the pose, allowing your upper body to release tension with each exhale."
     ]
   },
   {
     "id": 20,
-    "name": "Reclined Twist",
+    "name": "Standing Split",
     "cues": [
-      "Begin lying on your back with your knees bent and your feet flat on the floor, hip-width apart.",
-      "On an inhale, reach your arms out to the sides in a T-shape, palms facing down.",
-      "Exhale and slowly lower your knees to one side, keeping both shoulders on the floor.",
-      "Inhale and lengthen your spine, while gently twisting through your torso.",
-      "Exhale and deepen the twist, keeping your gaze towards the opposite hand or up toward the ceiling.",
-      "Breathe deeply and steadily in and out through your nose, holding the pose for 5 to 10 breaths before switching sides."
+      "Start from a standing position, then shift your weight onto one foot.",
+      "Lift your other leg straight up behind you, keeping your hips square and your spine long.",
+      "Place your hands on the floor or on a block for support, and focus on engaging your standing leg.",
+      "Lengthen your spine and keep your gaze down or forward, balancing on your standing leg.",
+      "Hold the pose, breathing deeply, and keep your lifted leg as straight as possible."
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Tree Pose",
+    "cues": [
+      "Start by standing tall with your feet together, grounding down through your standing leg.",
+      "Shift your weight onto one leg, and bring the sole of your opposite foot to the inner thigh or calf (avoiding the knee).",
+      "Press your foot into your leg, and engage your standing leg to create stability.",
+      "Bring your hands together in front of your heart, or extend your arms overhead, palms facing each other.",
+      "Focus on a point in front of you to maintain balance, and breathe deeply to steady yourself."
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Dancer's Pose",
+    "cues": [
+      "Start by standing tall with your feet together, and shift your weight onto one leg.",
+      "Reach back with one hand to grab the inside of your opposite foot or ankle.",
+      "Lift your back leg behind you while extending your opposite arm forward, keeping your chest lifted.",
+      "Engage your core to keep your torso upright and avoid arching your lower back.",
+      "Focus on finding balance and holding the pose while keeping a deep, steady breath."
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Eagle Pose",
+    "cues": [
+      "Start by standing tall with your feet together.",
+      "Cross your right leg over your left leg and bend both knees slightly, as if sitting into a chair.",
+      "Wrap your left arm under your right arm, bringing your palms to touch, or holding opposite shoulders.",
+      "Engage your core to keep your torso upright and focus on balance.",
+      "Hold the pose, breathing deeply, and maintain focus on lengthening your spine and deepening your twist."
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Crow Pose",
+    "cues": [
+      "Start in a squatting position with your feet hip-width apart and your hands placed firmly on the floor.",
+      "Bend your elbows slightly and bring your knees to the backs of your upper arms.",
+      "Shift your weight forward, lifting your feet off the ground and balancing on your hands.",
+      "Engage your core to maintain control and keep your gaze forward or slightly down.",
+      "Focus on keeping your arms strong and your body aligned as you breathe deeply in the pose."
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Side Crow",
+    "cues": [
+      "Start in a squatting position, with your feet hip-width apart and your knees bent.",
+      "Place one hand on the floor and bring the other hand under your knee or thigh.",
+      "Engage your core and slowly lift your legs off the floor, rotating your body to the side.",
+      "Balance on your hands, keeping your gaze focused and body engaged.",
+      "Hold the pose, breathing deeply, and maintain a strong and steady core throughout."
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Headstand",
+    "cues": [
+      "Begin by placing your forearms on the floor with your hands interlaced, creating a stable base.",
+      "Place the crown of your head on the floor between your hands and gently lift your hips up.",
+      "Engage your core and slowly begin to lift your feet off the floor, bringing your legs straight up.",
+      "Keep your body aligned, with your legs active and your core engaged for stability.",
+      "Hold the pose, breathing deeply, and maintain focus as you find balance."
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Forearm Stand",
+    "cues": [
+      "Start on your forearms, with your elbows directly under your shoulders and your hands clasped together.",
+      "Tuck your toes and lift your hips, keeping your legs straight and your core engaged.",
+      "Slowly begin to walk your feet closer to your elbows, then lift your legs overhead one at a time.",
+      "Press into your forearms and maintain a straight body line, engaging your core for balance.",
+      "Hold the pose, breathing deeply, and focus on keeping your body aligned and steady."
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Handstand",
+    "cues": [
+      "Start in a standing position, then place your hands on the floor about shoulder-width apart.",
+      "Kick up with one leg, using momentum to lift both legs toward the ceiling.",
+      "Engage your core and legs to keep your body straight and aligned.",
+      "Press actively into your hands, keeping your arms strong and your gaze focused slightly between your hands.",
+      "Hold the pose, breathing deeply, and focus on maintaining balance and stability."
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Shoulder Stand",
+    "cues": [
+      "Begin by lying on your back with your legs extended and arms by your sides.",
+      "Press your arms into the floor and lift your legs and hips toward the ceiling.",
+      "Support your lower back with your hands, keeping your elbows shoulder-width apart.",
+      "Keep your neck relaxed, but avoid any pressure on the neck by engaging your core and legs.",
+      "Hold the pose, breathing deeply, and maintain a straight body line from your shoulders to your feet."
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Fish Pose",
+    "cues": [
+      "Begin seated on the floor with your legs extended in front of you.",
+      "Lift your chest and gently arch your back, placing your forearms on the floor and leaning back.",
+      "Press your elbows into the ground, lifting your chest higher, and slowly drop the crown of your head to the floor.",
+      "Keep your legs active and your feet flexed, with your arms relaxed by your sides or extended overhead.",
+      "Hold the pose, breathing deeply, and feel the stretch across your chest and throat."
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Camel Pose",
+    "cues": [
+      "Begin by kneeling on the floor with your knees hip-width apart.",
+      "Place your hands on your lower back for support, and gently arch your spine as you lean back.",
+      "Reach for your heels with your hands, if possible, while lifting your chest toward the ceiling.",
+      "Press your hips forward and engage your core to protect your lower back.",
+      "Hold the pose, breathing deeply, and focus on the expansion of your chest and the stretch along the front of your body."
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Bridge Pose",
+    "cues": [
+      "Lie on your back with your knees bent and feet flat on the floor, hip-width apart.",
+      "Press into your feet and lift your hips towards the ceiling, keeping your shoulders and head on the ground.",
+      "Interlace your hands under your back and press your arms into the floor for additional lift.",
+      "Engage your core, squeeze your glutes, and press your feet down to help elevate your hips.",
+      "Hold the pose, breathing deeply, and maintain the lift while keeping your neck relaxed."
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Wheel Pose",
+    "cues": [
+      "Lie on your back with your knees bent and feet flat on the floor, hip-width apart.",
+      "Place your hands behind your head, fingers pointing toward your shoulders, and press into your hands and feet.",
+      "Lift your hips, then press your hands into the floor to push your chest upward into the backbend.",
+      "Keep your legs and arms engaged, with your gaze either forward or slightly up.",
+      "Hold the pose, breathing deeply, and focus on expanding your chest and maintaining an open heart."
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Reclining Bound Angle",
+    "cues": [
+      "Lie on your back and bring the soles of your feet together, letting your knees fall open to the sides.",
+      "Place your arms by your sides or on your belly, keeping your chest open and shoulders relaxed.",
+      "Focus on relaxing your hips, breathing deeply, and allowing your body to sink into the ground.",
+      "Feel the stretch in your inner thighs and groin, while keeping your spine neutral and supported.",
+      "Hold the pose, breathing deeply, and focus on releasing tension in your lower body."
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Legs Up the Wall",
+    "cues": [
+      "Sit with one hip next to a wall, then gently lie down on your back and swing your legs up the wall.",
+      "Keep your hips close to the wall and your legs extended straight up.",
+      "Place your arms at your sides or rest them on your belly, and focus on relaxing your body and mind.",
+      "Breathe deeply, allowing your legs to feel supported by the wall, and let any tension release from your lower back.",
+      "Hold the pose for several minutes, allowing the restorative effects to calm your nervous system."
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Boat Pose",
+    "cues": [
+      "Start seated with your knees bent and feet flat on the floor.",
+      "Lean back slightly, then lift your legs into a V-shape, keeping your knees bent or straight.",
+      "Extend your arms forward parallel to the floor, keeping your back straight and core engaged.",
+      "Hold the pose, focusing on engaging your abdominal muscles and maintaining balance.",
+      "Breathe deeply and try to lift your chest higher, deepening the stretch in your core."
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Seated Forward Fold",
+    "cues": [
+      "Sit with your legs extended straight in front of you and your feet flexed.",
+      "Inhale and lengthen your spine, and as you exhale, hinge from your hips to fold forward.",
+      "Keep your back straight, reaching for your feet, ankles, or shins, and relax your neck.",
+      "Engage your thighs to protect your knees and focus on lengthening your spine rather than forcing the fold.",
+      "Breathe deeply and hold the pose, allowing the stretch to deepen as you relax into the pose."
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Bound Angle",
+    "cues": [
+      "Sit with your feet together and your knees bent, bringing your heels toward your pelvis.",
+      "Hold onto your feet with your hands, and gently press your knees toward the floor.",
+      "Lengthen your spine and sit tall, keeping your chest open and your shoulders relaxed.",
+      "Focus on the stretch in your inner thighs and hips, breathing deeply and maintaining a comfortable position.",
+      "Hold the pose, letting your knees relax toward the floor with each exhale."
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Happy Baby Pose",
+    "cues": [
+      "Lie on your back and bring your knees toward your chest.",
+      "Grab the outsides of your feet with your hands and gently open your knees wider than your torso.",
+      "Press your feet into your hands while pulling your hands into your feet, creating a gentle resistance.",
+      "Relax your shoulders and neck, and focus on breathing deeply, allowing the stretch to deepen in your hips.",
+      "Hold the pose, relaxing into the stretch with each exhale."
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Corpse Pose",
+    "cues": [
+      "Lie flat on your back with your legs extended and arms by your sides, palms facing up.",
+      "Close your eyes and focus on relaxing each part of your body from your feet up to your head.",
+      "Let your breathing become slow and deep, and allow your body to surrender completely to the floor.",
+      "Release any tension in your body and let go of all thoughts, focusing purely on your breath.",
+      "Hold the pose for several minutes, allowing your body to fully relax and integrate your practice."
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Cobra Pose",
+    "cues": [
+      "Lie on your stomach with your hands under your shoulders and elbows close to your body.",
+      "Press your pubic bone into the floor and engage your legs, lifting your chest off the ground.",
+      "Inhale as you lift your upper body, extending your arms, but keep your elbows slightly bent.",
+      "Open your chest and broaden your collarbones, and avoid over-arching your back by engaging your lower body.",
+      "Hold the pose, breathing deeply, and lengthen your spine with each inhale."
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Locust Pose",
+    "cues": [
+      "Lie on your stomach with your arms extended alongside your body, palms facing down.",
+      "On an inhale, lift your chest, legs, and arms off the floor, engaging your back muscles.",
+      "Keep your legs straight and together, and avoid clenching your glutes while maintaining length in your spine.",
+      "Focus on lifting from the chest and legs, opening the heart while keeping the neck long.",
+      "Hold the pose, breathing deeply, and engage the back of the body to maintain stability."
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Bow Pose",
+    "cues": [
+      "Lie on your stomach with your arms extended by your sides and bend your knees to bring your heels toward your hips.",
+      "Reach your hands back to grasp your ankles, and on an inhale, lift your chest and legs off the floor.",
+      "Press your feet into your hands and continue to lift your chest, deepening the backbend while keeping your hips grounded.",
+      "Maintain an active core to support your lower back, and keep your neck neutral by looking forward or slightly up.",
+      "Hold the pose, breathing deeply, and focus on lifting and expanding your heart."
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Puppy Pose",
+    "cues": [
+      "Start on your hands and knees, with your hips above your knees and your hands slightly forward.",
+      "On an inhale, slowly lower your chest and chin toward the floor while keeping your hips lifted.",
+      "Keep your arms extended forward, with your palms pressing down into the floor and fingers spread wide.",
+      "Focus on elongating your spine, lengthening your chest, and relaxing your neck.",
+      "Hold the pose, breathing deeply, and focus on the gentle stretch in your shoulders and upper back."
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Cat-Cow Pose",
+    "cues": [
+      "Begin in a tabletop position with your wrists directly under your shoulders and knees under your hips.",
+      "On an inhale, drop your belly toward the floor and lift your head and tailbone toward the ceiling (Cow Pose).",
+      "On an exhale, round your back, tucking your chin to your chest, and draw your belly button toward your spine (Cat Pose).",
+      "Move smoothly between the two poses with your breath, maintaining a fluid motion of your spine.",
+      "Focus on the connection between breath and movement, feeling each vertebrae articulate."
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Thread the Needle",
+    "cues": [
+      "Start in a tabletop position with your wrists directly under your shoulders and knees under your hips.",
+      "On an inhale, lift your right arm toward the ceiling, opening your chest.",
+      "On an exhale, thread your right arm underneath your left arm, bringing your right shoulder and ear to the floor.",
+      "Keep your left hand pressing into the floor for support, or extend your left arm overhead for a deeper stretch.",
+      "Hold the pose, breathing deeply, and allow your right shoulder and upper back to release into the stretch."
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Fire Log Pose",
+    "cues": [
+      "Sit on the floor with your legs extended in front of you.",
+      "Bend your knees and stack your right shin on top of your left, with your feet flexed and knees in line with your hips.",
+      "Ensure your spine is straight, and hinge forward from your hips for a deeper stretch in your hips and glutes.",
+      "Place your hands on the floor for support or extend them forward for a deeper fold.",
+      "Hold the pose, breathing deeply, and focus on relaxing your hips and lower back."
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Pigeon Pose",
+    "cues": [
+      "Begin in a tabletop position, bringing your right knee forward and placing it behind your right wrist.",
+      "Extend your left leg straight behind you, lowering your hips toward the floor.",
+      "Ensure your back leg is extended straight and the top of your foot is facing down.",
+      "Fold forward over your bent leg, keeping your spine long and chest open.",
+      "Hold the pose, breathing deeply, and focus on releasing tension in your hips."
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Double Pigeon",
+    "cues": [
+      "Sit with your legs extended straight in front of you, then bend your knees and stack your shins on top of each other.",
+      "Align your knees with each other, and flex your feet to protect your knees.",
+      "Sit tall, lengthening your spine, and if it feels comfortable, hinge forward from your hips to deepen the stretch.",
+      "Keep your chest open and your neck relaxed, and avoid rounding your back.",
+      "Hold the pose, breathing deeply, and focus on the stretch in your hips and thighs."
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Supine Twist",
+    "cues": [
+      "Lie on your back and draw your knees toward your chest.",
+      "Extend your arms out to the sides, and on an exhale, drop your knees to one side, keeping your shoulders grounded.",
+      "Turn your head in the opposite direction to deepen the twist and stretch your spine.",
+      "Keep your legs stacked and your knees bent, allowing your spine to gently twist.",
+      "Hold the pose, breathing deeply, and feel the release in your back and shoulders."
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Half Lord of the Fishes",
+    "cues": [
+      "Sit with your legs extended in front of you, then bend your right knee and cross it over your left leg.",
+      "Place your right foot flat on the floor next to your left knee, and inhale to lengthen your spine.",
+      "On an exhale, twist your torso to the right, using your left elbow to press against your right knee.",
+      "Keep your hips grounded and shoulders relaxed, deepening the twist with each exhale.",
+      "Hold the pose, breathing deeply, and focus on the stretch through your spine and chest."
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Side Plank",
+    "cues": [
+      "Begin in a plank position, then shift your weight onto your left hand and the edge of your left foot.",
+      "Stack your right foot on top of your left, or place it in front of your left foot for stability.",
+      "Lift your right arm toward the ceiling and engage your core and legs to maintain balance.",
+      "Keep your body in a straight line from head to heels, avoiding sagging in the hips.",
+      "Hold the pose, breathing deeply, and feel the engagement in your core and shoulders."
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Wild Thing",
+    "cues": [
+      "Begin in Downward-Facing Dog, then shift your weight forward into a backbend position.",
+      "Lift your right leg, bending your knee, and open your chest as you rotate your body to face the ceiling.",
+      "Place your right foot on the floor behind you, and reach your left arm overhead, creating a heart-opening shape.",
+      "Engage your core and glutes to maintain balance, and avoid over-arching your back.",
+      "Hold the pose, breathing deeply, and feel the openness in your chest and shoulders."
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Tiger Pose",
+    "cues": [
+      "Start in a tabletop position, then extend your right arm forward and left leg back.",
+      "On an inhale, bend your left knee and bring your heel toward your glutes while reaching for your foot with your left hand.",
+      "Draw your knee and elbow toward each other, rounding your spine slightly.",
+      "On an exhale, extend your arm and leg back out, keeping your spine long.",
+      "Repeat the movement with breath, focusing on lengthening and contracting with each inhale and exhale."
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Gate Pose",
+    "cues": [
+      "Start seated with your legs extended wide apart.",
+      "Turn your right foot to point toward the front of the mat and bend your right knee, keeping your left leg extended.",
+      "Inhale and reach your left arm toward the left foot, and on an exhale, extend your torso over your left leg.",
+      "Keep your chest open and your right leg active, avoiding any rounding in your back.",
+      "Hold the pose, breathing deeply, and feel the stretch along the side of your body."
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Frog Pose",
+    "cues": [
+      "Start in a tabletop position and widen your knees as far as is comfortable, keeping your feet pointing outwards.",
+      "Lower your hips toward the floor, keeping your shoulders stacked over your wrists.",
+      "Engage your inner thighs and press your hips down, opening your hips and groin.",
+      "Keep your spine neutral and avoid collapsing your chest.",
+      "Hold the pose, breathing deeply, and focus on relaxing your hips and groin."
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Lizard Pose",
+    "cues": [
+      "Begin in a tabletop position, then step your right foot forward between your hands.",
+      "Lower your hips toward the floor, and place your elbows on the floor for a deeper stretch in your hips.",
+      "Keep your back leg extended and your back foot active, pressing the top of your foot into the floor.",
+      "Hold the pose, breathing deeply, and focus on relaxing your hips while maintaining stability."
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Fallen Triangle",
+    "cues": [
+      "Start in a Downward-Facing Dog position.",
+      "Lift your right leg and rotate your torso to face the floor, bringing your right foot towards the ground in a modified triangle shape.",
+      "Extend your left arm toward the ceiling, opening your chest while keeping your body in a straight line.",
+      "Hold the pose, breathing deeply, and maintain openness in your chest and shoulders."
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Bird of Paradise",
+    "cues": [
+      "Start in a standing position and bring your right knee toward your chest.",
+      "Place your left hand on the floor or a block, and extend your right leg out to the side.",
+      "On an inhale, begin to straighten your right leg while reaching your right arm forward and up, keeping your chest open.",
+      "Balance in the pose, breathing deeply, and focus on engaging your core and leg muscles."
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Extended Hand-to-Big-Toe Pose",
+    "cues": [
+      "Start standing with your legs extended and feet hip-width apart.",
+      "Shift your weight onto your left leg, and extend your right leg forward, holding your right big toe with your right hand.",
+      "Lengthen your spine and keep your left knee straight, lifting your chest as you hinge forward from the hips.",
+      "Focus on keeping your right leg straight and your body in alignment.",
+      "Hold the pose, breathing deeply, and feel the stretch in your hamstring and calf."
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Standing Forward Fold",
+    "cues": [
+      "Stand with your feet hip-width apart and hinge at your hips to fold forward.",
+      "Keep a slight bend in your knees to protect your lower back, and let your head hang heavy.",
+      "You can hold onto opposite elbows or let your hands rest on the floor or blocks.",
+      "Focus on lengthening your spine, reaching the crown of your head toward the floor.",
+      "Breathe deeply, allowing your upper body to release toward your legs with each exhale."
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Halfway Lift",
+    "cues": [
+      "From a forward fold, inhale and lift your torso halfway up, keeping your spine long.",
+      "Place your hands on your shins or thighs (avoiding the knees) and keep your back flat.",
+      "Lengthen your neck and draw your shoulder blades down your back.",
+      "Engage your core and legs to maintain balance, and keep your gaze forward.",
+      "Hold the pose for a breath or two, then fold forward again."
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Ragdoll Pose",
+    "cues": [
+      "From a standing position, bend your knees and fold forward, letting your torso hang toward your thighs.",
+      "Hold onto opposite elbows and allow your body to sway gently from side to side.",
+      "Relax your neck, letting your head hang heavy, and soften your face.",
+      "Breathe deeply and allow your spine to release, creating space in your back and neck."
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Eight-Angle Pose",
+    "cues": [
+      "Start seated with your legs extended and bend your knees, placing your feet flat on the floor.",
+      "Place your hands on the floor behind you, fingers pointing back, and engage your core.",
+      "Twist your torso to the right and place your left arm around your right shin.",
+      "Lift your feet off the ground and extend your legs out to the side, balancing on your hands.",
+      "Focus on engaging your core to maintain balance, and keep your spine long."
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Bound Side Angle",
+    "cues": [
+      "From Warrior II, bring your left hand behind your back and bind it around your right thigh or wrist.",
+      "Bend your right knee and lower your body into the side angle, with your left leg straight and grounded.",
+      "Open your chest, keeping your heart lifted, and gaze upward or forward.",
+      "Use the bind to deepen the stretch in your chest and shoulders, and engage your core for stability.",
+      "Hold the pose, breathing deeply, and maintain length in your spine."
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Bound Forward Fold",
+    "cues": [
+      "Start in a standing position with your feet hip-width apart.",
+      "Bend your knees and fold forward, reaching your hands behind your back and clasping your hands together.",
+      "If possible, press your palms together and let your arms extend overhead or toward the floor.",
+      "Keep your legs engaged, and let your torso release toward your legs.",
+      "Hold the pose, breathing deeply, and feel the stretch in your shoulders and hamstrings."
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Half Splits",
+    "cues": [
+      "Begin in a kneeling position and step your right foot forward, keeping your left knee on the ground.",
+      "Extend your right leg straight, flexing your right foot and lengthening your spine.",
+      "Fold forward over your right leg, keeping your back straight and your chest open.",
+      "Engage your core and keep your hips squared as you deepen the stretch in your hamstrings.",
+      "Hold the pose, breathing deeply, and focus on lengthening your spine."
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Full Splits",
+    "cues": [
+      "Start in a lunge position with your right leg forward and left leg extended behind you.",
+      "Gradually slide your right foot forward and your left foot back, lowering your hips toward the floor.",
+      "Keep your hips square and your torso lifted, maintaining a long spine.",
+      "Engage your core to protect your lower back, and keep your back leg active.",
+      "Hold the pose, breathing deeply, and focus on relaxing your hips and legs."
+    ]
+  },
+  {
+    "id": 69,
+    "name": "King Pigeon Pose",
+    "cues": [
+      "Begin in Pigeon Pose, with your right leg bent in front of you and your left leg extended behind you.",
+      "Bend your left knee and bring your left foot toward your glutes, holding your left ankle with your left hand.",
+      "Open your chest and keep your spine long as you reach your right arm overhead.",
+      "If comfortable, bring your right hand to your left foot and extend the stretch in your chest and shoulders.",
+      "Hold the pose, breathing deeply, and focus on releasing tension in your hips and upper body."
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Lotus Pose",
+    "cues": [
+      "Sit on the floor with your legs extended in front of you.",
+      "Bend your knees and place each foot on the opposite thigh, bringing your feet as close to your hips as possible.",
+      "Sit tall, lengthening your spine and keeping your chest open.",
+      "Relax your hands on your knees, palms facing up, and focus on steadying your breath.",
+      "Hold the pose, breathing deeply, and focus on cultivating stillness and inner peace."
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Lotus Forward Fold",
+    "cues": [
+      "Start in Lotus Pose with each foot placed on the opposite thigh.",
+      "Inhale to lengthen your spine, and on an exhale, fold forward, bringing your torso toward the floor.",
+      "Keep your spine long and your chest open as you deepen the fold.",
+      "Relax your neck and allow your head to hang heavy.",
+      "Hold the pose, breathing deeply, and feel the stretch in your hips and back."
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Cow Face Pose",
+    "cues": [
+      "Sit with your legs extended in front of you, then bend your knees and stack your right knee on top of your left.",
+      "Bring your feet as close to your hips as possible, keeping your knees stacked.",
+      "Extend your right arm overhead and bend your elbow, reaching your right hand down your back.",
+      "Bring your left arm behind you to clasp your right hand or use a strap between your hands.",
+      "Hold the pose, breathing deeply, and feel the stretch in your shoulders, hips, and thighs."
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Seated Spinal Twist",
+    "cues": [
+      "Sit with your legs extended in front of you, then bend your right knee and place your right foot outside your left thigh.",
+      "Place your left elbow outside your right knee and twist your torso to the right.",
+      "Inhale to lengthen your spine, and exhale to deepen the twist.",
+      "Keep your chest open and avoid collapsing your shoulders.",
+      "Hold the pose, breathing deeply, and focus on releasing tension in your spine."
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Hero Pose",
+    "cues": [
+      "Sit with your knees bent and feet together, with your thighs parallel and your shins resting on the floor.",
+      "If necessary, sit on a block or cushion to elevate your hips.",
+      "Sit tall, lengthening your spine and relaxing your shoulders down your back.",
+      "Focus on grounding your legs and maintaining a straight posture.",
+      "Hold the pose, breathing deeply, and feel a stretch in your thighs and hips."
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Revolved Triangle",
+    "cues": [
+      "Start in a standing position, and step your feet wide apart.",
+      "Turn your right foot forward and your left foot slightly in, keeping your legs straight.",
+      "Reach your right hand to the floor or a block, and extend your left arm toward the ceiling.",
+      "Twist your torso toward your right leg, keeping your hips square and your spine long.",
+      "Hold the pose, breathing deeply, and focus on lengthening your spine with each inhale."
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Revolved Side Angle",
+    "cues": [
+      "From Warrior II, bring your left hand to your right thigh and place your right arm overhead.",
+      "As you twist your torso to the right, keep your legs strong and your hips squared.",
+      "Open your chest to face the ceiling and extend through the fingertips.",
+      "Engage your core and maintain a steady, deep breath as you hold the twist.",
+      "Focus on lengthening your spine and deepening the twist with each exhale."
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Shoulder Pressing Pose",
+    "cues": [
+      "Start in a seated position, with your legs extended in front of you.",
+      "Bend your knees and place your feet flat on the floor.",
+      "Place your palms on the floor behind you, with your fingers pointing forward.",
+      "Press your hands into the floor and lift your hips toward the ceiling, engaging your core and legs.",
+      "Hold the pose, breathing deeply, and focus on engaging your shoulder muscles."
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Flying Pigeon Pose",
+    "cues": [
+      "Start in a standing position and bring your right knee toward your chest.",
+      "Place your right ankle on your left upper arm and extend your left leg behind you.",
+      "Hinge at your hips to fold forward and extend your arms forward.",
+      "Balance on your arms, keeping your core engaged and your gaze steady.",
+      "Hold the pose, breathing deeply, and focus on maintaining stability and control."
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Firefly Pose",
+    "cues": [
+      "Start in a seated position with your legs extended in front of you.",
+      "Bend your knees and bring your feet to the floor, keeping your feet wide apart.",
+      "Place your hands behind your legs, gripping the backs of your thighs or calves.",
+      "Straighten your legs and lift them off the floor, balancing on your hands.",
+      "Hold the pose, breathing deeply, and engage your core to maintain balance."
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Monkey Pose",
+    "cues": [
+      "Begin in a seated position with one leg extended forward and the other leg bent with your foot near your hip.",
+      "Straighten the extended leg and fold forward, reaching toward the toes.",
+      "Engage your core to keep your spine long as you deepen the stretch in your hamstrings.",
+      "Relax your neck and jaw, and breathe deeply as you hold the stretch."
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Ganda Bherundasana",
+    "cues": [
+      "Start in a kneeling position, then place your hands on the floor in front of you.",
+      "Lift your hips and bring your feet over your head, coming into a chin stand.",
+      "Press firmly through your forearms and chin to balance, keeping your legs straight and active.",
+      "Engage your core to support your body, and keep your gaze steady.",
+      "Breathe deeply, focusing on maintaining stability as you hold the pose."
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Scorpion Pose",
+    "cues": [
+      "Start in a forearm stand or a supported handstand position.",
+      "Bend your knees and bring your feet toward your head, creating a scorpion shape with your body.",
+      "Extend your legs as much as your flexibility allows, keeping your core engaged for stability.",
+      "Press firmly into the forearms and maintain a long spine, focusing on balance.",
+      "Hold the pose, breathing steadily and maintaining control."
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Half Moon Bound Pose",
+    "cues": [
+      "Start in a standing position with your feet hip-width apart.",
+      "Bend forward into a half moon pose, reaching one arm toward the floor while the other arm binds behind your back.",
+      "Twist your torso to open your chest, and engage your core to maintain balance.",
+      "Keep your legs active and your spine long as you deepen the stretch.",
+      "Hold the pose, breathing deeply, and focus on maintaining length through your torso."
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Hummingbird Pose",
+    "cues": [
+      "Start in a seated position with your legs extended in front of you.",
+      "Bend your knees and place your feet on the floor.",
+      "Place your hands behind your thighs and lean forward slightly.",
+      "Lift your feet off the ground, balancing on your hands while keeping your core engaged.",
+      "Focus on maintaining balance, and hold the pose with steady breaths."
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Peacock Pose",
+    "cues": [
+      "Begin by kneeling and placing your hands on the floor in front of you.",
+      "Bend your elbows and bring your knees to your upper arms, creating a balance between your arms and legs.",
+      "Press down through your hands and lift your feet off the floor, bringing your legs together.",
+      "Engage your core and keep your spine long as you hold the pose.",
+      "Focus on steadying your breath and maintaining balance."
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Compass Pose",
+    "cues": [
+      "Start seated with your legs extended in front of you.",
+      "Bend your right knee and bring your right foot toward your chest.",
+      "Hold your right foot with both hands, then extend your left leg straight.",
+      "Slowly rotate your torso to the right, extending your right leg to the side while keeping your spine long.",
+      "Keep your gaze focused forward, breathing deeply as you hold the pose."
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Sleeping Vishnu",
+    "cues": [
+      "Lie on your back with your arms by your sides and legs extended.",
+      "Bend your right knee and place your right foot on the floor next to your hip.",
+      "Cross your left leg over your right, with your left foot resting on the floor.",
+      "Extend your arms overhead or in a comfortable position and relax into the stretch.",
+      "Breathe deeply, allowing your body to release tension as you hold the pose."
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Dragonfly Pose",
+    "cues": [
+      "Start seated with your legs wide apart, feet flexed.",
+      "Slowly fold forward, reaching your arms toward the floor or your feet.",
+      "Engage your legs and keep your chest open as you lengthen your spine.",
+      "If possible, bring your head to the floor while maintaining a long back.",
+      "Breathe deeply, focusing on lengthening your spine and deepening the stretch."
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Grasshopper Pose",
+    "cues": [
+      "Begin in a seated position and bend your knees to bring your feet off the floor.",
+      "Place your hands on the floor and engage your core to lift your body into the air.",
+      "Extend your legs to the side, keeping them straight and active.",
+      "Focus on balancing on your hands, maintaining a steady gaze.",
+      "Hold the pose, breathing steadily and maintaining control."
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Baby Grasshopper",
+    "cues": [
+      "Start in a low squat, with your knees bent and feet flat on the floor.",
+      "Place your hands on the floor and press down through your palms.",
+      "Lift your hips and bring your knees toward your chest, balancing on your hands.",
+      "Extend your legs to the side, keeping them straight and engaged.",
+      "Focus on maintaining balance and breathing deeply."
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Caterpillar Pose",
+    "cues": [
+      "Sit with your legs extended in front of you, keeping your feet flexed.",
+      "Inhale to lengthen your spine, and exhale to fold forward over your legs.",
+      "Keep your arms extended toward your feet, and relax your neck and face.",
+      "Allow your chest to soften toward your thighs as you deepen the stretch.",
+      "Breathe deeply, allowing your body to release into the pose."
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Revolved Chair Pose",
+    "cues": [
+      "Begin in Chair Pose with your feet together and your knees bent.",
+      "Bring your palms together in front of your chest and twist your torso to the right.",
+      "Place your left elbow outside your right knee and engage your core.",
+      "Keep your chest open and your gaze forward or upward.",
+      "Hold the pose, breathing deeply, and focus on deepening the twist with each exhale."
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Side Stretch Pose",
+    "cues": [
+      "Start in a standing position with your feet hip-width apart.",
+      "Lift your arms overhead and interlace your fingers.",
+      "Lean to the right, stretching the left side of your body.",
+      "Keep your feet grounded and engage your core for stability.",
+      "Hold the stretch for a few breaths, then switch sides."
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Hero Pose with Recline",
+    "cues": [
+      "Begin in Hero Pose, sitting on your shins with your knees together.",
+      "Slowly lower your torso back onto the floor, supporting yourself with your hands.",
+      "Keep your thighs grounded and allow your body to rest as much as you can.",
+      "Relax your arms by your sides and allow your chest to open.",
+      "Breathe deeply, allowing your body to soften into the pose."
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Intense Side Stretch",
+    "cues": [
+      "Start in a standing position with your feet wide apart.",
+      "Extend your arms overhead and then lean to one side, reaching for your foot with your hand.",
+      "Keep your torso open and lengthen your spine as you stretch.",
+      "Engage your core to maintain balance and stability.",
+      "Breathe deeply, holding the stretch, then repeat on the other side."
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Revolved Crescent Lunge",
+    "cues": [
+      "Start in a low lunge with your right foot forward and your left knee on the floor.",
+      "Place your left hand on the floor or a block and twist your torso to the right.",
+      "Extend your right arm toward the ceiling, keeping your chest open.",
+      "Engage your core to maintain stability and balance.",
+      "Hold the pose, breathing deeply and focusing on deepening the twist."
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Tortoise Pose",
+    "cues": [
+      "Start seated with your legs extended in front of you.",
+      "Bend your knees and bring your feet toward your hips.",
+      "Fold forward, placing your hands under your feet and your forehead toward the floor.",
+      "Relax your head and neck, and allow your body to soften into the stretch.",
+      "Breathe deeply, focusing on releasing tension in your back and shoulders."
+    ]
+  },
+  {
+    "id": 98,
+    "name": "One-Legged Bridge Pose",
+    "cues": [
+      "Begin on your back with your knees bent and feet flat on the floor.",
+      "Lift your hips toward the ceiling, keeping your feet and shoulders grounded.",
+      "For a variation, lift one leg while keeping the other leg grounded.",
+      "Engage your core and squeeze your glutes as you hold the pose.",
+      "Breathe deeply, focusing on maintaining stability and length in your spine."
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Wheel Pose Variation",
+    "cues": [
+      "Lie on your back with your knees bent and feet flat on the floor.",
+      "Place your hands by your ears, with your fingers pointing toward your shoulders.",
+      "Press into your hands and feet to lift your body into a backbend.",
+      "For a variation, lift one leg off the floor while keeping your hips lifted.",
+      "Hold the pose, breathing deeply, and focus on maintaining an open chest."
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Standing Bow Pose",
+    "cues": [
+      "Start in a standing position with your feet together and arms by your sides.",
+      "Bend one knee and grab your ankle with the same-side hand.",
+      "Extend the opposite arm forward as you lean forward, balancing on one leg.",
+      "Engage your core and keep your chest open, focusing on balance.",
+      "Hold the pose, breathing deeply, and slowly return to standing."
     ]
   }
 ]
-

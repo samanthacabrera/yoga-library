@@ -1,102 +1,302 @@
 [
   {
     "id": 1,
-    "name": "Downward Dog",
-    "modification": "If you have wrist or back issues, try bending your knees slightly to take pressure off the lower back and wrists. You can also perform the pose with forearms on the ground (Dolphin Pose) to reduce the strain on your wrists. Keep your hands shoulder-width apart and feet hip-width apart for a more stable base."
-  },
-  {
-    "id": 2,
-    "name": "Tree Pose",
-    "modification": "If balance is an issue, practice Tree Pose near a wall for extra support. Instead of placing your foot on your thigh, place it lower on your calf to reduce strain on the knee. If you're pregnant, avoid placing the foot too high on the thigh and focus on keeping your foot on the calf or ankle."
-  },
-  {
-    "id": 3,
-    "name": "Warrior I",
-    "modification": "If you have tight hips or knees, reduce the depth of the lunge to prevent strain on the knees. Keep your back leg straight and hip-width apart, or try keeping the back knee on the ground (Low Lunge) for extra support. For shoulder injuries, keep your arms extended to the sides or lower them to shoulder height instead of raising them overhead."
-  },
-  {
-    "id": 4,
-    "name": "Warrior II",
-    "modification": "If you have knee issues, avoid bending the front knee too deeply and ensure that it is aligned with the ankle. You can also practice the pose with your hands resting on your hips or in a more relaxed arm position. For balance support, practice near a wall or use blocks for added height."
-  },
-  {
-    "id": 5,
-    "name": "Child's Pose",
-    "modification": "For those with knee or hip pain, try placing a cushion between your thighs and calves for added support. If your forehead does not reach the ground, place a block or cushion underneath your head for comfort. For pregnant individuals, widen your knees and rest your torso between them to make more room for the belly."
-  },
-  {
-    "id": 6,
-    "name": "Cobra Pose",
-    "modification": "If you have back pain or neck issues, only lift your chest slightly off the floor and avoid forcing the backbend. You can also practice the pose with the elbows bent and forearms on the ground (Sphinx Pose) for a gentler stretch. If you're pregnant, keep the arch shallow and avoid any discomfort in the lower back."
-  },
-  {
-    "id": 7,
-    "name": "Bridge Pose",
-    "modification": "For individuals with tight hamstrings or lower back issues, keep your feet farther apart or place a block under your sacrum for added support. You can also keep the knees closer together to reduce strain on the hips and knees. Pregnant individuals may want to avoid lifting the hips too high and use a bolster under the back for added comfort."
-  },
-  {
-    "id": 8,
-    "name": "Triangle Pose",
-    "modification": "For tight hamstrings or hips, use a block under your bottom hand to make the pose more accessible. You can also bend the front knee slightly to reduce strain on the lower back and hips. If you're pregnant, avoid twisting the torso too deeply and modify the position by keeping the hand on the thigh instead of reaching for the floor."
-  },
-  {
-    "id": 9,
-    "name": "Seated Forward Bend",
-    "modification": "If you have tight hamstrings or back pain, use a strap around the feet to help lengthen the spine as you fold forward. You can also keep your knees bent or place a cushion under the knees for support. If you're pregnant, avoid deep forward bends and focus on a gentle stretch, keeping the spine long."
-  },
-  {
-    "id": 10,
     "name": "Mountain Pose",
     "modification": "If you have balance issues, stand near a wall or use a block between the thighs for additional stability. Keep the feet hip-width apart and slightly bend the knees if you have tightness in the lower back or legs. If you're pregnant, ensure you're standing in a comfortable, stable position with slightly more space between the feet for balance."
   },
   {
+    "id": 2,
+    "name": "Downward-Facing Dog",
+    "modification": "If you have tight hamstrings or lower back discomfort, bend your knees slightly to reduce the strain. If your wrists are sensitive, try using fist positions or forearms on the floor instead of hands. For more length in the spine, focus on lifting your hips higher and pressing your chest toward your thighs."
+  },
+  {
+    "id": 3,
+    "name": "Plank Pose",
+    "modification": "If you experience discomfort in your wrists or shoulders, drop to your knees or lower your body to forearms to reduce pressure. Engage your core and keep your body in a straight line from head to heels. If you're pregnant, you can modify by doing the pose on your knees to avoid pressure on your belly."
+  },
+  {
+    "id": 4,
+    "name": "Four-Limbed Staff Pose",
+    "modification": "If you find this pose too intense, lower your knees to the ground for extra support and reduce the intensity. Keep the elbows directly under the shoulders and engage your core to protect your lower back. Focus on maintaining a straight line from head to heels to avoid sagging in the hips."
+  },
+  {
+    "id": 5,
+    "name": "Upward-Facing Dog",
+    "modification": "If you have lower back or neck issues, use Cobra Pose instead to avoid overextending the spine. Keep your legs slightly bent if your lower back feels tight. Engage your core and lift the chest without collapsing into the lower back, keeping a gentle arch in the spine."
+  },
+  {
+    "id": 6,
+    "name": "Child's Pose",
+    "modification": "If you experience discomfort in the knees, try placing a blanket or cushion under them for extra padding. You can also widen your knees for more space in the belly, especially if you're pregnant or have tight hips. Keep your arms extended forward to lengthen the spine, or rest them by your sides for a more relaxed version."
+  },
+  {
+    "id": 7,
+    "name": "Warrior I",
+    "modification": "If you have tight hips or difficulty keeping the back heel on the floor, you can shorten your stance or angle your back foot slightly to relieve tension. Focus on keeping the pelvis square and avoid arching the lower back. If you're pregnant, widen the stance for more balance and support."
+  },
+  {
+    "id": 8,
+    "name": "Warrior II",
+    "modification": "If your hips feel tight, shorten your stance and bend your front knee more deeply. If you're pregnant, make sure to keep your belly open by widening your legs a bit and keeping your arms at a comfortable height. Maintain even weight distribution across both legs for stability."
+  },
+  {
+    "id": 9,
+    "name": "Warrior III",
+    "modification": "If balance is challenging, practice near a wall for support or use a block under your hands for extra stability. You can also perform the pose with a slight bend in the standing leg to make it easier. For more balance, focus on a single point in front of you and engage your core."
+  },
+  {
+    "id": 10,
+    "name": "Extended Side Angle",
+    "modification": "If you have tight shoulders, try placing your bottom hand on a block or your knee for support. Keep your core engaged and avoid letting your chest collapse. For a deeper stretch, use your elbow on your thigh instead of your hand if reaching the floor is too intense."
+  },
+  {
     "id": 11,
-    "name": "Chair Pose",
-    "modification": "For individuals with knee or back issues, keep the knees slightly bent or reduce the depth of the squat. You can also perform Chair Pose with a block between the thighs to help engage the inner thighs and keep the knees aligned. If you're pregnant, avoid squatting too deeply and focus on a more upright position."
+    "name": "Reverse Warrior",
+    "modification": "If you experience discomfort in the knees or hips, shorten your stance or slightly bend the front knee. Focus on reaching the back leg actively to avoid collapsing into the lower back. You can also rest the back hand on your hip for more stability."
   },
   {
     "id": 12,
-    "name": "Camel Pose",
-    "modification": "If you have lower back or neck issues, avoid arching too deeply and keep your hands on your lower back for support. You can also place a block or cushion under the pelvis to prevent overstretching the lower back. Pregnant individuals should avoid deep backbends and may benefit from performing this pose with less intensity, or skipping it altogether."
+    "name": "Triangle Pose",
+    "modification": "If reaching the floor is difficult, use a block under your hand or keep your hand on your shin or thigh. You can also bend the front knee slightly to reduce strain in the hamstrings and lower back. For more support, keep your gaze forward or down instead of up."
   },
   {
     "id": 13,
-    "name": "Boat Pose",
-    "modification": "If you have lower back pain or core weakness, keep your feet on the floor and avoid lifting the legs too high. Alternatively, practice with a straight back and knees bent to reduce strain on the lower back. Pregnant individuals should avoid boat pose due to the compression of the abdomen and focus on gentle core exercises."
+    "name": "Half Moon Pose",
+    "modification": "If balance is challenging, use a block under your bottom hand or practice next to a wall for stability. Focus on lifting the back leg from the hip and avoid overextending the spine. For a gentler option, bend the standing leg slightly to reduce strain."
   },
   {
     "id": 14,
-    "name": "Plank Pose",
-    "modification": "To reduce pressure on the wrists, practice Plank Pose on your forearms (Forearm Plank) or keep the knees on the floor. If you have lower back issues, focus on engaging your core to maintain a straight line from head to heels. For pregnant individuals, consider practicing Plank Pose with the knees down to make it more accessible."
+    "name": "Chair Pose",
+    "modification": "If your knees are sensitive, don't bend them too deeply and keep your weight in your heels. You can place a block between your thighs to engage the inner legs and activate the core. Keep your arms at a comfortable height to avoid straining the shoulders."
   },
   {
     "id": 15,
-    "name": "Bow Pose",
-    "modification": "If you have lower back or hip pain, avoid lifting the legs too high or arching too deeply. Use a prop or cushion under the pelvis for support, and only perform a gentle version of the pose. Pregnant individuals should avoid deep backbends and may modify the pose by keeping the chest lifted without bending the back."
+    "name": "Goddess Pose",
+    "modification": "If you experience tightness in the hips, shorten the stance or lower the knees slightly. Keep the core engaged and avoid letting the knees collapse inward. You can also place a block under your hips for more support if you're new to this pose."
   },
   {
     "id": 16,
-    "name": "Crow Pose",
-    "modification": "For those new to Crow Pose, keep your feet on the ground for a more accessible version, or use a cushion or prop under the knees for added support. Practice by keeping your arms engaged and your gaze focused on the ground. If you're pregnant, it's best to avoid this pose due to the balance and core work required."
+    "name": "High Lunge",
+    "modification": "If balance or flexibility is an issue, place your hands on your front thigh or use a block for extra height under the hands. You can drop the back knee to the floor for a more accessible variation or keep the back heel lifted to stretch the calf more deeply."
   },
   {
     "id": 17,
-    "name": "Happy Baby",
-    "modification": "For those with tight hips or lower back pain, keep the knees bent at a less extreme angle and use a block under the lower back for support. Pregnant individuals should avoid this pose as it may put pressure on the abdomen, and instead focus on more gentle stretches."
+    "name": "Low Lunge",
+    "modification": "If your knees or hips are tight, keep the back knee on the floor and use padding under the knee for comfort. Use blocks under your hands for added support if you're unable to reach the floor. Keep your chest open and avoid collapsing the lower back."
   },
   {
     "id": 18,
-    "name": "Butterfly Pose",
-    "modification": "If you have tight hips or lower back pain, sit on a cushion or blanket to elevate the hips and reduce strain on the lower back. You can also bend your knees slightly or use blocks under the thighs for additional support. Pregnant individuals should avoid deep forward bends and focus on a gentle stretch with the back straight."
+    "name": "Pyramid Pose",
+    "modification": "If you have tight hamstrings, bend the front knee slightly and use blocks under your hands for extra height. Keep your back leg engaged and your hips square to the front for a deeper stretch. You can also place a blanket under the back knee if it feels uncomfortable."
   },
   {
     "id": 19,
-    "name": "Headstand",
-    "modification": "Headstand should be avoided if you're new to inversions or have neck, back, or shoulder injuries. You can modify this pose by practicing it with a wall for support or by working on alternatives like Dolphin Pose or Shoulder Stand, which also build shoulder strength. Pregnant individuals should avoid inversions due to the pressure on the head and neck."
+    "name": "Wide-Legged Forward Fold",
+    "modification": "If your hamstrings are tight, keep a slight bend in the knees to avoid straining the lower back. You can place a block under your hands or rest your head on a cushion or block if the floor feels far away. Engage the thighs to deepen the stretch and avoid rounding the back."
   },
   {
     "id": 20,
-    "name": "Reclined Twist",
-    "modification": "If you have spinal issues or are pregnant, modify the twist by keeping the knees slightly bent or doing a gentler version of the twist without bringing the knees too far across the body. Use a bolster under the knees for added support and focus on gentle movement to avoid any compression in the abdomen."
+    "name": "Standing Split",
+    "modification": "If balance is challenging, practice next to a wall or use blocks under your hands for added support. Keep the standing leg slightly bent for stability and focus on engaging the core to keep the body in a straight line. For a gentler option, keep the lifted leg lower and avoid overstretching."
+  },
+  {
+    "id": 41,
+    "name": "Cobra Pose",
+    "modification": "If you have lower back discomfort, avoid coming into a deep backbend and keep the elbows slightly bent for support. Use a block under your pelvis if you find it challenging to engage the lower body. Keep your elbows close to your body and avoid collapsing the chest."
+  },
+  {
+    "id": 42,
+    "name": "Locust Pose",
+    "modification": "If you have neck or back discomfort, keep your head and chest slightly lower to avoid strain. You can also lift the chest less and keep the arms out in front of you rather than reaching back to hold the legs. Use a cushion under the belly for more comfort."
+  },
+  {
+    "id": 43,
+    "name": "Bow Pose",
+    "modification": "If you're working on flexibility, use a yoga belt or strap around your feet for support. Engage the legs and avoid overextending the back to protect the spine. If you're pregnant, avoid this deep backbend and opt for a gentler variation."
+  },
+  {
+    "id": 44,
+    "name": "Puppy Pose",
+    "modification": "If your shoulders feel tense, keep the chest lifted and avoid dropping the forehead all the way to the floor. You can use a block under your chest for support or keep the knees slightly bent if your back feels tight."
+  },
+  {
+    "id": 45,
+    "name": "Cat-Cow Pose",
+    "modification": "If you have neck or back issues, move slowly and focus on gentle movements. Keep the core engaged during the cow pose to avoid over-arching the lower back. Use a cushion under the knees if you're uncomfortable on the floor."
+  },
+  {
+    "id": 46,
+    "name": "Thread the Needle",
+    "modification": "To make the stretch more accessible, keep the lower arm bent and only reach the upper arm over the head if comfortable. You can place a block under the head for support if your neck feels strained. Engage the core to help protect the lower back."
+  },
+  {
+    "id": 47,
+    "name": "Fire Log Pose",
+    "modification": "If your hips feel tight, sit on a cushion or block to elevate your hips. You can place a blanket under your knees to reduce strain, and keep the feet flexed to protect the knees. Focus on lengthening the spine instead of forcing a deeper stretch."
+  },
+  {
+    "id": 48,
+    "name": "Pigeon Pose",
+    "modification": "If you're working on flexibility, use a cushion or blanket under the hips for added support. Keep your back leg extended straight and avoid collapsing into the lower back. If you're pregnant, use a bolster under the chest or come into a supported variation."
+  },
+  {
+    "id": 49,
+    "name": "Double Pigeon",
+    "modification": "If your hips are tight, use a block under the lower knee for extra support. Keep the spine tall and focus on lengthening rather than forcing a deep stretch. You can also perform this pose with one leg bent instead of stacking the legs."
+  },
+  {
+    "id": 50,
+    "name": "Supine Twist",
+    "modification": "If you have neck or lower back discomfort, keep the knees bent or use a cushion under the knees for support. You can also modify the twist by keeping the shoulders on the ground or reducing the depth of the twist. Avoid forcefully twisting if you're pregnant."
+  },
+  {
+    "id": 51,
+    "name": "Half Lord of the Fishes",
+    "modification": "If the twist is too intense, keep the bottom leg extended instead of bent. You can sit on a cushion or block to make the twist more accessible, and always keep the spine tall to avoid compressing the back. If you're pregnant, avoid deep twisting and opt for a gentler version."
+  },
+  {
+    "id": 52,
+    "name": "Side Plank",
+    "modification": "If you're building strength, start with the lower knee on the ground for added stability. You can also keep the bottom knee bent to make the pose more accessible. Focus on engaging the core and avoiding any sagging in the hips."
+  },
+  {
+    "id": 53,
+    "name": "Wild Thing",
+    "modification": "If your back is tight, use a block under your hand for extra support or keep the feet on the floor instead of lifting them. Avoid deep backbends if you have lower back discomfort, and engage the core to protect the spine."
+  },
+  {
+    "id": 54,
+    "name": "Tiger Pose",
+    "modification": "If your knees or wrists are sensitive, perform this pose with a cushion under the knees or modify by keeping the torso upright. Keep the core engaged and avoid overextending the back. You can also bend the top knee slightly to reduce strain on the lower back."
+  },
+  {
+    "id": 55,
+    "name": "Gate Pose",
+    "modification": "If you have tight hips or legs, reduce the angle of the bend in the extended leg and focus on reaching for the foot rather than the floor. Use a block under the hand for support, and avoid collapsing into the lower back by keeping the core engaged."
+  },
+  {
+    "id": 56,
+    "name": "Frog Pose",
+    "modification": "To make the stretch more comfortable, place blankets under the knees for extra cushioning. Keep the feet flexed and avoid over-stretching the groin area. You can also perform this pose with a gentler angle if your hips are very tight."
+  },
+  {
+    "id": 57,
+    "name": "Lizard Pose",
+    "modification": "If your hips are tight, lower the back knee to the ground and keep a cushion under the knee for support. You can also use a block under the hands for added height or perform the pose with the back knee lifted for a deeper stretch."
+  },
+  {
+    "id": 58,
+    "name": "Fallen Triangle",
+    "modification": "If you're working on balance, keep the top leg bent instead of straight to reduce strain. You can also place a block under the hand for extra height and support. Keep the chest open and avoid rounding the back to protect the spine."
+  },
+  {
+    "id": 59,
+    "name": "Bird of Paradise",
+    "modification": "If you're unable to reach your foot or balance, use a strap around the foot to help lift it. Focus on keeping the hips square and avoid over-stretching the hamstrings. Use a wall for balance support if needed."
+  },
+  {
+    "id": 60,
+    "name": "Extended Hand-to-Big-Toe Pose",
+    "modification": "If you're unable to reach the foot, use a yoga strap around the foot to help lengthen the arms. Keep the core engaged and avoid rounding the back to maintain stability. Bend the supporting leg slightly if you feel tension in the knee or lower back."
+  },
+  {
+    "id": 81,
+    "name": "Ganda Bherundasana",
+    "modification": "If you're working on this advanced arm balance, practice it near a wall for support or start by holding a chin stand with feet on the floor before lifting the legs. Use a block or cushion under the head to reduce pressure. Keep the elbows bent and the core engaged for more stability."
+  },
+  {
+    "id": 82,
+    "name": "Scorpion Pose",
+    "modification": "If you're new to this pose, practice a more gentle variation by keeping the feet on the floor or performing a forearm version. You can also use a block under the feet or hands to increase stability and focus on building strength gradually."
+  },
+  {
+    "id": 83,
+    "name": "Half Moon Bound Pose",
+    "modification": "If you have tight hamstrings or hips, use a block under your hand for added support and modify the bind by using a strap or belt. Keep the pelvis open and engage the core to maintain balance, and avoid forcing the backbend."
+  },
+  {
+    "id": 84,
+    "name": "Hummingbird Pose",
+    "modification": "This advanced balance pose can be modified by keeping the feet on the ground or using a wall for support. Focus on lifting through the chest and maintaining a strong core to help with the balance before attempting a full version."
+  },
+  {
+    "id": 85,
+    "name": "Peacock Pose",
+    "modification": "If you're struggling to lift into the pose, try starting with your feet on the floor and focus on strengthening the arms and core. Use blocks under your hands for more height and work on flexibility in the legs and back before progressing to a full expression."
+  },
+  {
+    "id": 86,
+    "name": "Compass Pose",
+    "modification": "If you're unable to hold the pose with the legs extended, bend the knee of the extended leg and work on lengthening the spine. You can use a strap around the foot to help lengthen the leg. Avoid forcing the stretch in the hip flexors."
+  },
+  {
+    "id": 87,
+    "name": "Sleeping Vishnu",
+    "modification": "For a gentler version, keep the knees bent and the foot of the extended leg on the ground. Use a cushion or bolster under your head and shoulders for added comfort. Focus on deepening the twist without forcing it, and avoid straining the lower back."
+  },
+  {
+    "id": 88,
+    "name": "Dragonfly Pose",
+    "modification": "If you're new to this deep stretch, start with a simpler seated forward fold or use props such as blocks to support the chest and reduce the intensity. Keep the spine long and avoid rounding the back while focusing on opening the hips."
+  },
+  {
+    "id": 89,
+    "name": "Grasshopper Pose",
+    "modification": "For a more accessible version, practice with the knees bent and keep the feet closer to the floor. Use blocks under the hands for extra height if needed, and focus on strengthening the core and arms before attempting a deeper expression."
+  },
+  {
+    "id": 90,
+    "name": "Baby Grasshopper",
+    "modification": "This arm balance can be practiced by keeping the back knee on the ground or using blocks under the hands for extra support. Focus on strengthening the core and arms and lifting the legs gradually once balance and stability are established."
+  },
+  {
+    "id": 91,
+    "name": "Caterpillar Pose",
+    "modification": "If your hamstrings are tight, use a prop like a bolster under the chest or knees for added support. Bend the knees slightly to reduce strain, and focus on lengthening the spine as you fold forward rather than forcing the stretch."
+  },
+  {
+    "id": 92,
+    "name": "Revolved Chair Pose",
+    "modification": "To reduce intensity, keep the knees slightly bent or take a gentler twist. Use a block between the thighs for added stability and avoid collapsing the chest. Keep the core engaged and focus on maintaining balance and alignment in the twist."
+  },
+  {
+    "id": 93,
+    "name": "Side Stretch Pose",
+    "modification": "If the stretch feels too intense, reduce the range of motion and keep the knees slightly bent. Use a block under the hand for more support, and avoid collapsing the chest as you lengthen through the side body."
+  },
+  {
+    "id": 94,
+    "name": "Hero Pose with Recline",
+    "modification": "If sitting on the floor is uncomfortable, place a cushion or block under the hips or knees to reduce strain. You can also place a bolster under the back for added support while gently reclining without forcing the lower back."
+  },
+  {
+    "id": 95,
+    "name": "Intense Side Stretch",
+    "modification": "If your hamstrings are tight, bend the knees slightly and use blocks under the hands for more support. Focus on lengthening the spine and avoiding the collapse of the chest towards the legs. Keep the core engaged for stability."
+  },
+  {
+    "id": 96,
+    "name": "Revolved Crescent Lunge",
+    "modification": "If balancing is difficult, keep the back knee on the ground or use a block under the hand for more support. Twist gently from the abdomen rather than the lower back, and keep the hips squared for better alignment."
+  },
+  {
+    "id": 97,
+    "name": "Tortoise Pose",
+    "modification": "If you have tight hamstrings, bend the knees slightly and use a block under the forehead for extra support. Focus on lengthening the spine and relaxing into the forward fold. Keep the feet hip-width apart to prevent strain on the lower back."
+  },
+  {
+    "id": 98,
+    "name": "One-Legged Bridge Pose",
+    "modification": "To make this pose more accessible, keep both feet on the floor or bend the knee of the lifted leg. Use a block under the lower back for more support if needed, and focus on lifting the hips without over-straining the glutes or hamstrings."
+  },
+  {
+    "id": 99,
+    "name": "Wheel Pose Variation",
+    "modification": "If lifting into Wheel Pose feels too intense, practice with the feet closer to the hands or use a block under the lower back. Keep the core engaged and avoid over-arching the lower back. You can also practice a bridge pose as a more accessible alternative."
+  },
+  {
+    "id": 100,
+    "name": "Standing Bow Pose",
+    "modification": "If balancing is challenging, use a wall or chair for support. Keep the lifted leg slightly bent and focus on lengthening through the spine. If you have tight hips, you can reduce the intensity by not reaching as far forward or backward."
   }
 ]

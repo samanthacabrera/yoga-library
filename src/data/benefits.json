@@ -1,102 +1,504 @@
 [
   {
     "id": 1,
-    "name": "Downward Dog",
-    "benefit": "Downward Dog is a foundational pose that strengthens multiple muscle groups, including the arms, shoulders, legs, and back. The pose provides a deep stretch to the hamstrings, calves, and spine, promoting flexibility and alignment. It encourages the proper engagement of the core and helps with balance. Additionally, Downward Dog enhances circulation and energizes the body, while calming the mind, reducing stress, and fostering a sense of mindfulness as you ground through the hands and feet."
+    "name": "Mountain Pose",
+    "benefit": "Mountain Pose is a foundational standing pose that promotes alignment, grounding, and stability. It encourages a mindful awareness of posture, helping to align the spine, legs, and arms in a straight line, enhancing overall body awareness. This pose strengthens the legs and engages the core, providing a solid foundation for other poses. Practicing Mountain Pose can also improve posture, increase focus, and promote a sense of calm, making it an excellent starting point for any yoga practice."
   },
   {
     "id": 2,
-    "name": "Tree Pose",
-    "benefit": "Tree Pose is a standing balance that improves stability, posture, and coordination by engaging the core, legs, and hips. It strengthens the lower body and helps stretch the inner thighs, groins, and hip flexors. The pose enhances concentration and focus, while also fostering mindfulness and mental clarity. By rooting one foot into the ground and finding equilibrium, Tree Pose promotes a deep sense of grounding, which can create a sense of calm and emotional balance."
+    "name": "Downward-Facing Dog",
+    "benefit": "Downward-Facing Dog is a key pose in yoga that stretches and strengthens the entire body. It lengthens the spine, hamstrings, and calves, improving flexibility, while also opening the shoulders and chest. This pose engages the arms and legs, helping to build strength, and it can aid in relieving tension in the back and neck. Downward-Facing Dog also promotes circulation by encouraging blood flow to the head and is often used as a resting pose during a flow sequence."
   },
   {
     "id": 3,
-    "name": "Warrior I",
-    "benefit": "Warrior I builds significant strength in the legs, hips, and shoulders. The deep lunge strengthens the quadriceps, calves, and glutes, while the extended arms promote shoulder and upper body stability. The pose also stretches the hips and chest, improving flexibility and posture. Warrior I instills a sense of confidence and empowerment, as the body is open and strong. It encourages mental focus, resilience, and determination while promoting a sense of inner strength and groundedness."
+    "name": "Plank Pose",
+    "benefit": "Plank Pose is an excellent pose for building core strength and stability. It engages the entire body, particularly the abdominals, arms, and legs, creating a full-body workout. Holding Plank strengthens the wrists and shoulders while toning the core muscles, which can improve posture and balance. This pose also helps develop mental focus, as it requires concentration and endurance, making it a vital part of any strength-building yoga practice."
   },
   {
     "id": 4,
-    "name": "Warrior II",
-    "benefit": "Warrior II strengthens the legs, hips, and core while improving flexibility and balance. The pose engages the muscles in the thighs, calves, and lower back, providing a deep stretch to the hips and groin. The arms are held outstretched, building strength in the shoulders and promoting focus and mental clarity. Warrior II encourages endurance, concentration, and stamina, helping to improve both physical and mental resilience. It also fosters a sense of determination and mental clarity as you hold steady in the pose."
+    "name": "Four-Limbed Staff Pose",
+    "benefit": "Four-Limbed Staff Pose is a dynamic pose that strengthens the arms, shoulders, and core while improving overall body control. It is often used in flow sequences and is essential for building upper body strength. By maintaining a straight line from head to heels, the core is engaged, helping to stabilize the body and prevent strain. This pose can also improve wrist and shoulder flexibility, and when practiced with proper form, it can help prevent injuries in other poses."
   },
   {
     "id": 5,
-    "name": "Child's Pose",
-    "benefit": "Child's Pose is a restorative and calming pose that gently stretches the back, hips, and thighs. It promotes relaxation by releasing tension in the spine and encouraging a deep sense of calm. By lengthening the spine and allowing the body to fold forward, the pose helps to alleviate lower back discomfort and stress. Child's Pose encourages deep breathing, allowing the mind to relax and focus inward. It provides a meditative moment for introspection, making it an excellent way to reduce anxiety and improve mental clarity."
+    "name": "Upward-Facing Dog",
+    "benefit": "Upward-Facing Dog is an energizing backbend that strengthens the arms, shoulders, and spine while opening the chest and heart. This pose helps to improve posture by counteracting the effects of slouching and encourages lengthening of the spine. It also stretches the chest, abdomen, and hip flexors, helping to increase flexibility and reduce tension in these areas. Upward-Facing Dog is often used in combination with Downward-Facing Dog to create a balanced flow between forward folds and backbends."
   },
   {
     "id": 6,
-    "name": "Cobra Pose",
-    "benefit": "Cobra Pose strengthens the spine, shoulders, and arms while opening the chest and stretching the abdomen. This gentle backbend promotes flexibility in the spine and helps counteract the effects of prolonged sitting or poor posture. It enhances circulation to the chest and heart, improving breathing and energy flow throughout the body. Cobra Pose also calms the mind, reduces stress, and encourages mental clarity and openness. It offers a refreshing feeling of strength and lightness."
+    "name": "Child's Pose",
+    "benefit": "Child's Pose is a resting pose that provides deep relaxation while gently stretching the hips, thighs, and spine. It calms the nervous system, reduces stress, and can be used as a restorative pose to regain energy during a yoga practice. Child's Pose also promotes proper alignment by allowing the spine to lengthen and the muscles to relax. This pose is perfect for quieting the mind, offering a mental break, and returning to a place of focus."
   },
   {
     "id": 7,
-    "name": "Bridge Pose",
-    "benefit": "Bridge Pose strengthens the glutes, lower back, and legs while stretching the chest, shoulders, and spine. This backbend helps to improve posture by promoting proper spinal alignment. It also relieves tension in the back, alleviating discomfort from sitting or standing for extended periods. Bridge Pose encourages deeper breathing and relaxation, providing a sense of grounding while also boosting energy levels. The mental benefits include reduced stress, improved concentration, and a sense of balance and harmony."
+    "name": "Warrior I",
+    "benefit": "Warrior I is a powerful standing pose that strengthens the legs, opens the hips, and stretches the chest and shoulders. This pose increases stamina, improves balance, and enhances focus by requiring both strength and concentration. Warrior I also helps develop flexibility in the hips and legs, promoting a strong and stable foundation. Additionally, it can stimulate the core muscles, helping to build stability and awareness in the torso."
   },
   {
     "id": 8,
-    "name": "Triangle Pose",
-    "benefit": "Triangle Pose improves flexibility and balance by stretching the legs, hips, and sides of the body. The arms extend in two directions, encouraging the chest to open and the spine to lengthen. This pose strengthens the legs and core, promoting better posture and alignment. Triangle Pose also enhances mental focus, concentration, and mindfulness. It helps reduce stress, calm the mind, and promote a sense of grounding, encouraging a deeper connection to the breath and body."
+    "name": "Warrior II",
+    "benefit": "Warrior II is a grounding and strengthening pose that focuses on opening the hips and chest while building strength in the legs and arms. It improves balance and stability, encouraging the practitioner to engage the core and lower body. This pose helps increase flexibility in the hips and groins and is excellent for building endurance. Warrior II also promotes a sense of confidence and empowerment by opening the heart and creating a strong, rooted stance."
   },
   {
     "id": 9,
-    "name": "Seated Forward Bend",
-    "benefit": "Seated Forward Bend deeply stretches the hamstrings, lower back, and spine, promoting flexibility and relieving tension. The pose encourages the body to fold inward, which helps calm the nervous system and reduce anxiety. By lengthening the spine and releasing tightness in the legs and back, Seated Forward Bend fosters relaxation and introspection. This pose helps to improve digestion and circulation, promoting both physical and mental well-being, and can provide a soothing, meditative effect."
+    "name": "Warrior III",
+    "benefit": "Warrior III is a balancing pose that strengthens the entire body, particularly the legs, core, and back. This pose requires focus and concentration to maintain stability while engaging the muscles of the standing leg and core. Warrior III also stretches the chest, shoulders, and hips, helping to improve posture and flexibility. It is often used to develop balance, coordination, and mental clarity."
   },
   {
     "id": 10,
-    "name": "Mountain Pose",
-    "benefit": "Mountain Pose is a grounding and strengthening standing pose that promotes proper alignment and body awareness. By standing tall with feet rooted firmly on the ground, this pose engages the entire body, strengthening the legs, core, and spine. It encourages good posture, stability, and balance. Mountain Pose also cultivates mindfulness, focus, and a sense of calm, making it an excellent foundation for both physical and mental centering. It enhances concentration and fosters a feeling of inner peace and strength."
+    "name": "Extended Side Angle",
+    "benefit": "Extended Side Angle is a deep lateral stretch that opens the hips, groins, and chest while strengthening the legs and core. This pose helps to improve flexibility and balance by requiring engagement from the legs, core, and arms. It also stretches the side body, which can release tension in the ribs and lower back. Extended Side Angle is an excellent pose for improving digestion, as it stimulates the abdominal organs and encourages deep, steady breathing."
   },
   {
     "id": 11,
-    "name": "Chair Pose",
-    "benefit": "Chair Pose strengthens the legs, glutes, and core by engaging the lower body and encouraging deep concentration. The squat-like position helps improve endurance and stamina while promoting balance and stability. It also helps tone the thighs and build strength in the hips and lower back. Chair Pose challenges mental focus and resilience, cultivating determination and perseverance as you hold the pose. It can also help improve posture and flexibility in the lower back and hips."
+    "name": "Reverse Warrior",
+    "benefit": "Reverse Warrior is a variation of Warrior II that emphasizes a deep stretch through the side body while strengthening the legs and arms. This pose improves flexibility in the hips, chest, and shoulders and encourages proper alignment by opening the ribcage. Reverse Warrior also activates the core, helping to stabilize the torso while lengthening the spine. It is a great pose for improving balance, releasing tension in the back, and enhancing flexibility in the hips."
   },
   {
     "id": 12,
-    "name": "Camel Pose",
-    "benefit": "Camel Pose is a deep backbend that opens the chest, shoulders, and hips, stretching the front of the body while strengthening the lower back. It promotes spinal flexibility and relieves tension in the lower back. Camel Pose also encourages emotional release, helping to relieve feelings of stress and tension. The deep chest opening fosters a sense of openness and clarity, while the pose encourages deeper breathing and increased energy. It helps to improve mental clarity and emotional balance."
+    "name": "Triangle Pose",
+    "benefit": "Triangle Pose is a classic standing pose that strengthens the legs, stretches the hips, and opens the chest. It improves flexibility in the spine and legs while encouraging proper alignment and balance. This pose also provides a deep stretch to the sides of the body and helps to open the shoulders. Triangle Pose can help relieve tension in the neck, lower back, and hamstrings, and it stimulates the digestive system by gently compressing the abdomen."
   },
   {
     "id": 13,
-    "name": "Boat Pose",
-    "benefit": "Boat Pose is a powerful core-strengthening pose that engages the abdominal muscles, hip flexors, and thighs. It improves balance and stability by challenging the body to maintain a V-shape. The core engagement promotes better posture and spinal alignment. Boat Pose also enhances mental focus and concentration, requiring the mind to remain sharp and steady to maintain the balance. It cultivates determination, mental clarity, and physical strength, helping to build both endurance and mental resilience."
+    "name": "Half Moon Pose",
+    "benefit": "Half Moon Pose is a balancing pose that enhances strength, flexibility, and coordination. It targets the core, legs, and hips, building stability and balance while engaging the whole body. This pose also stretches the hamstrings, groins, and spine, promoting flexibility and lengthening the body. Half Moon Pose improves mental clarity by requiring focus and concentration to maintain balance, making it an excellent pose for both physical and mental resilience."
   },
   {
     "id": 14,
-    "name": "Plank Pose",
-    "benefit": "Plank Pose is a full-body exercise that strengthens the core, arms, shoulders, and legs. It promotes stability, endurance, and balance by holding the body in a straight line from head to heels. The pose engages the abdominal muscles, helping to improve posture and body alignment. Plank Pose also challenges mental focus and concentration, requiring the mind to stay present while maintaining the position. It helps build physical strength and mental resilience, improving overall endurance and mental clarity."
+    "name": "Chair Pose",
+    "benefit": "Chair Pose is a dynamic standing pose that strengthens the legs, core, and arms while challenging the balance. It engages the thighs, glutes, and abdominal muscles, improving posture and stability. Chair Pose also helps to increase flexibility in the ankles and hips while stimulating the heart and diaphragm. It is a great pose for building endurance and boosting circulation, as it opens the chest and encourages deep breathing."
   },
   {
     "id": 15,
-    "name": "Bow Pose",
-    "benefit": "Bow Pose is a deep backbend that stretches the chest, abdomen, and thighs while strengthening the back and improving posture. The heart and lungs are opened, encouraging deeper breathing and better circulation. Bow Pose promotes flexibility in the spine, hips, and shoulders, and helps improve mental clarity and focus. The pose can also increase energy levels and vitality, providing a boost of strength and openness. It fosters emotional balance, helping to release stress and promote a sense of empowerment."
+    "name": "Goddess Pose",
+    "benefit": "Goddess Pose is a wide-legged squat that strengthens the legs, hips, and core while opening the hips and chest. This pose encourages flexibility in the inner thighs and groins, while also helping to build endurance and stability. Goddess Pose can increase circulation to the lower body, helping to relieve tension in the hips and improve posture. It is a grounding pose that encourages strength, confidence, and empowerment."
   },
   {
     "id": 16,
-    "name": "Crow Pose",
-    "benefit": "Crow Pose is an arm balance that strengthens the arms, wrists, and core while improving balance and focus. It helps to build upper body strength and confidence as you balance on your hands. The pose enhances mental concentration and focus, requiring deep focus and engagement to maintain stability. Crow Pose helps increase self-confidence and mental clarity by overcoming the challenge of balancing on the hands. It also builds physical strength and mental resilience, making it a powerful pose for cultivating determination."
+    "name": "High Lunge",
+    "benefit": "High Lunge is a deep lunge that strengthens the legs, hips, and core while improving flexibility in the hip flexors and quads. It is an energizing pose that requires balance and focus, promoting stability and concentration. High Lunge also helps open the chest and shoulders, creating space in the upper body. This pose can relieve tension in the lower back, increase stamina, and enhance overall flexibility."
   },
   {
     "id": 17,
-    "name": "Happy Baby",
-    "benefit": "Happy Baby is a restorative pose that gently stretches the inner thighs, hips, and lower back, promoting relaxation and relieving tension. It encourages deep breathing and calms the nervous system, helping to soothe anxiety and stress. The pose fosters a sense of playfulness and joy, releasing emotional tension and promoting a feeling of mental and physical well-being. Happy Baby encourages mindfulness and encourages the practitioner to remain present and grounded in the moment."
+    "name": "Low Lunge",
+    "benefit": "Low Lunge is a deep hip opener that stretches the hip flexors, quads, and groins while strengthening the legs and core. This pose encourages deep breathing and relaxation, helping to calm the nervous system. Low Lunge is excellent for improving flexibility and mobility in the hips, which can reduce tension and discomfort in the lower back. It is also a great pose for improving posture and releasing tightness in the hip region."
   },
   {
     "id": 18,
-    "name": "Butterfly Pose",
-    "benefit": "Butterfly Pose stretches the inner thighs, groin, and hips, improving flexibility in the lower body. It also helps to release tension and stiffness, especially in the hips and lower back. The forward fold in Butterfly Pose encourages a gentle stretch and relaxation, promoting mental calmness and introspection. The pose fosters mindfulness and encourages deep breathing, helping to reduce stress and improve emotional well-being. It is a great pose for relieving tension in the body while fostering emotional balance."
+    "name": "Pyramid Pose",
+    "benefit": "Pyramid Pose is a forward fold that deeply stretches the hamstrings, calves, and hips while strengthening the legs and spine. It promotes flexibility in the back and legs, helping to alleviate tension in the lower back and hamstrings. This pose also opens the chest and encourages deep breathing, allowing for a greater sense of calm and relaxation. Pyramid Pose can stimulate digestion by gently compressing the abdominal organs and is beneficial for improving balance and stability."
   },
   {
     "id": 19,
-    "name": "Headstand",
-    "benefit": "Headstand is an advanced inversion that strengthens the arms, shoulders, core, and upper body while improving balance and circulation. The pose encourages mental focus, concentration, and clarity as the practitioner remains inverted. Headstand increases blood flow to the brain, enhancing cognitive function and energizing the body. It also boosts self-confidence and promotes a sense of empowerment as you defy gravity. Headstand improves mental resilience and can provide a sense of accomplishment and strength."
+    "name": "Wide-Legged Forward Fold",
+    "benefit": "Wide-Legged Forward Fold is a deeply grounding pose that stretches the hamstrings, hips, and lower back. It encourages flexibility in the spine and legs while promoting a feeling of release and relaxation throughout the entire body. This pose can help improve posture by lengthening the spine and reducing tightness in the lower back. Wide-Legged Forward Fold also enhances circulation and can promote a calming effect on the nervous system, providing a gentle way to decompress."
   },
   {
     "id": 20,
-    "name": "Reclined Twist",
-    "benefit": "Reclined Twist is a gentle seated twist that stretches the spine, hips, and lower back, improving flexibility and releasing tension. The twisting motion stimulates digestion and encourages detoxification. The pose helps to calm the nervous system, reduce stress, and promote relaxation. It is a restorative pose that enhances spinal mobility and provides mental clarity, allowing for a deep sense of calm and balance. Reclined Twist is an excellent pose for releasing any tension in the body, fostering mindfulness and relaxation."
+    "name": "Standing Split",
+    "benefit": "Standing Split is a challenging balance pose that stretches the hamstrings, hips, and back while strengthening the legs and core. This pose promotes flexibility and lengthens the entire back body, creating space in the hamstrings and spine. Standing Split also improves balance and concentration, requiring focus and coordination to maintain stability. Additionally, it can help to relieve tension in the lower back and provide a sense of strength and control."
+  },
+  {
+    "id": 21,
+    "name": "Tree Pose",
+    "benefit": "Tree Pose is a balancing pose that strengthens the legs and improves stability while also opening the hips and chest. It encourages focus and concentration, fostering a sense of calm and mental clarity. This pose helps improve posture by aligning the spine and promoting better body awareness. Tree Pose also enhances flexibility in the hips and ankles while improving overall balance and coordination."
+  },
+  {
+    "id": 22,
+    "name": "Dancer's Pose",
+    "benefit": "Dancer's Pose is a dynamic balance posture that stretches the entire front of the body, especially the chest, hips, and thighs. It strengthens the legs, core, and back while improving flexibility in the hips and shoulders. This pose also encourages deep breathing and concentration, creating a sense of grace and fluidity. Dancer's Pose helps improve balance, body awareness, and emotional focus, leaving you feeling open and energized."
+  },
+  {
+    "id": 23,
+    "name": "Eagle Pose",
+    "benefit": "Eagle Pose is a balancing posture that strengthens the legs, ankles, and core while also improving flexibility in the shoulders and upper back. It promotes concentration and focus by requiring attention to balance, which helps calm the mind. This pose encourages deep breathing and alignment, offering a stretch to the outer hips, shoulders, and thighs. Eagle Pose helps improve joint mobility and builds endurance and stability in the lower body."
+  },
+  {
+    "id": 24,
+    "name": "Crow Pose",
+    "benefit": "Crow Pose is an arm balance that strengthens the arms, wrists, and core while improving overall balance and coordination. It requires focus and concentration, encouraging mindfulness and mental clarity. This pose helps build confidence and trust in oneself, as it challenges you to lift off the ground and maintain stability. Crow Pose also strengthens the abdominal muscles and enhances mobility in the wrists and shoulders."
+  },
+  {
+    "id": 25,
+    "name": "Side Crow",
+    "benefit": "Side Crow is a variation of the traditional Crow Pose that strengthens the arms, wrists, and core while also improving balance and flexibility. It requires deep engagement of the core muscles to lift and stabilize the body, helping to develop upper body strength. This pose also promotes deep focus and mindfulness, as it challenges your ability to balance in a new and unique way. Side Crow provides a stretch to the hips and shoulders while improving body awareness and coordination."
+  },
+  {
+    "id": 26,
+    "name": "Headstand",
+    "benefit": "Headstand is an inversion pose that strengthens the arms, shoulders, and core while promoting blood flow to the brain, which can enhance mental clarity and focus. It encourages balance and concentration, creating a sense of calm and stability. Headstand also helps relieve stress and tension by reversing the effects of gravity on the body, allowing for a deeper relaxation. Additionally, this pose improves circulation, stimulates the lymphatic system, and promotes overall well-being."
+  },
+  {
+    "id": 27,
+    "name": "Forearm Stand",
+    "benefit": "Forearm Stand is an inversion that strengthens the shoulders, arms, and core while improving overall balance and stability. It challenges the body to engage its core and upper body muscles to maintain alignment and control. This pose encourages focus and concentration while promoting deep breathing and relaxation. Forearm Stand also enhances circulation, stimulates the thyroid gland, and helps to relieve tension in the spine and back."
+  },
+  {
+    "id": 28,
+    "name": "Handstand",
+    "benefit": "Handstand is an advanced inversion pose that requires strength, balance, and coordination. It engages the arms, shoulders, core, and back to maintain an upside-down position. This pose builds upper body strength and enhances stability, flexibility, and focus. Handstand promotes blood flow to the brain, improving concentration, mental clarity, and overall energy levels."
+  },
+  {
+    "id": 29,
+    "name": "Shoulder Stand",
+    "benefit": "Shoulder Stand is an inversion that strengthens the shoulders, neck, and core while improving circulation and stimulating the thyroid and parathyroid glands. It helps to relieve tension in the back and neck while providing a deep stretch to the upper body. This pose can have a calming effect on the nervous system, reducing stress and anxiety. Shoulder Stand also improves flexibility in the spine and encourages deep breathing."
+  },
+  {
+    "id": 30,
+    "name": "Fish Pose",
+    "benefit": "Fish Pose is a backbend that stretches the chest, throat, and spine, providing a deep opening in the upper body. It strengthens the back muscles while promoting flexibility in the shoulders and neck. This pose also opens the rib cage and helps improve lung capacity, encouraging deep and mindful breathing. Fish Pose can stimulate the thyroid gland and alleviate tension in the neck and upper back."
+  },
+  {
+    "id": 31,
+    "name": "Camel Pose",
+    "benefit": "Camel Pose is a deep backbend that stretches the chest, hips, and spine while strengthening the lower back and legs. It opens the front of the body, improving flexibility in the hips, thighs, and spine. This pose also promotes deeper breathing, which can help release emotional tension and stress. Camel Pose can enhance posture and provide a sense of emotional release and openness."
+  },
+  {
+    "id": 32,
+    "name": "Bridge Pose",
+    "benefit": "Bridge Pose is a gentle backbend that strengthens the legs, glutes, and lower back while stretching the chest and spine. It opens the front of the body, improving flexibility in the hips and chest while toning the glutes and hamstrings. This pose helps relieve tension in the lower back and improves posture by aligning the spine. Bridge Pose also stimulates the thyroid and parathyroid glands and encourages deep, restorative breathing."
+  },
+  {
+    "id": 33,
+    "name": "Wheel Pose",
+    "benefit": "Wheel Pose is an intense backbend that strengthens the back, shoulders, arms, and legs while improving flexibility in the spine and hips. It opens the chest and lungs, allowing for deeper breaths and increased lung capacity. This pose can boost energy levels by reversing the effects of gravity on the body, enhancing circulation and mental clarity. Wheel Pose also promotes emotional release and stress relief, leaving you feeling open and rejuvenated."
+  },
+  {
+    "id": 34,
+    "name": "Reclining Bound Angle",
+    "benefit": "Reclining Bound Angle is a gentle, restorative pose that stretches the inner thighs, hips, and groin while promoting deep relaxation and calm. It helps to release tension in the lower back and hips, improving flexibility in the legs and pelvis. This pose encourages deep breathing and opens the chest, allowing for a greater sense of peace and relaxation. Reclining Bound Angle can also help to reduce stress and anxiety by providing a grounding and soothing experience."
+  },
+  {
+    "id": 35,
+    "name": "Legs Up the Wall",
+    "benefit": "Legs Up the Wall is a restorative pose that helps to relieve tension in the lower back and legs while improving circulation. It encourages relaxation by gently stretching the hamstrings and lower back, while also calming the nervous system. This pose can help reduce swelling and improve blood flow to the legs, especially after prolonged periods of standing or sitting. Legs Up the Wall promotes deep rest, mental clarity, and stress relief."
+  },
+  {
+    "id": 36,
+    "name": "Boat Pose",
+    "benefit": "Boat Pose is a core-strengthening pose that engages the abdominal muscles while improving balance and stability. It strengthens the hip flexors, spine, and legs, while also improving flexibility in the hips and hamstrings. This pose requires mental focus and concentration to maintain the position, building endurance and discipline. Boat Pose also helps to stimulate digestion and improve posture by activating the core muscles."
+  },
+  {
+    "id": 37,
+    "name": "Seated Forward Fold",
+    "benefit": "Seated Forward Fold is a calming pose that stretches the hamstrings, lower back, and spine. It promotes flexibility in the hips and legs while encouraging relaxation and deep breathing. This pose helps to relieve tension in the lower back and improve posture by lengthening the spine. Seated Forward Fold also stimulates the digestive system and promotes mental clarity by encouraging mindfulness and focus."
+  },
+  {
+    "id": 38,
+    "name": "Bound Angle",
+    "benefit": "Bound Angle is a seated pose that stretches the hips, groin, and inner thighs while promoting flexibility and openness. It helps to release tension in the lower back and pelvis, improving mobility in the hips. This pose encourages deep breathing and promotes a sense of relaxation and grounding. Bound Angle also improves circulation in the lower body, particularly in the hips and legs."
+  },
+  {
+    "id": 39,
+    "name": "Happy Baby Pose",
+    "benefit": "Happy Baby Pose is a restorative posture that gently stretches the inner thighs, hips, and lower back. It helps to release tension in the spine and pelvis while promoting flexibility and relaxation. This pose encourages deep breathing and creates a feeling of lightness and joy, often releasing emotional tension. Happy Baby Pose also stimulates the digestive system and helps calm the nervous system."
+  },
+  {
+    "id": 40,
+    "name": "Corpse Pose",
+    "benefit": "Corpse Pose is a deeply restorative and relaxing pose that allows the body to rest and recover. It helps to release physical and mental tension by promoting mindfulness and deep relaxation. This pose can help lower blood pressure and reduce stress, providing a calming effect on the nervous system. Corpse Pose is often used at the end of a practice to integrate the benefits of the preceding poses and create a sense of peace and tranquility."
+  },
+   {
+    "id": 41,
+    "name": "Cobra Pose",
+    "benefit": "Cobra Pose is a backbend that stretches the chest, shoulders, and spine while strengthening the back and arms. It opens the chest and lungs, allowing for deeper breaths and improved lung capacity. This pose helps to improve posture by lengthening the spine and promoting alignment. Cobra Pose also stimulates the abdominal organs, promoting digestion and relieving tension in the lower back."
+  },
+  {
+    "id": 42,
+    "name": "Locust Pose",
+    "benefit": "Locust Pose is a strengthening posture that targets the lower back, glutes, and legs while also engaging the core and shoulders. It improves flexibility in the spine and promotes better posture by lengthening the back. This pose stimulates the abdominal organs and can help relieve tension in the lower back. Locust Pose also enhances balance and stability by strengthening the entire back body."
+  },
+  {
+    "id": 43,
+    "name": "Bow Pose",
+    "benefit": "Bow Pose is an intense backbend that stretches the front of the body, including the chest, abdomen, and thighs, while strengthening the back, glutes, and legs. This pose opens the chest and improves flexibility in the spine, promoting better posture and alignment. Bow Pose helps to stimulate the digestive system and can reduce tension in the lower back. It also provides an emotional release, increasing energy and vitality."
+  },
+  {
+    "id": 44,
+    "name": "Puppy Pose",
+    "benefit": "Puppy Pose is a gentle backbend that stretches the chest, shoulders, and spine while promoting flexibility in the hips. It encourages deep breathing by opening the chest and allowing for a fuller inhale. This pose also helps to lengthen the spine, reduce tension in the neck and shoulders, and release tightness in the upper back. Puppy Pose is a great option for improving flexibility and calming the nervous system."
+  },
+  {
+    "id": 45,
+    "name": "Cat-Cow Pose",
+    "benefit": "Cat-Cow Pose is a dynamic movement that promotes spinal flexibility, strengthens the core, and stretches the neck and back. It increases circulation in the spine and warms up the body, making it ideal for preparation or a gentle flow. This pose helps relieve tension in the neck and shoulders while encouraging deep, mindful breathing. Cat-Cow also helps to improve posture and balance by promoting spinal alignment."
+  },
+  {
+    "id": 46,
+    "name": "Thread the Needle",
+    "benefit": "Thread the Needle is a gentle twist that stretches the shoulders, upper back, and neck while improving flexibility in the spine. It promotes a sense of openness and releases tension in the thoracic spine and shoulders. This pose helps improve mobility in the upper back and neck while encouraging deep breathing and relaxation. Thread the Needle can also help relieve tension caused by sitting or poor posture."
+  },
+  {
+    "id": 47,
+    "name": "Fire Log Pose",
+    "benefit": "Fire Log Pose is a seated posture that deeply stretches the hips, groin, and thighs, helping to release tension and increase flexibility in the lower body. This pose also encourages a sense of grounding and relaxation as it opens the hips and pelvis. Fire Log Pose is excellent for increasing mobility and flexibility in the hip joints and legs while promoting mindfulness and focus. It can also help improve posture by encouraging alignment of the spine and pelvis."
+  },
+  {
+    "id": 48,
+    "name": "Pigeon Pose",
+    "benefit": "Pigeon Pose is a deep hip opener that stretches the hips, glutes, and thighs while also improving flexibility in the lower back. It releases tightness and tension in the hip flexors and helps to create a sense of emotional release. This pose also stimulates the abdominal organs, promoting digestion and relieving stress. Pigeon Pose enhances circulation in the lower body, improving mobility and flexibility in the hips."
+  },
+  {
+    "id": 49,
+    "name": "Double Pigeon",
+    "benefit": "Double Pigeon is a deep hip-opening pose that stretches the inner thighs, hips, and glutes while improving flexibility in the pelvis and lower back. This pose encourages deep relaxation and helps to release built-up tension in the hips and groin. Double Pigeon enhances mobility and range of motion in the hip joints and can improve posture by promoting alignment of the spine. It also encourages mindfulness and deep breathing, helping to ground the body and calm the mind."
+  },
+  {
+    "id": 50,
+    "name": "Supine Twist",
+    "benefit": "Supine Twist is a restorative pose that stretches the spine, hips, and shoulders while promoting flexibility and relaxation. This pose gently twists the spine, helping to release tension and improve mobility in the back. It also encourages deep breathing and helps to improve circulation, which can aid in digestion and reduce stress. Supine Twist can relieve lower back pain and provide a soothing effect on the nervous system."
+  },
+  {
+    "id": 51,
+    "name": "Half Lord of the Fishes",
+    "benefit": "Half Lord of the Fishes is a seated twist that stretches the spine, shoulders, and hips while promoting flexibility and balance. It encourages spinal mobility and helps to release tension in the lower back and neck. This pose also stimulates the digestive organs and improves circulation, promoting detoxification. Half Lord of the Fishes promotes mental clarity and focus by encouraging mindful breathing and concentration."
+  },
+  {
+    "id": 52,
+    "name": "Side Plank",
+    "benefit": "Side Plank is a core-strengthening pose that targets the arms, shoulders, and obliques while improving balance and stability. It strengthens the muscles around the spine and core, improving overall posture and alignment. This pose also enhances mental focus and concentration, as it requires stability and engagement from the entire body. Side Plank helps to build endurance and increase flexibility in the wrists and shoulders."
+  },
+  {
+    "id": 53,
+    "name": "Wild Thing",
+    "benefit": "Wild Thing is an energizing backbend and balance pose that stretches the chest, spine, and hips while strengthening the arms and legs. It opens the heart and lungs, allowing for deeper breaths and increased energy levels. This pose challenges balance and stability while promoting a sense of freedom and release. Wild Thing also enhances flexibility in the spine, shoulders, and chest, while improving overall body awareness."
+  },
+  {
+    "id": 54,
+    "name": "Tiger Pose",
+    "benefit": "Tiger Pose is a dynamic balance pose that stretches the spine, hips, and quadriceps while improving core strength and flexibility. It helps improve balance and coordination by requiring you to stabilize the body while reaching for the foot with the opposite hand. Tiger Pose promotes mental focus and concentration while stretching the hip flexors and hamstrings. This pose also strengthens the arms, legs, and back, improving overall posture and body awareness."
+  },
+  {
+    "id": 55,
+    "name": "Gate Pose",
+    "benefit": "Gate Pose is a side stretch that opens the hips, chest, and shoulders while improving flexibility in the spine and legs. This pose strengthens the legs and stretches the inner thighs and groin. Gate Pose promotes deep breathing and mindfulness, helping to improve focus and mental clarity. It also helps to release tension in the side body and can aid in relieving back pain and stiffness."
+  },
+  {
+    "id": 56,
+    "name": "Frog Pose",
+    "benefit": "Frog Pose is a deep hip opener that stretches the inner thighs, groin, and hips while also improving flexibility in the lower back and pelvis. This pose encourages relaxation and a sense of grounding while releasing tension in the lower body. Frog Pose helps to improve circulation in the legs and lower back, promoting better joint mobility. It is also excellent for relieving tightness and discomfort in the hips and groin."
+  },
+  {
+    "id": 57,
+    "name": "Lizard Pose",
+    "benefit": "Lizard Pose is a deep hip opener that stretches the hips, groin, and thighs while improving flexibility in the spine and legs. It also strengthens the arms and shoulders by supporting the body weight in the pose. Lizard Pose helps to release tension in the hip flexors and lower back, promoting improved mobility and flexibility. This pose encourages mindfulness and deep breathing, helping to calm the nervous system and promote relaxation."
+  },
+  {
+    "id": 58,
+    "name": "Fallen Triangle",
+    "benefit": "Fallen Triangle is a side-lying pose that stretches the hips, hamstrings, and side body while improving flexibility and balance. It helps to lengthen the spine and open the chest and shoulders, promoting better posture. This pose also strengthens the legs and core, improving stability and balance. Fallen Triangle helps release tension in the lower back and promotes deep breathing and relaxation."
+  },
+  {
+    "id": 59,
+    "name": "Bird of Paradise",
+    "benefit": "Bird of Paradise is an advanced standing balance pose that stretches the legs, hips, and shoulders while strengthening the core and legs. This pose requires focus and concentration to maintain balance, helping to build stability and body awareness. Bird of Paradise opens the chest and shoulders while enhancing flexibility in the hips and hamstrings. It also promotes deep breathing and mental clarity, providing a sense of accomplishment and freedom."
+  },
+  {
+    "id": 60,
+    "name": "Extended Hand-to-Big-Toe Pose",
+    "benefit": "Extended Hand-to-Big-Toe Pose is a standing pose that stretches the hamstrings, calves, and hips while strengthening the core and improving balance. It improves flexibility in the legs and promotes better posture by lengthening the spine. This pose also enhances concentration and mental focus, requiring stability and control. Extended Hand-to-Big-Toe Pose helps relieve tension in the back and legs while increasing mobility in the hips and hamstrings."
+  },
+  {
+    "id": 61,
+    "name": "Standing Forward Fold",
+    "benefit": "Standing Forward Fold is a grounding pose that stretches the hamstrings, calves, and lower back while calming the mind and relieving stress. It encourages deep breathing and helps to release tension in the neck and shoulders. This pose promotes flexibility in the legs and improves circulation to the brain, enhancing mental clarity. Standing Forward Fold also helps to lengthen the spine and improve posture by gently releasing tension in the back."
+  },
+  {
+    "id": 62,
+    "name": "Halfway Lift",
+    "benefit": "Halfway Lift is a transitional pose that strengthens the back, stretches the hamstrings, and improves spinal alignment. It is often used to counterbalance forward folds by providing length to the spine and engaging the core muscles. This pose encourages good posture and alignment, helping to prevent back strain during deep forward bends. Halfway Lift also improves balance and stability by promoting awareness of body positioning and alignment."
+  },
+  {
+    "id": 63,
+    "name": "Ragdoll Pose",
+    "benefit": "Ragdoll Pose is a relaxing forward bend that stretches the hamstrings, lower back, and neck while releasing tension throughout the body. It promotes relaxation and stress relief by allowing the head and neck to gently hang down. This pose also increases blood flow to the brain and promotes mental clarity. Ragdoll Pose encourages deep breathing, helping to calm the nervous system and reduce anxiety."
+  },
+  {
+    "id": 64,
+    "name": "Eight-Angle Pose",
+    "benefit": "Eight-Angle Pose is an advanced arm balance that strengthens the core, arms, and shoulders while enhancing flexibility in the hips and hamstrings. It requires balance, concentration, and focus to maintain the pose. This pose also improves coordination and body awareness while promoting deep breathing. Eight-Angle Pose stimulates the digestive system and increases spinal flexibility, helping to relieve tension in the back."
+  },
+  {
+    "id": 65,
+    "name": "Bound Side Angle",
+    "benefit": "Bound Side Angle is a deep stretch that opens the chest, hips, and shoulders while strengthening the legs and core. This pose improves flexibility in the side body and increases mobility in the hips. Bound Side Angle also enhances balance and stability by engaging the legs and core. It stimulates the digestive system and helps to relieve tension in the lower back and hips."
+  },
+  {
+    "id": 66,
+    "name": "Bound Forward Fold",
+    "benefit": "Bound Forward Fold is a variation of the standard forward fold that stretches the hamstrings, calves, and lower back while promoting flexibility and grounding. It encourages a deeper stretch in the hips and legs by binding the hands behind the back. This pose also opens the chest and shoulders, improving posture and alignment. Bound Forward Fold promotes relaxation and calm by encouraging deep breathing and releasing tension in the body."
+  },
+  {
+    "id": 67,
+    "name": "Half Splits",
+    "benefit": "Half Splits is a hamstring stretch that also targets the hips, groin, and lower back. It helps to release tension in the hamstrings and improve flexibility in the legs. This pose also improves spinal alignment by lengthening the back and promoting proper posture. Half Splits increases mobility in the hip joints and can help reduce stiffness in the legs and lower body."
+  },
+  {
+    "id": 68,
+    "name": "Full Splits",
+    "benefit": "Full Splits is an advanced flexibility pose that deeply stretches the hamstrings, hip flexors, and groin while promoting flexibility in the legs and pelvis. It enhances mobility in the hip joints and improves alignment in the lower body. This pose also increases core engagement and balance by requiring stability in the legs and torso. Full Splits encourages deep breathing and helps to release tension in the lower body."
+  },
+  {
+    "id": 69,
+    "name": "King Pigeon Pose",
+    "benefit": "King Pigeon Pose is a deep backbend and hip opener that stretches the thighs, groin, and spine while strengthening the back and core. This pose opens the chest and shoulders, improving flexibility and posture. It stimulates the abdominal organs and promotes digestion while providing a sense of emotional release. King Pigeon Pose also increases mobility in the hips and thighs, relieving tension and tightness in the lower body."
+  },
+  {
+    "id": 70,
+    "name": "Lotus Pose",
+    "benefit": "Lotus Pose is a seated posture that promotes deep relaxation, meditation, and mindfulness. It helps to open the hips and stretch the ankles while providing a stable foundation for seated meditation. This pose encourages proper spinal alignment and enhances body awareness. Lotus Pose helps to calm the mind, reduce stress, and cultivate a sense of inner peace and focus."
+  },
+  {
+    "id": 71,
+    "name": "Lotus Forward Fold",
+    "benefit": "Lotus Forward Fold combines the grounding qualities of Lotus Pose with a forward bend that stretches the hips, hamstrings, and lower back. This pose encourages deep relaxation and allows for a deeper connection to the breath while gently stretching the body. Lotus Forward Fold promotes flexibility in the hips and legs while soothing the nervous system. It also helps to release tension in the spine and relax the mind."
+  },
+  {
+    "id": 72,
+    "name": "Cow Face Pose",
+    "benefit": "Cow Face Pose is a seated posture that stretches the hips, shoulders, and arms while promoting flexibility and release in the upper body. This pose improves mobility in the hips and shoulders, helping to reduce tension and tightness. Cow Face Pose also promotes deep breathing and encourages mental clarity, allowing for greater focus and relaxation. It can help to relieve shoulder and hip discomfort, promoting better alignment in the body."
+  },
+  {
+    "id": 73,
+    "name": "Seated Spinal Twist",
+    "benefit": "Seated Spinal Twist is a gentle twist that stretches the spine, hips, and shoulders while improving flexibility and promoting spinal mobility. This pose helps to release tension in the back and neck while improving digestion and circulation. Seated Spinal Twist also encourages deep breathing and relaxation, making it an excellent pose for reducing stress and anxiety. It can help alleviate lower back discomfort and improve posture by promoting spinal alignment."
+  },
+  {
+    "id": 74,
+    "name": "Hero Pose",
+    "benefit": "Hero Pose is a seated posture that stretches the thighs, knees, and ankles while promoting relaxation and grounding. It strengthens the legs and improves flexibility in the lower body, making it a great pose for opening the hips and knees. Hero Pose also promotes deep breathing and encourages mindfulness, helping to reduce stress and increase mental focus. It can help relieve tension in the legs and lower back by encouraging proper alignment."
+  },
+  {
+    "id": 75,
+    "name": "Revolved Triangle",
+    "benefit": "Revolved Triangle is a twisting pose that stretches the hamstrings, hips, and spine while promoting balance and flexibility. It strengthens the legs and core while improving spinal mobility and posture. This pose also stimulates the digestive organs and encourages detoxification by increasing circulation and promoting deeper breaths. Revolved Triangle helps to release tension in the lower back and hips while improving overall body awareness."
+  },
+  {
+    "id": 76,
+    "name": "Revolved Side Angle",
+    "benefit": "Revolved Side Angle is a deep twist that stretches the hips, thighs, and spine while strengthening the legs, core, and arms. This pose encourages deep breathing and enhances flexibility in the hips and spine. Revolved Side Angle also promotes better digestion by stimulating the abdominal organs and increasing circulation. It helps release tension in the lower back and hips while improving posture and alignment."
+  },
+  {
+    "id": 77,
+    "name": "Shoulder Pressing Pose",
+    "benefit": "Shoulder Pressing Pose is an arm balance that strengthens the shoulders, arms, and core while improving balance and stability. This pose encourages engagement of the upper body muscles, promoting strength and endurance. Shoulder Pressing Pose also enhances spinal alignment and flexibility, as it requires control and concentration to maintain the posture. It helps to relieve tension in the shoulders and upper back, improving mobility and posture."
+  },
+  {
+    "id": 78,
+    "name": "Flying Pigeon Pose",
+    "benefit": "Flying Pigeon Pose is an advanced arm balance that stretches the hips, groin, and legs while strengthening the core, arms, and shoulders. This pose requires balance, focus, and concentration to maintain, promoting mental clarity and stability. Flying Pigeon Pose enhances flexibility in the hips and hamstrings while strengthening the muscles around the pelvis. It also improves coordination and body awareness, allowing for a deeper connection to the body and breath."
+  },
+  {
+    "id": 79,
+    "name": "Firefly Pose",
+    "benefit": "Firefly Pose is an advanced balance and flexibility pose that stretches the hamstrings, groin, and arms while strengthening the core and shoulders. This pose requires deep engagement of the abdominal muscles and a firm foundation in the arms to maintain balance. Firefly Pose helps to open the hips and legs, improving flexibility in the lower body. It also enhances mental focus and concentration, making it an excellent challenge for both strength and flexibility."
+  },
+  {
+    "id": 80,
+    "name": "Monkey Pose",
+    "benefit": "Monkey Pose is a deep hamstring stretch that also targets the hips and lower back. It improves flexibility in the legs and spine while encouraging a sense of grounding. This pose helps to increase mobility in the hips and release tension in the lower body. Monkey Pose also promotes focus and concentration as it requires balance and alignment to perform correctly."
+  },
+  {
+    "id": 81,
+    "name": "Ganda Bherundasana",
+    "benefit": "Ganda Bherundasana, or Chin Stand, is an advanced inversion pose that promotes strength, balance, and flexibility. This pose engages the shoulders, arms, and core as you balance on your chin and hands, building upper body strength and stability. It challenges your sense of equilibrium and encourages mental focus and clarity. As it stimulates the thyroid and improves circulation, it also aids in detoxification by encouraging blood flow to the head and neck area."
+  },
+  {
+    "id": 82,
+    "name": "Scorpion Pose",
+    "benefit": "Scorpion Pose is an advanced backbend and inversion that enhances both flexibility and strength. The deep backbend opens up the chest and spine while requiring strong core and shoulder engagement to support the inversion. The pose encourages a deeper stretch in the back and abdomen, which helps with digestion and can promote detoxification by stimulating the abdominal organs. Practicing Scorpion Pose improves posture, enhances balance, and strengthens the arms, shoulders, and core."
+  },
+  {
+    "id": 83,
+    "name": "Half Moon Bound Pose",
+    "benefit": "Half Moon Bound Pose is a variation of the traditional Half Moon pose that incorporates a bind, helping to increase flexibility, strength, and stability. By binding the hands, you deepen the stretch across the chest, shoulders, and hips while opening up the side body. This pose improves balance and coordination, while also stretching the legs and spine. The bound variation intensifies the benefits for the spine, helping to lengthen and align it while opening up the chest and increasing energy flow."
+  },
+  {
+    "id": 84,
+    "name": "Hummingbird Pose",
+    "benefit": "Hummingbird Pose is a challenging arm balance that requires strong core engagement, flexibility, and balance. As you lean forward and balance on your arms with your legs extended behind you, you activate your shoulders, arms, and core muscles. This pose helps to build upper body strength and core stability while improving balance. The deep stretch through the chest and hips provides a gentle opening and can help detoxify by stimulating the digestive organs and improving circulation."
+  },
+  {
+    "id": 85,
+    "name": "Peacock Pose",
+    "benefit": "Peacock Pose is an arm balance that activates the core and strengthens the arms and wrists. As you balance on your hands with your body lifted, you engage the abdominal muscles to help maintain stability. This pose improves digestion by compressing the abdominal organs, which may aid in detoxification. Additionally, it strengthens the shoulders and arms while enhancing mental clarity and focus, making it a powerful pose for both physical and mental detox."
+  },
+  {
+    "id": 86,
+    "name": "Compass Pose",
+    "benefit": "Compass Pose is a deep hip-opening and hamstring-stretching posture that requires flexibility in the hips, legs, and back. As you extend your leg and twist your torso, you create a deep opening through the chest, spine, and hips. This pose helps to lengthen the spine and improve posture while releasing tension in the lower back and hips. It also stimulates the digestive system and encourages detoxification by stimulating the abdominal organs and improving circulation."
+  },
+  {
+    "id": 87,
+    "name": "Sleeping Vishnu",
+    "benefit": "Sleeping Vishnu Pose is a reclining posture that provides a gentle stretch to the back and hips, promoting relaxation and flexibility. The pose opens the chest and stretches the shoulders while lengthening the spine. It helps to release tension in the lower back and hips, improving mobility and flexibility. This pose also stimulates the kidneys and encourages deep relaxation, promoting the body’s natural detoxification process."
+  },
+  {
+    "id": 88,
+    "name": "Dragonfly Pose",
+    "benefit": "Dragonfly Pose is a challenging seated pose that requires flexibility in the legs and hips. It stretches the hamstrings and inner thighs while opening the hips and groin area. This pose helps to improve flexibility and mobility in the lower body while stretching the spine and shoulders. Dragonfly Pose also stimulates the abdominal organs, promoting digestion and detoxification, making it beneficial for both physical and mental cleansing."
+  },
+  {
+    "id": 89,
+    "name": "Grasshopper Pose",
+    "benefit": "Grasshopper Pose is an arm balance that strengthens the core, arms, and shoulders. The pose challenges your balance as you use your arms for support while lifting the legs into the air. It requires a combination of flexibility, strength, and mental focus. Grasshopper Pose stimulates circulation and digestion, aiding in detoxification by improving blood flow and compressing the abdominal organs, helping to eliminate toxins from the body."
+  },
+  {
+    "id": 90,
+    "name": "Baby Grasshopper",
+    "benefit": "Baby Grasshopper Pose is a variation of Grasshopper Pose that requires strong core engagement and balance. By lifting one leg while balancing on the arms, you activate the core, shoulders, and arms. This pose enhances flexibility and strength while improving stability and focus. Baby Grasshopper also compresses the abdomen, which helps stimulate the digestive system and promote detoxification by improving circulation and eliminating toxins."
+  },
+  {
+    "id": 91,
+    "name": "Caterpillar Pose",
+    "benefit": "Caterpillar Pose is a seated forward fold that provides a deep stretch to the spine, hamstrings, and lower back. As you reach forward with your torso, you lengthen the spine and stretch the back of the legs. This pose promotes relaxation and flexibility, reducing tension in the lower back and improving mobility. Caterpillar Pose also stimulates the digestive organs and encourages detoxification by promoting blood flow to the abdomen and encouraging the removal of toxins from the body."
+  },
+  {
+    "id": 92,
+    "name": "Revolved Chair Pose",
+    "benefit": "Revolved Chair Pose is a powerful standing twist that builds strength in the legs, core, and arms while improving flexibility in the spine and shoulders. The deep twist massages the abdominal organs, stimulating digestion and detoxification. It helps to detoxify the body by promoting circulation and increasing the flow of oxygen-rich blood to the organs. This pose also enhances balance and stability, helping to open the chest and increase energy."
+  },
+  {
+    "id": 93,
+    "name": "Side Stretch Pose",
+    "benefit": "Side Stretch Pose is a standing pose that deeply stretches the side body, hips, and legs while opening up the chest and shoulders. The stretch lengthens the spine, improving posture and flexibility. It also helps to relieve tension in the lower back and hips. This pose encourages deep breathing, which aids in the detoxification process by helping to release toxins and promote relaxation throughout the body."
+  },
+  {
+    "id": 94,
+    "name": "Hero Pose with Recline",
+    "benefit": "Hero Pose with Recline is a restorative pose that provides a gentle stretch to the hips, thighs, and lower back. As you recline, you open up the chest and improve circulation. This pose encourages relaxation and helps to release tension in the hips and legs, providing a calming effect on the body. Hero Pose with Recline is also beneficial for deepening the stretch in the lower body and promoting detoxification by stimulating blood flow to the abdominal organs."
+  },
+  {
+    "id": 95,
+    "name": "Intense Side Stretch",
+    "benefit": "Intense Side Stretch is a standing pose that deeply stretches the side body, hamstrings, and hips. The deep stretch encourages flexibility and lengthening of the spine while also improving posture. This pose also helps to relieve tension in the lower back and legs. By increasing the circulation in the abdominal area, the Intense Side Stretch promotes detoxification by aiding digestion and helping to eliminate toxins from the body."
+  },
+  {
+    "id": 96,
+    "name": "Revolved Crescent Lunge",
+    "benefit": "Revolved Crescent Lunge is a deep twisting pose that strengthens the legs, core, and arms while stretching the hips, back, and shoulders. The twist encourages spinal mobility and stimulates digestion, which can aid in detoxification. This pose also opens up the chest and hips, helping to improve flexibility and mobility. The powerful stretch in the hip flexors and quads can release tension and increase energy flow throughout the body."
+  },
+  {
+    "id": 97,
+    "name": "Tortoise Pose",
+    "benefit": "Tortoise Pose is a seated forward bend that provides a deep stretch to the spine, hamstrings, and lower back. It promotes relaxation and flexibility while calming the nervous system. The deep stretch in the hips and legs releases tension and improves flexibility. Tortoise Pose also stimulates digestion by compressing the abdominal organs and promoting blood flow, which helps in detoxification."
+  },
+  {
+    "id": 98,
+    "name": "One-Legged Bridge Pose",
+    "benefit": "One-Legged Bridge Pose with one leg lifted helps to strengthen the legs, glutes, and core while improving flexibility in the spine and chest. It opens up the hips and stretches the thighs, providing a deep release in the lower back. This variation of Bridge Pose also promotes circulation and detoxification by improving blood flow to the abdominal organs. It helps to relax the nervous system and encourages energy flow throughout the body."
+  },
+  {
+    "id": 99,
+    "name": "Wheel Pose Variation",
+    "benefit": "Wheel Pose Variation with one leg lifted helps to open up the chest, hips, and spine while strengthening the arms, shoulders, and core. The deep backbend and stretch encourage flexibility in the spine and improve posture. This variation of Wheel Pose also stimulates circulation, enhancing detoxification by improving blood flow to the abdominal organs. It energizes the body, relieves tension in the back, and promotes mental clarity."
+  },
+  {
+    "id": 100,
+    "name": "Standing Bow Pose",
+    "benefit": "Standing Bow Pose is a balancing pose that stretches the entire front body while strengthening the legs, core, and arms. It opens up the chest, hips, and shoulders, improving flexibility and balance. The deep stretch through the front body helps to release tension and encourages detoxification by stimulating the digestive organs. Standing Bow Pose enhances posture, increases stability, and builds both mental and physical strength."
   }
 ]
+
+

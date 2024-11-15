@@ -1,102 +1,502 @@
 [
-  {
+   {
     "id": 1,
-    "name": "Downward Dog",
-    "precaution": "Downward Dog should be avoided by individuals with wrist, shoulder, or back injuries, as it places a lot of pressure on the wrists and spine. Those with high blood pressure or glaucoma should also be cautious of the inversion, as it can increase pressure in the head and eyes. Keep the knees slightly bent if the hamstrings are tight to prevent overstraining the lower back."
-  },
-  {
-    "id": 2,
-    "name": "Tree Pose",
-    "precaution": "Tree Pose requires balance and concentration. Those with ankle, knee, or hip injuries should practice caution and avoid forcing the foot to rest on the thigh or knee. If balance is an issue, use a wall or support for extra stability. Pregnant individuals may need to avoid this pose or modify it by keeping the foot lower or resting on the calf instead of the thigh."
-  },
-  {
-    "id": 3,
-    "name": "Warrior I",
-    "precaution": "Those with knee or hip injuries should modify Warrior I by ensuring the front knee is not pushed beyond the ankle, and the back leg is kept straight to avoid straining the joints. If you have shoulder or neck issues, keep the arms lower or out to the sides instead of raised overhead. Use caution if you have high blood pressure, as the deep lunge can cause blood flow to shift."
-  },
-  {
-    "id": 4,
-    "name": "Warrior II",
-    "precaution": "Warrior II can be strenuous on the knees, so those with knee or hip problems should ensure that the knee is aligned over the ankle and avoid any twisting. People with shoulder injuries should avoid extending the arms fully or modify the arms to a lower position. Individuals with high blood pressure or heart conditions should also approach the pose with caution due to the intense engagement of the lower body."
-  },
-  {
-    "id": 5,
-    "name": "Child's Pose",
-    "precaution": "Child's Pose should be avoided by individuals with knee injuries, as the knees may be compressed while sitting on the heels. Those with lower back issues should avoid deep folding and instead keep the torso slightly elevated. Pregnant individuals may need to modify the pose by widening the knees or using a cushion for support under the chest."
-  },
-  {
-    "id": 6,
-    "name": "Cobra Pose",
-    "precaution": "Cobra Pose should be avoided by those with lower back or spinal issues, as the backbend can exacerbate pain. Individuals with wrist injuries should also be cautious as the pose requires pressure on the wrists. Pregnant individuals and those with neck issues should keep the chest lifted with less arch in the back or avoid the pose altogether."
-  },
-  {
-    "id": 7,
-    "name": "Bridge Pose",
-    "precaution": "Bridge Pose can strain the lower back or neck if performed incorrectly. Those with neck injuries should avoid turning the head while in the pose and should support the neck with proper alignment. If you have knee issues, avoid squeezing the knees inward. Pregnant individuals should avoid engaging the glutes excessively and keep the hips at a comfortable height."
-  },
-  {
-    "id": 8,
-    "name": "Triangle Pose",
-    "precaution": "Triangle Pose can be challenging for individuals with tight hamstrings, hips, or lower back, so modifications such as bending the knees or shortening the stance may be necessary. Those with neck or shoulder issues should avoid twisting the neck upward, and instead, keep the head aligned with the torso. Individuals with low blood pressure should be cautious when coming out of the pose, as the deep stretch may cause dizziness."
-  },
-  {
-    "id": 9,
-    "name": "Seated Forward Bend",
-    "precaution": "Seated Forward Bend should be approached with caution if you have hamstring, knee, or lower back injuries. Bending the spine too deeply can worsen pain in the lower back, so it's important to keep the back straight and avoid overreaching. If you're pregnant, avoid deep forward bending, especially in the second and third trimesters."
-  },
-  {
-    "id": 10,
     "name": "Mountain Pose",
     "precaution": "While Mountain Pose is a standing pose with low impact, those with ankle or foot injuries should be mindful of the weight distribution in the feet. It’s important to avoid overextending the knees, which could strain the leg joints. If you have balance issues, use a wall or support for stability."
   },
   {
+    "id": 2,
+    "name": "Downward-Facing Dog",
+    "precaution": "Avoid over-straightening the knees if you have tight hamstrings or back issues. Keep the shoulders away from the ears and engage the core for better alignment. If you have wrist discomfort, use props like yoga blocks under the hands or practice on fists."
+  },
+  {
+    "id": 3,
+    "name": "Plank Pose",
+    "precaution": "Ensure the body forms a straight line from head to heels. Avoid sagging in the lower back by engaging the core and glutes. If you have wrist or shoulder issues, perform this pose on forearms or knees."
+  },
+  {
+    "id": 4,
+    "name": "Four-Limbed Staff Pose",
+    "precaution": "If you have shoulder or wrist pain, lower down to your knees or practice a modified plank. Keep the elbows close to the body and avoid collapsing the chest. Engage the core to protect the lower back."
+  },
+  {
+    "id": 5,
+    "name": "Upward-Facing Dog",
+    "precaution": "Avoid over-extending the back. Keep the elbows straight, but do not lock them. If you have lower back issues, use Cobra Pose as an alternative to avoid straining the back."
+  },
+  {
+    "id": 6,
+    "name": "Child's Pose",
+    "precaution": "If you have knee pain, place a cushion or block under the knees for support. Avoid sitting on the heels if you have tightness in the ankles or knees."
+  },
+  {
+    "id": 7,
+    "name": "Warrior I",
+    "precaution": "Ensure that the front knee is aligned with the ankle to avoid strain. If you have tight hips, widen the stance. Avoid over-extending the back and keep the torso upright to protect the lower back."
+  },
+  {
+    "id": 8,
+    "name": "Warrior II",
+    "precaution": "Ensure the front knee is bent at a 90-degree angle and aligned with the ankle. If you have neck pain, avoid looking over the front hand and instead gaze straight ahead or down. Keep the hips open and avoid collapsing the chest."
+  },
+  {
+    "id": 9,
+    "name": "Warrior III",
+    "precaution": "Avoid rounding the back and keep the lifted leg in line with the torso. If balancing is difficult, practice near a wall or use a block under the hands for support."
+  },
+  {
+    "id": 10,
+    "name": "Extended Side Angle",
+    "precaution": "Ensure the knee of the front leg is aligned with the ankle to protect the joint. Avoid collapsing the chest towards the knee and keep the torso open. If you have shoulder pain, avoid the deep shoulder stretch and use a block under the bottom hand."
+  },
+  {
     "id": 11,
-    "name": "Chair Pose",
-    "precaution": "Chair Pose can be strenuous on the knees and lower back, so individuals with knee injuries or lower back pain should avoid deep squatting and keep the knees in alignment with the toes. Pregnant individuals or those with heart conditions should avoid this pose or modify it by reducing the depth of the squat to avoid overstraining the body."
+    "name": "Reverse Warrior",
+    "precaution": "Avoid over-extending the back and keep the chest open. If you have knee pain, avoid bending the front knee too deeply. Maintain an active core to prevent the lower back from arching."
   },
   {
     "id": 12,
-    "name": "Camel Pose",
-    "precaution": "Camel Pose requires a deep backbend, which may not be suitable for individuals with lower back or neck injuries. Those with knee pain should keep the knees directly under the hips and avoid letting the knees splay outward. Pregnant individuals should avoid the deep arch in the back and may need to skip this pose altogether or modify it for safety."
+    "name": "Triangle Pose",
+    "precaution": "If you have a lower back injury, be careful not to over-stretch and maintain a slight bend in the knees. Avoid collapsing the torso and keep the chest open. Use a block under the bottom hand for added support if needed."
   },
   {
     "id": 13,
-    "name": "Boat Pose",
-    "precaution": "Boat Pose can strain the lower back and hip flexors if performed incorrectly, especially if the core is not fully engaged. Those with lower back pain should avoid or modify the pose by keeping the feet on the ground or using props for support. Pregnant individuals should avoid balancing in this position and should choose more gentle core exercises."
+    "name": "Half Moon Pose",
+    "precaution": "Avoid collapsing the torso forward and keep the spine long. Engage the core for balance and avoid hyperextending the standing leg. Use a block under the lower hand for support if necessary."
   },
   {
     "id": 14,
-    "name": "Plank Pose",
-    "precaution": "Plank Pose places significant pressure on the wrists, shoulders, and core. Those with wrist or shoulder injuries should modify the pose by lowering the knees to the ground or practicing on the forearms. People with lower back issues should be cautious of sagging in the lower back and focus on maintaining a straight line from head to heels."
+    "name": "Chair Pose",
+    "precaution": "Avoid arching the lower back too much and keep the knees aligned with the toes. Engage the core to protect the spine. If you have knee pain, avoid bending the knees too deeply."
   },
   {
     "id": 15,
-    "name": "Bow Pose",
-    "precaution": "Bow Pose can strain the lower back if not performed with proper alignment. Individuals with back injuries should avoid deep backbends and may need to use props for support. Those with knee or hip issues should modify the pose and avoid forcing the legs into a deep bend. Pregnant individuals should avoid this pose altogether or perform a modified version with the chest supported."
+    "name": "Goddess Pose",
+    "precaution": "Ensure the knees are aligned with the toes and avoid collapsing the chest forward. If you have tight hips, reduce the angle of the knees and keep the feet wider apart."
   },
   {
     "id": 16,
-    "name": "Crow Pose",
-    "precaution": "Crow Pose is an arm balance that requires significant wrist, arm, and core strength. People with wrist, shoulder, or arm injuries should avoid this pose or modify it with less pressure on the hands. Those with neck or back issues should practice caution with the pose as it requires forward folding and balancing the body on the hands. It’s also crucial to build up core strength and focus before attempting this pose."
+    "name": "High Lunge",
+    "precaution": "Keep the front knee aligned with the ankle to avoid strain. If you have knee or hip pain, modify the lunge by keeping the back knee on the ground. Engage the core and avoid arching the lower back."
   },
   {
     "id": 17,
-    "name": "Happy Baby",
-    "precaution": "Happy Baby should be avoided by individuals with hip or lower back injuries, as the deep stretch may exacerbate pain. Those with knee issues should avoid pulling the knees too far back toward the body, as it could strain the knees. Pregnant individuals should avoid this pose as it may create pressure on the abdomen."
+    "name": "Low Lunge",
+    "precaution": "Ensure the front knee is directly above the ankle and avoid letting it extend past the toes. If you have knee pain, use a cushion or blanket under the knee for extra support."
   },
   {
     "id": 18,
-    "name": "Butterfly Pose",
-    "precaution": "Butterfly Pose should be avoided by those with hip or groin injuries, as the forward fold can strain these areas. Individuals with lower back pain should avoid rounding the spine too much during the fold. Pregnant individuals should avoid deep forward bending and may need to support the torso with cushions or props."
+    "name": "Pyramid Pose",
+    "precaution": "If you have hamstring or lower back issues, bend the front knee slightly. Avoid rounding the back excessively and use blocks under the hands for support if necessary."
   },
   {
     "id": 19,
-    "name": "Headstand",
-    "precaution": "Headstand should only be attempted by those with adequate strength in the shoulders, arms, and core. Individuals with neck, back, or shoulder injuries should avoid this inversion, as it places significant pressure on the neck and spine. Pregnant individuals should not attempt headstands due to the increased pressure on the head and upper body. It's crucial to practice proper alignment and use a spotter or wall for support when attempting this pose."
+    "name": "Wide-Legged Forward Fold",
+    "precaution": "Avoid rounding the back and keep the spine long. If you have hamstring tightness, bend the knees slightly. Use blocks under the hands if necessary to reduce strain on the back."
   },
   {
     "id": 20,
-    "name": "Reclined Twist",
-    "precaution": "Reclined Twist can exacerbate existing back or neck pain if performed too forcefully. Those with spinal injuries or herniated discs should modify the twist or avoid it altogether. Pregnant individuals should avoid deep twisting and should perform the pose gently with a slight twist, avoiding compression in the abdomen."
+    "name": "Standing Split",
+    "precaution": "Avoid locking the knee of the standing leg and keep the hips level. If you have hamstring tightness, bend the standing knee slightly. Use blocks under the hands for additional support if needed."
+  },
+  {
+    "id": 21,
+    "name": "Tree Pose",
+    "precaution": "Ensure the standing foot is grounded firmly, with the knee pointing outward. Avoid placing the foot on the knee joint, and instead place it on the inner thigh or calf. If you have balance issues, practice near a wall or use a block for support."
+  },
+  {
+    "id": 22,
+    "name": "Dancer's Pose",
+    "precaution": "If you have knee or hip issues, practice this pose with caution and avoid over-extending. Use a strap around the foot to assist with balance, and keep the chest lifted rather than collapsing the torso."
+  },
+  {
+    "id": 23,
+    "name": "Eagle Pose",
+    "precaution": "Avoid collapsing the upper body forward. If you have knee or ankle pain, practice this pose with a more supported stance, like placing the foot on the ground instead of wrapping it around the calf."
+  },
+  {
+    "id": 24,
+    "name": "Crow Pose",
+    "precaution": "Avoid rounding the back excessively, and focus on engaging the core. If you have wrist issues, practice on your forearms. Start by lifting one foot at a time off the ground to build balance."
+  },
+  {
+    "id": 25,
+    "name": "Side Crow",
+    "precaution": "Ensure the knees are aligned with the elbows and avoid twisting the spine too far. If you're new to this pose, practice the standard Crow Pose first to build strength and balance."
+  },
+  {
+    "id": 26,
+    "name": "Headstand",
+    "precaution": "Only attempt this pose if you have a strong foundation in yoga and a stable core. Avoid placing weight on the neck. Use a wall for support if you're new to this pose, and be cautious if you have neck or back injuries."
+  },
+  {
+    "id": 27,
+    "name": "Forearm Stand",
+    "precaution": "Avoid putting excessive pressure on the neck and wrists. Use a wall for support if you're new to this pose, and engage the core to help lift the legs. If you have shoulder injuries, avoid attempting this pose."
+  },
+  {
+    "id": 28,
+    "name": "Handstand",
+    "precaution": "Ensure that the wrists are aligned with the shoulders and that you are not arching your back excessively. Practice against a wall for support and avoid this pose if you have wrist, shoulder, or neck issues."
+  },
+  {
+    "id": 29,
+    "name": "Shoulder Stand",
+    "precaution": "Avoid placing excessive pressure on the neck. Ensure that the weight is supported by the shoulders and upper arms, not the neck. If you have neck or back injuries, avoid this pose or practice with a modified version."
+  },
+  {
+    "id": 30,
+    "name": "Fish Pose",
+    "precaution": "Avoid overstretching the neck, especially if you have neck pain. Keep the chest lifted and the elbows grounded for support. If you have back or shoulder injuries, avoid going too deep into the pose."
+  },
+  {
+    "id": 31,
+    "name": "Camel Pose",
+    "precaution": "Avoid over-arching the back and keep the lower ribs drawing in. If you have lower back pain, avoid dropping the head back too far. Use a block under the hands for added support if needed."
+  },
+  {
+    "id": 32,
+    "name": "Bridge Pose",
+    "precaution": "Engage the core and avoid letting the lower back sag. If you have neck or back issues, keep the head and neck in a neutral position or use a prop for additional support."
+  },
+  {
+    "id": 33,
+    "name": "Wheel Pose",
+    "precaution": "Avoid straining the lower back. Keep the legs active and the core engaged, and only go as deep as your body allows. If you have shoulder or back injuries, practice with caution and use props for support."
+  },
+  {
+    "id": 34,
+    "name": "Reclining Bound Angle",
+    "precaution": "Avoid forcing the knees to the ground. If you have tight hips or groin, use props like blocks or cushions under the knees for support. Keep the lower back supported by a cushion or mat if necessary."
+  },
+  {
+    "id": 35,
+    "name": "Legs Up the Wall",
+    "precaution": "If you have tight hamstrings, keep the legs slightly bent and use a prop like a pillow under the hips for added comfort. Avoid this pose if you have certain circulatory or heart conditions—check with a doctor beforehand."
+  },
+  {
+    "id": 36,
+    "name": "Boat Pose",
+    "precaution": "Avoid rounding the back and keep the spine long. If you have back pain, perform this pose with your hands behind you for support or keep your feet on the floor instead of lifting them."
+  },
+  {
+    "id": 37,
+    "name": "Seated Forward Fold",
+    "precaution": "Avoid rounding the back excessively. If you have tight hamstrings, bend the knees slightly to protect the lower back. Use a strap around the feet for a deeper stretch."
+  },
+  {
+    "id": 38,
+    "name": "Bound Angle",
+    "precaution": "Avoid forcing the knees down to the ground. If you have tight hips or groin, sit on a cushion to lift the hips and reduce strain. Keep the back straight and avoid rounding the spine."
+  },
+  {
+    "id": 39,
+    "name": "Happy Baby Pose",
+    "precaution": "Keep the feet flexed to protect the knees, and avoid pulling too hard on the feet. If you feel strain in the hips or lower back, use a block or cushion under the hips for support."
+  },
+  {
+    "id": 40,
+    "name": "Corpse Pose",
+    "precaution": "Ensure the body is fully relaxed, with the body and mind in a neutral state. If you have neck pain, use a cushion or towel under the head for additional support. Stay mindful of your breath to fully relax."
+  },
+  {
+    "id": 41,
+    "name": "Cobra Pose",
+    "precaution": "If you have lower back pain, keep the elbows slightly bent and avoid pushing too hard into the hands. Engage the legs and core to protect the lower back. Avoid this pose if you have a herniated disc or severe back pain."
+  },
+  {
+    "id": 42,
+    "name": "Locust Pose",
+    "precaution": "Keep the legs and hips grounded to avoid excessive pressure on the lower back. Engage the core to lift the chest and legs. If you have a back injury, avoid lifting the chest too high or practice with caution."
+  },
+  {
+    "id": 43,
+    "name": "Bow Pose",
+    "precaution": "Keep the neck in a neutral position to avoid straining it. Engage the core and avoid overextending the back. If you have neck or back issues, practice with caution or skip this pose altogether."
+  },
+  {
+    "id": 44,
+    "name": "Puppy Pose",
+    "precaution": "If you have tight shoulders or hips, avoid going too deep into the pose. Keep the hips over the knees to avoid strain in the lower back. Use a block under the forehead for added support if needed."
+  },
+  {
+    "id": 45,
+    "name": "Cat-Cow Pose",
+    "precaution": "If you have neck or back issues, keep the movements slow and controlled. Avoid over-arching the back and dropping the head too far. Keep the core engaged to protect the spine."
+  },
+  {
+    "id": 46,
+    "name": "Thread the Needle",
+    "precaution": "If you have shoulder issues, perform this pose with caution and keep the shoulder joint stable. Avoid dropping too deep into the twist if you have lower back pain."
+  },
+  {
+    "id": 47,
+    "name": "Fire Log Pose",
+    "precaution": "If you have knee issues, place a cushion or blanket under the knees for support. Avoid forcing the hips into a deep stretch—only go as far as feels comfortable."
+  },
+  {
+    "id": 48,
+    "name": "Pigeon Pose",
+    "precaution": "If you have knee, hip, or lower back injuries, practice with caution. Use props like blocks or a bolster under the hips for support, and keep the chest lifted to avoid collapsing the spine."
+  },
+  {
+    "id": 49,
+    "name": "Double Pigeon",
+    "precaution": "If you have tight hips or knees, use props to lift the hips and avoid pressure on the knees. Keep the spine tall and avoid rounding the back."
+  },
+  {
+    "id": 50,
+    "name": "Supine Twist",
+    "precaution": "If you have a back injury, perform this twist gently and avoid forcing the body deeper into the stretch. Use a cushion under the knees if you feel strain in the lower back."
+  },
+  {
+    "id": 51,
+    "name": "Half Lord of the Fishes",
+    "precaution": "Avoid twisting too deeply if you have lower back or neck pain. Keep the spine long and engage the core for support. Use props like a block to support the hip if needed."
+  },
+  {
+    "id": 52,
+    "name": "Side Plank",
+    "precaution": "Avoid collapsing the shoulder joint and ensure the wrist is directly beneath the shoulder. If you have wrist, shoulder, or core issues, practice this pose with caution or use modifications like knee support."
+  },
+  {
+    "id": 53,
+    "name": "Wild Thing",
+    "precaution": "Keep the shoulder joints stable and avoid overextending the back. If you have neck or back issues, practice with caution and use a block under the foot for support."
+  },
+  {
+    "id": 54,
+    "name": "Tiger Pose",
+    "precaution": "Avoid over-arching the back and keep the core engaged. If you have knee or back issues, perform this pose gently and with proper alignment."
+  },
+  {
+    "id": 55,
+    "name": "Gate Pose",
+    "precaution": "Avoid over-stretching the inner thigh and keep the hips squared. If you have knee or hip issues, perform this pose gently and avoid pushing too far into the stretch."
+  },
+  {
+    "id": 56,
+    "name": "Frog Pose",
+    "precaution": "If you have knee or hip issues, practice with caution and avoid forcing the knees to the floor. Use props like blankets or cushions under the knees for support."
+  },
+  {
+    "id": 57,
+    "name": "Lizard Pose",
+    "precaution": "If you have tight hips or knees, use props under the hips for support. Keep the back leg active to protect the knee and avoid letting the knee collapse inward."
+  },
+  {
+    "id": 58,
+    "name": "Fallen Triangle",
+    "precaution": "If you have neck, shoulder, or back issues, perform this pose gently and avoid going too deep into the stretch. Keep the legs strong and the hips lifted for support."
+  },
+  {
+    "id": 59,
+    "name": "Bird of Paradise",
+    "precaution": "If you have balance issues, practice near a wall or use a block for support. Avoid forcing the leg into a bind, and only go as far as feels comfortable in the twist."
+  },
+  {
+    "id": 60,
+    "name": "Extended Hand-to-Big-Toe Pose",
+    "precaution": "If you have hamstring or lower back tightness, bend the standing leg slightly. Keep the spine long and avoid rounding the back to protect the lower back."
+  },
+  {
+    "id": 61,
+    "name": "Standing Forward Fold",
+    "precaution": "If you have tight hamstrings or lower back pain, bend the knees slightly to avoid straining the lower back. Keep the core engaged and avoid rounding the back."
+  },
+  {
+    "id": 62,
+    "name": "Halfway Lift",
+    "precaution": "Keep the spine long and avoid rounding the back. If you have lower back or neck issues, perform the lift gently, and avoid overextending the chest."
+  },
+  {
+    "id": 63,
+    "name": "Ragdoll Pose",
+    "precaution": "If you have neck issues, keep the head relaxed and avoid pulling on the neck. Bend the knees slightly if you have tight hamstrings or back pain."
+  },
+  {
+    "id": 64,
+    "name": "Eight-Angle Pose",
+    "precaution": "This pose requires balance and core strength. If you have wrist or shoulder issues, practice with caution or skip this pose."
+  },
+  {
+    "id": 65,
+    "name": "Bound Side Angle",
+    "precaution": "Avoid over-extending the lower back or neck. Keep the knee above the ankle and ensure the hips are squared to protect the joints."
+  },
+  {
+    "id": 66,
+    "name": "Bound Forward Fold",
+    "precaution": "Avoid forcing the body into the fold. Keep the knees slightly bent if you have tight hamstrings or back pain."
+  },
+  {
+    "id": 67,
+    "name": "Half Splits",
+    "precaution": "Keep the hips squared and avoid forcing the fold. If you have knee or hamstring issues, use props for support and don’t over-extend."
+  },
+  {
+    "id": 68,
+    "name": "Full Splits",
+    "precaution": "If you have tight hips or hamstrings, practice with caution. Use props like blocks under the hips for support and avoid forcing the legs into a full split."
+  },
+  {
+    "id": 69,
+    "name": "King Pigeon Pose",
+    "precaution": "If you have knee, hip, or back injuries, avoid deepening the stretch. Use props to support the hips or head, and maintain a long spine."
+  },
+  {
+    "id": 70,
+    "name": "Lotus Pose",
+    "precaution": "If you have knee, hip, or ankle issues, avoid this pose. Sit on a cushion to lift the hips and keep the spine straight. Do not force the legs into position."
+  },
+  {
+    "id": 71,
+    "name": "Lotus Forward Fold",
+    "precaution": "Do not force the body forward. Keep the spine straight, and avoid rounding the back. If you have tight hips or knees, use props for support."
+  },
+  {
+    "id": 72,
+    "name": "Cow Face Pose",
+    "precaution": "If you have shoulder or knee issues, avoid forcing the legs into position. Keep the spine long and use props if needed to support the knees."
+  },
+  {
+    "id": 73,
+    "name": "Seated Spinal Twist",
+    "precaution": "Twist gently to avoid straining the lower back. Keep the spine long and avoid over-rotating if you have neck or back issues."
+  },
+  {
+    "id": 74,
+    "name": "Hero Pose",
+    "precaution": "If you have knee or ankle issues, use a cushion or block under the hips for support. Keep the spine long and avoid collapsing the chest."
+  },
+  {
+    "id": 75,
+    "name": "Revolved Triangle",
+    "precaution": "Keep the hips squared and avoid over-twisting. If you have neck or back injuries, practice with caution and keep the twist gentle."
+  },
+  {
+    "id": 76,
+    "name": "Revolved Side Angle",
+    "precaution": "If you have knee, back, or neck injuries, avoid over-rotating. Use a block under the hand if you feel any strain in the lower back."
+  },
+  {
+    "id": 77,
+    "name": "Shoulder Pressing Pose",
+    "precaution": "Avoid straining the wrists or shoulders. If you have wrist or shoulder injuries, practice this pose with caution and keep the core engaged for stability."
+  },
+  {
+    "id": 78,
+    "name": "Flying Pigeon Pose",
+    "precaution": "This pose requires balance and flexibility. If you have wrist, shoulder, or hip issues, practice with caution and use props for stability."
+  },
+  {
+    "id": 79,
+    "name": "Firefly Pose",
+    "precaution": "Keep the wrists strong and avoid collapsing the shoulders. If you have lower back or hip injuries, practice with caution and use blocks for support."
+  },
+  {
+    "id": 80,
+    "name": "Monkey Pose",
+    "precaution": "If you have tight hamstrings or lower back pain, bend the knee slightly and avoid over-extending the spine. Use props to support the fold if needed."
+  },
+  {
+    "id": 81,
+    "name": "Ganda Bherundasana (Chin Stand)",
+    "precaution": "This pose requires significant balance and shoulder strength. Avoid if you have neck, back, or shoulder injuries. Practice under supervision, especially when learning."
+  },
+  {
+    "id": 82,
+    "name": "Scorpion Pose (Vrschikasana)",
+    "precaution": "Avoid this pose if you have neck or back issues. Practice this pose gently and ensure strong core engagement to protect the lower back and neck."
+  },
+  {
+    "id": 83,
+    "name": "Half Moon Bound Pose (Baddha Ardha Chandrasana)",
+    "precaution": "Be cautious if you have knee, hip, or shoulder injuries. Keep the hips squared and avoid over-stretching. Use a block under the hand for additional support."
+  },
+  {
+    "id": 84,
+    "name": "Hummingbird Pose (Mayurasana)",
+    "precaution": "This pose requires significant wrist and core strength. If you have wrist, shoulder, or lower back issues, practice with caution or avoid it entirely."
+  },
+  {
+    "id": 85,
+    "name": "Peacock Pose (Mayurasana)",
+    "precaution": "Requires core strength and balance. Avoid if you have wrist, shoulder, or abdominal issues. Engage the core deeply and keep the back flat."
+  },
+  {
+    "id": 86,
+    "name": "Compass Pose (Parivrtta Surya Yantrasana)",
+    "precaution": "If you have tight hips, lower back pain, or shoulder injuries, practice with caution. Keep the core engaged and avoid forcing the twist."
+  },
+  {
+    "id": 87,
+    "name": "Sleeping Vishnu (Anantasana)",
+    "precaution": "If you have shoulder or hip issues, use props to support the body. Keep the spine long and avoid collapsing the chest."
+  },
+  {
+    "id": 88,
+    "name": "Dragonfly Pose (Maksikanagasana)",
+    "precaution": "This pose requires flexibility and balance. If you have wrist, shoulder, or hip injuries, practice with caution and avoid forcing the body into position."
+  },
+  {
+    "id": 89,
+    "name": "Grasshopper Pose (Maksikanagasana Variation)",
+    "precaution": "Practice with caution if you have wrist, shoulder, or hip issues. Focus on building strength and flexibility gradually."
+  },
+  {
+    "id": 90,
+    "name": "Baby Grasshopper (Parsva Bhuja Dandasana)",
+    "precaution": "This pose involves balance and strength in the wrists, shoulders, and core. Avoid if you have wrist or shoulder injuries."
+  },
+  {
+    "id": 91,
+    "name": "Caterpillar Pose (Paschimottanasana Variation)",
+    "precaution": "If you have tight hamstrings or lower back pain, bend the knees slightly to avoid straining. Keep the spine long and avoid rounding the back."
+  },
+  {
+    "id": 92,
+    "name": "Revolved Chair Pose (Parivrtta Utkatasana)",
+    "precaution": "Avoid if you have knee, back, or shoulder injuries. Keep the knees aligned and avoid over-rotating the spine."
+  },
+  {
+    "id": 93,
+    "name": "Side Stretch Pose (Parsvottanasana)",
+    "precaution": "If you have tight hamstrings or lower back pain, bend the knees slightly. Avoid rounding the back and keep the core engaged."
+  },
+  {
+    "id": 94,
+    "name": "Hero Pose with Recline (Supta Virasana)",
+    "precaution": "Avoid if you have knee, hip, or lower back issues. Use props under the hips and knees for support if needed."
+  },
+  {
+    "id": 95,
+    "name": "Intense Side Stretch (Parsvottanasana)",
+    "precaution": "If you have tight hamstrings or lower back pain, bend the knees slightly. Keep the spine long and avoid rounding the back."
+  },
+  {
+    "id": 96,
+    "name": "Revolved Crescent Lunge (Parivrtta Alanasana)",
+    "precaution": "Avoid over-rotating the spine if you have back or neck issues. Keep the front knee aligned and avoid pushing the body too deep into the twist."
+  },
+  {
+    "id": 97,
+    "name": "Tortoise Pose (Kurmasana)",
+    "precaution": "If you have tight hips or hamstrings, practice with caution. Avoid collapsing the chest, and keep the spine long."
+  },
+  {
+    "id": 98,
+    "name": "One-Legged Bridge Pose (Setu Bandha Sarvangasana with one leg lifted)",
+    "precaution": "Be cautious if you have lower back or hip issues. Keep the core engaged and avoid arching the back excessively."
+  },
+  {
+    "id": 99,
+    "name": "Wheel Pose Variation (Urdhva Dhanurasana with one leg lifted)",
+    "precaution": "If you have back, shoulder, or hip issues, avoid this variation. Focus on lifting from the chest and avoid overextending the back."
+  },
+  {
+    "id": 100,
+    "name": "Standing Bow Pose (Dandayamana Dhanurasana)",
+    "precaution": "Avoid over-arching the lower back. If you have back, hip, or knee issues, practice with caution and keep the torso aligned."
   }
 ]
