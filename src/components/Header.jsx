@@ -54,7 +54,7 @@ const Header = () => {
                 <Link to="/">Yoga Pose Library</Link>
             </h1>
             
-            {/* Desktop navigation */}
+            {/* Desktop nav */}
             <nav className="hidden md:flex space-x-6">
                 <Link to="/">All Poses</Link>
                 <div ref={dropdownRef} className="relative inline-block">
@@ -112,6 +112,7 @@ const Header = () => {
                     )}
                 </div>
                 <Link to="/beginners-guide">Beginner's Guide</Link>
+                <Link to="/articles">Articles</Link>
                 <Link to="/resources">Resources</Link>
             </nav>
 
@@ -125,7 +126,7 @@ const Header = () => {
                 </button>
             </div>
 
-            {/* Mobile navigation (half-screen) */}
+            {/* Mobile nav */}
             {isMobileMenuOpen && (
                 <div ref={mobileMenuRef} className="fixed top-0 right-0 w-1/2 h-full bg-white z-10 p-4 flex flex-col space-y-4 overflow-y-auto shadow-lg">
                     <Link
@@ -182,6 +183,13 @@ const Header = () => {
                     >
                         Beginner's Guide
                     </Link>
+                    <Link
+                        to="/articles"
+                        onClick={() => handleLinkClick("/articles")}
+                        className="text-lg"
+                    >
+                        Articles
+                    </Link> 
                     <Link
                         to="/resources"
                         onClick={() => handleLinkClick("/resources")}

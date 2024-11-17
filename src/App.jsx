@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import CategoryPage from "./components/CategoryPage";
 import PosePage from "./components/PosePage";
 import Guide from "./components/Guide";
+import Articles from "./components/Articles";
 import Resources from "./components/Resources";
 import Footer from "./components/Footer";
 
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="/categories/:categoryType/:categoryValue" element={<> <PoseList /> <CategoryPage /></>} />
             <Route path="/pose/:id" element={<> <PoseList /> <PosePage /></>} />
             <Route path="/beginners-guide" element={<> <PoseList /> <Guide /></>} />
+            <Route path="/articles" element={<><PoseList /> <Articles /></>} /> 
             <Route path="/resources" element={<><PoseList /> <Resources /></>} />
           </Routes>
    
