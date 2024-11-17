@@ -8,8 +8,8 @@ const Articles = () => {
     ];
 
     return (
-        <div className="p-10 max-w-3xl mx-auto text-gray-800 bg-white">
-            <h1 className="text-5xl font-light tracking-wider mb-20 text-center text-gray-600">
+        <div className="flex flex-col p-8 space-y-8">
+            <h1 className="text-4xl mb-1">
                 Articles
             </h1>
             <ul className="space-y-24">
