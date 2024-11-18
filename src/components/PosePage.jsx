@@ -27,7 +27,12 @@ const PosePage = () => {
     <div className="flex flex-col min-h-screen w-full max-w-2xl space-y-6 p-6">
       <h2 className="text-4xl">{pose.name} <span>({poseSanskirt.sanskrit_name})</span></h2>
       
-      {/* {pose.image && <img src={pose.image} alt={pose.name} />} */}
+      {pose.image && <img 
+          src={pose.image} 
+          alt={pose.name} 
+          style={{ maxWidth: '300px', height: 'auto', margin: '0 auto', display: 'block' }}
+          className="rounded-md"
+      />}
       
       {poseDesc && poseDesc.desc && (
         <p><strong>Description:</strong> {poseDesc.desc}</p>
@@ -95,7 +100,8 @@ const PosePage = () => {
         </ul>
       </div>
     )}
-  </div>
+    </div>
+      <a href="https://www.flaticon.com/free-icons/workout" title="workout icons">Workout icons created by dDara - Flaticon</a>
     </div>
   );
 };
