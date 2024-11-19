@@ -7,6 +7,7 @@ const CategoryPage = () => {
   const [filteredPoses, setFilteredPoses] = useState([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     if (categoryType && categoryValue) {
       const matchingPoses = posesData.filter((pose) =>
         pose[categoryType]?.some(item => item.toLowerCase() === categoryValue.toLowerCase())

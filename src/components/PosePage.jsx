@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import posesData from '../data/poses.json';
 import descriptions from '../data/descriptions.json'; 
 import sanskirts from '../data/sanskirts.json'
@@ -73,7 +73,14 @@ const PosePage = () => {
         <p className="text-gray-500 my-1">Benefits</p>
         <ul className="flex flex-wrap gap-2">
           {pose.benefit.map((benefit, index) => (
-            <li key={index} className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors">{benefit}</li>
+            <li key={index}>
+            <Link 
+              to={`/categories/benefit/${benefit}`} 
+              className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
+            >
+              {benefit}
+            </Link>
+          </li>
           ))}
         </ul>
       </div>
@@ -84,7 +91,14 @@ const PosePage = () => {
         <p className="text-gray-500 my-1">Parts of the body</p>
         <ul className="flex flex-wrap gap-2">
           {pose.part.map((part, index) => (
-            <li key={index} className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors">{part}</li>
+            <li key={index}>
+            <Link 
+              to={`/categories/part/${part}`} 
+              className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
+            >
+              {part}
+            </Link>
+          </li>
           ))}
         </ul>
       </div>
@@ -95,7 +109,14 @@ const PosePage = () => {
         <p className="text-gray-500 my-1">Pose Type</p>
         <ul className="flex flex-wrap gap-2">
           {pose.type.map((type, index) => (
-            <li key={index} className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors">{type}</li>
+            <li key={index}>
+            <Link 
+              to={`/categories/type/${type}`} 
+              className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
+            >
+              {type}
+            </Link>
+          </li>
           ))}
         </ul>
       </div>

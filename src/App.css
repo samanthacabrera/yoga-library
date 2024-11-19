@@ -9,4 +9,5 @@ body {
   font-family: Helvetica, sans-serif;
   font-weight: 200;
   line-height: 225%;
+  scroll-behavior: smooth;
 }
