@@ -127,6 +127,7 @@ const PosePage = () => {
     )}
     </div>
       <a href="https://www.flaticon.com/free-icons/workout" title="workout icons">Workout icons created by dDara - Flaticon</a>
+      <a href="https://www.flaticon.com/free-icons/yoga" title="yoga icons">Yoga icons created by monkik - Flaticon</a>
     </div>
   );
 };

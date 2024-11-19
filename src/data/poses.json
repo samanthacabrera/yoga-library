@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name": "Downward-Facing Dog",
-    "image": "",
+    "image": "/downward-facing-dog.png",
     "chakra": ["Root", "Crown"],
     "type": ["Inversion"],
     "benefit": ["Strength"],
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "name": "Plank Pose",
-    "image": "",
+    "image": "/plank-pose.png",
     "chakra": ["Solar Plexus"],
     "type": ["Strength"],
     "benefit": ["Strength", "Stability"],
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "name": "Upward-Facing Dog",
-    "image": "",
+    "image": "/upward-facing-dog.png",
     "chakra": ["Heart"],
     "type": ["Backbend"],
     "benefit": ["Flexibility", "Openness"],
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "name": "Child's Pose",
-    "image": "",
+    "image": "/child-pose.png",
     "chakra": ["Root"],
     "type": ["Restorative"],
     "benefit": ["Relaxation"],
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "name": "Warrior I",
-    "image": "",
+    "image": "/warrior-I.png",
     "chakra": ["Root", "Heart"],
     "type": ["Standing"],
     "benefit": ["Strength", "Stability"],
@@ -65,7 +65,7 @@
   {
     "id": 8,
     "name": "Warrior II",
-    "image": "",
+    "image": "/warrior-II.png",
     "chakra": ["Root", "Heart"],
     "type": ["Standing"],
     "benefit": ["Balance", "Stamina"],
@@ -128,7 +128,7 @@
   {
     "id": 15,
     "name": "Goddess Pose",
-    "image": "",
+    "image": "/goddess-pose.png",
     "chakra": ["Root"],
     "type": ["Standing"],
     "benefit": ["Strength", "Openness"],
@@ -272,7 +272,7 @@
   {
     "id": 31,
     "name": "Camel Pose",
-    "image": "",
+    "image": "/camel-pose.png",
     "chakra": ["Heart"],
     "type": ["Backbend"],
     "benefit": ["Openness", "Flexibility"],
@@ -344,7 +344,7 @@
   {
     "id": 39,
     "name": "Happy Baby Pose",
-    "image": "",
+    "image": "/happy-baby-pose.png",
     "chakra": ["Root"],
     "type": ["Restorative"],
     "benefit": ["Relaxation", "Flexibility"],
@@ -353,7 +353,7 @@
   {
     "id": 40,
     "name": "Corpse Pose",
-    "image": "",
+    "image": "/corpse-pose.png",
     "chakra": ["Crown"],
     "type": ["Restorative"],
     "benefit": ["Relaxation", "Meditation"],
@@ -371,7 +371,7 @@
   {
     "id": 42,
     "name": "Locust Pose",
-    "image": "",
+    "image": "/locust-pose.png",
     "chakra": ["Solar Plexus"],
     "type": ["Backbend"],
     "benefit": ["Strength", "Posture"],
@@ -380,7 +380,7 @@
   {
     "id": 43,
     "name": "Bow Pose",
-    "image": "",
+    "image": "/bow-pose.png",
     "chakra": ["Heart"],
     "type": ["Backbend"],
     "benefit": ["Flexibility", "Openness"],
@@ -398,7 +398,7 @@
   {
     "id": 45,
     "name": "Cat-Cow Pose",
-    "image": "",
+    "image": "/cat-pose.png",
     "chakra": ["Root"],
     "type": ["Seated"],
     "benefit": ["Flexibility", "Warm-Up"],
@@ -443,7 +443,7 @@
   {
     "id": 50,
     "name": "Supine Twist",
-    "image": "",
+    "image": "/supine-twist.png",
     "chakra": ["Root"],
     "type": ["Twist"],
     "benefit": ["Relaxation", "Stretch"],
@@ -560,7 +560,7 @@
   {
     "id": 63,
     "name": "Ragdoll Pose",
-    "image": "",
+    "image": "/ragdoll-pose.png",
     "chakra": ["Root"],
     "type": ["Forward Fold"],
     "benefit": ["Relaxation", "Flexibility"],
@@ -641,7 +641,7 @@
   {
     "id": 72,
     "name": "Cow Face Pose",
-    "image": "",
+    "image": "/cow-face-pose.png",
     "chakra": ["Heart"],
     "type": ["Seated"],
     "benefit": ["Flexibility", "Openness"],
@@ -668,7 +668,7 @@
   {
     "id": 75,
     "name": "Revolved Triangle",
-    "image": "",
+    "image": "/revovled-triange-pose.png",
     "chakra": ["Root", "Heart"],
     "type": ["Standing"],
     "benefit": ["Flexibility", "Strength"],
@@ -758,7 +758,7 @@
   {
     "id": 85,
     "name": "Peacock Pose",
-    "image": "",
+    "image": "/peacock-pose.png",
     "chakra": ["Root", "Solar Plexus"],
     "type": ["Arm Balance"],
     "benefit": ["Strength", "Core Activation"],
