@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import posesData from '../data/poses.json';
 import descriptions from '../data/descriptions.json'; 
@@ -11,6 +11,10 @@ import cues from '../data/cues.json';
 const PosePage = () => {
   const { id } = useParams();
   const pose = posesData.find(p => p.id === parseInt(id));
+
+   useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, [id]);
 
   if (!pose) {
     return <div>Pose not found</div>;

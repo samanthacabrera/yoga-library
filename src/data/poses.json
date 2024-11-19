@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Mountain Pose",
-    "image": "",
+    "image": "/mountain-pose.png",
     "chakra": ["Root"],
     "type": ["Standing"],
     "benefit": ["Posture", "Awareness"],
@@ -488,7 +488,7 @@
   {
     "id": 55,
     "name": "Gate Pose",
-    "image": "",
+    "image": "/gate-pose.png",
     "chakra": ["Root"],
     "type": ["Kneeling"],
     "benefit": ["Stretch", "Flexibility"],
@@ -533,7 +533,7 @@
   {
     "id": 60,
     "name": "Extended Hand-to-Big-Toe Pose",
-    "image": "",
+    "image": "/extended-hand-to-big-toe-pose.png",
     "chakra": ["Root"],
     "type": ["Standing", "Balance"],
     "benefit": ["Balance", "Flexibility"],
@@ -631,8 +631,8 @@
   },
   {
     "id": 71,
-    "name": "Lotus Forward Fold",
-    "image": "",
+    "name": "Elevated Lotus Pose",
+    "image": "/elevated-lotus-pose.png",
     "chakra": ["Root", "Crown"],
     "type": ["Seated", "Forward Fold"],
     "benefit": ["Flexibility", "Relaxation"],
@@ -650,7 +650,7 @@
   {
     "id": 73,
     "name": "Seated Spinal Twist",
-    "image": "",
+    "image": "/seated-spinal-twist.png",
     "chakra": ["Root", "Heart"],
     "type": ["Twist"],
     "benefit": ["Flexibility"],
@@ -659,7 +659,7 @@
   {
     "id": 74,
     "name": "Hero Pose",
-    "image": "",
+    "image": "/hero-pose.png",
     "chakra": ["Root"],
     "type": ["Seated"],
     "benefit": ["Strength", "Openness"],
