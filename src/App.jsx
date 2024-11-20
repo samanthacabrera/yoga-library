@@ -20,7 +20,8 @@ const App = () => {
       <div className="flex">
        
           <Routes>
-            <Route path="/" element={<> <PoseList /> <Hero /></>}/>
+            <Route path="/" element={<> <PoseList /> <Hero /></>} />
+            <Route path="/categories/all" element={<> <PoseList /> <CategoryPage /></>} />
             <Route path="/categories/:categoryType/:categoryValue" element={<> <PoseList /> <CategoryPage /></>} />
             <Route path="/pose/:id" element={<> <PoseList /> <PosePage /></>} />
             <Route path="/beginners-guide" element={<> <PoseList /> <Guide /></>} />

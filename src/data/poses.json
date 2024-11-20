@@ -27,15 +27,6 @@
     "part": ["Core", "Shoulders"]
   },
   {
-    "id": 4,
-    "name": "Four-Limbed Staff Pose",
-    "image": "",
-    "chakra": ["Root", "Heart"],
-    "type": ["Strength"],
-    "benefit": ["Strength"],
-    "part": ["Core", "Arms"]
-  },
-  {
     "id": 5,
     "name": "Upward-Facing Dog",
     "image": "/upward-facing-dog.png",
@@ -101,7 +92,7 @@
   {
     "id": 12,
     "name": "Triangle Pose",
-    "image": "",
+    "image": "/triangle-pose.png",
     "chakra": ["Root", "Heart"],
     "type": ["Standing"],
     "benefit": ["Balance", "Flexibility"],
@@ -146,7 +137,7 @@
   {
     "id": 17,
     "name": "Low Lunge",
-    "image": "",
+    "image": "/low-lunge.png",
     "chakra": ["Root", "Heart"],
     "type": ["Standing"],
     "benefit": ["Flexibility", "Openness"],
@@ -225,15 +216,6 @@
     "part": ["Arms", "Core"]
   },
   {
-    "id": 26,
-    "name": "Headstand",
-    "image": "",
-    "chakra": ["Crown"],
-    "type": ["Inversion"],
-    "benefit": ["Strength", "Focus"],
-    "part": ["Shoulders", "Core"]
-  },
-  {
     "id": 27,
     "name": "Forearm Stand",
     "image": "/forearm-stand.png",
@@ -245,7 +227,7 @@
   {
     "id": 28,
     "name": "Handstand",
-    "image": "",
+    "image": "/handstand.png",
     "chakra": ["Crown"],
     "type": ["Inversion"],
     "benefit": ["Strength", "Balance"],
@@ -263,7 +245,7 @@
   {
     "id": 30,
     "name": "Fish Pose",
-    "image": "",
+    "image": "/fish-pose.png",
     "chakra": ["Throat", "Heart"],
     "type": ["Backbend"],
     "benefit": ["Flexibility", "Openness"],
@@ -281,7 +263,7 @@
   {
     "id": 32,
     "name": "Bridge Pose",
-    "image": "",
+    "image": "/bridge-pose.png",
     "chakra": ["Heart"],
     "type": ["Backbend"],
     "benefit": ["Strength", "Flexibility"],
@@ -299,7 +281,7 @@
   {
     "id": 34,
     "name": "Reclining Bound Angle",
-    "image": "",
+    "image": "/reclining-bound-angle-pose.png",
     "chakra": ["Root"],
     "type": ["Restorative"],
     "benefit": ["Relaxation", "Openness"],
@@ -335,7 +317,7 @@
   {
     "id": 38,
     "name": "Bound Angle",
-    "image": "",
+    "image": "/bound-angle-pose.png",
     "chakra": ["Root"],
     "type": ["Seated"],
     "benefit": ["Openness", "Relaxation"],
@@ -407,7 +389,7 @@
   {
     "id": 46,
     "name": "Thread the Needle",
-    "image": "",
+    "image": "/thread-the-needle.png",
     "chakra": ["Heart"],
     "type": ["Twist"],
     "benefit": ["Relaxation", "Stretch"],
@@ -430,15 +412,6 @@
     "type": ["Hip Opener"],
     "benefit": ["Openness", "Relaxation"],
     "part": ["Hips", "Glutes"]
-  },
-  {
-    "id": 49,
-    "name": "Double Pigeon",
-    "image": "",
-    "chakra": ["Root"],
-    "type": ["Hip Opener"],
-    "benefit": ["Openness", "Stretch"],
-    "part": ["Hips", "Thighs"]
   },
   {
     "id": 50,
@@ -497,7 +470,7 @@
   {
     "id": 56,
     "name": "Frog Pose",
-    "image": "",
+    "image": "/frog-pose.png",
     "chakra": ["Root"],
     "type": ["Hip Opener"],
     "benefit": ["Openness", "Stretch"],
@@ -576,24 +549,6 @@
     "part": ["Core", "Arms"]
   },
   {
-    "id": 65,
-    "name": "Bound Side Angle",
-    "image": "",
-    "chakra": ["Root", "Heart"],
-    "type": ["Standing"],
-    "benefit": ["Flexibility", "Strength"],
-    "part": ["Hips", "Legs"]
-  },
-  {
-    "id": 66,
-    "name": "Bound Forward Fold",
-    "image": "",
-    "chakra": ["Root"],
-    "type": ["Forward Fold"],
-    "benefit": ["Flexibility", "Relaxation"],
-    "part": ["Hamstrings", "Spine"]
-  },
-  {
     "id": 67,
     "name": "Half Splits",
     "image": "",
@@ -605,7 +560,7 @@
   {
     "id": 68,
     "name": "Full Splits",
-    "image": "/full-splits.png",
+    "image": "/monkey-pose.png",
     "chakra": ["Root"],
     "type": ["Seated"],
     "benefit": ["Flexibility"],
@@ -677,29 +632,11 @@
   {
     "id": 76,
     "name": "Revolved Side Angle",
-    "image": "",
+    "image": "/revolved-side-angle-pose.png",
     "chakra": ["Root", "Heart"],
     "type": ["Standing"],
     "benefit": ["Flexibility", "Strength"],
     "part": ["Spine", "Hips"]
-  },
-  {
-    "id": 77,
-    "name": "Shoulder Pressing Pose",
-    "image": "",
-    "chakra": ["Solar Plexus"],
-    "type": ["Arm Balance"],
-    "benefit": ["Strength", "Balance"],
-    "part": ["Arms", "Core"]
-  },
-  {
-    "id": 78,
-    "name": "Flying Pigeon Pose",
-    "image": "",
-    "chakra": ["Root"],
-    "type": ["Arm Balance"],
-    "benefit": ["Strength", "Balance"],
-    "part": ["Arms", "Core"]
   },
   {
     "id": 79,
@@ -713,20 +650,11 @@
   {
     "id": 80,
     "name": "Monkey Pose",
-    "image": "",
+    "image": "/monkey-pose.png",
     "chakra": ["Root"],
     "type": ["Seated"],
     "benefit": ["Flexibility", "Strength"],
     "part": ["Legs", "Hips"]
-  },
-  {
-    "id": 81,
-    "name": "Ganda Bherundasana",
-    "image": "",
-    "chakra": ["Root", "Solar Plexus"],
-    "type": ["Inversion"],
-    "benefit": ["Strength", "Balance"],
-    "part": ["Arms", "Core"]
   },
   {
     "id": 82,
@@ -736,15 +664,6 @@
     "type": ["Inversion"],
     "benefit": ["Strength", "Flexibility"],
     "part": ["Back", "Shoulders"]
-  },
-  {
-    "id": 83,
-    "name": "Half Moon Bound Pose",
-    "image": "",
-    "chakra": ["Root", "Heart"],
-    "type": ["Balance", "Standing"],
-    "benefit": ["Flexibility", "Strength"],
-    "part": ["Hips", "Core"]
   },
   {
     "id": 84,
@@ -772,133 +691,5 @@
     "type": ["Seated"],
     "benefit": ["Flexibility", "Openness"],
     "part": ["Hips", "Back"]
-  },
-  {
-    "id": 87,
-    "name": "Sleeping Vishnu",
-    "image": "",
-    "chakra": ["Root", "Heart"],
-    "type": ["Seated"],
-    "benefit": ["Flexibility", "Relaxation"],
-    "part": ["Spine", "Hips"]
-  },
-  {
-    "id": 88,
-    "name": "Dragonfly Pose",
-    "image": "",
-    "chakra": ["Root"],
-    "type": ["Seated"],
-    "benefit": ["Flexibility", "Strength"],
-    "part": ["Hips", "Legs"]
-  },
-  {
-    "id": 89,
-    "name": "Grasshopper Pose",
-    "image": "",
-    "chakra": ["Root", "Solar Plexus"],
-    "type": ["Arm Balance"],
-    "benefit": ["Strength", "Balance"],
-    "part": ["Arms", "Core"]
-  },
-  {
-    "id": 90,
-    "name": "Baby Grasshopper",
-    "image": "",
-    "chakra": ["Root", "Solar Plexus"],
-    "type": ["Arm Balance"],
-    "benefit": ["Strength", "Balance"],
-    "part": ["Core", "Arms"]
-  },
-  {
-    "id": 91,
-    "name": "Caterpillar Pose",
-    "image": "",
-    "chakra": ["Root"],
-    "type": ["Forward Fold"],
-    "benefit": ["Flexibility", "Relaxation"],
-    "part": ["Spine", "Hamstrings"]
-  },
-  {
-    "id": 92,
-    "name": "Revolved Chair Pose",
-    "image": "",
-    "chakra": ["Root", "Heart"],
-    "type": ["Standing"],
-    "benefit": ["Strength", "Balance"],
-    "part": ["Legs", "Core"]
-  },
-  {
-    "id": 93,
-    "name": "Side Stretch Pose",
-    "image": "",
-    "chakra": ["Root", "Heart"],
-    "type": ["Standing"],
-    "benefit": ["Flexibility", "Stretch"],
-    "part":["Hips"]
-  },
-  {
-    "id": 94,
-    "name": "Hero Pose with Recline",
-    "image": "",
-    "chakra": ["Root"],
-    "type": ["Seated"],
-    "benefit": ["Relaxation", "Openness"],
-    "part": ["Hips", "Quads"]
-  },
-  {
-    "id": 95,
-    "name": "Intense Side Stretch",
-    "image": "",
-    "chakra": ["Root", "Heart"],
-    "type": ["Standing"],
-    "benefit": ["Flexibility", "Stretch"],
-    "part": ["Hamstrings"]
-  },
-  {
-    "id": 96,
-    "name": "Revolved Crescent Lunge",
-    "image": "",
-    "chakra": ["Root", "Heart"],
-    "type": ["Standing"],
-    "benefit": ["Strength", "Flexibility"],
-    "part": ["Hips", "Spine"]
-  },
-  {
-    "id": 97,
-    "name": "Tortoise Pose",
-    "image": "",
-    "chakra": ["Root"],
-    "type": ["Seated"],
-    "benefit": ["Flexibility", "Relaxation"],
-    "part": ["Hips", "Spine"]
-  },
-  {
-    "id": 98,
-    "name": "One-Legged Bridge Pose",
-    "image": "",
-    "chakra": ["Root", "Heart"],
-    "type": ["Backbend"],
-    "benefit": ["Strength", "Openness"],
-    "part": ["Hips", "Back"]
-  },
-  {
-    "id": 99,
-    "name": "Wheel Pose Variation",
-    "image": "",
-    "chakra": ["Root", "Heart"],
-    "type": ["Backbend"],
-    "benefit": ["Strength", "Flexibility"],
-    "part": ["Back", "Core"]
-  },
-  {
-    "id": 100,
-    "name": "Standing Bow Pose",
-    "image": "",
-    "chakra": ["Root", "Heart"],
-    "type": ["Standing"],
-    "benefit": ["Balance", "Strength"],
-    "part": ["Legs", "Core"]
   }
 ]
-
-

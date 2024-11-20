@@ -57,7 +57,7 @@ const Header = () => {
             
             {/* Desktop nav */}
             <nav className="hidden md:flex space-x-6">
-                <Link to="/">All Poses</Link>
+                <Link to="/categories/all">All Poses</Link>
                 <div ref={dropdownRef} className="relative inline-block">
                     <button onClick={toggleDropdown} className="mr-4">
                         Pose Categories
@@ -131,8 +131,8 @@ const Header = () => {
             {isMobileMenuOpen && (
                 <div ref={mobileMenuRef} className="fixed top-0 right-0 w-2/3 h-full bg-white z-10 p-4 flex flex-col space-y-4 overflow-y-auto shadow-lg">
                     <Link
-                        to="/"
-                        onClick={() => handleLinkClick("/")}
+                        to="/categories/all"
+                        onClick={() => handleLinkClick("/categories/all")}
                         className="text-lg"
                     >
                     All Poses

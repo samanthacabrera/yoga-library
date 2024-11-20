@@ -4,27 +4,34 @@ import posesData from "../data/poses.json";
 
 const CategoryPage = () => {
   const { categoryType, categoryValue } = useParams();
-  const [filteredPoses, setFilteredPoses] = useState([]);
+  const [filteredPoses, setFilteredPoses] = useState(posesData);
 
   useEffect(() => {
     window.scrollTo(0, 0);
+
     if (categoryType && categoryValue) {
       const matchingPoses = posesData.filter((pose) =>
         pose[categoryType]?.some((item) => item.toLowerCase() === categoryValue.toLowerCase())
       );
       setFilteredPoses(matchingPoses);
+    } else {
+      setFilteredPoses(posesData); 
     }
   }, [categoryType, categoryValue]);
 
-  const formattedCategoryValue = categoryValue.charAt(0).toUpperCase() + categoryValue.slice(1);
+  const getHeadingText = () => {
+    if (categoryType && categoryValue) {
+      const formattedValue = categoryValue.charAt(0).toUpperCase() + categoryValue.slice(1);
+      return categoryType === "type"
+        ? `Explore ${formattedValue} Yoga Poses`
+        : `Explore Yoga Poses for ${formattedValue}`;
+    }
+    return "Explore All Yoga Poses";
+  };
 
   return (
     <div className="p-6">
-      <h2 className="text-4xl mb-1">
-        {categoryType === "type"
-          ? `Explore ${formattedCategoryValue} Yoga Poses`
-          : `Explore Yoga Poses for ${formattedCategoryValue}`}
-      </h2>
+      <h2 className="text-4xl mb-1">{getHeadingText()}</h2>
 
       {filteredPoses.length === 0 ? (
         <p>No poses found for this category.</p>
