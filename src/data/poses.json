@@ -668,7 +668,7 @@
   {
     "id": 75,
     "name": "Revolved Triangle",
-    "image": "/revovled-triange-pose.png",
+    "image": "/revolved-triangle-pose.png",
     "chakra": ["Root", "Heart"],
     "type": ["Standing"],
     "benefit": ["Flexibility", "Strength"],

@@ -10,7 +10,7 @@ const CategoryPage = () => {
     window.scrollTo(0, 0);
     if (categoryType && categoryValue) {
       const matchingPoses = posesData.filter((pose) =>
-        pose[categoryType]?.some(item => item.toLowerCase() === categoryValue.toLowerCase())
+        pose[categoryType]?.some((item) => item.toLowerCase() === categoryValue.toLowerCase())
       );
       setFilteredPoses(matchingPoses);
     }
@@ -33,7 +33,18 @@ const CategoryPage = () => {
           {filteredPoses.map((pose) => (
             <div key={pose.id} className="hover:underline">
               <Link to={`/pose/${pose.id}`}>
-                {pose.name}
+                <div className="flex flex-col items-center">
+                  {pose.image ? (
+                    <img
+                      src={pose.image}
+                      alt={pose.name}
+                      className="mb-2 w-32 h-32 object-cover rounded-lg"
+                    />
+                  ) : (
+                    <div className="mb-2 w-32 h-32 flex items-center justify-center bg-gray-50 rounded-lg"></div>
+                  )}
+                  <span>{pose.name}</span>
+                </div>
               </Link>
             </div>
           ))}
