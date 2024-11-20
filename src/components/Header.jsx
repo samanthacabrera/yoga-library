@@ -31,22 +31,23 @@ const Header = () => {
         navigate(path);
     };
 
-    // Close menus when clicking outside
     useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (
-                dropdownRef.current &&
-                !dropdownRef.current.contains(event.target) &&
-                mobileMenuRef.current &&
-                !mobileMenuRef.current.contains(event.target)
-            ) {
-                setIsDropdownOpen(false);
-                setIsMobileMenuOpen(false);
-            }
-        };
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => document.removeEventListener("mousedown", handleClickOutside);
-    }, []);
+    const handleClickOutside = (event) => {
+    if (isDropdownOpen && dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+    }
+    if (isMobileMenuOpen && mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+        setIsMobileMenuOpen(false);
+    }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+    };
+}, [isDropdownOpen, isMobileMenuOpen]);
+
 
     return (
         <div className="flex space-x-6 items-center p-4 relative">
@@ -62,7 +63,7 @@ const Header = () => {
                         Pose Categories
                     </button>
                     {isDropdownOpen && (
-                        <div className="absolute bg-white border rounded-lg shadow-lg mt-2 grid grid-cols-3 gap-8 p-4 w-96">
+                        <div className="absolute bg-white border border-2 rounded-lg shadow-lg grid grid-cols-3 gap-8 p-4 w-[700px] h-[450px] overflow-scroll">
                             <div>
                                 <h3 className="text-lg bg-gray-100 rounded p-1 mb-2">Type</h3>
                                 {categories.type.map((category) => {
@@ -128,54 +129,48 @@ const Header = () => {
 
             {/* Mobile nav */}
             {isMobileMenuOpen && (
-                <div ref={mobileMenuRef} className="fixed top-0 right-0 w-1/2 h-full bg-white z-10 p-4 flex flex-col space-y-4 overflow-y-auto shadow-lg">
+                <div ref={mobileMenuRef} className="fixed top-0 right-0 w-2/3 h-full bg-white z-10 p-4 flex flex-col space-y-4 overflow-y-auto shadow-lg">
                     <Link
                         to="/"
                         onClick={() => handleLinkClick("/")}
                         className="text-lg"
                     >
-                        All Poses
+                    All Poses
                     </Link>
-                    <button
-                        onClick={toggleDropdown}
-                        className="text-lg text-left"
-                    >
-                        Pose Categories  
-                    </button>
-                    {isDropdownOpen && (
-                        <div className="pl-4 space-y-4">
-                            <h3 className="text-lg bg-gray-100 rounded p-1 mb-2">Type</h3>
+                    <div>
+                        <div className="space-y-2">
+                            <h4 className="text-lg bg-gray-100 rounded p-1 mb-2">Find Pose by Type</h4>
                             {categories.type.map((category) => (
                                 <button
                                     key={category}
                                     onClick={() => handleLinkClick(`/categories/type/${category.toLowerCase()}`)}
-                                    className="block py-1 hover:underline text-left w-full"
+                                    className="block p-1 hover:underline text-left w-full"
                                 >
                                     {category}
                                 </button>
                             ))}
-                            <h3 className="text-lg bg-gray-100 rounded p-1 mb-2 mt-2">Benefit</h3>
+                            <h4 className="text-lg bg-gray-100 rounded p-1 mb-2">Find Pose by Benefit</h4>
                             {categories.benefit.map((category) => (
                                 <button
                                     key={category}
                                     onClick={() => handleLinkClick(`/categories/benefit/${category.toLowerCase()}`)}
-                                    className="block py-1 hover:underline text-left w-full"
+                                    className="block p-1 hover:underline text-left w-full"
                                 >
                                     {category}
                                 </button>
                             ))}
-                            <h3 className="text-lg bg-gray-100 rounded p-1 mb-2 mt-2">Part</h3>
+                             <h4 className="text-lg bg-gray-100 rounded p-1 mb-2">Find Pose by Part of the Body</h4>
                             {categories.part.map((category) => (
                                 <button
                                     key={category}
                                     onClick={() => handleLinkClick(`/categories/part/${category.toLowerCase()}`)}
-                                    className="block py-1 hover:underline text-left w-full"
+                                    className="block p-1 hover:underline text-left w-full"
                                 >
                                     {category}
                                 </button>
                             ))}
                         </div>
-                    )}
+                    </div>
                     <Link
                         to="/beginners-guide"
                         onClick={() => handleLinkClick("/beginners-guide")}
@@ -189,7 +184,7 @@ const Header = () => {
                         className="text-lg"
                     >
                         Articles
-                    </Link> 
+                    </Link>
                     <Link
                         to="/resources"
                         onClick={() => handleLinkClick("/resources")}
@@ -197,7 +192,7 @@ const Header = () => {
                     >
                         Resources
                     </Link>
-                    <div className="mt-4">
+                    <div className="mt-4 flex-grow">
                         <Search />
                     </div>
                 </div>
