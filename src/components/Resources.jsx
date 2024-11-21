@@ -14,12 +14,6 @@ const Resources = () => {
             <div className="w-full max-w-2xl">
                 <h2 className="text-xl mb-1 font-medium">Yoga Tutorials</h2>
                 <ul className="space-y-5">
-                    {/* <li className="flex flex-col space-y-1">
-                        <a href="https://www.youtube.com/@SoCalYogi" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
-                            SoCal Yogi
-                        </a>
-                        <p className="text-sm">Balanced routines that blend traditional and modern yoga.</p>
-                    </li> */}
                     <li className="flex flex-col space-y-1">
                         <a href="https://www.youtube.com/c/yogawithadriene" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
                             Yoga with Adriene
@@ -45,12 +39,6 @@ const Resources = () => {
                         <p className="text-sm">In-depth insights into yoga philosophy, poses, and lifestyle.</p>
                     </li>
                     <li className="flex flex-col space-y-1">
-                        <a href="https://www.mindbodygreen.com/yoga" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
-                            MindBodyGreen Yoga
-                        </a>
-                        <p className="text-sm">Articles on yoga, mindfulness, and holistic wellness.</p>
-                    </li>
-                    <li className="flex flex-col space-y-1">
                         <a href="https://www.yogiapproved.com/" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
                             YogiApproved
                         </a>
@@ -62,12 +50,6 @@ const Resources = () => {
             <div className="w-full max-w-2xl">
                 <h2 className="text-xl mb-1 font-medium">Meditation Guides</h2>
                 <ul className="space-y-5">
-                    <li className="flex flex-col space-y-1">
-                        <a href="https://www.headspace.com/" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
-                            Headspace
-                        </a>
-                        <p className="text-sm">Guided meditations and mindfulness exercises to reduce stress and improve focus.</p>
-                    </li>
                     <li className="flex flex-col space-y-1">
                         <a href="https://www.calm.com/" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
                             Calm
