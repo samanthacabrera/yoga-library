@@ -9,7 +9,6 @@ import Guide from "./components/Guide";
 import Articles from "./components/Articles";
 import Resources from "./components/Resources";
 import Footer from "./components/Footer";
-import Privacy from "./components/Privacy";
 
 const App = () => {
   return (
@@ -27,7 +26,6 @@ const App = () => {
             <Route path="/beginners-guide" element={<> <PoseList /> <Guide /></>} />
             <Route path="/articles" element={<><PoseList /> <Articles /></>} /> 
             <Route path="/resources" element={<><PoseList /> <Resources /></>} />
-            <Route path="/privacy-policy" element={<Privacy />} />
           </Routes>
    
       </div>
