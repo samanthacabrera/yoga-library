@@ -216,6 +216,15 @@
     "part": ["Arms", "Core"]
   },
   {
+    "id": 26,
+    "name": "Garland Pose",
+    "image": "/garland-pose.png",
+    "chakra": ["Root", "Sacral"],
+    "type": ["Seated", "Hip Opener"],
+    "benefit": ["Flexibility", "Grounding", "Stability"],
+    "part": ["Hips", "Lower Back"]
+  },
+  {
     "id": 27,
     "name": "Forearm Stand",
     "image": "/forearm-stand.png",
@@ -397,12 +406,12 @@
   },
   {
     "id": 47,
-    "name": "Fire Log Pose",
-    "image": "",
-    "chakra": ["Root"],
-    "type": ["Seated"],
-    "benefit": ["Openness", "Stretch"],
-    "part": ["Hips"]
+    "name": "Reverse Plank Pose",
+    "image": "/reverse-plank-pose.png",
+    "chakra": ["Solar Plexus", "Heart"],
+    "type": ["Seated", "Strength"],
+    "benefit": ["Posture"],
+    "part": ["Core", "Arms", "Shoulders"]
   },
   {
     "id": 48,
@@ -414,6 +423,15 @@
     "part": ["Hips", "Glutes"]
   },
   {
+    "id": 49,
+    "name": "Plow Pose",
+    "image": "/plow-pose.png",
+    "chakra": ["Throat", "Crown"],
+    "type": ["Inversion"],
+    "benefit": ["Flexibility", "Communication"],
+    "part": ["Spine", "Neck", "Shoulders"]
+  },
+  {
     "id": 50,
     "name": "Supine Twist",
     "image": "/supine-twist.png",
@@ -423,15 +441,6 @@
     "part": ["Spine", "Back"]
   },
   {
-    "id": 51,
-    "name": "Half Lord of the Fishes",
-    "image": "",
-    "chakra": ["Root"],
-    "type": ["Seated", "Twist"],
-    "benefit": ["Flexibility"],
-    "part": ["Spine", "Shoulders"]
-  },
-  {
     "id": 52,
     "name": "Side Plank",
     "image": "/side-plank-pose.png",
@@ -439,24 +448,6 @@
     "type": ["Balance"],
     "benefit": ["Strength", "Balance"],
     "part": ["Arms", "Core"]
-  },
-  {
-    "id": 53,
-    "name": "Wild Thing",
-    "image": "",
-    "chakra": ["Heart"],
-    "type": ["Backbend"],
-    "benefit": ["Openness", "Flexibility"],
-    "part": ["Chest", "Shoulders"]
-  },
-  {
-    "id": 54,
-    "name": "Tiger Pose",
-    "image": "",
-    "chakra": ["Root"],
-    "type": ["Balance"],
-    "benefit": ["Strength", "Flexibility"],
-    "part": ["Back", "Legs"]
   },
   {
     "id": 55,
@@ -484,15 +475,6 @@
     "type": ["Hip Opener"],
     "benefit": ["Openness", "Strength"],
     "part": ["Hips", "Glutes"]
-  },
-  {
-    "id": 58,
-    "name": "Fallen Triangle",
-    "image": "",
-    "chakra": ["Root"],
-    "type": ["Balance"],
-    "benefit": ["Strength", "Flexibility"],
-    "part": ["Arms", "Core"]
   },
   {
     "id": 59,
@@ -540,24 +522,6 @@
     "part": ["Spine", "Hamstrings"]
   },
   {
-    "id": 64,
-    "name": "Eight-Angle Pose",
-    "image": "",
-    "chakra": ["Solar Plexus"],
-    "type": ["Arm Balance"],
-    "benefit": ["Strength", "Flexibility"],
-    "part": ["Core", "Arms"]
-  },
-  {
-    "id": 67,
-    "name": "Half Splits",
-    "image": "",
-    "chakra": ["Root"],
-    "type": ["Seated"],
-    "benefit": ["Flexibility"],
-    "part": ["Hamstrings", "Hips"]
-  },
-  {
     "id": 68,
     "name": "Full Splits",
     "image": "/monkey-pose.png",
@@ -565,15 +529,6 @@
     "type": ["Seated"],
     "benefit": ["Flexibility"],
     "part": ["Hips", "Legs"]
-  },
-  {
-    "id": 69,
-    "name": "King Pigeon Pose",
-    "image": "",
-    "chakra": ["Heart"],
-    "type": ["Backbend"],
-    "benefit": ["Flexibility", "Openness"],
-    "part": ["Hips", "Chest"]
   },
   {
     "id": 70,
@@ -639,15 +594,6 @@
     "part": ["Spine", "Hips"]
   },
   {
-    "id": 79,
-    "name": "Firefly Pose",
-    "image": "",
-    "chakra": ["Root"],
-    "type": ["Arm Balance"],
-    "benefit": ["Strength", "Flexibility"],
-    "part": ["Arms", "Core"]
-  },
-  {
     "id": 80,
     "name": "Monkey Pose",
     "image": "/monkey-pose.png",
@@ -664,15 +610,6 @@
     "type": ["Inversion"],
     "benefit": ["Strength", "Flexibility"],
     "part": ["Back", "Shoulders"]
-  },
-  {
-    "id": 84,
-    "name": "Hummingbird Pose",
-    "image": "",
-    "chakra": ["Root", "Solar Plexus"],
-    "type": ["Arm Balance"],
-    "benefit": ["Strength", "Balance"],
-    "part": ["Arms", "Core"]
   },
   {
     "id": 85,

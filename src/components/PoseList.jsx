@@ -25,7 +25,7 @@ const PoseList = () => {
         onClick={toggleSort}
         className="self-start opacity-50 hover:opacity-60"
       >
-       <span class="inline-block transform rotate-90">&harr;</span>sort by: {isSorted ? 'popularity' : 'name'}
+       <span class="inline-block transform rotate-90">&harr;</span>sort by: {isSorted ? 'name' : 'popularity'}
       </button>
       {poses.length === 0 ? (
         <p>No poses available.</p>
