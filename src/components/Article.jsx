@@ -308,8 +308,8 @@ const Article = () => {
     }
 
     return (
-        <div className="p-8 w-1/2">
-            <h1 className="text-4xl mb-4">{article.title}</h1>
+        <div className="p-8 w-1/2 space-y-12">
+            <h1 className="text-4xl">{article.title}</h1>
             {article.content}
         </div>
     );
