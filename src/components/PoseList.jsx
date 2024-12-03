@@ -20,7 +20,7 @@ const PoseList = () => {
   };
 
   return (
-    <div className="flex flex-col flex-col-grow min-w-44 lg:min-w-64 overflow-y-scroll space-y-2 p-4 bg-gray-100">
+    <div className="flex flex-col flex-col-grow w-50 lg:w-64 overflow-y-scroll space-y-2 p-1 bg-gray-100">
       <button
         onClick={toggleSort}
         className="self-start opacity-50 hover:opacity-60"
