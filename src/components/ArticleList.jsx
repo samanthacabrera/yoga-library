@@ -2,11 +2,25 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ArticleList = () => {
-
     const articles = [
-        { id: 1, title: "Setting Intentions for Your Yoga Practice", slug: "setting-intentions" },
-        { id: 2, title: "Breathing Techniques for Beginners", slug: "breathing-techniques" },
-        { id: 3, title: "How to Build a Daily Yoga Routine", slug: "building-routine" },
+        { 
+            id: 1, 
+            title: "Setting Intentions for Your Yoga Practice", 
+            slug: "setting-intentions", 
+            summary: "Learn how setting clear intentions can enhance your yoga practice and guide your journey."
+        },
+        { 
+            id: 2, 
+            title: "Breathing Techniques for Beginners", 
+            slug: "breathing-techniques", 
+            summary: "Discover simple breathing exercises to calm your mind and improve your yoga performance."
+        },
+        { 
+            id: 3, 
+            title: "How to Build a Daily Yoga Routine", 
+            slug: "building-routine", 
+            summary: "Create a sustainable daily yoga routine with easy-to-follow steps that fit your lifestyle."
+        },
     ];
 
     return (
@@ -21,13 +35,13 @@ const ArticleList = () => {
                         <div>
                             <Link
                                 to={`/articles/${article.slug}`} 
-                                className="text-4xl font-light leading-snug mb-4 hover:text-gray-500 transition-colors"
+                                className="text-4xl font-light leading-snug mb-4 hover:text-gray-700 transition-colors"
                             >
                                 {article.title}
                             </Link>
-                            {/* <p className="text-lg leading-relaxed text-gray-500">
-                                article summary
-                            </p> */}
+                            <p className="text-lg leading-relaxed text-gray-500">
+                                {article.summary}
+                            </p>
                         </div>
                     </li>
                 ))}
