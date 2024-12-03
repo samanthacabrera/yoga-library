@@ -11,3 +11,7 @@ body {
   line-height: 225%;
   scroll-behavior: smooth;
 }
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}

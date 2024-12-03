@@ -25,7 +25,7 @@ const App = () => {
       <button
         onClick={toggleDrawer}
         className={`absolute top-[24rem] ${
-          isDrawerOpen ? "left-[13rem]" : "left-0"
+          isDrawerOpen ? "left-[7rem] lg:left-[13rem]" : "left-0"
         } transition-all duration-500 ease-in-out`}
       >
         <div className="flex flex-col text-4xl opacity-50 p-2 bg-gray-200 rounded transition-transform duration-500 ease-in-out">
