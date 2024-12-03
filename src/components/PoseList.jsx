@@ -31,7 +31,7 @@ const PoseList = () => {
         <p>No poses available.</p>
       ) : (
         poses.map((pose) => (
-          <div key={pose.id} className="hover:-translate-y-1 transition duration-200">
+          <div key={pose.id} className="pl-2 hover:-translate-y-1 transition duration-200">
             <Link to={`/pose/${pose.id}`}>{pose.name}</Link>
           </div>
         ))
