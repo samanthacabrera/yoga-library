@@ -5,8 +5,8 @@
     "image": "/mountain-pose.png",
     "chakra": ["Root"],
     "type": ["Standing"],
-    "benefit": ["Posture", "Awareness"],
-    "part": ["Whole Body"]
+    "benefit": ["Posture", "Awareness", "Balance"],
+    "part": ["Spine", "Legs"]
   },
   {
     "id": 2,

@@ -47,7 +47,7 @@ const PosePage = () => {
       )}
 
       {poseSanskirt && poseSanskirt.context && (
-        <p><strong>History:</strong> {poseSanskirt.context}</p>
+        <p><strong>Origins:</strong> {poseSanskirt.context}</p>
       )}
 
       {posePrecaution && posePrecaution.precaution && (
