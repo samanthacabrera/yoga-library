@@ -2,14 +2,16 @@
   {
     "id": 1,
     "name": "Mountain Pose",
-    "sanskrit_name": "Tadasana",
+    "sanskrit_name" : "ताड़ासन",
+    "translation": "Tadasana",
     "context": "The etymology of Tāḍāsana comes from two Sanskrit words: Tāḍa (ताड), meaning 'mountain,' and Āsana (आसन), meaning 'posture' or 'seat.' The term Tāḍa symbolizes the solid, stable, and grounded nature of a mountain, which reflects the strength and steadiness that the pose embodies. Āsana is a common Sanskrit word used in yoga to refer to any posture. Together, Tāḍāsana translates to 'Mountain Pose,' a standing posture that emphasizes physical strength, stability, and alignment, akin to the solid foundation of a mountain. It's alternate name, Samasthitiḥ, refers to 'equal standing' or 'balanced position,' further emphasizing the balance and centeredness that the pose cultivates. Historically, Tāḍāsana did not appear in traditional Hatha Yoga texts but is mentioned in the 1896 Vyayama Dipika, a manual of gymnastics. The pose became a foundational element in modern yoga through the teachings of Krishnamacharya, who incorporated it into the practice of Vinyasa Yoga. His students, Pattabhi Jois and B.K.S. Iyengar, further popularized Tāḍāsana in their respective yoga styles, Ashtanga Vinyasa Yoga and Iyengar Yoga, where it remains a key posture."
   },
   {
     "id": 2,
     "name": "Downward-Facing Dog",
-    "sanskrit_name": "Adho Mukha Svanasana",
-    "context": "Adho Mukha Svanasana is Downward-Facing Dog in Sanskrit. 'Adho' means 'down,' 'Mukha' means 'face,' and 'Svanasana' means 'dog pose.' It is a common pose used to stretch and strengthen the entire body."
+    "sanskrit_name": "अधोमुखश्वानासन",
+    "translation": "Adho Mukha Svanasana",
+    "context": "The name Adho Mukha Svanasana is derived from Sanskrit, with Adho (अधो) meaning 'downward,' Mukha (मुख) meaning 'face,' and Svana (श्वान) meaning 'dog,' while Asana (आसन) refers to 'pose' or 'posture.' Thus, the name translates to 'Downward-Facing Dog Pose,' evoking the image of a dog stretching its body with its front legs extended and hips raised. This pose mimics the natural stance of a dog stretching after waking, embodying qualities of flexibility, strength, and openness. Historically, Adho Mukha Svanasana has been a core part of yoga practice, appearing in various forms in traditional texts such as the Hatha Yoga Pradipika. It gained further prominence in modern yoga through the teachings of T. Krishnamacharya and his students, including Pattabhi Jois and B.K.S. Iyengar, who incorporated it into their respective yoga styles. Today, it is considered one of the most essential poses in Vinyasa and Hatha Yoga practices, serving as a key foundation for strength, flexibility, and alignment."
   },
   {
     "id": 3,

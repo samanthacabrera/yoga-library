@@ -20,10 +20,10 @@ const PoseList = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen max-h-[200vh] w-54 lg:w-64 overflow-y-scroll scrollbar-hidden space-y-2 p-1 bg-gray-100">
+    <div className="flex flex-col min-h-screen max-h-[400vh] min-w-64 overflow-y-scroll scrollbar-hidden space-y-2 p-1 bg-gray-100">
       <button
         onClick={toggleSort}
-        className="self-start opacity-50 hover:opacity-60"
+        className="self-start opacity-50"
       >
        <span class="inline-block transform rotate-90">&harr;</span>sort by: {isSorted ? 'name' : 'popularity'}
       </button>
@@ -31,7 +31,7 @@ const PoseList = () => {
         <p>No poses available.</p>
       ) : (
         poses.map((pose) => (
-          <div key={pose.id} className="pl-2 hover:-translate-y-1 transition duration-200">
+          <div key={pose.id} className="pl-2 hover:text-gray-600">
             <Link to={`/pose/${pose.id}`}>{pose.name}</Link>
           </div>
         ))
