@@ -5,17 +5,17 @@
     "image": "/mountain-pose.png",
     "chakra": ["Root"],
     "type": ["Standing"],
-    "benefit": ["Posture", "Awareness", "Balance"],
+    "benefit": ["Improve Posture", "Increase Awareness", "Improve Balance"],
     "part": ["Spine", "Legs"]
   },
   {
     "id": 2,
     "name": "Downward-Facing Dog",
     "image": "/downward-facing-dog.png",
-    "chakra": ["Root", "Crown"],
-    "type": ["Inversion"],
-    "benefit": ["Strength"],
-    "part": ["Spine"]
+    "chakra": ["Root", "Solar Plexus", "Heart", "Throat", "Third Eye", "Crown"],
+    "type": ["Inversion", "Standing"],
+    "benefit": ["Tone Muscles", "Boost Circulation", "Improve Flexibility"],
+    "part": ["Arms", "Shoulders", "Spine", "Legs"]
   },
   {
     "id": 3,

@@ -37,27 +37,47 @@ const PosePage = () => {
           style={{ maxWidth: '300px', height: 'auto', margin: '0 auto', display: 'block' }}
           className="rounded-md"
       />}
+
+      <div className="flex py-6 space-x-6 text-blue-500">
+        <a href="#description" className="hover:underline">Description</a>
+        <a href="#benefits" className="hover:underline">Benefits</a>
+        <a href="#origins" className="hover:underline">Origins</a>
+        <a href="#precautions" className="hover:underline">Precautions</a>
+        <a href="#modifications" className="hover:underline">Modifications</a>
+        <a href="#cues" className="hover:underline">Step-By-Step</a>
+      </div>
       
+      <div id="description">
       {poseDesc && poseDesc.desc && (
         <p><strong>Description:</strong> {poseDesc.desc}</p>
       )}
+      </div>
 
+      <div id="benefits">
       {poseBenefit && poseBenefit.benefit && (
         <p><strong>Benefits:</strong> {poseBenefit.benefit}</p>
       )}
+      </div>
 
+      <div id="origins">
       {poseSanskirt && poseSanskirt.context && (
         <p><strong>Origins:</strong> {poseSanskirt.context}</p>
       )}
+      </div>
 
+      <div id="precautions">
       {posePrecaution && posePrecaution.precaution && (
         <p><strong>Precautions: </strong> {posePrecaution.precaution}</p>
       )}
+      </div>
 
+      <div id="modifications">
       {poseModification && poseModification.modification && (
         <p><strong>Modificiations: </strong> {poseModification.modification}</p>
       )}
+      </div>
 
+      <div id="cues">
       {poseCues && poseCues.cues && (
         <div>
           <p><strong>Step-By-Step Breakdown:</strong></p>
@@ -68,6 +88,7 @@ const PosePage = () => {
           </ol>
         </div>
       )}
+      </div>
 
   <div className="bg-gray-100 p-4 rounded-lg shadow-sm">
     <p><strong>Tags:</strong></p>
