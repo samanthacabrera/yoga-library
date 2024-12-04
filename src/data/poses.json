@@ -30,19 +30,19 @@
     "id": 5,
     "name": "Upward-Facing Dog",
     "image": "/upward-facing-dog.png",
-    "chakra": ["Heart"],
+    "chakra": ["Heart", "Solar Plexus"],
     "type": ["Backbend"],
-    "benefit": ["Flexibility", "Openness"],
+    "benefit": ["Increase Flexibility", "Boost Energy"],
     "part": ["Spine", "Chest"]
   },
   {
     "id": 6,
     "name": "Child's Pose",
     "image": "/child-pose.png",
-    "chakra": ["Root"],
-    "type": ["Restorative"],
-    "benefit": ["Relaxation"],
-    "part": ["Back", "Hips"]
+    "chakra": ["Root", "Heart"],
+    "type": ["Restorative", "Forward Fold"],
+    "benefit": ["Reduce Stress", "Restore Energy"],
+    "part": ["Spine", "Hips"]
   },
   {
     "id": 7,

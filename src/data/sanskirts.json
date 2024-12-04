@@ -21,21 +21,23 @@
   },
   {
     "id": 4,
-    "name": "Four-Limbed Staff Pose",
+    "name": "",
     "sanskrit_name": "Chaturanga Dandasana",
-    "context": "Chaturanga Dandasana is Four-Limbed Staff Pose in Sanskrit. 'Chatur' means 'four,' 'Anga' means 'limb,' and 'Danda' means 'staff.' It is a key strength-building pose in yoga, often used as a transition."
+    "context": ""
   },
   {
     "id": 5,
     "name": "Upward-Facing Dog",
-    "sanskrit_name": "Urdhva Mukha Svanasana",
-    "context": "Urdhva Mukha Svanasana is Upward-Facing Dog in Sanskrit. 'Urdhva' means 'upward,' 'Mukha' means 'face,' and 'Svanasana' means 'dog pose.' This pose is typically used to open the chest and strengthen the spine."
+    "sanskrit_name": "उर्ध्व मुख श्वानासन",
+    "translation":"Urdhva Mukha Svanasana",
+    "context": "The name Urdhva Mukha Svanasana is derived from Sanskrit, with Urdhva (उर्ध्व) meaning 'upward,' Mukha (मुख) meaning 'face,' and Svana (श्वान) meaning 'dog,' while Asana (आसन) refers to 'pose' or 'posture.' Thus, the name translates to 'Upward-Facing Dog Pose,' evoking the image of a dog stretching its chest and lifting its head and body toward the sky. This pose mimics the natural stance of a dog stretching after rest, embodying qualities of strength, openness, and vitality. Historically, Urdhva Mukha Svanasana has been a key component of yoga practice, appearing in classical texts such as the Hatha Yoga Pradipika. It gained significant prominence in modern yoga, especially through the teachings of T. Krishnamacharya and his students, including Pattabhi Jois and B.K.S. Iyengar, who integrated it into their respective styles. Today, Upward-Facing Dog is an essential posture in Vinyasa and Hatha Yoga practices, widely practiced to improve spinal flexibility, chest expansion, and overall body strength."
   },
   {
     "id": 6,
     "name": "Child's Pose",
-    "sanskrit_name": "Balasana",
-    "context": "Balasana is Child's Pose in Sanskrit. 'Bala' means 'child,' and 'Asana' means 'pose.' This restorative pose is often used for relaxation and to gently stretch the back."
+    "sanskrit_name": "बालासन",
+    "translation": "Balasana",
+    "context": "The name Balasana, or Child’s Pose, is derived from the Sanskrit words Bala (बाल) meaning 'child' and Asana (आसन) meaning 'pose' or 'posture.' This pose is often likened to the way a child naturally curls up into a restful, protective position. It embodies qualities of relaxation, surrender, and grounding. Child’s Pose has been an integral part of yoga for centuries, used in various traditional practices as a restorative posture to calm the body and mind. It is commonly employed as a resting pose in sequences, allowing practitioners to re-center and restore energy. Over time, it has become a fundamental pose in many yoga styles, including Vinyasa and Hatha Yoga, providing a moment of respite and deep stretching. Today, Child’s Pose is widely recognized not only for its physical benefits, such as easing tension in the back, hips, and thighs, but also for its ability to promote emotional calm and mental clarity."
   },
   {
     "id": 7,
