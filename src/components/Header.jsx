@@ -15,6 +15,7 @@ const Header = () => {
         type: Array.from(new Set(posesData.flatMap((pose) => pose.type))),
         benefit: Array.from(new Set(posesData.flatMap((pose) => pose.benefit))),
         part: Array.from(new Set(posesData.flatMap((pose) => pose.part))),
+        chakra: Array.from(new Set(posesData.flatMap((pose) => pose.chakra))),
     };
 
     const toggleDropdown = () => {
@@ -63,7 +64,7 @@ const Header = () => {
                         Pose Categories
                     </button>
                     {isDropdownOpen && (
-                        <div className="absolute bg-white border border-2 rounded-lg shadow-lg grid grid-cols-3 gap-8 p-4 w-[700px] h-[450px] overflow-scroll">
+                        <div className="absolute bg-white border border-2 rounded-lg shadow-lg grid grid-cols-4 gap-8 p-4 w-[700px] h-[450px] overflow-scroll">
                             <div>
                                 <h3 className="text-lg bg-gray-100 rounded p-1 mb-2">Type</h3>
                                 {categories.type.map((category) => {
@@ -98,6 +99,21 @@ const Header = () => {
                                 <h3 className="text-lg bg-gray-100 rounded p-1 mb-2">Part</h3>
                                 {categories.part.map((category) => {
                                     const path = `/categories/part/${category.toLowerCase()}`;
+                                    return (
+                                        <button
+                                            key={category}
+                                            onClick={() => handleLinkClick(path)}
+                                            className="block py-2 hover:underline text-left w-full"
+                                        >
+                                            {category}
+                                        </button>
+                                    );
+                                })}
+                            </div>
+                            <div>
+                                <h3 className="text-lg bg-gray-100 rounded p-1 mb-2">Chakra</h3>
+                                {categories.chakra.map((category) => {
+                                    const path = `/categories/chakra/${category.toLowerCase()}`;
                                     return (
                                         <button
                                             key={category}
@@ -144,7 +160,7 @@ const Header = () => {
                                 <button
                                     key={category}
                                     onClick={() => handleLinkClick(`/categories/type/${category.toLowerCase()}`)}
-                                    className="block p-1 hover:underline text-left w-full"
+                                    className="block ml-8 hover:underline text-left w-full"
                                 >
                                     {category}
                                 </button>
@@ -154,7 +170,7 @@ const Header = () => {
                                 <button
                                     key={category}
                                     onClick={() => handleLinkClick(`/categories/benefit/${category.toLowerCase()}`)}
-                                    className="block p-1 hover:underline text-left w-full"
+                                    className="block ml-8 hover:underline text-left w-full"
                                 >
                                     {category}
                                 </button>
@@ -164,7 +180,17 @@ const Header = () => {
                                 <button
                                     key={category}
                                     onClick={() => handleLinkClick(`/categories/part/${category.toLowerCase()}`)}
-                                    className="block p-1 hover:underline text-left w-full"
+                                    className="block ml-8 hover:underline text-left w-full"
+                                >
+                                    {category}
+                                </button>
+                            ))}
+                            <h4 className="text-lg bg-gray-100 rounded p-1 mb-2">Find Pose by Chakra</h4>
+                            {categories.chakra.map((category) => (
+                                <button
+                                    key={category}
+                                    onClick={() => handleLinkClick(`/categories/chakra/${category.toLowerCase()}`)}
+                                    className="block ml-8 hover:underline text-left w-full"
                                 >
                                     {category}
                                 </button>
