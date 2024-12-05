@@ -9,6 +9,7 @@ import Guide from "./components/Guide";
 import ArticleList from "./components/ArticleList";
 import Article from "./components/Article";
 import Resources from "./components/Resources";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -57,6 +58,7 @@ const App = () => {
           <Route path="/articles" element={<ArticleList />} />
           <Route path="/articles/:slug" element={<Article />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </div>
 

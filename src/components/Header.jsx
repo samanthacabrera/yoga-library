@@ -51,7 +51,7 @@ const Header = () => {
 
 
     return (
-        <div className="flex space-x-6 items-center p-4 relative">
+        <div className="flex space-x-6 items-center p-4">
             <h1>
                 <Link to="/">Yoga Pose Library</Link>
             </h1>
