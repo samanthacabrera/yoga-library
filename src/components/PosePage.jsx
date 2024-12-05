@@ -30,6 +30,12 @@ const PosePage = () => {
   return (
     <div className="flex flex-col min-h-screen w-full max-w-2xl space-y-6 p-6">
       <h2 className="text-4xl">{pose.name} <span>({poseSanskirt.sanskrit_name})</span></h2>
+       
+      <div id="translation">
+      {poseSanskirt.translation && (
+        <p><strong>Translation: </strong>{poseSanskirt.translation}</p>
+      )}
+      </div>
       
       {pose.image && <img 
           src={pose.image} 
