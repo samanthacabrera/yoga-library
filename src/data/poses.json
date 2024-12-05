@@ -48,28 +48,28 @@
     "id": 7,
     "name": "Warrior I",
     "image": "/warrior-I.png",
-    "chakra": ["Root", "Heart"],
-    "type": ["Standing"],
-    "benefit": ["Strength", "Stability"],
-    "part": ["Legs", "Shoulders"]
+    "chakra": ["Root", "Heart", "Solar Plexus"],
+    "type": ["Standing", "Lunge"],
+    "benefit": ["Improve Balance", "Build Stability", "Enhance Focus"],
+    "part": ["Legs", "Arms", "Chest"]
   },
   {
     "id": 8,
     "name": "Warrior II",
     "image": "/warrior-II.png",
-    "chakra": ["Root", "Heart"],
-    "type": ["Standing"],
-    "benefit": ["Balance", "Stamina"],
-    "part": ["Legs", "Shoulders"]
+    "chakra": ["Root", "Solar Plexus", "Sacral", "Heart"],
+    "type": ["Standing", "Lunge"],
+    "benefit": ["Improve Balance", "Enhance Stamina", "Build Stability"],
+    "part": ["Legs", "Hips", "Arms", "Spine"]
   },
   {
     "id": 9,
     "name": "Warrior III",
     "image": "",
-    "chakra": ["Root", "Heart"],
-    "type": ["Standing"],
-    "benefit": ["Balance", "Strength"],
-    "part": ["Legs", "Core"]
+    "chakra": ["Root", "Heart", "Solar Plexus", "Sacral", "Third Eye", "Throat", "Crown"],
+    "type": ["Standing", "Balance"],
+    "benefit": ["Improve Balance", "Increase Strength"],
+    "part": ["Legs", "Core", "Hips", "Arms"]
   },
   {
     "id": 10,

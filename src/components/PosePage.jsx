@@ -131,7 +131,7 @@ const PosePage = () => {
 
     {pose.type.length > 0 && (
       <div>
-        <p className="text-gray-500 my-1">Pose Type</p>
+        <p className="text-gray-500 my-1">Pose Types</p>
         <ul className="flex flex-wrap gap-2">
           {pose.type.map((type, index) => (
             <li key={index}>
@@ -140,6 +140,24 @@ const PosePage = () => {
               className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
             >
               {type}
+            </Link>
+          </li>
+          ))}
+        </ul>
+      </div>
+    )}
+    
+    {pose.chakra.length > 0 && (
+      <div>
+        <p className="text-gray-500 my-1">Chakras</p>
+        <ul className="flex flex-wrap gap-2">
+          {pose.chakra.map((chakra, index) => (
+            <li key={index}>
+            <Link 
+              to={`/categories/chakra/${chakra}`} 
+              className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
+            >
+              {chakra}
             </Link>
           </li>
           ))}
