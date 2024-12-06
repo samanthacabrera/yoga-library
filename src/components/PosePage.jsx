@@ -33,7 +33,7 @@ const PosePage = () => {
        
       <div id="translation">
       {poseSanskirt.translation && (
-        <p><strong>Translation: </strong>{poseSanskirt.translation}</p>
+        <p><strong>Sanskrit: </strong>{poseSanskirt.translation}</p>
       )}
       </div>
       
