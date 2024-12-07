@@ -68,26 +68,26 @@
     "image": "",
     "chakra": ["Root", "Heart", "Solar Plexus", "Sacral", "Third Eye", "Throat", "Crown"],
     "type": ["Standing", "Balance"],
-    "benefit": ["Improve Balance", "Increase Strength", "Enhance Focus"],
+    "benefit": ["Improve Balance", "Build Strength", "Enhance Focus"],
     "part": ["Legs", "Core", "Hips", "Arms"]
   },
   {
     "id": 10,
-    "name": "Extended Side Angle",
-    "image": "/extended-side-angle.png",
-    "chakra": ["Root", "Heart"],
-    "type": ["Standing"],
-    "benefit": ["Flexibility", "Strength"],
-    "part": ["Legs", "Hips"]
-  },
-  {
-    "id": 11,
     "name": "Reverse Warrior",
     "image": "/reverse-warrior.png",
     "chakra": ["Root", "Heart"],
+    "type": ["Standing", "Lunge"],
+    "benefit": ["Increase Flexibility", "Build Strength"],
+    "part": ["Legs", "Arms", "Side Body"]
+  },
+  {
+    "id": 11,
+    "name": "Extended Side Angle",
+    "image": "/extended-side-angle.png",
+    "chakra": ["Root", "Sacral", "Heart", "Solar Plexus"],
     "type": ["Standing"],
-    "benefit": ["Flexibility", "Strength"],
-    "part": ["Legs"]
+    "benefit": ["Increase Flexibility", "Build Strength", "Relieve Tension"],
+    "part": ["Legs", "Hips", "Side Body", "Shoulders"]
   },
   {
     "id": 12,
@@ -456,7 +456,7 @@
     "chakra": ["Root"],
     "type": ["Kneeling"],
     "benefit": ["Stretch", "Flexibility"],
-    "part": ["Spine", "Sides"]
+    "part": ["Spine", "Side Body"]
   },
   {
     "id": 56,
