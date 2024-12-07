@@ -44,7 +44,7 @@ const PosePage = () => {
           className="rounded-md"
       />}
 
-      <div className="flex py-6 space-x-6 text-blue-500">
+      <div className="flex flex-col lg:flex-row lg:space-x-6 text-blue-500">
         <a href="#description" className="hover:underline">Description</a>
         <a href="#benefits" className="hover:underline">Benefits</a>
         <a href="#origins" className="hover:underline">Origins</a>
