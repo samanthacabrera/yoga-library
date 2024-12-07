@@ -95,8 +95,8 @@
     "image": "/triangle-pose.png",
     "chakra": ["Root", "Heart"],
     "type": ["Standing"],
-    "benefit": ["Balance", "Flexibility"],
-    "part": ["Legs", "Hips"]
+    "benefit": ["Improve Balance", "Improve Posture", "Enhance Focus"],
+    "part": ["Legs", "Hips", "Spine","Side Body"]
   },
   {
     "id": 13,
