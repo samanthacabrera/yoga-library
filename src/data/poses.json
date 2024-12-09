@@ -102,7 +102,7 @@
     "id": 13,
     "name": "Half Moon Pose",
     "image": "/half-moon-pose.png",
-    "chakra": ["Root", "Heart", "Solar Plexus"],
+    "chakra": ["Root", "Heart", "Solar Plexus", "Sacral"],
     "type": ["Standing", "Balance"],
     "benefit": ["Improve Balance", "Build Strength", "Improve Posture"],
     "part": ["Legs", "Core", "Hips", "Spine"]
