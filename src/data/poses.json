@@ -111,10 +111,10 @@
     "id": 14,
     "name": "Chair Pose",
     "image": "/chair-pose.png",
-    "chakra": ["Root"],
+    "chakra": ["Root", "Solar Plexus", "Heart"],
     "type": ["Standing"],
-    "benefit": ["Strength", "Endurance"],
-    "part": ["Legs", "Glutes"]
+    "benefit": ["Improve Balance", "Build Stability"],
+    "part": ["Legs", "Glutes", "Arms"]
   },
   {
     "id": 15,
