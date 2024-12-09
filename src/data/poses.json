@@ -120,27 +120,27 @@
     "id": 15,
     "name": "Goddess Pose",
     "image": "/goddess-pose.png",
-    "chakra": ["Root"],
-    "type": ["Standing"],
-    "benefit": ["Strength", "Openness"],
-    "part": ["Legs", "Hips"]
+    "chakra": ["Root", "Sacral Chakra", "Heart"],
+    "type": ["Standing", "Hip Opener"],
+    "benefit": ["Build Strength", "Boost Energy"],
+    "part": ["Legs", "Hips", "Arms"]
   },
   {
     "id": 16,
-    "name": "High Lunge",
+    "name": "Crescent High Lunge Pose",
     "image": "/high-lunge.png",
-    "chakra": ["Root", "Heart"],
-    "type": ["Standing"],
-    "benefit": ["Strength", "Balance"],
-    "part": ["Legs", "Hips"]
+    "chakra": ["Root", "Solar Plexus", "Heart"],
+    "type": ["Standing", "Lunge", "Hip Opener"],
+    "benefit": ["Build Strength", "Improve Balance", "Enhance Focus"],
+    "part": ["Legs", "Hips", "Shoulders"]
   },
   {
     "id": 17,
     "name": "Low Lunge",
     "image": "/low-lunge.png",
-    "chakra": ["Root", "Heart"],
-    "type": ["Standing"],
-    "benefit": ["Flexibility", "Openness"],
+    "chakra": ["Root", "Sacral", "Heart"],
+    "type": ["Standing", "Lunge", "Hip Opener"],
+    "benefit": ["Improve Flexibility", "Enhance Focus"],
     "part": ["Legs", "Hips"]
   },
   {

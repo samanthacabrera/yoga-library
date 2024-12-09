@@ -94,25 +94,28 @@
     "name": "Chair Pose",
     "sanskrit_name": "उत्कटासन",
     "translation": "Utkatasana",
-    "context": "The name Chair Pose (Utkatasana) comes from Sanskrit, with 'Utkata' (उत्कट) meaning 'powerful' or 'fierce' and 'Asana' (आसन) meaning 'pose' or 'posture.' Thus, Utkatasana translates to 'Fierce Pose' or 'Powerful Pose,' reflecting the strength and intensity required to hold the posture. The name evokes a sense of determination and resilience, as the pose demands a deep squat-like position, engaging the muscles of the legs, core, and upper body. Historically, Chair Pose has been part of traditional yoga practices, designed to build endurance, focus, and strength. While it may not have been as widely practiced in earlier yoga texts as other foundational poses, it became an integral part of modern yoga sequences, especially through the teachings of influential figures such as T. Krishnamacharya and his students, including Pattabhi Jois and B.K.S. Iyengar. Today, Utkatasana is a common pose in various yoga styles, including Vinyasa, Hatha, and Ashtanga, and is used to strengthen the body while cultivating mental focus and stability. The pose’s name and its emphasis on power and endurance make it a vital part of both the physical and energetic aspects of yoga practice."
+    "context": "The name Utkatasana comes from Sanskrit, with 'Utkata' (उत्कट) meaning 'powerful' or 'fierce' and 'Asana' (आसन) meaning 'pose' or 'posture.' Thus, Utkatasana translates to 'Fierce Pose' or 'Powerful Pose,' reflecting the strength and intensity required to hold the posture. The name evokes a sense of determination and resilience, as the pose demands a deep squat-like position, engaging the muscles of the legs, core, and upper body. Historically, Chair Pose has been part of traditional yoga practices, designed to build endurance, focus, and strength. While it may not have been as widely practiced in earlier yoga texts as other foundational poses, it became an integral part of modern yoga sequences, especially through the teachings of influential figures such as T. Krishnamacharya and his students, including Pattabhi Jois and B.K.S. Iyengar. Today, Utkatasana is a common pose in various yoga styles, including Vinyasa, Hatha, and Ashtanga, and is used to strengthen the body while cultivating mental focus and stability. The pose’s name and its emphasis on power and endurance make it a vital part of both the physical and energetic aspects of yoga practice."
   },
   {
     "id": 15,
     "name": "Goddess Pose",
-    "sanskrit_name": "Utkata Konasana",
-    "context": "Utkata Konasana is Goddess Pose in Sanskrit. 'Utkata' means 'fierce' or 'powerful,' and 'Kona' means 'angle.' It engages the legs and opens the hips."
+    "sanskrit_name": "उत्कटकोणासन",
+    "translation": "Utkata Konasana",
+    "context": "The name Utkata Konasana is derived from Sanskrit, with Utkata (उत्कट) meaning 'fierce' or 'powerful,' and Konasana (कोणासन) meaning 'angle pose' or 'corner pose.' The term 'Utkata' conveys the intensity and strength required in the posture, while 'Konasana' refers to the external angle of the legs as they are spread wide apart, forming a powerful stance. Together, Utkata Konasana translates to 'Fierce Angle Pose,' symbolizing strength, empowerment, and stability. The pose is often associated with the image of a warrior or goddess, grounded and poised, exuding confidence and power. Although the pose itself has ancient roots in yoga, its modern popularity has grown due to its ability to engage multiple muscle groups while simultaneously opening the hips and chest. It is widely practiced in contemporary yoga sequences to enhance lower body strength, flexibility, and emotional balance. Today, Goddess Pose is a key part of many styles of yoga, including Vinyasa and Hatha, and is often used to encourage self-assurance, focus, and resilience."
   },
   {
     "id": 16,
-    "name": "High Lunge",
-    "sanskrit_name": "Alanasana",
-    "context": "Alanasana is High Lunge in Sanskrit. 'Alana' means 'straight' or 'raised,' and 'Asana' means 'pose.' It helps to stretch the hips and legs."
+    "name": "Crescent High Lunge Pose",
+    "sanskrit_name": "उत्तिता अश्व संचलनासन",
+    "translation": "Utthita Ashwa Sanchalanasana",
+    "context": "The name Ashta Chandrasana is derived from Sanskrit, with Ashta (अष्ट) meaning 'eight,' Chandra (चन्द्र) meaning 'moon,' and Asana (आसन) meaning 'pose' or 'posture.' Therefore, Ashta Chandrasana translates to 'Eight-Limbed Moon Pose,' and is often referred to as Crescent Pose (as in a crescent moon). There are eight phases of the moon, with the waning crescent being the last, eighth phase, symbolizing closure, reflection, and calm. The pose evokes the imagery of the moon's gentle, curved shape, representing balance, harmony, and tranquility. Over time, the shape and flow of the pose evolved, particularly through the integration of breath and movement, which led to the more dynamic High Lunge in modern yoga. High Lunge (Utthita Ashwa Sanchalanasana) shares similarities with Ashta Chandrasana, especially in the way it engages the legs and hips, but with a more pronounced deep lunge and a focus on strength and stability. In this evolution, the alignment of the body became more focused on lengthening the spine and building core strength, leading to the pose we recognize today. Ashta Chandrasana and its evolution into High Lunge both serve to enhance flexibility and strength in the legs, hips, and core, while fostering a sense of grace and focus."
   },
   {
     "id": 17,
     "name": "Low Lunge",
-    "sanskrit_name": "Anjaneyasana",
-    "context": "Anjaneyasana is Low Lunge in Sanskrit. 'Anjaneya' is the name of Lord Hanuman, and 'Asana' means 'pose.' It is a grounding pose that stretches the hips and legs."
+    "sanskrit_name": "अञ्जनेयासन",
+    "translation": "Anjaneyasana",
+    "context": "The etymology of Anjaneyasana is derived from Sanskrit, with Anjaneya (अञ्जनेय) referring to the name of the Hindu deity Hanuman, the monkey god, who is known for his strength, devotion, and agility. Asana (आसन) means 'pose' or 'posture,' thus Anjaneyasana translates to 'Pose of Hanuman' or 'Hanuman’s Pose.' The pose is said to symbolize Hanuman’s strength and his ability to move swiftly and with power, as well as his devotion and flexibility. In the posture, the deep lunge mirrors the qualities of Hanuman's dynamic nature, with a focus on opening the hips, strengthening the legs, and lengthening the spine. Anjaneyasana has its roots in traditional yoga practices and is frequently incorporated into modern yoga sequences for its ability to build flexibility, strength, and stability. Todayt is often used to prepare the body for deeper stretches and more advanced poses, while also serving as a grounding and energizing posture."
   },
   {
     "id": 18,
