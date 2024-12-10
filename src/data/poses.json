@@ -165,7 +165,7 @@
     "id": 19,
     "name": "Wide-Legged Forward Fold",
     "image": "/wide-leg-forward-fold.png",
-    "chakra": ["Root", "Scaral"],
+    "chakra": ["Root", "Sacral"],
     "type": ["Standing", "Forward Fold"],
     "benefit": ["Improve Circulation", "Relieve Tension", "Improve Flexibility"],
     "part": ["Spine", "Legs", "Hips"]
@@ -183,10 +183,10 @@
     "id": 21,
     "name": "Tree Pose",
     "image": "/tree-pose.png",
-    "chakra": ["Root", "Crown"],
+    "chakra": ["Root", "Third Eye", "Sacral"],
     "type": ["Standing", "Balance"],
-    "benefit": ["Balance", "Posture"],
-    "part": ["Legs"]
+    "benefit": ["Improve Balance", "Improve Posture"],
+    "part": ["Legs", "Hips"]
   },
   {
     "id": 22,
