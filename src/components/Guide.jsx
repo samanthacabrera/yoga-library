@@ -2,11 +2,11 @@ import React from "react";
 
 const Guide = () => {
     return (
-        <div className="flex flex-col p-8 space-y-8 text-gray-800">
+        <div className="flex flex-col p-8 mb-40 space-y-8 text-gray-800">
             <div className="w-full max-w-5xl space-y-4">
                 <h1 className="text-4xl tracking-tight mb-1">Beginner's Guide to Yoga</h1>
                 <p>
-                    Welcome to your yoga journey. This guide introduces you to essential concepts, terms, types of yoga, and practical advice on beginning your practice confidently and mindfully.
+                    Welcome to your yoga journey. The purpose of this website is to help you learn the foundations of yoga, focusing on the top 50 common Vinyasa yoga poses. Whether you are just starting or looking to deepen your understanding, this guide offers a structured approach to building strength, flexibility, and mindfulness through yoga.
                 </p>
             </div>
 
@@ -20,46 +20,34 @@ const Guide = () => {
                 </p>
             </div>
 
-
-            <div className="w-full max-w-5xl space-y-4">
-                <h2 className="text-xl mb-1 font-medium">Common Yoga Terms</h2>
-                <ul className="space-y-4 py-4">
-                    <li><strong>Asana:</strong> The physical postures or poses in yoga, like Mountain Pose (Tadasana) and Downward-Facing Dog (Adho Mukha Svanasana). Asanas help build strength, flexibility, and stability.</li>
-                    <li><strong>Pranayama:</strong> Breath control exercises that enhance mental focus, relaxation, and energy flow. Examples include Ujjayi (victorious breath) and Nadi Shodhana (alternate nostril breathing).</li>
-                    <li><strong>Vinyasa:</strong> A style of yoga that links movement with breath in a smooth, flowing sequence. In a Vinyasa class, each movement is coordinated with inhalation or exhalation.</li>
-                    <li><strong>Meditation:</strong> A practice of focused awareness, often part of yoga to calm the mind and cultivate mindfulness. Regular meditation supports stress reduction and improves mental clarity.</li>
-                </ul>
-            </div>
-
-            <div className="w-full max-w-5xl space-y-4">
-                <h2 className="text-xl mb-1 font-medium">Types of Yoga</h2>
-                <p>
-                    There are several styles of yoga, each with a different approach to physical postures and meditation. Some are more dynamic and physically demanding, while others focus on relaxation and mindfulness. Each type of yoga offers unique benefits that can help improve flexibility, strength, and mental clarity.
+            
+            <div className="w-full max-w-5xl space-y-4 bg-gray-50 border-l-4 border-gray-400 p-6 rounded-lg">
+                <h2 className="text-2xl mb-4">Road Map to Master the Top 50 Yoga Poses</h2>
+                <p className="">
+                    This road map is designed to guide you through the top 50 common Vinyasa yoga poses, step by step, helping you build a strong foundation and confidence in your practice. Each pose is explained in detail, with modifications, alignment cues, and benefits highlighted to ensure a safe and effective practice.
                 </p>
-                <p>
-                    <strong>Hatha Yoga</strong> is a gentle and foundational style of yoga focused on basic postures, alignment, and breath control. Hatha classes are generally slower-paced and provide an excellent introduction to yoga, helping beginners develop a strong foundation.
-                </p>
-                <p>
-                    <strong>Vinyasa Yoga</strong> is a dynamic, flowing style that connects breath with movement, creating a rhythmic practice. Vinyasa yoga tends to be more physically challenging and provides a cardiovascular workout while improving strength and flexibility.
-                </p>
-                <p>
-                    <strong>Yin Yoga</strong> is a slow, meditative practice that involves holding poses for extended periods, typically targeting deep connective tissues like ligaments and fascia. Yin Yoga promotes deep relaxation, enhances flexibility, and encourages mindfulness.
-                </p>
-                <p>
-                    <strong>Restorative Yoga</strong> is a gentle, calming practice that uses props like bolsters, blocks, and blankets to support the body in passive poses. Restorative yoga is excellent for relaxation, stress relief, and recovery after physical exertion.
-                </p>
-                <p>
-                    <strong>Ashtanga Yoga</strong> is a rigorous practice that follows a specific sequence of poses, emphasizing strength, flexibility, and endurance. It is suitable for those looking for a more structured and physically demanding practice, and it is often taught in a series of classes to build progressively.
-                </p>
-            </div>
-
-            <div className="w-full max-w-5xl space-y-4">
-                <h2 className="text-xl mb-1 font-medium">Yoga Basics for Beginners</h2>
-                <p>
-                    Start with foundational poses such as Mountain Pose, Downward-Facing Dog, and Child’s Pose. These simple postures help build awareness of alignment, balance, and breath. Consistency is essential in yoga; even practicing for 5-10 minutes a day can lead to significant improvements.
-                </p>
-                <p>
-                    Focus on synchronizing movement with breath. Breathing deeply and mindfully through each pose helps cultivate inner calm and brings more awareness to your body. Approach each pose with patience, as yoga is about personal growth and adapting the practice to suit your needs.
+                <ol className="list-decimal list-inside space-y-4 mt-4">
+                    <li>
+                        <strong>Week 1-2:</strong> Start with foundational poses such as Mountain Pose (Tadasana), Downward-Facing Dog (Adho Mukha Svanasana), and Child’s Pose (Balasana). Focus on breath awareness and alignment.
+                    </li>
+                    <li>
+                        <strong>Week 3-4:</strong> Progress to standing poses like Warrior I (Virabhadrasana I), Warrior II (Virabhadrasana II), and Crescent Lunge (Ashta Chandrasana). Work on balance and building strength.
+                    </li>
+                    <li>
+                        <strong>Week 5-6:</strong> Explore hip openers and forward folds, such as Low Lunge (Anjaneyasana), Half Splits (Ardha Hanumanasana), and Seated Forward Bend (Paschimottanasana).
+                    </li>
+                    <li>
+                        <strong>Week 7-8:</strong> Incorporate more challenging poses like Tree Pose (Vrikshasana), Triangle Pose (Trikonasana), and High Lunge (Alanasana) to enhance stability and flexibility.
+                    </li>
+                    <li>
+                        <strong>Week 9-10:</strong> Begin practicing backbends like Cobra Pose (Bhujangasana), Upward Dog (Urdhva Mukha Svanasana), and Bridge Pose (Setu Bandhasana). Pay attention to protecting your lower back.
+                    </li>
+                    <li>
+                        <strong>Ongoing:</strong> Gradually incorporate inversions, arm balances, and restorative poses to diversify your practice and deepen your experience.
+                    </li>
+                </ol>
+                <p className="mt-4">
+                    This structured approach allows you to progress at your own pace, mastering each pose before moving to the next. Remember, yoga is a journey, not a race. Take your time, listen to your body, and enjoy the process.
                 </p>
             </div>
 
