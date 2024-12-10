@@ -20,6 +20,71 @@ const Guide = () => {
                 </p>
             </div>
 
+
+            <div className="w-full max-w-5xl space-y-4 bg-gray-50 border-l-4 border-gray-400 p-6 rounded-lg">
+                <h2 className="text-2xl mb-4">Common Terms in Yoga</h2>
+                <ul className="list-disc list-inside space-y-2">
+                    <li>
+                        <strong>Asana:</strong> A physical yoga posture or pose. The word "asana" translates to "seat" in Sanskrit and represents the physical aspect of yoga practice.
+                    </li>
+                    <li>
+                        <strong>Pranayama:</strong> Breath control exercises aimed at regulating energy flow and enhancing mindfulness.
+                    </li>
+                    <li>
+                        <strong>Vinyasa:</strong> A style of yoga that links breath with movement in a flowing sequence.
+                    </li>
+                    <li>
+                        <strong>Savasana:</strong> Also known as "Corpse Pose," this is a relaxation pose typically performed at the end of a yoga session.
+                    </li>
+                    <li>
+                        <strong>Namaste:</strong> A respectful greeting or gesture often used to conclude a yoga practice, meaning "I bow to you."
+                    </li>
+                    <li>
+                        <strong>Chakra:</strong> Energy centers in the body that align with different physical and emotional functions.
+                    </li>
+                    <li>
+                        <strong>Drishti:</strong> A focused gaze or point of concentration used during yoga practice to enhance focus and balance.
+                    </li>
+                    <li>
+                        <strong>Mantra:</strong> A word, sound, or phrase repeated during meditation to aid focus and mindfulness.
+                    </li>
+                    <li>
+                        <strong>Om:</strong> A sacred sound and spiritual symbol often chanted at the beginning and end of a yoga session to signify universal connection.
+                    </li>
+                </ul>
+            </div>
+
+            <div className="w-full max-w-5xl space-y-4">
+                <h2 className="text-xl mb-1 font-medium">Types of Yoga</h2>
+                <p>
+                    Yoga comes in many styles, each with its own focus and benefits. Some of the most popular types include:
+                </p>
+                <ul className="list-disc list-inside space-y-2">
+                    <li>
+                        <strong>Hatha Yoga:</strong> A gentle form of yoga focusing on basic poses and breathing exercises, making it ideal for beginners.
+                    </li>
+                    <li>
+                        <strong>Vinyasa Yoga:</strong> A dynamic style of yoga that links movement with breath, creating a flowing sequence of poses. It’s known for its smooth transitions and creative sequences.
+                    </li>
+                    <li>
+                        <strong>Ashtanga Yoga:</strong> A physically demanding and disciplined practice with a set sequence of poses performed in a specific order.
+                    </li>
+                    <li>
+                        <strong>Yin Yoga:</strong> A slow-paced style focusing on deep stretches and longer holds to improve flexibility and release tension.
+                    </li>
+                    <li>
+                        <strong>Restorative Yoga:</strong> A relaxing practice that uses props to support the body in restful poses, promoting deep relaxation.
+                    </li>
+                    <li>
+                        <strong>Bikram Yoga:</strong> A series of 26 poses practiced in a heated room to improve flexibility and detoxify the body through sweat.
+                    </li>
+                </ul>
+                <p>
+                    This site will focus on teaching the foundations of <strong>Vinyasa Yoga</strong>. This style is particularly well-suited for building strength, flexibility, and mindfulness. Its emphasis on synchronizing breath with movement provides a meditative and energizing experience, making it accessible and rewarding for practitioners of all levels.
+                </p>
+            </div>
+
+
             
             <div className="w-full max-w-5xl space-y-4 bg-gray-50 border-l-4 border-gray-400 p-6 rounded-lg">
                 <h2 className="text-2xl mb-4">Road Map to Master the Top 50 Yoga Poses</h2>
