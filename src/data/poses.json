@@ -174,10 +174,10 @@
     "id": 20,
     "name": "Standing Split",
     "image": "/standing-splits.png",
-    "chakra": ["Root"],
-    "type": ["Standing", "Balance"],
-    "benefit": ["Flexibility", "Balance"],
-    "part": ["Legs"]
+    "chakra": ["Crown", "Third Eye", "Throat", "Solar Plexus"],
+    "type": ["Standing", "Arm Balance", "Hip Opener"],
+    "benefit": ["Improve Flexibility", "Boost Circulation", "Improve Balance"],
+    "part": ["Legs", "Spine", "Hips"]
   },
   {
     "id": 21,
