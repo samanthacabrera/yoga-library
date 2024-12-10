@@ -121,14 +121,16 @@
   {
     "id": 18,
     "name": "Pyramid Pose",
-    "sanskrit_name": "Parsvottanasana",
-    "context": "Parsvottanasana is Pyramid Pose in Sanskrit. 'Parsvottana' means 'intense side stretch,' and 'Asana' means 'pose.' It stretches the hamstrings and hips."
+    "sanskrit_name": "पार्श्वोत्तानासन",
+    "translation": "Parsvottanasana",
+    "context": "The etymology of Parsvottanasana comes from two Sanskrit words: Parsvah (पार्श्व), meaning 'side' or 'flank,' and Uttana (उत्तान), meaning 'intense stretch' or 'stretching.' Asana (आसन), a common term in yoga, means 'pose' or 'posture.' Together, Parsvottanasana translates to 'Intense Side Stretch Pose,' referring to the deep forward fold and side stretch of the body in this posture. The name evokes the sensation of lengthening and stretching through the sides of the torso, while the alignment of the feet in the shape of a triangle resembles the form of a pyramid. Historically, Pyramid Pose was not a prominent feature in ancient texts but has evolved into a key pose within modern Vinyasa and Hatha Yoga traditions. The pose became widely incorporated into contemporary practice through the teachings of Krishnamacharya, with his students Pattabhi Jois and B.K.S. Iyengar, who helped make it a fundamental part of yoga practice, emphasizing its benefits for flexibility, strength, and mental focus."
   },
   {
     "id": 19,
     "name": "Wide-Legged Forward Fold",
-    "sanskrit_name": "Prasarita Padottanasana",
-    "context": "Prasarita Padottanasana is Wide-Legged Forward Fold in Sanskrit. 'Prasarita' means 'wide,' 'Pada' means 'foot,' and 'Uttanasana' means 'forward fold.' It stretches the legs and back."
+    "sanskrit_name": "प्रसारित पादोत्तानासन",
+    "translation": "Prasarita Padottanasana",
+    "context": "The name Prasarita Padottanasana comes from Sanskrit, with Prasarita (प्रसारित) meaning 'spread out' or 'extended,' Pāda (पाद) meaning 'foot,' and Uttanasana (उत्तानासन) meaning 'intense stretch' or 'forward bend.' Therefore, the name translates to 'Wide-Legged Forward Fold Pose,' signifying the action of spreading the legs wide apart while folding forward. This pose embodies the concepts of lengthening and opening, both physically and mentally, as the practitioner stretches and releases tension in the lower body. Historically, Prasarita Padottanasana appears in traditional yoga texts as part of foundational practices aimed at improving flexibility, strength, and balance. It has been further incorporated into modern yoga practices, particularly through the teachings of influential figures like T. Krishnamacharya, B.K.S. Iyengar, and Pattabhi Jois. Today, Wide-Legged Forward Fold remains a popular and essential part of Vinyasa and Hatha yoga practices, providing numerous benefits for the body and mind, including deep hamstring stretches, hip opening, and grounding."
   },
   {
     "id": 20,

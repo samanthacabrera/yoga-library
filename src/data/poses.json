@@ -129,7 +129,7 @@
     "id": 15,
     "name": "Goddess Pose",
     "image": "/goddess-pose.png",
-    "chakra": ["Root", "Sacral Chakra", "Heart"],
+    "chakra": ["Root", "Sacral", "Heart"],
     "type": ["Standing", "Hip Opener"],
     "benefit": ["Build Strength", "Boost Energy"],
     "part": ["Legs", "Hips", "Arms"]
@@ -156,19 +156,19 @@
     "id": 18,
     "name": "Pyramid Pose",
     "image": "/pyramid-pose.png",
-    "chakra": ["Root"],
-    "type": ["Standing"],
-    "benefit": ["Flexibility"],
-    "part": ["Legs", "Spine"]
+    "chakra": ["Root", "Sacral", "Solar Plexus"],
+    "type": ["Standing", "Forward Fold"],
+    "benefit": ["Improve Flexibility", "Improve Posture", "Improve Balance"],
+    "part": ["Legs", "Spine", "Hips"]
   },
   {
     "id": 19,
     "name": "Wide-Legged Forward Fold",
     "image": "/wide-leg-forward-fold.png",
-    "chakra": ["Root", "Crown"],
+    "chakra": ["Root", "Scaral"],
     "type": ["Standing", "Forward Fold"],
-    "benefit": ["Relaxation", "Flexibility"],
-    "part": ["Spine", "Legs"]
+    "benefit": ["Improve Circulation", "Relieve Tension", "Improve Flexibility"],
+    "part": ["Spine", "Legs", "Hips"]
   },
   {
     "id": 20,
