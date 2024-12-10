@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import posesData from '../data/poses.json';
 import descriptions from '../data/descriptions.json'; 
-import sanskirts from '../data/sanskirts.json'
+import sanskirts from '../data/sanskrits.json'
 import benefits from '../data/benefits.json';
 import precautions from '../data/precautions.json';
 import modifications from '../data/modifications.json';
