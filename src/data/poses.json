@@ -27,6 +27,15 @@
     "part": ["Core", "Shoulders"]
   },
   {
+    "id":4,
+    "name": "Four-Limbed Staff Pose",
+    "image": "",
+    "chakra": ["Solar Plexus", "Root"],
+    "type": ["Strength"],
+    "benefit": ["Tone Muscles", "Build Stability", "Boost Confidence"],
+    "part": ["Core", "Shoulders"]
+  },
+  {
     "id": 5,
     "name": "Upward-Facing Dog",
     "image": "/upward-facing-dog.png",

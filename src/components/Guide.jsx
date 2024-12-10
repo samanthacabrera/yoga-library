@@ -61,10 +61,10 @@ const Guide = () => {
                 </p>
                 <ul className="list-disc list-inside space-y-2">
                     <li>
-                        <strong>Hatha Yoga:</strong> A gentle form of yoga focusing on basic poses and breathing exercises, making it ideal for beginners.
+                        <strong>Vinyasa Yoga:</strong> A dynamic style of yoga that links movement with breath, creating a flowing sequence of poses.
                     </li>
                     <li>
-                        <strong>Vinyasa Yoga:</strong> A dynamic style of yoga that links movement with breath, creating a flowing sequence of poses. It’s known for its smooth transitions and creative sequences.
+                        <strong>Hatha Yoga:</strong> A gentle form of yoga focusing on basic poses and breathing exercises, making it ideal for beginners.
                     </li>
                     <li>
                         <strong>Ashtanga Yoga:</strong> A physically demanding and disciplined practice with a set sequence of poses performed in a specific order.
@@ -87,7 +87,7 @@ const Guide = () => {
 
             
             <div className="w-full max-w-5xl space-y-4 bg-gray-50 border-l-4 border-gray-400 p-6 rounded-lg">
-                <h2 className="text-2xl mb-4">Road Map to Master the Top 50 Yoga Poses</h2>
+                <h2 className="text-2xl mb-4">Road Map to Master the Top 50 Vinyasa Yoga Poses</h2>
                 <p className="">
                     This road map is designed to guide you through the top 50 common Vinyasa yoga poses, step by step, helping you build a strong foundation and confidence in your practice. Each pose is explained in detail, with modifications, alignment cues, and benefits highlighted to ensure a safe and effective practice.
                 </p>
