@@ -201,9 +201,9 @@
     "id": 23,
     "name": "Eagle Pose",
     "image": "/eagle-pose.png",
-    "chakra": ["Root"],
-    "type": ["Standing", "Balance"],
-    "benefit": ["Focus", "Balance"],
+    "chakra": ["Root", "Sacral"],
+    "type": ["Standing", "Balance", "Twist"],
+    "benefit": ["Enhance Focus", "Improve Balance"],
     "part": ["Legs", "Arms"]
   },
   {
