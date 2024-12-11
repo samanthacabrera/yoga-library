@@ -229,9 +229,9 @@
     "name": "Garland Pose",
     "image": "/garland-pose.png",
     "chakra": ["Root", "Sacral"],
-    "type": ["Seated", "Hip Opener"],
-    "benefit": ["Flexibility", "Grounding", "Stability"],
-    "part": ["Hips", "Lower Back"]
+    "type": ["Squat", "Hip Opener"],
+    "benefit": ["Improve Flexibility", "Build Stability"],
+    "part": ["Hips", "Back"]
   },
   {
     "id": 27,

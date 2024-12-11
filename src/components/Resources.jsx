@@ -39,10 +39,10 @@ const Resources = () => {
                         <p className="text-sm">In-depth insights into yoga philosophy, poses, and lifestyle.</p>
                     </li>
                     <li className="flex flex-col space-y-1">
-                        <a href="https://www.yogiapproved.com/" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
-                            YogiApproved
+                        <a href="https://www.ekhartyoga.com/articles/browse_all" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
+                            EkhartYoga
                         </a>
-                        <p className="text-sm">Guides and resources for deepening your home practice.</p>
+                        <p className="text-sm">Guides and resources on meditation, wellbeing, and more.</p>
                     </li>
                 </ul>
             </div>
