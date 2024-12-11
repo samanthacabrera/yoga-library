@@ -163,14 +163,15 @@
   {
     "id": 24,
     "name": "Crow Pose",
-    "sanskrit_name": "Bakasana",
-    "context": "Bakasana is Crow Pose in Sanskrit. 'Baka' means 'crow,' and 'Asana' means 'pose.' It is an arm-balancing pose that strengthens the arms, wrists, and core."
+    "sanskrit_name": "काकासन",
+    "translation": "Kakasana",
+    "context": "The name Kakasana is derived from Sanskrit, with Kaka (काक) meaning 'crow' and Asana (आसन) meaning 'pose' or 'posture.' Therefore, Kakasana translates to 'Crow Pose,' symbolizing the crow’s agility, balance, and ability to stay grounded while lifting its body. The pose reflects strength, stability, and focus, as it requires balance on the hands with the knees resting on the upper arms. Traditionally, Kakasana serves as a foundational arm balance, helping practitioners build strength in the arms, core, and wrists while cultivating focus and concentration. Over time, this pose has evolved in modern yoga, often serving as a preparatory step for more advanced arm balances and inversions. Through this evolution, Kakasana emphasizes both physical strength and mental clarity, encouraging a deeper connection between mind and body."
   },
   {
     "id": 25,
-    "name": "Side Crow",
-    "sanskrit_name": "Parsva Bakasana",
-    "context": "Parsva Bakasana is Side Crow in Sanskrit. 'Parsva' means 'side,' and 'Bakasana' means 'crow pose.' It is a variation of Crow Pose that involves balancing on one arm while twisting the body."
+    "name": "Side Crow Pose",
+    "sanskrit_name": "",
+    "context": " is Side Crow in Sanskrit. 'Parsva' means 'side,' and 'Bakasana' means 'crow pose.' It is a variation of Crow Pose that involves balancing on one arm while twisting the body."
   },
   {
     "id": 26,

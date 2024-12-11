@@ -210,9 +210,9 @@
     "id": 24,
     "name": "Crow Pose",
     "image": "/crow-pose.png",
-    "chakra": ["Root"],
-    "type": ["Arm Balance"],
-    "benefit": ["Strength", "Focus"],
+    "chakra": ["Solar Plexus"],
+    "type": ["Arm Balance", "Inversion", "Strength"],
+    "benefit": ["Build Strength", "Enhance Focus"],
     "part": ["Arms", "Core"]
   },
   {
