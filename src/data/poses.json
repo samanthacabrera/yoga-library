@@ -217,11 +217,11 @@
   },
   {
     "id": 25,
-    "name": "Side Crow",
+    "name": "Side Crow Pose",
     "image": "/side-crow-pose.png",
-    "chakra": ["Root"],
-    "type": ["Arm Balance"],
-    "benefit": ["Strength", "Focus"],
+    "chakra": ["Solar Plexus"],
+    "type": ["Arm Balance", "Inversion", "Strength"],
+    "benefit": ["Build Strength", "Enhance Focus"],
     "part": ["Arms", "Core"]
   },
   {
