@@ -190,11 +190,11 @@
   },
   {
     "id": 22,
-    "name": "Dancer's Pose",
+    "name": "Dancer Pose",
     "image": "/dancer-pose.png",
-    "chakra": ["Heart"],
+    "chakra": ["Heart", "Solar Plexus"],
     "type": ["Standing", "Balance"],
-    "benefit": ["Balance", "Flexibility"],
+    "benefit": ["Improve Balance", "Improve Flexibility", "Enhance Focus"],
     "part": ["Legs", "Chest"]
   },
   {
