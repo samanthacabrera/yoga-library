@@ -206,8 +206,9 @@
   {
     "id": 30,
     "name": "Fish Pose",
-    "sanskrit_name": "Matsyasana",
-    "context": "Matsyasana is Fish Pose in Sanskrit. 'Matsya' means 'fish,' and 'Asana' means 'pose.' It is a backbend that stretches the chest, neck, and spine."
+    "sanskrit_name": "मात्स्यासन",
+    "translation": "Matsyasana",
+    "context": "The name Matsyasana is derived from the Sanskrit words Matsya (मच्छ्स्य), meaning 'fish,' and Asana (आसन), meaning 'pose' or 'posture.' This name reflects the shape the body takes during the pose, with the chest lifted and the head and legs arching in a manner resembling the body of a fish. Matsyasana has its roots in ancient yoga texts and has been practiced for thousands of years. It is said to have been described in classical yoga texts such as the Hatha Yoga Pradipika and the Gheranda Samhita, where it was recognized for its benefits in improving respiratory function, stretching the spine, and opening the chest. Historically, it was often taught as a means to promote energy and vitality, as well as for its meditative benefits, particularly in preparing the body for seated meditation. Over time, it has become an integral part of modern yoga, especially in Hatha and Vinyasa practices, where it is commonly used to increase flexibility, relieve tension in the neck and shoulders, and promote heart and lung health."
   },
   {
     "id": 31,
