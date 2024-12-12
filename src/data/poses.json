@@ -27,7 +27,7 @@
     "part": ["Core", "Shoulders"]
   },
   {
-    "id":4,
+    "id": 4,
     "name": "Four-Limbed Staff Pose",
     "image": "/chaturanga.png",
     "chakra": ["Solar Plexus", "Root"],
@@ -244,12 +244,12 @@
   },
   {
     "id": 28,
-    "name": "Handstand",
+    "name": "Handstand Pose",
     "image": "/handstand.png",
-    "chakra": ["Crown"],
-    "type": ["Inversion"],
-    "benefit": ["Strength", "Balance"],
-    "part": ["Shoulders", "Arms"]
+    "chakra": ["Crown", "Third Eye", "Throat"],
+    "type": ["Inversion", "Arm Balance","Strength"],
+    "benefit": ["Build Strength", "Improve Balance", "Boost Confidence"],
+    "part": ["Core", "Arms"]
   },
   {
     "id": 29,
