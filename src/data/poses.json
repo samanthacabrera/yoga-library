@@ -235,11 +235,11 @@
   },
   {
     "id": 27,
-    "name": "Forearm Stand",
+    "name": "Feathered Peacock Pose",
     "image": "/forearm-stand.png",
-    "chakra": ["Crown"],
-    "type": ["Inversion"],
-    "benefit": ["Strength", "Balance"],
+    "chakra": ["Crown", "Third Eye", "Throat"],
+    "type": ["Inversion", "Arm Balance","Strength"],
+    "benefit": ["Build Strength", "Improve Balance", "Boost Confidence"],
     "part": ["Shoulders", "Core"]
   },
   {
