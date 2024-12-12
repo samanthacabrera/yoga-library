@@ -253,12 +253,12 @@
   },
   {
     "id": 29,
-    "name": "Shoulder Stand",
+    "name": "Shoulderstand Pose",
     "image": "/shoulder-stand.png",
-    "chakra": ["Throat"],
-    "type": ["Inversion"],
-    "benefit": ["Relaxation", "Strength"],
-    "part": ["Neck", "Shoulders"]
+    "chakra": ["Crown", "Third Eye", "Throat", "Solar Plexus"],
+    "type":  ["Inversion", "Balance"],
+    "benefit": ["Build Strength", "Improve Balance", "Boost Confidence"],
+    "part": ["Shoulders", "Core"]
   },
   {
     "id": 30,
