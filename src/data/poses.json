@@ -29,7 +29,7 @@
   {
     "id":4,
     "name": "Four-Limbed Staff Pose",
-    "image": "",
+    "image": "/chaturanga.png",
     "chakra": ["Solar Plexus", "Root"],
     "type": ["Strength"],
     "benefit": ["Tone Muscles", "Build Stability", "Boost Confidence"],
