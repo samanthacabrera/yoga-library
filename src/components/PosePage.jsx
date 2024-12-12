@@ -139,95 +139,120 @@ const PosePage = () => {
               <strong>Step-By-Step Breakdown:</strong>
             </p>
             <ol className="list-decimal list-inside">
-              {poseCues.cues.map((cue, index) => (
-                <li key={index}>{cue}</li>
-              ))}
+              {poseCues.cues.map((cue, index) => {
+                const linkPoseNames = (cueText) => {
+                  const matchedPoseCue = posesData.find((p) => cueText.includes(p.name));
+                  
+                  if (matchedPoseCue) {
+                    return (
+                      <>
+                        {cueText.split(matchedPoseCue.name).map((part, partIndex) => (
+                          <>
+                            {part}
+                            {partIndex < cueText.split(matchedPoseCue.name).length - 1 && (
+                              <Link
+                                key={`${index}-${partIndex}`} 
+                                to={`/pose/${matchedPoseCue.id}`}
+                                className="text-blue-500 hover:underline"
+                              >
+                                {matchedPoseCue.name}
+                              </Link>
+                            )}
+                          </>
+                        ))}
+                      </>
+                    );
+                  }
+                  return cueText; 
+                };
+                return <li key={index}>{linkPoseNames(cue)}</li>;
+              })}
             </ol>
           </div>
         )}
       </div>
 
-       <div className="bg-gray-100 p-4 rounded-lg shadow-sm">
-    <p><strong>Tags:</strong></p>
+      <div className="bg-gray-100 p-4 rounded-lg shadow-sm">
+        <p><strong>Tags:</strong></p>
 
-    {pose.benefit.length > 0 && (
-      <div>
-        <p className="text-gray-500 my-1">Benefits</p>
-        <ul className="flex flex-wrap gap-2">
-          {pose.benefit.map((benefit, index) => (
-            <li key={index}>
-            <Link 
-              to={`/categories/benefit/${benefit}`} 
-              className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
-            >
-              {benefit}
-            </Link>
-          </li>
-          ))}
-        </ul>
-      </div>
-    )}
+        {pose.benefit.length > 0 && (
+          <div>
+            <p className="text-gray-500 my-1">Benefits</p>
+            <ul className="flex flex-wrap gap-2">
+              {pose.benefit.map((benefit, index) => (
+                <li key={index}>
+                  <Link 
+                    to={`/categories/benefit/${benefit}`} 
+                    className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
+                  >
+                    {benefit}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
-    {pose.part.length > 0 && (
-      <div>
-        <p className="text-gray-500 my-1">Parts of the body</p>
-        <ul className="flex flex-wrap gap-2">
-          {pose.part.map((part, index) => (
-            <li key={index}>
-            <Link 
-              to={`/categories/part/${part}`} 
-              className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
-            >
-              {part}
-            </Link>
-          </li>
-          ))}
-        </ul>
-      </div>
-    )}
+        {pose.part.length > 0 && (
+          <div>
+            <p className="text-gray-500 my-1">Parts of the body</p>
+            <ul className="flex flex-wrap gap-2">
+              {pose.part.map((part, index) => (
+                <li key={index}>
+                  <Link 
+                    to={`/categories/part/${part}`} 
+                    className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
+                  >
+                    {part}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
-    {pose.type.length > 0 && (
-      <div>
-        <p className="text-gray-500 my-1">Pose Types</p>
-        <ul className="flex flex-wrap gap-2">
-          {pose.type.map((type, index) => (
-            <li key={index}>
-            <Link 
-              to={`/categories/type/${type}`} 
-              className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
-            >
-              {type}
-            </Link>
-          </li>
-          ))}
-        </ul>
+        {pose.type.length > 0 && (
+          <div>
+            <p className="text-gray-500 my-1">Pose Types</p>
+            <ul className="flex flex-wrap gap-2">
+              {pose.type.map((type, index) => (
+                <li key={index}>
+                  <Link 
+                    to={`/categories/type/${type}`} 
+                    className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
+                  >
+                    {type}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        
+        {pose.chakra.length > 0 && (
+          <div>
+            <p className="text-gray-500 my-1">Chakras</p>
+            <ul className="flex flex-wrap gap-2">
+              {pose.chakra.map((chakra, index) => (
+                <li key={index}>
+                  <Link 
+                    to={`/categories/chakra/${chakra}`} 
+                    className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
+                  >
+                    {chakra}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
-    )}
-    
-    {pose.chakra.length > 0 && (
-      <div>
-        <p className="text-gray-500 my-1">Chakras</p>
-        <ul className="flex flex-wrap gap-2">
-          {pose.chakra.map((chakra, index) => (
-            <li key={index}>
-            <Link 
-              to={`/categories/chakra/${chakra}`} 
-              className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
-            >
-              {chakra}
-            </Link>
-          </li>
-          ))}
-        </ul>
+
+      <div className="flex flex-col text-sm">
+        <a href="https://www.flaticon.com/free-icons/workout" title="workout icons">Workout icons created by dDara - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/yoga" title="yoga icons">Yoga icons created by monkik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/lunge" title="lunge icons">Lunge icons created by Eideticmemo - Flaticon</a>
       </div>
-    )}
-    </div>
-    
-    <div className="flex flex-col text-sm">
-      <a href="https://www.flaticon.com/free-icons/workout" title="workout icons">Workout icons created by dDara - Flaticon</a>
-      <a href="https://www.flaticon.com/free-icons/yoga" title="yoga icons">Yoga icons created by monkik - Flaticon</a>
-      <a href="https://www.flaticon.com/free-icons/lunge" title="lunge icons">Lunge icons created by Eideticmemo - Flaticon</a>
-    </div>
 
       {sources.length > 0 && (
         <div
@@ -247,7 +272,6 @@ const PosePage = () => {
           </ul>
         </div>
       )}
-
     </div>
   );
 };
