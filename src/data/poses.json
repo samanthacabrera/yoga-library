@@ -273,10 +273,10 @@
     "id": 31,
     "name": "Camel Pose",
     "image": "/camel-pose.png",
-    "chakra": ["Heart"],
-    "type": ["Backbend"],
-    "benefit": ["Openness", "Flexibility"],
-    "part": ["Spine", "Chest"]
+    "chakra": ["Crown", "Third Eye", "Throat", "Heart", "Solar Plexus"],
+    "type": ["Backbend", "Stretch"],
+    "benefit": ["Improve Flexibility", "Enhance Openness"],
+    "part": ["Back", "Chest"]
   },
   {
     "id": 32,
