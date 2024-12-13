@@ -291,10 +291,10 @@
     "id": 33,
     "name": "Wheel Pose",
     "image": "/wheel-pose.png",
-    "chakra": ["Heart"],
-    "type": ["Backbend"],
-    "benefit": ["Strength", "Flexibility"],
-    "part": ["Spine", "Arms"]
+    "chakra": ["Heart", "Crown", "Third Eye", "Third Eye", "Solar Plexus"],
+    "type": ["Backbend", "Inversion", "Strength"],
+    "benefit": ["Build Strength", "Improve Flexibility", "Boost Circulation"],
+    "part": ["Back", "Arms", "Chest"]
   },
   {
     "id": 34,
