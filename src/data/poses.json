@@ -300,10 +300,10 @@
     "id": 34,
     "name": "Reclining Bound Angle",
     "image": "/reclining-bound-angle-pose.png",
-    "chakra": ["Root"],
-    "type": ["Restorative"],
-    "benefit": ["Relaxation", "Openness"],
-    "part": ["Hips"]
+    "chakra": ["Root", "Sacral"],
+    "type": ["Restorative", "Strength"],
+    "benefit": ["Reduce Stress", "Enhance Openness"],
+    "part": ["Hips", "Back"]
   },
   {
     "id": 35,
