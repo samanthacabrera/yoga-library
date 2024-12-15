@@ -424,7 +424,7 @@
   },
   {
       "id": 34,
-      "name": "Reclining Bound Angle",
+      "name": "Reclining Bound Angle Pose", 
       "cues": [
           "Begin in Corpse Pose, lying flat on your back with your legs extended and arms relaxed by your sides.",
           "Bend your knees and bring the soles of your feet together, allowing your knees to gently open out to the sides. Let gravity guide your knees downward without forcing them.",
@@ -437,13 +437,14 @@
   },
   {
     "id": 35,
-    "name": "Legs Up the Wall",
+    "name": "Legs-Up-The-Wall Pose",
     "cues": [
-      "Sit with one hip next to a wall, then gently lie down on your back and swing your legs up the wall.",
-      "Keep your hips close to the wall and your legs extended straight up.",
-      "Place your arms at your sides or rest them on your belly, and focus on relaxing your body and mind.",
-      "Breathe deeply, allowing your legs to feel supported by the wall, and let any tension release from your lower back.",
-      "Hold the pose for several minutes, allowing the restorative effects to calm your nervous system."
+      "Begin by sitting sideways with one hip close to a wall. Slowly lower your upper body down onto your back as you swing your legs up against the wall.",
+      "Adjust your hips so they are as close to the wall as comfortably possible. Your legs should extend straight up, resting fully against the wall.",
+      "Place a folded blanket, bolster, or cushion under your hips for added support, especially if you feel discomfort in your lower back.",
+      "Let your arms relax naturally by your sides, palms facing up, or rest your hands on your belly to connect with your breath.",
+      "Soften your jaw, shoulders, and belly, releasing tension as you settle into the pose. Close your eyes and focus on steady, deep breaths.",
+      "Stay in the pose for 5 to 10 slow and deep breaths, or as long as it feels restorative, letting gravity guide relaxation into your body and mind."
     ]
   },
   {

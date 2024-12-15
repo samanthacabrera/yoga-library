@@ -298,7 +298,7 @@
   },
   {
     "id": 34,
-    "name": "Reclining Bound Angle",
+    "name": "Reclining Bound Angle Pose",
     "image": "/reclining-bound-angle-pose.png",
     "chakra": ["Root", "Sacral"],
     "type": ["Restorative", "Strength"],
@@ -307,11 +307,11 @@
   },
   {
     "id": 35,
-    "name": "Legs Up the Wall",
+    "name": "Legs Up the Wall Pose",
     "image": "/legs-up-the-wall-pose.png",
-    "chakra": ["Root", "Crown"],
-    "type": ["Restorative", "Inversion"],
-    "benefit": ["Relaxation", "Circulation"],
+    "chakra": ["Root", "Crown", "Sacral"],
+    "type": ["Restorative", "Stretch"],
+    "benefit": ["Relieve Tension", "Boost Circulation"],
     "part": ["Legs", "Back"]
   },
   {

@@ -233,16 +233,17 @@
   },
   {
     "id": 34,
-    "name": "Reclining Bound Angle",
+    "name": "Reclining Bound Angle Pose",
     "sanskrit_name": "सुप्त बद्ध कोणासन",
     "translation": "Supta Baddha Konasana",
     "context": "The name Reclining Bound Angle Pose, or Supta Baddha Konasana, is derived from Sanskrit, where 'Supta' (सुप्त) means 'reclined' or 'lying down,' 'Baddha' (बद्ध) translates to 'bound,' and 'Kona' (कोण) means 'angle.' Together, the name describes the posture of the body—reclined with the soles of the feet bound together, creating an open, angled shape. This name reflects the pose’s essence of surrender and expansion, embodying a balance between support and openness. Rooted in traditional yoga practices, Supta Baddha Konasana has been utilized as a restorative pose to calm the mind and body, emphasizing relaxation and introspection. The bound angle, a symbol of groundedness and connection, paired with the reclined position, evokes a sense of rest and release."
   },
   {
     "id": 35,
-    "name": "Legs Up the Wall",
-    "sanskrit_name": "Viparita Karani",
-    "context": "Viparita Karani is Legs Up the Wall in Sanskrit. 'Viparita' means 'reverse,' and 'Karani' means 'action.' This is a restorative pose that relaxes the legs and promotes circulation."
+    "name": "Legs Up the Wall Pose",
+    "sanskrit_name": "विपरीतकरणी",
+    "translation": "Viparita Karani",
+      "context": "The name Legs-Up-The-Wall Pose, or Viparita Karani in Sanskrit, is rooted in traditional yoga practices, where Viparita (विपरीत) means “inverted” or “reversed,” and Karani (करणी) translates to “action” or “doing.” Together, the term reflects the gentle inversion achieved in this posture, symbolizing a reversal of energy and perspective. Historically, Viparita Karani is referenced in classical yoga texts, such as the Hatha Yoga Pradipika, where it is associated with rejuvenation and the cultivation of inner stillness. Traditionally regarded as both a restorative and meditative practice, the pose embodies the yogic philosophy of balance—physically, by reversing the effects of gravity, and energetically, by promoting calm and introspection. Over time, this posture has evolved into a widely accessible pose, celebrated for its therapeutic benefits and its ability to connect practitioners to the essence of rest and renewal."
   },
   {
     "id": 36,
