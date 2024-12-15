@@ -319,8 +319,8 @@
     "name": "Boat Pose",
     "image": "/boat-pose.png",
     "chakra": ["Solar Plexus"],
-    "type": ["Seated"],
-    "benefit": ["Strength", "Balance"],
+    "type": ["Seated", "Strength", "Balance"],
+    "benefit": ["Build Strength", "Improve Posture"],
     "part": ["Core"]
   },
   {
