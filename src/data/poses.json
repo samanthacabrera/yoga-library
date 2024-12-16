@@ -363,9 +363,9 @@
     "id": 41,
     "name": "Cobra Pose",
     "image": "/cobra-pose.png",
-    "chakra": ["Heart"],
+    "chakra": ["Heart", "Throat", "Solar Plexus", "Sacral", "Root"],
     "type": ["Backbend"],
-    "benefit": ["Flexibility", "Strength"],
+    "benefit": ["Improve Flexibility", "Build Strength"],
     "part": ["Spine", "Chest"]
   },
   {
