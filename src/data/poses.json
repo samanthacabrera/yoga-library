@@ -334,12 +334,12 @@
   },
   {
     "id": 38,
-    "name": "Bound Angle",
+    "name": "Bound Angle Pose",
     "image": "/bound-angle-pose.png",
-    "chakra": ["Root"],
-    "type": ["Seated"],
+    "chakra": ["Root","Sacral"],
+    "type": ["Seated", "Stretch"],
     "benefit": ["Openness", "Relaxation"],
-    "part": ["Hips", "Thighs"]
+    "part": ["Hips", "Back"]
   },
   {
     "id": 39,
