@@ -301,7 +301,7 @@
     "name": "Reclining Bound Angle Pose",
     "image": "/reclining-bound-angle-pose.png",
     "chakra": ["Root", "Sacral"],
-    "type": ["Restorative", "Strength"],
+    "type": ["Restorative", "Stretch", "Supine"],
     "benefit": ["Reduce Stress", "Enhance Openness"],
     "part": ["Hips", "Back"]
   },
@@ -338,16 +338,16 @@
     "image": "/bound-angle-pose.png",
     "chakra": ["Root","Sacral"],
     "type": ["Seated", "Stretch"],
-    "benefit": ["Openness", "Relaxation"],
+    "benefit": ["Enhance Openness", "Enhance Relaxation"],
     "part": ["Hips", "Back"]
   },
   {
     "id": 39,
     "name": "Happy Baby Pose",
     "image": "/happy-baby-pose.png",
-    "chakra": ["Root"],
-    "type": ["Restorative"],
-    "benefit": ["Relaxation", "Flexibility"],
+    "chakra": ["Root", "Sacral"],
+    "type": ["Restorative", "Stretch", "Supine"],
+    "benefit": ["Enhance Relaxation", "Improve Flexibility"],
     "part": ["Hips", "Back"]
   },
   {
@@ -355,7 +355,7 @@
     "name": "Corpse Pose",
     "image": "/corpse-pose.png",
     "chakra": ["Crown"],
-    "type": ["Restorative"],
+    "type": ["Restorative", "Supine"],
     "benefit": ["Relaxation", "Meditation"],
     "part": ["Whole Body"]
   },
