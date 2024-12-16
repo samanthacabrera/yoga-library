@@ -276,8 +276,9 @@
   {
     "id": 40,
     "name": "Corpse Pose",
-    "sanskrit_name": "Savasana",
-    "context": "Savasana is Corpse Pose in Sanskrit. 'Sava' means 'corpse,' and 'Asana' means 'pose.' It is a resting pose used for relaxation and integration of practice."
+    "sanskrit_name": "शवासन",
+    "translation": "Savasana",
+    "context": "The term 'Corpse Pose' is derived from the Sanskrit word 'Savasana' (शवासन), where 'Shava' (शव) means 'corpse' and 'Asana' (आसन) means 'pose' or 'posture.' Thus, 'Savasana' translates to 'Corpse Pose,' symbolizing the act of surrender and letting go, much like a lifeless body. The posture invites the practitioner to lie in a state of complete stillness, allowing the body to relax and the mind to enter a meditative state. Traditionally, Savasana is practiced at the end of a yoga session to absorb the benefits of the preceding poses, promote deep relaxation, and foster mindfulness. While it may seem simple, the pose requires the practitioner to release all effort and achieve a state of conscious relaxation. The origins of Savasana are rooted in ancient yoga texts, where it was used not only for physical restoration but also for spiritual and mental rejuvenation. Today, it is considered an essential part of yoga practice, providing a moment of peace and integration that enhances the overall benefits of the practice."
   },
   {
     "id": 41,

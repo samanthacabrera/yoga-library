@@ -354,10 +354,10 @@
     "id": 40,
     "name": "Corpse Pose",
     "image": "/corpse-pose.png",
-    "chakra": ["Crown"],
+    "chakra": ["Crown", "Heart"],
     "type": ["Restorative", "Supine"],
-    "benefit": ["Relaxation", "Meditation"],
-    "part": ["Whole Body"]
+    "benefit": ["Enhance Relaxation", "Relieve Tension", "Restore Energy"],
+    "part": ["Back"]
   },
   {
     "id": 41,
