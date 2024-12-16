@@ -327,10 +327,10 @@
     "id": 37,
     "name": "Seated Forward Fold",
     "image": "/seated-forward-fold.png",
-    "chakra": ["Root"],
-    "type": ["Seated"],
-    "benefit": ["Calmness", "Flexibility"],
-    "part": ["Spine", "Hamstrings"]
+    "chakra": ["Root", "Throat", "Sacral", "Solar Plexus"],
+    "type": ["Seated", "Forward Fold", "Stretch" ],
+    "benefit": ["Relieve Tension", "Improve Flexibility"],
+    "part": ["Back", "Legs"]
   },
   {
     "id": 38,
