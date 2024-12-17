@@ -372,9 +372,9 @@
     "id": 42,
     "name": "Locust Pose",
     "image": "/locust-pose.png",
-    "chakra": ["Solar Plexus"],
-    "type": ["Backbend"],
-    "benefit": ["Strength", "Posture"],
+    "chakra": ["Solar Plexus", "Sacral", "Throat","Root"],
+    "type": ["Backbend", "Prone", "Strength"],
+    "benefit": ["Build Strength", "Improve Posture"],
     "part": ["Back", "Glutes"]
   },
   {
