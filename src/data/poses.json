@@ -381,9 +381,9 @@
     "id": 43,
     "name": "Bow Pose",
     "image": "/bow-pose.png",
-    "chakra": ["Heart"],
-    "type": ["Backbend"],
-    "benefit": ["Flexibility", "Openness"],
+    "chakra": ["Heart", "Throat", "Solar Plexus", "Sacral"],
+    "type": ["Backbend", "Prone", "Stretch"],
+    "benefit": ["Improve Flexibility", "Enhance Openness"],
     "part": ["Spine", "Chest"]
   },
   {
