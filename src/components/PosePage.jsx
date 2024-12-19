@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import posesData from '../data/poses.json';
 import descriptions from '../data/descriptions.json';
@@ -11,6 +11,7 @@ import cues from '../data/cues.json';
 const PosePage = () => {
   const { id } = useParams();
   const pose = posesData.find((p) => p.id === parseInt(id));
+  const [currentPageType, setCurrentPageType] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -47,17 +48,36 @@ const PosePage = () => {
     sources.push({ section: 'Step-By-Step', text: poseCues.source });
   }
 
+  const relatedByType = posesData.filter((p) => 
+    p.id !== pose.id && p.type.some((type) => pose.type.includes(type))
+  );
+
+  const posesPerPage = 4;
+
+  const currentPosesType = relatedByType.slice(currentPageType * posesPerPage, (currentPageType + 1) * posesPerPage);
+
+  const totalPagesType = Math.ceil(relatedByType.length / posesPerPage);
+
+  const handlePageChangeType = (direction) => {
+    if (direction === 'next' && currentPageType < totalPagesType - 1) {
+      setCurrentPageType(currentPageType + 1);
+    } else if (direction === 'prev' && currentPageType > 0) {
+      setCurrentPageType(currentPageType - 1);
+    }
+  };
+
+
   return (
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-6 p-8">
       <h2 className="text-4xl">
-        {pose.name} <span>({poseSanskirt.sanskrit_name})</span>
+        {pose.name} <span>({poseSanskirt.translation})</span>
       </h2>
 
       <div id="translation">
         {poseSanskirt.translation && (
-          <p>
+          <p className="text-lg">
             <strong>Sanskrit: </strong>
-            {poseSanskirt.translation}
+            {poseSanskirt.sanskrit_name}
           </p>
         )}
       </div>
@@ -248,6 +268,44 @@ const PosePage = () => {
         )}
       </div>
 
+      <div className="bg-gray-100 p-4 rounded-lg shadow-sm mt-6">
+        {relatedByType.length > 0 && (
+          <div>
+            <p><strong>Related Poses:</strong></p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {currentPosesType.map((relatedPose) => (
+                <div key={relatedPose.id} className="bg-white rounded-lg shadow-md p-4">
+                  <Link to={`/pose/${relatedPose.id}`} className="block text-center hover:opacity-80">
+                    {relatedPose.image && (
+                      <img
+                        src={relatedPose.image}
+                        alt={relatedPose.name}
+                        className="w-full h-32 object-cover rounded-lg mb-2"
+                      />
+                    )}
+                    <p className="text-lg">{relatedPose.name}</p>
+                  </Link>
+                </div>
+              ))}
+            </div>
+            <div className="flex justify-between mt-4">
+              <button 
+                onClick={() => handlePageChangeType('prev')}
+                disabled={currentPageType === 0}
+              >
+                &larr;
+              </button>
+              <button 
+                onClick={() => handlePageChangeType('next')}
+                disabled={currentPageType === totalPagesType - 1}
+              >
+                &rarr;
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+
       <div className="flex flex-col text-sm">
         <a href="https://www.flaticon.com/free-icons/workout" title="workout icons">Workout icons created by dDara - Flaticon</a>
         <a href="https://www.flaticon.com/free-icons/yoga" title="yoga icons">Yoga icons created by monkik - Flaticon</a>
@@ -272,6 +330,7 @@ const PosePage = () => {
           </ul>
         </div>
       )}
+
     </div>
   );
 };

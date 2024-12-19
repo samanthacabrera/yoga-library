@@ -14,7 +14,7 @@ const Footer = () => {
 
             <div className="absolute right-2">
                 <form action="mailto:samantha.n.cabrera@gmail.com" method="POST" enctype="text/plain">
-                    <button type="submit" >Feedback</button>
+                    <button type="submit"  className="hover:italic hover:underline">Feedback</button>
                 </form>
             </div>
         </div>

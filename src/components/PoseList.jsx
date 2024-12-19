@@ -49,7 +49,7 @@ const PoseList = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen max-h-[400vh] min-w-64 overflow-y-scroll scrollbar-hidden space-y-2 p-1 bg-gray-100">
+    <div className="flex flex-col h-screen min-w-64 overflow-y-scroll space-y-2 p-1 bg-gray-100">
       <button
         onClick={toggleSort}
         className="self-start opacity-50"

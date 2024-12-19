@@ -30,7 +30,7 @@ const CategoryPage = () => {
   };
 
   return (
-    <div className="p-6">
+    <div className="min-h-[85vh] p-6">
       <h2 className="text-4xl mb-1">{getHeadingText()}</h2>
 
       {filteredPoses.length === 0 ? (
