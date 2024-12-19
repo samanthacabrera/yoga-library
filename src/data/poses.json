@@ -390,9 +390,9 @@
     "id": 44,
     "name": "Puppy Pose",
     "image": "/puppy-pose.png",
-    "chakra": ["Heart"],
-    "type": ["Backbend"],
-    "benefit": ["Relaxation", "Stretch"],
+    "chakra": ["Heart", "Throat", "Sacral", "Root"],
+    "type": ["Stretch","Kneeling"],
+    "benefit": ["Enhance Relaxation", "Improve Flexibility"],
     "part": ["Spine", "Shoulders"]
   },
   {
