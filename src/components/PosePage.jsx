@@ -68,16 +68,17 @@ const PosePage = () => {
 
 
   return (
-    <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-6 p-8">
-      <h2 className="text-4xl">
-        {pose.name} <span>({poseSanskirt.translation})</span>
-      </h2>
+    <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8">
 
-      <div id="translation">
+      <div className="text-4xl mb-8">
+        <h2>
+          {pose.name} - {poseSanskirt.translation}
+        </h2>
+
         {poseSanskirt.translation && (
-          <p className="text-lg">
-            <strong>Sanskrit: </strong>
-            {poseSanskirt.sanskrit_name}
+          <p className="text-6xl opacity-20 font-bold my-4">
+            
+          {poseSanskirt.sanskrit_name}
           </p>
         )}
       </div>
@@ -274,8 +275,8 @@ const PosePage = () => {
             <p><strong>Related Poses:</strong></p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {currentPosesType.map((relatedPose) => (
-                <div key={relatedPose.id} className="bg-white rounded-lg shadow-md p-4">
-                  <Link to={`/pose/${relatedPose.id}`} className="block text-center hover:opacity-80">
+                <div key={relatedPose.id} className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition duration-200">
+                  <Link to={`/pose/${relatedPose.id}`} className="block text-center">
                     {relatedPose.image && (
                       <img
                         src={relatedPose.image}
@@ -283,23 +284,25 @@ const PosePage = () => {
                         className="w-full h-32 object-cover rounded-lg mb-2"
                       />
                     )}
-                    <p className="text-lg">{relatedPose.name}</p>
+                    <p className="text-sm">{relatedPose.name}</p>
                   </Link>
                 </div>
               ))}
             </div>
+
             <div className="flex justify-between mt-4">
-              <button 
+              <button
                 onClick={() => handlePageChangeType('prev')}
-                disabled={currentPageType === 0}
+                className={`text-gray-500 hover:scale-105 transition duration-100 ${currentPageType === 0 ? 'invisible' : ''}`}
               >
-                &larr;
+                Prev
               </button>
-              <button 
+
+              <button
                 onClick={() => handlePageChangeType('next')}
-                disabled={currentPageType === totalPagesType - 1}
+                className={`text-gray-500 hover:scale-105 transition duration-100 ${currentPageType === totalPagesType - 1 ? 'invisible' : ''}`}
               >
-                &rarr;
+                Next
               </button>
             </div>
           </div>
