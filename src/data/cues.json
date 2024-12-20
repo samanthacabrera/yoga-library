@@ -577,19 +577,18 @@
       "Hold the pose, breathing deeply, and allow your right shoulder and upper back to release into the stretch."
     ]
   },
-  {
-    "id": 47,
-    "name": "Reverse Plank Pose",
-    "cues": [
-      "Begin seated with your legs extended straight in front of you and your hands placed behind your hips, fingers pointing toward your feet.",
-      "Press firmly into your palms and lift your hips toward the ceiling, creating a straight line from your head to your heels.",
-      "Engage your core to prevent your hips from sagging and keep your body aligned.",
-      "Roll your shoulders back and open your chest, drawing your shoulder blades together.",
-      "Press through your heels and activate your legs, keeping them straight and strong.",
-      "Relax your neck and allow your head to drop back gently, or keep it in a neutral position if that feels more comfortable.",
-      "Hold the pose for 5 breaths, then slowly lower your hips back to the mat with control."
-    ]
-  },
+{
+  "id": 47,
+  "name": "Upward Plank Pose",
+  "cues": [
+    "Start seated with your legs extended straight in front of you, feet flexed, and your hands placed behind your hips, fingers pointing toward your feet or slightly outwards for wrist comfort.",
+    "Press firmly into your palms, engage your arms and shoulders, and lift your hips toward the ceiling, creating a straight line from your head through your torso to your heels.",
+    "Engage your core to stabilize the pelvis and prevent your hips from sagging, maintaining a strong and aligned body from head to heels.",
+    "Roll your shoulders back and down, opening your chest while drawing your shoulder blades together and keeping them away from your ears to avoid strain in the neck.",
+    "Activate your legs by pressing through your heels, keeping them straight and strong. If needed, bend the knees slightly to reduce strain on the hamstrings and lower back.",
+    "Focus on steady, controlled breathing, holding the pose for 5 to 10 breaths. Ensure that your body remains aligned and your muscles are engaged throughout."
+  ]
+},
   {
     "id": 48,
     "name": "Pigeon Pose",

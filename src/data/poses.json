@@ -415,12 +415,12 @@
   },
   {
     "id": 47,
-    "name": "Reverse Plank Pose",
+    "name": "Upward Plank Pose",
     "image": "/reverse-plank-pose.png",
-    "chakra": ["Solar Plexus", "Heart"],
+    "chakra": ["Solar Plexus", "Heart", "Third Eye", "Throat"],
     "type": ["Seated", "Strength"],
-    "benefit": ["Posture"],
-    "part": ["Core", "Arms", "Shoulders"]
+    "benefit": ["Improve Posture", "Build Stability"],
+    "part": ["Core", "Arms"]
   },
   {
     "id": 48,
