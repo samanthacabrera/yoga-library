@@ -589,17 +589,18 @@
     "Focus on steady, controlled breathing, holding the pose for 5 to 10 breaths. Ensure that your body remains aligned and your muscles are engaged throughout."
   ]
 },
-  {
-    "id": 48,
-    "name": "Pigeon Pose",
-    "cues": [
-      "Begin in a tabletop position, bringing your right knee forward and placing it behind your right wrist.",
-      "Extend your left leg straight behind you, lowering your hips toward the floor.",
-      "Ensure your back leg is extended straight and the top of your foot is facing down.",
-      "Fold forward over your bent leg, keeping your spine long and chest open.",
-      "Hold the pose, breathing deeply, and focus on releasing tension in your hips."
-    ]
-  },
+{
+  "id": 48,
+  "name": "Half Pigeon Pose",
+  "cues": [
+    "Begin in a tabletop position with your hands directly under your shoulders and knees under your hips.",
+    "Bring your right knee forward and place it behind your right wrist, aiming to create a 90-degree angle with your right shin. Keep your left leg extended straight behind you with the top of your foot facing down toward the floor.",
+    "Ensure your back leg is extended fully, with the knee straight and the toes pointing downward. Gently press the tops of your toes into the mat to engage your legs.",
+    "Square your hips toward the front of the mat, adjusting the position of your right foot if necessary to maintain a stable foundation. Avoid collapsing the right hip inward, and instead, engage the muscles around the hip to keep it level.",
+    "With a long spine, begin to fold forward over your bent leg, keeping your chest lifted and your shoulders relaxed. If needed, place a prop like a block or blanket under the hips or torso for support.",
+    "Hold the pose for 5 to 10 breaths, breathing deeply through the nose. Focus on releasing tension in your hips, glutes, and lower back, while maintaining an even, steady breath."
+  ]
+},
   {
     "id": 49,
     "name": "Plow Pose",

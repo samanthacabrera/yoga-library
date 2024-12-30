@@ -424,12 +424,12 @@
   },
   {
     "id": 48,
-    "name": "Pigeon Pose",
+    "name": "Half Pigeon Pose",
     "image": "/pigeon-pose.png",
-    "chakra": ["Root"],
-    "type": ["Hip Opener"],
-    "benefit": ["Openness", "Relaxation"],
-    "part": ["Hips", "Glutes"]
+    "chakra": ["Root", "Throat", "Heart","Sacral"],
+    "type": ["Hip Opener", "Stretch"],
+    "benefit": ["Enhance Openness", "Improve Flexibility"],
+    "part": ["Hips", "Legs"]
   },
   {
     "id": 49,
