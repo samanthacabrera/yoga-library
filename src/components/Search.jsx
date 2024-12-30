@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import posesData from "../data/poses.json";  
+import posesData from "../data/poses.json";
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredPoses, setFilteredPoses] = useState([]);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
+  const searchRef = useRef(null);
 
   const handleSearch = (event) => {
     event.preventDefault();
@@ -19,6 +21,9 @@ const Search = () => {
       } else {
         navigate(`/pose/${trimmedSearchTerm.toLowerCase()}`);
       }
+      setSearchTerm("");
+      setFilteredPoses([]);
+      setIsDropdownOpen(false);
     }
   };
 
@@ -31,13 +36,28 @@ const Search = () => {
         pose.name.toLowerCase().includes(query)
       );
       setFilteredPoses(results);
+      setIsDropdownOpen(true);
     } else {
       setFilteredPoses([]);
+      setIsDropdownOpen(false);
     }
   };
 
+  const handleClickOutside = (event) => {
+    if (searchRef.current && !searchRef.current.contains(event.target)) {
+      setIsDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div>
+    <div ref={searchRef}>
       <form onSubmit={handleSearch} className="relative">
         <input
           type="text"
@@ -49,13 +69,16 @@ const Search = () => {
         <button type="submit" className="absolute right-0 top-0 p-2"></button>
       </form>
 
-      {filteredPoses.length > 0 && (
+      {isDropdownOpen && filteredPoses.length > 0 && (
         <div className="mt-2">
           <ul className="space-y-2">
             {filteredPoses.map((pose) => (
               <li key={pose.id}>
                 <button
-                  onClick={() => navigate(`/pose/${pose.id}`)}
+                  onClick={() => {
+                    navigate(`/pose/${pose.id}`);
+                    setIsDropdownOpen(false);
+                  }}
                   className="hover:underline"
                 >
                   {pose.name}
