@@ -1,7 +1,26 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const Hero = () => {
   return (
+    <>
+      <Helmet>
+        <title>Yoga Pose Library</title>
+        <meta
+          name="description"
+          content="Explore a wide variety of yoga poses with clear instructions and detailed explanations."
+        />
+        <meta name="keywords" content="Yoga, Poses, Yoga Library" />
+        <meta name="author" content="Sam Cabrera" />
+        <meta property="og:title" content="Yoga Pose Library" />
+        <meta
+          property="og:description"
+          content="Explore a wide variety of vinyasa yoga poses with clear instructions and detailed explanations."
+        />
+        <meta property="og:url" content="https://learnyoga.online" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
     <div className="flex flex-col space-y-80 w-full max-w-2xl">
       <div className="flex flex-col items-center h-screen lg:translate-x-1/2 space-y-4 pt-20">
           <p>Welcome to</p>
@@ -36,6 +55,7 @@ const Hero = () => {
           </div>
         </div>
     </div>
+    </>
   );
 };
 
