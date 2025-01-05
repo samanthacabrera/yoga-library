@@ -610,32 +610,6 @@
     "type": ["Seated"],
     "benefit": ["Flexibility", "Strength"],
     "part": ["Legs", "Hips"]
-  },
-  {
-    "id": 82,
-    "name": "Scorpion Pose",
-    "image": "/scorpion-pose.png",
-    "chakra": ["Root", "Heart"],
-    "type": ["Inversion"],
-    "benefit": ["Strength", "Flexibility"],
-    "part": ["Back", "Shoulders"]
-  },
-  {
-    "id": 85,
-    "name": "Peacock Pose",
-    "image": "/peacock-pose.png",
-    "chakra": ["Root", "Solar Plexus"],
-    "type": ["Arm Balance"],
-    "benefit": ["Strength"],
-    "part": ["Arms", "Core"]
-  },
-  {
-    "id": 86,
-    "name": "Compass Pose",
-    "image": "/compass-pose.png",
-    "chakra": ["Root", "Heart"],
-    "type": ["Seated"],
-    "benefit": ["Flexibility", "Openness"],
-    "part": ["Hips", "Back"]
   }
+
 ]
