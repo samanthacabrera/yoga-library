@@ -29,6 +29,7 @@ const ArticleList = () => {
     return (
         <div className="flex flex-col min-h-screen p-8 space-y-16">
             <h1 className="text-4xl">Articles</h1>
+            
             <ul className="space-y-12">
                 {articles.map((article, index) => (
                     <li 
@@ -61,6 +62,21 @@ const ArticleList = () => {
                     </li>
                 ))}
             </ul>
+
+            <hr></hr>
+
+            <div className="bg-white self-center shadow-sm rounded-lg p-6 space-y-4 max-w-lg w-full border border-gray-200">
+                <h2 className="text-2xl font-light text-center">  Join Our Yoga Community</h2>
+                <p className="text-center text-gray-500">
+                  Stay connected with us to receive updates, articles, and resources. Our newsletter signup is coming soon!
+                </p>
+                <button 
+                    disabled 
+                    className="block w-full px-6 py-3 text-sm text-gray-400 bg-gray-100 border border-gray-300 rounded-md cursor-not-allowed"
+                >
+                    Signup
+                </button>
+            </div>
         </div>
     );
 };
