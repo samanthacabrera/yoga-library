@@ -75,7 +75,7 @@ const Resources = () => {
                         <p className="text-sm">Durable, non-slip, eco-friendly mat with a smooth, supportive surface.</p>
                     </li>
                     <li className="flex flex-col space-y-1">
-                        <a href="https://www.manduka.com/collections/prolite" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
+                        <a href="https://www.manduka.com/collections/yoga-mats-pro-series/products/prolite-yoga-mat" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
                             Manduka ProLite Mat
                         </a>
                         <p className="text-sm">High-performance, eco-conscious mat built to last.</p>
@@ -87,19 +87,13 @@ const Resources = () => {
                         <p className="text-sm">Eco-friendly, non-toxic mats with great grip and cushion.</p>
                     </li>
                     <li className="flex flex-col space-y-1">
-                        <a href="https://www.beyondyoga.com/collections/bralettes" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
-                            Beyond Yoga Bralettes
-                        </a>
-                        <p className="text-sm">Comfortable and stylish bralettes perfect for yoga practice.</p>
-                    </li>
-                    <li className="flex flex-col space-y-1">
-                        <a href="https://www.gaiam.com/products/equa-yoga-towel" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
-                            eQua Yoga Towel
+                        <a href="https://www.manduka.com/collections/equa-yoga-towels/products/equa-yoga-hand-towel" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
+                            eQua Yoga Hand Towel
                         </a>
                         <p className="text-sm">Lightweight, quick-drying yoga towels that enhance your practice.</p>
                     </li>
                     <li className="flex flex-col space-y-1">
-                        <a href="https://www.yogashop.com/products/yogo-travel-mat" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
+                        <a href="https://yogo.net/?srsltid=AfmBOooZUmrXT8Nv6gQXNSTFF7Nh47w9J_l32GTyh8v0V39-n_Ln_Cy_" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-black transition-colors">
                             Yogo Travel Mat
                         </a>
                         <p className="text-sm">Portable, foldable yoga mat for on-the-go practice.</p>
