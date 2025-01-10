@@ -53,7 +53,7 @@ const Header = () => {
     return (
         <div className="flex space-x-6 items-center p-4">
             <h1>
-                <Link to="/">Yoga Pose Library</Link>
+                <Link to="/">Learn Yoga Online</Link>
             </h1>
             
             {/* Desktop nav */}
