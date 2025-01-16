@@ -57,7 +57,7 @@ const Search = () => {
   }, []);
 
   return (
-    <div ref={searchRef}>
+    <div ref={searchRef} className="absolute right-1 z-10 bg-white">
       <form onSubmit={handleSearch} className="relative">
         <input
           type="text"

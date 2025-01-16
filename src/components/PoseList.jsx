@@ -5,40 +5,36 @@ import sanskritsData from '../data/sanskrits.json';
 
 const PoseList = () => {
   const [poses, setPoses] = useState([]);
-  const [sortOption, setSortOption] = useState('id'); 
+  const [sortOption, setSortOption] = useState('commonName'); 
 
   useEffect(() => {
     const mergedPoses = posesData.map(pose => {
       const sanskrit = sanskritsData.find(item => item.id === pose.id);
-      return sanskrit ? { ...pose, translation: sanskrit.translation || "" } : pose;
+      return {
+        ...pose,
+        commonName: pose.name, 
+        sanskritName: sanskrit ? sanskrit.translation || "" : "", 
+      };
     });
     setPoses(mergedPoses);
   }, []);
 
   const toggleSort = () => {
     setSortOption((prevSortOption) => {
-      const newSortOption = 
-        prevSortOption === 'id' ? 'name' :
-        prevSortOption === 'name' ? 'translation' :
-        'id'; 
+      const newSortOption =
+        prevSortOption === 'commonName' ? 'sanskritName' : 'commonName'; 
 
-       setPoses((prevPoses) => {
+      setPoses((prevPoses) => {
         return [...prevPoses].sort((a, b) => {
-          if (newSortOption === 'id') {
-            return a.id - b.id; 
-          } else if (newSortOption === 'name') {
-            return (a.name || '').localeCompare(b.name || ''); 
-          } else if (newSortOption === 'translation') {
-            const translationA = a.translation || '';
-            const translationB = b.translation || '';
-            if (translationA === '' && translationB === '') {
-              return 0;
-            } else if (translationA === '') {
-              return 1; 
-            } else if (translationB === '') {
-              return -1; 
-            }
-            return translationA.localeCompare(translationB); 
+          if (newSortOption === 'commonName') {
+            return (a.commonName || '').localeCompare(b.commonName || ''); 
+          } else if (newSortOption === 'sanskritName') {
+            const sanskritA = a.sanskritName || '';
+            const sanskritB = b.sanskritName || '';
+            if (sanskritA === '' && sanskritB === '') return 0;
+            if (sanskritA === '') return 1;
+            if (sanskritB === '') return -1;
+            return sanskritA.localeCompare(sanskritB);
           }
           return 0;
         });
@@ -49,24 +45,46 @@ const PoseList = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen min-w-64 overflow-y-scroll space-y-2 p-1 bg-gray-100">
-      <button
-        onClick={toggleSort}
-        className="self-start opacity-50"
-      >
-        <span className="pl-2">sort by: </span>
-        {sortOption === 'id' ? 'popularity' : sortOption === 'name' ? 'common name' : 'sanskrit translation'}
-      </button>
+    <div className="flex flex-col bg-gray-100">
+      <div className="flex justify-between p-4">
+        <h3>Index of Top 50 Poses In Vinyasa Yoga</h3>
+        
+        <div className="flex items-center text-sm space-x-2">
+            <button
+              onClick={() => setSortOption('commonName')}
+              className={`px-2 py-1 rounded ${
+                sortOption === 'commonName'
+                  ? 'bg-blue-500 text-white'
+                  : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+              }`}
+            >
+              Common Name
+            </button>
+            <button
+              onClick={() => setSortOption('sanskritName')}
+              className={`px-2 py-1  rounded ${
+                sortOption === 'sanskritName'
+                  ? 'bg-blue-500 text-white'
+                  : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+              }`}
+            >
+              Sanskrit Name
+            </button>
+        </div>
+
+      </div>
       {poses.length === 0 ? (
         <p>No poses available.</p>
       ) : (
-        poses.map((pose) => (
-          <div key={pose.id} className="pl-2 hover:text-gray-600">
-            <Link to={`/pose/${pose.id}`}>
-              {sortOption === 'translation' ? pose.translation : pose.name}
-            </Link>
-          </div>
-        ))
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-1 px-4 pb-4">
+          {poses.map((pose) => (
+            <div key={pose.id} className="hover:scale-105 transition duration-200">
+              <Link to={`/pose/${pose.id}`} >
+                {sortOption === 'sanskritName' ? pose.sanskritName : pose.commonName}
+              </Link>
+            </div>
+          ))}
+        </div>
       )}
     </div>
   );
