@@ -45,11 +45,11 @@ const PoseList = () => {
   };
 
   return (
-    <div className="flex flex-col bg-gray-100">
+    <div className="flex flex-col bg-gray-100 text-sm md:text-base">
       <div className="flex justify-between p-4">
-        <h3>Index of Top 50 Poses In Vinyasa Yoga</h3>
+        <h3>Index of Top 50 Poses In Yoga</h3>
         
-        <div className="flex items-center text-sm space-x-2">
+        <div className="flex items-center text-sm space-x-2 text-xs md:text-sm">
             <button
               onClick={() => setSortOption('commonName')}
               className={`px-2 py-1 rounded ${
@@ -76,7 +76,7 @@ const PoseList = () => {
       {poses.length === 0 ? (
         <p>No poses available.</p>
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-1 px-4 pb-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 px-4 pb-4">
           {poses.map((pose) => (
             <div key={pose.id} className="hover:scale-105 transition duration-200">
               <Link to={`/pose/${pose.id}`} >

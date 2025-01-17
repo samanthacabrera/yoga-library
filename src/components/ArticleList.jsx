@@ -15,29 +15,34 @@ const ArticleList = () => {
             title: "Breathing Techniques for Beginners", 
             slug: "breathing-techniques", 
             summary: "Discover simple breathing exercises to calm your mind and improve your yoga performance.",
-            publishDate: "December 28, 2024"
+            publishDate: "December 1, 2024"
         },
         { 
             id: 3, 
             title: "How to Build a Daily Yoga Routine", 
             slug: "building-routine", 
             summary: "Create a sustainable daily yoga routine with easy-to-follow steps that fit your lifestyle.",
-            publishDate: "December 20, 2024"
+            publishDate: "November 7, 2024"
         },
     ];
 
+    const totalArticles = articles.length;
+
     return (
-        <div className="flex flex-col min-h-screen p-8 space-y-16">
-            <h1 className="text-4xl">Newsletter</h1>
+        <div className="flex flex-col min-h-screen p-8">
+            <div className="my-8">
+                <h1 className="text-4xl pb-4">Our Community Newsletter</h1>
+                <p>Stay inspired and connected with our monthly yoga newsletter, designed to support your wellness journey. Each edition delivers insightful articles, tips for deepening your practice, and guided sequences tailored to all levels. Explore breathing techniques, mindfulness exercises, and the latest trends in yoga and wellness. Get inspired by featured poses, teacher spotlights, and stories from our online yogi community.</p>
+            </div>
             
-            <ul className="space-y-12">
+            <ul className="space-y-12 my-12">
                 {articles.map((article, index) => (
                     <li 
                         key={article.id} 
-                        className="group flex flex-col md:flex-row items-start md:items-center space-y-6 md:space-y-0 md:space-x-6 bg-white shadow-sm rounded-lg p-6 hover:shadow-md transition-shadow"
+                        className="group flex flex-col md:flex-row items-start md:items-center space-y-6 md:space-y-0 md:space-x-6 bg-white border shadow-sm rounded-lg p-6 hover:shadow-md transition-shadow"
                     >
                         <span className="text-2xl text-gray-400">
-                            {String(index + 1).padStart(2, "0")}
+                             {String(totalArticles - index).padStart(2, "0")}
                         </span>
                         <div className="flex-1">
                             <div className="text-sm text-gray-500 mb-2">
@@ -65,7 +70,7 @@ const ArticleList = () => {
 
             <hr></hr>
 
-            <div className="bg-white self-center shadow-sm rounded-lg p-6 space-y-4 max-w-lg w-full border border-gray-200">
+            <div className="bg-white self-center shadow-sm rounded-lg my-20 md:my-40 p-6 space-y-4 max-w-lg w-full border border-gray-200">
                 <h2 className="text-2xl font-light text-center">  Join Our Yoga Community</h2>
                 <p className="text-center text-gray-500">
                   Stay connected with us to receive updates, articles, and resources. Our newsletter signup is coming soon!
