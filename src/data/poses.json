@@ -507,10 +507,10 @@
     "id": 61,
     "name": "Standing Forward Fold",
     "image": "/standing-forward-fold.png",
-    "chakra": ["Root"],
-    "type": ["Forward Fold"],
-    "benefit": ["Flexibility", "Relaxation"],
-    "part": ["Spine", "Hamstrings"]
+    "chakra": ["Root", "Crown", "Sacral", "Solar Plexus"],
+    "type": ["Forward Fold", "Standing", "Stretch"],
+    "benefit": ["Improve Flexibility", "Improve Posture"],
+    "part": ["Spine", "Legs"]
   },
   {
     "id": 62,

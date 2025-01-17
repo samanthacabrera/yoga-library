@@ -28,7 +28,7 @@ const ArticleList = () => {
 
     return (
         <div className="flex flex-col min-h-screen p-8 space-y-16">
-            <h1 className="text-4xl">Articles</h1>
+            <h1 className="text-4xl">Newsletter</h1>
             
             <ul className="space-y-12">
                 {articles.map((article, index) => (
