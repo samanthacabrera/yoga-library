@@ -292,6 +292,13 @@
     "context": "Halasana is Plow Pose in Sanskrit. 'Hala' means 'plow,' and 'Asana' means 'pose.' This pose imitates the shape of a plow and is known for its deep stretch along the spine, shoulders, and hamstrings. It calms the mind, relieves tension, and promotes flexibility in the entire back body."
   },
   {
+    "id": 50,
+    "name": "Gate Pose",
+    "sanskrit_name": "परिघासन",
+    "translation": "Parighasana",
+    "context": "The etymology of Parighasana comes from the Sanskrit words Parigha (परिघ), meaning 'gate' or 'bar', and Asana (आसन), meaning 'pose' or 'posture.' The term Parigha symbolizes a gate, representing an opening or passage, which reflects the wide, expansive stretch of the body in the posture, much like the opening of a gate. Asana simply refers to a seated or standing posture. Together, Parighasana translates to 'Gate Pose,' a side-bending posture that stretches the sides of the body, opens the chest, and strengthens the legs. The pose is often practiced to enhance flexibility and mobility in the torso and hips while cultivating balance and stability. Parighasana is commonly included in modern yoga sequences, especially in Hatha, Vinyasa, and Iyengar yoga, where it is appreciated for its ability to engage the core and stretch the side body."
+  },
+  {
     "id": 51,
     "name": "Frog Pose",
     "sanskrit_name": "मंडूकासन",
@@ -303,12 +310,6 @@
     "name": "Side Plank",
     "sanskrit_name": "Vasisthasana",
     "context": "Vasisthasana is Side Plank in Sanskrit. 'Vasistha' is the name of a sage, and 'Asana' means 'pose.' It is a balance pose that strengthens the arms, shoulders, and core."
-  },
-  {
-    "id": 55,
-    "name": "Gate Pose",
-    "sanskrit_name": "Parighasana",
-    "context": "Parighasana is Gate Pose in Sanskrit. 'Parigha' means 'gate,' and 'Asana' means 'pose.' It stretches the sides of the body and improves flexibility in the legs."
   },
   {
     "id": 73,

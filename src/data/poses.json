@@ -444,9 +444,9 @@
     "id": 50,
     "name": "Gate Pose",
     "image": "/gate-pose.png",
-    "chakra": ["Root"],
-    "type": ["Kneeling"],
-    "benefit": ["Stretch", "Flexibility"],
+    "chakra": ["Root", "Sacral", "Solar Plexus"],
+    "type": ["Kneeling", "Stretch"],
+    "benefit": ["Improve Flexibility"],
     "part": ["Spine", "Side Body"]
   },
   {

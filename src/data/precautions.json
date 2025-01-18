@@ -246,8 +246,8 @@
   },
   {
     "id": 50,
-    "name": "Supine Twist",
-    "precaution": "If you have a back injury, perform this twist gently and avoid forcing the body deeper into the stretch. Use a cushion under the knees if you feel strain in the lower back."
+    "name": "Gate Pose",
+    "precaution": "Individuals with knee, hip, or lower back issues should approach this pose with caution, as the side stretch and deep bend can put pressure on these areas. Ensure that the knee of the bent leg is aligned directly over the ankle to avoid straining the joint. Avoid collapsing the chest forward or rounding the spine; instead, maintain an elongated spine and engage the core to protect the lower back. If you have tight hips or hamstrings, do not push too deeply into the side stretch—practice a gentler version of the pose by keeping the torso more upright and gradually increasing flexibility over time. People with shoulder injuries should modify by keeping the arm extended to the side or using a prop for support rather than reaching the arm overhead."
   },
   {
     "id": 51,
@@ -268,11 +268,6 @@
     "id": 54,
     "name": "Tiger Pose",
     "precaution": "Avoid over-arching the back and keep the core engaged. If you have knee or back issues, perform this pose gently and with proper alignment."
-  },
-  {
-    "id": 55,
-    "name": "Gate Pose",
-    "precaution": "Avoid over-stretching the inner thigh and keep the hips squared. If you have knee or hip issues, perform this pose gently and avoid pushing too far into the stretch."
   },
   {
     "id": 57,
