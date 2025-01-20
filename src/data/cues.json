@@ -601,19 +601,20 @@
     "Hold the pose for 5 to 10 breaths, breathing deeply through the nose. Focus on releasing tension in your hips, glutes, and lower back, while maintaining an even, steady breath."
   ]
 },
-  {
-    "id": 49,
-    "name": "Plow Pose",
-    "cues": [
-      "Begin lying on your back with your arms at your sides, palms facing down.",
-      "On an inhale, lift your legs up toward the ceiling, keeping them straight, and engage your core.",
-      "Exhale and slowly lower your legs over your head, bringing your toes toward the floor behind you.",
-      "Support your lower back with your hands if needed, or keep your arms flat on the ground for additional stability.",
-      "Relax your neck and shoulders, ensuring there’s no strain or discomfort in the cervical spine.",
-      "Keep your legs active and straight, and your hips aligned over your shoulders.",
-      "Breathe deeply and hold the pose for 5 to 10 breaths, then gently roll down vertebra by vertebra to return to the starting position."
-    ]
-  },
+{
+  "id": 49,
+  "name": "Plow Pose",
+  "cues": [
+    "Start in Corpse Pose, lying flat on your back with your legs extended and your arms resting alongside your body, palms facing down for support.",
+    "Inhale and engage your core to lift your legs toward the ceiling, keeping them straight and together as you begin to roll your hips off the mat.",
+    "Exhale as you slowly lower your legs overhead, aiming to bring your toes toward the floor behind your head, using control to avoid momentum.",
+    "If your toes don’t reach the floor comfortably, rest them on a block, chair, or other supportive surface to reduce strain.",
+    "For additional support, place your hands on your lower back with fingers pointing upward, or keep your arms extended flat on the mat, pressing into the ground to stabilize.",
+    "Engage your legs and keep them active, with the toes pointed or flexed, and align your hips directly over your shoulders for proper balance.",
+    "Breathe deeply, expanding the chest and focusing on relaxing the back and shoulders, holding the pose for 5 to 10 slow breaths or as comfortable.",
+    "To release, slowly roll down through your spine one vertebra at a time, using your hands to support your back if necessary, until your legs return to the mat."
+  ]
+},
   {
     "id": 50,
     "name": "Gate Pose",

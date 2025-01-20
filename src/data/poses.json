@@ -435,10 +435,10 @@
     "id": 49,
     "name": "Plow Pose",
     "image": "/plow-pose.png",
-    "chakra": ["Throat", "Crown"],
-    "type": ["Inversion"],
-    "benefit": ["Flexibility", "Communication"],
-    "part": ["Spine", "Neck", "Shoulders"]
+    "chakra": ["Throat", "Crown", "Third Eye", "Solar Plexus"],
+    "type": ["Inversion", "Stretch", "Supine"],
+    "benefit": ["Improve Flexibility", "Enhance Openness"],
+    "part": ["Spine", "Back"]
   },
   {
     "id": 50,
