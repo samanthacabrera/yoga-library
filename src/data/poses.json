@@ -408,8 +408,8 @@
     "id": 46,
     "name": "Thread the Needle",
     "image": "/thread-the-needle.png",
-    "chakra": ["Heart"],
-    "type": ["Twist"],
+    "chakra": ["Heart","Sacral"],
+    "type": ["Twist", "Stretch", "Kneeling", "Prone"],
     "benefit": ["Relaxation", "Stretch"],
     "part": ["Shoulders", "Back"]
   },
