@@ -135,10 +135,9 @@
   },
   {
     "id": 20,
-    "name": "Standing Split",
-    "sanskrit_name": "उर्ध्व प्रसारित एक पदासन",
-    "translation": "Urdhva Prasarita Eka Padasana",
-    "context": "The etymology of Urdhva Prasarita Eka Padasana comes from several Sanskrit words: Urdhva (उर्ध्व), meaning 'upward,' Prasarita (प्रसारित), meaning 'extended,' Eka (एक), meaning 'one,' Pada (पद), meaning 'foot,' and Asana (आसन), meaning 'pose' or 'posture.' Together, Urdhva Prasarita Eka Padasana translates to 'Upward Extended One-Legged Pose,' referring to the posture where one leg is extended upward while the body remains standing. While this pose is not an exact match for the commonly practiced standing splits pose, it is the closest translation in Sanskrit for a similar movement. In standing splits, the torso folds forward toward the extended leg, whereas Urdhva Prasarita Eka Padasana typically involves a more upright torso with the leg extending vertically. Despite these differences, both poses share the goal of improving balance, flexibility, and strength in the legs and core. Urdhva Prasarita Eka Padasana has become a widely practiced posture in modern yoga, particularly in Vinyasa sequences, after being popularized by Krishnamacharya and his students, Pattabhi Jois and B.K.S. Iyengar. It remains an essential part of contemporary yoga practice, focusing on enhancing flexibility and strength while encouraging balance."
+    "name": "Side Plank",
+    "sanskrit_name": "Vasisthasana",
+    "context": "Vasisthasana is Side Plank in Sanskrit. 'Vasistha' is the name of a sage, and 'Asana' means 'pose.' It is a balance pose that strengthens the arms, shoulders, and core."
   },
   {
     "id": 21,
@@ -169,11 +168,41 @@
     "context": "The name Kakasana is derived from Sanskrit, with Kaka (काक) meaning 'crow' and Asana (आसन) meaning 'pose' or 'posture.' Therefore, Kakasana translates to 'Crow Pose,' symbolizing the crow’s agility, balance, and ability to stay grounded while lifting its body. The pose reflects strength, stability, and focus, as it requires balance on the hands with the knees resting on the upper arms. Traditionally, Kakasana serves as a foundational arm balance, helping practitioners build strength in the arms, core, and wrists while cultivating focus and concentration. Over time, this pose has evolved in modern yoga, often serving as a preparatory step for more advanced arm balances and inversions. Through this evolution, Kakasana emphasizes both physical strength and mental clarity, encouraging a deeper connection between mind and body."
   },
   {
+    "id": 25,
+    "name": "Hero Pose",
+    "sanskrit_name": "Virasana",
+    "context": "Virasana is Hero Pose in Sanskrit. 'Vira' means 'hero,' and 'Asana' means 'pose.' It is a seated pose that stretches the legs and strengthens the knees."
+  },
+  {
     "id": 26,
     "name": "Garland Pose",
     "sanskrit_name": "मालासन",
     "translation": "Malasana",
     "context": "The name Malasana is derived from the Sanskrit words 'Mala' (माल) meaning 'garland' and 'Asana' (आसन) meaning 'pose' or 'seat.' The term 'garland' reflects the imagery of the body’s shape in the pose, with the arms wrapped around the legs resembling a garland or wreath. This name also evokes the spiritual symbolism of malas, or prayer beads, which are often used in meditation to focus the mind. Malasana, with its grounding squat posture, represents a connection to the earth and roots, reflecting its use in traditional practices that emphasize humility, grounding, and inner focus. While the pose has its origins in ancient yogic traditions, it has been adapted and popularized in modern yoga as an essential posture for hip flexibility, digestion, and grounding energy. Its simplicity and depth make it a staple in many yoga sequences, embodying both the physical and spiritual aspects of yoga practice."
+  },
+  {
+    "id": 27,
+    "name": "Lotus Pose",
+    "sanskrit_name": "Padmasana",
+    "context": "Padmasana is Lotus Pose in Sanskrit. 'Padma' means 'lotus,' and 'Asana' means 'pose.' It is a seated meditation pose with the legs crossed and feet resting on the opposite thighs."
+  },
+  {
+    "id": 28,
+    "name": "Lizard Pose",
+    "sanskrit_name": "",
+    "context": ""
+  },
+  {
+    "id": 29,
+    "name": "Shoulderstand Pose",
+    "sanskrit_name": "",
+    "context": ""
+  },
+  {
+    "id": 30,
+    "name": "Supine Twist",
+    "sanskrit_name": "",
+    "context": ""
   },
   {
     "id": 31,
@@ -197,6 +226,18 @@
     "context": "The etymology of Chakrasana (also known as Urdhva Dhanurasana) comes from two Sanskrit words: 'Chakra' (चक्र), meaning 'wheel,' and 'Asana' (आसन), meaning 'pose' or 'posture.' Together, Chakrasana translates to 'Wheel Pose,' referring to the circular shape the body forms when lifted into the backbend, resembling a wheel. Alternatively, it is called Urdhva Dhanurasana, where 'Urdhva' (ऊर्ध्व) means 'upward' or 'elevated,' and 'Dhanura' (धनुर) means 'bow,' translating to 'Upward Bow Pose,' highlighting the arch formed in the posture. Both names capture the essence of the pose, symbolizing strength, flexibility, and the opening of the chest. Chakrasana has its roots in traditional yoga, though it became more prominent in modern practice through the teachings of Krishnamacharya and his students, such as Pattabhi Jois and B.K.S. Iyengar, who incorporated it into Hatha and Vinyasa yoga for its benefits in enhancing strength, flexibility, and energy."
   },
   {
+    "id": 34,
+    "name": "Standing Forward Fold",
+    "sanskrit_name": "Uttanasana",
+    "context": "Uttanasana is Standing Forward Fold in Sanskrit. 'Uttana' means 'intense stretch,' and 'Asana' means 'pose.' It stretches the hamstrings, spine, and calves."
+  },
+  {
+    "id": 35,
+    "name": "Ragdoll Pose",
+    "sanskrit_name": "Uttanasana Variation",
+    "context": "Uttanasana Variation (Ragdoll Pose) is a variation of Standing Forward Fold where the arms are relaxed and the head hangs heavy. It releases tension in the back and neck."
+  },
+  {
     "id": 36,
     "name": "Boat Pose",
     "sanskrit_name": "नावासन",
@@ -205,10 +246,9 @@
   },
   {
     "id": 37,
-    "name": "Seated Forward Fold",
-    "sanskrit_name": "पश्चिमोत्तानासन",
-    "translation": "Paschimottanasana",
-    "context": "The name Seated Forward Fold, or Paschimottanasana, is rooted in Sanskrit, with 'Paschima' (पश्चिम) meaning 'west' or 'back of the body', 'Uttana' (उत्तान) meaning 'intense stretch,' and 'Asana' (आसन) meaning 'pose' or 'posture.' Together, the name translates to 'Intense Stretch of the West,' symbolizing the deep elongation of the spine and the entire back of the body when seated. In traditional yoga philosophy, the 'west' refers to the back of the body as it faces the setting sun, connecting the pose to themes of introspection and surrender. This pose is celebrated for its grounding and meditative qualities, embodying the essence of yoga as both a physical and spiritual practice. Though simple in appearance, Paschimottanasana holds profound significance in fostering inner focus and balance, making it a foundational posture in many yoga traditions."
+    "name": "Seated Spinal Twist",
+    "sanskrit_name": "",
+    "context": ""
   },
   {
     "id": 38,
@@ -306,47 +346,5 @@
     "sanskrit_name": "मंडूकासन",
     "translation": "Mandukasana",
     "context": "The etymology of Mandukasana, or Frog Pose, comes from the Sanskrit word Manduka (मंडूक), meaning 'frog,' and Asana (आसन), meaning 'pose' or 'posture.' Thus, Mandukasana translates to 'Frog Pose.' The posture mimics the squat position of a frog, with the knees bent wide apart and the hands placed between the legs. In this pose, the body takes on a compact, grounded shape, symbolizing the stability and flexibility of the frog. The name reflects the deep opening of the hips and the extension of the spine, as well as the ability to stay rooted while cultivating strength and flexibility. Frog Pose is a beneficial posture in yoga that targets the hips, groin, and thighs, promoting flexibility while stimulating the digestive system. It is particularly used in Hatha and restorative yoga practices for its calming and grounding effects."
-  },
-  {
-    "id": 52,
-    "name": "Side Plank",
-    "sanskrit_name": "Vasisthasana",
-    "context": "Vasisthasana is Side Plank in Sanskrit. 'Vasistha' is the name of a sage, and 'Asana' means 'pose.' It is a balance pose that strengthens the arms, shoulders, and core."
-  },
-  {
-    "id": 73,
-    "name": "Seated Spinal Twist",
-    "sanskrit_name": "Ardha Matsyendrasana",
-    "context": "Ardha Matsyendrasana is Seated Spinal Twist in Sanskrit. 'Ardha' means 'half,' 'Matsya' means 'fish,' and 'Asana' means 'pose.' It is a twisting pose that promotes spinal flexibility."
-  },
-  {
-    "id": 74,
-    "name": "Hero Pose",
-    "sanskrit_name": "Virasana",
-    "context": "Virasana is Hero Pose in Sanskrit. 'Vira' means 'hero,' and 'Asana' means 'pose.' It is a seated pose that stretches the legs and strengthens the knees."
-  },
-  {
-    "id": 61,
-    "name": "Standing Forward Fold",
-    "sanskrit_name": "Uttanasana",
-    "context": "Uttanasana is Standing Forward Fold in Sanskrit. 'Uttana' means 'intense stretch,' and 'Asana' means 'pose.' It stretches the hamstrings, spine, and calves."
-  },
-  {
-    "id": 62,
-    "name": "Halfway Lift",
-    "sanskrit_name": "Ardha Uttanasana",
-    "context": "Ardha Uttanasana is Halfway Lift in Sanskrit. 'Ardha' means 'half,' and 'Uttanasana' means 'intense stretch.' It is a pose that lengthens the spine and strengthens the back."
-  },
-  {
-    "id": 63,
-    "name": "Ragdoll Pose",
-    "sanskrit_name": "Uttanasana Variation",
-    "context": "Uttanasana Variation (Ragdoll Pose) is a variation of Standing Forward Fold where the arms are relaxed and the head hangs heavy. It releases tension in the back and neck."
-  },
-  {
-    "id": 70,
-    "name": "Lotus Pose",
-    "sanskrit_name": "Padmasana",
-    "context": "Padmasana is Lotus Pose in Sanskrit. 'Padma' means 'lotus,' and 'Asana' means 'pose.' It is a seated meditation pose with the legs crossed and feet resting on the opposite thighs."
   }
 ]

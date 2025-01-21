@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Cursor from "./components/Cursor";
 import Search from "./components/Search";
 import Drawer from "./components/Drawer";
 import Hero from "./components/Hero";
@@ -16,6 +17,7 @@ import Footer from "./components/Footer";
 
 
 
+
 const App = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
@@ -25,6 +27,7 @@ const App = () => {
 
   return (
     <Router>  
+      <Cursor />
       <div className="flex justify-between m-2">
         <Link to="/">Learn Yoga Online</Link>
         <Search />
