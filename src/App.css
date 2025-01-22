@@ -25,15 +25,6 @@ select {
   cursor: none;
 }
 
-a:focus,
-button:focus,
-input:focus,
-textarea:focus,
-select:focus {
-  outline: 2px solid #8db78a86;
-  outline-offset: 2px;
-}
-
 #zen-cursor {
   position: fixed;
   top: 0;

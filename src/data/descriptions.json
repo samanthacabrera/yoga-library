@@ -96,8 +96,8 @@
   },
   {
     "id": 20,
-    "name": "Standing Split",
-    "desc": "Standing Split or Uttanasana Variation is a yoga pose that challenges balance and flexibility while deeply stretching the legs and spine. To enter the pose, start in a standing position and shift your weight onto one leg. From there, hinge forward at the hips, extending the other leg upwards toward the sky. The hands may rest on the floor or the standing leg for support."
+    "name": "Side Plank Pose",
+    "desc": "Side Plank Pose, or Vasisthasana, is a balancing posture that strengthens the arms, shoulders, core, and legs while promoting flexibility and stability. In this pose, the practitioner shifts their weight onto one hand and the outside edge of the same-side foot, lifting the hips and stacking the top leg over the bottom. The body forms a straight line from head to heels, with the other arm extended upward, creating a side plank shape."
   },
   {
     "id": 21,
@@ -121,8 +121,8 @@
   },
   {
     "id": 25,
-    "name": "Side Crow Pose",
-    "desc": "Side Crow Pose, or Parsva Kakasana in Sanskrit, is an advanced variation of the traditional Crow Pose. In this posture, practitioners balance on their hands while twisting their torso to one side, with one knee resting on the upper arm and the other leg extended behind them. "
+    "name": "Hero Pose",
+    "desc": "Hero Pose, or Virasana, stretches the thighs, knees, and ankles while improving posture and cultivating a sense of groundedness. This pose involves sitting on the heels with the knees bent and legs folded beneath the body. Hero Pose stretches the thighs, knees, and ankles while encouraging better posture by aligning the spine and opening the chest."
   },
   {
     "id": 26,
@@ -131,23 +131,23 @@
   },
   {
     "id": 27,
-    "name": "Feathered Peacock Pose",
-    "desc": "Feathered Peacock Pose, or Pincha Mayurasana, is a challenging forearm balance in yoga that combines strength, balance, and flexibility. In this pose, the practitioner balances on the forearms while lifting the legs overhead, extending them straight toward the sky."
+    "name": "Lotus Pose",
+    "desc": "Lotus Pose, or Padmāsana, is a foundational seated posture in yoga that emphasizes flexibility, stability, and inner calm. In this pose, you sit with your legs crossed, placing each foot on the opposite thigh, with the soles facing upward and the knees gently resting on the floor. The spine is kept tall and aligned, and the hands can rest on the knees in a mudra or with palms facing up."
   },
   {
     "id": 28,
-    "name": "Handstand Pose",
-    "desc": "Handstand Pose, known as Adho Mukha Vrksasana in Sanskrit, is an advanced yoga posture that involves balancing the body upside down with the hands placed firmly on the ground. This pose requires significant strength, balance, and coordination, engaging the core, arms, and shoulders."
+    "name": "Lizard Pose",
+    "desc": "Lizard Pose, or Utthan Pristhasana, is a deep hip opener that targets the hips, thighs, and groin while also stretching the chest, shoulders, and spine. In this pose, the practitioner begins in a low lunge with one foot forward, and then lowers the hips while bringing the forearms to the floor, deepening the stretch. The back leg extends straight behind, and the chest stays open, allowing for a stretch in the hip flexors and the inner thighs."
   },
   {
     "id": 29,
-    "name": "Shoulderstand Pose",
-    "desc": "Shoulderstand Pose, or Sarvangasana, is an inverted yoga posture. In this pose, the body is supported by the shoulders while the legs are lifted toward the ceiling, creating an alignment where the shoulders, neck, and spine form a straight line. "
+    "name": "Frog Pose",
+    "desc": "Frog Pose, or Mandukasana, is a hip-opening posture that stretches and strengthens the lower body. To enter the pose, begin by kneeling on the mat with your knees wide apart and your feet turned outward, so the soles face each other. Place your hands on the floor between your legs, keeping your arms straight, and lower your torso towards the ground, aiming to bring your chest closer to the floor."
   },
   {
     "id": 30,
-    "name": "Fish Pose",
-    "desc": "Fish Pose, or Matsyasana in Sanskrit, is a backbend asana that opens the chest and stretches the front of the body. The pose is performed by lying on the back, lifting the chest while arching the back, and supporting the body with the forearms or hands."
+    "name": "Supine Spinal Twist Pose",
+    "desc": "Supine Spinal Twist Pose, or Supta Matsyendrasana, is a soothing pose that gently stretches the spine, hips, and shoulders while promoting relaxation and flexibility. In this pose, you lie on your back and draw one knee toward your chest, then guide it across your body for a deep twist, extending the opposite arm out to the side."
   },
   {
     "id": 31,
@@ -166,23 +166,23 @@
   },
   {
     "id": 34,
-    "name": "Reclining Bound Angle Pose",
-    "desc": "Reclining Bound Angle Pose or Supta Baddha Konasana is a deeply restorative yoga posture that opens the hips, stretches the inner thighs, and promotes relaxation. In this pose, the practitioner lies on their back with the soles of the feet pressed together, knees gently falling open to the sides, forming a diamond shape with the legs. Often supported with props like blocks or bolsters under the knees or back, this posture encourages the release of tension in the lower body while allowing the chest and abdomen to expand, facilitating deep, diaphragmatic breathing. It is ideal for calming the mind, relieving stress, and enhancing flexibility in the hips and groin, making it a favorite in restorative or gentle yoga practices."
+    "name": "Standing Forward Fold",
+    "desc": "Standing Forward Fold, or Uttānāsana, is a grounding forward bend that stretches the hamstrings, calves, and lower back while calming the mind. In this pose, you hinge at the hips with a long spine, allowing your upper body to drape over your legs as you ground through your feet. The crown of your head reaches toward the earth, creating a gentle release for the back, while your hamstrings and calves stretch deeply."
   },
   {
     "id": 35,
-    "name": "Legs Up the Wall Pose",
-    "desc": "Legs Up The Wall Pose or Viparita Karani is a deeply restorative and gentle pose that offers a soothing reprieve for both body and mind. In this pose, the body rests on the floor with the legs extended vertically up a wall, creating a mild inversion that encourages blood flow to the upper body and brain."
-  },
-  {
-    "id": 36,
     "name": "Boat Pose",
     "desc": "Boat Pose or Navasana is a dynamic seated posture that builds core strength, balance, and focus. In this pose, the body forms a V-shape, with the legs lifted and extended forward, the spine elongated, and the arms reaching out parallel to the floor."
   },
   {
+    "id": 36,
+    "name": "Cat Pose",
+    "desc": "Cat Pose, or Marjaryasana in Sanskrit, is a dynamic yoga pose that promotes spinal flexibility and releases tension. To perform Cat Pose, begin on your hands and knees in a tabletop position, with your wrists directly beneath your shoulders and your knees beneath your hips. As you exhale, round your spine upward, drawing your belly button toward your spine and tucking your chin to your chest. This pose helps improve posture, relieve tension in the back, and enhance mobility in the spine."
+  },
+  {
     "id": 37,
-    "name": "Seated Forward Fold",
-    "desc": "Seated Forward Fold, or Paschimottanasana, is a pose that provides a deep stretch to the entire back of the body, including the spine, hamstrings, and calves. Sitting with the legs extended straight in front of you, the pose involves hinging from the hips to lengthen the torso over the legs while reaching toward the feet."
+    "name": "Cow Pose",
+    "desc": "Cow Pose, or Bitilasana in Sanskrit, is a gentle backbend that works to open the chest and stretch the spine. To perform Cow Pose, begin on your hands and knees in a tabletop position, with your wrists aligned under your shoulders and your knees under your hips. As you inhale, drop your belly toward the mat, lifting your tailbone and chest upward while gazing forward, creating a slight arch in your back. This pose helps improve spinal flexibility, encourages deep breathing, and stretches the front of the body, particularly the chest and abdomen."
   },
   {
     "id": 38,
@@ -221,8 +221,8 @@
   },
   {
     "id": 45,
-    "name": "Cat-Cow Pose",
-    "desc": "Cat-Cow Pose is a gentle flow between two poses that warms up the spine, increases flexibility, and relieves tension in the back and neck. Start on all fours with your wrists under your shoulders and knees under your hips. Inhale to arch your back and lift your chest (Cow Pose), then exhale to round your spine and tuck your chin towards your chest (Cat Pose). This movement helps to increase spinal mobility, improve posture, and release tension in the back and neck."
+    "name": "Table Top Pose",
+    "desc": "Tabletop Pose, or Bharmanasana, is a foundational posture in yoga that forms the basis for many other poses and transitions. In this pose, the practitioner starts on their hands and knees, with the wrists directly under the shoulders and the knees aligned with the hips. The back is held neutral, creating a straight line from the crown of the head to the tailbone."
   },
   {
     "id": 46,
@@ -248,225 +248,5 @@
     "id": 50,
     "name": "Gate Pose",
     "desc": "Gate Pose ,or Parighasana, is a yoga posture that offers a deep stretch to the entire body, particularly the sides, hips, and legs. To enter the pose, begin by kneeling on the mat with your knees hip-width apart and your legs extended wide apart. One leg is kept straight, and the other knee remains bent with the foot firmly planted on the floor. Reach the arm on the side of the straight leg overhead, while the opposite hand rests on the bent knee or the floor for support."
-  },
-  {
-    "id": 51,
-    "name": "Frog Pose",
-    "desc": "Frog Pose, or Mandukasana, is a hip-opening posture that stretches and strengthens the lower body. To enter the pose, begin by kneeling on the mat with your knees wide apart and your feet turned outward, so the soles face each other. Place your hands on the floor between your legs, keeping your arms straight, and lower your torso towards the ground, aiming to bring your chest closer to the floor."
-  },
-  {
-    "id": 52,
-    "name": "Side Plank",
-    "desc": "Side Plank is a dynamic core-strengthening pose that also engages the arms, shoulders, and obliques while improving balance and stability. Begin in a plank position, then rotate onto one side, stacking your feet and extending your top arm toward the ceiling. This pose strengthens the core, arms, and shoulders, while also opening the chest and promoting balance. It is a powerful pose for building strength and stability in the body."
-  },
-  {
-    "id": 53,
-    "name": "Wild Thing",
-    "desc": "Wild Thing is a backbend that stretches the chest, shoulders, and hips while strengthening the arms and core. From a Downward-Facing Dog position, flip one foot over the head, arch the back, and reach the opposite arm behind you, lifting the chest and hips. This pose provides a deep stretch to the chest and shoulders, strengthens the arms and core, and opens the hips. It also energizes the body and stimulates the heart chakra."
-  },
-  {
-    "id": 54,
-    "name": "Tiger Pose",
-    "desc": "Tiger Pose is a backbend and balance pose that stretches the front body and strengthens the core, back, and legs. Start in a tabletop position, then extend one leg behind you, flexing the foot and lifting it towards the ceiling while simultaneously arching your back and looking forward. This pose engages the core and strengthens the back, glutes, and legs while providing a deep stretch to the front body. It also encourages focus and balance."
-  },
-  {
-    "id": 57,
-    "name": "Lizard Pose",
-    "desc": "Lizard Pose is a deep hip opener that stretches the hips, groins, and thighs while improving flexibility and stability. Start in a low lunge, then bring both hands to the inside of your front foot, lowering your hips towards the ground. This pose deeply stretches the hips and groins, improving flexibility in the lower body. It also helps to open the chest and shoulders while strengthening the legs and core."
-  },
-  {
-    "id": 58,
-    "name": "Fallen Triangle",
-    "desc": "Fallen Triangle is a side bend and balance pose that stretches the hamstrings, hips, and chest while strengthening the core and legs. Begin in a standing position, then hinge at the hips and bring one hand to the floor while extending the opposite leg upwards and the other arm overhead. This pose promotes flexibility in the hips and hamstrings while also improving balance and strengthening the legs and core."
-  },
-  {
-    "id": 59,
-    "name": "Bird of Paradise",
-    "desc": "Bird of Paradise is an advanced balance pose that opens the hips, stretches the legs, and strengthens the core. From a standing position, bend one knee and place your opposite foot behind the bent leg, then grab your foot with your hand and slowly lift the leg towards the ceiling while balancing on the other leg. This pose challenges your flexibility and balance, while strengthening the legs, core, and arms."
-  },
-  {
-    "id": 60,
-    "name": "Extended Hand-to-Big-Toe Pose",
-    "desc": "Extended Hand-to-Big-Toe Pose is a standing pose that stretches the hamstrings, calves, and hips while improving balance and coordination. Stand tall and extend one leg straight in front of you, holding the big toe with your hand, while keeping your spine long and chest open. This pose provides a deep stretch to the hamstrings and calves, and challenges your balance, core strength, and coordination."
-  },
-  {
-    "id": 61,
-    "name": "Standing Forward Fold",
-    "desc": "Standing Forward Fold, or Uttānāsana, is a calming yoga posture that promotes flexibility. In this pose, you hinge at the hips with a long spine, allowing your upper body to drape over your legs as you ground through your feet. The crown of your head reaches toward the earth, creating a gentle release for the back, while your hamstrings and calves stretch deeply."
-  },
-  {
-    "id": 62,
-    "name": "Halfway Lift",
-    "desc": "Halfway Lift is a simple yet powerful pose that strengthens the back and promotes spinal alignment while stretching the hamstrings. From a standing position, hinge at the hips and bring your hands to your shins, lifting your chest halfway toward the sky, keeping your spine long and your core engaged. This pose enhances spinal flexibility, encourages proper posture, and prepares the body for deeper forward bends or other poses that require a strong and stable core."
-  },
-  {
-    "id": 63,
-    "name": "Ragdoll Pose",
-    "desc": "Ragdoll Pose is a playful and relaxing forward bend that releases tension in the neck, shoulders, and back while stretching the hamstrings. Start by standing with your feet hip-width apart, then fold forward, letting your upper body hang down loosely, with your arms dangling or holding opposite elbows. This pose promotes relaxation by gently stretching the spine and the back of the legs, while also offering a soothing counter to more intense poses."
-  },
-  {
-    "id": 64,
-    "name": "Eight-Angle Pose",
-    "desc": "Eight-Angle Pose is an arm balance that strengthens the arms, wrists, and core while stretching the hips and hamstrings. Begin seated, then bring one knee to the outer edge of the opposite arm and lift your legs off the floor, balancing on your hands. This advanced pose requires strength, balance, and flexibility, offering a challenge for the body and mind as it encourages focus and control. It also builds strength in the arms and core while providing a deep stretch in the hips."
-  },
-  {
-    "id": 65,
-    "name": "Bound Side Angle",
-    "desc": "Bound Side Angle is a deep lunge pose that stretches the sides of the body, hips, and shoulders while strengthening the legs and core. From a standing position, step one foot back into a lunge, then reach one arm behind your back to bind with the opposite hand. This pose opens the hips, stretches the sides of the body, and strengthens the legs and core, offering a deep stretch to the groins and chest. It also helps improve balance and flexibility in the hips and shoulders."
-  },
-  {
-    "id": 66,
-    "name": "Bound Forward Fold",
-    "desc": "Bound Forward Fold is a variation of Forward Fold that stretches the hamstrings, calves, and lower back while promoting deep relaxation and opening the chest. From a standing position, bend forward and clasp your hands behind your back, allowing your chest to open and your shoulders to soften. This pose deepens the stretch in the hamstrings and back, while also opening the chest and shoulders, providing a counterpose to more intense backbends or chest-opening poses."
-  },
-  {
-    "id": 67,
-    "name": "Half Splits",
-    "desc": "Half Splits is a forward fold variation that targets the hamstrings and hips, offering a gentle stretch to the back of the legs while promoting flexibility. From a kneeling position, extend one leg forward with the heel on the floor and the toes pointing up, then gently fold over the extended leg, keeping your spine long. This pose helps to stretch the hamstrings and improve flexibility in the legs, while also releasing tension in the hips and lower back."
-  },
-  {
-    "id": 68,
-    "name": "Full Splits",
-    "desc": "Full Splits is a deep stretch that targets the hamstrings, hips, and groins, increasing flexibility and range of motion in the legs. Begin in a lunge position, then slowly extend your front leg straight and lower your hips towards the ground, aiming to bring both legs into a straight line. This advanced pose requires patience and practice, and while it offers a deep stretch, it also strengthens the legs and core. It helps to release tightness in the lower body and promotes flexibility."
-  },
-  {
-    "id": 69,
-    "name": "King Pigeon Pose",
-    "desc": "King Pigeon Pose is a deep backbend and hip opener that stretches the hips, thighs, and chest while strengthening the back and core. Begin in a Pigeon Pose, then bend the back leg and reach back with your hand to grab the foot, opening your chest and arching your back. This challenging pose deepens the stretch in the hips, opens the chest, and strengthens the back, making it an excellent pose for improving flexibility and spinal mobility."
-  },
-  {
-    "id": 70,
-    "name": "Lotus Pose",
-    "desc": "Lotus Pose is a seated pose that promotes deep meditation by opening the hips and calming the mind. Begin seated with one leg bent and the foot resting on the opposite thigh, then repeat on the other side, creating a cross-legged position. This pose requires flexibility in the hips and ankles and helps promote a grounded and centered feeling. It also encourages a calm mind, making it an excellent choice for meditation or deep breathing practices."
-  },
-  {
-    "id": 71,
-    "name": "Elevated Lotus Pose",
-    "desc": "Elevated Lotus Pose combines the grounding and meditative qualities of Lotus Pose with the strength and balance required to lift the body off the ground. By pressing firmly into the hands and engaging the core, practitioners lift their seated Lotus position, activating the shoulders, arms, and abdominal muscles. This pose builds upper body strength, enhances balance, and fosters mental focus while maintaining the calming essence of the Lotus Pose."
-  },
-  {
-    "id": 72,
-    "name": "Cow Face Pose",
-    "desc": "Cow Face Pose is a seated posture that stretches the hips, shoulders, and arms while improving flexibility and posture. Begin seated, then stack one knee on top of the other while bringing the arms behind the back to clasp opposite hands. This pose offers a deep stretch to the shoulders and outer hips, and also helps to open the chest. It is a great pose for releasing tension in the upper body and improving spinal alignment."
-  },
-  {
-    "id": 73,
-    "name": "Seated Spinal Twist",
-    "desc": "Seated Spinal Twist is a gentle twist that stretches the spine, shoulders, and hips while promoting detoxification and mental clarity. Begin seated with your legs extended in front of you, then cross one leg over the other and twist your torso towards the bent knee. This pose improves spinal flexibility, releases tension in the back and shoulders, and helps to promote deep breathing and relaxation. It is an excellent pose for relieving tension and improving posture."
-  },
-  {
-    "id": 74,
-    "name": "Hero Pose",
-    "desc": "Hero Pose is a seated pose that stretches the thighs, knees, and ankles while promoting a sense of calm and centeredness. Begin by sitting on your knees with your hips resting on the floor, then extend your feet out to either side and sit upright, aligning the spine. This pose is great for improving posture and flexibility in the lower body, and it is often used as a starting position for meditation and pranayama practices. It also encourages a sense of grounding and stability."
-  },
-  {
-    "id": 75,
-    "name": "Revolved Triangle",
-    "desc": "Revolved Triangle is a standing twist that stretches the hamstrings, hips, and spine while strengthening the core and legs. From a wide-legged stance, turn one foot outward and reach your opposite hand toward the foot, twisting your torso and opening your chest. This pose deeply stretches the legs and spine while also improving balance and flexibility. It is a great pose for strengthening the legs and core, as well as improving spinal mobility."
-  },
-  {
-    "id": 76,
-    "name": "Revolved Side Angle",
-    "desc": "Revolved Side Angle is a standing pose that strengthens the legs and core while opening the chest and stretching the hips and groins. From a wide-legged stance, bend one knee into a lunge, then twist your torso toward the bent leg and bring your opposite hand to the floor, extending your top arm toward the sky. This pose improves balance, flexibility, and strength, and also opens the hips and chest, creating a deep stretch throughout the body."
-  },
-  {
-    "id": 77,
-    "name": "Shoulder Pressing Pose",
-    "desc": "Shoulder Pressing Pose is an arm balance that strengthens the shoulders, arms, and core while stretching the wrists and upper back. Begin in a seated position, then press your hands into the floor, lift your legs, and balance on your arms. This challenging pose builds strength and stability in the upper body and core while also improving balance and focus. It is an excellent pose for developing arm and shoulder strength."
-  },
-  {
-    "id": 78,
-    "name": "Flying Pigeon Pose",
-    "desc": "Flying Pigeon Pose is an advanced arm balance that requires strength and flexibility in the arms, core, and legs. Begin in a standing position, then squat low and bring one leg over the opposite arm while balancing on your hands, lifting your feet off the ground. This pose requires balance and focus while also deepening the stretch in the hips and opening the chest. It is an excellent pose for building strength and flexibility in the arms and core."
-  },
-  {
-    "id": 79,
-    "name": "Firefly Pose",
-    "desc": "Firefly Pose is an advanced arm balance that strengthens the arms, core, and legs while stretching the hamstrings and groins. From a seated position, extend your legs wide and place your hands on the floor between your legs, then lift your feet off the floor and straighten your legs while balancing on your hands. This pose requires strength, flexibility, and balance, and is excellent for building arm, core, and leg strength while increasing flexibility in the hips and legs."
-  },
-  {
-    "id": 80,
-    "name": "Monkey Pose",
-    "desc": "Monkey Pose is a deep hamstring stretch that opens the hips and strengthens the legs while improving flexibility. From a standing position, step one leg forward and bend the front knee into a lunge, then straighten the back leg and extend the front leg straight while keeping the chest lifted. This pose helps to increase flexibility in the hamstrings and hips, and it also improves balance and leg strength, making it a great preparation for deeper stretches."
-  },
-  {
-    "id": 81,
-    "name": "Ganda Bherundasana",
-    "desc": "Ganda Bherundasana, also known as Chin Stand, is an advanced arm balance that requires strength, flexibility, and focus. Begin in a seated position and place your hands behind you, then press into the floor and lift your body into a supported position, balancing on your chin. This challenging pose strengthens the arms, shoulders, and core, while also promoting flexibility in the hips and spine. It is an excellent pose for building upper body strength and improving balance and control."
-  },
-  {
-    "id": 82,
-    "name": "Scorpion Pose",
-    "desc": "Scorpion Pose is a dramatic backbend and arm balance that requires deep flexibility in the spine, shoulders, and legs, along with core strength. From a forearm stand, begin to curve your back and lower your legs behind you, aiming to bring your feet to the floor while maintaining balance on your forearms. This pose opens the chest, improves spinal flexibility, and strengthens the core and shoulders. It is a visually striking and challenging pose that enhances body awareness and control."
-  },
-  {
-    "id": 83,
-    "name": "Half Moon Bound Pose",
-    "desc": "Half Moon Bound Pose is a variation of Half Moon Pose that adds an arm bind to deepen the stretch in the shoulders and hips. From a standing position, extend one leg and reach the opposite hand toward the floor, then wrap your top arm behind your back and bind your hands together. This pose improves balance, opens the hips, and stretches the sides of the body while strengthening the legs and core. The arm bind adds an extra layer of depth, promoting flexibility in the shoulders and chest."
-  },
-  {
-    "id": 84,
-    "name": "Hummingbird Pose",
-    "desc": "Hummingbird Pose, or Mayurasana, is a challenging arm balance that requires strength in the arms, core, and wrists, along with flexibility in the legs and hips. Begin in a squatting position and place your hands on the floor, then lean forward and lift your legs off the ground, balancing on your arms. This pose strengthens the core and arms while stretching the hips and promoting balance and focus. It is an advanced pose that builds strength, flexibility, and coordination."
-  },
-  {
-    "id": 89,
-    "name": "Grasshopper Pose",
-    "desc": "Grasshopper Pose (Maksikanagasana Variation) is an advanced arm balance that challenges both strength and flexibility. Start in a seated position with your hands on the floor behind you, then twist your torso and extend your legs outward, balancing on your hands. This pose builds strength in the arms, wrists, and core while stretching the hips and legs. It also requires a deep sense of focus and balance to hold the posture and maintain stability."
-  },
-  {
-    "id": 90,
-    "name": "Baby Grasshopper",
-    "desc": "Baby Grasshopper Pose (Parsva Bhuja Dandasana) is a challenging arm balance that strengthens the core and arms while improving balance and flexibility. Begin in a low squat position and place your hands on the floor, then twist your torso and lift your legs off the ground, balancing on your hands. This pose requires strength in the arms and core, as well as flexibility in the hips and legs. It is an excellent pose for developing balance and body awareness."
-  },
-  {
-    "id": 91,
-    "name": "Caterpillar Pose",
-    "desc": "Caterpillar Pose (Paschimottanasana Variation) is a seated forward fold that targets the back, hamstrings, and spine, while promoting deep relaxation. Begin seated with your legs extended forward, then fold over your legs, reaching your head toward the floor. This variation deepens the stretch in the hamstrings and back, while also calming the mind and promoting a sense of introspection. It is a great pose for increasing flexibility in the spine and hamstrings."
-  },
-  {
-    "id": 92,
-    "name": "Revolved Chair Pose",
-    "desc": "Revolved Chair Pose (Parivrtta Utkatasana) is a twisting variation of Chair Pose that strengthens the legs, core, and arms while increasing flexibility in the spine and hips. From Chair Pose, twist your torso to one side, placing your opposite elbow on the outside of your knee, and extend your other arm upward. This pose builds strength in the legs and core, while also improving flexibility in the spine and shoulders. It helps to release tension and promote deep concentration and focus."
-  },
-  {
-    "id": 93,
-    "name": "Side Stretch Pose",
-    "desc": "Side Stretch Pose (Parsvottanasana) is a standing pose that stretches the sides of the body, hips, and legs while improving balance and flexibility. From a standing position, step one foot back into a lunge, then fold forward and reach one hand to the floor while the other extends upward. This pose stretches the hamstrings, hips, and sides of the torso, while also improving balance and focus. It is an excellent pose for opening the hips and lengthening the sides of the body."
-  },
-  {
-    "id": 94,
-    "name": "Hero Pose with Recline",
-    "desc": "Hero Pose with Recline (Supta Virasana) is a seated stretch that targets the thighs, hips, and lower back while promoting deep relaxation. Begin in Hero Pose, then slowly recline back onto the floor, bringing your arms overhead or by your sides. This pose stretches the quadriceps, hips, and groins while also calming the mind and improving spinal alignment. It is a great pose for releasing tension in the lower body and promoting flexibility."
-  },
-  {
-    "id": 95,
-    "name": "Intense Side Stretch",
-    "desc": "Intense Side Stretch (Parsvottanasana) is a standing forward fold that stretches the hamstrings, hips, and sides of the body while improving flexibility and balance. From a standing position, step one leg back and fold forward, bringing your hands to the floor or your shins, while extending your chest toward your thighs. This pose deepens the stretch in the hamstrings and hips, while also promoting balance and flexibility in the spine and torso."
-  },
-  {
-    "id": 96,
-    "name": "Revolved Crescent Lunge",
-    "desc": "Revolved Crescent Lunge (Parivrtta Alanasana) is a twisting variation of Crescent Lunge that strengthens the legs and core while improving spinal mobility. From a high lunge, twist your torso and bring your opposite elbow to the outside of your knee, extending your top arm toward the sky. This pose strengthens the legs, opens the chest, and promotes flexibility in the spine and hips, making it an excellent pose for building strength and improving balance."
-  },
-  {
-    "id": 97,
-    "name": "Tortoise Pose",
-    "desc": "Tortoise Pose (Kurmasana) is a seated forward fold that stretches the back, hips, and hamstrings while promoting deep relaxation. Begin seated with your legs extended wide apart, then fold forward and place your chest on the floor, extending your arms out in front of you. This pose deeply stretches the hamstrings, hips, and spine, while also calming the mind and promoting a sense of introspection."
-  },
-  {
-    "id": 98,
-    "name": "One-Legged Bridge Pose",
-    "desc": "One-Legged Bridge Pose (Setu Bandha Sarvangasana with one leg lifted) is a variation of Bridge Pose that challenges the core and legs while deepening the stretch in the hips and thighs. Begin in Bridge Pose, then lift one leg off the ground, keeping your hips lifted and your body in a straight line. This pose strengthens the legs, core, and glutes while also stretching the hamstrings and opening the hips."
-  },
-  {
-    "id": 99,
-    "name": "Wheel Pose Variation",
-    "desc": "Wheel Pose Variation (Urdhva Dhanurasana with one leg lifted) is an advanced variation of Wheel Pose that requires flexibility, strength, and balance. From a Wheel Pose, lift one leg off the floor while maintaining the bend in your back and extending your chest toward the sky. This variation increases the challenge of the pose by adding instability, promoting greater flexibility in the back and hips, and strengthening the arms, legs, and core."
-  },
-  {
-    "id": 100,
-    "name": "Standing Bow Pose",
-    "desc": "Standing Bow Pose (Dandayamana Dhanurasana) is a standing balance that stretches the chest, shoulders, and hips while strengthening the legs and core. From a standing position, grab one foot behind you with one hand, then lean forward, extending your opposite arm forward while kicking the lifted leg back. This pose improves balance, flexibility, and strength, while opening the chest and hips and increasing the sense of focus and concentration."
   }
 ]

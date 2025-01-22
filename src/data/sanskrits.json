@@ -135,9 +135,10 @@
   },
   {
     "id": 20,
-    "name": "Side Plank",
-    "sanskrit_name": "Vasisthasana",
-    "context": "Vasisthasana is Side Plank in Sanskrit. 'Vasistha' is the name of a sage, and 'Asana' means 'pose.' It is a balance pose that strengthens the arms, shoulders, and core."
+    "name": "Side Plank Pose",
+    "sanskrit_name": "वसिष्ठासन",
+    "translation": "Vasisthasana",
+    "context": "The name Vasisthasana (Side Plank Pose) comes from Sanskrit, with Vasistha (वसिष्ठ) being the name of a revered sage in Hindu mythology, and Asana (आसन) meaning 'pose' or 'posture.' The pose is named after the sage Vasistha, symbolizing qualities of strength, wisdom, and balance. In this pose, the practitioner balances on one hand and the side of the foot, creating a firm yet open stance, much like the stability and wisdom attributed to the sage Vasistha. This pose, deeply rooted in traditional yoga practice, is often used to develop core strength, improve balance, and enhance focus. It gained prominence in modern yoga through the teachings of influential figures like T. Krishnamacharya, B.K.S. Iyengar, and Pattabhi Jois, who emphasized its importance for cultivating both physical strength and mental clarity. Side Plank Pose is often included in dynamic flows or practiced independently, symbolizing the balance between strength and grace."
   },
   {
     "id": 21,
@@ -170,8 +171,9 @@
   {
     "id": 25,
     "name": "Hero Pose",
-    "sanskrit_name": "Virasana",
-    "context": "Virasana is Hero Pose in Sanskrit. 'Vira' means 'hero,' and 'Asana' means 'pose.' It is a seated pose that stretches the legs and strengthens the knees."
+    "sanskrit_name": "वीरासन",
+    "translation": "Virasana",
+    "context": "The etymology of Vīrāsana comes from two Sanskrit words: Vīra (वीर), meaning 'hero' or 'warrior,' and Āsana (आसन), meaning 'posture' or 'seat.' Vīra represents strength, courage, and nobility, qualities associated with a hero, which the pose aims to embody. Āsana, a term commonly used in yoga, refers to any posture, so Vīrāsana translates to 'Hero Pose,' a seated posture that encourages openness, balance, and grounding. In this pose, the practitioner sits on their legs, with their knees bent and thighs grounded, creating a feeling of rootedness and stability. Vīrāsana can also open the chest and stretch the thighs, ankles, and knees. Historically, this posture is mentioned in the classical texts of Hatha Yoga, and it is often practiced as a meditative pose or a preparatory posture for other seated postures. Its practice emphasizes physical endurance, focus, and a sense of strength, embodying the spirit of a hero."
   },
   {
     "id": 26,
@@ -183,26 +185,30 @@
   {
     "id": 27,
     "name": "Lotus Pose",
-    "sanskrit_name": "Padmasana",
-    "context": "Padmasana is Lotus Pose in Sanskrit. 'Padma' means 'lotus,' and 'Asana' means 'pose.' It is a seated meditation pose with the legs crossed and feet resting on the opposite thighs."
+    "sanskrit_name": "पद्मासन",
+    "translation": "Padmasana",
+    "context": "The name Padmāsana is derived from Sanskrit, with Padma (पद्म) meaning 'lotus' and Āsana (आसन) meaning 'posture' or 'pose.' Thus, the name translates to 'Lotus Pose,' evoking the image of a lotus flower, which symbolizes purity, beauty, and spiritual growth. In this pose, the practitioner sits with crossed legs, placing each foot on the opposite thigh, which creates an open, stable base for meditation and deep contemplation. The posture reflects qualities of balance, inner peace, and groundedness, offering a sense of stillness and connection to the present moment. Historically, Padmāsana has been a vital pose in spiritual and meditative practices, particularly in Hinduism and Buddhism, symbolizing the union of body, mind, and spirit. It became widely practiced in modern yoga through the teachings of ancient masters and continues to be a central posture in meditation and pranayama. Today, Lotus Pose is embraced for its ability to improve flexibility in the hips, knees, and ankles, as well as its profound effect on calming the mind and enhancing concentration."
   },
   {
     "id": 28,
     "name": "Lizard Pose",
-    "sanskrit_name": "",
-    "context": ""
+    "sanskrit_name": "उत्थानपृष्ठासन",
+    "translation": "Lizard Pose",
+    "context": "The name Utthan Pristhasana is derived from Sanskrit, where Utthan (उत्थान) means 'to rise' or 'to extend,' Pristha (पृष्ठ) means 'back' or 'spine,' and Asana (आसन) means 'pose' or 'posture.' This name reflects the expansive and grounding nature of the pose, where the practitioner lowers their hips deeply and extends the back leg behind, mimicking the stretch of a lizard. Rooted in traditional yoga practices, Lizard Pose has long been used as a deep hip opener and a way to build flexibility and strength in the lower body. While it may not have appeared in early classical yoga texts, variations of the pose have been part of strength-building sequences and flexibility practices throughout history. Utthan Pristhasana has gained popularity in modern yoga, especially in dynamic styles like Vinyasa, where it is often integrated into flows to stretch and strengthen the hips, thighs, and groin. The pose became more widely embraced as yoga evolved in the 20th century, with influential masters like T. Krishnamacharya, Pattabhi Jois, and B.K.S. Iyengar emphasizing the importance of hip mobility and flexibility. Today, Lizard Pose is considered a valuable posture in many yoga practices, known for its ability to release tension, improve flexibility, and promote mental focus."
   },
   {
     "id": 29,
-    "name": "Shoulderstand Pose",
-    "sanskrit_name": "",
-    "context": ""
+    "name": "Frog Pose",
+    "sanskrit_name": "मंडूकासन",
+    "translation": "Mandukasana",
+    "context": "The etymology of Mandukasana, or Frog Pose, comes from the Sanskrit word Manduka (मंडूक), meaning 'frog,' and Asana (आसन), meaning 'pose' or 'posture.' Thus, Mandukasana translates to 'Frog Pose.' The posture mimics the squat position of a frog, with the knees bent wide apart and the hands placed between the legs. In this pose, the body takes on a compact, grounded shape, symbolizing the stability and flexibility of the frog. The name reflects the deep opening of the hips and the extension of the spine, as well as the ability to stay rooted while cultivating strength and flexibility. Frog Pose is a beneficial posture in yoga that targets the hips, groin, and thighs, promoting flexibility while stimulating the digestive system. It is particularly used in Hatha and restorative yoga practices for its calming and grounding effects."
   },
   {
     "id": 30,
-    "name": "Supine Twist",
-    "sanskrit_name": "",
-    "context": ""
+    "name": "Supine Spinal Twist Pose",
+    "sanskrit_name": "सुप्त मत्स्येन्द्रासन",
+    "translation": "Supta Matsyendrasana",
+    "context": "The name 'Supta Matsyendrasana' comes from Sanskrit, with 'Supta' meaning 'reclining' and 'Matsyendra' referring to the sage Matsyendra, a revered figure in yoga tradition. 'Asana' means 'pose' or 'posture,' making Supta Matsyendrasana the 'Reclining Spinal Twist Pose.' This posture is a gentle twist that stretches and lengthens the spine, hips, and shoulders while offering a deep release of tension in the lower back. Rooted in traditional yoga practices, this pose is recognized for its therapeutic benefits, promoting spinal health, digestion, and relaxation. In modern yoga, it is widely practiced in various styles, often included in cool-down sequences or used as a restorative pose to calm the mind and body, aiding in stress relief and mental clarity."
   },
   {
     "id": 31,
@@ -228,27 +234,30 @@
   {
     "id": 34,
     "name": "Standing Forward Fold",
-    "sanskrit_name": "Uttanasana",
-    "context": "Uttanasana is Standing Forward Fold in Sanskrit. 'Uttana' means 'intense stretch,' and 'Asana' means 'pose.' It stretches the hamstrings, spine, and calves."
+    "sanskrit_name": "उत्तानासन",
+    "translation": "Uttanasana",
+    "context": "The name Uttanasana comes from Sanskrit, with Ut (उत्त) meaning 'intense' and Asana (आसन) meaning 'pose' or 'posture,' which together translate to 'Intense Stretch Pose' or 'Standing Forward Fold.' This pose emphasizes the action of folding forward from the hips, deeply stretching the hamstrings and lower back while grounding the feet into the mat. Uttanasana represents the concepts of surrender and release, both physically and mentally, as it helps to calm the mind, relieve tension, and improve flexibility. Historically, it is a foundational pose in many yoga traditions, offering deep benefits for lengthening the spine and calming the nervous system. Over time, it has become a staple in modern yoga sequences, especially in Vinyasa and Hatha yoga, where it is often included to promote flexibility, reduce stress, and foster a sense of relaxation and presence."
   },
   {
     "id": 35,
-    "name": "Ragdoll Pose",
-    "sanskrit_name": "Uttanasana Variation",
-    "context": "Uttanasana Variation (Ragdoll Pose) is a variation of Standing Forward Fold where the arms are relaxed and the head hangs heavy. It releases tension in the back and neck."
-  },
-  {
-    "id": 36,
     "name": "Boat Pose",
     "sanskrit_name": "नावासन",
     "translation": "Navasana",
     "context": "The name Boat Pose, or Navasana in Sanskrit, is derived from two Sanskrit words: Nava (नाव), meaning 'boat,' and Asana (आसन), meaning 'pose' or 'posture.' Thus, Navasana translates to 'Boat Pose,' symbolizing the shape and structure of a boat, with the body forming a V-shape that mirrors the pointed hull of a boat afloat on water. This posture is said to evoke qualities of balance, strength, and steadiness, akin to how a boat maintains its stability on the water despite external forces. Traditionally, Navasana has been used in yoga practices to build core strength and focus, as well as to promote concentration and mental resilience. Rooted in ancient yogic teachings, Boat Pose continues to be a foundational posture in modern yoga sequences, celebrated for its ability to engage and strengthen the abdominal muscles while enhancing mental clarity and focus."
   },
+    {
+    "id": 36,
+    "name": "Cat Pose",
+    "sanskrit_name": "मार्जरासन",
+    "translation": "Marjaryasana",
+    "context": "The name Marjaryasana, or Cat Pose, is derived from the Sanskrit words Marjara (मार्जर) meaning 'cat' and Asana (आसन) meaning 'pose' or 'posture.' This pose mimics the natural movement of a cat stretching its spine, offering a rejuvenating stretch that targets both the upper and lower body. Cat Pose has long been an essential part of yoga, incorporated into sequences to promote spinal flexibility and engage the core. Often paired with Cow Pose, this dynamic movement helps to increase mobility in the spine while also providing relief from tension in the back, neck, and shoulders. Practitioners use Cat Pose to connect with their breath, aiding in mental clarity and calming the mind. It has become a fundamental pose in yoga practices such as Hatha, Vinyasa, and Restorative Yoga, valued for both its physical and mental benefits."
+  },
   {
     "id": 37,
-    "name": "Seated Spinal Twist",
-    "sanskrit_name": "",
-    "context": ""
+    "name": "Cow Pose",
+    "sanskrit_name": "बिटिलासन",
+    "translation": "Bitilasana",
+    "context": "The name Bitilasana, or Cow Pose, is derived from the Sanskrit words Bitila (बिटिल) meaning 'cow' and Asana (आसन) meaning 'pose' or 'posture.' This pose is often associated with the graceful, expansive stretch of a cow’s chest and neck, helping to open up the body and encourage a deep, full breath. Cow Pose is a key part of yoga practice, particularly when paired with Cat Pose, forming a fluid motion that stimulates the spine and enhances spinal mobility. Traditionally, Cow Pose is used in sequences to improve posture, stretch the front body, and activate the core. It is recognized for its ability to release tension in the back, chest, and shoulders, while also encouraging an open heart. Frequently incorporated into Vinyasa, Hatha, and other styles of yoga, Cow Pose not only improves physical flexibility but also promotes mental clarity and emotional release."
   },
   {
     "id": 38,
@@ -301,9 +310,10 @@
   },
   {
     "id": 45,
-    "name": "Cat-Cow Pose",
-    "sanskrit_name": "Marjaryasana-Bitilasana",
-    "context": "Marjaryasana-Bitilasana is Cat-Cow Pose in Sanskrit. 'Marjaryasana' means 'cat pose,' and 'Bitilasana' means 'cow pose.' This dynamic flow warms up the spine and helps increase flexibility."
+    "name": "Table Top Pose",
+    "sanskrit_name": "भार्मणासन",
+    "translation": "Bharmanasana",
+    "context": "The name Bharmanasana comes from Sanskrit, with Bharmana (भार्मण) meaning 'stable or balanced,' and Asana (आसन) meaning 'pose' or 'posture.' Thus, Bharmanasana translates to 'Stable Pose,' reflecting the grounded and stable position of the body on all fours, resembling a flat, steady surface like a tabletop. This pose forms the foundation for many yoga movements, providing balance and alignment as it strengthens the wrists, arms, and core. Historically, Bharmanasana is an integral part of yoga, used to develop strength, flexibility, and stability. It has become a cornerstone of modern yoga practice, often used as a preparatory posture for more advanced poses or as a transition within a flowing sequence. Today, Tabletop Pose is a fundamental part of many styles of yoga, such as Vinyasa and Hatha, offering a solid base for improving posture and body awareness."
   },
   {
     "id": 46,
@@ -339,12 +349,5 @@
     "sanskrit_name": "परिघासन",
     "translation": "Parighasana",
     "context": "The etymology of Parighasana comes from the Sanskrit words Parigha (परिघ), meaning 'gate' or 'bar', and Asana (आसन), meaning 'pose' or 'posture.' The term Parigha symbolizes a gate, representing an opening or passage, which reflects the wide, expansive stretch of the body in the posture, much like the opening of a gate. Asana simply refers to a seated or standing posture. Together, Parighasana translates to 'Gate Pose,' a side-bending posture that stretches the sides of the body, opens the chest, and strengthens the legs. The pose is often practiced to enhance flexibility and mobility in the torso and hips while cultivating balance and stability. Parighasana is commonly included in modern yoga sequences, especially in Hatha, Vinyasa, and Iyengar yoga, where it is appreciated for its ability to engage the core and stretch the side body."
-  },
-  {
-    "id": 51,
-    "name": "Frog Pose",
-    "sanskrit_name": "मंडूकासन",
-    "translation": "Mandukasana",
-    "context": "The etymology of Mandukasana, or Frog Pose, comes from the Sanskrit word Manduka (मंडूक), meaning 'frog,' and Asana (आसन), meaning 'pose' or 'posture.' Thus, Mandukasana translates to 'Frog Pose.' The posture mimics the squat position of a frog, with the knees bent wide apart and the hands placed between the legs. In this pose, the body takes on a compact, grounded shape, symbolizing the stability and flexibility of the frog. The name reflects the deep opening of the hips and the extension of the spine, as well as the ability to stay rooted while cultivating strength and flexibility. Frog Pose is a beneficial posture in yoga that targets the hips, groin, and thighs, promoting flexibility while stimulating the digestive system. It is particularly used in Hatha and restorative yoga practices for its calming and grounding effects."
   }
 ]
