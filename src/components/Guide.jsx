@@ -2,7 +2,7 @@ import React from "react";
 
 const Guide = () => {
     return (
-        <div className="flex flex-col p-8 mb-40 space-y-8 text-gray-800">
+        <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8 mx-auto">
             <div className="w-full max-w-5xl space-y-4">
                 <h1 className="text-4xl tracking-tight mb-1">Beginner's Guide to Yoga</h1>
                 <p>
@@ -121,7 +121,7 @@ const Guide = () => {
 
             <hr></hr>
             
-            <p className="py-12 italic">
+            <p className="py-24 italic">
                 You are exactly where you need to be. Your practice is unique to you, and every step forward, no matter how small, is progress. Trust yourself, honor your body, and enjoy the transformative journey that yoga offers.
             </p>
         

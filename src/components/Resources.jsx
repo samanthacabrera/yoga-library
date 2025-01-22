@@ -2,13 +2,12 @@ import React from "react";
 
 const Resources = () => {
     return (
-        <div className="flex flex-col p-8 space-y-8">
-            <div>
-            <h1 className="text-4xl mb-1">Resources</h1>
-            <p className="max-w-lg leading-relaxed">
-                Handpicked tutorials and articles to deepen your yoga journey. Explore, learn, and elevate your practice.
-            </p>
-
+        <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8 mx-auto">
+            <div className="my-8">
+                <h1 className="text-4xl pb-4">Resources</h1>
+                <p>
+                    Handpicked tutorials and articles to deepen your yoga journey. Whether you're refining your technique, discovering new practices, or finding the perfect gear, our resources are here to support and inspire your growth every step of the way.
+                </p>
             </div>
             
             <div className="w-full max-w-2xl">

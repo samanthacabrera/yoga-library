@@ -37,7 +37,7 @@ const App = () => {
         onClick={toggleDrawer}
         className={`absolute top-18 ${
           isDrawerOpen ? "left-[16rem]" : "left-0"
-        } transition-all duration-500 ease-in-out`}
+        } transition-all duration-300 ease-in-out`}
       >
         <div className="flex flex-col text-4xl opacity-50 p-2 bg-gray-200 rounded-tr-lg rounded-br-lg transition-transform duration-500 ease-in-out">
           {isDrawerOpen ? (
@@ -53,9 +53,7 @@ const App = () => {
       </button>
 
       <div
-        className={`flex ${
-          isDrawerOpen ? "space-x-10" : "ml-10"
-        } transition-all duration-500`}
+        className="flex z-10"
       >
         {isDrawerOpen && <Drawer isDrawer={true} />}
 

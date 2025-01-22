@@ -59,7 +59,7 @@ const CategoryPage = () => {
   };
 
   return (
-    <div className="min-h-[85vh] p-6">
+    <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8 mx-auto">
       <h2 className="text-4xl mb-1">{getHeadingText()}</h2>
       <p className="text-lg text-gray-600 mb-6">{getDescText()}</p>
 

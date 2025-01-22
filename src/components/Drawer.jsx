@@ -52,7 +52,7 @@ const Drawer = () => {
     );
 
     return (
-        <div className="flex flex-col w-full max-w-[16rem] p-2 space-y-2 bg-gray-100">
+        <div className="flex flex-col min-w-[16rem] max-w-full p-2 space-y-2 bg-gray-100">
             <Link
                 to="/beginners-guide"
                 onClick={() => handleLinkClick("/beginners-guide")}

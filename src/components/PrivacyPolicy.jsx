@@ -2,11 +2,11 @@ import React from 'react';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="flex flex-col items-center justify-center px-6 py-12 max-w-4xl mx-auto space-y-10">
+    <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8 mx-auto">
       <h1 className="text-4xl font-medium text-center text-gray-800">Privacy Policy for Learn Yoga Online</h1>
       <p className="text-lg text-center text-gray-600"><strong>Effective Date: December 5, 2024</strong></p>
 
-      <section className="space-y-8 text-base text-gray-800">
+      <section className="space-y-8 text-base text-gray-800 pb-20">
         <p>
           At <strong>Learn Yoga Online</strong>, we are committed to maintaining the privacy and protection of your personal data. This Privacy Policy outlines the types of information we collect, how we use it, and the measures we take to safeguard your data while ensuring full compliance with applicable data privacy regulations.
         </p>

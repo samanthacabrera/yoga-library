@@ -13,11 +13,11 @@ const Path = () => {
     ];
 
     return (
-        <div className="flex flex-col max-w-md mx-auto min-h-screen p-4">
-            <h1 className="text-center text-xl my-12">The 8-Limbed Path of Yoga</h1>
-            <ul className="space-y-4">
+        <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8 mx-auto">
+            <h1 className="text-center text-2xl">The 8-Limbed Path of Yoga</h1>
+            <ul className="space-y-2">
                 {limbs.map((limb, index) => (
-                    <li key={index} className="flex flex-col items-center text-sm text-gray-700">
+                    <li key={index} className="flex flex-col items-center">
                         <strong>{limb.name}</strong>
                         <span>{limb.description}</span>
                     </li>

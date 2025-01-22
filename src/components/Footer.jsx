@@ -4,7 +4,7 @@ import PoseList from "./PoseList";
 
 const Footer = () => {
     return (
-        <div>
+        <div className="bg-gray-100">
             <PoseList/>
 
             <div className="flex justify-center opacity-50 py-1">

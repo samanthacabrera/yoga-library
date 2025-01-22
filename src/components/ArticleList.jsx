@@ -29,7 +29,7 @@ const ArticleList = () => {
     const totalArticles = articles.length;
 
     return (
-        <div className="flex flex-col min-h-screen p-8">
+        <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-20 p-8 mx-auto mb-20">
             <div className="my-8">
                 <h1 className="text-4xl pb-4">Our Community Newsletter</h1>
                 <p>Stay inspired and connected with our monthly yoga newsletter, designed to support your wellness journey. Each edition delivers insightful articles, tips for deepening your practice, and guided sequences tailored to all levels. Explore breathing techniques, mindfulness exercises, and the latest trends in yoga and wellness. Get inspired by featured poses, teacher spotlights, and stories from our online yogi community.</p>
@@ -70,7 +70,7 @@ const ArticleList = () => {
 
             <hr></hr>
 
-            <div className="bg-white self-center shadow-sm rounded-lg my-20 md:my-40 p-6 space-y-4 max-w-lg w-full border border-gray-200">
+            <div className="bg-white self-center shadow-sm rounded-lg p-6 space-y-4 max-w-lg w-full border border-gray-200">
                 <h2 className="text-2xl font-light text-center">  Join Our Yoga Community</h2>
                 <p className="text-center text-gray-500">
                   Stay connected with us to receive updates, articles, and resources. Our newsletter signup is coming soon!

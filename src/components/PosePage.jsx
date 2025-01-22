@@ -68,14 +68,14 @@ const PosePage = () => {
 
 
   return (
-    <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8">
+    <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8 mx-auto">
 
   <nav className="text-sm mb-4">
-    <Link to="/categories/all" className="text-blue-500 hover:underline">All Poses</Link> /  
+    <Link to="/categories/all" className="text-emerald-600 hover:underline">All Poses</Link> /  
     {pose.type.length > 0 && (
     <Link 
         to={`/categories/type/${pose.type[0]}`} 
-        className="text-blue-500 hover:underline px-1"
+        className="text-emerald-600 hover:underline px-1"
       >
         {pose.type[0]} Poses
     </Link>
@@ -106,7 +106,7 @@ const PosePage = () => {
         />
       )}
 
-      <div className="flex flex-col lg:flex-row lg:space-x-6 text-blue-500">
+      <div className="flex flex-col lg:flex-row lg:space-x-6 text-emerald-600">
         <a href="#description" className="hover:underline">
           Description
         </a>
@@ -188,7 +188,7 @@ const PosePage = () => {
                               <Link
                                 key={`${index}-${partIndex}`} 
                                 to={`/pose/${matchedPoseCue.id}`}
-                                className="text-blue-500 hover:underline"
+                                className="text-emerald-600 hover:underline"
                               >
                                 {matchedPoseCue.name}
                               </Link>

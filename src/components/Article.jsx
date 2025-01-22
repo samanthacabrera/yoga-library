@@ -1,5 +1,6 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect }  from "react";
+import { Link, useParams } from "react-router-dom";
+
 
 const articleData = [
     {
@@ -86,7 +87,7 @@ const articleData = [
             </p>
 
             <p className="text-lg leading-relaxed text-gray-500 mt-4">
-                <strong>Conclusion</strong>
+                <strong>Final Thoughts</strong>
             </p>
             <p className="text-lg leading-relaxed text-gray-500 mt-2">
                 Setting an intention in your yoga practice is a powerful tool to deepen your connection with yourself. It offers a way to stay present, navigate challenges, and align with your values. By making intention-setting a regular part of your practice, you invite mindfulness, clarity, and peace into every aspect of your life.
@@ -201,7 +202,7 @@ const articleData = [
             </p>
 
             <p className="text-lg leading-relaxed text-gray-500 mt-4">
-                <strong>Conclusion</strong>
+                <strong>Final Thoughts</strong>
             </p>
             <p className="text-lg leading-relaxed text-gray-500 mt-2">
                 Mastering basic breathing techniques can significantly enhance your yoga practice. Whether you're looking to calm your mind, increase your focus, or deepen your connection to your body, pranayama offers a powerful tool to achieve these goals. Start by experimenting with Ujjayi, Nadi Shodhana, and Dirga Pranayama, and see how they transform both your practice and your daily life.
@@ -299,6 +300,11 @@ const articleData = [
 ];
 
 const Article = () => {
+    
+    useEffect(() => {
+            window.scrollTo(0, 0);
+    }, []);
+    
     const { slug } = useParams(); 
 
     const article = articleData.find((article) => article.slug === slug);
@@ -308,7 +314,13 @@ const Article = () => {
     }
 
     return (
-        <div className="p-8 w-1/2 space-y-12">
+        <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8 mx-auto">
+            <nav>
+                <Link to="/articles">
+                <span className="text-2xl opacity-70">&laquo;</span> <span className="hover:underline">Back to Newsletter</span>
+                </Link>
+            </nav>
+            
             <h1 className="text-4xl">{article.title}</h1>
             {article.content}
         </div>

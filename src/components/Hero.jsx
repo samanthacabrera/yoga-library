@@ -21,16 +21,15 @@ const Hero = () => {
         <meta property="og:type" content="website" />
       </Helmet>
 
-    <div className="flex flex-col space-y-80 w-full max-w-2xl">
-      <div className="flex flex-col items-center h-screen lg:translate-x-1/2 space-y-4 pt-20">
-          <p>Welcome to</p>
-          <h1 className="text-2xl lg:text-4xl">Learn Yoga Online</h1>
-          <p className="w-2/3 text-justify">Our goal is to provide a simple and accessible platform for anyone looking to deepen their understanding of yoga. Whether you're a beginner or an experienced practitioner, this website is designed to help you explore a wide variety of poses, each with clear instructions and detailed explanations. We believe yoga is more than just a physical practice—it's a journey of self-awareness, balance, and growth. We aim to make yoga practices easier to understand and incorporate into your life, fostering mindfulness, flexibility, and well-being for all who choose to embark on this path.</p>
+      <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-80 p-8 mx-auto">
+      <div className="flex flex-col items-center justify-center">
+          <h1 className="text-2xl lg:text-5xl py-6 lg:py-12">Learn Yoga Online</h1>
+          <p className="w-3/4 lg:w-2/3 text-justify">Our goal is to provide a simple and accessible platform for anyone looking to deepen their understanding of yoga. Whether you're a beginner or an experienced practitioner, this website is designed to help you explore a wide variety of poses, each with clear instructions and detailed explanations. We believe yoga is more than just a physical practice—it's a journey of self-awareness, balance, and growth. We aim to make yoga practices easier to understand and incorporate into your life, fostering mindfulness, flexibility, and well-being for all who choose to embark on this path.</p>
       </div>
 
-      <div className="flex flex-col items-center text-left lg:translate-x-1/2 space-y-12 pb-80">
-          <h2 className="text-2xl">About Us</h2>
-          <div className="w-2/3 text-justify space-y-12">
+      <div className="flex flex-col items-center pb-80">
+          <h2 className="text-2xl py-6 lg:py-12">About Us</h2>
+          <div className="w-3/4 lg:w-2/3 text-justify space-y-12">
           <p>
             This website began with a simple, personal journey. In 2020, life felt particularly overwhelming. The uncertainty and stress of daily life led me to seek something that could offer me a bit of peace. I turned to yoga, unsure of what to expect but hopeful it would help. 
           </p>
