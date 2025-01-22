@@ -2,6 +2,16 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import posesData from "../data/poses.json";
 
+const extractCategories = (data, categoryType) => {
+  const categories = new Set();
+  data.forEach((pose) => {
+    pose[categoryType]?.forEach((item) => {
+      categories.add(item);
+    });
+  });
+  return Array.from(categories);
+};
+
 const categoryDescriptions = {
   type: {
     
@@ -24,12 +34,27 @@ const categoryDescriptions = {
 };
 
 const CategoryPage = () => {
+  const [categories, setCategories] = useState([]);
   const { categoryType, categoryValue } = useParams();
   const [filteredPoses, setFilteredPoses] = useState(posesData);
+  const [activeCategories, setActiveCategories] = useState({
+    type: false,
+    benefit: false,
+    chakra: false,
+    part: false,
+  });
+
+  useEffect(() => {
+    const uniqueCategories = [];
+    ["type", "benefit", "chakra", "part"].forEach((categoryType) => {
+      const categoryItems = extractCategories(posesData, categoryType);
+      uniqueCategories.push({ type: categoryType, values: categoryItems });
+    });
+    setCategories(uniqueCategories);
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-
     if (categoryType && categoryValue) {
       const matchingPoses = posesData.filter((pose) =>
         pose[categoryType]?.some((item) => item.toLowerCase() === categoryValue.toLowerCase())
@@ -40,12 +65,25 @@ const CategoryPage = () => {
     }
   }, [categoryType, categoryValue]);
 
+  const toggleCategory = (categoryType) => {
+    setActiveCategories((prevState) => ({
+      ...prevState,
+      [categoryType]: !prevState[categoryType],
+    }));
+  };
+
   const getHeadingText = () => {
     if (categoryType && categoryValue) {
       const formattedValue = categoryValue.charAt(0).toUpperCase() + categoryValue.slice(1);
-      return categoryType === "type"
-        ? `Explore ${formattedValue} Yoga Poses`
-        : `Explore Yoga Poses for ${formattedValue}`;
+      if (categoryType === "type") {
+        return `Explore ${formattedValue} Yoga Poses`;
+      } else if (categoryType === "benefit") {
+        return `Explore Yoga Poses to ${formattedValue}`;
+      } else if (categoryType === "chakra") {
+        return `Explore Poses for the ${formattedValue} Chakra`;
+      } else if (categoryType === "part") {
+        return `Explore Poses for the ${formattedValue}`;
+      }
     }
     return "Explore All Yoga Poses";
   };
@@ -53,15 +91,50 @@ const CategoryPage = () => {
   const getDescText = () => {
     if (categoryType && categoryValue) {
        const formattedValue = categoryValue.toLowerCase().replace(/\s+/g, '_');
-    return categoryDescriptions[categoryType]?.[formattedValue] || "No description available for this category.";
+    return categoryDescriptions[categoryType]?.[formattedValue] || "";
     }
-    return "Select a category to explore more.";
+    return "Here are the top 50 yoga poses. These carefully selected poses will help you build a solid foundation in your practice, improve flexibility, increase strength, and promote mindfulness.";
   };
 
   return (
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8 mx-auto">
-      <h2 className="text-4xl mb-1">{getHeadingText()}</h2>
-      <p className="text-lg text-gray-600 mb-6">{getDescText()}</p>
+
+      <h2 className="text-4xl">Yoga Pose Categories</h2>
+      <div className="flex gap-4">
+        {["type", "benefit", "chakra", "part"].map((categoryType) => (
+          <button
+            key={categoryType}
+            onClick={() => toggleCategory(categoryType)}
+            className={`px-4 py-0 border rounded-lg ${activeCategories[categoryType] ? 'bg-gray-200' : 'bg-gray-100'}`}
+          >
+            {categoryType.charAt(0).toUpperCase() + categoryType.slice(1)}
+          </button>
+        ))}
+      </div>
+
+      <div className="flex flex-wrap gap-1">
+        {categories.map((category) => (
+          activeCategories[category.type] && (
+            <div key={category.type}>
+              <h4>{category.type.charAt(0).toUpperCase() + category.type.slice(1)}</h4>
+              <div className="flex flex-wrap gap-2">
+                {category.values.map((value) => (
+                  <Link
+                    key={value}
+                    to={`/categories/${category.type}/${value.toLowerCase()}`}
+                    className="px-2 py-1 bg-gray-100 text-sm border rounded-lg hover:bg-gray-200 transition"
+                  >
+                    {value}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )
+        ))}
+      </div>
+
+      <h2 className="text-4xl">{getHeadingText()}</h2>
+      <p className="text-lg text-gray-600">{getDescText()}</p>
 
       {filteredPoses.length === 0 ? (
         <p>No poses found for this category.</p>

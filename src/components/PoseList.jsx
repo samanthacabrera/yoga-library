@@ -54,7 +54,7 @@ const PoseList = () => {
               onClick={() => setSortOption('commonName')}
               className={`px-2 py-1 rounded ${
                 sortOption === 'commonName'
-                  ? 'bg-emerald-600 text-white'
+                  ? 'bg-moss text-white'
                   : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
               }`}
             >
@@ -64,7 +64,7 @@ const PoseList = () => {
               onClick={() => setSortOption('sanskritName')}
               className={`px-2 py-1  rounded ${
                 sortOption === 'sanskritName'
-                  ? 'bg-emerald-600 text-white'
+                  ? 'bg-moss text-white'
                   : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
               }`}
             >

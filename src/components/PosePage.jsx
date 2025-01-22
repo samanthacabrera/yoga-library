@@ -68,21 +68,20 @@ const PosePage = () => {
 
 
   return (
-    <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8 mx-auto">
+    <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 md:space-y-20 p-8 mx-auto">
 
   <nav className="text-sm mb-4">
-    <Link to="/categories/all" className="text-emerald-600 hover:underline">All Poses</Link> /  
+    <Link to="/categories/all" className="text-moss hover:underline">All Poses</Link> /  
     {pose.type.length > 0 && (
     <Link 
         to={`/categories/type/${pose.type[0]}`} 
-        className="text-emerald-600 hover:underline px-1"
+        className="text-moss hover:underline px-1"
       >
         {pose.type[0]} Poses
     </Link>
     )}  
      / {pose.name}
   </nav>
-
 
       <div className="text-4xl mb-8">
         <h2>
@@ -106,9 +105,9 @@ const PosePage = () => {
         />
       )}
 
-      <div className="flex flex-col lg:flex-row lg:space-x-6 text-emerald-600">
+      <div className="flex flex-col lg:flex-row lg:space-x-6 text-moss">
         <a href="#description" className="hover:underline">
-          Description
+          Overview
         </a>
         <a href="#benefits" className="hover:underline">
           Benefits
@@ -126,86 +125,77 @@ const PosePage = () => {
           Step-By-Step
         </a>
       </div>
+      
+      {poseDesc && poseDesc.desc && (
+        <div id="description">
+          <h3 className="text-2xl md:text-4xl tracking-wider my-2">Overview</h3>
+          <p>{poseDesc.desc}</p>
+        </div>
+      )}
 
-      <div id="description">
-        {poseDesc && poseDesc.desc && (
-          <p>
-            <strong>Description:</strong> {poseDesc.desc}
-          </p>
-        )}
-      </div>
-
-      <div id="benefits">
-        {poseBenefit && poseBenefit.benefit && (
-          <p>
-            <strong>Benefits:</strong> {poseBenefit.benefit}
-          </p>
-        )}
-      </div>
-
-      <div id="origins">
-        {poseSanskirt && poseSanskirt.context && (
-          <p>
-            <strong>Origins:</strong> {poseSanskirt.context}
-          </p>
-        )}
-      </div>
-
-      <div id="precautions">
-        {posePrecaution && posePrecaution.precaution && (
-          <p>
-            <strong>Precautions: </strong> {posePrecaution.precaution}
-          </p>
-        )}
-      </div>
-
-      <div id="modifications">
-        {poseModification && poseModification.modification && (
-          <p>
-            <strong>Modifications: </strong> {poseModification.modification}
-          </p>
-        )}
-      </div>
-
-      <div id="cues">
-        {poseCues && poseCues.cues && (
-          <div>
-            <p>
-              <strong>Step-By-Step Breakdown:</strong>
-            </p>
-            <ol className="list-decimal list-inside">
-              {poseCues.cues.map((cue, index) => {
-                const linkPoseNames = (cueText) => {
-                  const matchedPoseCue = posesData.find((p) => cueText.includes(p.name));
-                  
-                  if (matchedPoseCue) {
-                    return (
-                      <>
-                        {cueText.split(matchedPoseCue.name).map((part, partIndex) => (
-                          <>
-                            {part}
-                            {partIndex < cueText.split(matchedPoseCue.name).length - 1 && (
-                              <Link
-                                key={`${index}-${partIndex}`} 
-                                to={`/pose/${matchedPoseCue.id}`}
-                                className="text-emerald-600 hover:underline"
-                              >
-                                {matchedPoseCue.name}
-                              </Link>
-                            )}
-                          </>
-                        ))}
-                      </>
-                    );
-                  }
-                  return cueText; 
-                };
-                return <li key={index}>{linkPoseNames(cue)}</li>;
-              })}
-            </ol>
-          </div>
-        )}
-      </div>
+      {poseBenefit && poseBenefit.benefit && (
+        <div id="benefits">
+          <h3 className="text-2xl md:text-4xl tracking-wider my-2">Benefits</h3>
+          <p>{poseBenefit.benefit}</p>
+        </div>
+      )}
+    
+      {poseSanskirt && poseSanskirt.context && (
+        <div id="origins">
+          <h3 className="text-2xl md:text-4xl tracking-wider my-2">Origins</h3>
+          <p>{poseSanskirt.context}</p>
+        </div>
+      )}
+     
+      {posePrecaution && posePrecaution.precaution && (
+        <div id="precautions">
+          <h3 className="text-2xl md:text-4xl tracking-wider my-2">Precautions</h3>
+          <p>{posePrecaution.precaution}</p>
+        </div>
+      )}
+  
+      {poseModification && poseModification.modification && (
+        <div id="modifications">
+          <h3 className="text-2xl md:text-4xl tracking-wider my-2">Modifications</h3>
+          <p>{poseModification.modification}</p>
+        </div>
+      )}
+     
+      {poseCues && poseCues.cues && (
+        <div id="cues">
+          <h3 className="text-2xl md:text-4xl tracking-wider my-2">Step-By-Step Breakdown</h3>
+          <ol className="list-decimal list-inside">
+            {poseCues.cues.map((cue, index) => {
+              const linkPoseNames = (cueText) => {
+                const matchedPoseCue = posesData.find((p) => cueText.includes(p.name));
+                
+                if (matchedPoseCue) {
+                  return (
+                    <>
+                      {cueText.split(matchedPoseCue.name).map((part, partIndex) => (
+                        <>
+                          {part}
+                          {partIndex < cueText.split(matchedPoseCue.name).length - 1 && (
+                            <Link
+                              key={`${index}-${partIndex}`} 
+                              to={`/pose/${matchedPoseCue.id}`}
+                              className="text-moss hover:underline"
+                            >
+                              {matchedPoseCue.name}
+                            </Link>
+                          )}
+                        </>
+                      ))}
+                    </>
+                  );
+                }
+                return cueText; 
+              };
+              return <li key={index}>{linkPoseNames(cue)}</li>;
+            })}
+          </ol>
+        </div>
+      )}
 
       <div className="bg-gray-100 p-4 rounded-lg shadow-sm">
         <p><strong>Tags:</strong></p>
@@ -295,7 +285,7 @@ const PosePage = () => {
                       <img
                         src={relatedPose.image}
                         alt={relatedPose.name}
-                        className="w-full h-32 object-cover rounded-lg mb-2"
+                        className="w-full h-32 hidden lg:block object-cover rounded-lg mb-2"
                       />
                     )}
                     <p className="text-sm">{relatedPose.name}</p>

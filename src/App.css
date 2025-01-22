@@ -13,6 +13,11 @@ body {
   cursor: none;
 }
 
+::selection {
+  background-color: #8a9a5bb8;
+  color: white;
+}
+
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
@@ -31,8 +36,8 @@ select {
   left: 0;
   width: 20px;
   height: 20px;
-  background-color: #8db78a86;
-  border: 1px solid #8db78a86;
+  background-color: #8a9a5b80;
+  border: 1px solid #8a9a5b80;
   border-radius: 50%;
   box-shadow: 0 0 8px rgba(141, 183, 138, 0.5);
   pointer-events: none;
