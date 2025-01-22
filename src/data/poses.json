@@ -22,7 +22,7 @@
     "name": "Plank Pose",
     "image": "/plank-pose.png",
     "chakra": ["Solar Plexus", "Root"],
-    "type": ["Strength"],
+    "type": ["Strength", "Prone", "Arm Balance"],
     "benefit": ["Tone Muscles", "Build Stability", "Improve Posture"],
     "part": ["Core", "Shoulders"]
   },
