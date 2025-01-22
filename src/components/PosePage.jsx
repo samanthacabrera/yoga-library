@@ -71,7 +71,7 @@ const PosePage = () => {
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8">
 
   <nav className="text-sm mb-4">
-    <Link to="/" className="text-blue-500 hover:underline">Home</Link> /  
+    <Link to="/categories/all" className="text-blue-500 hover:underline">All Poses</Link> /  
     {pose.type.length > 0 && (
     <Link 
         to={`/categories/type/${pose.type[0]}`} 
