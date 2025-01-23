@@ -257,7 +257,7 @@
     "image": "/frog-pose.png",
     "chakra": ["Root"],
     "type": ["Hip Opener"],
-    "benefit": ["Openness", "Stretch"],
+    "benefit": ["Enhance Openness", "Improve Flexibility"],
     "part": ["Hips", "Thighs"]
   },
   {
@@ -266,7 +266,7 @@
     "image": "/supine-twist.png",
     "chakra": ["Root", "Sacral"],
     "type": ["Twist", "Stretch", "Supine", "Restorative"],
-    "benefit": ["Relaxation", "Stretch"],
+    "benefit": ["Improve Posture", "Improve Flexibility"],
     "part": ["Spine", "Back"]
   },
   {
@@ -410,7 +410,7 @@
     "image": "/thread-the-needle.png",
     "chakra": ["Heart","Sacral"],
     "type": ["Twist", "Stretch", "Kneeling", "Prone"],
-    "benefit": ["Relaxation", "Stretch"],
+    "benefit": ["Enhance Openness", "Improve Posture"],
     "part": ["Shoulders", "Back"]
   },
   {
