@@ -17,7 +17,25 @@ const categoryDescriptions = {
     
   },
   benefit: {
-    
+    improve_posture: "These yoga poses enhance spinal alignment and body mechanics for better posture.",
+    increase_awareness: "These yoga poses cultivate mindfulness and a deeper connection to your body and breath.",
+    improve_balance: "These yoga poses strengthen stability and coordination for improved physical balance.",
+    tone_muscles: "These yoga poses shape and define muscles through targeted engagement.",
+    boost_circulation: "These yoga poses encourage blood flow, delivering oxygen and nutrients throughout the body.",
+    improve_flexibility: "These yoga poses increase range of motion and elasticity in muscles and joints.",
+    build_stability: "These yoga poses develop core strength and provide a solid foundation for steady movement.",
+    boost_confidence: "These yoga poses promote self-assurance and inner strength through accomplishment.",
+    increase_flexibility: "These yoga poses enhance adaptability and reduce tension in muscles and joints.",
+    boost_energy: "These yoga poses recharge the body and mind by stimulating energy flow.",
+    reduce_stress: "These yoga poses relax the mind and body, lowering stress levels and promoting calm.",
+    restore_energy: "These yoga poses rejuvenate vitality and replenish your natural reserves.",
+    enhance_focus: "These yoga poses sharpen concentration and mental clarity for better presence.",
+    enhance_stamina: "These yoga poses build endurance and resilience for sustained physical activity.",
+    build_strength: "These yoga poses strengthen muscles and support overall physical power.",
+    relieve_tension: "These yoga poses ease tightness and discomfort in muscles and joints.",
+    improve_circulation: "These yoga poses optimize blood flow for better health and vitality.",
+    enhance_openness: "These yoga poses foster emotional and physical openness for deeper connections.",
+    enhance_relaxation: "These yoga poses promote a state of deep rest and tranquility."
   },
   chakra: {
     root: "The Root Chakra, located at the base of the spine, is associated with grounding, stability, and a sense of security. Practices for the Root Chakra focus on connection to the earth and cultivating inner strength.",
