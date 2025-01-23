@@ -14,7 +14,23 @@ const extractCategories = (data, categoryType) => {
 
 const categoryDescriptions = {
   type: {
-    
+    standing: "These yoga poses focus on grounding and stability, building strength and balance from a standing position.",
+    inversion: "These yoga poses flip your perspective by bringing the heart above the head, improving circulation and focus.",
+    strength: "These yoga poses build muscular endurance and resilience through dynamic and sustained engagement.",
+    prone: "These yoga poses are performed face-down, strengthening the back, shoulders, and core while grounding the body.",
+    arm_balance: "These yoga poses challenge balance and strength by lifting the body off the ground using the arms.",
+    backbend: "These yoga poses open the front body and strengthen the spine, promoting flexibility and energy flow.",
+    restorative: "These yoga poses encourage deep relaxation, using props and gentle stretches to soothe the mind and body.",
+    forward_fold: "These yoga poses calm the mind and stretch the back of the body, improving flexibility and relaxation.",
+    lunge: "These yoga poses strengthen the legs and hips while improving balance and alignment.",
+    balance: "These yoga poses cultivate focus and stability by challenging your equilibrium in a variety of postures.",
+    hip_opener: "These yoga poses release tension in the hips, promoting flexibility and emotional release.",
+    twist: "These yoga poses detoxify and energize the body by gently rotating the spine and massaging internal organs.",
+    kneeling: "These yoga poses are performed on the knees, providing a stable base for strength and alignment work.",
+    squat: "These yoga poses build lower-body strength and flexibility, supporting the hips and spine.",
+    seated: "These yoga poses are practiced sitting down, promoting focus, alignment, and flexibility.",
+    stretch: "These yoga poses focus on elongating muscles and improving overall flexibility and mobility.",
+    supine: "These yoga poses are performed lying on your back, encouraging relaxation and gentle stretching."
   },
   benefit: {
     improve_posture: "These yoga poses enhance spinal alignment and body mechanics for better posture.",
@@ -47,7 +63,17 @@ const categoryDescriptions = {
     crown: "The Crown Chakra, located at the top of the head, represents spiritual connection and enlightenment. Practices for this chakra encourage connection to higher consciousness and divine wisdom."
   },
   part: {
-    
+    spine: "These yoga poses support spinal health, improve alignment, and enhance flexibility in your back.",
+    legs: "These yoga poses strengthen and stretch the legs, promoting stability and mobility.",
+    arms: "These yoga poses build strength and endurance in the arms while improving flexibility.",
+    shoulders: "These yoga poses release tension and enhance strength and mobility in the shoulders.",
+    core: "These yoga poses engage and strengthen the core muscles for better stability and balance.",
+    chest: "These yoga poses open the chest, improve posture, and encourage deeper breathing.",
+    hips: "These yoga poses release tension and improve flexibility and openness in the hips.",
+    side_body: "These yoga poses stretch and strengthen the side body, improving lateral flexibility.",
+    glutes: "These yoga poses target the glutes to enhance strength, stability, and support for the hips.",
+    back: "These yoga poses alleviate back tension, improve flexibility, and support a healthy spine.",
+    thighs: "These yoga poses tone and strengthen the thighs while enhancing flexibility and stamina."
   }
 };
 
