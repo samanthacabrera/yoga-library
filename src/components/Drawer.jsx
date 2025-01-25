@@ -55,7 +55,7 @@ const Drawer = () => {
     const PosesListToggle = () => (
         <div>
             <button
-                className="flex justify-between w-full pl-2 rounded hover:bg-gray-200"
+                className="flex justify-between w-full rounded hover:bg-gray-200"
                 onClick={() => toggleSection("posesList")}
                 aria-expanded={!!openSections["posesList"]}
                 aria-controls="section-posesList"
@@ -72,7 +72,7 @@ const Drawer = () => {
                 <Link
                     to="/categories/all"
                     onClick={() => handleLinkClick("/categories/all")}
-                    className="block text-left w-full hover:underline"
+                    className="pl-2 block text-left w-full hover:underline"
                 >
                     All Poses
                 </Link>
