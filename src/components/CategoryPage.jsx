@@ -54,13 +54,13 @@ const categoryDescriptions = {
     enhance_relaxation: "These yoga poses promote a state of deep rest and tranquility."
   },
   chakra: {
-    root: "The Root Chakra, located at the base of the spine, is associated with grounding, stability, and a sense of security. Practices for the Root Chakra focus on connection to the earth and cultivating inner strength.",
-    sacral: "The Sacral Chakra, located just below the navel, governs creativity, sensuality, and emotional expression. Practices for this chakra encourage emotional healing and creative flow.",
-    solar_plexus: "The Solar Plexus Chakra, located in the upper abdomen, represents personal power, confidence, and transformation. Practices for this chakra build inner strength and self-esteem.",
-    heart: "The Heart Chakra, located in the chest, is associated with love, compassion, and emotional balance. Practices for the Heart Chakra promote kindness, forgiveness, and openness.",
-    throat: "The Throat Chakra, located in the throat area, governs communication and self-expression. Practices for this chakra encourage authentic communication and the free flow of words.",
-    third_eye: "The Third Eye Chakra, located between the eyebrows, is associated with intuition, wisdom, and spiritual insight. Practices for the Third Eye Chakra enhance mental clarity and perception.",
-    crown: "The Crown Chakra, located at the top of the head, represents spiritual connection and enlightenment. Practices for this chakra encourage connection to higher consciousness and divine wisdom."
+    root: "The Root Chakra, located at the base of the spine, is associated with grounding and stability. These yoga poses help you feel secure and balanced, building a strong connection to the earth and creating a foundation for your practice.",
+    sacral: "The Sacral Chakra, located just below the navel, governs creativity and emotional flow. These yoga poses encourage self-expression, unlock tension in the hips and lower abdomen, and inspire creative energy.",
+    solar_plexus: "The Solar Plexus Chakra, located in the upper abdomen, represents personal power and confidence. These yoga poses strengthen the core, build inner resilience, and help you feel empowered and in control.",
+    heart: "The Heart Chakra, located in the center of the chest, is linked to love, compassion, and emotional healing. These yoga poses open the chest and shoulders, promoting kindness, self-acceptance, and the release of emotional tension.",
+    throat: "The Throat Chakra, located in the throat area, governs communication and self-expression. These yoga poses focus on the neck, shoulders, and throat, encouraging you to speak your truth with clarity and confidence.",
+    third_eye: "The Third Eye Chakra, located between the eyebrows, is associated with intuition and insight. These yoga poses promote mental clarity, inner awareness, and a deeper connection to your wisdom and imagination.",
+    crown: "The Crown Chakra, located at the top of the head, represents spiritual connection and enlightenment. These yoga poses encourage mindfulness, alignment with your higher self, and a sense of oneness with the universe."
   },
   part: {
     spine: "These yoga poses support spinal health, improve alignment, and enhance flexibility in your back.",
