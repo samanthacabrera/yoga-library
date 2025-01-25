@@ -64,7 +64,7 @@ const Search = () => {
           value={searchTerm}
           onChange={handleInputChange}
           placeholder="Search for poses"
-          className="border-b-2 border-gray-300 focus:outline-none focus:border-black px-2 py-1 w-64"
+          className="border-b-2 border-gray-300 focus:outline-none focus:border-moss px-2 py-1"
         />
         <button type="submit" className="absolute right-0 top-0 p-2"></button>
       </form>
