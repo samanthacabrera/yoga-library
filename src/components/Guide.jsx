@@ -2,7 +2,7 @@ import React from "react";
 
 const Guide = () => {
     return (
-        <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8 mx-auto">
+        <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
             <div className="w-full max-w-5xl space-y-4">
                 <h1 className="text-4xl tracking-tight mb-1">Beginner's Guide to Yoga</h1>
                 <p>

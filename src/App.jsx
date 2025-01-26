@@ -35,7 +35,7 @@ const App = () => {
 
       <button
         onClick={toggleDrawer}
-        className={`absolute top-18 ${
+        className={`fixed top-18 ${
           isDrawerOpen ? "left-[16rem]" : "left-0"
         } transition-all duration-300 ease-in-out`}
       >

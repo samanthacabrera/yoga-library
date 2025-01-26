@@ -141,7 +141,7 @@ const CategoryPage = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8 mx-auto">
+    <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
 
       <h2 className="text-4xl">Yoga Pose Categories</h2>
       <div className="flex gap-4">
@@ -149,7 +149,7 @@ const CategoryPage = () => {
           <button
             key={categoryType}
             onClick={() => toggleCategory(categoryType)}
-            className={`px-4 py-0 border rounded-lg ${activeCategories[categoryType] ? 'bg-gray-200' : 'bg-gray-100'}`}
+            className={`px-4 py-0 border rounded-lg ${activeCategories[categoryType] ? 'bg-gray-200' : 'bg-gray-100'} hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300`}
           >
             {categoryType.charAt(0).toUpperCase() + categoryType.slice(1)}
           </button>
@@ -183,26 +183,34 @@ const CategoryPage = () => {
       {filteredPoses.length === 0 ? (
         <p>No poses found for this category.</p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 py-8">
-          {filteredPoses.map((pose) => (
-            <div key={pose.id} className="hover:underline">
-              <Link to={`/pose/${pose.id}`}>
-                <div className="flex flex-col items-center">
-                  {pose.image ? (
-                    <img
-                      src={pose.image}
-                      alt={pose.name}
-                      className="mb-2 w-32 h-32 object-cover rounded-lg"
-                    />
-                  ) : (
-                    <div className="mb-2 w-32 h-32 flex items-center justify-center bg-gray-50 rounded-lg"></div>
-                  )}
-                  <span>{pose.name}</span>
-                </div>
-              </Link>
-            </div>
-          ))}
-        </div>
+       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-8">
+  {filteredPoses.map((pose) => (
+    <div
+      key={pose.id}
+      className="hover:scale-105 transition-transform duration-300 p-2"
+    >
+      <Link to={`/pose/${pose.id}`} className="flex flex-col items-center group">
+        {pose.image ? (
+          <img
+            src={pose.image}
+            alt={pose.name}
+            className="p-2 mb-3 w-24 h-24 object-cover rounded-full border-2 border-gray-200 group-hover:border-moss transition-all duration-300"
+          />
+        ) : (
+          <div className="mb-3 w-24 h-24 flex items-center justify-center bg-gray-100 rounded-full border-2 border-gray-200 group-hover:border-moss transition-all duration-300">
+            <span className="text-gray-400">No Image</span>
+          </div>
+        )}
+        <span className="text-gray-700 group-hover:text-moss transition-colors duration-300">
+          {pose.name}
+        </span>
+      </Link>
+    </div>
+  ))}
+</div>
+
+        //   ))}
+        // </div>
       )}
     </div>
   );

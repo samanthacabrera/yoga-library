@@ -34,7 +34,7 @@ const CategorySection = ({ title, items, sectionKey }) => (
         </button>
         <div
             id={`section-${sectionKey}`}
-            className={`ml-5 space-y-1 overflow-hidden transition-all ${
+            className={`pl-5 space-y-1 overflow-hidden transition-all ${
                 openSections[sectionKey] ? "max-h-96" : "max-h-0"
             }`}
             style={{ transitionDuration: "300ms" }}
@@ -66,7 +66,7 @@ const PosesListToggle = () => (
         </button>
         <div
             id="section-posesList"
-            className={`ml-5 space-y-1 overflow-hidden transition-all ${
+            className={`pl-5 space-y-1 overflow-hidden transition-all ${
                 openSections["posesList"] ? "max-h-96" : "max-h-0"
             }`}
             style={{ transitionDuration: "300ms" }}
