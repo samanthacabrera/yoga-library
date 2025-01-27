@@ -29,13 +29,13 @@ const App = () => {
     <Router>  
       <Cursor />
       <div className="flex justify-between m-2">
-        <Link to="/">Learn Yoga Online</Link>
+        <Link to="/" className="hover:scale-105 transition">Learn Yoga Online</Link>
         <Search />
       </div>
 
       <button
         onClick={toggleDrawer}
-        className={`fixed top-18 ${
+        className={`absolute top-18 ${
           isDrawerOpen ? "left-[16rem]" : "left-0"
         } transition-all duration-300 ease-in-out`}
       >

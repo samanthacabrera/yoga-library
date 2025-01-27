@@ -317,7 +317,7 @@ const Article = () => {
         <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8 mx-auto">
             <nav>
                 <Link to="/articles">
-                <span className="text-2xl opacity-70">&laquo;</span> <span className="hover:underline">Back to Newsletter</span>
+                <span className="text-2xl opacity-70">&laquo;</span> Back to Newsletter
                 </Link>
             </nav>
             

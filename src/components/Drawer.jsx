@@ -34,8 +34,8 @@ const CategorySection = ({ title, items, sectionKey }) => (
         </button>
         <div
             id={`section-${sectionKey}`}
-            className={`pl-5 space-y-1 overflow-hidden transition-all ${
-                openSections[sectionKey] ? "max-h-96" : "max-h-0"
+            className={`pl-5 overflow-hidden transition-all ${
+                openSections[sectionKey] ? "max-h-none" : "max-h-0"
             }`}
             style={{ transitionDuration: "300ms" }}
         >
@@ -67,7 +67,7 @@ const PosesListToggle = () => (
         <div
             id="section-posesList"
             className={`pl-5 space-y-1 overflow-hidden transition-all ${
-                openSections["posesList"] ? "max-h-96" : "max-h-0"
+                openSections["posesList"] ? "max-h-none" : "max-h-0"
             }`}
             style={{ transitionDuration: "300ms" }}
         >
@@ -101,6 +101,7 @@ const PosesListToggle = () => (
         </div>
     </div>
 );
+
 
     useEffect(() => {
         const handleClickOutside = (event) => {

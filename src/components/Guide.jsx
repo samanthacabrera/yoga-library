@@ -22,15 +22,6 @@ const Guide = () => {
                         <strong>Pranayama:</strong> Breath control exercises aimed at regulating energy flow and enhancing mindfulness.
                     </li>
                     <li>
-                        <strong>Vinyasa:</strong> A style of yoga that links breath with movement in a flowing sequence.
-                    </li>
-                    <li>
-                        <strong>Savasana:</strong> Also known as "Corpse Pose," this is a relaxation pose typically performed at the end of a yoga session.
-                    </li>
-                    <li>
-                        <strong>Namaste:</strong> A respectful greeting or gesture often used to conclude a yoga practice, meaning "I bow to you."
-                    </li>
-                    <li>
                         <strong>Chakra:</strong> Energy centers in the body that align with different physical and emotional functions.
                     </li>
                     <li>

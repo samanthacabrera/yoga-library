@@ -166,7 +166,7 @@ const CategoryPage = () => {
                   <Link
                     key={value}
                     to={`/categories/${category.type}/${value.toLowerCase()}`}
-                    className="px-2 py-1 bg-gray-100 text-sm border rounded-lg hover:bg-gray-200 transition"
+                    className="px-2 py-1 bg-gray-100 text-sm border rounded-lg hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300"
                   >
                     {value}
                   </Link>
@@ -184,33 +184,30 @@ const CategoryPage = () => {
         <p>No poses found for this category.</p>
       ) : (
        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-8">
-  {filteredPoses.map((pose) => (
-    <div
-      key={pose.id}
-      className="hover:scale-105 transition-transform duration-300 p-2"
-    >
-      <Link to={`/pose/${pose.id}`} className="flex flex-col items-center group">
-        {pose.image ? (
-          <img
-            src={pose.image}
-            alt={pose.name}
-            className="p-2 mb-3 w-24 h-24 object-cover rounded-full border-2 border-gray-200 group-hover:border-moss transition-all duration-300"
-          />
-        ) : (
-          <div className="mb-3 w-24 h-24 flex items-center justify-center bg-gray-100 rounded-full border-2 border-gray-200 group-hover:border-moss transition-all duration-300">
-            <span className="text-gray-400">No Image</span>
+        {filteredPoses.map((pose) => (
+          <div
+            key={pose.id}
+            className="hover:scale-105 transition-transform duration-300 p-2"
+          >
+            <Link to={`/pose/${pose.id}`} className="flex flex-col items-center group">
+              {pose.image ? (
+                <img
+                  src={pose.image}
+                  alt={pose.name}
+                  className="p-2 mb-3 w-24 h-24 object-cover rounded-full border-2 border-gray-200 group-hover:border-moss transition-all duration-300"
+                />
+              ) : (
+                <div className="mb-3 w-24 h-24 flex items-center justify-center bg-gray-100 rounded-full border-2 border-gray-200 group-hover:border-moss transition-all duration-300">
+                  <span className="text-gray-300">No Image</span>
+                </div>
+              )}
+              <span className="text-sm text-gray-700 text-center group-hover:text-moss transition-colors duration-300">
+                {pose.name}
+              </span>
+            </Link>
           </div>
-        )}
-        <span className="text-gray-700 group-hover:text-moss transition-colors duration-300">
-          {pose.name}
-        </span>
-      </Link>
-    </div>
-  ))}
-</div>
-
-        //   ))}
-        // </div>
+        ))}
+      </div>
       )}
     </div>
   );
