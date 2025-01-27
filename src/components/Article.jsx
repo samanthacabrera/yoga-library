@@ -156,7 +156,7 @@ const Article = () => {
     }
 
     return (
-        <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8 mx-auto">
+        <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-12 p-8 mx-auto">
             <nav>
                 <Link to="/articles">
                 <span className="text-2xl opacity-70">&laquo;</span> Back to Newsletter
@@ -165,6 +165,17 @@ const Article = () => {
             
             <h1 className="text-4xl">{article.title}</h1>
             {article.content}
+            <hr/>
+
+            <div className="py-10 p-6 bg-gray-100 rounded-lg">
+                <h2 className="text-2xl">About the Author</h2>
+                <p className="mt-2">
+                    Sam is a passionate yogi and web developer based in Denver. 
+                    With a focus on mindful living and personal growth, Sam shares tips and insights to inspire others 
+                    on their yoga journey. Whether on the mat or in life, Sam believes in setting intentions, embracing change, 
+                    and cultivating a peaceful mind-body connection.
+                </p>
+            </div>
         </div>
     );
 };

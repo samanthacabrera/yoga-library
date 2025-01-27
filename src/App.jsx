@@ -66,7 +66,7 @@ const App = () => {
           <Route path="/pose/:id" element={<PosePage />} />
           <Route path="/beginners-guide" element={<Guide />} />
           <Route path="/pathofyoga" element={<Path />} />
-          <Route path="/pathofyoga/:limbName" element={<Limb />} />
+          <Route path="/pathofyoga/:limb" element={<Limb />} />
           <Route path="/articles" element={<ArticleList />} />
           <Route path="/articles/:slug" element={<Article />} />
           <Route path="/resources" element={<Resources />} />

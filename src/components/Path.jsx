@@ -1,31 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Path = () => {
+    const [activeLimb, setActiveLimb] = useState(null); 
+
     const limbs = [
-        { path: "pathofyoga/yama", name: "Yama", description: "Ethical disciplines and moral restraints." },
-        { path: "pathofyoga/niyama", name: "Niyama", description: "Personal observances for self-discipline." },
-        { path: "pathofyoga/asana", name: "Asana", description: "Physical postures for health and meditation." },
-        { path: "pathofyoga/pranayama", name: "Pranayama", description: "Control of breath to regulate energy." },
-        { path: "pathofyoga/pratyahara", name: "Pratyahara", description: "Withdrawal of senses to focus inward." },
-        { path: "pathofyoga/dharana", name: "Dharana", description: "Concentration on a single point or object." },
-        { path: "pathofyoga/dhyana", name: "Dhyana", description: "Meditation for clarity and mindfulness." },
-        { path: "pathofyoga/samadhi", name: "Samadhi", description: "Union with the self, ultimate absorption." },
+        { path: "yama", name: "Yama", description: "Ethical disciplines and moral restraints." },
+        { path: "niyama", name: "Niyama", description: "Personal observances for self-discipline." },
+        { path: "asana", name: "Asana", description: "Physical postures for health and meditation." },
+        { path: "pranayama", name: "Pranayama", description: "Control of breath to regulate energy." },
+        { path: "pratyahara", name: "Pratyahara", description: "Withdrawal of senses to focus inward." },
+        { path: "dharana", name: "Dharana", description: "Concentration on a single point or object." },
+        { path: "dhyana", name: "Dhyana", description: "Meditation for clarity and mindfulness." },
+        { path: "samadhi", name: "Samadhi", description: "Union with the self, ultimate absorption." },
     ];
 
+    const toggleLimbContent = (limb) => {
+        setActiveLimb(activeLimb === limb ? null : limb); 
+    };
+
     return (
-        <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 p-8 mx-auto">
-            <h1 className="text-center text-2xl">The 8-Limbed Path of Yoga</h1>
-            <ul className="space-y-4">
+        <div className="flex flex-col w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
+          <h1 className="text-center text-2xl md:text-4xl">The 8-Limbed Path of Yoga</h1>
+            <div className="flex overflow-x-auto space-x-8 py-8">
                 {limbs.map((limb, index) => (
-                    <li key={index} className="group flex flex-col items-center">
-                        <Link to={`/${limb.path}`} className="group-hover:text-moss transition duration-500">
-                            {limb.name}
+                    <div key={index} className="flex-none w-48 text-center space-y-4">
+                        <div className="text-4xl font-bold">{index + 1}</div>
+                        <p className="text-xl">{limb.name}</p>
+                        <p className="text-sm">{limb.description}</p>
+                        <Link
+                            to={`/pathofyoga/${limb.path}`}
+                            className="px-4 py-2 border hover:scale-105 hover:bg-moss hover:text-white text-sm rounded-full transition duration-300 transform"
+                        >
+                            Learn More
                         </Link>
-                        <p className="text-center text-sm mt-1">{limb.description}</p>
-                    </li>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 };
