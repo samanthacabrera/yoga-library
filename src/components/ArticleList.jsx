@@ -32,7 +32,7 @@ const ArticleList = () => {
         <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-20 px-8 py-4 mx-auto mb-20">
             <div className="mb-8">
                 <h1 className="text-4xl pb-4">Our Community Newsletter</h1>
-                <p>Stay inspired and connected with our monthly yoga newsletter, designed to support your wellness journey. Each edition delivers insightful articles, tips for deepening your practice, and guided sequences tailored to all levels. Explore breathing techniques, mindfulness exercises, and the latest trends in yoga and wellness. Get inspired by featured poses, teacher spotlights, and stories from our online yogi community.</p>
+                <p>Stay inspired and connected with our monthly yoga newsletter, designed to support your wellness journey. Each edition delivers insightful articles, tips for deepening your practice, and guided sequences tailored to all levels.</p>
             </div>
             
             <ul className="space-y-12 my-12">
