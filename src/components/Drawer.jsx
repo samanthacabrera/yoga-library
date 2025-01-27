@@ -127,7 +127,7 @@ const PosesListToggle = () => (
                 Start Here
             </Link>
             <Link
-                to="/eightlimbedpathofyoga"
+                to="/pathofyoga"
                 onClick={() => handleLinkClick("/eightlimbedpathofyoga")}
                 className="hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
             >
