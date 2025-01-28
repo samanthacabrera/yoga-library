@@ -89,20 +89,27 @@ const Path = () => {
     ];
 
     return (
-        <div className="flex flex-col min-h-screen w-full max-w-3xl p-8 mx-auto">
-            <h1 className="text-center text-2xl md:text-4xl mb-8">The 8-Limbed Path of Yoga</h1>
-            <div className="space-y-12">
-                {limbs.map((limb, index) => (
-                    <div key={index}>
-                        <div className="py-12 space-y-1 text-center">
-                            <h1 className="text-2xl">{limb.name}</h1>
-                            <p className="text-lg">{limb.description}</p>
-                        </div>
-                        <div className="space-y-2 pb-20">{limb.content}</div>
-                    </div>
-                ))}
-            </div>
-        </div>
+       <div className="max-w-3xl px-8 py-4 mx-auto">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl text-center mb-12 leading-tight">
+        The 8-Limbed Path of Yoga
+      </h1>
+
+      <div className="grid grid-cols-1 gap-8 pb-20">
+        {limbs.map((limb, index) => (
+          <div
+            key={index}
+            className="bg-white border rounded-xl shadow-lg p-6 flex flex-col justify-between"
+          >
+            <h3 className="text-2xl sm:text-3xl text-center mb-2">
+              {limb.name}
+            </h3>
+            <p className="text-lg sm:text-xl text-center mb-6">{limb.description}</p>
+
+            <div className="text-sm sm:text-base leading-loose">{limb.content}</div>
+          </div>
+        ))}
+      </div>
+    </div>
     );
 };
 
