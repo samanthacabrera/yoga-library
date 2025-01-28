@@ -9,7 +9,6 @@ import CategoryPage from "./components/CategoryPage";
 import PosePage from "./components/PosePage";
 import Guide from "./components/Guide";
 import Path from "./components/Path";
-import Limb from "./components/Limb";
 import Gunas from "./components/Gunas";
 import Chakras from "./components/Chakras";
 import ArticleList from "./components/ArticleList";
@@ -69,7 +68,6 @@ const App = () => {
           <Route path="/pose/:id" element={<PosePage />} />
           <Route path="/beginners-guide" element={<Guide />} />
           <Route path="/pathofyoga" element={<Path />} />
-          <Route path="/pathofyoga/:limb" element={<Limb />} />
           <Route path="/threegunas" element={<Gunas />} />
           <Route path="/sevenchakras" element={<Chakras/>} />
           <Route path="/articles" element={<ArticleList />} />
