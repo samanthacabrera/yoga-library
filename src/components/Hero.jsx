@@ -22,12 +22,12 @@ const Hero = () => {
       </Helmet>
 
       <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-80 p-8 mx-auto">
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center h-[75vh]">
           <h1 className="text-2xl lg:text-5xl py-6 lg:py-12">Learn Yoga Online</h1>
-          <p className="w-3/4 lg:w-2/3 text-justify">Our goal is to provide a simple and accessible platform for anyone looking to deepen their understanding of yoga. Whether you're a beginner or an experienced practitioner, this website is designed to help you explore a wide variety of poses, each with clear instructions and detailed explanations. We believe yoga is more than just a physical practice—it's a journey of self-awareness, balance, and growth. We aim to make yoga practices easier to understand and incorporate into your life, fostering mindfulness, flexibility, and well-being for all who choose to embark on this path.</p>
+          <p className="w-3/4 lg:w-2/3 text-justify">Our goal is to provide a simple and accessible platform for anyone looking to deepen their understanding of yoga. Whether you're a beginner or an experienced practitioner, this website is designed to help you explore a wide variety of poses, each with clear instructions and detailed explanations.</p>
       </div>
 
-      <div className="flex flex-col items-center pb-80">
+      <div className="flex flex-col items-center">
           <h2 className="text-2xl py-6 lg:py-12">About Us</h2>
           <div className="w-3/4 lg:w-2/3 text-justify space-y-12">
           <p>

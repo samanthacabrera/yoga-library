@@ -143,8 +143,8 @@ const CategoryPage = () => {
   return (
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
 
-      <h2 className="text-4xl">Yoga Pose Categories</h2>
-      <div className="flex gap-4">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl text-center mt-12">Yoga Pose Categories</h2>
+      <div className="flex justify-center gap-4">
         {["type", "benefit", "chakra", "part"].map((categoryType) => (
           <button
             key={categoryType}

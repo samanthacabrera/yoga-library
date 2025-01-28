@@ -45,40 +45,35 @@ const PoseList = () => {
   };
 
   return (
-    <div className="flex flex-col bg-gray-100 text-sm md:text-base">
-      <div className="flex justify-between p-4">
+     <div className="bg-gray-100 mt-40">
+      <div className="flex justify-between p-4 md:px-8">
         <h3>Index of Top 50 Poses In Yoga</h3>
-        
-        <div className="flex items-center text-sm space-x-2 text-xs md:text-sm">
-            <button
-              onClick={() => setSortOption('commonName')}
-              className={`px-2 py-1 rounded ${
-                sortOption === 'commonName'
-                  ? 'bg-moss text-white'
-                  : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
-              }`}
-            >
-              Common Name
-            </button>
-            <button
-              onClick={() => setSortOption('sanskritName')}
-              className={`px-2 py-1  rounded ${
-                sortOption === 'sanskritName'
-                  ? 'bg-moss text-white'
-                  : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
-              }`}
-            >
-              Sanskrit Name
-            </button>
+        <div className="flex items-center text-xs md:text-sm space-x-2">
+          <button
+            onClick={() => setSortOption('commonName')}
+            className={`px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out ${
+              sortOption === 'commonName' ? 'bg-moss text-white' : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+            }`}
+          >
+            Common Name
+          </button>
+          <button
+            onClick={() => setSortOption('sanskritName')}
+            className={`px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out ${
+              sortOption === 'sanskritName' ? 'bg-moss text-white' : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+            }`}
+          >
+            Sanskrit Name
+          </button>
         </div>
-
       </div>
+
       {poses.length === 0 ? (
-        <p>No poses available.</p>
+        <p className="text-center py-8 text-gray-600">No poses available.</p>
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 px-4 pb-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 p-4 md:px-8 text-xs md:text-sm">
           {poses.map((pose) => (
-            <div key={pose.id} className="hover:scale-105 transition duration-200">
+            <div key={pose.id} className="group relative flex items-center justify-center p-4 bg-white rounded-lg shadow hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300">
               <Link to={`/pose/${pose.id}`} >
                 {sortOption === 'sanskritName' ? pose.sanskritName : pose.commonName}
               </Link>

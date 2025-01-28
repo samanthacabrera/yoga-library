@@ -29,9 +29,9 @@ const ArticleList = () => {
     const totalArticles = articles.length;
 
     return (
-        <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-20 px-8 py-4 mx-auto mb-20">
+        <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-20 px-8 py-4 mx-auto">
             <div className="mb-8">
-                <h1 className="text-4xl pb-4">Our Community Newsletter</h1>
+                <h1 className="text-2xl sm:text-3xl md:text-4xl text-center my-12">Our Community Newsletter</h1>
                 <p>Stay inspired and connected with our monthly yoga newsletter, designed to support your wellness journey. Each edition delivers insightful articles, tips for deepening your practice, and guided sequences tailored to all levels.</p>
             </div>
             

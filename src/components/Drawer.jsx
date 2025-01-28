@@ -10,7 +10,6 @@ const Drawer = () => {
     setIsDrawerOpen((prevState) => !prevState);
   };
 
-
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -31,16 +30,16 @@ const Drawer = () => {
   }, []);
 
   return (
-    <>
+    <div>
       {/* Drawer toggle button */}
       <button
         ref={buttonRef}
         onClick={toggleDrawer}
-        className={`absolute top-18 transition-all duration-300 ease-in-out ${
+        className={`absolute top-1/4 transition-all duration-300 ease-in-out z-50 ${
           isDrawerOpen ? "left-[12rem]" : "left-0"
         }`}
       >
-        <div className="flex flex-col text-4xl opacity-50 p-2 bg-gray-200 rounded-tr-lg rounded-br-lg transition-transform duration-500 ease-in-out">
+        <div className="flex flex-col text-4xl text-gray-500 p-2 bg-gray-100 shadow rounded-tr-lg rounded-br-lg transition-transform duration-500 ease-in-out">
           {isDrawerOpen ? <span>&laquo;</span> : <span>&raquo;</span>}
         </div>
       </button>
@@ -48,12 +47,12 @@ const Drawer = () => {
       {/* Drawer content */}
       <div
         ref={drawerRef}
-        className={`flex flex-col h-[25rem] min-w-[12rem] max-w-full p-2 bg-gray-100 rounded transition-all duration-300 ease-in-out ${
+        className={`absolute top-1/4 left-0 flex flex-col h-[28rem] min-w-[12rem] max-w-full p-2 bg-gray-100 rounded transition-all duration-300 ease-in-out ${
           isDrawerOpen
-            ? "max-h-[25rem] opacity-100 visibility-visible pointer-events-auto"
-            : "max-h-0 opacity-0 visibility-hidden pointer-events-none"
+            ? "transform translate-x-0"
+            : "transform -translate-x-full"
         }`}
-        style={{ transitionDuration: "300ms" }}
+        style={{ transitionDuration: "300ms", zIndex: 50 }}
       >
         <Link
           to="/beginners-guide"
@@ -98,13 +97,19 @@ const Drawer = () => {
           Newsletter
         </Link>
         <Link
+          to="/challenges"
+          className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+        >
+          Monthly Challenge
+        </Link>
+        <Link
           to="/resources"
           className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
         >
           Resources
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -3,7 +3,7 @@ import React from "react";
 const WhatIsYoga = () => {
   return (
     <div className="max-w-3xl px-8 py-4 mx-auto">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl text-center mb-12 leading-tight">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl text-center my-12">
         What is Yoga?
       </h1>
 

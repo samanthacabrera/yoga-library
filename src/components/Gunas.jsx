@@ -39,11 +39,11 @@ const Gunas = () => {
 
   return (
     <div className="max-w-3xl px-8 py-4 mx-auto">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl text-center mb-12 leading-tight">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl text-center my-12">
         The Three Gunas
       </h1>
 
-      <div className="grid grid-cols-1 gap-8 pb-20">
+      <div className="grid grid-cols-1 gap-8">
         {gunas.map((guna, index) => (
           <div
             key={index}

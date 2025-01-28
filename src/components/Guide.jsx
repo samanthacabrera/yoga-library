@@ -3,10 +3,10 @@ import React from "react";
 const Guide = () => {
     return (
         <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
-            <div className="w-full max-w-5xl space-y-4">
-                <h1 className="text-4xl tracking-tight mb-1">Beginner's Guide to Yoga</h1>
+            <div className="space-y-4">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl text-center my-12">Beginner's Guide to Yoga</h1>
                 <p>
-                    Welcome to your yoga journey. The purpose of this website is to help you learn the foundations of yoga, focusing on the top 50 common Vinyasa yoga poses. Whether you are just starting or looking to deepen your understanding, this guide offers a structured approach to building strength, flexibility, and mindfulness through yoga.
+                    Welcome to your yoga journey. The purpose of this website is to help you learn the foundations of yoga, focusing on the top 50 common Vinyasa yoga poses.
                 </p>
             </div>
 
@@ -62,12 +62,6 @@ const Guide = () => {
                     <strong>Practice self-compassion:</strong> Remember that yoga is a personal practice. Be kind to yourself and avoid comparing your progress to others. Every body is different, and everyone’s yoga journey is unique. Celebrate the small victories and take pride in your progress, no matter how slow it may seem. Yoga is not about perfection—it’s about embracing the process, staying present, and enjoying each moment on the mat.
                 </p>
             </div>
-
-            <hr></hr>
-            
-            <p className="py-24 italic">
-                You are exactly where you need to be. Your practice is unique to you, and every step forward, no matter how small, is progress. Trust yourself, honor your body, and enjoy the transformative journey that yoga offers.
-            </p>
         
 
         </div>
