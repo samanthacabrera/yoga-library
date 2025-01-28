@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Cursor from "./components/Cursor";
@@ -18,51 +18,20 @@ import Resources from "./components/Resources";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Footer from "./components/Footer";
 
-
-
-
-
-
-
 const App = () => {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
-  const toggleDrawer = () => {
-    setIsDrawerOpen((prevState) => !prevState);
-  };
-
   return (
     <Router>  
       <Cursor />
-      <div className="flex justify-between m-2">
-        <Link to="/" className="hover:scale-105 transition">Learn Yoga Online</Link>
+      
+      <header className="flex justify-between m-2">
+        <Link to="/">Learn Yoga Online</Link>
         <Search />
-      </div>
+      </header>
 
-      <button
-        onClick={toggleDrawer}
-        className={`absolute top-18 ${
-          isDrawerOpen ? "left-[16rem]" : "left-0"
-        } transition-all duration-300 ease-in-out`}
-      >
-        <div className="flex flex-col text-4xl opacity-50 p-2 bg-gray-200 rounded-tr-lg rounded-br-lg transition-transform duration-500 ease-in-out">
-          {isDrawerOpen ? (
-            <>
-              <span>&laquo;</span>
-            </>
-          ) : (
-            <>
-              <span>&raquo;</span>
-            </>
-          )}
-        </div>
-      </button>
+      <div className="flex">
 
-      <div
-        className="flex z-10"
-      >
-        {isDrawerOpen && <Drawer isDrawer={true} />}
-
+        <Drawer /> 
+        
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/categories/all" element={<CategoryPage />} />
