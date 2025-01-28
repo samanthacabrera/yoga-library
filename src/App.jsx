@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import CategoryPage from "./components/CategoryPage";
 import PosePage from "./components/PosePage";
 import Guide from "./components/Guide";
+import WhatIsYoga from "./components/WhatIsYoga";
 import Path from "./components/Path";
 import Gunas from "./components/Gunas";
 import Chakras from "./components/Chakras";
@@ -16,6 +17,7 @@ import Article from "./components/Article";
 import Resources from "./components/Resources";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Footer from "./components/Footer";
+
 
 
 
@@ -66,10 +68,11 @@ const App = () => {
           <Route path="/categories/all" element={<CategoryPage />} />
           <Route path="/categories/:categoryType/:categoryValue" element={<CategoryPage />} />
           <Route path="/pose/:id" element={<PosePage />} />
+          <Route path="/what-is-yoga" element={<WhatIsYoga />} />
           <Route path="/beginners-guide" element={<Guide />} />
-          <Route path="/pathofyoga" element={<Path />} />
-          <Route path="/threegunas" element={<Gunas />} />
-          <Route path="/sevenchakras" element={<Chakras/>} />
+          <Route path="/path-of-yoga" element={<Path />} />
+          <Route path="/three-gunas" element={<Gunas />} />
+          <Route path="/seven-chakras" element={<Chakras/>} />
           <Route path="/articles" element={<ArticleList />} />
           <Route path="/articles/:slug" element={<Article />} />
           <Route path="/resources" element={<Resources />} />

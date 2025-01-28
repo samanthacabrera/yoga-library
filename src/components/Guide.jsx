@@ -36,54 +36,7 @@ const Guide = () => {
                 </ul>
             </div>
 
-            <hr></hr>
-
-            <div className="w-full max-w-5xl space-y-4">
-                <h2 className="text-xl mb-1 font-medium">What is Yoga?</h2>
-                <p>
-                    Yoga is an ancient practice originating in India, aimed at creating a sense of unity within the mind, body, and spirit. It includes various techniques such as physical postures (asanas), breath control exercises (pranayama), and meditation. Yoga not only supports physical health by improving flexibility, strength, and balance but also promotes mental clarity and emotional resilience.
-                </p>
-                <p>
-                    The physical aspect of yoga focuses on movement, with asanas designed to stretch, strengthen, and align the body. Breathwork (pranayama) is closely linked with each pose, helping to improve focus and energy flow. Meditation and mindfulness practices further enhance the benefits, fostering inner peace and emotional well-being.
-                </p>
-                <p>
-                    Yoga philosophy teaches that by connecting the body, breath, and mind, we can achieve a deeper sense of harmony within ourselves. Practicing yoga regularly allows you to release stress, manage anxiety, and increase self-awareness. Ultimately, yoga is a path to living with greater intention, presence, and balance in daily life.
-                </p>
-            </div>
-
-            <hr></hr>           
-
-            <div className="w-full max-w-5xl space-y-4">
-                <h2 className="text-xl mb-1 font-medium">Types of Yoga</h2>
-                <p>
-                    Yoga comes in many styles, each with its own focus and benefits. Some of the most popular types include:
-                </p>
-                <ul className="list-disc list-inside space-y-2">
-                    <li>
-                        <strong>Vinyasa Yoga:</strong> A dynamic style of yoga that links movement with breath, creating a flowing sequence of poses.
-                    </li>
-                    <li>
-                        <strong>Hatha Yoga:</strong> A gentle form of yoga focusing on basic poses and breathing exercises, making it ideal for beginners.
-                    </li>
-                    <li>
-                        <strong>Ashtanga Yoga:</strong> A physically demanding and disciplined practice with a set sequence of poses performed in a specific order.
-                    </li>
-                    <li>
-                        <strong>Yin Yoga:</strong> A slow-paced style focusing on deep stretches and longer holds to improve flexibility and release tension.
-                    </li>
-                    <li>
-                        <strong>Restorative Yoga:</strong> A relaxing practice that uses props to support the body in restful poses, promoting deep relaxation.
-                    </li>
-                    <li>
-                        <strong>Bikram Yoga:</strong> A series of 26 poses practiced in a heated room to improve flexibility and detoxify the body through sweat.
-                    </li>
-                </ul>
-                <p>
-                    This site will focus on teaching the foundations of <strong>Vinyasa Yoga</strong>. This style is particularly well-suited for building strength, flexibility, and mindfulness. Its emphasis on synchronizing breath with movement provides a meditative and energizing experience, making it accessible and rewarding for practitioners of all levels.
-                </p>
-            </div>
-
-            <hr></hr>
+            <hr></hr>          
 
             <div className="w-full max-w-5xl space-y-4">
                 <h2 className="text-xl mb-1 font-medium">Safe Practice Tips</h2>

@@ -121,28 +121,30 @@ const PosesListToggle = () => (
         <div ref={drawerRef} className="flex flex-col min-w-[16rem] max-w-full p-2 bg-gray-100">
             <Link
                 to="/beginners-guide"
-                onClick={() => handleLinkClick("/beginners-guide")}
                 className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
             >
                 Start Here
             </Link>
             <Link
-                to="/pathofyoga"
-                onClick={() => handleLinkClick("/eightlimbedpathofyoga")}
+                to="/what-is-yoga"
+                className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+            >
+                What Is Yoga?
+            </Link>
+            <Link
+                to="/path-of-yoga"
                 className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
             >
                 The 8-Limbed Path
             </Link>
             <Link
-                to="/threegunas"
-                onClick={() => handleLinkClick("/threegunas")}
+                to="/three-gunas"
                 className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
             >
                 The 3 Gunas
             </Link>
             <Link
-                to="/sevenchakras"
-                onClick={() => handleLinkClick("/sevenchakras")}
+                to="/seven-chakras"
                 className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
             >
                 The 7 Chakras
@@ -150,14 +152,12 @@ const PosesListToggle = () => (
             <PosesListToggle /> 
             <Link
                 to="/articles"
-                onClick={() => handleLinkClick("/articles")}
                 className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
             >
                 Newsletter
             </Link>
             <Link
                 to="/resources"
-                onClick={() => handleLinkClick("/resources")}
                 className="hover:bg-moss hover:text-white  hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
             >
                 Resources

@@ -105,7 +105,7 @@ const Path = () => {
             </h3>
             <p className="text-lg sm:text-xl text-center mb-6">{limb.description}</p>
 
-            <div className="text-sm sm:text-base leading-loose">{limb.content}</div>
+            <div className="text-sm sm:text-base leading-loose space-y-4">{limb.content}</div>
           </div>
         ))}
       </div>
