@@ -11,6 +11,7 @@ import Guide from "./components/Guide";
 import Path from "./components/Path";
 import Limb from "./components/Limb";
 import Gunas from "./components/Gunas";
+import Chakras from "./components/Chakras";
 import ArticleList from "./components/ArticleList";
 import Article from "./components/Article";
 import Resources from "./components/Resources";
@@ -69,7 +70,8 @@ const App = () => {
           <Route path="/beginners-guide" element={<Guide />} />
           <Route path="/pathofyoga" element={<Path />} />
           <Route path="/pathofyoga/:limb" element={<Limb />} />
-          <Route path="/gunas" element={<Gunas/>} />
+          <Route path="/threegunas" element={<Gunas />} />
+          <Route path="/sevenchakras" element={<Chakras/>} />
           <Route path="/articles" element={<ArticleList />} />
           <Route path="/articles/:slug" element={<Article />} />
           <Route path="/resources" element={<Resources />} />

@@ -134,11 +134,18 @@ const PosesListToggle = () => (
                 The 8-Limbed Path
             </Link>
             <Link
-                to="/gunas"
-                onClick={() => handleLinkClick("/gunas")}
+                to="/threegunas"
+                onClick={() => handleLinkClick("/threegunas")}
                 className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
             >
                 The 3 Gunas
+            </Link>
+            <Link
+                to="/sevenchakras"
+                onClick={() => handleLinkClick("/sevenchakras")}
+                className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+            >
+                The 7 Chakras
             </Link>
             <PosesListToggle /> 
             <Link
