@@ -82,6 +82,7 @@ const CategoryPage = () => {
   const { categoryType, categoryValue } = useParams();
   const [filteredPoses, setFilteredPoses] = useState(posesData);
   const [activeCategories, setActiveCategories] = useState({
+    all: false,
     type: false,
     benefit: false,
     chakra: false,
@@ -110,10 +111,31 @@ const CategoryPage = () => {
   }, [categoryType, categoryValue]);
 
   const toggleCategory = (categoryType) => {
-    setActiveCategories((prevState) => ({
-      ...prevState,
-      [categoryType]: !prevState[categoryType],
-    }));
+    if (categoryType === "all") {
+      setActiveCategories((prevState) => ({
+        type: false,
+        benefit: false,
+        chakra: false,
+        part: false,
+        all: !prevState.all, 
+      }));
+    }
+    if (categoryType === "close") {
+      setActiveCategories(() => ({
+        all: false,
+        type: false,
+        benefit: false,
+        chakra: false,
+        part: false,
+        }));
+    }
+    else {
+      setActiveCategories((prevState) => ({
+        ...prevState,
+        [categoryType]: !prevState[categoryType],
+        all: false, 
+      }));
+    }
   };
 
   const getHeadingText = () => {
@@ -145,6 +167,14 @@ const CategoryPage = () => {
 
       <h2 className="text-2xl sm:text-3xl md:text-4xl text-center mt-12">Yoga Pose Categories</h2>
       <div className="flex justify-center gap-4">
+        <Link to="/categories/all">
+        <button
+          onClick={() => toggleCategory("all")}
+          className={`px-4 py-0 border rounded-lg ${activeCategories.all ? 'bg-gray-200' : 'bg-gray-100'} hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300`}
+        >
+          All
+        </button>
+        </Link>
         {["type", "benefit", "chakra", "part"].map((categoryType) => (
           <button
             key={categoryType}
@@ -165,6 +195,7 @@ const CategoryPage = () => {
                 {category.values.map((value) => (
                   <Link
                     key={value}
+                    onClick={() => toggleCategory("close")}
                     to={`/categories/${category.type}/${value.toLowerCase()}`}
                     className="px-2 py-1 bg-gray-100 text-sm border rounded-lg hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300"
                   >
