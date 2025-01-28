@@ -15,9 +15,13 @@ const Path = () => {
         { path: "samadhi", name: "Samadhi", description: "Union with the self, ultimate absorption." },
     ];
 
-    const toggleLimbContent = (limb) => {
-        setActiveLimb(activeLimb === limb ? null : limb); 
-    };
+const toggleLimbContent = (path) => {
+    if (activeLimb === path) {
+        setActiveLimb(null); 
+    } else {
+        setActiveLimb(path); 
+    }
+};
 
     return (
         <div className="flex flex-col w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
@@ -30,9 +34,10 @@ const Path = () => {
                         <p className="text-sm">{limb.description}</p>
                         <Link
                             to={`/pathofyoga/${limb.path}`}
+                            onClick={() => toggleLimbContent(limb.path)} 
                             className="px-4 py-2 border hover:scale-105 hover:bg-moss hover:text-white text-sm rounded-full transition duration-300 transform"
                         >
-                            Learn More
+                            {activeLimb === limb.path ? "Show Less" : "Learn More"}
                         </Link>
                     </div>
                 ))}

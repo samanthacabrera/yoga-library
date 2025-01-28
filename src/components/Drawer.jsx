@@ -25,7 +25,7 @@ const Drawer = () => {
 const CategorySection = ({ title, items, sectionKey }) => (
     <div>
         <button
-            className="flex justify-between w-full pl-2 rounded hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300 px-2 py-1"
+            className="flex justify-between w-full pl-2 rounded hover:text-moss hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300 px-2 py-1"
             onClick={() => toggleSection(sectionKey)}
             aria-expanded={!!openSections[sectionKey]}
             aria-controls={`section-${sectionKey}`}
@@ -57,7 +57,7 @@ const CategorySection = ({ title, items, sectionKey }) => (
 const PosesListToggle = () => (
     <div>
         <button
-            className="flex justify-between w-full rounded hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300 px-2 py-1"
+            className="flex justify-between w-full rounded hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 px-2 py-1"
             onClick={() => toggleSection("posesList")}
             aria-expanded={!!openSections["posesList"]}
             aria-controls="section-posesList"
@@ -74,7 +74,7 @@ const PosesListToggle = () => (
             <Link
                 to="/categories/all"
                 onClick={() => handleLinkClick("/categories/all")}
-                className="pl-2 block text-left w-full rounded px-2 py-1 hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300"
+                className="pl-2 block text-left w-full rounded px-2 py-1 hover:text-moss hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300"
             >
                 All Poses
             </Link>
@@ -122,29 +122,36 @@ const PosesListToggle = () => (
             <Link
                 to="/beginners-guide"
                 onClick={() => handleLinkClick("/beginners-guide")}
-                className="hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+                className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
             >
                 Start Here
             </Link>
             <Link
                 to="/pathofyoga"
                 onClick={() => handleLinkClick("/eightlimbedpathofyoga")}
-                className="hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+                className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
             >
-                8-Limbed Path
+                The 8-Limbed Path
+            </Link>
+            <Link
+                to="/gunas"
+                onClick={() => handleLinkClick("/gunas")}
+                className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+            >
+                The 3 Gunas
             </Link>
             <PosesListToggle /> 
             <Link
                 to="/articles"
                 onClick={() => handleLinkClick("/articles")}
-                className="hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+                className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
             >
                 Newsletter
             </Link>
             <Link
                 to="/resources"
                 onClick={() => handleLinkClick("/resources")}
-                className="hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+                className="hover:bg-moss hover:text-white  hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
             >
                 Resources
             </Link>

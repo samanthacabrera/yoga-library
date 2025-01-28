@@ -10,11 +10,13 @@ import PosePage from "./components/PosePage";
 import Guide from "./components/Guide";
 import Path from "./components/Path";
 import Limb from "./components/Limb";
+import Gunas from "./components/Gunas";
 import ArticleList from "./components/ArticleList";
 import Article from "./components/Article";
 import Resources from "./components/Resources";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Footer from "./components/Footer";
+
 
 
 
@@ -67,6 +69,7 @@ const App = () => {
           <Route path="/beginners-guide" element={<Guide />} />
           <Route path="/pathofyoga" element={<Path />} />
           <Route path="/pathofyoga/:limb" element={<Limb />} />
+          <Route path="/gunas" element={<Gunas/>} />
           <Route path="/articles" element={<ArticleList />} />
           <Route path="/articles/:slug" element={<Article />} />
           <Route path="/resources" element={<Resources />} />
