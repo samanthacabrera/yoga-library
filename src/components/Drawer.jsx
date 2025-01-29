@@ -47,7 +47,7 @@ const Drawer = () => {
       {/* Drawer content */}
       <div
         ref={drawerRef}
-        className={`absolute top-1/4 left-0 flex flex-col h-[28rem] min-w-[12rem] max-w-full p-2 bg-gray-100 rounded transition-all duration-300 ease-in-out ${
+        className={`absolute top-1/4 left-0 flex flex-col h-[25rem] min-w-[12rem] max-w-full p-2 bg-gray-100 rounded transition-all duration-300 ease-in-out ${
           isDrawerOpen
             ? "transform translate-x-0"
             : "transform -translate-x-full"
@@ -95,12 +95,6 @@ const Drawer = () => {
           className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
         >
           Newsletter
-        </Link>
-        <Link
-          to="/challenges"
-          className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
-        >
-          Monthly Challenge
         </Link>
         <Link
           to="/resources"

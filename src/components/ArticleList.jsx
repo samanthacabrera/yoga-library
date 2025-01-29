@@ -9,21 +9,7 @@ const ArticleList = () => {
             slug: "setting-intentions", 
             summary: "Learn how setting clear intentions can enhance your yoga practice and guide your journey.",
             publishDate: "January 2, 2025"
-        },
-        { 
-            id: 2, 
-            title: "Breathing Techniques for Beginners", 
-            slug: "breathing-techniques", 
-            summary: "Discover simple breathing exercises to calm your mind and improve your yoga performance.",
-            publishDate: "December 1, 2024"
-        },
-        { 
-            id: 3, 
-            title: "How to Build a Daily Yoga Routine", 
-            slug: "building-routine", 
-            summary: "Create a sustainable daily yoga routine with easy-to-follow steps that fit your lifestyle.",
-            publishDate: "November 7, 2024"
-        },
+        }
     ];
 
     const totalArticles = articles.length;
@@ -32,7 +18,7 @@ const ArticleList = () => {
         <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-20 px-8 py-4 mx-auto">
             <div className="mb-8">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl text-center my-12">Our Community Newsletter</h1>
-                <p>Stay inspired and connected with our monthly yoga newsletter, designed to support your wellness journey. Each edition delivers insightful articles, tips for deepening your practice, and guided sequences tailored to all levels.</p>
+                <p>Stay inspired and connected with our monthly yoga newsletter, each edition delivers insightful articles, tips for deepening your practice, and guided sequences tailored to all levels.</p>
             </div>
             
             <ul className="space-y-12 my-12">
@@ -60,7 +46,7 @@ const ArticleList = () => {
                         </div>
                         <Link
                             to={`/articles/${article.slug}`}
-                            className="inline-block px-4 py-2 text-sm text-gray-800 bg-gray-100 border border-gray-300 rounded-md hover:bg-gray-200 transition-colors"
+                            className="inline-block px-4 py-2 text-sm text-gray-800 bg-gray-100 border border-gray-300 hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
                         >
                             Read More
                         </Link>

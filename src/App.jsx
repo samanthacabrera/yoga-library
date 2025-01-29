@@ -14,7 +14,6 @@ import Gunas from "./components/Gunas";
 import Chakras from "./components/Chakras";
 import ArticleList from "./components/ArticleList";
 import Article from "./components/Article";
-import Challenge from "./components/Challenge";
 import Resources from "./components/Resources";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Footer from "./components/Footer";
@@ -45,7 +44,6 @@ const App = () => {
           <Route path="/seven-chakras" element={<Chakras/>} />
           <Route path="/articles" element={<ArticleList />} />
           <Route path="/articles/:slug" element={<Article />} />
-          <Route path="/challenges" element={<Challenge />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
