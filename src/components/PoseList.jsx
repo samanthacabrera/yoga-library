@@ -47,7 +47,7 @@ const PoseList = () => {
   return (
      <div className="bg-gray-100 mt-40">
       <div className="flex justify-between p-4 md:px-8">
-        <h3>Index of Top 50 Poses In Yoga</h3>
+        <h3 className="tracking-wide">Index of Top 50 Poses In Yoga</h3>
         <div className="flex items-center text-xs md:text-sm space-x-2">
           <button
             onClick={() => setSortOption('commonName')}

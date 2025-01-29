@@ -10,7 +10,6 @@ const Guide = () => {
                 </p>
             </div>
 
-            <hr></hr>
 
             <div className="w-full max-w-5xl space-y-4 bg-gray-50 border-l-4 border-gray-400 p-6 rounded-lg">
                 <h2 className="text-2xl mb-4">Common Terms in Yoga</h2>
@@ -35,8 +34,7 @@ const Guide = () => {
                     </li>
                 </ul>
             </div>
-
-            <hr></hr>          
+        
 
             <div className="w-full max-w-5xl space-y-4">
                 <h2 className="text-xl mb-1 font-medium">Safe Practice Tips</h2>
