@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ArticleList = () => {
+const Newsletter = () => {
     const articles = [
         { 
             id: 1, 
@@ -72,4 +72,4 @@ const ArticleList = () => {
     );
 };
 
-export default ArticleList;
+export default Newsletter;

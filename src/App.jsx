@@ -12,7 +12,7 @@ import WhatIsYoga from "./components/WhatIsYoga";
 import Path from "./components/Path";
 import Gunas from "./components/Gunas";
 import Chakras from "./components/Chakras";
-import ArticleList from "./components/ArticleList";
+import Newsletter from "./components/Newsletter";
 import Article from "./components/Article";
 import Resources from "./components/Resources";
 import PrivacyPolicy from "./components/PrivacyPolicy";
@@ -42,7 +42,7 @@ const App = () => {
           <Route path="/path-of-yoga" element={<Path />} />
           <Route path="/three-gunas" element={<Gunas />} />
           <Route path="/seven-chakras" element={<Chakras/>} />
-          <Route path="/articles" element={<ArticleList />} />
+          <Route path="/articles" element={<Newsletter />} />
           <Route path="/articles/:slug" element={<Article />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
