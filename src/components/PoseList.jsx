@@ -19,31 +19,6 @@ const PoseList = () => {
     setPoses(mergedPoses);
   }, []);
 
-  const toggleSort = () => {
-    setSortOption((prevSortOption) => {
-      const newSortOption =
-        prevSortOption === 'commonName' ? 'sanskritName' : 'commonName'; 
-
-      setPoses((prevPoses) => {
-        return [...prevPoses].sort((a, b) => {
-          if (newSortOption === 'commonName') {
-            return (a.commonName || '').localeCompare(b.commonName || ''); 
-          } else if (newSortOption === 'sanskritName') {
-            const sanskritA = a.sanskritName || '';
-            const sanskritB = b.sanskritName || '';
-            if (sanskritA === '' && sanskritB === '') return 0;
-            if (sanskritA === '') return 1;
-            if (sanskritB === '') return -1;
-            return sanskritA.localeCompare(sanskritB);
-          }
-          return 0;
-        });
-      });
-
-      return newSortOption;
-    });
-  };
-
   return (
      <div className="bg-gray-100 mt-40">
       <div className="flex justify-between p-4 md:px-8">
@@ -74,7 +49,7 @@ const PoseList = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 p-4 md:px-8 text-xs md:text-sm">
           {poses.map((pose) => (
             <div key={pose.id} className="group relative flex items-center justify-center p-4 bg-white rounded-lg shadow hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300">
-              <Link to={`/pose/${pose.id}`} >
+              <Link to={`/poses/${pose.name}`} >
                 {sortOption === 'sanskritName' ? pose.sanskritName : pose.commonName}
               </Link>
             </div>

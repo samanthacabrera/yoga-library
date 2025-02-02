@@ -75,19 +75,6 @@ const Newsletter = () => {
             </ul>
 
             <hr></hr>
-
-            <div className="bg-white self-center shadow-sm rounded-lg p-6 space-y-4 max-w-lg w-full border border-gray-200">
-                <h2 className="text-2xl font-light text-center">Join Our Yoga Community</h2>
-                <p className="text-center text-gray-500">
-                  Stay connected with us to receive updates, articles, and resources. Our newsletter signup is coming soon!
-                </p>
-                <button 
-                    disabled 
-                    className="block w-full px-6 py-3 text-sm text-gray-400 bg-gray-100 border border-gray-300 rounded-md cursor-not-allowed"
-                >
-                    Signup
-                </button>
-            </div>
         </div>
     );
 };

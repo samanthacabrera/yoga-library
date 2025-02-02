@@ -83,7 +83,7 @@ const PosePage = () => {
      / {pose.name}
   </nav>
 
-      <div className="text-4xl mb-8">
+      <div className="text-4xl">
         <h2>
           {pose.name} - {poseSanskirt.translation}
         </h2>
@@ -94,8 +94,76 @@ const PosePage = () => {
           {poseSanskirt.sanskrit_name}
           </p>
         )}
+      
+      {/* Tags */}
+      <div className="flex flex-col space-y-1 text-sm">
+        {pose.benefit.length > 0 && (
+          <div>
+            <p>Benefits</p>
+            <div className="flex flex-col space-y-2 py-1">
+              {pose.benefit.map((benefit, index) => (
+                <Link
+                  key={index}
+                  to={`/poses/benefit/${benefit}`}
+                  className="w-fit bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full uppercase tracking-wider hover:bg-moss hover:text-white transition duration-300"
+                >
+                  {benefit}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+        {pose.part.length > 0 && (
+          <div>
+            <p>Parts of the Body</p>
+            <div className="flex flex-col space-y-2 py-1">
+              {pose.part.map((part, index) => (
+                <Link
+                  key={index}
+                  to={`/poses/part/${part}`}
+                  className="w-fit bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full uppercase tracking-wider hover:bg-moss hover:text-white transition duration-300"
+                >
+                  {part}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+        {pose.type.length > 0 && (
+          <div>
+            <p>Pose Types</p>
+            <div className="flex flex-col space-y-2 py-1">
+              {pose.type.map((type, index) => (
+                <Link
+                  key={index}
+                  to={`/poses/type/${type}`}
+                  className="w-fit bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full uppercase tracking-wider hover:bg-moss hover:text-white transition duration-300"
+                >
+                  {type}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+        {pose.chakra.length > 0 && (
+          <div>
+            <p>Chakras</p>
+            <div className="flex flex-col space-y-2 py-1">
+              {pose.chakra.map((chakra, index) => (
+                <Link
+                  key={index}
+                  to={`/poses/chakra/${chakra}`}
+                  className="w-fit bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full uppercase tracking-wider hover:bg-moss hover:text-white transition duration-300"
+                >
+                  {chakra}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
-
+    </div>
+      {/* Image */}
       {pose.image && (
         <img
           src={pose.image}
@@ -127,43 +195,43 @@ const PosePage = () => {
       </div>
       
       {poseDesc && poseDesc.desc && (
-        <div id="description">
-          <h3 className="text-2xl md:text-4xl tracking-wider my-2">Overview</h3>
+        <div id="description" className="group">
+          <h3 className="text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Overview</h3>
           <p>{poseDesc.desc}</p>
         </div>
       )}
 
       {poseBenefit && poseBenefit.benefit && (
-        <div id="benefits">
-          <h3 className="text-2xl md:text-4xl tracking-wider my-2">Benefits</h3>
+        <div id="benefits" className="group">
+          <h3 className="text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Benefits</h3>
           <p>{poseBenefit.benefit}</p>
         </div>
       )}
     
       {poseSanskirt && poseSanskirt.context && (
-        <div id="origins">
-          <h3 className="text-2xl md:text-4xl tracking-wider my-2">Origins</h3>
+        <div id="origins" className="group">
+          <h3 className="text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Origins</h3>
           <p>{poseSanskirt.context}</p>
         </div>
       )}
      
       {posePrecaution && posePrecaution.precaution && (
-        <div id="precautions">
-          <h3 className="text-2xl md:text-4xl tracking-wider my-2">Precautions</h3>
+        <div id="precautions" className="group">
+          <h3 className="text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Precautions</h3>
           <p>{posePrecaution.precaution}</p>
         </div>
       )}
   
       {poseModification && poseModification.modification && (
-        <div id="modifications">
-          <h3 className="text-2xl md:text-4xl tracking-wider my-2">Modifications</h3>
+        <div id="modifications" className="group">
+          <h3 className="text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Modifications</h3>
           <p>{poseModification.modification}</p>
         </div>
       )}
      
       {poseCues && poseCues.cues && (
-        <div id="cues">
-          <h3 className="text-2xl md:text-4xl tracking-wider my-2">Step-By-Step Breakdown</h3>
+        <div id="cues" className="group">
+          <h3 className="text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Step-By-Step Breakdown</h3>
           <ol className="list-decimal list-inside">
             {poseCues.cues.map((cue, index) => {
               const linkPoseNames = (cueText) => {
@@ -197,82 +265,7 @@ const PosePage = () => {
         </div>
       )}
 
-      <div className="bg-gray-100 p-4 rounded-lg shadow-sm">
-        <p><strong>Tags:</strong></p>
-
-        {pose.benefit.length > 0 && (
-          <div>
-            <p className="text-gray-500 my-1">Benefits</p>
-            <ul className="flex flex-wrap gap-2">
-              {pose.benefit.map((benefit, index) => (
-                <li key={index}>
-                  <Link 
-                    to={`/categories/benefit/${benefit}`} 
-                    className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
-                  >
-                    {benefit}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {pose.part.length > 0 && (
-          <div>
-            <p className="text-gray-500 my-1">Parts of the body</p>
-            <ul className="flex flex-wrap gap-2">
-              {pose.part.map((part, index) => (
-                <li key={index}>
-                  <Link 
-                    to={`/categories/part/${part}`} 
-                    className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
-                  >
-                    {part}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {pose.type.length > 0 && (
-          <div>
-            <p className="text-gray-500 my-1">Pose Types</p>
-            <ul className="flex flex-wrap gap-2">
-              {pose.type.map((type, index) => (
-                <li key={index}>
-                  <Link 
-                    to={`/categories/type/${type}`} 
-                    className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
-                  >
-                    {type}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-        
-        {pose.chakra.length > 0 && (
-          <div>
-            <p className="text-gray-500 my-1">Chakras</p>
-            <ul className="flex flex-wrap gap-2">
-              {pose.chakra.map((chakra, index) => (
-                <li key={index}>
-                  <Link 
-                    to={`/categories/chakra/${chakra}`} 
-                    className="bg-gray-300 text-gray-700 px-3 py-1 my-1 rounded-full text-sm hover:bg-gray-400 transition-colors"
-                  >
-                    {chakra}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
-
+      {/* related poses */}
       <div className="bg-gray-100 p-4 rounded-lg shadow-sm mt-6">
         {relatedByType.length > 0 && (
           <div>
@@ -280,7 +273,7 @@ const PosePage = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {currentPosesType.map((relatedPose) => (
                 <div key={relatedPose.id} className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition duration-200">
-                  <Link to={`/pose/${relatedPose.id}`} className="block text-center">
+                  <Link to={`/poses/${relatedPose.name}`} className="block text-center">
                     {relatedPose.image && (
                       <img
                         src={relatedPose.image}
