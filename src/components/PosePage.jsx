@@ -9,13 +9,13 @@ import modifications from '../data/modifications.json';
 import cues from '../data/cues.json';
 
 const PosePage = () => {
-  const { id } = useParams();
-  const pose = posesData.find((p) => p.id === parseInt(id));
+  const { name } = useParams();
+  const pose = posesData.find((p) => p.name.toLowerCase() === name.toLowerCase());
   const [currentPageType, setCurrentPageType] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [id]);
+  }, [name]);
 
   if (!pose) {
     return <div>Pose not found</div>;
@@ -71,10 +71,10 @@ const PosePage = () => {
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 md:space-y-20 p-8 mx-auto">
 
   <nav className="text-sm mb-4">
-    <Link to="/categories/all" className="text-moss hover:underline">All Poses</Link> /  
+    <Link to="/poses" className="text-moss hover:underline">All Poses</Link> /  
     {pose.type.length > 0 && (
     <Link 
-        to={`/categories/type/${pose.type[0]}`} 
+        to={`/poses/type/${pose.type[0]}`} 
         className="text-moss hover:underline px-1"
       >
         {pose.type[0]} Poses

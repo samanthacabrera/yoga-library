@@ -167,7 +167,7 @@ const CategoryPage = () => {
 
       <h2 className="text-2xl sm:text-3xl md:text-4xl text-center mt-12">Yoga Pose Categories</h2>
       <div className="flex justify-center gap-4">
-        <Link to="/categories/all">
+        <Link to="/poses">
         <button
           onClick={() => toggleCategory("all")}
           className={`px-4 py-0 border rounded-lg ${activeCategories.all ? 'bg-gray-200' : 'bg-gray-100'} hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300`}
@@ -196,7 +196,7 @@ const CategoryPage = () => {
                   <Link
                     key={value}
                     onClick={() => toggleCategory("close")}
-                    to={`/categories/${category.type}/${value.toLowerCase()}`}
+                    to={`/poses/${category.type}/${value.toLowerCase()}`}
                     className="px-2 py-1 bg-gray-100 text-sm border rounded-lg hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300"
                   >
                     {value}
@@ -220,7 +220,7 @@ const CategoryPage = () => {
             key={pose.id}
             className="hover:scale-105 transition-transform duration-300 p-2"
           >
-            <Link to={`/pose/${pose.id}`} className="flex flex-col items-center group">
+            <Link to={`/poses/${pose.name}`} className="flex flex-col items-center group">
               {pose.image ? (
                 <img
                   src={pose.image}

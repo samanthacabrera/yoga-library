@@ -33,9 +33,9 @@ const App = () => {
         
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/categories/all" element={<CategoryPage />} />
-          <Route path="/categories/:categoryType/:categoryValue" element={<CategoryPage />} />
-          <Route path="/pose/:id" element={<PosePage />} />
+          <Route path="/poses" element={<CategoryPage />} />
+          <Route path="/poses/:categoryType/:categoryValue" element={<CategoryPage />} />
+          <Route path="/poses/:name" element={<PosePage />} />
           <Route path="/what-is-yoga/overview" element={<WhatIsYoga />} />
           <Route path="/what-is-yoga/beginners-guide" element={<Guide />} />
           <Route path="/what-is-yoga/eight-limbed-path" element={<Path />} />

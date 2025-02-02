@@ -85,7 +85,7 @@ const Drawer = () => {
           The 7 Chakras
         </Link>
         <Link
-          to="/categories/all"
+          to="/poses"
           className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
         >
           List of Poses
