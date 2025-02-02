@@ -55,31 +55,31 @@ const Drawer = () => {
         style={{ transitionDuration: "300ms", zIndex: 50 }}
       >
         <Link
-          to="/beginners-guide"
+          to="/what-is-yoga/beginners-guide"
           className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
         >
           Start Here
         </Link>
         <Link
-          to="/what-is-yoga"
+          to="/what-is-yoga/overview"
           className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
         >
           What Is Yoga?
         </Link>
         <Link
-          to="/path-of-yoga"
+          to="/what-is-yoga/eight-limbed-path"
           className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
         >
           The 8-Limbed Path
         </Link>
         <Link
-          to="/three-gunas"
+          to="/what-is-yoga/three-gunas"
           className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
         >
           The 3 Gunas
         </Link>
         <Link
-          to="/seven-chakras"
+          to="/what-is-yoga/seven-chakras"
           className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
         >
           The 7 Chakras
@@ -91,7 +91,7 @@ const Drawer = () => {
           List of Poses
         </Link>
         <Link
-          to="/articles"
+          to="/newsletter"
           className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
         >
           Newsletter
