@@ -32,7 +32,7 @@ const Newsletter = () => {
             return blog.items.map((post, index) => (
                 <li 
                     key={index} 
-                    className="group flex flex-col md:flex-row items-start md:items-center space-y-6 md:space-y-0 md:space-x-6 bg-white border shadow-sm rounded-lg p-6 hover:shadow-md transition-shadow"
+                    className="group flex flex-col md:flex-row items-start md:items-center space-y-6 md:space-y-0 md:space-x-6 bg-white border border-moss rounded-lg shadow p-6"
                 >
                     <span className="text-2xl text-gray-400">
                         {String(totalArticles - index).padStart(2, "0")}
@@ -54,7 +54,7 @@ const Newsletter = () => {
                         href={post.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block px-4 py-2 text-sm text-gray-800 bg-gray-100 border border-gray-300 hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+                        className="inline-block px-4 py-2 text-sm text-gray-800 bg-gray-100 border border-gray-300 hover:bg-moss hover:text-white transition-transform duration-300 rounded px-2 py-1"
                     >
                         Read More
                     </a>
@@ -76,7 +76,7 @@ const Newsletter = () => {
 
             <hr></hr>
             {/* Whats New */}
-            <div className="bg-white border shadow-sm rounded-lg p-6">
+            <div className="bg-white border border-moss rounded-lg shadow p-6">
                 <h2 className="text-2xl my-8">What's New - Feb 2025</h2>
                 <ul className="space-y-2">
                     <li>
@@ -84,9 +84,6 @@ const Newsletter = () => {
                     </li>
                     <li>
                         <span className="font-medium tracking-wide">New Resources Page:</span> We've launched a dedicated Resources Page featuring a curated collection of tools, articles, and videos designed to support your yoga practice.
-                    </li>
-                    <li>
-                        <span className="font-medium tracking-wide">Revamped Beginner's Guide:</span> Our Beginner's Guide has been completely refreshed with step-by-step instructions, visually engaging content, and practical tips. 
                     </li>
                 </ul>
             </div>

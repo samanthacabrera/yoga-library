@@ -3,11 +3,15 @@ import { useNavigate } from "react-router-dom";
 import posesData from "../data/poses.json";
 
 const Search = () => {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState(() => sessionStorage.getItem("searchTerm") || "");
   const [filteredPoses, setFilteredPoses] = useState([]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
   const searchRef = useRef(null);
+
+  useEffect(() => {
+    sessionStorage.removeItem("searchTerm"); 
+  }, []);
 
   const handleSearch = (event) => {
     event.preventDefault();
@@ -21,15 +25,14 @@ const Search = () => {
       } else {
         navigate(`/pose/${trimmedSearchTerm.toLowerCase()}`);
       }
-      setSearchTerm("");
-      setFilteredPoses([]);
-      setIsDropdownOpen(false);
     }
+    resetSearch();
   };
 
   const handleInputChange = (e) => {
     const query = e.target.value.trim().toLowerCase();
     setSearchTerm(query);
+    sessionStorage.setItem("searchTerm", query);
 
     if (query) {
       const results = posesData.filter((pose) =>
@@ -38,14 +41,20 @@ const Search = () => {
       setFilteredPoses(results);
       setIsDropdownOpen(true);
     } else {
-      setFilteredPoses([]);
-      setIsDropdownOpen(false);
+      resetSearch();
     }
+  };
+
+  const resetSearch = () => {
+    setSearchTerm("");
+    setFilteredPoses([]);
+    setIsDropdownOpen(false);
+    sessionStorage.removeItem("searchTerm");
   };
 
   const handleClickOutside = (event) => {
     if (searchRef.current && !searchRef.current.contains(event.target)) {
-      setIsDropdownOpen(false);
+      resetSearch();
     }
   };
 
@@ -76,8 +85,8 @@ const Search = () => {
               <li key={pose.id}>
                 <button
                   onClick={() => {
-                    navigate(`/pose/${pose.id}`);
-                    setIsDropdownOpen(false);
+                    navigate(`/poses/${pose.name}`);
+                    resetSearch();
                   }}
                   className="hover:underline"
                 >
