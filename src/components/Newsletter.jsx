@@ -75,6 +75,21 @@ const Newsletter = () => {
             </ul>
 
             <hr></hr>
+            {/* Whats New */}
+            <div className="bg-white border shadow-sm rounded-lg p-6">
+                <h2 className="text-2xl my-8">What's New - Feb 2025</h2>
+                <ul className="space-y-2">
+                    <li>
+                        <span className="font-medium tracking-wide">Launch of Medium Blog:</span> Our new Medium blog is live, offering monthly articles on yoga and holistic wellness. You can find the latest posts on our website or at <a href="https://medium.com/me/stories/public" className="italic hover:underline">Medium</a>.
+                    </li>
+                    <li>
+                        <span className="font-medium tracking-wide">New Resources Page:</span> We've launched a dedicated Resources Page featuring a curated collection of tools, articles, and videos designed to support your yoga practice.
+                    </li>
+                    <li>
+                        <span className="font-medium tracking-wide">Revamped Beginner's Guide:</span> Our Beginner's Guide has been completely refreshed with step-by-step instructions, visually engaging content, and practical tips. 
+                    </li>
+                </ul>
+            </div>
         </div>
     );
 };
