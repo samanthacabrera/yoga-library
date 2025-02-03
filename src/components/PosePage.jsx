@@ -11,7 +11,6 @@ import cues from '../data/cues.json';
 const PosePage = () => {
   const { name } = useParams();
   const pose = posesData.find((p) => p.name.toLowerCase() === name.toLowerCase());
-  const [currentPageType, setCurrentPageType] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -27,7 +26,15 @@ const PosePage = () => {
   const posePrecaution = precautions.find((p) => p.id === pose.id);
   const poseModification = modifications.find((m) => m.id === pose.id);
   const poseCues = cues.find((c) => c.id === pose.id);
-
+  
+  const relatedPoses = posesData.filter((p) => 
+    p.id !== pose.id &&
+    (p.type.some((type) => pose.type.includes(type)) ||
+     p.benefit.some((benefit) => pose.benefit.includes(benefit)) ||
+     p.part.some((part) => pose.part.includes(part)) ||
+     p.chakra.some((chakra) => pose.chakra.includes(chakra)))
+  );
+  
   const sources = [];
   if (poseDesc && poseDesc.source) {
     sources.push({ section: 'Description', text: poseDesc.source });
@@ -48,25 +55,6 @@ const PosePage = () => {
     sources.push({ section: 'Step-By-Step', text: poseCues.source });
   }
 
-  const relatedByType = posesData.filter((p) => 
-    p.id !== pose.id && p.type.some((type) => pose.type.includes(type))
-  );
-
-  const posesPerPage = 2;
-
-  const currentPosesType = relatedByType.slice(currentPageType * posesPerPage, (currentPageType + 1) * posesPerPage);
-
-  const totalPagesType = Math.ceil(relatedByType.length / posesPerPage);
-
-  const handlePageChangeType = (direction) => {
-    if (direction === 'next' && currentPageType < totalPagesType - 1) {
-      setCurrentPageType(currentPageType + 1);
-    } else if (direction === 'prev' && currentPageType > 0) {
-      setCurrentPageType(currentPageType - 1);
-    }
-  };
-
-
   return (
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 md:space-y-20 p-8 mx-auto">
 
@@ -83,49 +71,29 @@ const PosePage = () => {
         / {pose.name}
       </nav>
 
-      <header className="text-2xl md:text-4xl">
-        <h2>
-          {pose.name} - {poseSanskirt.translation} - {poseSanskirt.sanskrit_name}
+      <header className="relative p-6 md:p-8 flex group bg-moss border border-black rounded-2xl">
+        <h2 className="text-4xl md:text-6xl font-medium tracking-tight text-left opacity-70 relative">
+          <span className="block">
+            {pose.name}
+          </span>
+          <span className="text-2xl block italic mt-2">
+            {poseSanskirt.translation}
+          </span>
+          <span className="text-4xl text-white opacity-50">
+            {poseSanskirt.sanskrit_name}
+          </span>
         </h2>
-
+      </header>
+      
       {/* Image */}
       {pose.image && (
         <img
           src={pose.image}
           alt={pose.name}
-          style={{ maxWidth: '300px', height: 'auto', margin: '0 auto', display: 'block' }}
-          className="rounded-md"
+          style={{ maxWidth: '300px', height: 'auto' }}
+          className="rounded-md mx-auto py-12"
         />
       )}
-
-        {/* Tags */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-          {[
-            { title: "Benefits", data: pose.benefit },
-            { title: "Body Parts", data: pose.part },
-            { title: "Pose Types", data: pose.type },
-            { title: "Chakras", data: pose.chakra }
-          ].map(
-            (section, idx) =>
-              section.data.length > 0 && (
-                <div key={idx} className="bg-moss text-white text-sm p-4 rounded-xl shadow-md hover:shadow-lg transition">
-                  <p className="font-bold uppercase tracking-wide">{section.title}</p>
-                  <div className="flex flex-wrap mt-2 gap-2">
-                    {section.data.map((item, index) => (
-                      <Link
-                        key={index}
-                        to={`/poses/${section.title.toLowerCase().replace(/\s/g, '')}/${item}`}
-                        className="bg-white text-moss px-2 py-1 font-semibold rounded-lg shadow-sm hover:bg-gray-200 transition"
-                      >
-                        {item}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )
-          )}
-        </div>
-      </header>
 
       {/* Table of Contents */}
       <div className="flex flex-col lg:flex-row lg:space-x-6 text-moss">
@@ -221,62 +189,86 @@ const PosePage = () => {
         </div>
       )}
 
+      {/* Tags */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+        {[
+          { title: "Benefits", data: pose.benefit },
+          { title: "Body Parts", data: pose.part },
+          { title: "Pose Types", data: pose.type },
+          { title: "Chakras", data: pose.chakra }
+        ].map(
+          (section, idx) =>
+            section.data.length > 0 && (
+              <div key={idx} className="bg-moss text-white text-sm p-4 rounded-xl shadow-md">
+                <p className="font-bold uppercase tracking-wide">{section.title}</p>
+                <div className="flex flex-wrap mt-2 gap-2">
+                  {section.data.map((item, index) => (
+                    <Link
+                      key={index}
+                      to={`/poses/${section.title.toLowerCase().replace(/\s/g, '')}/${item}`}
+                      className="bg-white text-moss px-2 py-1 font-semibold rounded-lg shadow-sm hover:scale-105 transition"
+                    >
+                      {item}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )
+        )}
+      </div>
+
       {/* Related Poses */}
-      {relatedByType.length > 0 && (
+      {relatedPoses.length > 0 && (
         <div className="border-4 border-moss p-8 rounded-xl space-y-8">
           <p className="text-2xl md:text-4xl text-center tracking-wider my-2 hover:text-moss transition duration-300">
             Related Poses
           </p>
-          <div className="grid grid-cols-2 gap-8">
-            {currentPosesType.map((relatedPose) => {
-              const sharedCategories = pose.type.filter((type) =>
-                relatedPose.type.includes(type)
-              );
+          <div className="flex space-x-8 overflow-x-scroll">
+            {relatedPoses.map((relatedPose) => {
+              const sharedCategories = [];
+              if (pose.type.some((type) => relatedPose.type.includes(type))) {
+                sharedCategories.push('type of pose');
+              }
+              if (pose.benefit.some((b) => relatedPose.benefit.includes(b))) {
+                sharedCategories.push('benefits');
+              }
+              if (pose.part.some((part) => relatedPose.part.includes(part))) {
+                sharedCategories.push('parts of the body');
+              }
+              if (pose.chakra.some((chakra) => relatedPose.chakra.includes(chakra))) {
+                sharedCategories.push('chakras');
+              }
 
               return (
                 <Link
                   key={relatedPose.id}
                   to={`/poses/${relatedPose.name}`}
-                  className="relative group"
+                  className="relative group w-1/2 min-w-[300px]" 
                 >
-                  <div className="relative overflow-hidden rounded shadow hover:scale-105 transition transform duration-300">
+                  <div className="relative overflow-hidden rounded shadow transition transform duration-300">
                     <img
                       src={relatedPose.image}
                       alt={relatedPose.name}
-                      className="w-full h-56 object-cover rounded group-hover:opacity-80 transition-opacity duration-300"
+                      className="w-full h-56 object-cover rounded group-hover:opacity-90 transition-opacity duration-300"
                     />
-                    <div className="absolute inset-0 bg-moss bg-opacity-80 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300 text-white p-6 rounded">
+                    <div className="absolute inset-0 bg-moss flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300 text-white p-6 rounded">
                       {sharedCategories.length > 0 && (
-                        <p className="text-xs text-center font-medium tracking-wide">
-                          {relatedPose.name} is related by {sharedCategories.join(", ")}
+                        <p className="text-xs text-center font-bold tracking-wider">
+                          {relatedPose.name} is related through it's {sharedCategories.join(", ")}
                         </p>
                       )}
                     </div>
                   </div>
-                  <p className="text-sm md:text-lg text-center font-medium tracking-wide my-2">
+                  <p className="text-sm md:text-lg text-center tracking-wide my-2">
                     {relatedPose.name}
                   </p>
                 </Link>
               );
             })}
           </div>
-
-          <div className="flex justify-between mt-8">
-            <button
-              onClick={() => handlePageChangeType('prev')}
-              className={`text-moss font-medium text-lg hover:scale-110 transition duration-200 ${currentPageType === 0 ? 'invisible' : ''}`}
-            >
-              ← Prev
-            </button>
-            <button
-              onClick={() => handlePageChangeType('next')}
-              className={`text-moss font-medium text-lg hover:scale-110 transition duration-200 ${currentPageType === totalPagesType - 1 ? 'invisible' : ''}`}
-            >
-              Next →
-            </button>
-          </div>
         </div>
       )}
+
 
             
       <div className="flex flex-col text-sm">
