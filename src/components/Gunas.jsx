@@ -47,14 +47,14 @@ const Gunas = () => {
         {gunas.map((guna, index) => (
           <div
             key={index}
-            className="bg-white border rounded-xl shadow-lg p-6 flex flex-col space-y-4"
+            className="bg-white border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4"
           >
             <h3 className="text-2xl sm:text-3xl text-center">
               {guna.name}
             </h3>
             <p className="text-lg sm:text-xl text-center">{guna.description}</p>
 
-            <div className="text-base sm:text-lg">{guna.content}</div>
+            <div className="text-base sm:text-lg tracking-tight">{guna.content}</div>
           </div>
         ))}
       </div>

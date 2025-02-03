@@ -27,8 +27,7 @@ const Chakras = () => {
       description: "Personal power, confidence, and will.",
       content: (
         <>
-          <p>The Solar Plexus Chakra, or Manipura, represents our personal power, self-esteem, and confidence. It governs our ability to assert ourselves and make decisions. A balanced Solar Plexus Chakra allows us to have strong willpower and control over our actions.</p>
-          <p>When imbalanced, we may feel powerless or overly controlling.</p>
+          <p>The Solar Plexus Chakra, or Manipura, represents our personal power, self-esteem, and confidence. It governs our ability to assert ourselves and make decisions. A balanced Solar Plexus Chakra allows us to have strong willpower and control over our actions. When imbalanced, we may feel powerless or overly controlling.</p>
         </>
       ),
     },
@@ -84,14 +83,14 @@ const Chakras = () => {
         {chakras.map((chakra, index) => (
           <div
             key={index}
-            className="bg-white border rounded-xl shadow-lg p-6 flex flex-col justify-between"
+            className="bg-white border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4"
           >
             <h3 className="text-2xl sm:text-3xl text-center mb-2">
               {chakra.name}
             </h3>
             <p className="text-lg sm:text-xl text-center mb-6">{chakra.description}</p>
 
-            <div className="text-base sm:text-lg">{chakra.content}</div>
+            <div className="text-base sm:text-lg tracking-tight">{chakra.content}</div>
           </div>
         ))}
       </div>

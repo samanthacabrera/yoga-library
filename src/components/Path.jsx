@@ -98,14 +98,14 @@ const Path = () => {
         {limbs.map((limb, index) => (
           <div
             key={index}
-            className="bg-white border rounded-xl shadow-lg p-6 flex flex-col justify-between"
+            className="bg-white border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4"
           >
             <h3 className="text-2xl sm:text-3xl text-center mb-2">
               {limb.name}
             </h3>
             <p className="text-lg sm:text-xl text-center mb-6">{limb.description}</p>
 
-            <div className="text-sm sm:text-base leading-loose space-y-4">{limb.content}</div>
+            <div className="text-sm sm:text-base tracking-tight space-y-4">{limb.content}</div>
           </div>
         ))}
       </div>

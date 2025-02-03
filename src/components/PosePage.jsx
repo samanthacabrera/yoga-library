@@ -72,7 +72,7 @@ const PosePage = () => {
       </nav>
 
       <header className="relative p-6 md:p-8 flex group bg-moss border border-black rounded-2xl">
-        <h2 className="text-4xl md:text-6xl font-medium tracking-tight text-left opacity-70 relative">
+        <h2 className="text-4xl md:text-6xl tracking-tight text-left opacity-70 relative">
           <span className="block">
             {pose.name}
           </span>
@@ -200,13 +200,13 @@ const PosePage = () => {
           (section, idx) =>
             section.data.length > 0 && (
               <div key={idx} className="bg-moss text-white text-sm p-4 rounded-xl shadow-md">
-                <p className="font-bold uppercase tracking-wide">{section.title}</p>
+                <p className="font-medium tracking-wide">{section.title}</p>
                 <div className="flex flex-wrap mt-2 gap-2">
                   {section.data.map((item, index) => (
                     <Link
                       key={index}
                       to={`/poses/${section.title.toLowerCase().replace(/\s/g, '')}/${item}`}
-                      className="bg-white text-moss px-2 py-1 font-semibold rounded-lg shadow-sm hover:scale-105 transition"
+                      className="bg-white text-moss px-2 py-1 rounded-lg shadow-sm hover:scale-105 transition"
                     >
                       {item}
                     </Link>
@@ -219,7 +219,7 @@ const PosePage = () => {
 
       {/* Related Poses */}
       {relatedPoses.length > 0 && (
-        <div className="border-4 border-moss p-8 rounded-xl space-y-8">
+        <div className="border-2 border-moss p-8 rounded-2xl space-y-8">
           <p className="text-2xl md:text-4xl text-center tracking-wider my-2 hover:text-moss transition duration-300">
             Related Poses
           </p>
@@ -253,7 +253,7 @@ const PosePage = () => {
                     />
                     <div className="absolute inset-0 bg-moss flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300 text-white p-6 rounded">
                       {sharedCategories.length > 0 && (
-                        <p className="text-xs text-center font-bold tracking-wider">
+                        <p className="text-xs text-center font-medium tracking-wider">
                           {relatedPose.name} is related through it's {sharedCategories.join(", ")}
                         </p>
                       )}
@@ -269,8 +269,6 @@ const PosePage = () => {
         </div>
       )}
 
-
-            
       <div className="flex flex-col text-sm">
         <a href="https://www.flaticon.com/free-icons/workout" title="workout icons">Workout icons created by dDara - Flaticon</a>
         <a href="https://www.flaticon.com/free-icons/yoga" title="yoga icons">Yoga icons created by monkik - Flaticon</a>

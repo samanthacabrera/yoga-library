@@ -2,67 +2,103 @@ import React from "react";
 
 const Guide = () => {
     return (
-        <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
-            <div className="space-y-4">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl text-center my-12">Beginner's Guide to Yoga</h1>
-                <p>
-                    Welcome to your yoga journey. The purpose of this website is to help you learn the foundations of yoga, focusing on the top 50 common Vinyasa yoga poses.
-                </p>
-            </div>
-
-
-            <div className="w-full max-w-5xl space-y-4 bg-gray-50 border-l-4 border-gray-400 p-6 rounded-lg">
-                <h2 className="text-2xl mb-4">Common Terms in Yoga</h2>
-                <ul className="list-disc list-inside space-y-2">
-                    <li>
-                        <strong>Asana:</strong> A physical yoga posture or pose. The word "asana" translates to "seat" in Sanskrit and represents the physical aspect of yoga practice.
-                    </li>
-                    <li>
-                        <strong>Pranayama:</strong> Breath control exercises aimed at regulating energy flow and enhancing mindfulness.
-                    </li>
-                    <li>
-                        <strong>Chakra:</strong> Energy centers in the body that align with different physical and emotional functions.
-                    </li>
-                    <li>
-                        <strong>Drishti:</strong> A focused gaze or point of concentration used during yoga practice to enhance focus and balance.
-                    </li>
-                    <li>
-                        <strong>Mantra:</strong> A word, sound, or phrase repeated during meditation to aid focus and mindfulness.
-                    </li>
-                    <li>
-                        <strong>Om:</strong> A sacred sound and spiritual symbol often chanted at the beginning and end of a yoga session to signify universal connection.
-                    </li>
-                </ul>
-            </div>
+        <div className="max-w-3xl px-8 py-4 space-y-12 mx-auto">
+        <h1 className="text-2xl lg:text-4xl text-center my-12">
+            Beginner's Guide to Yoga
+        </h1>
+        {/* Introduction */}
+        <p>This guide is designed to give you a solid foundation as you begin practicing yoga. As you progress through this guide, use the website to explore and learn each pose in detail.</p>
+        <hr/>
         
-
-            <div className="w-full max-w-5xl space-y-4">
-                <h2 className="text-xl mb-1 font-medium">Safe Practice Tips</h2>
-                <p>
-                    Yoga is a practice that promotes not only physical health but also mental and emotional well-being. One of the most important principles to remember as you begin or continue your yoga journey is to listen to your body. Yoga is not about achieving a perfect pose; it is about cultivating mindfulness, self-awareness, and harmony between the body and mind. It is essential to honor where you are in your practice and allow it to evolve naturally, rather than pushing yourself to meet external expectations.
-                </p>
-                <p>
-                    <strong>Pay attention to your body’s signals:</strong> If you experience pain, discomfort, or strain during a pose, it is important to back off and adjust your posture. Remember, a slight stretch or discomfort is normal, but sharp or intense pain is a warning sign. If you feel pain, ease out of the pose and make sure your alignment is correct. Over time, as your body becomes stronger and more flexible, your capacity to safely hold certain poses will increase.
-                </p>
-                <p>
-                    <strong>Use props to support your practice:</strong> Props such as yoga blocks, straps, blankets, and bolsters are excellent tools to enhance your practice, especially if you are just starting or if you have specific needs such as limited flexibility or injury concerns. Blocks can help bring the floor closer to you in standing or seated poses, while straps allow you to extend your reach in stretches. Blankets can be used for cushioning during seated poses or to support your knees in restorative poses. These props help maintain proper alignment and make yoga poses more accessible and comfortable, allowing you to safely deepen your stretches over time.
-                </p>
-                <p>
-                    <strong>Warm up properly:</strong> Warming up your body is essential to prevent injuries and ensure your muscles and joints are prepared for more challenging movements. Begin your practice with gentle, foundational stretches and simple poses like Cat-Cow, Downward Dog, and Child’s Pose to increase blood flow and loosen your muscles. A proper warm-up also promotes mental focus, allowing you to transition more easily into the rhythm of your practice.
-                </p>
-                <p>
-                    <strong>Don’t rush through your practice:</strong> Yoga is a slow, intentional practice. It’s important not to rush or force your body into a pose. Instead, move mindfully and take your time. Breath is an integral part of yoga, so synchronize your movements with your inhalations and exhalations. Allow yourself to gradually move deeper into each pose, respecting the natural limitations of your body. Each practice should feel like a gentle unfolding rather than an intense race to a final destination.
-                </p>
-                <p>
-                    <strong>Seek guidance when possible:</strong> If you're just starting, consider taking classes with a certified yoga instructor. A teacher can offer valuable insights into your alignment and posture, provide helpful adjustments, and suggest modifications to make certain poses more accessible. As you progress, working with an instructor can help you refine your technique and deepen your practice safely. Many instructors also emphasize mindfulness, helping you stay present and focused during your practice.
-                </p>
-                <p>
-                    <strong>Practice self-compassion:</strong> Remember that yoga is a personal practice. Be kind to yourself and avoid comparing your progress to others. Every body is different, and everyone’s yoga journey is unique. Celebrate the small victories and take pride in your progress, no matter how slow it may seem. Yoga is not about perfection—it’s about embracing the process, staying present, and enjoying each moment on the mat.
-                </p>
-            </div>
-        
-
+        {/* Terminology */}
+        <p>Yoga is more than just physical movement—it's a holistic practice that includes breathwork, meditation, and philosophy. Understanding key yoga terms and concepts will help you feel more confident as you step onto the mat.</p>
+        <div className="bg-white border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+            <h2 className="text-2xl sm:text-3xl text-center mb-2">Common Terms in Yoga</h2>
+            <ul className="list-inside space-y-4 text-sm sm:text-base">
+                <li>
+                    <strong>Asana: </strong> 
+                    Asana refers to the physical postures or poses in yoga. Each asana is designed to stretch, strengthen, or relax different parts of the body. Asanas are fundamental in yoga practice, creating a balance between strength, flexibility, and body awareness. They can vary from basic seated poses to more complex inversions and balances. Performing asanas also helps to cultivate mindfulness and presence in the body.
+                </li>
+                <li>
+                    <strong>Pranayama: </strong> 
+                    Pranayama is the practice of breath control. It involves techniques that regulate the breath to increase energy (prana) in the body and calm the nervous system. Through controlled inhalation, exhalation, and retention of breath, pranayama is believed to improve mental clarity, focus, and emotional balance. Common forms include Ujjayi (victorious breath), Kapalbhati (skull shining breath), and Anulom Vilom (alternate nostril breathing).
+                </li>
+                <li>
+                    <strong>Chakra: </strong> 
+                    Chakras are energy centers within the body that are believed to influence various physical, emotional, and spiritual aspects of life. There are seven main chakras, each located along the spine and associated with different colors, elements, and functions. The first chakra (Muladhara) is located at the base of the spine, and the seventh chakra (Sahasrara) is at the top of the head. Balancing and unblocking chakras can help promote overall well-being.
+                </li>
+                <li>
+                    <strong>Drishti: </strong> 
+                    Drishti is a focused gaze or point of concentration that helps practitioners achieve better balance and awareness in their poses. It is an important tool for improving concentration and cultivating a meditative state during practice. Each asana has a recommended drishti point, which may be toward a physical object, a spot on the floor, or even internally toward a part of the body.
+                </li>
+                <li>
+                    <strong>Mantra: </strong> 
+                    A mantra is a word, sound, or phrase that is repeated during meditation to help focus the mind and evoke a specific state of consciousness. It can be a sacred syllable like "Om" or a more complex affirmation. The repetition of a mantra helps reduce mental distractions, creating a deeper connection with the self and promoting mindfulness.
+                </li>
+                <li>
+                    <strong>Om: </strong> 
+                    Om is one of the most sacred and powerful sounds in yoga, believed to represent the vibration of the universe itself. It is often chanted at the beginning and end of a yoga practice to create a sense of unity and harmony. The sound Om is said to embody the essence of life, creation, preservation, and destruction, symbolizing the interconnectedness of all beings.
+                </li>
+            </ul>
         </div>
+
+
+        {/* Preparing the Mind */}
+        <p className="text-sm sm:text-base">
+            Before you begin your practice, it’s essential to prepare your mind. These mental preparations allow you to step onto the mat with purpose, leaving behind distractions and focusing on the present moment. The following tips can help calm your mind and open up space for a peaceful and mindful practice: 
+        </p>
+        <div className="bg-white border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+            <h2 className="text-2xl sm:text-3xl text-center mb-2">Mental Preparation</h2>
+            <ul className="list-inside space-y-4 text-sm sm:text-base">
+                <li><strong>Breathing Exercises:</strong> Start with deep, diaphragmatic breathing to calm your mind and focus your attention on the present moment.</li>
+                <li><strong>Set an Intention:</strong> Decide what you want to achieve in your practice. Whether it’s to increase flexibility, calm your mind, or build strength, setting an intention can keep you focused.</li>
+                <li><strong>Clear Your Mind:</strong> Let go of any distractions or stresses of the day. Focus on your breath and be present.</li>
+            </ul>
+        </div>
+
+        {/* Preparing the Body */}
+        <p className="text-sm sm:text-base">
+            Preparing your body physically is just as important as preparing your mind. The more you tune into your body’s needs, the more effective and enjoyable your practice will be. These tips can help ensure your body is physically ready for your practice:
+        </p>
+        <div className="bg-white border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+            <h2 className="text-2xl sm:text-3xl text-center mb-2">Physical Preparation</h2>
+            <ul className="list-inside space-y-4 text-sm sm:text-base">
+                <li><strong>Wear Comfortable Clothing:</strong> Choose clothes that allow for freedom of movement. Avoid anything too tight or restrictive.</li>
+                <li><strong>Gather Props:</strong> A yoga mat is essential, but you may also want to have a block, strap, or cushion available for extra support.</li>
+                <li><strong>Hydrate:</strong> Drink water before and after your practice, but avoid drinking too much immediately before starting.</li>
+                <li><strong>Clear Your Schedule:</strong> Set aside a dedicated time for your yoga practice and remove any distractions so you can focus fully.</li>
+                <li><strong>Check in With Your Body:</strong> Assess how you feel before starting. Are there areas of tension or discomfort? Understanding your body’s state will help you practice more safely.</li>
+            </ul>
+        </div>
+        
+        {/* Routine */}
+        <p className="text-sm sm:text-base">
+            Creating a consistent yoga routine is essential for making steady progress. It helps build strength, flexibility, and mindfulness over time. As a beginner, it’s important to start with a simple, manageable routine and gradually increase the intensity. 
+        </p>
+        <div className="bg-white border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+            <h2 className="text-2xl sm:text-3xl text-center mb-2">Building Your Yoga Routine</h2>
+            <ul className="list-inside space-y-4 text-sm sm:text-base">
+                <li><strong>Start Slow:</strong> Begin with short sessions (10-15 minutes) and gradually increase the time as you feel more comfortable.</li>
+                <li><strong>Include a Warm-Up:</strong> Start each session with gentle stretches or a few rounds of Sun Salutations to prepare your body.</li>
+                <li><strong>Incorporate Breathing Exercises:</strong> Add pranayama to your practice to help with focus and relaxation.</li>
+                <li><strong>End with Relaxation:</strong> Finish each practice with Savasana (Corpse Pose) to allow your body to integrate the benefits of the practice.</li>
+            </ul>
+        </div>
+    
+        {/* Tips */}
+         <p className="text-sm sm:text-base">
+                Here are a few safe practice tips to help ensure that your yoga practice is enjoyable and injury-free:
+        </p>
+        <div className="bg-white border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+            <h2 className="text-2xl sm:text-3xl text-center mb-2">Safe Practice Tips</h2>
+            <div className="list-inside space-y-4 text-sm sm:text-base">
+                <p><strong>Listen to your body:</strong> Avoid pain or strain, and adjust your posture if needed.</p>
+                <p><strong>Use props:</strong> Blocks, straps, and blankets can help improve alignment.</p>
+                <p><strong>Warm up properly:</strong> Prepare your muscles with gentle stretches before deeper poses.</p>
+                <p><strong>Stay mindful:</strong> Avoid rushing through poses. Take your time, stay present, and explore how each posture feels in your body.</p>
+            </div>
+        </div>
+    </div>
     );
 };
 
