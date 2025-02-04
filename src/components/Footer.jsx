@@ -4,11 +4,11 @@ import PoseList from "./PoseList";
 
 const Footer = () => {
     return (
-        <div className="bg-gray-100">
+        <div className="bg-moss bg-opacity-90">
 
             <PoseList/>
 
-            <div className="flex justify-around text-sm opacity-50 p-2 lg:p-4">
+            <div className="flex justify-between text-sm text-white opacity-50 p-2 lg:p-4">
                 <Link to="/privacy-policy" className="hover:italic hover:underline">
                     Privacy Policy
                 </Link>

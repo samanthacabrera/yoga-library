@@ -5,37 +5,39 @@ import sanskritsData from '../data/sanskrits.json';
 
 const PoseList = () => {
   const [poses, setPoses] = useState([]);
-  const [sortOption, setSortOption] = useState('commonName'); 
+  const [sortOption, setSortOption] = useState('commonName');
 
   useEffect(() => {
     const mergedPoses = posesData.map(pose => {
       const sanskrit = sanskritsData.find(item => item.id === pose.id);
       return {
         ...pose,
-        commonName: pose.name, 
-        sanskritName: sanskrit ? sanskrit.translation || "" : "", 
+        commonName: pose.name,
+        sanskritName: sanskrit ? sanskrit.translation || "" : "",
       };
     });
     setPoses(mergedPoses);
   }, []);
 
   return (
-     <div className="bg-gray-100 mt-40">
-      <div className="flex justify-between p-4 md:px-8">
-        <h3 className="tracking-wide">Index of Top 50 Poses In Yoga</h3>
-        <div className="flex items-center text-xs md:text-sm space-x-2">
+    <div className="mt-40 px-4 sm:px-8 md:px-12">
+      <div className="flex flex-col md:flex-row justify-between">
+        <h3 className="text-white text-lg lg:text-2xl tracking-wide font-medium my-12">
+          Poses Index
+        </h3>
+         <div className="flex text-white">
           <button
             onClick={() => setSortOption('commonName')}
-            className={`px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out ${
-              sortOption === 'commonName' ? 'bg-moss text-white' : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+            className={`px-4 py-2 transition-all duration-200 ${
+              sortOption === 'commonName' ? 'font-bold' : 'hover:scale-105'
             }`}
           >
             Common Name
           </button>
           <button
             onClick={() => setSortOption('sanskritName')}
-            className={`px-4 py-2 rounded-lg transition-colors duration-300 ease-in-out ${
-              sortOption === 'sanskritName' ? 'bg-moss text-white' : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+            className={`px-4 py-2 transition-all duration-200 ${
+              sortOption === 'sanskritName' ? 'font-bold' : 'hover:scale-105'
             }`}
           >
             Sanskrit Name
@@ -44,12 +46,12 @@ const PoseList = () => {
       </div>
 
       {poses.length === 0 ? (
-        <p className="text-center py-8 text-gray-600">No poses available.</p>
+        <p className="text-center">No poses available.</p>
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 p-4 md:px-8 text-xs md:text-sm">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-12">
           {poses.map((pose) => (
-            <div key={pose.id} className="group relative flex items-center justify-center p-4 bg-white rounded-lg shadow hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300">
-              <Link to={`/poses/${pose.name}`} >
+            <div key={pose.id} className="p-4 bg-white border-2 rounded-2xl border-moss">
+              <Link to={`/poses/${pose.name}`} className="block text-sm font-medium">
                 {sortOption === 'sanskritName' ? pose.sanskritName : pose.commonName}
               </Link>
             </div>

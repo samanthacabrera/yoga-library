@@ -140,18 +140,22 @@ const CategoryPage = () => {
 
   const getHeadingText = () => {
     if (categoryType && categoryValue) {
-      const formattedValue = categoryValue.charAt(0).toUpperCase() + categoryValue.slice(1);
+      const formattedValue = categoryValue
+        .split(" ")
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(" ");
+        
       if (categoryType === "type") {
-        return `Explore ${formattedValue} Yoga Poses`;
+        return `${formattedValue} Yoga Poses`;
       } else if (categoryType === "benefit") {
-        return `Explore Yoga Poses to ${formattedValue}`;
+        return `Yoga Poses to ${formattedValue}`;
       } else if (categoryType === "chakra") {
-        return `Explore Poses for the ${formattedValue} Chakra`;
+        return `Poses for the ${formattedValue} Chakra`;
       } else if (categoryType === "part") {
-        return `Explore Poses for the ${formattedValue}`;
+        return `Poses for the ${formattedValue}`;
       }
     }
-    return "Explore All Yoga Poses";
+    return "All Yoga Poses";
   };
 
   const getDescText = () => {
@@ -164,9 +168,8 @@ const CategoryPage = () => {
 
   return (
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
-
-      <h2 className="text-2xl sm:text-3xl md:text-4xl text-center mt-12">Yoga Pose Categories</h2>
-      <div className="flex justify-center gap-4">
+      <h1 className="heading text-2xl lg:text-4xl">Yoga Pose Directory</h1>
+      <div className="flex gap-4">
         <Link to="/poses">
         <button
           onClick={() => toggleCategory("all")}
@@ -208,8 +211,8 @@ const CategoryPage = () => {
         ))}
       </div>
 
-      <h2 className="text-4xl">{getHeadingText()}</h2>
-      <p className="text-lg text-gray-600">{getDescText()}</p>
+      <h2 className="text-lg lg:text-2xl">{getHeadingText()}</h2>
+      <p className="lg:text-lg text-gray-600">{getDescText()}</p>
 
       {filteredPoses.length === 0 ? (
         <p>No poses found for this category.</p>

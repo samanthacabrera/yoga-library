@@ -247,7 +247,7 @@
     "name": "Lizard Pose",
     "image": "/lizard-pose.png",
     "chakra": ["Root", "Solar Plexus", "Sacral"],
-    "type": ["Hip Opener", "Strength", "Strength"],
+    "type": ["Hip Opener", "Strength"],
     "benefit": ["Enhance Openness", "Increase Flexibility"],
     "part": ["Hips"]
   },

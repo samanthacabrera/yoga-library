@@ -21,8 +21,9 @@ body {
   display: none;
 }
 
-h1,
-h2 {
+.heading {
   color: #8a9a5b;
   font-weight: 400;
+  text-align: center;
+  margin: 48px;
 }

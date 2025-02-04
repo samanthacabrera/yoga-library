@@ -26,13 +26,9 @@ const PosePage = () => {
   const posePrecaution = precautions.find((p) => p.id === pose.id);
   const poseModification = modifications.find((m) => m.id === pose.id);
   const poseCues = cues.find((c) => c.id === pose.id);
-  
   const relatedPoses = posesData.filter((p) => 
-    p.id !== pose.id &&
-    (p.type.some((type) => pose.type.includes(type)) ||
-     p.benefit.some((benefit) => pose.benefit.includes(benefit)) ||
-     p.part.some((part) => pose.part.includes(part)) ||
-     p.chakra.some((chakra) => pose.chakra.includes(chakra)))
+    p.id !== pose.id && 
+    p.type.some((type) => pose.type.includes(type))
   );
   
   const sources = [];
@@ -71,7 +67,7 @@ const PosePage = () => {
         / {pose.name}
       </nav>
 
-      <header className="relative p-6 md:p-8 flex group bg-moss border border-black rounded-2xl">
+      <header className="relative p-6 md:p-8 flex group bg-moss bg-opacity-90 border border-black rounded-2xl">
         <h2 className="text-4xl md:text-6xl tracking-tight text-left opacity-70 relative">
           <span className="block">
             {pose.name}
@@ -95,67 +91,67 @@ const PosePage = () => {
         />
       )}
 
-      {/* Table of Contents */}
-      <div className="flex flex-col lg:flex-row lg:space-x-6 text-moss">
-        <a href="#description" className="hover:underline">
-          Overview
-        </a>
-        <a href="#benefits" className="hover:underline">
-          Benefits
-        </a>
-        <a href="#origins" className="hover:underline">
-          Origins
-        </a>
-        <a href="#precautions" className="hover:underline">
-          Precautions
-        </a>
-        <a href="#modifications" className="hover:underline">
-          Modifications
-        </a>
-        <a href="#cues" className="hover:underline">
-          Step-By-Step
-        </a>
-      </div>
-
+   {/* Table of Contents */}
+    <div className="sticky top-0 z-10 bg-white flex flex-col lg:flex-row lg:space-x-2 text-moss font-bold uppercase tracking-tight">
+      <a href="#description" className="border-b-4 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+        Overview
+      </a>
+      <a href="#benefits" className="border-b-4 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+        Benefits
+      </a>
+      <a href="#origins" className="border-b-4 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+        Origins
+      </a>
+      <a href="#precautions" className="border-b-4 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+        Precautions
+      </a>
+      <a href="#modifications" className="border-b-4 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+        Modifications
+      </a>
+      <a href="#cues" className="border-b-4 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+        Step-By-Step
+      </a>
+    </div>
+      
       {/* Overview */}
       {poseDesc && poseDesc.desc && (
         <div id="description" className="group">
-          <h3 className="text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Overview</h3>
+          <h3 className="font-medium text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Overview</h3>
           <p>{poseDesc.desc}</p>
         </div>
       )}
       {/* Benefits */}
       {poseBenefit && poseBenefit.benefit && (
         <div id="benefits" className="group">
-          <h3 className="text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Benefits</h3>
+          <h3 className="font-medium text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Benefits</h3>
           <p>{poseBenefit.benefit}</p>
         </div>
       )}
       {/* Origins */}
       {poseSanskirt && poseSanskirt.context && (
         <div id="origins" className="group">
-          <h3 className="text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Origins</h3>
+          <h3 className="font-medium text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Origins</h3>
           <p>{poseSanskirt.context}</p>
         </div>
       )}
       {/* Precautions */}
       {posePrecaution && posePrecaution.precaution && (
         <div id="precautions" className="group">
-          <h3 className="text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Precautions</h3>
+          <h3 className="font-medium text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Precautions</h3>
           <p>{posePrecaution.precaution}</p>
         </div>
       )}
       {/* Modifications */}
       {poseModification && poseModification.modification && (
         <div id="modifications" className="group">
-          <h3 className="text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Modifications</h3>
+          <h3 className="font-medium text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Modifications</h3>
           <p>{poseModification.modification}</p>
         </div>
       )}
       {/* Cues */}
       {poseCues && poseCues.cues && (
         <div id="cues" className="group">
-          <h3 className="text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Step-By-Step Breakdown</h3>
+          <h3 className="font-medium text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Step-By-Step Breakdown</h3>
           <ol className="list-decimal list-inside">
             {poseCues.cues.map((cue, index) => {
               const linkPoseNames = (cueText) => {
@@ -199,14 +195,14 @@ const PosePage = () => {
         ].map(
           (section, idx) =>
             section.data.length > 0 && (
-              <div key={idx} className="bg-moss text-white text-sm p-4 rounded-xl shadow-md">
-                <p className="font-medium tracking-wide">{section.title}</p>
+              <div key={idx} className="bg-moss bg-opacity-90 text-white text-sm p-4 rounded-xl shadow-md">
+                <p className="font-semibold tracking-wide">{section.title}</p>
                 <div className="flex flex-wrap mt-2 gap-2">
                   {section.data.map((item, index) => (
                     <Link
                       key={index}
                       to={`/poses/${section.title.toLowerCase().replace(/\s/g, '')}/${item}`}
-                      className="bg-white text-moss px-2 py-1 rounded-lg shadow-sm hover:scale-105 transition"
+                      className="bg-white text-moss font-medium px-2 py-1 rounded-lg hover:scale-105 transition"
                     >
                       {item}
                     </Link>
@@ -220,25 +216,11 @@ const PosePage = () => {
       {/* Related Poses */}
       {relatedPoses.length > 0 && (
         <div className="border-2 border-moss p-8 rounded-2xl space-y-8">
-          <p className="text-2xl md:text-4xl text-center tracking-wider my-2 hover:text-moss transition duration-300">
+          <p className="text-2xl md:text-4xl text-center tracking-wider my-2">
             Related Poses
           </p>
           <div className="flex space-x-8 overflow-x-scroll">
             {relatedPoses.map((relatedPose) => {
-              const sharedCategories = [];
-              if (pose.type.some((type) => relatedPose.type.includes(type))) {
-                sharedCategories.push('type of pose');
-              }
-              if (pose.benefit.some((b) => relatedPose.benefit.includes(b))) {
-                sharedCategories.push('benefits');
-              }
-              if (pose.part.some((part) => relatedPose.part.includes(part))) {
-                sharedCategories.push('parts of the body');
-              }
-              if (pose.chakra.some((chakra) => relatedPose.chakra.includes(chakra))) {
-                sharedCategories.push('chakras');
-              }
-
               return (
                 <Link
                   key={relatedPose.id}
@@ -249,14 +231,10 @@ const PosePage = () => {
                     <img
                       src={relatedPose.image}
                       alt={relatedPose.name}
-                      className="w-full h-56 object-cover rounded group-hover:opacity-90 transition-opacity duration-300"
+                      className="w-full h-56 object-cover rounded group-hover:opacity-0 transition-opacity duration-300"
                     />
-                    <div className="absolute inset-0 bg-moss flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300 text-white p-6 rounded">
-                      {sharedCategories.length > 0 && (
-                        <p className="text-xs text-center font-medium tracking-wider">
-                          {relatedPose.name} is related through it's {sharedCategories.join(", ")}
-                        </p>
-                      )}
+                    <div className="absolute inset-0 bg-moss bg-opacity-90 group-hover:border-moss border border-transparent flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300 text-white text-center p-6 rounded">
+                      <p className="font-medium trackint-tight leading-tight">{relatedPose.name} is a related pose to {pose.name}. Click to learn more</p>
                     </div>
                   </div>
                   <p className="text-sm md:text-lg text-center tracking-wide my-2">
@@ -269,7 +247,7 @@ const PosePage = () => {
         </div>
       )}
 
-      <div className="flex flex-col text-sm">
+      <div className="flex flex-col text-sm opacity-50">
         <a href="https://www.flaticon.com/free-icons/workout" title="workout icons">Workout icons created by dDara - Flaticon</a>
         <a href="https://www.flaticon.com/free-icons/yoga" title="yoga icons">Yoga icons created by monkik - Flaticon</a>
         <a href="https://www.flaticon.com/free-icons/lunge" title="lunge icons">Lunge icons created by Eideticmemo - Flaticon</a>
