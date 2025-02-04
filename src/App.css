@@ -10,7 +10,6 @@ body {
   font-weight: 200;
   line-height: 250%;
   scroll-behavior: smooth;
-  cursor: none;
 }
 
 ::selection {
@@ -22,30 +21,8 @@ body {
   display: none;
 }
 
-a,
-button,
-input,
-textarea,
-select {
-  cursor: none;
-}
-
-#zen-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  background-color: #8a9a5b80;
-  border: 1px solid #8a9a5b80;
-  border-radius: 50%;
-  box-shadow: 0 0 8px rgba(141, 183, 138, 0.5);
-  pointer-events: none;
-  transition: width 0.3s ease-out, height 0.3s ease-out;
-  z-index: 9999;
-}
-
-#zen-cursor.hovered {
-  width: 25px;
-  height: 25px;
+h1,
+h2 {
+  color: #8a9a5b;
+  font-weight: 400;
 }
