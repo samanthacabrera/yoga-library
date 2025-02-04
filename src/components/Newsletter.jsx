@@ -1,66 +1,42 @@
 import React, { useState, useEffect } from "react";
 
 const Newsletter = () => {
-    const mediumURL = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@samantha.n.cabrera";
-    
-    const [blog, setBlog] = useState({
-        items: [],
-        error: null
-    });
-    
+    const [blog, setBlog] = useState({ items: [], error: null });
+
     useEffect(() => {
-        fetch(mediumURL)
+        fetch("/blog.json") 
             .then(response => response.json())
             .then(data => {
-                const yogaArticles = data.items.filter(post => 
+                const yogaArticles = data.items.filter(post =>
                     post.title.toLowerCase().includes("yoga") || 
                     post.description.toLowerCase().includes("yoga")
                 );
-                setBlog({
-                    items: yogaArticles,
-                });
+                setBlog({ items: yogaArticles });
             })
-            .catch(err => {
-                setBlog({ error: err.message });
-            });
+            .catch(err => setBlog({ error: err.message }));
     }, []);
-    
+
     const totalArticles = blog.items.length;
 
     const displayBlogs = () => {
-        if (blog.items) {
-            return blog.items.map((post, index) => (
-                <li 
-                    key={index} 
-                    className="group flex flex-col md:flex-row items-start md:items-center space-y-6 md:space-y-0 md:space-x-6 bg-white border border-moss rounded-lg shadow p-6"
-                >
-                    <span className="text-2xl text-gray-400">
-                        {String(totalArticles - index).padStart(2, "0")}
-                    </span>
-                    <div className="flex-1">
-                        <div className="text-sm text-gray-500 mb-2">
-                            Published on {new Date(post.pubDate).toLocaleDateString()}
-                        </div>
-                        <a 
-                            href={post.link} 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
-                            className="text-2xl font-light tracking-wide leading-snug"
-                        >
-                            {post.title}
-                        </a>
+        return blog.items.map((post, index) => (
+            <li key={index} className="group flex flex-col md:flex-row items-start md:items-center space-y-6 md:space-y-0 md:space-x-6 bg-white border border-moss rounded-lg shadow p-6">
+                <span className="text-2xl text-gray-400">
+                    {String(totalArticles - index).padStart(2, "0")}
+                </span>
+                <div className="flex-1">
+                    <div className="text-sm text-gray-500 mb-2">
+                        Published on {new Date(post.pubDate).toLocaleDateString()}
                     </div>
-                    <a
-                        href={post.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block px-4 py-2 text-sm text-gray-800 bg-gray-100 border border-gray-300 hover:bg-moss hover:text-white transition-transform duration-300 rounded px-2 py-1"
-                    >
-                        Read More
+                    <a href={post.link} target="_blank" rel="noopener noreferrer" className="text-2xl font-light tracking-wide leading-snug">
+                        {post.title}
                     </a>
-                </li>
-            ));
-        }
+                </div>
+                <a href={post.link} target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 text-sm text-gray-800 bg-gray-100 border border-gray-300 hover:bg-moss hover:text-white transition-transform duration-300 rounded px-2 py-1">
+                    Read More
+                </a>
+            </li>
+        ));
     };
 
     return (
