@@ -72,9 +72,10 @@ const PosePage = () => {
           <span className="block">
             {pose.name}
           </span>
-          <span className="text-2xl block italic mt-2">
-            {poseSanskirt.translation}
+          <span className="text-2xl tracking-wide block italic mt-4">
+            {poseSanskirt.sanskrit_translation} 
           </span>
+          <span className="block text-lg">{poseSanskirt.sanskrit_pronunciation}</span>
           <span className="text-4xl text-white opacity-50">
             {poseSanskirt.sanskrit_name}
           </span>
@@ -87,12 +88,12 @@ const PosePage = () => {
           src={pose.image}
           alt={pose.name}
           style={{ maxWidth: '300px', height: 'auto' }}
-          className="rounded-md mx-auto py-12"
+          className="mx-auto "
         />
       )}
 
    {/* Table of Contents */}
-    <div className="sticky top-0 z-10 bg-white flex flex-col lg:flex-row lg:space-x-2 text-moss font-bold uppercase tracking-tight">
+    <div className="bg-white flex flex-col lg:items-center lg:flex-row lg:space-x-2 lg:sticky top-0 z-10 lg:py-2 text-moss text-sm font-bold uppercase">
       <a href="#description" className="border-b-4 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
         Overview
       </a>
@@ -216,7 +217,7 @@ const PosePage = () => {
       {/* Related Poses */}
       {relatedPoses.length > 0 && (
         <div className="border-2 border-moss p-8 rounded-2xl space-y-8">
-          <p className="text-2xl md:text-4xl text-center tracking-wider my-2">
+          <p className="text-2xl md:text-4xl text-center tracking-wider font-medium my-2">
             Related Poses
           </p>
           <div className="flex space-x-8 overflow-x-scroll">
