@@ -40,7 +40,7 @@ const Hero = () => {
             This website is more than just a collection of yoga poses. It’s a reflection of my journey, and a way to share what yoga has given me. My goal was to create a space that’s simple and welcoming, where people—whether you’re just starting out or looking to deepen your practice—can find helpful resources and support. I’ve worked hard to ensure that the platform is easy to use, with the hope that it can be a helpful guide for anyone looking to explore yoga.
           </p>
           <p>
-            As someone who loves to build and improve things, I’m always working to make this site better. If you have any feedback or suggestions, I’d love to hear from you. Your input will help me continue to improve and refine the website, so it can serve you and others in the best way possible.
+            As someone who loves to build and improve things, I’m always working to make this site better. If you have any feedback or suggestions, feel free to email <span className="italic">samantha.n.cabrera@gmail.com</span>. Your input helps me make the site better for you and others.
           </p>
           <p>
             Thank you for being part of this community. I hope that this website can be a source of inspiration, support, and guidance on your own yoga journey.
