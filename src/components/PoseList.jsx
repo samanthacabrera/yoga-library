@@ -13,7 +13,7 @@ const PoseList = () => {
       return {
         ...pose,
         commonName: pose.name,
-        sanskritName: sanskrit ? sanskrit.translation || "" : "",
+        sanskritName: sanskrit ? sanskrit.sanskrit_translation || "" : "",
       };
     });
     setPoses(mergedPoses);
