@@ -6,94 +6,161 @@ const Chakras = () => {
       name: "Root Chakra",
       description: "Grounding, stability, and security.",
       content: (
-        <>
-          <p>The Root Chakra, or Muladhara, is the foundation of our being, representing our connection to the earth. It is associated with feelings of safety, security, and stability. When this chakra is balanced, we feel grounded and secure in our lives.</p>
-          <p>Imbalances can lead to feelings of fear, anxiety, and instability.</p>
-        </>
+        <div className="space-y-12">
+          <p>
+            The Root Chakra, or Muladhara, is the foundation of our being, representing our connection to the earth. It is associated with feelings of safety, security, and stability. When this chakra is balanced, we feel grounded and secure in our lives.
+          </p>
+          <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+            <p>Imbalances can lead to:</p>
+            <ul>
+              <li>Feelings of fear and anxiety</li>
+              <li>Instability in daily life</li>
+              <li>Lack of motivation or energy</li>
+            </ul>
+          </div>
+          <p>Balancing the Root Chakra helps us cultivate a strong foundation, resilience, and a deep sense of belonging.</p>
+        </div>
       ),
     },
     {
       name: "Sacral Chakra",
       description: "Creativity, pleasure, and emotional balance.",
       content: (
-        <>
-          <p>The Sacral Chakra, or Svadhisthana, governs our emotions, creativity, and sexuality. It is the center of pleasure, joy, and creativity. A balanced Sacral Chakra allows us to express ourselves freely and experience life fully.</p>
-          <p>When blocked, it can lead to emotional instability, guilt, or lack of creativity.</p>
-        </>
+        <div className="space-y-12">
+          <p>
+            The Sacral Chakra, or Svadhisthana, governs our emotions, creativity, and sexuality. It is the center of pleasure, joy, and creative energy. A balanced Sacral Chakra allows us to express ourselves freely and experience life fully.
+          </p>
+          <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+            <p>Imbalances can manifest as:</p>
+            <ul>
+              <li>Emotional instability</li>
+              <li>Guilt or suppressed creativity</li>
+              <li>Difficulty forming meaningful connections</li>
+            </ul>
+          </div>
+          <p>Through movement, creative expression, and emotional awareness, we can restore balance to the Sacral Chakra.</p>
+        </div>
       ),
     },
     {
       name: "Solar Plexus Chakra",
       description: "Personal power, confidence, and will.",
       content: (
-        <>
-          <p>The Solar Plexus Chakra, or Manipura, represents our personal power, self-esteem, and confidence. It governs our ability to assert ourselves and make decisions. A balanced Solar Plexus Chakra allows us to have strong willpower and control over our actions. When imbalanced, we may feel powerless or overly controlling.</p>
-        </>
+        <div className="space-y-12">
+          <p>
+            The Solar Plexus Chakra, or Manipura, represents our personal power, self-esteem, and confidence. It governs our ability to assert ourselves and make decisions with clarity.
+          </p>
+          <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+            <p>Signs of imbalance include:</p>
+            <ul>
+              <li>Low self-esteem and insecurity</li>
+              <li>Feeling powerless or overly controlling</li>
+              <li>Lack of motivation or purpose</li>
+            </ul>
+          </div>
+          <p>Strengthening the Solar Plexus Chakra cultivates self-trust, discipline, and inner power.</p>
+        </div>
       ),
     },
     {
       name: "Heart Chakra",
       description: "Love, compassion, and connection.",
       content: (
-        <>
-          <p>The Heart Chakra, or Anahata, is the center of love, compassion, and empathy. It allows us to connect with others, experience unconditional love, and feel a deep sense of compassion. A balanced Heart Chakra brings harmony to our relationships.</p>
-          <p>When blocked, we may feel isolated or have difficulty connecting with others emotionally.</p>
-        </>
+        <div className="space-y-12">
+          <p>
+            The Heart Chakra, or Anahata, is the center of love, compassion, and emotional connection. It allows us to experience deep relationships and self-acceptance.
+          </p>
+          <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+            <p>When blocked, it can result in:</p>
+            <ul>
+              <li>Fear of intimacy or vulnerability</li>
+              <li>Holding onto grudges or resentment</li>
+              <li>Feeling emotionally disconnected from others</li>
+            </ul>
+          </div>
+          <p>By opening the Heart Chakra, we create space for love, empathy, and harmonious relationships.</p>
+        </div>
       ),
     },
     {
       name: "Throat Chakra",
       description: "Communication, expression, and truth.",
       content: (
-        <>
-          <p>The Throat Chakra, or Vishuddha, governs our ability to communicate and express ourselves. It is associated with truth, authenticity, and clear communication. A balanced Throat Chakra allows us to speak our truth with clarity and confidence.</p>
-          <p>Imbalances can cause issues with communication or fear of expressing oneself.</p>
-        </>
+        <div className="space-y-12">
+          <p>
+            The Throat Chakra, or Vishuddha, governs our ability to communicate and express ourselves authentically. It encourages honesty, clarity, and confident self-expression.
+          </p>
+          <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+            <p>Imbalances may lead to:</p>
+            <ul>
+              <li>Fear of speaking one's truth</li>
+              <li>Difficulty expressing thoughts and emotions</li>
+              <li>Over-talking or dishonesty</li>
+            </ul>
+          </div>
+          <p>Practicing mindful speech and creative expression helps restore balance to the Throat Chakra.</p>
+        </div>
       ),
     },
     {
       name: "Third Eye Chakra",
       description: "Intuition, perception, and wisdom.",
       content: (
-        <>
-          <p>The Third Eye Chakra, or Ajna, is the center of intuition, perception, and inner wisdom. It helps us see beyond the physical world and trust our intuition. A balanced Third Eye Chakra enhances our ability to make wise decisions and see the bigger picture.</p>
-          <p>When blocked, it can cause confusion, lack of clarity, and inability to trust one's intuition.</p>
-        </>
+        <div className="space-y-12">
+          <p>
+            The Third Eye Chakra, or Ajna, is the center of intuition, perception, and wisdom. It enhances our ability to see beyond the physical world and trust our inner knowing.
+          </p>
+          <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+            <p>Signs of imbalance include:</p>
+            <ul>
+              <li>Confusion and lack of clarity</li>
+              <li>Ignoring intuition</li>
+              <li>Over-reliance on logic without spiritual insight</li>
+            </ul>
+          </div>
+          <p>By cultivating mindfulness and meditation, we strengthen the Third Eye Chakra and deepen our intuitive abilities.</p>
+        </div>
       ),
     },
     {
       name: "Crown Chakra",
       description: "Spiritual connection, consciousness, and enlightenment.",
       content: (
-        <>
-          <p>The Crown Chakra, or Sahasrara, represents our spiritual connection and higher consciousness. It is associated with enlightenment, inner peace, and the realization of our divine nature. A balanced Crown Chakra allows us to experience oneness with the universe.</p>
-          <p>Imbalances can cause feelings of disconnection or spiritual emptiness.</p>
-        </>
+        <div className="space-y-12">
+          <p>
+            The Crown Chakra, or Sahasrara, represents our connection to higher consciousness and divine wisdom. It allows us to experience spiritual awakening and inner peace.
+          </p>
+          <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+            <p>Blockages may cause:</p>
+            <ul>
+              <li>Feelings of disconnection or isolation</li>
+              <li>Resistance to spiritual growth</li>
+              <li>Lack of purpose or direction</li>
+            </ul>
+          </div>
+          <p>By nurturing the Crown Chakra, we open ourselves to enlightenment and deep inner wisdom.</p>
+        </div>
       ),
     },
   ];
 
   return (
     <div className="max-w-3xl px-8 py-4 mx-auto">
-      <h1 className="heading text-2xl lg:text-4xl">
-        The Seven Chakras
-      </h1>
-
-      <div className="grid grid-cols-1 gap-8">
-        {chakras.map((chakra, index) => (
-          <div
-            key={index}
-            className="bg-white border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4"
-          >
-            <h3 className="text-2xl sm:text-3xl text-center mb-2">
+      <h1 className="heading my-12 lg:mb-40 text-4xl lg:text-6xl">The Seven Chakras</h1>
+      {chakras.map((chakra, index) => (
+        <div
+          key={index}
+          className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16 lg:space-y-0 space-y-12 pb-20"
+        >
+          <div>
+            <h3 className="text-2xl text-left font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[350px]">
               {chakra.name}
             </h3>
-            <p className="text-lg sm:text-xl text-center mb-6">{chakra.description}</p>
-
-            <div className="text-base sm:text-lg tracking-tight">{chakra.content}</div>
+            <p className="mt-2 text-lg sm:text-xl text-charcoal">{chakra.description}</p>
           </div>
-        ))}
-      </div>
+          <div className="lg:col-span-2">{chakra.content}</div>
+        </div>
+      ))}
     </div>
   );
 };

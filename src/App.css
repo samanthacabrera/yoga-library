@@ -22,9 +22,9 @@ body {
 }
 
 .heading {
-  color: #8a9a5b;
+  color: #8a9a5bb8;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }

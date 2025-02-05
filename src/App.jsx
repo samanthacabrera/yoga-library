@@ -20,7 +20,7 @@ const App = () => {
   return (
     <Router>  
       <header className="flex justify-between m-2">
-        <Link to="/">Learn Yoga Online</Link>
+        <Link to="/" className="heading">Learn Yoga Online</Link>
         <Search />
       </header>
 

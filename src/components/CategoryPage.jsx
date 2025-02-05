@@ -168,53 +168,65 @@ const CategoryPage = () => {
 
   return (
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
-      <h1 className="heading text-2xl lg:text-4xl">Yoga Pose Directory</h1>
-      <div className="flex gap-2 justify-center">
-      <Link to="/poses">
-        <button
-          onClick={() => toggleCategory("all")}
-          className={`px-6 py-1 font-medium border-2 rounded-lg transition-all duration-300 ${
-            activeCategories.all ? 'bg-moss text-white border-moss' : 'bg-transparent text-gray-700 border-gray-300'
-          } hover:bg-moss hover:text-white hover:border-moss focus:outline-none focus:ring-4 focus:ring-moss focus:ring-opacity-30`}
-        >
-          <span className="relative z-10">All</span>
-        </button>
-      </Link>
-      {["type", "benefit", "chakra", "part"].map((categoryType) => (
-        <button
-          key={categoryType}
-          onClick={() => toggleCategory(categoryType)}
-          className={`px-6 py-1 font-medium border-2 rounded-lg transition-all duration-300 ${
-            activeCategories[categoryType] ? 'bg-moss text-white border-moss' : 'bg-transparent text-gray-700 border-gray-300'
-          } hover:bg-moss hover:text-white hover:border-moss focus:outline-none focus:ring-4 focus:ring-moss focus:ring-opacity-30`}
-        >
-          <span className="relative z-10">
+     <h1 className="heading my-12 text-4xl lg:text-6xl">Yoga Pose Directory</h1>
+
+      <div className="flex gap-2 justify-center text-sm lg:text-lg">
+        <Link to="/poses">
+          <button
+            onClick={() => toggleCategory("all")}
+            className={`px-6 py-2 font-medium border rounded-md transition-all duration-300 tracking-wide 
+              ${
+                activeCategories.all
+                  ? "bg-moss text-white border-moss"
+                  : "bg-transparent border-charcoal border-opacity-70"
+              } 
+              hover:bg-moss hover:text-white hover:border-moss focus:outline-none focus:ring-4 focus:ring-moss focus:ring-opacity-30`}
+          >
+            All
+          </button>
+        </Link>
+
+        {["type", "benefit", "chakra", "part"].map((categoryType) => (
+          <button
+            key={categoryType}
+            onClick={() => toggleCategory(categoryType)}
+            className={`px-6 py-2 font-medium border rounded-md transition-all duration-300 tracking-wide
+              ${
+                activeCategories[categoryType]
+                  ? "bg-moss text-white border-moss"
+                  : "bg-transparent border-charcoal border-opacity-70"
+              } 
+              hover:bg-moss hover:text-white hover:border-moss focus:outline-none focus:ring-4 focus:ring-moss focus:ring-opacity-30`}
+          >
             {categoryType.charAt(0).toUpperCase() + categoryType.slice(1)}
-          </span>
-        </button>
-      ))}
-    </div>
-    
-      <div className="flex flex-wrap gap-1">
-        {categories.map((category) => (
-          activeCategories[category.type] && (
-            <div key={category.type}>
-              <h4>{category.type.charAt(0).toUpperCase() + category.type.slice(1)}</h4>
-              <div className="flex flex-wrap gap-2">
-                {category.values.map((value) => (
-                  <Link
-                    key={value}
-                    onClick={() => toggleCategory("close")}
-                    to={`/poses/${category.type}/${value.toLowerCase()}`}
-                    className="px-2 py-1 bg-gray-100 text-sm border rounded-lg hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300"
-                  >
-                    {value}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          )
+          </button>
         ))}
+      </div>
+
+      <div className="flex flex-wrap gap-4 mt-8">
+        {categories.map(
+          (category) =>
+            activeCategories[category.type] && (
+              <div key={category.type} className="w-full">
+                <h4 className="text-lg lg:text-2xl tracking-wide text-charcoal mb-2">
+                  {category.type}
+                </h4>
+                <div className="flex flex-wrap gap-3">
+                  {category.values.map((value) => (
+                    <Link
+                      key={value}
+                      onClick={() => toggleCategory("close")}
+                      to={`/poses/${category.type}/${value.toLowerCase()}`}
+                      className="px-3 py-1 text-xs lg:text-sm rounded-full border border-charcoal bg-transparent text-charcoal tracking-tight transition-all duration-200 
+                        hover:bg-moss hover:text-white hover:border-moss"
+                    >
+                      {value}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )
+        )}
       </div>
 
       <h2 className="text-lg lg:text-2xl">{getHeadingText()}</h2>

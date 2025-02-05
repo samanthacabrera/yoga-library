@@ -25,7 +25,7 @@ const Hero = () => {
         {/* Hero Section */}
         <div className="grid md:grid-cols-2 h-[80vh] items-center border-b-8 border-moss pb-12 text-center md:text-left">
           <div>
-            <h1 className="text-4xl md:text-7xl text-moss font-bold uppercase tracking-wide leading-tight">
+            <h1 className="text-4xl md:text-7xl text-moss font-bold uppercase tracking-wider leading-tight">
               Learn <br className="hidden md:block" /> Yoga <br className="hidden md:block" /> Online
             </h1>
             <p className="mt-8 mx-4 md:mx-0 text-lg md:text-xl tracking-wide">
