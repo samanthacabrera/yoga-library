@@ -180,7 +180,7 @@ const CategoryPage = () => {
                   ? "bg-moss text-white border-moss"
                   : "bg-transparent border-charcoal border-opacity-70"
               } 
-              hover:bg-moss hover:text-white hover:border-moss focus:outline-none focus:ring-4 focus:ring-moss focus:ring-opacity-30`}
+              hover:bg-moss hover:bg-opacity-70 hover:text-white hover:border-moss focus:outline-none focus:ring-4 focus:ring-moss focus:ring-opacity-30`}
           >
             All
           </button>
@@ -196,7 +196,7 @@ const CategoryPage = () => {
                   ? "bg-moss text-white border-moss"
                   : "bg-transparent border-charcoal border-opacity-70"
               } 
-              hover:bg-moss hover:text-white hover:border-moss focus:outline-none focus:ring-4 focus:ring-moss focus:ring-opacity-30`}
+              hover:bg-moss hover:bg-opacity-70 hover:text-white hover:border-moss focus:outline-none focus:ring-4 focus:ring-moss focus:ring-opacity-30`}
           >
             {categoryType.charAt(0).toUpperCase() + categoryType.slice(1)}
           </button>
@@ -229,8 +229,8 @@ const CategoryPage = () => {
         )}
       </div>
 
-      <h2 className="text-lg lg:text-2xl">{getHeadingText()}</h2>
-      <p className="lg:text-lg text-gray-600">{getDescText()}</p>
+      <h2 className="text-xl lg:text-3xl pt-12 font-medium tracking-wide text-charcoal">{getHeadingText()}</h2>
+      <p className="text-charcoal leading-loose">{getDescText()}</p>
 
       {filteredPoses.length === 0 ? (
         <p>No poses found for this category.</p>
@@ -246,14 +246,14 @@ const CategoryPage = () => {
                 <img
                   src={pose.image}
                   alt={pose.name}
-                  className="p-2 mb-3 w-24 h-24 object-cover rounded-full border-2 border-gray-200 group-hover:border-moss transition-all duration-300"
+                  className="p-2 mb-3 w-24 h-24 object-cover rounded-full border group-hover:border-moss transition-all duration-300"
                 />
               ) : (
-                <div className="mb-3 w-24 h-24 flex items-center justify-center bg-gray-100 rounded-full border-2 border-gray-200 group-hover:border-moss transition-all duration-300">
+                <div className="mb-3 w-24 h-24 flex items-center justify-center bg-gray-100 rounded-full border group-hover:border-moss transition-all duration-300">
                   <span className="text-gray-300">No Image</span>
                 </div>
               )}
-              <span className="text-sm text-gray-700 text-center group-hover:text-moss transition-colors duration-300">
+              <span className="text-sm text-charcoal text-center tracking-tight group-hover:text-moss transition-colors duration-300">
                 {pose.name}
               </span>
             </Link>

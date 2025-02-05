@@ -39,7 +39,7 @@ const Drawer = () => {
           isDrawerOpen ? "left-[12rem]" : "left-0"
         }`}
       >
-        <div className="flex flex-col text-4xl text-gray-500 p-2 bg-gray-100 shadow rounded-tr-lg rounded-br-lg transition-transform duration-500 ease-in-out">
+        <div className="flex flex-col text-2xl p-2 bg-moss bg-opacity-50 rounded-tr-lg rounded-br-lg transition-transform duration-500 ease-in-out">
           {isDrawerOpen ? <span>&laquo;</span> : <span>&raquo;</span>}
         </div>
       </button>
@@ -47,7 +47,7 @@ const Drawer = () => {
       {/* Drawer content */}
       <div
         ref={drawerRef}
-        className={`absolute top-1/4 left-0 flex flex-col h-[25rem] min-w-[12rem] max-w-full p-2 bg-gray-100 rounded transition-all duration-300 ease-in-out ${
+        className={`absolute top-1/4 left-0 flex flex-col h-[25rem] min-w-[12rem] max-w-full p-2 bg-moss bg-opacity-50 rounded-br-lg transition-all duration-300 ease-in-out ${
           isDrawerOpen
             ? "transform translate-x-0"
             : "transform -translate-x-full"
@@ -56,49 +56,49 @@ const Drawer = () => {
       >
         <Link
           to="/what-is-yoga/beginners-guide"
-          className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+          className="tracking-wide hover:bg-moss hover:text-white hover:scale-105 transition-transform duration-300 rounded px-2 py-1"
         >
           Start Here
         </Link>
         <Link
           to="/what-is-yoga/overview"
-          className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+          className="tracking-wide hover:bg-moss hover:text-white hover:scale-105 transition-transform duration-300 rounded px-2 py-1"
         >
           What Is Yoga?
         </Link>
         <Link
           to="/what-is-yoga/eight-limbed-path"
-          className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+          className="tracking-wide hover:bg-moss hover:text-white hover:scale-105 transition-transform duration-300 rounded px-2 py-1"
         >
           The 8-Limbed Path
         </Link>
         <Link
           to="/what-is-yoga/three-gunas"
-          className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+          className="tracking-wide hover:bg-moss hover:text-white hover:scale-105 transition-transform duration-300 rounded px-2 py-1"
         >
           The 3 Gunas
         </Link>
         <Link
           to="/what-is-yoga/seven-chakras"
-          className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+          className="tracking-wide hover:bg-moss hover:text-white hover:scale-105 transition-transform duration-300 rounded px-2 py-1"
         >
           The 7 Chakras
         </Link>
         <Link
           to="/poses"
-          className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+          className="tracking-wide hover:bg-moss hover:text-white hover:scale-105 transition-transform duration-300 rounded px-2 py-1"
         >
           List of Poses
         </Link>
         <Link
           to="/newsletter"
-          className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+          className="tracking-wide hover:bg-moss hover:text-white hover:scale-105 transition-transform duration-300 rounded px-2 py-1"
         >
           Newsletter
         </Link>
         <Link
           to="/resources"
-          className="hover:bg-moss hover:text-white hover:scale-105 hover:opacity-80 transition-transform duration-300 rounded px-2 py-1"
+          className="tracking-wide hover:bg-moss hover:text-white hover:scale-105 transition-transform duration-300 rounded px-2 py-1"
         >
           Resources
         </Link>

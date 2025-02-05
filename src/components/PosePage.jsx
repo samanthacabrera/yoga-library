@@ -54,18 +54,28 @@ const PosePage = () => {
   return (
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 md:space-y-20 p-8 mx-auto">
 
-      <nav className="text-sm mb-4">
-        <Link to="/poses" className="text-moss hover:underline">All Poses</Link> /  
-        {pose.type.length > 0 && (
-        <Link 
-            to={`/poses/type/${pose.type[0]}`} 
-            className="text-moss hover:underline px-1"
+    <nav className="flex items-center space-x-2 font-medium">
+      <Link
+        to="/poses"
+        className="text-moss hover:border-b hover:border-moss border-b border-transparent transition-all duration-300"
+      >
+        All Poses
+      </Link>
+      {pose.type.length > 0 && (
+        <>
+          <span className="text-gray-600">/</span>
+          <Link
+            to={`/poses/type/${pose.type[0]}`}
+            className="text-moss hover:border-b hover:border-moss border-b border-transparent transition-all duration-300"
           >
             {pose.type[0]} Poses
-        </Link>
-        )}  
-        / {pose.name}
-      </nav>
+          </Link>
+        </>
+      )}
+      <span className="text-gray-600">/</span>
+      <span className="text-charcoal">{pose.name}</span>
+    </nav>
+
 
       <header className="relative p-6 md:p-8 flex group bg-moss bg-opacity-30 border border-moss rounded-2xl">
         <h2 className="text-4xl md:text-6xl tracking-tight text-left opacity-70 relative">
