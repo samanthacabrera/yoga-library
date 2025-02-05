@@ -3,16 +3,18 @@ import React from "react";
 const Guide = () => {
     return (
         <div className="max-w-3xl px-8 py-4 space-y-12 mx-auto">
-        <h1 className="heading text-2xl lg:text-4xl">
+        <h1 className="heading my-12 text-4xl lg:text-6xl">
             Beginner's Guide to Yoga
         </h1>
+        <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-16 lg:space-y-0 space-y-12 pb-20">
         {/* Introduction */}
-        <p>This guide is designed to give you a solid foundation as you begin practicing yoga. As you progress through this guide, use the website to explore and learn each pose in detail.</p>
-        <hr/>
+        <p className="lg:col-span-2">This guide is designed to give you a solid foundation as you begin practicing yoga. As you progress through this guide, use the website to explore and learn each pose in detail.</p>
+      
         
         {/* Terminology */}
-        <p>Yoga is more than just physical movement—it's a holistic practice that includes breathwork, meditation, and philosophy. Understanding key yoga terms and concepts will help you feel more confident as you step onto the mat.</p>
-        <div className="bg-white border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+        <h3 className="text-2xl font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[250px]">Yoga Foundations</h3>
+        <p className="lg:col-span-2">Yoga is more than just physical movement—it's a holistic practice that includes breathwork, meditation, and philosophy. Understanding key yoga terms and concepts will help you feel more confident as you step onto the mat.</p>
+        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4 lg:col-span-2">
             <h2 className="text-2xl sm:text-3xl text-center mb-2">Common Terms in Yoga</h2>
             <ul className="list-inside space-y-4 text-sm sm:text-base">
                 <li>
@@ -42,12 +44,12 @@ const Guide = () => {
             </ul>
         </div>
 
-
+        <h3 className="text-2xl font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[350px]">Before Starting Your Flow</h3>
         {/* Preparing the Mind */}
-        <p className="text-sm sm:text-base">
+        <p className="lg:col-span-2">
             Before you begin your practice, it’s essential to prepare your mind. These mental preparations allow you to step onto the mat with purpose, leaving behind distractions and focusing on the present moment. The following tips can help calm your mind and open up space for a peaceful and mindful practice: 
         </p>
-        <div className="bg-white border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4 lg:col-span-2">
             <h2 className="text-2xl sm:text-3xl text-center mb-2">Mental Preparation</h2>
             <ul className="list-inside space-y-4 text-sm sm:text-base">
                 <li><strong>Breathing Exercises:</strong> Start with deep, diaphragmatic breathing to calm your mind and focus your attention on the present moment.</li>
@@ -57,10 +59,10 @@ const Guide = () => {
         </div>
 
         {/* Preparing the Body */}
-        <p className="text-sm sm:text-base">
+        <p className="lg:col-span-2">
             Preparing your body physically is just as important as preparing your mind. The more you tune into your body’s needs, the more effective and enjoyable your practice will be. These tips can help ensure your body is physically ready for your practice:
         </p>
-        <div className="bg-white border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4 lg:col-span-2">
             <h2 className="text-2xl sm:text-3xl text-center mb-2">Physical Preparation</h2>
             <ul className="list-inside space-y-4 text-sm sm:text-base">
                 <li><strong>Wear Comfortable Clothing:</strong> Choose clothes that allow for freedom of movement. Avoid anything too tight or restrictive.</li>
@@ -72,10 +74,10 @@ const Guide = () => {
         </div>
         
         {/* Routine */}
-        <p className="text-sm sm:text-base">
+        <p className="lg:col-span-2">
             Creating a consistent yoga routine is essential for making steady progress. It helps build strength, flexibility, and mindfulness over time. As a beginner, it’s important to start with a simple, manageable routine and gradually increase the intensity. 
         </p>
-        <div className="bg-white border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4 lg:col-span-2">
             <h2 className="text-2xl sm:text-3xl text-center mb-2">Building Your Yoga Routine</h2>
             <ul className="list-inside space-y-4 text-sm sm:text-base">
                 <li><strong>Start Slow:</strong> Begin with short sessions (10-15 minutes) and gradually increase the time as you feel more comfortable.</li>
@@ -86,10 +88,10 @@ const Guide = () => {
         </div>
     
         {/* Tips */}
-         <p className="text-sm sm:text-base">
+         <p className="lg:col-span-2">
                 Here are a few safe practice tips to help ensure that your yoga practice is enjoyable and injury-free:
         </p>
-        <div className="bg-white border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4 lg:col-span-2">
             <h2 className="text-2xl sm:text-3xl text-center mb-2">Safe Practice Tips</h2>
             <div className="list-inside space-y-4 text-sm sm:text-base">
                 <p><strong>Listen to your body:</strong> Avoid pain or strain, and adjust your posture if needed.</p>
@@ -98,6 +100,7 @@ const Guide = () => {
                 <p><strong>Stay mindful:</strong> Avoid rushing through poses. Take your time, stay present, and explore how each posture feels in your body.</p>
             </div>
         </div>
+    </div>
     </div>
     );
 };

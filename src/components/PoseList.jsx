@@ -22,10 +22,10 @@ const PoseList = () => {
   return (
     <div className="mt-40 px-4 sm:px-8 md:px-12">
       <div className="flex flex-col md:flex-row justify-between">
-        <h3 className="text-white text-lg lg:text-2xl tracking-wide font-medium my-12">
+        <h3 className="text-white text-lg lg:text-2xl tracking-wide my-12">
           Poses Index
         </h3>
-         <div className="flex text-white">
+        <div className="flex items-center text-white">
           <button
             onClick={() => setSortOption('commonName')}
             className={`px-4 py-2 transition-all duration-200 ${
@@ -36,7 +36,7 @@ const PoseList = () => {
           </button>
           <button
             onClick={() => setSortOption('sanskritName')}
-            className={`px-4 py-2 transition-all duration-200 ${
+            className={` transition-all duration-200 ${
               sortOption === 'sanskritName' ? 'font-bold' : 'hover:scale-105'
             }`}
           >
@@ -50,7 +50,7 @@ const PoseList = () => {
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-12">
           {poses.map((pose) => (
-            <div key={pose.id} className="p-4 bg-white border-2 rounded-2xl border-moss">
+            <div key={pose.id} className="p-4 bg-white border-2 rounded-2xl border-moss hover:bg-moss hover:bg-opacity-50 hover:text-white hover:border-white transition duration-300">
               <Link to={`/poses/${pose.name}`} className="block text-sm font-medium">
                 {sortOption === 'sanskritName' ? pose.sanskritName : pose.commonName}
               </Link>

@@ -3,24 +3,25 @@ import React from "react";
 const WhatIsYoga = () => {
   return (
     <div className="max-w-3xl px-8 py-4 mx-auto">
-      <h1 className="heading text-2xl lg:text-4xl">
+      <h1 className="heading my-12 text-4xl lg:text-6xl">
         What is Yoga?
       </h1>
 
-      <div className="flex flex-col space-y-12 pb-20">
+      <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-16 lg:space-y-0 space-y-12 pb-20">
         
-        <p>
+        <p className="lg:col-span-2">
           Yoga is an ancient discipline that combines physical postures, breath control, meditation, and ethical principles to promote overall health and well-being. It’s a holistic system that aims to balance the body, mind, and spirit.
         </p>
         
-        <h3 className="text-xl">The Origins of Yoga</h3>
-        <p>
+        <h3 className="text-2xl font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[250px]">The Origins of Yoga</h3>
+        <p className="lg:col-span-2">
           The origins of yoga can be traced back over 5,000 years to ancient India, where it was first developed as a spiritual practice by the Indus-Sarasvati civilization. The earliest references to yoga are found in the Vedas, ancient Indian texts that date back to around 1500 BCE. These texts describe various rituals and practices designed to connect individuals with the divine.
         </p>
-        <p>
+        <p className="lg:col-span-2">
           The word "yoga" comes from the Sanskrit root "yuj," meaning "to unite" or "to join." This reflects the central idea of yoga: the union of the body, mind, and spirit, or the connection between the individual self and the universal consciousness. Early yogic practices were predominantly focused on meditation, breath control, and self-discipline to transcend the physical body and achieve spiritual enlightenment.
         </p>
-        <div className="bg-white border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+
+        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4 lg:col-span-2">
           <p>
             The development of yoga can be divided into several key periods:
           </p>
@@ -31,11 +32,12 @@ const WhatIsYoga = () => {
             <li><strong>Modern Yoga (19th century - present):</strong> Yoga began to spread beyond India, particularly in the West, through the influence of teachers like Swami Vivekananda, who introduced yoga philosophy to the West in the late 19th century, and later, figures like Krishnamacharya, B.K.S. Iyengar, and Pattabhi Jois, who popularized physical yoga practices in the 20th century.</li>
           </ul>
         </div>
-       
-        <h3 className="text-xl">The Evolution of Yoga Styles</h3>
-          <p>Over the millennia, yoga has evolved into many different styles and schools of thought, each focusing on unique aspects of the practice. These styles can be traced back to ancient teachings but have been adapted and modernized to meet the needs of contemporary practitioners. Some of the major styles of yoga include:
-          </p>
-        <div className="bg-white border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+
+        <h3 className="text-2xl font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[350px]">The Evolution of Yoga Styles</h3>
+  
+        <p className="lg:col-span-2">Over the millennia, yoga has evolved into many different styles and schools of thought, each focusing on unique aspects of the practice. These styles can be traced back to ancient teachings but have been adapted and modernized to meet the needs of contemporary practitioners. Some of the major styles of yoga include:</p>
+        
+        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4 lg:col-span-2">
           <ul className="list-inside">
             <li><strong>Hatha Yoga:</strong> Hatha Yoga, meaning "forceful" or "sun and moon," is the foundation for many modern yoga practices. It emphasizes physical postures (asanas) and breath control (pranayama) to prepare the body for meditation. The practice is often slower-paced and focuses on alignment, balance, and flexibility.</li>
             <li><strong>Vinyasa Yoga:</strong> Vinyasa, which means "breath-synchronized movement," involves flowing from one pose to the next in coordination with breath. This style is dynamic and often practiced in a faster-paced sequence. It incorporates elements of both Hatha Yoga and modern movement, emphasizing fluidity and creative transitions between postures.</li>
@@ -48,11 +50,11 @@ const WhatIsYoga = () => {
           </ul>
         </div>
 
-        <p>
+        <p className="lg:col-span-2">
           Each style of yoga offers its unique benefits, and practitioners may find that different styles resonate with them depending on their personal goals, physical condition, and spiritual path. While the core principles of yoga remain the same, the diversity of styles provides something for everyone, from high-intensity practices to gentle, restorative options.
         </p>
 
-        <p>
+        <p className="lg:col-span-2">
           Regardless of the style, yoga remains an ancient and powerful practice that continues to evolve and adapt to the needs of modern practitioners. It offers a pathway to physical health, mental clarity, emotional balance, and spiritual awakening, making it a timeless discipline for people of all ages and backgrounds.
         </p>
         
