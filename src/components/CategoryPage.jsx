@@ -169,26 +169,32 @@ const CategoryPage = () => {
   return (
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
       <h1 className="heading text-2xl lg:text-4xl">Yoga Pose Directory</h1>
-      <div className="flex gap-4">
-        <Link to="/poses">
+      <div className="flex gap-2 justify-center">
+      <Link to="/poses">
         <button
           onClick={() => toggleCategory("all")}
-          className={`px-4 py-0 border rounded-lg ${activeCategories.all ? 'bg-gray-200' : 'bg-gray-100'} hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300`}
+          className={`px-6 py-1 font-medium border-2 rounded-lg transition-all duration-300 ${
+            activeCategories.all ? 'bg-moss text-white border-moss' : 'bg-transparent text-gray-700 border-gray-300'
+          } hover:bg-moss hover:text-white hover:border-moss focus:outline-none focus:ring-4 focus:ring-moss focus:ring-opacity-30`}
         >
-          All
+          <span className="relative z-10">All</span>
         </button>
-        </Link>
-        {["type", "benefit", "chakra", "part"].map((categoryType) => (
-          <button
-            key={categoryType}
-            onClick={() => toggleCategory(categoryType)}
-            className={`px-4 py-0 border rounded-lg ${activeCategories[categoryType] ? 'bg-gray-200' : 'bg-gray-100'} hover:bg-gray-200 hover:scale-105 hover:opacity-80 transition-transform duration-300`}
-          >
+      </Link>
+      {["type", "benefit", "chakra", "part"].map((categoryType) => (
+        <button
+          key={categoryType}
+          onClick={() => toggleCategory(categoryType)}
+          className={`px-6 py-1 font-medium border-2 rounded-lg transition-all duration-300 ${
+            activeCategories[categoryType] ? 'bg-moss text-white border-moss' : 'bg-transparent text-gray-700 border-gray-300'
+          } hover:bg-moss hover:text-white hover:border-moss focus:outline-none focus:ring-4 focus:ring-moss focus:ring-opacity-30`}
+        >
+          <span className="relative z-10">
             {categoryType.charAt(0).toUpperCase() + categoryType.slice(1)}
-          </button>
-        ))}
-      </div>
-
+          </span>
+        </button>
+      ))}
+    </div>
+    
       <div className="flex flex-wrap gap-1">
         {categories.map((category) => (
           activeCategories[category.type] && (

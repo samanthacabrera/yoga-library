@@ -67,7 +67,7 @@ const PosePage = () => {
         / {pose.name}
       </nav>
 
-      <header className="relative p-6 md:p-8 flex group bg-moss bg-opacity-90 border border-black rounded-2xl">
+      <header className="relative p-6 md:p-8 flex group bg-moss bg-opacity-30 border border-moss rounded-2xl">
         <h2 className="text-4xl md:text-6xl tracking-tight text-left opacity-70 relative">
           <span className="block">
             {pose.name}
@@ -76,7 +76,7 @@ const PosePage = () => {
             {poseSanskirt.sanskrit_translation} 
           </span>
           <span className="block text-lg">{poseSanskirt.sanskrit_pronunciation}</span>
-          <span className="text-4xl text-white opacity-50">
+          <span className="text-4xl text-white font-medium">
             {poseSanskirt.sanskrit_name}
           </span>
         </h2>

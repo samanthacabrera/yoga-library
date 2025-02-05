@@ -21,7 +21,7 @@ const Hero = () => {
         <meta property="og:type" content="website" />
       </Helmet>
 
-      <div className="min-h-screen w-full max-w-5xl mx-auto p-8 grid gap-y-20 opacity-80 text-gray-800">
+      <div className="min-h-screen w-full max-w-5xl mx-auto p-8 grid gap-y-20 text-gray-800">
         {/* Hero Section */}
         <div className="grid md:grid-cols-2 h-[80vh] items-center border-b-8 border-moss pb-12 text-center md:text-left">
           <div>
