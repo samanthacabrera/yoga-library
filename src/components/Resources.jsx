@@ -5,8 +5,8 @@ const Resources = () => {
     return (
         <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-12 px-8 py-4 mx-auto">
             <div className="mb-8">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl text-center my-12">Resources</h1>
-                <p>
+                <h1 className="heading text-2xl lg:text-4xl">Resources</h1>
+                <p className="tracking-wide">
                     Handpicked tutorials and articles to deepen your yoga journey. Whether you're refining your technique, discovering new practices, or finding the perfect gear, our resources are here to support and inspire your growth every step of the way.
                 </p>
             </div>

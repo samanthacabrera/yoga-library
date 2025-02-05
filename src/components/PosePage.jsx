@@ -93,7 +93,7 @@ const PosePage = () => {
       )}
 
    {/* Table of Contents */}
-    <div className="bg-white flex flex-col lg:items-center lg:flex-row lg:space-x-2 lg:sticky top-0 z-10 lg:py-2 text-moss text-sm font-bold uppercase">
+    <div className="bg-white flex flex-col lg:items-center lg:flex-row lg:space-x-2 lg:sticky top-0 z-10 lg:py-2 text-moss text-lg font-medium">
       <a href="#description" className="border-b-4 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
         Overview
       </a>
@@ -247,12 +247,6 @@ const PosePage = () => {
           </div>
         </div>
       )}
-
-      <div className="flex flex-col text-sm opacity-50">
-        <a href="https://www.flaticon.com/free-icons/workout" title="workout icons">Workout icons created by dDara - Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/yoga" title="yoga icons">Yoga icons created by monkik - Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/lunge" title="lunge icons">Lunge icons created by Eideticmemo - Flaticon</a>
-      </div>
 
       {/* Sources */}
       {sources.length > 0 && (

@@ -243,6 +243,11 @@ const CategoryPage = () => {
         ))}
       </div>
       )}
+      <div className="flex flex-col text-sm opacity-50">
+        <a href="https://www.flaticon.com/free-icons/workout" title="workout icons">Workout icons created by dDara - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/yoga" title="yoga icons">Yoga icons created by monkik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/lunge" title="lunge icons">Lunge icons created by Eideticmemo - Flaticon</a>
+      </div>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import PoseList from "./PoseList";
 
 const Footer = () => {
     return (
-        <div className="bg-moss bg-opacity-90">
+        <div className="bg-moss bg-opacity-80">
 
             <PoseList/>
 
