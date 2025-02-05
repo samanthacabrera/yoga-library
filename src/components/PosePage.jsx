@@ -93,7 +93,7 @@ const PosePage = () => {
       )}
 
    {/* Table of Contents */}
-    <div className="bg-white flex flex-col lg:items-center lg:flex-row lg:space-x-2 lg:sticky top-0 z-10 lg:py-2 text-moss text-lg font-medium">
+    <div className="bg-white flex flex-col lg:items-center lg:flex-row lg:space-x-2 lg:sticky top-0 z-10 lg:py-2 text-moss text-lg">
       <a href="#description" className="border-b-4 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
         Overview
       </a>
@@ -196,8 +196,8 @@ const PosePage = () => {
         ].map(
           (section, idx) =>
             section.data.length > 0 && (
-              <div key={idx} className="bg-moss bg-opacity-90 text-white text-sm p-4 rounded-xl shadow-md">
-                <p className="font-semibold tracking-wide">{section.title}</p>
+              <div key={idx} className="bg-moss bg-opacity-30 border border-moss rounded-2xl text-sm p-4">
+                <p className="font-medium tracking-wide opacity-90">{section.title}</p>
                 <div className="flex flex-wrap mt-2 gap-2">
                   {section.data.map((item, index) => (
                     <Link
@@ -216,26 +216,26 @@ const PosePage = () => {
 
       {/* Related Poses */}
       {relatedPoses.length > 0 && (
-        <div className="border-2 border-moss p-8 rounded-2xl space-y-8">
-          <p className="text-2xl md:text-4xl text-center tracking-wider font-medium my-2">
+        <div className="border border-moss rounded-2xl p-8 space-y-8">
+          <p className="text-2xl md:text-4xl text-center tracking-wide my-2">
             Related Poses
           </p>
           <div className="flex space-x-8 overflow-x-scroll">
-            {relatedPoses.map((relatedPose) => {
+            {relatedPoses.slice(0, 2).map((relatedPose) => {
               return (
                 <Link
                   key={relatedPose.id}
                   to={`/poses/${relatedPose.name}`}
                   className="relative group w-1/2 min-w-[300px]" 
                 >
-                  <div className="relative overflow-hidden rounded shadow transition transform duration-300">
+                  <div className="relative overflow-hidden rounded transition transform duration-300">
                     <img
                       src={relatedPose.image}
                       alt={relatedPose.name}
                       className="w-full h-56 object-cover rounded group-hover:opacity-0 transition-opacity duration-300"
                     />
-                    <div className="absolute inset-0 bg-moss bg-opacity-90 group-hover:border-moss border border-transparent flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300 text-white text-center p-6 rounded">
-                      <p className="font-medium trackint-tight leading-tight">{relatedPose.name} is a related pose to {pose.name}. Click to learn more</p>
+                    <div className="absolute inset-0 bg-moss bg-opacity-30 group-hover:border-moss border border-transparent flex items-center opacity-0 group-hover:opacity-100 transition duration-300 text-center p-6 rounded">
+                      <p>Click to learn more about {relatedPose.name} </p>
                     </div>
                   </div>
                   <p className="text-sm md:text-lg text-center tracking-wide my-2">
