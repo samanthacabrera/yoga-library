@@ -38,10 +38,10 @@ const Drawer = () => {
           ${
             isDrawerOpen
               ? "left-[13rem]"
-              : "left-0 opacity-80 hover:opacity-100"
+              : "left-0"
           }`}
       >
-        <span className="transition-transform duration-500 ease-in-out">
+        <span className="text-sm transition-transform duration-500 ease-in-out">
           {isDrawerOpen ? "<<" : ">>"}
         </span>
       </button>
@@ -52,7 +52,7 @@ const Drawer = () => {
         className={`fixed left-0 top-0 h-full flex flex-col min-w-[13rem] p-4 bg-moss text-white rounded-r-2xl transition-all duration-500 ease-in-out
           ${
             isDrawerOpen
-              ? "transform translate-x-0 opacity-100"
+              ? "transform translate-x-0"
               : "transform -translate-x-full opacity-0"
           }`}
       >

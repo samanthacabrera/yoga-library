@@ -196,13 +196,13 @@ const PosePage = () => {
         </div>
       )}
 
-      {/* Tags */}
+     {/* Tags */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
         {[
-          { title: "Benefits", data: pose.benefit },
-          { title: "Body Parts", data: pose.part },
-          { title: "Pose Types", data: pose.type },
-          { title: "Chakras", data: pose.chakra }
+          { title: "Benefits", data: pose.benefit, slug: "benefit" },
+          { title: "Body Parts", data: pose.part, slug: "part" },
+          { title: "Pose Types", data: pose.type, slug: "type" },
+          { title: "Chakras", data: pose.chakra, slug: "chakra" }
         ].map(
           (section, idx) =>
             section.data.length > 0 && (
@@ -212,7 +212,7 @@ const PosePage = () => {
                   {section.data.map((item, index) => (
                     <Link
                       key={index}
-                      to={`/poses/${section.title.toLowerCase().replace(/\s/g, '')}/${item}`}
+                      to={`/poses/${section.slug}/${item.toLowerCase().replace(/\s/g, '%20')}`}
                       className="bg-white text-moss font-medium px-2 py-1 rounded-lg hover:scale-105 transition"
                     >
                       {item}

@@ -21,14 +21,14 @@ const Hero = () => {
         <meta property="og:type" content="website" />
       </Helmet>
 
-      <div className="min-h-screen w-full max-w-5xl mx-auto p-8 grid gap-y-20 text-gray-800">
+      <div className="min-h-screen max-w-4xl mx-auto grid gap-y-20 text-charcoal">
         {/* Hero Section */}
         <div className="grid md:grid-cols-2 h-[80vh] items-center border-b-8 border-moss pb-12 text-center md:text-left">
           <div>
             <h1 className="text-4xl md:text-7xl text-moss font-bold uppercase tracking-wider leading-tight">
               Learn <br className="hidden md:block" /> Yoga <br className="hidden md:block" /> Online
             </h1>
-            <p className="mt-8 mx-4 md:mx-0 text-lg md:text-xl tracking-wide">
+            <p className="mt-8 mx-8 md:mx-0 text-lg md:text-xl tracking-wide">
               Our goal is to provide a simple and accessible platform for anyone looking to deepen their understanding of yoga. Whether you're a beginner or an experienced practitioner, this website is designed to help you explore a wide variety of poses, each with clear instructions and detailed explanations.
             </p>
           </div>
@@ -42,7 +42,7 @@ const Hero = () => {
             <h2 className="text-3xl md:text-5xl text-moss font-bold uppercase tracking-wide">
               About Us
             </h2>
-            <div className="mt-8 mx-4 md:mx-0 space-y-12 text-lg md:text-xl tracking-wide">
+            <div className="mt-8 mx-8 md:mx-0 space-y-12 text-lg md:text-xl tracking-wide">
               <p>
                 This website began with a simple, personal journey. In 2020, life felt particularly overwhelming. The uncertainty and stress of daily life led me to seek something that could offer me a bit of peace. I turned to yoga, unsure of what to expect but hopeful it would help.
               </p>
