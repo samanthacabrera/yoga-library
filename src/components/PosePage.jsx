@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import posesData from '../data/poses.json';
 import descriptions from '../data/descriptions.json';
@@ -11,10 +10,6 @@ import cues from '../data/cues.json';
 const PosePage = () => {
   const { name } = useParams();
   const pose = posesData.find((p) => p.name.toLowerCase() === name.toLowerCase());
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [name]);
 
   if (!pose) {
     return <div>Pose not found</div>;

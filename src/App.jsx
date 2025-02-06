@@ -1,4 +1,5 @@
-import React from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Search from "./components/Search";
@@ -16,16 +17,27 @@ import Resources from "./components/Resources";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Footer from "./components/Footer";
 
+const ScrollToTop = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  return null;
+};
+
 const App = () => {
   return (
-    <Router>  
+    <Router> 
+      <ScrollToTop /> 
+      
       <header className="flex justify-between m-2">
         <Link to="/" className="heading">Learn Yoga Online</Link>
         <Search />
       </header>
 
       <div className="flex">
-
         <Drawer /> 
         
         <Routes>
