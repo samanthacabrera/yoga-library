@@ -174,7 +174,7 @@ const CategoryPage = () => {
         <Link to="/poses">
           <button
             onClick={() => toggleCategory("all")}
-            className={`px-6 py-2 font-medium border rounded-md transition-all duration-300 tracking-wide 
+            className={`px-6 py-2 font-medium tracking-wide text-charcoal lowercase border rounded-md transition-all duration-300
               ${
                 activeCategories.all
                   ? "bg-moss text-white border-moss"
@@ -190,7 +190,7 @@ const CategoryPage = () => {
           <button
             key={categoryType}
             onClick={() => toggleCategory(categoryType)}
-            className={`px-6 py-2 font-medium border rounded-md transition-all duration-300 tracking-wide
+            className={`px-6 py-2 font-medium tracking-wide text-charcoal lowercase border rounded-md transition-all duration-300 
               ${
                 activeCategories[categoryType]
                   ? "bg-moss text-white border-moss"
@@ -208,7 +208,7 @@ const CategoryPage = () => {
           (category) =>
             activeCategories[category.type] && (
               <div key={category.type} className="w-full">
-                <h4 className="text-lg lg:text-2xl tracking-wide text-charcoal mb-2">
+                <h4 className="text-lg lg:text-2xl tracking-wide text-charcoal mb-4">
                   {category.type}
                 </h4>
                 <div className="flex flex-wrap gap-3">
@@ -229,8 +229,8 @@ const CategoryPage = () => {
         )}
       </div>
 
-      <h2 className="text-xl lg:text-3xl pt-12 font-medium tracking-wide text-charcoal">{getHeadingText()}</h2>
-      <p className="text-charcoal leading-loose">{getDescText()}</p>
+      <h2 className="text-xl lg:text-3xl pt-12 font-medium text-center tracking-wide ">{getHeadingText()}</h2>
+      <p className="text-charcoal tracking-wider leading-loose">{getDescText()}</p>
 
       {filteredPoses.length === 0 ? (
         <p>No poses found for this category.</p>

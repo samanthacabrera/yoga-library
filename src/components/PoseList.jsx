@@ -29,7 +29,7 @@ const PoseList = () => {
           <button
             onClick={() => setSortOption('commonName')}
             className={`px-4 py-2 transition-all duration-200 ${
-              sortOption === 'commonName' ? 'font-bold' : 'hover:scale-105'
+              sortOption === 'commonName' ? 'border-b' : 'hover:scale-105'
             }`}
           >
             Common Name
@@ -37,7 +37,7 @@ const PoseList = () => {
           <button
             onClick={() => setSortOption('sanskritName')}
             className={` transition-all duration-200 ${
-              sortOption === 'sanskritName' ? 'font-bold' : 'hover:scale-105'
+              sortOption === 'sanskritName' ? 'border-b' : 'hover:scale-105'
             }`}
           >
             Sanskrit Name

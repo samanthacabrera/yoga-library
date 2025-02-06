@@ -70,7 +70,7 @@ const Drawer = () => {
           <Link
             key={index}
             to={item.to}
-            className="text-center transition-all my-4 duration-300 ease-in-out hover:scale-105"
+            className="text-center tracking-wider rounded transition-all my-4 duration-300 ease-in-out hover:scale-105 hover:bg-white hover:text-moss"
           >
             {item.label}
           </Link>
