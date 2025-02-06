@@ -13,9 +13,11 @@ const Gunas = () => {
           <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
             <p>Ways to cultivate Sattva:</p>
             <ul>
-              <li>Eating fresh, natural foods</li>
               <li>Practicing mindfulness and meditation</li>
               <li>Engaging in selfless service</li>
+              <li>Living with integrity and honesty</li>
+              <li>Spending time in nature</li>
+              <li>Focusing on gratitude and positive thinking</li>
             </ul>
           </div>
           <p>In yogic philosophy, cultivating Sattva is ideal, as it leads to spiritual growth and liberation.</p>

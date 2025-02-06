@@ -8,11 +8,11 @@ const Path = () => {
                 <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
                     <p>There are five Yamas:</p>
                     <ul>
-                        <li>Ahimsa (non-violence)</li>
-                        <li>Satya (truthfulness)</li>
-                        <li>Asteya (non-stealing)</li>
-                        <li>Brahmacharya (moderation)</li>
-                        <li>Aparigraha (non-hoarding)</li>
+                        <li>Ahimsa <span className="italic opacity-70">(non-violence)</span></li>
+                        <li>Satya <span className="italic opacity-70">(truthfulness)</span></li>
+                        <li>Asteya <span className="italic opacity-70">(non-stealing)</span></li>
+                        <li>Brahmacharya <span className="italic opacity-70">(moderation)</span></li>
+                        <li>Aparigraha <span className="italic opacity-70">(non-hoarding)</span></li>
                     </ul>
                 </div>
                 <p>Yoga aims to transform all aspects of life, not just the time spent on the mat. By practicing kindness, truthfulness, and responsible energy use, individuals can positively impact both themselves and those around them.</p>

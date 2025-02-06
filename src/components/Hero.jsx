@@ -29,7 +29,7 @@ const Hero = () => {
               Learn <br className="hidden md:block" /> Yoga <br className="hidden md:block" /> Online
             </h1>
             <p className="mt-8 mx-8 md:mx-0 text-lg md:text-xl tracking-wide">
-              Our goal is to provide a simple and accessible platform for anyone looking to deepen their understanding of yoga. Whether you're a beginner or an experienced practitioner, this website is designed to help you explore a wide variety of poses, each with clear instructions and detailed explanations.
+                Our mission is to offer an easy-to-use platform for anyone wanting to deepen their yoga practice. Whether you're just starting out or have years of experience, our site is designed to guide you through essential yoga poses, providing clear instructions and comprehensive explanations.
             </p>
           </div>
           <div className="hidden md:block"></div>
@@ -50,13 +50,13 @@ const Hero = () => {
                 Over time, yoga became not just a physical practice, but a path of personal growth. The more I practiced, the more I wanted to learn—about different styles, the philosophy behind yoga, and even how mindfulness could be integrated into my everyday life. As yoga had such a positive impact on my life, I wanted to offer a resource that could support others on their own journeys.
               </p>
               <p>
-                This website is more than just a collection of yoga poses. It’s a reflection of my journey, and a way to share what yoga has given me. My goal was to create a space that’s simple and welcoming, where people—whether you’re just starting out or looking to deepen your practice—can find helpful resources and support. I’ve worked hard to ensure that the platform is easy to use, with the hope that it can be a helpful guide for anyone looking to explore yoga.
+                This website is more than just a collection of yoga poses. It’s a reflection of my journey, and a way to share what yoga has given me. My goal was to create a space that’s simple and welcoming, where everyone can find valuable resources and support. 
               </p>
               <p>
                 As someone who loves to build and improve things, I’m always working to make this site better. If you have any feedback or suggestions, feel free to email <span className="italic">samantha.n.cabrera@gmail.com</span>. Your input helps me make the site better for you and others.
               </p>
               <p>
-                Thank you for being part of this community. I hope that this website can be a source of inspiration, support, and guidance on your own yoga journey.
+                Thank you for being part of this community. I hope that this website can be a source of guidance on your own yoga journey.
               </p>
             </div>
           </div>

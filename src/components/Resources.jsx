@@ -11,8 +11,8 @@ const ResourceCard = ({ to, title, description }) => (
 
 const ResourceSection = ({ title, links }) => (
     <div className="w-full max-w-2xl">
-        <h2 className="text-2xl tracking-wide">{title}</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+        <h2 className="text-2xl text-charcoal tracking-wider font-medium">{title}</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-8">
             {links.map((link, index) => (
                 <ResourceCard key={index} {...link} />
             ))}

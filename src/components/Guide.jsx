@@ -16,18 +16,18 @@ const Guide = () => {
         <p className="lg:col-span-2">Yoga is more than just physical movement—it's a holistic practice that includes breathwork, meditation, and philosophy. Understanding key yoga terms and concepts will help you feel more confident as you step onto the mat.</p>
         <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4 lg:col-span-2">
             <h2 className="text-2xl sm:text-3xl text-center mb-2">Common Terms in Yoga</h2>
-            <ul className="list-inside space-y-4 text-sm sm:text-base">
+            <ul className="list-inside space-y-4 tracking-wide text-sm sm:text-base">
                 <li>
                     <strong>Asana: </strong> 
-                    Asana refers to the physical postures or poses in yoga. Each asana is designed to stretch, strengthen, or relax different parts of the body. Asanas are fundamental in yoga practice, creating a balance between strength, flexibility, and body awareness. They can vary from basic seated poses to more complex inversions and balances. Performing asanas also helps to cultivate mindfulness and presence in the body.
+                    Asana refers to the physical postures or poses in yoga. Each asana is designed to stretch, strengthen, or relax different parts of the body. Asanas are fundamental in yoga practice, creating a balance between strength, flexibility, and body awareness. They can vary from basic seated poses to more complex inversions and balances. 
                 </li>
                 <li>
                     <strong>Pranayama: </strong> 
-                    Pranayama is the practice of breath control. It involves techniques that regulate the breath to increase energy (prana) in the body and calm the nervous system. Through controlled inhalation, exhalation, and retention of breath, pranayama is believed to improve mental clarity, focus, and emotional balance. Common forms include Ujjayi (victorious breath), Kapalbhati (skull shining breath), and Anulom Vilom (alternate nostril breathing).
+                    Pranayama is the practice of breath control. It involves techniques that regulate the breath to increase energy (prana) in the body and calm the nervous system. Through controlled inhalation, exhalation, and retention of breath, pranayama can improve mental clarity, focus, and emotional balance.
                 </li>
                 <li>
                     <strong>Chakra: </strong> 
-                    Chakras are energy centers within the body that are believed to influence various physical, emotional, and spiritual aspects of life. There are seven main chakras, each located along the spine and associated with different colors, elements, and functions. The first chakra (Muladhara) is located at the base of the spine, and the seventh chakra (Sahasrara) is at the top of the head. Balancing and unblocking chakras can help promote overall well-being.
+                    Chakras are energy centers within the body that are believed to influence various physical, emotional, and spiritual aspects of life. There are seven main chakras, each located along the spine and associated with different colors, elements, and functions. The continual act of balancing and unblocking chakras can help promote overall well-being.
                 </li>
                 <li>
                     <strong>Drishti: </strong> 
@@ -36,10 +36,6 @@ const Guide = () => {
                 <li>
                     <strong>Mantra: </strong> 
                     A mantra is a word, sound, or phrase that is repeated during meditation to help focus the mind and evoke a specific state of consciousness. It can be a sacred syllable like "Om" or a more complex affirmation. The repetition of a mantra helps reduce mental distractions, creating a deeper connection with the self and promoting mindfulness.
-                </li>
-                <li>
-                    <strong>Om: </strong> 
-                    Om is one of the most sacred and powerful sounds in yoga, believed to represent the vibration of the universe itself. It is often chanted at the beginning and end of a yoga practice to create a sense of unity and harmony. The sound Om is said to embody the essence of life, creation, preservation, and destruction, symbolizing the interconnectedness of all beings.
                 </li>
             </ul>
         </div>
