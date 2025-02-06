@@ -22,7 +22,7 @@
     "name": "Plank Pose",
     "image": "/plank-pose.png",
     "chakra": ["Solar Plexus", "Root"],
-    "type": ["Strength", "Prone", "Arm Balance"],
+    "type": ["Strength", "Prone", "Plank"],
     "benefit": ["Tone Muscles", "Build Stability", "Improve Posture"],
     "part": ["Core", "Shoulders"]
   },
@@ -175,7 +175,7 @@
     "name": "Side Plank Pose",
     "image": "/side-plank-pose.png",
     "chakra": ["Solar Plexus"],
-    "type": ["Balance", "Strength"],
+    "type": ["Balance", "Strength", "Plank"],
     "benefit": ["Build Strength", "Improve Balance"],
     "part": ["Arms", "Core"]
   },
@@ -208,12 +208,12 @@
   },
   {
     "id": 24,
-    "name": "Crow Pose",
-    "image": "/crow-pose.png",
-    "chakra": ["Solar Plexus"],
-    "type": ["Arm Balance", "Inversion", "Strength"],
-    "benefit": ["Build Strength", "Enhance Focus"],
-    "part": ["Arms", "Core"]
+    "name": "Staff Pose",
+    "image": "",
+    "chakra": ["Solar Plexus", "Sacral", "Root"],
+    "type": ["Forward Fold", "Restorative", "Seated"],
+    "benefit": ["Improve Posture", "Restore Energy"],
+    "part": ["Hips", "Spine"]
   },
   {
     "id": 25,
@@ -418,7 +418,7 @@
     "name": "Upward Plank Pose",
     "image": "/reverse-plank-pose.png",
     "chakra": ["Solar Plexus", "Heart", "Third Eye", "Throat"],
-    "type": ["Seated", "Strength"],
+    "type": ["Plank", "Strength"],
     "benefit": ["Improve Posture", "Build Stability"],
     "part": ["Core", "Arms"]
   },
