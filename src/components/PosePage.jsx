@@ -49,10 +49,10 @@ const PosePage = () => {
   return (
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 md:space-y-20 p-8 mx-auto">
 
-    <nav className="flex items-center space-x-2 font-medium">
+    <nav className="flex items-center space-x-2 py-2">
       <Link
         to="/poses"
-        className="text-moss hover:border-b hover:border-moss border-b border-transparent transition-all duration-300"
+        className="text-moss hover:border-b-2 hover:border-moss border-b-2 border-transparent transition-all duration-300"
       >
         All Poses
       </Link>
@@ -61,7 +61,7 @@ const PosePage = () => {
           <span className="text-gray-600">/</span>
           <Link
             to={`/poses/type/${pose.type[0]}`}
-            className="text-moss hover:border-b hover:border-moss border-b border-transparent transition-all duration-300"
+            className="text-moss hover:border-b-2 hover:border-moss border-b-2 border-transparent transition-all duration-300"
           >
             {pose.type[0]} Poses
           </Link>
@@ -99,22 +99,22 @@ const PosePage = () => {
 
    {/* Table of Contents */}
     <div className="bg-white flex flex-col lg:items-center lg:flex-row lg:space-x-2 lg:sticky top-0 z-10 lg:py-2 text-moss text-lg">
-      <a href="#description" className="border-b-4 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+      <a href="#description" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
         Overview
       </a>
-      <a href="#benefits" className="border-b-4 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+      <a href="#benefits" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
         Benefits
       </a>
-      <a href="#origins" className="border-b-4 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+      <a href="#origins" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
         Origins
       </a>
-      <a href="#precautions" className="border-b-4 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+      <a href="#precautions" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
         Precautions
       </a>
-      <a href="#modifications" className="border-b-4 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+      <a href="#modifications" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
         Modifications
       </a>
-      <a href="#cues" className="border-b-4 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+      <a href="#cues" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
         Step-By-Step
       </a>
     </div>
