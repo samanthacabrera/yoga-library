@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Link } from "react-router-dom";
-import Search from "./components/Search";
+import Header from "./components/Header";
 import Drawer from "./components/Drawer";
 import Hero from "./components/Hero";
 import CategoryPage from "./components/CategoryPage";
@@ -31,11 +30,8 @@ const App = () => {
   return (
     <Router> 
       <ScrollToTop /> 
-      
-      <header className="flex justify-between m-2">
-        <Link to="/" className="heading">Learn Yoga Online</Link>
-        <Search />
-      </header>
+
+      <Header />
 
       <div className="flex">
         <Drawer /> 
