@@ -79,7 +79,7 @@ const Search = () => {
           value={searchTerm}
           onChange={handleInputChange}
           placeholder="search"
-          className="w-[200px] lg:w-[300px] border-b-2 border-moss focus:placeholder-charcoal focus:outline-none tracking-wider"
+          className="w-[150px] lg:w-[300px] text-left pl-1 rounded-none border-b-2 border-moss focus:placeholder-charcoal focus:outline-none tracking-wider"
         />
       </form>
       {isDropdownOpen && (
@@ -88,7 +88,7 @@ const Search = () => {
             <li key={index}>
               <button
                 onClick={() => navigate(result.path)}
-                className="block w-full px-12 w-[200px] lg:w-[300px] tracking-wide hover:scale-105 hover:bg-white hover:text-moss transition-all duration-300 ease-in-out rounded"
+                className="block w-full w-[150px] lg:w-[300px] px-2 lg:px-12 tracking-wide hover:scale-105 hover:bg-white hover:text-moss transition-all duration-300 ease-in-out rounded"
               >
                 {result.name}
               </button>

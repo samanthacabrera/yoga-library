@@ -247,14 +247,14 @@ const CategoryPage = () => {
             <img
               src={pose.image}
               alt={pose.name}
-              className="w-full h-32 object-cover"
+              className="w-full h-full object-cover"
             />
           ) : (
-            <div className="w-full h-32 flex items-center justify-center bg-gray-100">
+            <div className="w-full h-96 sm:h-72 md:h-48 lg:h-32 flex items-center justify-center bg-gray-100">
               <span className="text-xs opacity-30">No Image</span>
             </div>
           )}
-          <span className="mt-2 lowercase tracking-wide text-center group-hover:text-moss transition-all duration-300">
+          <span className="mt-2 lowercase tracking-wide text-center leading-relaxed group-hover:text-moss transition-all duration-300">
             {pose.name}
           </span>
         </Link>
