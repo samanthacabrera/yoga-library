@@ -56,7 +56,7 @@ const Drawer = () => {
               : "transform -translate-x-full opacity-0"
           }`}
       >
-        <Link to="/" className="font-medium uppercase border-2 rounded p-1 my-4 transition-all duration-300 ease-in-out hover:scale-105">Learn Yoga Online</Link>
+        <Link to="/" className="font-medium uppercase border-2 rounded p-1 my-4 hover:bg-white hover:text-moss hover:border-transparent transition-all duration-300 ease-in-out">Learn Yoga Online</Link>
         {[
           { label: "Start Here", to: "/what-is-yoga/beginners-guide" },
           { label: "What Is Yoga?", to: "/what-is-yoga/overview" },

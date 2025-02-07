@@ -231,35 +231,39 @@ const CategoryPage = () => {
       <h2 className="text-xl lg:text-3xl pt-12 font-medium text-center tracking-wide ">{getHeadingText()}</h2>
       <p className="text-charcoal tracking-wider leading-loose">{getDescText()}</p>
 
-      {filteredPoses.length === 0 ? (
-        <p>No poses found for this category.</p>
-      ) : (
-       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-8">
-        {filteredPoses.map((pose) => (
-          <div
-            key={pose.id}
-            className="hover:scale-105 transition-transform duration-300 p-2"
-          >
-            <Link to={`/poses/${pose.name}`} className="flex flex-col items-center group">
-              {pose.image ? (
-                <img
-                  src={pose.image}
-                  alt={pose.name}
-                  className="p-2 mb-3 w-24 h-24 object-cover rounded-full border group-hover:border-moss transition-all duration-300"
-                />
-              ) : (
-                <div className="mb-3 w-24 h-24 flex items-center justify-center bg-gray-100 rounded-full border group-hover:border-moss transition-all duration-300">
-                  <span className="text-gray-300">No Image</span>
-                </div>
-              )}
-              <span className="text-sm text-charcoal text-center tracking-tight group-hover:text-moss transition-colors duration-300">
-                {pose.name}
-              </span>
-            </Link>
-          </div>
-        ))}
+{filteredPoses.length === 0 ? (
+  <p className="text-lg font-bold text-black bg-moss p-4 text-center">
+    No poses found for this category.
+  </p>
+) : (
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-8">
+    {filteredPoses.map((pose) => (
+      <div
+        key={pose.id}
+        className="relative p-4 border border-charcoal bg-white rounded shadow hover:shadow-lg transition-shadow duration-300"
+      >
+        <Link to={`/poses/${pose.name}`} className="group flex flex-col items-center">
+          {pose.image ? (
+            <img
+              src={pose.image}
+              alt={pose.name}
+              className="w-full h-32 object-cover"
+            />
+          ) : (
+            <div className="w-full h-32 flex items-center justify-center bg-gray-100">
+              <span className="text-xs opacity-30">No Image</span>
+            </div>
+          )}
+          <span className="mt-2 lowercase tracking-wide text-center group-hover:text-moss transition-all duration-300">
+            {pose.name}
+          </span>
+        </Link>
       </div>
-      )}
+    ))}
+  </div>
+)}
+
+
       <div className="flex flex-col text-sm opacity-50">
         <a href="https://www.flaticon.com/free-icons/workout" title="workout icons">Workout icons created by dDara - Flaticon</a>
         <a href="https://www.flaticon.com/free-icons/yoga" title="yoga icons">Yoga icons created by monkik - Flaticon</a>
