@@ -48,7 +48,7 @@
     "id": 6,
     "name": "Child's Pose",
     "image": "/child-pose.png",
-    "chakra": ["Root", "Heart"],
+    "chakra": ["Root", "Third Eye","Solar Plexus", "Crown"],
     "type": ["Restorative", "Forward Fold"],
     "benefit": ["Reduce Stress", "Restore Energy"],
     "part": ["Spine", "Hips"]
