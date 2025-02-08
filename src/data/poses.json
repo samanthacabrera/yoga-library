@@ -80,7 +80,7 @@
     "benefit": ["Improve Balance", "Build Strength", "Enhance Focus"],
     "part": ["Legs", "Hips", "Arms"]
   },
-  {
+  { 
     "id": 10,
     "name": "Reverse Warrior",
     "image": "/reverse-warrior.png",
