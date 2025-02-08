@@ -146,7 +146,7 @@ const Chakras = () => {
 
   return (
     <div className="max-w-3xl px-8 py-4 mx-auto">
-      <h1 className="heading my-12 lg:mb-40 text-4xl lg:text-6xl">The Seven Chakras</h1>
+      <h1 className="heading text-center my-12 lg:mb-40 text-4xl lg:text-6xl">The Seven Chakras</h1>
       {chakras.map((chakra, index) => (
         <div
           key={index}

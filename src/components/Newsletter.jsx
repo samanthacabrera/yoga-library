@@ -42,7 +42,7 @@ const Newsletter = () => {
     return (
         <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-20 px-8 py-4 mx-auto">
             <div className="mb-8">
-                <h1 className="heading my-12 lg:mb-20 text-4xl lg:text-6xl">Our Community Newsletter</h1>
+                <h1 className="heading text-center my-12 lg:mb-20 text-4xl lg:text-6xl">Our Community Newsletter</h1>
                  <p className="tracking-wide">Stay inspired and connected with our monthly yoga newsletter, each edition delivers insightful articles, tips for deepening your practice.</p>
             </div>
 

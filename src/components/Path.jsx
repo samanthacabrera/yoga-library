@@ -98,7 +98,7 @@ const Path = () => {
 
    return (
        <div className="max-w-3xl px-8 py-4 mx-auto">
-            <h1 className="heading my-12 lg:mb-40 text-4xl lg:text-6xl">The 8-Limbed Path of Yoga</h1>
+            <h1 className="heading text-center my-12 lg:mb-40 text-4xl lg:text-6xl">The 8-Limbed Path of Yoga</h1>
                 {limbs.map((limb, index) => (
                     <div
                         key={index}
