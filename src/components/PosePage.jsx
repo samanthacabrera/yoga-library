@@ -126,11 +126,21 @@ const PosePage = () => {
           <p>{poseDesc.desc}</p>
         </div>
       )}
-      {/* Benefits */}
-      {poseBenefit && poseBenefit.benefit && (
+      {poseBenefit && (poseBenefit.physical || poseBenefit.mental) && (
         <div id="benefits" className="group">
-          <h3 className="font-medium text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Benefits</h3>
-          <p>{poseBenefit.benefit}</p>
+          <h3 className="font-medium text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">
+            Benefits
+          </h3>
+          {poseBenefit.physical && (
+            <p>
+              <span className="font-medium tracking-wide">Physical Benefits:</span> {poseBenefit.physical}
+            </p>
+          )}
+          {poseBenefit.mental && (
+            <p>
+              <span className="font-medium tracking-wide">Mental Benefits:</span> {poseBenefit.mental}
+            </p>
+          )}
         </div>
       )}
       {/* Origins */}
