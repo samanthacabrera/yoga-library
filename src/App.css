@@ -23,8 +23,8 @@ body {
 
 .heading {
   color: #8a9a5b;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-family: "DM Sans", serif;
+  font-weight: 400;
   text-align: center;
   letter-spacing: 1px;
 }

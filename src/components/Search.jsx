@@ -83,7 +83,7 @@ const Search = () => {
         />
       </form>
       {isDropdownOpen && (
-        <ul className="z-50 absolute right-0 w-fit bg-moss text-white m-2 rounded-2xl py-4 space-y-4">
+        <ul className="z-50 absolute right-0 w-fit bg-moss text-white m-2 rounded-2xl p-4 space-y-4">
           {filteredResults.map((result, index) => (
             <li key={index}>
               <button
