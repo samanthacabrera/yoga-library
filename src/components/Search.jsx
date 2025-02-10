@@ -33,7 +33,7 @@ const Search = () => {
   };
 
   const handleInputChange = (e) => {
-    const query = e.target.value.trim().toLowerCase();
+    const query = e.target.value.toLowerCase();
     setSearchTerm(query);
     
     if (query) {
