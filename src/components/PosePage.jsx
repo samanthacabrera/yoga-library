@@ -231,37 +231,24 @@ const PosePage = () => {
 
       {/* Related Poses */}
       {relatedPoses.length > 0 && (
-        <div className="border border-moss rounded-2xl p-8 space-y-8">
-          <p className="text-2xl md:text-4xl text-center tracking-wide my-2">
+        <div className="p-8 space-y-6 bg-moss bg-opacity-30 border border-moss rounded-2xl">
+          <p className="text-lg md:text-2xl text-center font-medium tracking-widest text-charcoal">
             Related Poses
           </p>
-          <div className="flex space-x-8 overflow-x-scroll">
-            {relatedPoses.slice(0, 2).map((relatedPose) => {
-              return (
-                <Link
-                  key={relatedPose.id}
-                  to={`/poses/${relatedPose.name}`}
-                  className="relative group w-1/2 min-w-[300px]" 
-                >
-                  <div className="relative overflow-hidden rounded transition transform duration-300">
-                    <img
-                      src={relatedPose.image}
-                      alt={relatedPose.name}
-                      className="w-full h-56 object-cover rounded group-hover:opacity-0 transition-opacity duration-300"
-                    />
-                    <div className="absolute inset-0 bg-moss bg-opacity-30 group-hover:border-moss border border-transparent flex items-center opacity-0 group-hover:opacity-100 transition duration-300 text-center p-6 rounded">
-                      <p>Click to learn more about {relatedPose.name} </p>
-                    </div>
-                  </div>
-                  <p className="text-sm md:text-lg text-center tracking-wide my-2">
-                    {relatedPose.name}
-                  </p>
-                </Link>
-              );
-            })}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            {relatedPoses.slice(0, 6).map((relatedPose) => (
+              <Link
+                key={relatedPose.id}
+                to={`/poses/${relatedPose.name}`}
+                className="bg-white text-moss text-center mx-auto w-[300px] lg:w-full font-medium px-2 py-1 rounded-lg hover:scale-105 transition"
+              >
+                {relatedPose.name}
+              </Link>
+            ))}
           </div>
         </div>
       )}
+
 
       {/* Sources */}
       {sources.length > 0 && (
