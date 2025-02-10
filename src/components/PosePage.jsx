@@ -212,7 +212,7 @@ const PosePage = () => {
           (section, idx) =>
             section.data.length > 0 && (
               <div key={idx} className="bg-moss bg-opacity-30 border border-moss rounded-2xl text-sm p-4">
-                <p className="font-medium tracking-wide opacity-90">{section.title}</p>
+                <p className="font-medium tracking-wide">{section.title}</p>
                 <div className="flex flex-wrap mt-2 gap-2">
                   {section.data.map((item, index) => (
                     <Link
@@ -232,7 +232,7 @@ const PosePage = () => {
       {/* Related Poses */}
       {relatedPoses.length > 0 && (
         <div className="p-8 space-y-6 bg-moss bg-opacity-30 border border-moss rounded-2xl">
-          <p className="text-lg md:text-2xl text-center font-medium tracking-widest text-charcoal">
+          <p className="font-medium tracking-wide text-center text-xl lg:text-2xl">
             Related Poses
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
