@@ -161,6 +161,15 @@ const Chakras = () => {
           <div className="lg:col-span-2">{chakra.content}</div>
         </div>
       ))}
+      <div className="text-lg text-charcoal space-y-12 leading-loose">
+        <hr/>
+        <p>
+          The chakras form an interconnected system of energy centers that influence our physical, emotional, and spiritual well-being. Each chakra plays a vital role in shaping our experiences, from our sense of security and creativity to our personal power, love, self-expression, intuition, and spiritual awareness. When energy flows freely through these centers, we experience balance, clarity, and vitality. However, blockages or imbalances can lead to disharmony, affecting our thoughts, emotions, and overall health.
+        </p>
+        <p>
+          By recognizing the unique characteristics of each chakra, we gain deeper insight into our personal growth and healing journey. Balancing the chakras is not a one-time task but an ongoing practice of self-awareness, movement, meditation, and intentional living. Through yoga, breathwork, affirmations, and mindful habits, we can cultivate greater harmony within ourselves and in our relationships with the world around us. As we align our chakras, we foster a sense of inner peace, resilience, and connection—allowing us to live with greater purpose, authenticity, and spiritual depth.
+        </p>
+      </div>
     </div>
   );
 };
