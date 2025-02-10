@@ -83,6 +83,13 @@ const Gunas = () => {
           <div className="lg:col-span-2">{guna.content}</div>
         </div>
       ))}
+    
+      <div className="space-y-12">
+        <hr/>
+        <p>
+          Yoga, mindfulness, and intentional living serve as powerful tools to navigate and balance these energies. When we align our actions with the qualities of Sattva—through self-reflection, conscious movement, and nourishing practices—we invite a deeper connection to ourselves and the world around us. Understanding the gunas is not about eliminating Rajas or Tamas, but rather about integrating them in a way that supports our well-being and growth. By observing our tendencies and making mindful adjustments, we cultivate a life that is balanced, fulfilling, and aligned with our highest potential.
+        </p>
+      </div>
     </div>
   );
 };
