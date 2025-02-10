@@ -318,7 +318,7 @@
     "id": 36,
     "name": "Cat Pose",
     "image": "/cat-pose.png",
-    "chakra": ["Solar Plexus"],
+    "chakra": ["Sacral", "Root", "Solar Plexus"],
     "type": ["Kneeling", "Prone", "Stretch"],
     "benefit": ["Improve Flexibility", "Improve Posture"],
     "part": ["Spine"]
@@ -327,7 +327,7 @@
     "id": 37,
     "name": "Cow Pose",
     "image": "",
-    "chakra": ["Heart"],
+    "chakra": ["Heart", "Root"],
     "type": ["Kneeling", "Prone", "Stretch"],
     "benefit": ["Improve Flexibility", "Improve Posture"],
     "part": ["Chest", "Shoulders"]

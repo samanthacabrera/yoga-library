@@ -73,7 +73,7 @@ const PosePage = () => {
 
 
       <header className="relative p-6 md:p-8 flex group bg-moss bg-opacity-30 border border-moss rounded-2xl">
-        <h2 className="text-4xl md:text-6xl tracking-tight text-left opacity-70 relative">
+        <h2 className="text-4xl md:text-6xl tracking-tight text-left opacity-90 relative">
           <span className="block">
             {pose.name}
           </span>
@@ -98,7 +98,7 @@ const PosePage = () => {
       )}
 
    {/* Table of Contents */}
-    <div className="bg-white flex flex-col lg:items-center lg:flex-row lg:space-x-2 lg:sticky top-0 z-10 lg:py-2 text-moss text-lg">
+    <div className="flex flex-col lg:items-center lg:flex-row lg:space-x-2 lg:sticky top-0 z-10 lg:py-2 text-moss text-lg bg-white rounded">
       <a href="#description" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
         Overview
       </a>

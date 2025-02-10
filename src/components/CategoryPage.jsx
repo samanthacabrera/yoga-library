@@ -177,7 +177,7 @@ const CategoryPage = () => {
               ${
                 activeCategories.all
                   ? "bg-moss text-white border-moss"
-                  : "bg-transparent border-charcoal border-opacity-70"
+                  : "bg-white bg-opacity-50 border-charcoal border-opacity-70"
               } 
               hover:bg-moss hover:bg-opacity-70 hover:text-white hover:border-moss focus:outline-none focus:ring-4 focus:ring-moss focus:ring-opacity-30`}
           >
@@ -193,7 +193,7 @@ const CategoryPage = () => {
               ${
                 activeCategories[categoryType]
                   ? "bg-moss text-white border-moss"
-                  : "bg-transparent border-charcoal border-opacity-70"
+                  : "bg-white bg-opacity-50 border-charcoal border-opacity-70"
               } 
               hover:bg-moss hover:bg-opacity-70 hover:text-white hover:border-moss focus:outline-none focus:ring-4 focus:ring-moss focus:ring-opacity-30`}
           >
@@ -216,8 +216,7 @@ const CategoryPage = () => {
                       key={value}
                       onClick={() => toggleCategory("close")}
                       to={`/poses/${category.type}/${value.toLowerCase()}`}
-                      className="px-3 py-1 text-xs lg:text-sm rounded-full border border-charcoal bg-transparent text-charcoal tracking-tight transition-all duration-200 
-                        hover:bg-moss hover:text-white hover:border-moss"
+                      className="px-3 py-1 text-xs lg:text-sm rounded-full border border-charcoal bg-white bg-opacity-50 text-charcoal tracking-tight transition-all duration-200 hover:bg-moss hover:text-white hover:border-moss"
                     >
                       {value}
                     </Link>
@@ -240,7 +239,7 @@ const CategoryPage = () => {
     {filteredPoses.map((pose) => (
       <div
         key={pose.id}
-        className="relative p-4 border border-charcoal bg-white rounded shadow hover:shadow-lg transition-shadow duration-300"
+        className="relative p-4 border border-charcoal bg-white bg-opacity-50 rounded shadow hover:shadow-lg transition-shadow duration-300"
       >
         <Link to={`/poses/${pose.name}`} className="group flex flex-col items-center">
           {pose.image ? (

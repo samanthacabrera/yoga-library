@@ -10,11 +10,12 @@ body {
   font-weight: 200;
   line-height: 250%;
   scroll-behavior: smooth;
+  color: #444;
 }
 
 ::selection {
-  background-color: #8a9a5b;
-  color: white;
+  background-color: #6a793e;
+  color: whitesmoke;
 }
 
 .scrollbar-hidden::-webkit-scrollbar {
@@ -22,7 +23,8 @@ body {
 }
 
 .heading {
-  color: #8a9a5b;
+  color: #6a793e;
+  /* color: #5b708b; */
   font-family: "DM Sans", serif;
   font-weight: 400;
   letter-spacing: 1px;

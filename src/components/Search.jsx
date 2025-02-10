@@ -79,7 +79,7 @@ const Search = () => {
           value={searchTerm}
           onChange={handleInputChange}
           placeholder="search"
-          className="w-[150px] lg:w-[300px] text-left pl-1 rounded-none border-b-2 border-moss focus:placeholder-charcoal focus:outline-none tracking-wider"
+          className="w-[150px] lg:w-[300px] text-left pl-1 rounded-t border-b-2 border-moss focus:placeholder-charcoal focus:outline-none tracking-wider"
         />
       </form>
       {isDropdownOpen && (
