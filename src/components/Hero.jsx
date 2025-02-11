@@ -65,9 +65,9 @@ const Hero = () => {
 
         {/* Featured Categories */}
         <div className="grid md:grid-cols-2 gap-32 items-center py-32">
-          <div>
+          <div className="text-center md:text-left">
             <h2 className="heading text-3xl md:text-5xl">Featured Categories</h2>
-            <p className="mt-6 text-lg md:text-xl max-w-md">
+            <p className="mt-6 md:text-xl mx-12 md:mx-0">
               These curated selections offer guidance and inspiration for your journey this February.
             </p>
           </div>
@@ -85,22 +85,22 @@ const Hero = () => {
         </div>
 
         {/* Featured Poses */}
-        <div className="grid md:grid-cols-2 gap-32 items-center py-32 text-right">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-32 items-center py-32">
           <div className="space-y-12 text-center">
-            <Link to="/poses/gate-pose" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
-              <h3>Gate Pose</h3>
+            <Link to="/poses/Downward-Facing Dog" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
+              <h3>Downward-Facing Dog</h3>
             </Link>
-            <Link to="/poses/tree-pose" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
-              <h3>Tree Pose</h3>
+            <Link to="/poses/Triangle Pose" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
+              <h3>Triangle Pose</h3>
             </Link>
             <Link to="/poses/warrior-ii" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
-              <h3>Warrior II</h3>
+              <h3>Bridge Pose</h3>
             </Link>
           </div>
-          <div>
-            <h2 className="heading text-3xl md:text-5xl text-right">Featured Poses</h2>
-            <p className="mt-6 text-lg md:text-xl max-w-md ml-auto text-right">
-              These essential poses offer a strong foundation for your yoga journey. Learn proper alignment, deepen your awareness, and refine your practice.
+          <div className="text-center md:text-right">
+            <h2 className="heading text-3xl md:text-5xl">Featured Poses</h2>
+            <p className="mt-6 text-lg md:text-xl mx-12 md:mx-0">
+              This month's featured poses are here. <br/> Learn proper alignment, deepen your awareness, and refine your practice with these foundational poses.
             </p>
           </div>
         </div>
