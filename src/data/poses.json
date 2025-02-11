@@ -29,7 +29,7 @@
   {
     "id": 4,
     "name": "Staff Pose",
-    "image": "",
+    "image": "/staff-pose.png",
     "chakra": ["Solar Plexus", "Sacral", "Root"],
     "type": ["Forward Fold", "Restorative", "Seated"],
     "benefit": ["Improve Posture", "Restore Energy"],
@@ -38,7 +38,7 @@
   {
     "id": 45,
     "name": "Table Top Pose",
-    "image": "",
+    "image": "/tabletop-pose.png",
     "chakra": ["Sacral", "Root"],
     "type": ["Stretch","Kneeling", "Prone", "Restorative"],
     "benefit": ["Build Stability", "Improve Balance"],
@@ -56,7 +56,7 @@
   {
     "id": 37,
     "name": "Cow Pose",
-    "image": "",
+    "image": "/cow-pose.png",
     "chakra": ["Heart", "Root"],
     "type": ["Kneeling", "Prone", "Stretch"],
     "benefit": ["Improve Flexibility", "Improve Posture"],
