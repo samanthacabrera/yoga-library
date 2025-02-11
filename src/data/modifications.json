@@ -6,6 +6,17 @@
   },
   {
     "id": 2,
+    "name": "Hero Pose",
+    "modification": "If sitting directly on your heels feels uncomfortable, try placing a folded blanket, cushion, or bolster under your sit bones to raise them slightly, reducing pressure on the knees and ankles. For those with tight quadriceps or hip flexibility, you can sit on a block or prop your hips with a cushion, allowing the knees to stay in a more comfortable position. If the hips are high and the knees are unable to comfortably touch the floor, using a bolster or blanket under the thighs can provide additional support. If kneeling is painful, an alternative is to place a rolled-up towel or cushion under the knees for extra cushioning. To deepen the stretch while maintaining proper alignment, you can keep the knees together and ensure the spine is tall, avoiding any rounding or arching in the lower back. For individuals with limited ankle mobility or pain, placing a rolled-up towel under the ankles or sitting on a cushion may help alleviate discomfort."
+  },
+  {
+    "id": 4,
+    "name": "Staff Pose",
+    "modification": "For individuals with tight hamstrings or lower back discomfort, using a cushion or blanket under the hips can help maintain a more neutral spine and alleviate strain. If it's difficult to sit up straight, practitioners can bend their knees slightly while keeping the feet flexed and the legs extended forward. Those with hip or knee injuries should avoid overextending the legs and may benefit from sitting on a block or bolster for additional support. For beginners or those with limited flexibility, practicing with the feet placed closer to the body can make the pose more accessible. To modify for better core engagement, focus on gently drawing the belly button toward the spine and maintaining length in the spine, avoiding slouching."
+  },
+
+  {
+    "id": 25,
     "name": "Downward-Facing Dog",
     "modification": "For individuals with tight hamstrings or calves, keeping the knees bent can prevent overstraining the legs and lower back. This modification helps maintain a long, neutral spine, avoiding rounding in the back, and allows the body to relax into the stretch more comfortably. It also ensures that the core remains engaged without creating excessive tension in the lower back or hamstrings. If reaching the heels to the floor is difficult, using props like blocks or cushions under the feet can provide support. Elevating the heels allows practitioners to focus on lifting the hips and lengthening the spine rather than forcing the heels down, which can lead to unnecessary strain. For those with wrist discomfort or injuries, instead of pressing directly into the palms, practitioners can make fists, use a yoga block under the hands, or try a forearm variation of the pose. These adjustments reduce pressure on the wrists while still engaging the shoulders and core. Using a wedge-shaped block to elevate the hands slightly can also provide additional support and ease strain on the wrists."
   },
@@ -15,7 +26,7 @@
     "modification": "One simple modification is to perform the pose on your forearms instead of your hands, known as Forearm Plank. This reduces the pressure on the wrists and can help you maintain better alignment in the shoulders. If you still find it difficult to maintain the pose, try lowering your knees to the ground. This modification lightens the load on the core and helps you focus on building strength gradually without compromising form. Using props such as yoga blocks under the hands or a cushion under the knees can further reduce strain and provide more support during the hold. Another accessible option is to perform a wall plank by placing your hands on a wall at shoulder height and stepping your feet back until your body forms an angled line. This variation eliminates pressure on the wrists and shoulders while still engaging the core and promoting proper alignment. Additionally, you can reduce the duration of the hold, working up to longer times as you build strength and endurance. By adjusting the pose to fit your body’s needs, you can still enjoy the benefits of Plank Pose while minimizing the risk of injury."
   },
   {
-    "id": 4,
+    "id": 24,
     "name": "Four-Limbed Staff Pose",
     "modification": "One common modification is to lower the knees to the ground, which reduces the amount of weight placed on the arms and core while still engaging the upper body. This is particularly helpful for beginners or those with wrist, shoulder, or back limitations. Another modification is performing the pose with the elbows slightly bent rather than locked, which prevents unnecessary strain on the shoulder joints and helps to maintain proper alignment. To further reduce the challenge, practitioners can also perform the pose by lowering down slowly and keeping the chest off the floor, coming into a half-chaturanga position before transitioning into upward dog. Using props like blocks under the chest or hands can also assist in maintaining alignment and stability. It’s important to always focus on keeping the body in a straight line from head to heels, and if that feels difficult, the knees-down variation or a more gradual approach is a great way to build strength and confidence."
   },
@@ -113,16 +124,6 @@
     "id": 23,
     "name": "Eagle Pose",
     "modification": " For individuals with tight hips or knee, ankle, or hip injuries, one can modify the pose by keeping the bottom leg slightly bent rather than deeply squatting, or by not fully crossing the legs. Instead of wrapping the top leg around the bottom, one can simply place the top foot on the floor for more stability and less strain. If the shoulders are tight or there is discomfort in the arms, the arms can be kept out to the sides or on the hips instead of fully crossing them in front of the body. Using a strap around the arms or holding a block between the palms can also provide additional support and reduce strain on the shoulders. For those with lower back issues, focusing on keeping the spine long and engaged rather than deeply twisting or arching the back can help protect the lower back. Practicing near a wall or using a chair for balance can also be helpful, especially for beginners or those with balance challenges."
-  },
-  {
-    "id": 24,
-    "name": "Staff Pose",
-    "modification": "For individuals with tight hamstrings or lower back discomfort, using a cushion or blanket under the hips can help maintain a more neutral spine and alleviate strain. If it's difficult to sit up straight, practitioners can bend their knees slightly while keeping the feet flexed and the legs extended forward. Those with hip or knee injuries should avoid overextending the legs and may benefit from sitting on a block or bolster for additional support. For beginners or those with limited flexibility, practicing with the feet placed closer to the body can make the pose more accessible. To modify for better core engagement, focus on gently drawing the belly button toward the spine and maintaining length in the spine, avoiding slouching."
-  },
-  {
-    "id": 25,
-    "name": "Hero Pose",
-    "modification": "If sitting directly on your heels feels uncomfortable, try placing a folded blanket, cushion, or bolster under your sit bones to raise them slightly, reducing pressure on the knees and ankles. For those with tight quadriceps or hip flexibility, you can sit on a block or prop your hips with a cushion, allowing the knees to stay in a more comfortable position. If the hips are high and the knees are unable to comfortably touch the floor, using a bolster or blanket under the thighs can provide additional support. If kneeling is painful, an alternative is to place a rolled-up towel or cushion under the knees for extra cushioning. To deepen the stretch while maintaining proper alignment, you can keep the knees together and ensure the spine is tall, avoiding any rounding or arching in the lower back. For individuals with limited ankle mobility or pain, placing a rolled-up towel under the ankles or sitting on a cushion may help alleviate discomfort."
   },
   {
     "id": 26,

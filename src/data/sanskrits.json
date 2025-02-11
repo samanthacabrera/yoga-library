@@ -11,6 +11,24 @@
   },
   {
     "id": 2,
+    "name": "Hero Pose",
+    "sanskrit_name": "वीरासन",
+    "other_names": [],
+    "sanskrit_translation": "Virasana",
+    "sanskrit_pronunciation": "[ veer-AH-suh-nuh ]",
+    "context": "The etymology of Vīrāsana comes from two Sanskrit words: Vīra (वीर), meaning 'hero' or 'warrior,' and Āsana (आसन), meaning 'posture' or 'seat.' Vīra represents strength, courage, and nobility, qualities associated with a hero, which the pose aims to embody. Āsana, a term commonly used in yoga, refers to any posture, so Vīrāsana translates to 'Hero Pose,' a seated posture that encourages openness, balance, and grounding. In this pose, the practitioner sits on their legs, with their knees bent and thighs grounded, creating a feeling of rootedness and stability. Vīrāsana can also open the chest and stretch the thighs, ankles, and knees. Historically, this posture is mentioned in the classical texts of Hatha Yoga, and it is often practiced as a meditative pose or a preparatory posture for other seated postures. Its practice emphasizes physical endurance, focus, and a sense of strength, embodying the spirit of a hero."
+  },
+  {
+    "id": 4,
+    "name": "Staff Pose",
+    "sanskrit_name": "दण्डासन",
+    "other_names": [],
+    "sanskrit_translation": "Dandasana",
+    "sanskrit_pronunciation": "[ dan-DAH-suh-nuh ]",
+    "context": "The name Dandasana is derived from Sanskrit, with Danda (दण्ड) meaning 'staff' or 'rod' and Asana (आसन) meaning 'pose' or 'posture.' Therefore, Dandasana translates to 'Staff Pose,' symbolizing a straight and stable staff. This pose reflects strength, alignment, and mindfulness, as it requires practitioners to sit tall with the spine elongated and the legs extended forward. Dandasana serves as a foundation for many seated poses and forward bends, helping to build core strength, stability, and awareness of posture. It also promotes mental focus, encouraging practitioners to stay grounded and centered."
+  },
+  {
+    "id": 25,
     "name": "Downward-Facing Dog",
     "sanskrit_name": "अधोमुखश्वानासन",
     "other_names": ["Down Dog"],
@@ -28,7 +46,7 @@
     "context": "The name Plank Pose is often referred to as Phalakasana in Sanskrit, with Phalaka (फलक) meaning 'plank' or 'board,' and Asana (आसन) meaning 'pose' or 'posture.' This name directly reflects the shape the body takes while in the pose, which resembles a straight, firm plank or board. The pose is rooted in traditional yoga practices and has been used for centuries to build core strength, stability, and endurance. While it may not appear in the earliest texts like the Hatha Yoga Pradipika, variations of the pose have long been included in strength-building sequences and as part of dynamic physical practices. Plank Pose has gained popularity in modern yoga, particularly in Vinyasa and Power Yoga, where it is often integrated into sun salutations or used as a transition between postures. It became more widely recognized as yoga evolved in the 20th century, especially through the teachings of influential yoga masters like T. Krishnamacharya, Pattabhi Jois, and B.K.S. Iyengar, who emphasized the importance of building strength and stability in the body. Today, Plank Pose is considered a foundational posture in many yoga practices, valued for its ability to engage the entire body and enhance both physical and mental endurance."
   },
   {
-    "id": 4,
+    "id": 24,
     "name": "Four-Limbed Staff Pose",
     "sanskrit_name": "चतुरङ्ग दण्डासन",
     "other_names": ["Chaturanga"],
@@ -206,24 +224,6 @@
     "sanskrit_translation": "Garudasana",
     "sanskrit_pronunciation": "[ guh-ROO-dah-suh-nuh ]",
     "context": "The etymology of Garudasana, or Eagle Pose, is rooted in Sanskrit, with Garuda (गरुड़) referring to the mythical bird-like creature in Hindu and Buddhist traditions.  Asana (आसन) means 'pose' or 'posture,' so Garudasana translates to 'Eagle Pose.' This pose is said to embody the qualities of the eagle, including strength, sharp vision, and the ability to rise above challenges. The posture involves crossing the legs and arms to create a compact, centered shape, symbolizing the eagle’s ability to fold its wings while maintaining focus and precision. The name reflects the balance between stability and fluidity, making Eagle Pose a dynamic and energizing posture that strengthens the body and sharpens the mind. Today, Garudasana continues to play a significant role in modern yoga practices, particularly in Vinyasa and Hatha yoga sequences. It is valued for its ability to enhance balance, flexibility, and coordination while cultivating a strong sense of focus and mental clarity. "
-  },
-  {
-    "id": 24,
-    "name": "Staff Pose",
-    "sanskrit_name": "दण्डासन",
-    "other_names": [],
-    "sanskrit_translation": "Dandasana",
-    "sanskrit_pronunciation": "[ dan-DAH-suh-nuh ]",
-    "context": "The name Dandasana is derived from Sanskrit, with Danda (दण्ड) meaning 'staff' or 'rod' and Asana (आसन) meaning 'pose' or 'posture.' Therefore, Dandasana translates to 'Staff Pose,' symbolizing a straight and stable staff. This pose reflects strength, alignment, and mindfulness, as it requires practitioners to sit tall with the spine elongated and the legs extended forward. Dandasana serves as a foundation for many seated poses and forward bends, helping to build core strength, stability, and awareness of posture. It also promotes mental focus, encouraging practitioners to stay grounded and centered."
-  },
-  {
-    "id": 25,
-    "name": "Hero Pose",
-    "sanskrit_name": "वीरासन",
-    "other_names": [],
-    "sanskrit_translation": "Virasana",
-    "sanskrit_pronunciation": "[ veer-AH-suh-nuh ]",
-    "context": "The etymology of Vīrāsana comes from two Sanskrit words: Vīra (वीर), meaning 'hero' or 'warrior,' and Āsana (आसन), meaning 'posture' or 'seat.' Vīra represents strength, courage, and nobility, qualities associated with a hero, which the pose aims to embody. Āsana, a term commonly used in yoga, refers to any posture, so Vīrāsana translates to 'Hero Pose,' a seated posture that encourages openness, balance, and grounding. In this pose, the practitioner sits on their legs, with their knees bent and thighs grounded, creating a feeling of rootedness and stability. Vīrāsana can also open the chest and stretch the thighs, ankles, and knees. Historically, this posture is mentioned in the classical texts of Hatha Yoga, and it is often practiced as a meditative pose or a preparatory posture for other seated postures. Its practice emphasizes physical endurance, focus, and a sense of strength, embodying the spirit of a hero."
   },
   {
     "id": 26,

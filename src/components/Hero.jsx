@@ -71,7 +71,7 @@ const Hero = () => {
               These curated selections offer guidance and inspiration for your journey this February.
             </p>
           </div>
-          <div className="space-y-12">
+          <div className="space-y-12 text-center">
             <Link to="/poses/benefit/improve posture" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
               <h3>Improve Posture</h3>
             </Link>
@@ -86,7 +86,7 @@ const Hero = () => {
 
         {/* Featured Poses */}
         <div className="grid md:grid-cols-2 gap-32 items-center py-32 text-right">
-          <div className="space-y-12">
+          <div className="space-y-12 text-center">
             <Link to="/poses/gate-pose" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
               <h3>Gate Pose</h3>
             </Link>
@@ -107,23 +107,23 @@ const Hero = () => {
 
       {/* Call To Action */}
       <div className="border-t-8 border-moss py-32 text-center">
-        <h2 className="heading text-3xl md:text-5xl uppercase tracking-tight">
+        <h2 className="heading text-3xl md:text-5xl">
           Start Your Practice
         </h2>
-        <p className="mt-8 text-lg md:text-xl max-w-lg mx-auto leading-relaxed">
-          Build strength. Find balance. Move with intention. 
-          <br /> Your yoga journey begins here.
+        <p className="mt-8 text-lg md:text-xl max-w-lg mx-auto tracking-wider">
+          Strengthen your body. Still your mind. Move with purpose. 
         </p>
+        <p className="mt-4 text-lg md:text-xl max-w-lg mx-auto tracking-wide">Your yoga journey starts now.</p>
         <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-6">
           <a 
             href="/poses" 
-            className="px-6 py-3 border border-charcoal rounded text-charcoal text-lg lowercase tracking-wide transition hover:bg-moss hover:text-white"
+            className="px-6 py-3 border border-charcoal rounded text-charcoal text-lg lowercase tracking-wide transition hover:bg-moss hover:bg-opacity-30"
           >
             Browse Poses
           </a>
           <a 
             href="/what-is-yoga/beginners-guide" 
-            className="px-6 py-3 border border-charcoal rounded text-charcoal text-lg lowercase tracking-wide transition hover:bg-moss hover:text-white"
+            className="px-6 py-3 border border-charcoal rounded text-charcoal text-lg lowercase tracking-wide transition hover:bg-moss hover:bg-opacity-30"
           >
             Learn More
           </a>

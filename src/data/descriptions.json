@@ -6,6 +6,16 @@
   },
   {
     "id": 2,
+    "name": "Hero Pose",
+    "desc": "Hero Pose, or Virasana, stretches the thighs, knees, and ankles while improving posture and cultivating a sense of groundedness. This pose involves sitting on the heels with the knees bent and legs folded beneath the body. Hero Pose stretches the thighs, knees, and ankles while encouraging better posture by aligning the spine and opening the chest."
+  },
+  {
+    "id": 4,
+    "name": "Staff Pose",
+    "desc": "Staff Pose, or Dandasana in Sanskrit, is a foundational seated posture that emphasizes alignment and strength. In this pose, practitioners sit on the floor with their legs extended straight ahead, feet flexed, and hands placed on the ground beside the hips, fingers pointing forward. The spine remains tall and elongated, with the chest open and the shoulders relaxed."
+  },
+  {
+    "id": 25,
     "name": "Downward-Facing Dog",
     "desc": "Downward Dog, or Adho Mukha Svanasana, is a foundational yoga pose that promotes strength, flexibility, and balance. In this pose, your body forms an inverted 'V' shape, with hands and feet firmly grounded, hips lifted high, and the spine elongated."
   },
@@ -15,7 +25,7 @@
     "desc": "Plank Pose, or Phalakasana, is a fundamental yoga posture that focuses on building strength and stability. The pose involves holding a position similar to a push-up, with the body in a straight line from head to heels. Plank Pose is commonly used in both beginner and advanced yoga practices as a building block for more complex poses."
   },
   {
-    "id": 4,
+    "id": 24,
     "name": "Four-Limbed Staff Pose",
     "desc": "Four-Limbed Staff Pose, or Chaturanga Dandasana, is a foundational yoga pose that builds strength, stability, and focus. In this pose, the body is held parallel to the floor, supported by the hands and toes, with the elbows bent at a 90-degree angle and tucked close to the sides."
   },
@@ -113,16 +123,6 @@
     "id": 23,
     "name": "Eagle Pose",
     "desc": "Eagle Pose, or Garudasana, is a posture that embodies balance and focus. In this pose, practitioners begin by standing tall and then cross one leg over the other, wrapping it around the standing leg while simultaneously crossing the arms in front of the body, bringing the palms to touch."
-  },
-  {
-    "id": 24,
-    "name": "Staff Pose",
-    "desc": "Staff Pose, or Dandasana in Sanskrit, is a foundational seated posture that emphasizes alignment and strength. In this pose, practitioners sit on the floor with their legs extended straight ahead, feet flexed, and hands placed on the ground beside the hips, fingers pointing forward. The spine remains tall and elongated, with the chest open and the shoulders relaxed."
-  },
-  {
-    "id": 25,
-    "name": "Hero Pose",
-    "desc": "Hero Pose, or Virasana, stretches the thighs, knees, and ankles while improving posture and cultivating a sense of groundedness. This pose involves sitting on the heels with the knees bent and legs folded beneath the body. Hero Pose stretches the thighs, knees, and ankles while encouraging better posture by aligning the spine and opening the chest."
   },
   {
     "id": 26,

@@ -6,6 +6,16 @@
   },
   {
     "id": 2,
+    "name": "Hero Pose",
+    "precaution": "Those with knee, ankle, or hip injuries should avoid this posture or modify it, as sitting directly on the heels can strain these areas. It’s crucial to keep the knees together and aligned, not allowing them to splay outward, to avoid stress on the joints. Individuals with tight quadriceps or limited flexibility should ease into the pose slowly, perhaps with props for support, to avoid overstretching the muscles."
+  },
+  {
+    "id": 4,
+    "name": "Staff Pose",
+    "precaution": "Individuals with lower back, hip, or knee issues should be mindful in Staff Pose, as improper alignment can aggravate these areas. It’s important to engage the core and maintain a tall spine, avoiding slouching or collapsing the chest. Those with tight hamstrings or calves may find it challenging to keep the legs fully extended and straight; using props like a cushion under the hips can help. Practitioners should also be cautious if they have any pelvic imbalances, as the pose requires sitting upright with both legs extended forward."
+  },
+  {
+    "id": 25,
     "name": "Downward-Facing Dog",
     "precaution": " Individuals with wrist issues should avoid excessive weight on the wrists, ensuring the fingers are spread wide and the weight is distributed evenly across the palms. For those with shoulder concerns, the shoulders should be engaged by pressing the shoulder blades down the back to prevent any unnecessary strain. The neck should remain in a neutral position, with the gaze directed between the legs or at the belly button. Avoid dropping or craning the neck, as this can cause tension in the cervical spine. Pregnant individuals should avoid Downward Dog, particularly after the first trimester, as the inversion may place pressure on the abdomen and disrupt circulation. People with pre-existing injuries to the back, neck, or shoulders should modify the pose."
   },
@@ -15,7 +25,7 @@
     "precaution": "If you have wrist or shoulder injuries, such as carpal tunnel syndrome, tendonitis, or rotator cuff issues, you should approach Plank Pose with caution, as the weight-bearing nature of the pose can aggravate these conditions. If you experience lower back pain, ensure your core is properly engaged and your alignment is correct to avoid sagging in the lower back, which could worsen discomfort. Pregnant individuals, especially in the later stages, should avoid Plank Pose due to the pressure it places on the abdomen and lower back, and instead consider gentler alternatives like a wall plank."
   },
   {
-    "id": 4,
+    "id": 24,
     "name": "Four-Limbed Staff Pose",
     "precaution": "Beginners or those new to yoga should be mindful of their form to avoid straining the shoulders, wrists, and lower back. People with wrist issues, such as carpal tunnel syndrome or wrist pain, should modify the pose or avoid it until strength and flexibility improve. Those with shoulder injuries or limited shoulder mobility should also be cautious, as the pose requires significant shoulder stability and strength to prevent strain. Similarly, individuals with lower back pain or a history of spinal issues should avoid letting the hips sag, as this can lead to discomfort or injury. Pregnant individuals should consult with a healthcare provider before practicing this pose, as the core engagement and pressure on the abdomen may not be suitable."
   },
@@ -113,16 +123,6 @@
     "id": 23,
     "name": "Eagle Pose",
     "precaution": "Those with knee, ankle, or hip injuries should be careful, as the pose requires deep bending and twisting of the lower body, which can put strain on these areas. People with shoulder injuries may also need to modify the arm position, as the pose demands significant shoulder flexibility and strength when crossing the arms in front of the body. Those with lower back issues should avoid forcing the pose too deeply, especially the twist, and focus on engaging the core to support the spine. Pregnant individuals should avoid the deep twist and opt for a gentler variation, focusing on balance and stability without crossing the arms or legs too tightly."
-  },
-  {
-    "id": 24,
-    "name": "Staff Pose",
-    "precaution": "Individuals with lower back, hip, or knee issues should be mindful in Staff Pose, as improper alignment can aggravate these areas. It’s important to engage the core and maintain a tall spine, avoiding slouching or collapsing the chest. Those with tight hamstrings or calves may find it challenging to keep the legs fully extended and straight; using props like a cushion under the hips can help. Practitioners should also be cautious if they have any pelvic imbalances, as the pose requires sitting upright with both legs extended forward."
-  },
-  {
-    "id": 25,
-    "name": "Hero Pose",
-    "precaution": "Those with knee, ankle, or hip injuries should avoid this posture or modify it, as sitting directly on the heels can strain these areas. It’s crucial to keep the knees together and aligned, not allowing them to splay outward, to avoid stress on the joints. Individuals with tight quadriceps or limited flexibility should ease into the pose slowly, perhaps with props for support, to avoid overstretching the muscles."
   },
   {
     "id": 26,

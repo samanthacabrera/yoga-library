@@ -10,6 +10,24 @@
   },
   {
     "id": 2,
+    "name": "Hero Pose",
+    "image": "/hero-pose.png",
+    "chakra": ["Root", "Sacral"],
+    "type": ["Restorative", "Kneeling"],
+    "benefit": ["Enhance Focus", "Improve Posture"],
+    "part": ["Hips", "Spine"]
+  },
+  {
+    "id": 4,
+    "name": "Staff Pose",
+    "image": "",
+    "chakra": ["Solar Plexus", "Sacral", "Root"],
+    "type": ["Forward Fold", "Restorative", "Seated"],
+    "benefit": ["Improve Posture", "Restore Energy"],
+    "part": ["Hips", "Spine"]
+  },
+  {
+    "id": 25,
     "name": "Downward-Facing Dog",
     "image": "/downward-facing-dog.png",
     "chakra": ["Root", "Solar Plexus", "Heart", "Throat", "Third Eye", "Crown"],
@@ -27,7 +45,7 @@
     "part": ["Core", "Shoulders"]
   },
   {
-    "id": 4,
+    "id": 24,
     "name": "Four-Limbed Staff Pose",
     "image": "/chaturanga.png",
     "chakra": ["Solar Plexus", "Root"],
@@ -205,24 +223,6 @@
     "type": ["Standing", "Balance", "Twist"],
     "benefit": ["Enhance Focus", "Improve Balance"],
     "part": ["Legs", "Arms"]
-  },
-  {
-    "id": 24,
-    "name": "Staff Pose",
-    "image": "",
-    "chakra": ["Solar Plexus", "Sacral", "Root"],
-    "type": ["Forward Fold", "Restorative", "Seated"],
-    "benefit": ["Improve Posture", "Restore Energy"],
-    "part": ["Hips", "Spine"]
-  },
-  {
-    "id": 25,
-    "name": "Hero Pose",
-    "image": "/hero-pose.png",
-    "chakra": ["Root", "Sacral"],
-    "type": ["Restorative", "Kneeling"],
-    "benefit": ["Enhance Focus", "Improve Posture"],
-    "part": ["Hips", "Spine"]
   },
   {
     "id": 26,

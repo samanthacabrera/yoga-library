@@ -13,6 +13,29 @@
   },
   {
     "id": 2,
+    "name": "Hero Pose",
+    "cues": [
+      "Begin by kneeling on the floor with your knees bent and feet together, allowing your thighs to be parallel and your shins to rest flat on the ground.",
+      "Lengthen your spine by drawing the crown of your head toward the ceiling, while gently lifting your chest and rolling your shoulders down and back.",
+      "To deepen the stretch, gently press your shins and feet into the floor while keeping your thighs grounded.",
+      "Hold the pose for 5 to 10 breaths, then slowly release and counter the pose with a gentle stretch such as Child's Pose."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Staff Pose",
+    "cues": [
+      "Sit on the floor with your legs extended straight out in front of you. Keep your feet flexed and your toes pointing upward.",
+      "Place your hands flat on the floor beside your hips, fingers pointing forward, and press down to activate your arms and shoulders.",
+      "Engage your quadriceps and lift your kneecaps toward the ceiling to create length in the legs. Keep your spine long and avoid slumping or rounding the back.",
+      "Sit up tall, reaching the crown of your head toward the sky, creating a straight line from the base of your spine through to the top of your head.",
+      "Draw your navel toward your spine to activate your core and maintain stability in the torso. Ensure that your chest is open and your shoulders are relaxed, away from the ears.",
+      "Hold the pose while breathing deeply and steadily for 5 to 10 breaths. Focus on maintaining a strong and stable alignment, keeping your legs active and your spine tall."
+    ]
+  },
+
+  {
+    "id": 25,
     "name": "Downward-Facing Dog",
     "cues": [
       "Start in Table Top Pose with your hands directly under your shoulders and knees under your hips.",
@@ -39,7 +62,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 24,
     "name": "Four-Limbed Staff Pose",
     "cues": [
       "Start in Plank Pose with your shoulders stacked directly over your wrists, and your body in a straight line from head to heels.",
@@ -293,28 +316,6 @@
       "Draw your elbows down towards your chest to deepen the shoulder stretch, ensuring that your shoulders are relaxed and away from your ears.",
       "Focus on lengthening your spine by reaching the crown of your head toward the ceiling and maintaining a steady gaze (drishti) to help with balance.",
       "Hold the pose for 5 to 10 breaths, breathing deeply and steadily, and focus on maintaining balance and stability throughout."
-    ]
-  },
-  {
-    "id": 24,
-    "name": "Staff Pose",
-    "cues": [
-      "Sit on the floor with your legs extended straight out in front of you. Keep your feet flexed and your toes pointing upward.",
-      "Place your hands flat on the floor beside your hips, fingers pointing forward, and press down to activate your arms and shoulders.",
-      "Engage your quadriceps and lift your kneecaps toward the ceiling to create length in the legs. Keep your spine long and avoid slumping or rounding the back.",
-      "Sit up tall, reaching the crown of your head toward the sky, creating a straight line from the base of your spine through to the top of your head.",
-      "Draw your navel toward your spine to activate your core and maintain stability in the torso. Ensure that your chest is open and your shoulders are relaxed, away from the ears.",
-      "Hold the pose while breathing deeply and steadily for 5 to 10 breaths. Focus on maintaining a strong and stable alignment, keeping your legs active and your spine tall."
-    ]
-  },
-  {
-    "id": 25,
-    "name": "Hero Pose",
-    "cues": [
-      "Begin by kneeling on the floor with your knees bent and feet together, allowing your thighs to be parallel and your shins to rest flat on the ground.",
-      "Lengthen your spine by drawing the crown of your head toward the ceiling, while gently lifting your chest and rolling your shoulders down and back.",
-      "To deepen the stretch, gently press your shins and feet into the floor while keeping your thighs grounded.",
-      "Hold the pose for 5 to 10 breaths, then slowly release and counter the pose with a gentle stretch such as Child's Pose."
     ]
   },
   {
