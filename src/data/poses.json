@@ -18,6 +18,15 @@
     "part": ["Hips", "Spine"]
   },
   {
+    "id": 27,
+    "name": "Lotus Pose",
+    "image": "/lotus-pose.png",
+    "chakra": ["Root", "Crown", "Third Eye", "Sacral"],
+    "type": ["Seated", "Restorative"],
+    "benefit": ["Enhance Focus", "Enhance Openness"],
+    "part": ["Hips", "Spine"]
+  },
+  {
     "id": 4,
     "name": "Staff Pose",
     "image": "",
@@ -27,13 +36,94 @@
     "part": ["Hips", "Spine"]
   },
   {
-    "id": 25,
-    "name": "Downward-Facing Dog",
-    "image": "/downward-facing-dog.png",
-    "chakra": ["Root", "Solar Plexus", "Heart", "Throat", "Third Eye", "Crown"],
-    "type": ["Inversion", "Standing"],
-    "benefit": ["Tone Muscles", "Boost Circulation", "Improve Flexibility"],
-    "part": ["Arms", "Shoulders", "Spine", "Legs"]
+    "id": 45,
+    "name": "Table Top Pose",
+    "image": "",
+    "chakra": ["Sacral", "Root"],
+    "type": ["Stretch","Kneeling", "Prone", "Restorative"],
+    "benefit": ["Build Stability", "Improve Balance"],
+    "part": ["Back", "Arms"]
+  },
+  {
+    "id": 36,
+    "name": "Cat Pose",
+    "image": "/cat-pose.png",
+    "chakra": ["Sacral", "Root", "Solar Plexus"],
+    "type": ["Kneeling", "Prone", "Stretch"],
+    "benefit": ["Improve Flexibility", "Improve Posture"],
+    "part": ["Spine"]
+  },
+  {
+    "id": 37,
+    "name": "Cow Pose",
+    "image": "",
+    "chakra": ["Heart", "Root"],
+    "type": ["Kneeling", "Prone", "Stretch"],
+    "benefit": ["Improve Flexibility", "Improve Posture"],
+    "part": ["Chest", "Shoulders"]
+  },
+  {
+    "id": 6,
+    "name": "Child's Pose",
+    "image": "/child-pose.png",
+    "chakra": ["Root", "Third Eye","Solar Plexus", "Crown"],
+    "type": ["Restorative", "Forward Fold"],
+    "benefit": ["Reduce Stress", "Restore Energy"],
+    "part": ["Spine", "Hips"]
+  },
+  {
+    "id": 44,
+    "name": "Puppy Pose",
+    "image": "/puppy-pose.png",
+    "chakra": ["Heart", "Throat", "Sacral", "Root"],
+    "type": ["Stretch","Kneeling"],
+    "benefit": ["Enhance Relaxation", "Improve Flexibility"],
+    "part": ["Spine", "Shoulders"]
+  },
+  {
+    "id": 21,
+    "name": "Tree Pose",
+    "image": "/tree-pose.png",
+    "chakra": ["Root", "Third Eye", "Sacral"],
+    "type": ["Standing", "Balance"],
+    "benefit": ["Improve Balance", "Improve Posture"],
+    "part": ["Legs", "Hips"]
+  },
+  {
+    "id": 38,
+    "name": "Bound Angle Pose",
+    "image": "/bound-angle-pose.png",
+    "chakra": ["Root","Sacral"],
+    "type": ["Seated", "Stretch"],
+    "benefit": ["Enhance Openness", "Enhance Relaxation"],
+    "part": ["Hips", "Back"]
+  },
+  {
+    "id": 30,
+    "name": "Supine Spinal Twist Pose",
+    "image": "/supine-twist.png",
+    "chakra": ["Root", "Sacral"],
+    "type": ["Twist", "Stretch", "Supine", "Restorative"],
+    "benefit": ["Improve Posture", "Improve Flexibility"],
+    "part": ["Spine", "Back"]
+  },
+  {
+    "id": 39,
+    "name": "Happy Baby Pose",
+    "image": "/happy-baby-pose.png",
+    "chakra": ["Root", "Sacral"],
+    "type": ["Restorative", "Stretch", "Supine"],
+    "benefit": ["Enhance Relaxation", "Improve Flexibility"],
+    "part": ["Hips", "Back"]
+  },
+  {
+    "id": 40,
+    "name": "Corpse Pose",
+    "image": "/corpse-pose.png",
+    "chakra": ["Crown", "Heart"],
+    "type": ["Restorative", "Supine"],
+    "benefit": ["Enhance Relaxation", "Relieve Tension", "Restore Energy"],
+    "part": ["Back"]
   },
   {
     "id": 3,
@@ -63,13 +153,76 @@
     "part": ["Spine", "Chest"]
   },
   {
-    "id": 6,
-    "name": "Child's Pose",
-    "image": "/child-pose.png",
-    "chakra": ["Root", "Third Eye","Solar Plexus", "Crown"],
-    "type": ["Restorative", "Forward Fold"],
-    "benefit": ["Reduce Stress", "Restore Energy"],
-    "part": ["Spine", "Hips"]
+    "id": 25,
+    "name": "Downward-Facing Dog",
+    "image": "/downward-facing-dog.png",
+    "chakra": ["Root", "Solar Plexus", "Heart", "Throat", "Third Eye", "Crown"],
+    "type": ["Inversion", "Standing"],
+    "benefit": ["Tone Muscles", "Boost Circulation", "Improve Flexibility"],
+    "part": ["Arms", "Shoulders", "Spine", "Legs"]
+  },
+  {
+    "id": 26,
+    "name": "Garland Pose",
+    "image": "/garland-pose.png",
+    "chakra": ["Root", "Sacral"],
+    "type": ["Squat", "Hip Opener"],
+    "benefit": ["Improve Flexibility", "Build Stability"],
+    "part": ["Hips", "Back"]
+  },
+  {
+    "id": 29,
+    "name": "Frog Pose",
+    "image": "/frog-pose.png",
+    "chakra": ["Root"],
+    "type": ["Hip Opener"],
+    "benefit": ["Enhance Openness", "Improve Flexibility"],
+    "part": ["Hips", "Thighs"]
+  },
+  {
+    "id": 15,
+    "name": "Goddess Pose",
+    "image": "/goddess-pose.png",
+    "chakra": ["Root", "Sacral", "Heart"],
+    "type": ["Standing", "Hip Opener"],
+    "benefit": ["Build Strength", "Boost Energy"],
+    "part": ["Legs", "Hips", "Arms"]
+  },
+  {
+    "id": 18,
+    "name": "Pyramid Pose",
+    "image": "/pyramid-pose.png",
+    "chakra": ["Root", "Sacral", "Solar Plexus"],
+    "type": ["Standing", "Forward Fold"],
+    "benefit": ["Improve Flexibility", "Improve Posture", "Improve Balance"],
+    "part": ["Legs", "Spine", "Hips"]
+  },
+  {
+    "id": 28,
+    "name": "Lizard Pose",
+    "image": "/lizard-pose.png",
+    "chakra": ["Root", "Solar Plexus", "Sacral"],
+    "type": ["Hip Opener", "Strength"],
+    "benefit": ["Enhance Openness", "Increase Flexibility"],
+    "part": ["Hips"]
+  },
+  {
+    "id": 17,
+    "name": "Low Lunge",
+    "image": "/low-lunge.png",
+    "chakra": ["Root", "Sacral", "Heart"],
+    "type": ["Standing", "Lunge", "Hip Opener"],
+    "benefit": ["Improve Flexibility", "Enhance Focus"],
+    "part": ["Legs", "Hips"]
+  },
+  {
+    "id": 16,
+    "name": "Crescent High Lunge Pose",
+    "image": "/high-lunge.png",
+    "chakra": ["Root", "Solar Plexus", "Heart"],
+    "type": ["Standing", "Lunge", "Hip Opener"],
+    "benefit": ["Build Strength", "Improve Balance", "Enhance Focus"],
+    "part": ["Legs", "Hips", "Shoulders"]
   },
   {
     "id": 7,
@@ -135,60 +288,6 @@
     "part": ["Legs", "Core", "Hips", "Spine"]
   },
   {
-    "id": 14,
-    "name": "Chair Pose",
-    "image": "/chair-pose.png",
-    "chakra": ["Root", "Solar Plexus", "Heart"],
-    "type": ["Standing"],
-    "benefit": ["Improve Balance", "Build Stability"],
-    "part": ["Legs", "Glutes", "Arms"]
-  },
-  {
-    "id": 15,
-    "name": "Goddess Pose",
-    "image": "/goddess-pose.png",
-    "chakra": ["Root", "Sacral", "Heart"],
-    "type": ["Standing", "Hip Opener"],
-    "benefit": ["Build Strength", "Boost Energy"],
-    "part": ["Legs", "Hips", "Arms"]
-  },
-  {
-    "id": 16,
-    "name": "Crescent High Lunge Pose",
-    "image": "/high-lunge.png",
-    "chakra": ["Root", "Solar Plexus", "Heart"],
-    "type": ["Standing", "Lunge", "Hip Opener"],
-    "benefit": ["Build Strength", "Improve Balance", "Enhance Focus"],
-    "part": ["Legs", "Hips", "Shoulders"]
-  },
-  {
-    "id": 17,
-    "name": "Low Lunge",
-    "image": "/low-lunge.png",
-    "chakra": ["Root", "Sacral", "Heart"],
-    "type": ["Standing", "Lunge", "Hip Opener"],
-    "benefit": ["Improve Flexibility", "Enhance Focus"],
-    "part": ["Legs", "Hips"]
-  },
-  {
-    "id": 18,
-    "name": "Pyramid Pose",
-    "image": "/pyramid-pose.png",
-    "chakra": ["Root", "Sacral", "Solar Plexus"],
-    "type": ["Standing", "Forward Fold"],
-    "benefit": ["Improve Flexibility", "Improve Posture", "Improve Balance"],
-    "part": ["Legs", "Spine", "Hips"]
-  },
-  {
-    "id": 19,
-    "name": "Wide-Legged Forward Fold",
-    "image": "/wide-leg-forward-fold.png",
-    "chakra": ["Root", "Sacral"],
-    "type": ["Standing", "Forward Fold", "Leg Stretch"],
-    "benefit": ["Improve Circulation", "Relieve Tension", "Improve Flexibility"],
-    "part": ["Spine", "Legs", "Hips"]
-  },
-  {
     "id": 20,
     "name": "Side Plank Pose",
     "image": "/side-plank-pose.png",
@@ -198,22 +297,22 @@
     "part": ["Arms", "Core"]
   },
   {
-    "id": 21,
-    "name": "Tree Pose",
-    "image": "/tree-pose.png",
-    "chakra": ["Root", "Third Eye", "Sacral"],
-    "type": ["Standing", "Balance"],
-    "benefit": ["Improve Balance", "Improve Posture"],
-    "part": ["Legs", "Hips"]
+    "id": 47,
+    "name": "Upward Plank Pose",
+    "image": "/reverse-plank-pose.png",
+    "chakra": ["Solar Plexus", "Heart", "Third Eye", "Throat"],
+    "type": ["Plank", "Strength", "Core"],
+    "benefit": ["Improve Posture", "Build Stability", "Tone Muscles"],
+    "part": ["Core", "Arms"]
   },
   {
-    "id": 22,
-    "name": "Dancer Pose",
-    "image": "/dancer-pose.png",
-    "chakra": ["Heart", "Solar Plexus"],
-    "type": ["Standing", "Balance"],
-    "benefit": ["Improve Balance", "Improve Flexibility", "Enhance Focus"],
-    "part": ["Legs", "Chest"]
+    "id": 14,
+    "name": "Chair Pose",
+    "image": "/chair-pose.png",
+    "chakra": ["Root", "Solar Plexus", "Heart"],
+    "type": ["Standing"],
+    "benefit": ["Improve Balance", "Build Stability"],
+    "part": ["Legs", "Glutes", "Arms"]
   },
   {
     "id": 23,
@@ -225,49 +324,49 @@
     "part": ["Legs", "Arms"]
   },
   {
-    "id": 26,
-    "name": "Garland Pose",
-    "image": "/garland-pose.png",
+    "id": 34,
+    "name": "Standing Forward Fold",
+    "image": "/standing-forward-fold.png",
+    "chakra": ["Root", "Crown", "Sacral", "Solar Plexus"],
+    "type": ["Forward Fold", "Standing", "Leg Stretch"],
+    "benefit": ["Improve Flexibility", "Improve Posture"],
+    "part": ["Spine", "Legs"]
+  },
+  {
+    "id": 19,
+    "name": "Wide-Legged Forward Fold",
+    "image": "/wide-leg-forward-fold.png",
     "chakra": ["Root", "Sacral"],
-    "type": ["Squat", "Hip Opener"],
-    "benefit": ["Improve Flexibility", "Build Stability"],
-    "part": ["Hips", "Back"]
+    "type": ["Standing", "Forward Fold", "Leg Stretch"],
+    "benefit": ["Improve Circulation", "Relieve Tension", "Improve Flexibility"],
+    "part": ["Spine", "Legs", "Hips"]
   },
   {
-    "id": 27,
-    "name": "Lotus Pose",
-    "image": "/lotus-pose.png",
-    "chakra": ["Root", "Crown", "Third Eye", "Sacral"],
-    "type": ["Seated", "Restorative"],
-    "benefit": ["Enhance Focus", "Enhance Openness"],
-    "part": ["Hips", "Spine"]
+    "id": 46,
+    "name": "Thread the Needle",
+    "image": "/thread-the-needle.png",
+    "chakra": ["Heart","Sacral"],
+    "type": ["Twist", "Stretch", "Kneeling", "Prone"],
+    "benefit": ["Enhance Openness", "Improve Posture"],
+    "part": ["Shoulders", "Back"]
   },
   {
-    "id": 28,
-    "name": "Lizard Pose",
-    "image": "/lizard-pose.png",
-    "chakra": ["Root", "Solar Plexus", "Sacral"],
-    "type": ["Hip Opener", "Strength"],
-    "benefit": ["Enhance Openness", "Increase Flexibility"],
-    "part": ["Hips"]
+    "id": 50,
+    "name": "Gate Pose",
+    "image": "/gate-pose.png",
+    "chakra": ["Root", "Sacral", "Solar Plexus"],
+    "type": ["Kneeling", "Stretch"],
+    "benefit": ["Improve Flexibility"],
+    "part": ["Spine", "Side Body"]
   },
   {
-    "id": 29,
-    "name": "Frog Pose",
-    "image": "/frog-pose.png",
-    "chakra": ["Root"],
-    "type": ["Hip Opener"],
-    "benefit": ["Enhance Openness", "Improve Flexibility"],
-    "part": ["Hips", "Thighs"]
-  },
-  {
-    "id": 30,
-    "name": "Supine Spinal Twist Pose",
-    "image": "/supine-twist.png",
-    "chakra": ["Root", "Sacral"],
-    "type": ["Twist", "Stretch", "Supine", "Restorative"],
-    "benefit": ["Improve Posture", "Improve Flexibility"],
-    "part": ["Spine", "Back"]
+    "id": 41,
+    "name": "Cobra Pose",
+    "image": "/cobra-pose.png",
+    "chakra": ["Heart", "Throat", "Solar Plexus", "Sacral", "Root"],
+    "type": ["Backbend", "Chest Opener"],
+    "benefit": ["Improve Flexibility", "Build Strength"],
+    "part": ["Spine", "Chest"]
   },
   {
     "id": 31,
@@ -288,87 +387,6 @@
     "part": ["Back", "Glutes"]
   },
   {
-    "id": 33,
-    "name": "Wheel Pose",
-    "image": "/wheel-pose.png",
-    "chakra": ["Heart", "Crown", "Third Eye", "Third Eye", "Solar Plexus"],
-    "type": ["Backbend", "Inversion", "Strength", "Chest Opener"],
-    "benefit": ["Build Strength", "Improve Flexibility", "Boost Circulation"],
-    "part": ["Back", "Arms", "Chest"]
-  },
-  {
-    "id": 34,
-    "name": "Standing Forward Fold",
-    "image": "/standing-forward-fold.png",
-    "chakra": ["Root", "Crown", "Sacral", "Solar Plexus"],
-    "type": ["Forward Fold", "Standing", "Leg Stretch"],
-    "benefit": ["Improve Flexibility", "Improve Posture"],
-    "part": ["Spine", "Legs"]
-  },
-  {
-    "id": 35,
-    "name": "Boat Pose",
-    "image": "/boat-pose.png",
-    "chakra": ["Solar Plexus"],
-    "type": ["Seated", "Leg Stretch", "Balance", "Core"],
-    "benefit": ["Tone Muscles", "Improve Posture"],
-    "part": ["Core"]
-  },
-  {
-    "id": 36,
-    "name": "Cat Pose",
-    "image": "/cat-pose.png",
-    "chakra": ["Sacral", "Root", "Solar Plexus"],
-    "type": ["Kneeling", "Prone", "Stretch"],
-    "benefit": ["Improve Flexibility", "Improve Posture"],
-    "part": ["Spine"]
-  },
-  {
-    "id": 37,
-    "name": "Cow Pose",
-    "image": "",
-    "chakra": ["Heart", "Root"],
-    "type": ["Kneeling", "Prone", "Stretch"],
-    "benefit": ["Improve Flexibility", "Improve Posture"],
-    "part": ["Chest", "Shoulders"]
-  },
-  {
-    "id": 38,
-    "name": "Bound Angle Pose",
-    "image": "/bound-angle-pose.png",
-    "chakra": ["Root","Sacral"],
-    "type": ["Seated", "Stretch"],
-    "benefit": ["Enhance Openness", "Enhance Relaxation"],
-    "part": ["Hips", "Back"]
-  },
-  {
-    "id": 39,
-    "name": "Happy Baby Pose",
-    "image": "/happy-baby-pose.png",
-    "chakra": ["Root", "Sacral"],
-    "type": ["Restorative", "Stretch", "Supine"],
-    "benefit": ["Enhance Relaxation", "Improve Flexibility"],
-    "part": ["Hips", "Back"]
-  },
-  {
-    "id": 40,
-    "name": "Corpse Pose",
-    "image": "/corpse-pose.png",
-    "chakra": ["Crown", "Heart"],
-    "type": ["Restorative", "Supine"],
-    "benefit": ["Enhance Relaxation", "Relieve Tension", "Restore Energy"],
-    "part": ["Back"]
-  },
-  {
-    "id": 41,
-    "name": "Cobra Pose",
-    "image": "/cobra-pose.png",
-    "chakra": ["Heart", "Throat", "Solar Plexus", "Sacral", "Root"],
-    "type": ["Backbend", "Chest Opener"],
-    "benefit": ["Improve Flexibility", "Build Strength"],
-    "part": ["Spine", "Chest"]
-  },
-  {
     "id": 42,
     "name": "Locust Pose",
     "image": "/locust-pose.png",
@@ -376,51 +394,6 @@
     "type": ["Backbend", "Prone", "Strength", "Chest Opener"],
     "benefit": ["Build Strength", "Improve Posture"],
     "part": ["Back", "Glutes"]
-  },
-  {
-    "id": 43,
-    "name": "Bow Pose",
-    "image": "/bow-pose.png",
-    "chakra": ["Heart", "Throat", "Solar Plexus", "Sacral"],
-    "type": ["Backbend", "Prone", "Stretch"],
-    "benefit": ["Improve Flexibility", "Enhance Openness"],
-    "part": ["Spine", "Chest"]
-  },
-  {
-    "id": 44,
-    "name": "Puppy Pose",
-    "image": "/puppy-pose.png",
-    "chakra": ["Heart", "Throat", "Sacral", "Root"],
-    "type": ["Stretch","Kneeling"],
-    "benefit": ["Enhance Relaxation", "Improve Flexibility"],
-    "part": ["Spine", "Shoulders"]
-  },
-  {
-    "id": 45,
-    "name": "Table Top Pose",
-    "image": "",
-    "chakra": ["Sacral", "Root"],
-    "type": ["Stretch","Kneeling", "Prone", "Restorative"],
-    "benefit": ["Build Stability", "Improve Balance"],
-    "part": ["Back", "Arms"]
-  },
-  {
-    "id": 46,
-    "name": "Thread the Needle",
-    "image": "/thread-the-needle.png",
-    "chakra": ["Heart","Sacral"],
-    "type": ["Twist", "Stretch", "Kneeling", "Prone"],
-    "benefit": ["Enhance Openness", "Improve Posture"],
-    "part": ["Shoulders", "Back"]
-  },
-  {
-    "id": 47,
-    "name": "Upward Plank Pose",
-    "image": "/reverse-plank-pose.png",
-    "chakra": ["Solar Plexus", "Heart", "Third Eye", "Throat"],
-    "type": ["Plank", "Strength", "Core"],
-    "benefit": ["Improve Posture", "Build Stability", "Tone Muscles"],
-    "part": ["Core", "Arms"]
   },
   {
     "id": 48,
@@ -432,6 +405,15 @@
     "part": ["Hips", "Legs"]
   },
   {
+    "id": 35,
+    "name": "Boat Pose",
+    "image": "/boat-pose.png",
+    "chakra": ["Solar Plexus"],
+    "type": ["Seated", "Leg Stretch", "Balance", "Core"],
+    "benefit": ["Tone Muscles", "Improve Posture"],
+    "part": ["Core"]
+  },
+  {
     "id": 49,
     "name": "Plow Pose",
     "image": "/plow-pose.png",
@@ -441,12 +423,30 @@
     "part": ["Spine", "Back"]
   },
   {
-    "id": 50,
-    "name": "Gate Pose",
-    "image": "/gate-pose.png",
-    "chakra": ["Root", "Sacral", "Solar Plexus"],
-    "type": ["Kneeling", "Stretch"],
-    "benefit": ["Improve Flexibility"],
-    "part": ["Spine", "Side Body"]
+    "id": 22,
+    "name": "Dancer Pose",
+    "image": "/dancer-pose.png",
+    "chakra": ["Heart", "Solar Plexus"],
+    "type": ["Standing", "Balance"],
+    "benefit": ["Improve Balance", "Improve Flexibility", "Enhance Focus"],
+    "part": ["Legs", "Chest"]
+  },
+  {
+    "id": 43,
+    "name": "Bow Pose",
+    "image": "/bow-pose.png",
+    "chakra": ["Heart", "Throat", "Solar Plexus", "Sacral"],
+    "type": ["Backbend", "Prone", "Stretch"],
+    "benefit": ["Improve Flexibility", "Enhance Openness"],
+    "part": ["Spine", "Chest"]
+  },
+  {
+    "id": 33,
+    "name": "Wheel Pose",
+    "image": "/wheel-pose.png",
+    "chakra": ["Heart", "Crown", "Third Eye", "Third Eye", "Solar Plexus"],
+    "type": ["Backbend", "Inversion", "Strength", "Chest Opener"],
+    "benefit": ["Build Strength", "Improve Flexibility", "Boost Circulation"],
+    "part": ["Back", "Arms", "Chest"]
   }
 ]
