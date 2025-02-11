@@ -9,11 +9,15 @@ import cues from '../data/cues.json';
 
 const PosePage = () => {
   const { name } = useParams();
-  const pose = posesData.find((p) => p.name.toLowerCase() === name.toLowerCase());
+  const poseIndex = posesData.findIndex((p) => p.name.toLowerCase() === name.toLowerCase());
+  const pose = posesData[poseIndex];
 
   if (!pose) {
     return <div>Pose not found</div>;
   }
+
+  const prevPose = posesData[poseIndex - 1] || null;
+  const nextPose = posesData[poseIndex + 1] || null;
 
   const poseDesc = descriptions.find((d) => d.id === pose.id);
   const poseSanskirt = sanskirts.find((s) => s.id === pose.id);
@@ -97,7 +101,20 @@ const PosePage = () => {
         />
       )}
 
-   {/* Table of Contents */}
+      <div className="invisible md:visible absolute top-3/4 left-0 right-0 flex justify-between mx-12">
+        {prevPose && (
+          <Link to={`/poses/${prevPose.name}`} className="lowercase px-4 py-1 rounded-full border border-moss hover:bg-moss hover:bg-opacity-30 transition-all duration-300">
+            ← {prevPose.name}
+          </Link>
+        )}
+        {nextPose && (
+          <Link to={`/poses/${nextPose.name}`} className="lowercase px-4 py-1 rounded-full border border-moss hover:bg-moss hover:bg-opacity-30 transition-all duration-300">
+            {nextPose.name} →
+          </Link>
+        )}
+      </div>
+
+    {/* Table of Contents */}
     <div className="flex flex-col lg:items-center lg:flex-row lg:space-x-2 lg:sticky top-0 z-10 lg:py-2 text-moss text-lg bg-white rounded">
       <a href="#description" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
         Overview
