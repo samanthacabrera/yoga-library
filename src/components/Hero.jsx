@@ -22,7 +22,7 @@ const Hero = () => {
         <meta property="og:type" content="website" />
       </Helmet>
 
-      <div className="min-h-screen max-w-4xl mx-auto grid gap-y-20 text-charcoal">
+      <div className="min-h-screen max-w-4xl mx-4 md:mx-auto grid gap-y-20 text-charcoal">
         {/* Hero Section */}
         <div className="grid md:grid-cols-2 h-[80vh] items-center border-b-8 border-moss pb-12 text-center md:text-left">
           <div>
@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
 
         {/* About Section */}
-        <div className="grid md:grid-cols-2 items-start pt-12 text-center md:text-right border-b-8 border-moss pb-24">
+        <div className="grid md:grid-cols-2 items-start pt-24 text-center md:text-right border-b-8 border-moss pb-52">
           <div className="hidden md:block"></div>
           <div>
             <h2 className="heading text-3xl md:text-5xl">
@@ -72,28 +72,28 @@ const Hero = () => {
             </p>
           </div>
           <div className="space-y-12">
-            <Link to="/poses/benefit/improve posture" className="block w-64 mx-auto p-4 bg-moss text-white rounded-md text-center transition duration-300 hover:scale-105 hover:shadow-lg">
+            <Link to="/poses/benefit/improve posture" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
               <h3>Improve Posture</h3>
             </Link>
-            <Link to="/poses/benefit/build strength" className="block w-64 mx-auto p-4 bg-moss text-white rounded-md text-center transition duration-300 hover:scale-105 hover:shadow-lg">
+            <Link to="/poses/benefit/build strength" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
               <h3>Build Strength</h3>
             </Link>
-            <Link to="/poses/benefit/restore energy" className="block w-64 mx-auto p-4 bg-moss text-white rounded-md text-center transition duration-300 hover:scale-105 hover:shadow-lg">
+            <Link to="/poses/benefit/restore energy" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
               <h3>Restore Energy</h3>
             </Link>
           </div>
         </div>
 
         {/* Featured Poses */}
-        <div className="grid md:grid-cols-2 gap-32 items-center py-32">
+        <div className="grid md:grid-cols-2 gap-32 items-center py-32 text-right">
           <div className="space-y-12">
-            <Link to="/poses/gate-pose" className="block w-64 mx-auto p-4 bg-moss text-white rounded-md text-center transition duration-300 hover:scale-105 hover:shadow-lg">
+            <Link to="/poses/gate-pose" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
               <h3>Gate Pose</h3>
             </Link>
-            <Link to="/poses/tree-pose" className="block w-64 mx-auto p-4 bg-moss text-white rounded-md text-center transition duration-300 hover:scale-105 hover:shadow-lg">
+            <Link to="/poses/tree-pose" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
               <h3>Tree Pose</h3>
             </Link>
-            <Link to="/poses/warrior-ii" className="block w-64 mx-auto md:ml-auto p-4 bg-moss text-white rounded-md text-center transition duration-300 hover:scale-105 hover:shadow-lg mt-12">
+            <Link to="/poses/warrior-ii" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
               <h3>Warrior II</h3>
             </Link>
           </div>
@@ -105,16 +105,31 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Call To Action  */}
-        <div className="text-center py-16">
-          <h2 className="heading text-3xl md:text-5xl">Start Your Practice</h2>
-          <p className="mt-6 text-lg md:text-xl tracking-wide max-w-2xl mx-auto">
-            Explore poses, refine your technique, and deepen your understanding of yoga. Ready to begin?
-          </p>
-          <a href="/poses" className="mt-8 inline-block px-4 py-2 bg-moss text-white text-lg rounded-lg hover:bg-opacity-80 transition">
-            Browse Yoga Poses
+      {/* Call To Action */}
+      <div className="border-t-8 border-moss py-32 text-center">
+        <h2 className="heading text-3xl md:text-5xl uppercase tracking-tight">
+          Start Your Practice
+        </h2>
+        <p className="mt-8 text-lg md:text-xl max-w-lg mx-auto leading-relaxed">
+          Build strength. Find balance. Move with intention. 
+          <br /> Your yoga journey begins here.
+        </p>
+        <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-6">
+          <a 
+            href="/poses" 
+            className="px-6 py-3 border border-charcoal rounded text-charcoal text-lg lowercase tracking-wide transition hover:bg-moss hover:text-white"
+          >
+            Browse Poses
+          </a>
+          <a 
+            href="/what-is-yoga/beginners-guide" 
+            className="px-6 py-3 border border-charcoal rounded text-charcoal text-lg lowercase tracking-wide transition hover:bg-moss hover:text-white"
+          >
+            Learn More
           </a>
         </div>
+      </div>
+
       </div>
     </>
   );
