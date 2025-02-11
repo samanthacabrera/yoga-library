@@ -14,7 +14,7 @@ body {
 }
 
 ::selection {
-  background-color: #6a793e;
+  background-color: #91a062;
   color: whitesmoke;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .heading {
-  color: #6a793e;
+  color: #91a062;
   /* color: #5b708b; */
   font-family: "DM Sans", serif;
   font-weight: 400;

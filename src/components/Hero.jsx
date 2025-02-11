@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -29,18 +30,18 @@ const Hero = () => {
               Learn <br className="hidden md:block" /> Yoga <br className="hidden md:block" /> Online
             </h1>
             <p className="mt-8 mx-8 md:mx-0 text-lg md:text-xl tracking-wide">
-                Our mission is to offer an easy-to-use platform for anyone wanting to deepen their yoga practice. Whether you're just starting out or have years of experience, our site is designed to guide you through essential yoga poses, providing clear instructions and comprehensive explanations.
+                A simple, intuitive platform for deepening your yoga practice. Whether you're a beginner or an experienced yogi, explore essential poses with clear instructions and in-depth guidance.
             </p>
           </div>
           <div className="hidden md:block"></div>
         </div>
 
         {/* About Section */}
-        <div className="grid md:grid-cols-2 items-start pt-12 text-center md:text-right">
+        <div className="grid md:grid-cols-2 items-start pt-12 text-center md:text-right border-b-8 border-moss pb-24">
           <div className="hidden md:block"></div>
           <div>
             <h2 className="heading text-3xl md:text-5xl">
-              About Us
+              About
             </h2>
             <div className="mt-8 mx-8 md:mx-0 space-y-12 text-lg md:text-xl tracking-wide">
               <p>
@@ -60,6 +61,59 @@ const Hero = () => {
               </p>
             </div>
           </div>
+        </div>
+
+        {/* Featured Categories */}
+        <div className="grid md:grid-cols-2 gap-32 items-center py-32">
+          <div>
+            <h2 className="heading text-3xl md:text-5xl">Featured Categories</h2>
+            <p className="mt-6 text-lg md:text-xl max-w-md">
+              These curated selections offer guidance and inspiration for your journey this February.
+            </p>
+          </div>
+          <div className="space-y-12">
+            <Link to="/poses/benefit/improve posture" className="block w-64 mx-auto p-4 bg-moss text-white rounded-md text-center transition duration-300 hover:scale-105 hover:shadow-lg">
+              <h3>Improve Posture</h3>
+            </Link>
+            <Link to="/poses/benefit/build strength" className="block w-64 mx-auto p-4 bg-moss text-white rounded-md text-center transition duration-300 hover:scale-105 hover:shadow-lg">
+              <h3>Build Strength</h3>
+            </Link>
+            <Link to="/poses/benefit/restore energy" className="block w-64 mx-auto p-4 bg-moss text-white rounded-md text-center transition duration-300 hover:scale-105 hover:shadow-lg">
+              <h3>Restore Energy</h3>
+            </Link>
+          </div>
+        </div>
+
+        {/* Featured Poses */}
+        <div className="grid md:grid-cols-2 gap-32 items-center py-32">
+          <div className="space-y-12">
+            <Link to="/poses/gate-pose" className="block w-64 mx-auto p-4 bg-moss text-white rounded-md text-center transition duration-300 hover:scale-105 hover:shadow-lg">
+              <h3>Gate Pose</h3>
+            </Link>
+            <Link to="/poses/tree-pose" className="block w-64 mx-auto p-4 bg-moss text-white rounded-md text-center transition duration-300 hover:scale-105 hover:shadow-lg">
+              <h3>Tree Pose</h3>
+            </Link>
+            <Link to="/poses/warrior-ii" className="block w-64 mx-auto md:ml-auto p-4 bg-moss text-white rounded-md text-center transition duration-300 hover:scale-105 hover:shadow-lg mt-12">
+              <h3>Warrior II</h3>
+            </Link>
+          </div>
+          <div>
+            <h2 className="heading text-3xl md:text-5xl text-right">Featured Poses</h2>
+            <p className="mt-6 text-lg md:text-xl max-w-md ml-auto text-right">
+              These essential poses offer a strong foundation for your yoga journey. Learn proper alignment, deepen your awareness, and refine your practice.
+            </p>
+          </div>
+        </div>
+
+        {/* Call To Action  */}
+        <div className="text-center py-16">
+          <h2 className="heading text-3xl md:text-5xl">Start Your Practice</h2>
+          <p className="mt-6 text-lg md:text-xl tracking-wide max-w-2xl mx-auto">
+            Explore poses, refine your technique, and deepen your understanding of yoga. Ready to begin?
+          </p>
+          <a href="/poses" className="mt-8 inline-block px-4 py-2 bg-moss text-white text-lg rounded-lg hover:bg-opacity-80 transition">
+            Browse Yoga Poses
+          </a>
         </div>
       </div>
     </>
