@@ -63,6 +63,31 @@ const Hero = () => {
           </div>
         </div>
 
+        {/* Call To Action */}
+        <div className="border-b-8 border-moss py-32 text-center">
+          <h2 className="heading text-3xl md:text-5xl">
+            Start Your Practice
+          </h2>
+          <p className="mt-8 text-lg md:text-xl max-w-lg mx-auto tracking-wider">
+            Strengthen your body. Still your mind. Move with purpose. 
+          </p>
+          <p className="mt-4 text-lg md:text-xl max-w-lg mx-auto tracking-wide">Your yoga journey starts now.</p>
+          <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-6">
+            <a 
+              href="/poses" 
+              className="px-6 py-2 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
+            >
+              Browse Poses
+            </a>
+            <a 
+              href="/what-is-yoga/beginners-guide" 
+              className="px-6 py-2 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+
         {/* Featured Categories */}
         <div className="grid md:grid-cols-2 gap-32 items-center py-32">
           <div className="text-center md:text-left">
@@ -105,31 +130,78 @@ const Hero = () => {
           </div>
         </div>
 
-      {/* Call To Action */}
-      <div className="border-t-8 border-moss py-32 text-center">
-        <h2 className="heading text-3xl md:text-5xl">
-          Start Your Practice
-        </h2>
-        <p className="mt-8 text-lg md:text-xl max-w-lg mx-auto tracking-wider">
-          Strengthen your body. Still your mind. Move with purpose. 
-        </p>
-        <p className="mt-4 text-lg md:text-xl max-w-lg mx-auto tracking-wide">Your yoga journey starts now.</p>
-        <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-6">
-          <a 
-            href="/poses" 
-            className="px-6 py-3 border border-charcoal rounded text-charcoal text-lg lowercase tracking-wide transition hover:bg-moss hover:bg-opacity-30"
-          >
-            Browse Poses
-          </a>
-          <a 
-            href="/what-is-yoga/beginners-guide" 
-            className="px-6 py-3 border border-charcoal rounded text-charcoal text-lg lowercase tracking-wide transition hover:bg-moss hover:bg-opacity-30"
-          >
-            Learn More
-          </a>
-        </div>
-      </div>
+        {/* Learn More */}
+        <div className="border-t-8 border-moss py-32 text-center">
+          <h2 className="heading text-3xl md:text-5xl">
+           Deepen Your Understanding
+          </h2>
+          <p className="mt-6 text-lg md:text-xl max-w-lg mx-auto tracking-wide">
+            Dive deeper into the history and philosophy of yoga with these essential guides.
+          </p>
 
+          <div className="mt-12 grid md:grid-cols-2 gap-12 max-w-4xl mx-auto text-left">
+            <Link to="/what-is-yoga/beginners-guide" className="block p-6 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
+              <h3 className="text-xl font-medium">Start Here: Beginner’s Guide</h3>
+              <p className="mt-2 text-sm">
+                New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started.
+              </p>
+            </Link>
+
+            <Link to="/what-is-yoga/overview" className="block p-6 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
+              <h3 className="text-xl font-medium">What Is Yoga?</h3>
+              <p className="mt-2 text-sm">
+                Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today.
+              </p>
+            </Link>
+
+            <Link to="/what-is-yoga/eight-limbed-path" className="block p-6 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
+              <h3 className="text-xl font-medium">The 8-Limbed Path</h3>
+              <p className="mt-2 text-sm">
+                Explore the eight limbs of yoga, from ethical principles and breath control to meditation and self-realization.
+              </p>
+            </Link>
+
+            <Link to="/what-is-yoga/seven-chakras" className="block p-6 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
+              <h3 className="text-xl font-medium">The 7 Chakras</h3>
+              <p className="mt-2 text-sm">
+                Understand the seven energy centers of the body and how they influence your physical, emotional, and spiritual well-being.
+              </p>
+            </Link>
+
+            <Link to="/what-is-yoga/three-gunas" className="block p-6 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
+              <h3 className="text-xl font-medium">The 3 Gunas</h3>
+              <p className="mt-2 text-sm">
+                Learn about the three fundamental qualities of nature—Sattva, Rajas, and Tamas—and how they shape your actions and mindset.
+              </p>
+            </Link>
+
+            <Link to="/resources" className="block p-6 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
+              <h3 className="text-xl font-medium">Resources</h3>
+              <p className="mt-2 text-sm">
+                Find recommended books, tools, and external guides to deepen your yoga knowledge and practice.
+              </p>
+            </Link>
+          </div>
+        </div>
+
+        {/* Newsletter Section */}
+        <div className="border-t-8 border-moss py-32 text-center">
+          <h2 className="heading text-3xl md:text-5xl">Stay Connected</h2>
+          <p className="mt-8 text-lg md:text-xl max-w-lg mx-auto tracking-wider">
+            Discover new insights, tips, and stories about yoga and mindfulness every month. 
+          </p>
+          <p className="mt-4 text-lg md:text-xl max-w-lg mx-auto tracking-wide">
+            Read our latest articles and deepen your practice.
+          </p>
+          <div className="mt-12">
+            <a 
+              href="/newsletter" 
+              className="px-6 py-2 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
+            >
+              Read Now
+            </a>
+          </div>
+        </div>
       </div>
     </>
   );
