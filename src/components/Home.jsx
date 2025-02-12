@@ -167,7 +167,7 @@ const Home = () => {
           Deepen Your Understanding
           </h2>
           <p className="mt-6 text-lg md:text-xl max-w-lg mx-auto tracking-wide">
-            Dive deeper into the history and philosophy of yoga with these essential guides.
+            Learn more about the history and philosophy of yoga with these essential guides.
           </p>
 
           <div className="mt-12 grid md:grid-cols-2 gap-12 max-w-4xl mx-auto text-left">

@@ -78,7 +78,7 @@ const PosePage = () => {
 
       <header className="relative p-6 md:p-8 flex group bg-moss bg-opacity-30 border border-moss rounded-2xl">
         <h2 className="text-4xl md:text-6xl tracking-tight text-left opacity-90 relative">
-          <span className="block">
+          <span className="heading block">
             {pose.name}
           </span>
           <span className="text-2xl tracking-wide block italic mt-4">
@@ -103,12 +103,12 @@ const PosePage = () => {
 
       <div className="invisible md:visible absolute top-3/4 left-0 right-0 flex justify-between mx-12">
         {prevPose && (
-          <Link to={`/poses/${prevPose.name}`} className="lowercase px-4 py-1 rounded-full border border-moss hover:bg-moss hover:bg-opacity-30 transition-all duration-300">
+          <Link to={`/poses/${prevPose.name}`} className="lowercase px-4 py-1 rounded-full border border-moss bg-moss bg-opacity-20 hover:bg-opacity-30 transition-all duration-300">
             ← {prevPose.name}
           </Link>
         )}
         {nextPose && (
-          <Link to={`/poses/${nextPose.name}`} className="lowercase px-4 py-1 rounded-full border border-moss hover:bg-moss hover:bg-opacity-30 transition-all duration-300">
+          <Link to={`/poses/${nextPose.name}`} className="lowercase px-4 py-1 rounded-full border border-moss bg-moss bg-opacity-20 hover:bg-opacity-30 transition-all duration-300">
             {nextPose.name} →
           </Link>
         )}

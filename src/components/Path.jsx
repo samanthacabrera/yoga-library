@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 
 const Path = () => {
+    const [openIndex, setOpenIndex] = useState(null);
     const limbs = [
         { name: "Yama", description: "Ethical disciplines and moral restraints.", content: (
             <div className="space-y-12">
@@ -96,23 +97,51 @@ const Path = () => {
         ) },
     ];
 
+    const toggleAccordion = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
+
    return (
        <div className="max-w-3xl px-8 py-4 mx-auto">
-            <h1 className="heading text-center my-12 lg:mb-40 text-4xl lg:text-6xl">The 8-Limbed Path of Yoga</h1>
+           <h1 className="heading text-center my-12 lg:mb-40 text-4xl lg:text-8xl">The 8-Limbed Path of Yoga</h1>
+                <div className="mb-12 space-y-12">
+                    <p>
+                        The <strong>8-Limbed Path of Yoga</strong>, as outlined in the ancient text <em>The Yoga Sutras of Patanjali</em>, is a timeless and holistic framework for living a life of purpose, self-discipline, and spiritual awakening. It is not merely a series of physical postures but a deeply transformative journey that integrates ethical conduct, self-mastery, breath control, mental focus, and meditative awareness—ultimately leading to profound inner peace and enlightenment.
+                    </p>
+                    <p>
+                        Each of the eight limbs—<em>Yama</em> (ethical principles), <em>Niyama</em> (self-discipline), <em>Asana</em> (physical practice), <em>Pranayama</em> (breath control), <em>Pratyahara</em> (withdrawal of the senses), <em>Dharana</em> (concentration), <em>Dhyana</em> (meditation), and <em>Samadhi</em> (self-realization)—serves as a stepping stone toward a balanced, mindful, and spiritually enriched life. These teachings encourage us to cultivate integrity, develop inner strength, and deepen our awareness, ultimately guiding us toward self-discovery and higher consciousness.
+                    </p>
+                    <p>
+                        The beauty of this path lies in its adaptability; it is not confined to a particular belief system, nor does it require mastery overnight. Instead, it offers a structured yet fluid approach that meets practitioners wherever they are on their journey. Whether you seek physical well-being, mental clarity, emotional resilience, or spiritual awakening, the 8-limbed path provides the tools to align body, mind, and soul.
+                    </p>
+                </div>
+           
                 {limbs.map((limb, index) => (
-                    <div
-                        key={index}
-                        className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16 lg:space-y-0 space-y-12 pb-20"
-                    >   
-                        <div>
-                            <h3 className="text-2xl text-left font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[350px]">{limb.name}</h3>
-                            <p className="mt-2 text-lg sm:text-xl text-charcoal">{limb.description}</p>
+                <div key={index} className="border-b border-gray-300 mb-4">
+                    <button
+                        onClick={() => toggleAccordion(index)}
+                        className="w-full text-left py-4 px-2 flex justify-between items-center"
+                    >
+                        <h3 className="text-2xl font-medium text-charcoal tracking-wide">{limb.name}</h3>
+                        <span className="text-xl">{openIndex === index ? "−" : "+"}</span>
+                    </button>
+                    {openIndex === index && (
+                        <div className="p-4 rounded-md">
+                            <p className="text-lg text-charcoal">{limb.description}</p>
+                            <div className="my-8">{limb.content}</div>
                         </div>
-                        <div className="lg:col-span-2">
-                            {limb.content}
-                        </div>
-                    </div>
-                ))}
+                    )}
+                </div>
+            ))}
+
+            <div className="my-12 space-y-12">
+                <p>The <strong>8-Limbed Path of Yoga</strong> is far more than a set of guidelines—it is a profound journey of transformation, leading practitioners toward a life of integrity, self-discipline, and spiritual awareness. Rooted in the teachings of <em>The Yoga Sutras of Patanjali</em>, this path provides a structured framework for cultivating inner peace, ethical living, and deep self-realization.</p>
+                <p>Each limb serves as a stepping stone, guiding the practitioner through ethical disciplines (<em>Yama</em>), self-reflection (<em>Niyama</em>), physical practice (<em>Asana</em>), breath control (<em>Pranayama</em>), sensory withdrawal (<em>Pratyahara</em>), focused concentration (<em>Dharana</em>), meditative absorption (<em>Dhyana</em>), and ultimately, transcendence (<em>Samadhi</em>). When woven together, these practices create a holistic approach to life—one that nurtures the body, refines the mind, and awakens the soul.</p>
+                <p>Yoga is not confined to a mat or a meditation cushion; it is a way of living that permeates every moment, every action, and every interaction. By practicing non-violence (<em>Ahimsa</em>), truthfulness (<em>Satya</em>), and self-discipline (<em>Tapas</em>), we create harmony within ourselves and our surroundings. By cultivating contentment (<em>Santosha</em>), self-inquiry (<em>Svadhyaya</em>), and devotion (<em>Ishvara Pranidhana</em>), we deepen our understanding of life’s greater purpose.</p>
+                <p>In a world filled with distractions and constant stimulation, the practices of <em>Pratyahara</em> and <em>Dharana</em> teach us how to turn inward, reclaim our attention, and focus on what truly matters. Meditation (<em>Dhyana</em>) then becomes the gateway to a still and centered mind, allowing us to connect with our highest self. And when all eight limbs align in harmony, the practitioner experiences <em>Samadhi</em>—a state of profound peace, where the boundaries of the self dissolve, and one merges with the infinite.</p>
+                <p>Walking the 8-limbed path is not about perfection; it is about progress, patience, and practice. There will be challenges, moments of doubt, and times when we fall short of our ideals—but yoga teaches us resilience, self-compassion, and the ability to begin again.</p>
+                <p>Whether you are taking your first steps or have been practicing for years, the teachings of yoga remain a constant source of wisdom and guidance. By integrating these principles into daily life—not just in movement, but in thoughts, words, and actions—we cultivate a life of balance, clarity, and fulfillment.</p>
+            </div>
         </div>
     );
 };
