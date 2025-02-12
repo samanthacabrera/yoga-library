@@ -161,18 +161,8 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Photo by <a href="https://unsplash.com/@bel_media?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Brigitte Elsner</a> on <a href="https://unsplash.com/photos/the-sun-is-setting-behind-a-tree-in-the-dark-sky-9y1geTf3k4U?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */}
-        <Parallax 
-          bgImage="/bg4.jpg" 
-          bgImageAlt="photo of sunrise behind mountains" 
-          strength={500} 
-          className="w-full h-[100vh]"
-          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
-        >
-        </Parallax>
-
         {/* Learn More */}
-        <div className="py-32 text-center">
+        <div className="border-t-8 border-moss py-32 text-center">
           <h2 className="heading text-3xl md:text-5xl">
           Deepen Your Understanding
           </h2>
