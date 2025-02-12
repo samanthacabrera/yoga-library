@@ -1,8 +1,8 @@
-import React from 'react';
+import { Parallax } from 'react-parallax';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-
-const Hero = () => {
+// Photo by <a href="https://unsplash.com/@nkuutz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Eneko Uruñuela</a> on <a href="https://unsplash.com/photos/woman-stretching-on-mountain-top-during-sunrise-I2YSmEUAgDY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+const Home = () => {
   return (
     <>
       <Helmet>
@@ -21,10 +21,10 @@ const Hero = () => {
         <meta property="og:url" content="https://learnyoga.online" />
         <meta property="og:type" content="website" />
       </Helmet>
-
+   
       <div className="min-h-screen max-w-4xl mx-4 md:mx-auto grid gap-y-20 text-charcoal">
-        {/* Hero Section */}
-        <div className="grid md:grid-cols-2 h-[80vh] items-center border-b-8 border-moss pb-12 text-center md:text-left">
+        {/* Hero */}
+        <div className="grid md:grid-cols-2 h-[80vh] items-center pb-12 text-center md:text-left">
           <div>
             <h1 className="heading text-4xl md:text-8xl">
               Learn <br className="hidden md:block" /> Yoga <br className="hidden md:block" /> Online
@@ -36,8 +36,19 @@ const Hero = () => {
           <div className="hidden md:block"></div>
         </div>
 
-        {/* About Section */}
-        <div className="grid md:grid-cols-2 items-start pt-24 text-center md:text-right border-b-8 border-moss pb-52">
+        
+        {/* https://unsplash.com/photos/woman-stretching-on-mountain-top-during-sunrise-I2YSmEUAgDY */}
+        <Parallax 
+          bgImage="bg1.jpg" 
+          bgImageAlt="woman in tree pose on top of mountain" 
+          strength={500} 
+          className="w-full h-[100vh]"
+          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
+        >
+        </Parallax>
+
+        {/* About */}
+        <div className="grid md:grid-cols-2 items-start pt-24 text-center md:text-right pb-52">
           <div className="hidden md:block"></div>
           <div>
             <h2 className="heading text-3xl md:text-5xl">
@@ -63,8 +74,18 @@ const Hero = () => {
           </div>
         </div>
 
+        {/* Photo by <a href="https://unsplash.com/@jeremybishop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jeremy Bishop</a> on <a href="https://unsplash.com/photos/calm-water-QtIXL7C4bB0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */}
+        <Parallax 
+          bgImage="bg2.jpg" 
+          bgImageAlt="zoomed in photo of ocean waves at sunset" 
+          strength={500} 
+          className="w-full h-[100vh]"
+          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
+        >
+        </Parallax>
+
         {/* Call To Action */}
-        <div className="border-b-8 border-moss py-32 text-center">
+        <div className="py-32 text-center">
           <h2 className="heading text-3xl md:text-5xl">
             Start Your Practice
           </h2>
@@ -87,6 +108,16 @@ const Hero = () => {
             </a>
           </div>
         </div>
+
+        {/* Photo by <a href="https://unsplash.com/@jhonkasalo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joakim Honkasalo</a> on <a href="https://unsplash.com/photos/sunset-over-the-horizon-ufQ-HKgShCo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */}
+        <Parallax 
+          bgImage="bg3.avif" 
+          bgImageAlt="photo of sunrise behind mountains" 
+          strength={500} 
+          className="w-full h-[100vh]"
+          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
+        >
+        </Parallax>
 
         {/* Featured Categories */}
         <div className="grid md:grid-cols-2 gap-32 items-center py-32">
@@ -130,10 +161,20 @@ const Hero = () => {
           </div>
         </div>
 
+        {/* Photo by <a href="https://unsplash.com/@bel_media?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Brigitte Elsner</a> on <a href="https://unsplash.com/photos/the-sun-is-setting-behind-a-tree-in-the-dark-sky-9y1geTf3k4U?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */}
+        <Parallax 
+          bgImage="/bg4.jpg" 
+          bgImageAlt="photo of sunrise behind mountains" 
+          strength={500} 
+          className="w-full h-[100vh]"
+          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
+        >
+        </Parallax>
+
         {/* Learn More */}
-        <div className="border-t-8 border-moss py-32 text-center">
+        <div className="py-32 text-center">
           <h2 className="heading text-3xl md:text-5xl">
-           Deepen Your Understanding
+          Deepen Your Understanding
           </h2>
           <p className="mt-6 text-lg md:text-xl max-w-lg mx-auto tracking-wide">
             Dive deeper into the history and philosophy of yoga with these essential guides.
@@ -207,4 +248,7 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Home;
+
+
+      

@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Drawer from "./components/Drawer";
-import Hero from "./components/Hero";
+import Home from "./components/Home";
 import CategoryPage from "./components/CategoryPage";
 import PosePage from "./components/PosePage";
 import Guide from "./components/Guide";
@@ -37,7 +37,7 @@ const App = () => {
         <Drawer /> 
         
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route path="/" element={<Home />} />
           <Route path="/poses" element={<CategoryPage />} />
           <Route path="/poses/:categoryType/:categoryValue" element={<CategoryPage />} />
           <Route path="/poses/:name" element={<PosePage />} />
