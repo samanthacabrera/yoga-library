@@ -194,12 +194,12 @@ const Hero = () => {
             Read our latest articles and deepen your practice.
           </p>
           <div className="mt-12">
-            <a 
-              href="/newsletter" 
+            <Link
+              to="/newsletter" 
               className="px-6 py-2 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
             >
               Read Now
-            </a>
+            </Link>
           </div>
         </div>
       </div>
