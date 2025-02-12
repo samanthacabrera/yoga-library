@@ -146,7 +146,20 @@ const Chakras = () => {
 
   return (
     <div className="max-w-3xl px-8 py-4 mx-auto">
-      <h1 className="heading text-center my-12 lg:mb-40 text-4xl lg:text-6xl">The Seven Chakras</h1>
+      <h1 className="heading text-center my-12 lg:mb-40 text-4xl lg:text-8xl">The Seven Chakras</h1>
+
+        <div className="mb-12 space-y-12">
+          <p>
+             The human body is not just a physical structure—it is an intricate network of energy, emotions, and consciousness. At the core of this energetic system lie the seven chakras, powerful centers that govern different aspects of our well-being. Rooted in ancient yogic traditions, chakras are believed to regulate the flow of life force energy, or prana, throughout our body. When these energy centers are open and balanced, we experience physical health, emotional harmony, and spiritual connection. However, when blockages or imbalances occur, they can manifest as stress, emotional struggles, or even physical ailments.
+          </p>
+          <p>
+              Each chakra holds a unique vibration and purpose, influencing everything from our sense of security and self-expression to our intuition and spiritual growth. Understanding these chakras allows us to take an active role in our personal well-being by fostering balance through mindful practices such as meditation, yoga, breathwork, and self-reflection. Whether you’re seeking greater confidence, deeper relationships, or spiritual clarity, exploring the chakras can provide profound insights into your journey of self-discovery and transformation.
+          </p>
+          <p>
+              This guide will introduce you to each of the seven chakras, detailing their qualities, signs of imbalance, and ways to restore harmony. By learning to cultivate the energy flow within, you open the door to greater awareness, empowerment, and inner peace.
+          </p>
+      </div>
+
       {chakras.map((chakra, index) => (
         <div
           key={index}
@@ -161,14 +174,10 @@ const Chakras = () => {
           <div className="lg:col-span-2">{chakra.content}</div>
         </div>
       ))}
-      <div className="text-lg text-charcoal space-y-12 leading-loose">
-        <hr/>
-        <p>
-          The chakras form an interconnected system of energy centers that influence our physical, emotional, and spiritual well-being. Each chakra plays a vital role in shaping our experiences, from our sense of security and creativity to our personal power, love, self-expression, intuition, and spiritual awareness. When energy flows freely through these centers, we experience balance, clarity, and vitality. However, blockages or imbalances can lead to disharmony, affecting our thoughts, emotions, and overall health.
-        </p>
-        <p>
-          By recognizing the unique characteristics of each chakra, we gain deeper insight into our personal growth and healing journey. Balancing the chakras is not a one-time task but an ongoing practice of self-awareness, movement, meditation, and intentional living. Through yoga, breathwork, affirmations, and mindful habits, we can cultivate greater harmony within ourselves and in our relationships with the world around us. As we align our chakras, we foster a sense of inner peace, resilience, and connection—allowing us to live with greater purpose, authenticity, and spiritual depth.
-        </p>
+
+      <div className="my-12 space-y-12">
+          <p>The chakras serve as an essential blueprint for our holistic well-being, influencing our physical, emotional, and spiritual health. When in balance, they allow us to experience stability, creativity, confidence, love, clear communication, insight, and enlightenment. However, modern life often disrupts this energy flow, leading to imbalances that impact our mood, mindset, and vitality. Recognizing these signs and working toward alignment helps us live with greater purpose and awareness.</p>
+          <p>As you explore and work with your chakras, remember that healing and balance are ongoing processes. Every step you take toward greater awareness brings you closer to inner peace, self-acceptance, and a more vibrant, connected life.</p>
       </div>
     </div>
   );

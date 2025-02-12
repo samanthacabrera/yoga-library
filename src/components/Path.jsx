@@ -122,13 +122,19 @@ const Path = () => {
                         onClick={() => toggleAccordion(index)}
                         className="w-full text-left py-4 px-2 flex justify-between items-center"
                     >
-                        <h3 className="text-2xl font-medium text-charcoal tracking-wide">{limb.name}</h3>
+                        <h3 className={`text-2xl font-medium text-charcoal tracking-wide ${openIndex === index ? 'opacity-0' : 'opacity-100'}`}>{limb.name}</h3>
                         <span className="text-xl">{openIndex === index ? "−" : "+"}</span>
                     </button>
                     {openIndex === index && (
-                        <div className="p-4 rounded-md">
-                            <p className="text-lg text-charcoal">{limb.description}</p>
-                            <div className="my-8">{limb.content}</div>
+                         <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16 lg:space-y-0 space-y-12 pb-20">
+                            <div>
+                                <h3 className="text-2xl text-left font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[350px]">
+                                {limb.name}
+                                </h3>
+                                <p className="mt-2 text-lg sm:text-xl text-charcoal">{limb.description}</p>
+                            </div>
+                            <div></div>
+                            <div className="my-8 col-span-2">{limb.content}</div> 
                         </div>
                     )}
                 </div>
