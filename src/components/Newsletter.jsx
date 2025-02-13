@@ -52,28 +52,29 @@ const Newsletter = () => {
             </div>
 
             {latestArticle && (
-                <div className="bg-moss bg-opacity-10 border border-moss rounded-2xl shadow-lg p-8 space-y-6">
-                    <h2 className="text-4xl text-moss">This Month's Feature</h2>
-                    <h3 className="text-2xl tracking-wide leading-tight">
+                <div className="bg-moss bg-opacity-10 border border-moss rounded-2xl shadow-xl p-6 lg:p-12 space-y-6">
+                    <h2 className="text-lg lg:text-4xl text-moss">This Month's Feature</h2>
+                    <h3 className="text-base lg:text-2xl tracking-wide leading-tight">
                         {latestArticle.title}
                     </h3>
                     <p className="text-gray-700">{latestArticle.description}</p>
                     <a href={latestArticle.link} target="_blank" rel="noopener noreferrer" 
-                       className="inline-block bg-moss text-white px-6 py-3 rounded-lg font-medium tracking-wide hover:bg-opacity-90 transition-all">
+                       className="inline-block bg-moss text-xs lg:text-sm text-white px-6 py-3 rounded-full font-medium tracking-wider bg-opacity-90 hover:bg-opacity-100 transition duration-300">
                         Read Full Article →
                     </a>
                 </div>
             )}
 
-            <h3 className="text-4xl text-center">All Editions</h3>
+            <h3 className="pt-24 heading text-4xl lg:text-6xl">All Editions</h3>
             <ul className="space-y-12 mb-12">
                 {displayBlogs()}
             </ul>
 
             <hr></hr>
             {/* Whats New */}
+            <h3 className="pt-24 heading text-4xl lg:text-6xl">What's New</h3>
             <div className="bg-white border border-moss rounded-lg shadow p-6">
-                <h2 className="text-2xl my-8">What's New - Feb 2025</h2>
+                 <h3 className="uppercase tracking-wider heading font-medium">Feb 2025</h3>
                 <ul className="space-y-2">
                     <li>
                         <span className="font-medium tracking-wide">Launch of Medium Blog:</span> Our new Medium blog is live, offering monthly articles on yoga and holistic wellness. You can find the latest posts on our website or at <a href="https://medium.com/me/stories/public" className="italic hover:underline">Medium</a>.
