@@ -17,6 +17,7 @@ const Newsletter = () => {
     }, []);
 
     const totalArticles = blog.items.length;
+    const latestArticle = blog.items[0];
 
     const displayBlogs = () => {
         return blog.items.map((post, index) => (
@@ -41,16 +42,31 @@ const Newsletter = () => {
 
     return (
         <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-20 px-8 py-4 mx-auto">
-           <div className="mb-12">
-                <h1 className="heading my-12 lg:mb-20 text-4xl lg:text-8xl text-center">Insights & Reflections</h1>
+           <div className="my-12">
+                <h2 className="text-lg lg:text-xl heading tracking-wider uppercase">Our Monthly Column:</h2>
+                <h1 className="heading my-12 lg:mb-20 text-4xl lg:text-8xl text-center">Beyond the Mat</h1>
                 <p className="tracking-wide mt-4 text-lg lg:text-xl text-gray-700 max-w-2xl">
                     Stay inspired and connected with our monthly yoga column. Each edition delivers 
                     insightful articles and practical tips to deepen your practice, both on and off the mat.
                 </p>
             </div>
 
+            {latestArticle && (
+                <div className="bg-moss bg-opacity-10 border border-moss rounded-2xl shadow-lg p-8 space-y-6">
+                    <h2 className="text-4xl text-moss">This Month's Feature</h2>
+                    <h3 className="text-2xl tracking-wide leading-tight">
+                        {latestArticle.title}
+                    </h3>
+                    <p className="text-gray-700">{latestArticle.description}</p>
+                    <a href={latestArticle.link} target="_blank" rel="noopener noreferrer" 
+                       className="inline-block bg-moss text-white px-6 py-3 rounded-lg font-medium tracking-wide hover:bg-opacity-90 transition-all">
+                        Read Full Article →
+                    </a>
+                </div>
+            )}
 
-            <ul className="space-y-12 my-12">
+            <h3 className="text-4xl text-center">All Editions</h3>
+            <ul className="space-y-12 mb-12">
                 {displayBlogs()}
             </ul>
 

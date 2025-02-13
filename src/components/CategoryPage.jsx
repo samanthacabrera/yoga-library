@@ -167,7 +167,7 @@ const CategoryPage = () => {
 
   return (
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
-     <h1 className="heading text-center my-12 text-4xl lg:text-6xl">Yoga Pose Directory</h1>
+     <h1 className="heading text-center my-12 text-4xl lg:text-8xl">Yoga Pose Directory</h1>
 
       <div className="flex gap-2 justify-center text-sm lg:text-lg">
         <Link to="/poses">
