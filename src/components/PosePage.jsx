@@ -116,7 +116,7 @@ const PosePage = () => {
       </div>
 
     {/* Table of Contents */}
-    <div className="flex flex-col lg:items-center lg:flex-row lg:space-x-2 lg:sticky top-0 z-10 lg:py-2 text-moss text-lg bg-[#f6fbf2]">
+    <div className="flex flex-col lg:items-center lg:flex-row lg:space-x-2 lg:sticky top-0 z-10 lg:py-2 text-moss text-lg bg-[#f9faf4]">
       <a href="#description" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
         Overview
       </a>

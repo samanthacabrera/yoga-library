@@ -121,23 +121,10 @@ const Home = () => {
         </Parallax>
 
       {/* Featured Categories */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.2 }}
-        variants={{
-          hidden: {},
-          visible: {
-            transition: { staggerChildren: 0.3 },
-          },
-        }}
-      > 
+      <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 },},}}> 
         <div className="grid md:grid-cols-2 gap-32 items-center py-32">
-          <motion.div
-            variants={{
-              hidden: { opacity: 0, y: 50 },
-              visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-            }}
+          <motion.div 
+            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } },}}
             className="text-center md:text-left"
           >
             <h2 className="heading text-3xl md:text-5xl">Featured Categories</h2>
@@ -171,27 +158,45 @@ const Home = () => {
         </div>
       </motion.div>
 
-
-        {/* Featured Poses */}
+        
+      {/* Featured Poses */}
+      <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}>
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-32 items-center py-32">
-          <div className="space-y-12 text-center">
-            <Link to="/poses/Downward-Facing Dog" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
-              <h3>Downward-Facing Dog</h3>
-            </Link>
-            <Link to="/poses/Triangle Pose" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
-              <h3>Triangle Pose</h3>
-            </Link>
-            <Link to="/poses/warrior-ii" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
-              <h3>Bridge Pose</h3>
-            </Link>
-          </div>
-          <div className="text-center md:text-right">
+          <motion.div 
+            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+            className="text-center md:text-right"
+          >
             <h2 className="heading text-3xl md:text-5xl">Featured Poses</h2>
             <p className="mt-6 text-lg md:text-xl mx-12 md:mx-0">
               This month's featured poses are here. <br/> Learn proper alignment, deepen your awareness, and refine your practice with these foundational poses.
             </p>
+          </motion.div>
+
+          <div className="space-y-12 text-center">
+            {[
+              { link: "/poses/Downward-Facing Dog", text: "Downward-Facing Dog" },
+              { link: "/poses/Triangle Pose", text: "Triangle Pose" },
+              { link: "/poses/warrior-ii", text: "Bridge Pose" },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                variants={{
+                  hidden: { opacity: 0, y: 50 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+                }}
+              >
+                <Link
+                  to={item.link}
+                  className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
+                >
+                  <h3>{item.text}</h3>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
+      </motion.div>
+
 
         {/* Learn More */}
         <div className="border-t-8 border-moss py-32 text-center">
