@@ -25,7 +25,9 @@ const Home = () => {
    
       <div className="min-h-screen max-w-4xl mx-4 md:mx-auto grid gap-y-40 text-charcoal">
         {/* Hero */}
-        <div className="grid md:grid-cols-2 h-[80vh] items-center pb-12 text-center md:text-left border-b-8 border-moss lg:border-b-0">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
+          className="grid md:grid-cols-2 h-[80vh] items-center pb-12 text-center md:text-left border-b-8 border-moss lg:border-b-0">
           <div>
             <h1 className="heading text-4xl md:text-9xl">
               Learn <br className="hidden md:block" /> Yoga <br className="hidden md:block" /> Online
@@ -35,7 +37,7 @@ const Home = () => {
             </p>
           </div>
           <div className="hidden md:block"></div>
-        </div>
+        </motion.div>
 
         
         {/* https://unsplash.com/photos/woman-stretching-on-mountain-top-during-sunrise-I2YSmEUAgDY */}
@@ -49,7 +51,9 @@ const Home = () => {
         </Parallax>
 
         {/* About */}
-        <div className="grid md:grid-cols-2 items-start pt-24 text-center md:text-right pb-52 border-b-8 border-moss lg:border-b-0">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
+          className="grid md:grid-cols-2 items-start pt-24 text-center md:text-right pb-52 border-b-8 border-moss lg:border-b-0">
           <div className="hidden md:block"></div>
           <div>
             <h2 className="heading text-3xl md:text-5xl">
@@ -73,7 +77,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Photo by <a href="https://unsplash.com/@jeremybishop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jeremy Bishop</a> on <a href="https://unsplash.com/photos/calm-water-QtIXL7C4bB0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */}
         <Parallax 
@@ -86,7 +90,10 @@ const Home = () => {
         </Parallax>
 
         {/* Call To Action */}
-        <div className="py-32 text-center border-b-8 border-moss lg:border-b-0">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
+          className="py-32 text-center border-b-8 border-moss lg:border-b-0"
+        >
           <h2 className="heading text-3xl md:text-5xl">
             Start Your Practice
           </h2>
@@ -108,7 +115,7 @@ const Home = () => {
               Learn More
             </Link>
           </div>
-        </div>
+        </motion.div>
 
         {/* Photo by <a href="https://unsplash.com/@jhonkasalo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joakim Honkasalo</a> on <a href="https://unsplash.com/photos/sunset-over-the-horizon-ufQ-HKgShCo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */}
         <Parallax 
@@ -272,24 +279,28 @@ const Home = () => {
       </motion.div>
 
 
-        {/* Newsletter */}
-        <div className="border-t-8 border-moss py-32 text-center">
-          <h2 className="heading text-3xl md:text-5xl">Stay Connected</h2>
-          <p className="mt-8 text-lg md:text-xl max-w-lg mx-auto tracking-wider">
-            Discover new insights, tips, and stories about yoga and mindfulness every month. 
-          </p>
-          <p className="mt-4 text-lg md:text-xl max-w-lg mx-auto tracking-wide">
-            Read our latest articles and deepen your practice.
-          </p>
-          <div className="mt-12">
-            <Link
-              to="/newsletter" 
-              className="px-6 py-2 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
-            >
-              Read Now
-            </Link>
-          </div>
+      {/* Newsletter */}
+      <motion.div 
+      initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
+        className="border-t-8 border-moss py-32 text-center"
+      >
+        <h2 className="heading text-3xl md:text-5xl">Stay Connected</h2>
+        <p className="mt-8 text-lg md:text-xl max-w-lg mx-auto tracking-wider">
+          Discover new insights, tips, and stories about yoga and mindfulness every month. 
+        </p>
+        <p className="mt-4 text-lg md:text-xl max-w-lg mx-auto tracking-wide">
+          Read our latest articles and deepen your practice.
+        </p>
+        <div className="mt-12">
+          <Link
+            to="/newsletter" 
+            className="px-6 py-2 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
+          >
+            Read Now
+          </Link>
         </div>
+      </motion.div>
+
       </div>
     </>
   );
