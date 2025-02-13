@@ -41,10 +41,14 @@ const Newsletter = () => {
 
     return (
         <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-20 px-8 py-4 mx-auto">
-            <div className="mb-8">
-                <h1 className="heading text-center my-12 lg:mb-20 text-4xl lg:text-6xl">Our Community Newsletter</h1>
-                 <p className="tracking-wide">Stay inspired and connected with our monthly yoga newsletter, each edition delivers insightful articles, tips for deepening your practice.</p>
+           <div className="mb-12">
+                <h1 className="heading my-12 lg:mb-20 text-4xl lg:text-8xl text-center">Insights & Reflections</h1>
+                <p className="tracking-wide mt-4 text-lg lg:text-xl text-gray-700 max-w-2xl">
+                    Stay inspired and connected with our monthly yoga column. Each edition delivers 
+                    insightful articles and practical tips to deepen your practice, both on and off the mat.
+                </p>
             </div>
+
 
             <ul className="space-y-12 my-12">
                 {displayBlogs()}
