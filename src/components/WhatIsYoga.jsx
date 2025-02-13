@@ -54,11 +54,73 @@ const WhatIsYoga = () => {
           Each style of yoga offers its unique benefits, and practitioners may find that different styles resonate with them depending on their personal goals, physical condition, and spiritual path. While the core principles of yoga remain the same, the diversity of styles provides something for everyone, from high-intensity practices to gentle, restorative options.
         </p>
 
+        <h3 className="text-2xl font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-2 lg:max-w-[350px] mt-16">
+          What Type of Yoga Is Right for Me?
+        </h3>
         <p className="lg:col-span-2">
-          Regardless of the style, yoga remains an ancient and powerful practice that continues to evolve and adapt to the needs of modern practitioners. It offers a pathway to physical health, mental clarity, emotional balance, and spiritual awakening, making it a timeless discipline for people of all ages and backgrounds.
+          Choosing the right type of yoga depends on your goals, experience level, and preferences. Answer the questions below and see which yoga style fits you best!
         </p>
-        
-      </div>
+
+        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4 lg:col-span-2">
+          <p className="font-medium text-lg">Take the Quiz:</p>
+          <ul className="list-inside space-y-4">
+            <li>
+              1. What’s your primary goal with yoga?
+              <br />
+              (A) Build strength and endurance<br />
+              (B) Improve flexibility and balance<br />
+              (C) Reduce stress and relax<br />
+              (D) Explore spirituality and mindfulness
+            </li>
+            <li>
+              2. What type of pace do you prefer in a class?
+              <br />
+              (A) Fast-paced and challenging<br />
+              (B) Moderate with structured sequences<br />
+              (C) Slow and soothing<br />
+              (D) Gentle with long holds and meditation
+            </li>
+            <li>
+              3. What’s your current fitness level?
+              <br />
+              (A) High – I’m active and ready for a challenge<br />
+              (B) Moderate – I’m comfortable with physical activity<br />
+              (C) Beginner – I need something approachable<br />
+              (D) I need something restorative and easy on my body
+            </li>
+            <li>
+              4. What’s most important to you during yoga?
+              <br />
+              (A) Physical intensity and sweat<br />
+              (B) Structure, alignment, and technique<br />
+              (C) Relaxation and stress relief<br />
+              (D) Deep meditation and spiritual connection
+            </li>
+          </ul>
+
+          <p className="mt-6 font-medium text-lg">Results:</p>
+          <ul className="list-none space-y-2">
+            <li>
+              <strong>If you chose mostly A's:</strong> Try <span className="font-medium italic">Vinyasa</span> or <span className="font-medium italic">Ashtanga Yoga</span> for dynamic, challenging flows and physical intensity.
+            </li>
+            <li>
+              <strong>If you chose mostly B's:</strong> <span className="font-medium italic">Hatha Yoga</span> or <span className="font-medium italic">Iyengar Yoga</span> might be perfect, offering balanced, structured practices with a focus on alignment.
+            </li>
+            <li>
+              <strong>If you chose mostly C's:</strong> Explore <span className="font-medium italic">Restorative Yoga</span> or <span className="font-medium italic">Yin Yoga</span> for gentle, calming sessions focused on relaxation.
+            </li>
+            <li>
+              <strong>If you chose mostly D's:</strong> <span className="font-medium italic">Kundalini Yoga</span> is ideal for those drawn to meditation, breathwork, and spiritual growth.
+            </li>
+          </ul>
+        </div>
+
+        <p className="lg:col-span-2 mt-8">
+          No matter which style you choose, yoga offers a path to physical strength, mental clarity, and inner peace. Begin your journey today and discover the practice that speaks to you.
+        </p>
+
+                
+      </div>      
     </div>
   );
 };
