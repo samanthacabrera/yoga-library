@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        moss: '#9EAD88',
+        // moss: '#9EAD88',
         moss: '#747d65',
         charcoal: '#333',
       },

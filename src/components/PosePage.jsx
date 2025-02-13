@@ -16,8 +16,9 @@ const PosePage = () => {
     return <div>Pose not found</div>;
   }
 
-  const prevPose = posesData[poseIndex - 1] || null;
-  const nextPose = posesData[poseIndex + 1] || null;
+
+  const prevPose = posesData[(poseIndex - 1 + posesData.length) % posesData.length];
+  const nextPose = posesData[(poseIndex + 1) % posesData.length];
 
   const poseDesc = descriptions.find((d) => d.id === pose.id);
   const poseSanskirt = sanskirts.find((s) => s.id === pose.id);

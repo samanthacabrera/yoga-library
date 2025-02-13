@@ -177,7 +177,7 @@ const CategoryPage = () => {
               ${
                 activeCategories.all
                   ? "bg-moss text-white border-moss"
-                  : "bg-white bg-opacity-50 border-charcoal border-opacity-70"
+                  : "bg-transparent border-charcoal border-opacity-70"
               } 
               hover:bg-moss hover:bg-opacity-70 hover:text-white hover:border-moss focus:outline-none focus:ring-4 focus:ring-moss focus:ring-opacity-30`}
           >
@@ -193,7 +193,7 @@ const CategoryPage = () => {
               ${
                 activeCategories[categoryType]
                   ? "bg-moss text-white border-moss"
-                  : "bg-white bg-opacity-50 border-charcoal border-opacity-70"
+                  : "bg-transparent border-charcoal border-opacity-70"
               } 
               hover:bg-moss hover:bg-opacity-70 hover:text-white hover:border-moss focus:outline-none focus:ring-4 focus:ring-moss focus:ring-opacity-30`}
           >
@@ -227,7 +227,7 @@ const CategoryPage = () => {
         )}
       </div>
 
-      <h2 className="text-xl lg:text-3xl pt-12 font-medium text-center tracking-wide ">{getHeadingText()}</h2>
+      <h2 className="text-xl lg:text-4xl pt-12 font-medium text-center tracking-wide">{getHeadingText()}</h2>
       <p className="text-charcoal tracking-wider leading-loose">{getDescText()}</p>
 
 {filteredPoses.length === 0 ? (
