@@ -11,6 +11,7 @@ body {
   line-height: 250%;
   scroll-behavior: smooth;
   color: #444;
+  background-color: #f6fbf2;
 }
 
 ::selection {

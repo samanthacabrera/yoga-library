@@ -94,18 +94,18 @@ const Home = () => {
           </p>
           <p className="mt-4 text-lg md:text-xl max-w-lg mx-auto tracking-wide">Your yoga journey starts now.</p>
           <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-6">
-            <a 
-              href="/poses" 
+            <Link 
+              to="/poses" 
               className="px-6 py-2 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
             >
               Browse Poses
-            </a>
-            <a 
-              href="/what-is-yoga/beginners-guide" 
+            </Link>
+            <Link 
+              to="/what-is-yoga/beginners-guide" 
               className="px-6 py-2 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
             >
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
 

@@ -16,6 +16,7 @@ const Footer = () => {
                             href="https://github.com/samanthacabrera" 
                             target="_blank" 
                             rel="noopener noreferrer" 
+                            className="italic"
                         >
                             made by <span className="hover:text-white duration-300 ease-in-out">Sam Cabrera</span>
                         </a>

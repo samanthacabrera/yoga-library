@@ -54,7 +54,7 @@ const Newsletter = () => {
             {latestArticle && (
                 <div className="bg-moss bg-opacity-10 border border-moss rounded-2xl shadow-xl p-6 lg:p-12 space-y-6">
                     <h2 className="text-lg lg:text-4xl text-moss">This Month's Feature</h2>
-                    <h3 className="text-base lg:text-2xl tracking-wide leading-tight">
+                    <h3 className="text-base lg:text-2xl leading-tight">
                         {latestArticle.title}
                     </h3>
                     <p className="text-gray-700">{latestArticle.description}</p>
@@ -72,7 +72,7 @@ const Newsletter = () => {
 
             <hr></hr>
             {/* Whats New */}
-            <h3 className="pt-24 heading text-4xl lg:text-6xl">What's New</h3>
+            <h3 className="heading text-4xl lg:text-6xl">What's New</h3>
             <div className="bg-white border border-moss rounded-lg shadow p-6">
                  <h3 className="uppercase tracking-wider heading font-medium">Feb 2025</h3>
                 <ul className="space-y-2">

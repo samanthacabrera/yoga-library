@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         moss: '#9EAD88',
-        // moss: '#A4978E',
+        moss: '#747d65',
         charcoal: '#333',
       },
     },
