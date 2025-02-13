@@ -103,8 +103,8 @@ const Path = () => {
 
    return (
        <div className="max-w-3xl px-8 py-4 mx-auto">
-           <h1 className="heading text-center my-12 lg:mb-40 text-4xl lg:text-8xl">The 8-Limbed Path of Yoga</h1>
-                <div className="mb-12 space-y-12">
+           <h1 className="heading text-center my-12 text-4xl lg:text-8xl">The Eight-Limbed Path of Yoga</h1>
+                <div className="my-12 space-y-12">
                     <p>
                         The <strong>8-Limbed Path of Yoga</strong>, as outlined in the ancient text <em>The Yoga Sutras of Patanjali</em>, is a timeless and holistic framework for living a life of purpose, self-discipline, and spiritual awakening. It is not merely a series of physical postures but a deeply transformative journey that integrates ethical conduct, self-mastery, breath control, mental focus, and meditative awareness—ultimately leading to profound inner peace and enlightenment.
                     </p>

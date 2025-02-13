@@ -26,7 +26,7 @@ const Home = () => {
         {/* Hero */}
         <div className="grid md:grid-cols-2 h-[80vh] items-center pb-12 text-center md:text-left">
           <div>
-            <h1 className="heading text-4xl md:text-8xl">
+            <h1 className="heading text-4xl md:text-9xl">
               Learn <br className="hidden md:block" /> Yoga <br className="hidden md:block" /> Online
             </h1>
             <p className="mt-8 mx-8 md:mx-0 text-lg md:text-xl tracking-wide">
