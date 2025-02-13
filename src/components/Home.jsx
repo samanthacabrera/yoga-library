@@ -129,7 +129,7 @@ const Home = () => {
           >
             <h2 className="heading text-3xl md:text-5xl">Featured Categories</h2>
             <p className="mt-6 md:text-xl mx-12 md:mx-0">
-              These curated selections offer guidance and inspiration for your journey this February.
+              Check out this month's featured categores. Each offering guidance and inspiration for your journey this February.
             </p>
           </motion.div>
 
@@ -162,16 +162,6 @@ const Home = () => {
       {/* Featured Poses */}
       <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}>
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-32 items-center py-32">
-          <motion.div 
-            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="text-center md:text-right"
-          >
-            <h2 className="heading text-3xl md:text-5xl">Featured Poses</h2>
-            <p className="mt-6 text-lg md:text-xl mx-12 md:mx-0">
-              This month's featured poses are here. <br/> Learn proper alignment, deepen your awareness, and refine your practice with these foundational poses.
-            </p>
-          </motion.div>
-
           <div className="space-y-12 text-center">
             {[
               { link: "/poses/Downward-Facing Dog", text: "Downward-Facing Dog" },
@@ -194,63 +184,61 @@ const Home = () => {
               </motion.div>
             ))}
           </div>
+          <motion.div 
+            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+            className="text-center md:text-right"
+          >
+            <h2 className="heading text-3xl md:text-5xl">Featured Poses</h2>
+            <p className="mt-6 text-lg md:text-xl mx-12 md:mx-0">
+              This month's featured poses are here. <br/> Learn proper alignment and refine your practice with these foundational poses.
+            </p>
+          </motion.div>
         </div>
       </motion.div>
 
 
-        {/* Learn More */}
-        <div className="border-t-8 border-moss py-32 text-center">
-          <h2 className="heading text-3xl md:text-5xl">
-          Deepen Your Understanding
-          </h2>
-          <p className="mt-6 text-lg md:text-xl max-w-lg mx-auto tracking-wide">
-            Learn more about the history and philosophy of yoga with these essential guides.
-          </p>
+{/* Learn More */}
+<motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}>
+  <div className="border-t-8 border-moss py-32 text-center">
+    <motion.h2 
+      variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+      className="heading text-3xl md:text-5xl"
+    >
+      Deepen Your Understanding
+    </motion.h2>
+    <motion.p 
+      variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+      className="mt-6 text-lg md:text-xl max-w-lg mx-auto tracking-wide"
+    >
+      Check out these essential guides to learn more about the history and philosophy of yoga.
+    </motion.p>
 
-          <div className="mt-12 grid md:grid-cols-2 gap-12 max-w-4xl mx-auto text-left">
-            <Link to="/what-is-yoga/beginners-guide" className="block p-6 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
-              <h3 className="text-xl font-medium">Start Here: Beginner’s Guide</h3>
-              <p className="mt-2 text-sm">
-                New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started.
-              </p>
-            </Link>
+    <div className="mt-12 grid md:grid-cols-2 gap-12 max-w-4xl mx-auto text-left">
+      {[
+        { link: "/what-is-yoga/beginners-guide", title: "Start Here: Beginner’s Guide", description: "New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started." },
+        { link: "/what-is-yoga/overview", title: "What Is Yoga?", description: "Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today." },
+        { link: "/what-is-yoga/eight-limbed-path", title: "The 8-Limbed Path", description: "Explore the eight limbs of yoga, from ethical principles and breath control to meditation and self-realization." },
+        { link: "/what-is-yoga/seven-chakras", title: "The 7 Chakras", description: "Understand the seven energy centers of the body and how they influence your physical, emotional, and spiritual well-being." },
+        { link: "/what-is-yoga/three-gunas", title: "The 3 Gunas", description: "Learn about the three fundamental qualities of nature—Sattva, Rajas, and Tamas—and how they shape your actions and mindset." },
+        { link: "/resources", title: "Resources", description: "Find recommended books, tools, and external guides to deepen your yoga knowledge and practice." },
+      ].map((item, index) => (
+        <motion.div
+          key={index}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+          }}
+        >
+          <Link to={item.link} className="block p-6 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
+            <h3 className="text-xl font-medium">{item.title}</h3>
+            <p className="mt-2 text-sm">{item.description}</p>
+          </Link>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</motion.div>
 
-            <Link to="/what-is-yoga/overview" className="block p-6 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
-              <h3 className="text-xl font-medium">What Is Yoga?</h3>
-              <p className="mt-2 text-sm">
-                Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today.
-              </p>
-            </Link>
-
-            <Link to="/what-is-yoga/eight-limbed-path" className="block p-6 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
-              <h3 className="text-xl font-medium">The 8-Limbed Path</h3>
-              <p className="mt-2 text-sm">
-                Explore the eight limbs of yoga, from ethical principles and breath control to meditation and self-realization.
-              </p>
-            </Link>
-
-            <Link to="/what-is-yoga/seven-chakras" className="block p-6 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
-              <h3 className="text-xl font-medium">The 7 Chakras</h3>
-              <p className="mt-2 text-sm">
-                Understand the seven energy centers of the body and how they influence your physical, emotional, and spiritual well-being.
-              </p>
-            </Link>
-
-            <Link to="/what-is-yoga/three-gunas" className="block p-6 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
-              <h3 className="text-xl font-medium">The 3 Gunas</h3>
-              <p className="mt-2 text-sm">
-                Learn about the three fundamental qualities of nature—Sattva, Rajas, and Tamas—and how they shape your actions and mindset.
-              </p>
-            </Link>
-
-            <Link to="/resources" className="block p-6 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
-              <h3 className="text-xl font-medium">Resources</h3>
-              <p className="mt-2 text-sm">
-                Find recommended books, tools, and external guides to deepen your yoga knowledge and practice.
-              </p>
-            </Link>
-          </div>
-        </div>
 
         {/* Testimonials */}
         <div className="border-t-8 border-moss py-32 text-center">
