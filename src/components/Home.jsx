@@ -24,7 +24,7 @@ const Home = () => {
    
       <div className="min-h-screen max-w-4xl mx-4 md:mx-auto grid gap-y-20 text-charcoal">
         {/* Hero */}
-        <div className="grid md:grid-cols-2 h-[80vh] items-center pb-12 text-center md:text-left">
+        <div className="grid md:grid-cols-2 h-[80vh] items-center pb-12 text-center md:text-left border-b-8 border-moss lg:border-b-0">
           <div>
             <h1 className="heading text-4xl md:text-9xl">
               Learn <br className="hidden md:block" /> Yoga <br className="hidden md:block" /> Online
@@ -42,13 +42,13 @@ const Home = () => {
           bgImage="bg1.jpg" 
           bgImageAlt="woman in tree pose on top of mountain" 
           strength={500} 
-          className="w-full h-[100vh]"
+          className="w-full h-[100vh] hidden lg:block"
           bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
         >
         </Parallax>
 
         {/* About */}
-        <div className="grid md:grid-cols-2 items-start pt-24 text-center md:text-right pb-52">
+        <div className="grid md:grid-cols-2 items-start pt-24 text-center md:text-right pb-52 border-b-8 border-moss lg:border-b-0">
           <div className="hidden md:block"></div>
           <div>
             <h2 className="heading text-3xl md:text-5xl">
@@ -79,13 +79,13 @@ const Home = () => {
           bgImage="bg2.jpg" 
           bgImageAlt="zoomed in photo of ocean waves at sunset" 
           strength={500} 
-          className="w-full h-[100vh]"
+          className="w-full h-[100vh] hidden lg:block"
           bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
         >
         </Parallax>
 
         {/* Call To Action */}
-        <div className="py-32 text-center">
+        <div className="py-32 text-center border-b-8 border-moss lg:border-b-0">
           <h2 className="heading text-3xl md:text-5xl">
             Start Your Practice
           </h2>
@@ -114,7 +114,7 @@ const Home = () => {
           bgImage="bg3.avif" 
           bgImageAlt="photo of sunrise behind mountains" 
           strength={500} 
-          className="w-full h-[100vh]"
+          className="w-full h-[100vh] hidden lg:block"
           bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
         >
         </Parallax>
@@ -239,6 +239,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-      
