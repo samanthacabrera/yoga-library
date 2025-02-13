@@ -22,7 +22,7 @@ const Home = () => {
         <meta property="og:type" content="website" />
       </Helmet>
    
-      <div className="min-h-screen max-w-4xl mx-4 md:mx-auto grid gap-y-20 text-charcoal">
+      <div className="min-h-screen max-w-4xl mx-4 md:mx-auto grid gap-y-40 text-charcoal">
         {/* Hero */}
         <div className="grid md:grid-cols-2 h-[80vh] items-center pb-12 text-center md:text-left border-b-8 border-moss lg:border-b-0">
           <div>
@@ -215,7 +215,26 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Newsletter Section */}
+        {/* Testimonials */}
+        <div className="border-t-8 border-moss py-32 text-center">
+          <h2 className="heading text-3xl md:text-5xl uppercase tracking-wider">What Others Are Saying</h2>
+          <div className="mt-12 grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+            <div className="p-6 border border-moss text-left rounded-xl shadow">
+              <p className="text-lg italic">"This site makes learning yoga approachable. The instructions are clear, the layout is simple, and it creates a welcoming space to grow my practice without feeling overwhelmed."</p>
+              <p className="mt-4 font-bold">— Justin M.</p>
+            </div>
+            <div className="p-6 border border-moss text-left rounded-xl shadow">
+              <p className="text-lg italic">"I really appreciate the simplicity of this site. The guidance is clear, thoughtful, and easy to follow without unnecessary distractions."</p>
+              <p className="mt-4 font-bold">— Sabrina F.</p>
+            </div>
+            <div className="p-6 border border-moss text-left rounded-xl shadow">
+              <p className="text-lg italic">"Even after years of practice, I keep coming back to this site. It’s perfect for refreshing the basics and staying grounded."</p>
+              <p className="mt-4 font-bold">— Shaela B.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Newsletter */}
         <div className="border-t-8 border-moss py-32 text-center">
           <h2 className="heading text-3xl md:text-5xl">Stay Connected</h2>
           <p className="mt-8 text-lg md:text-xl max-w-lg mx-auto tracking-wider">

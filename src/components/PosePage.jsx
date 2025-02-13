@@ -116,7 +116,7 @@ const PosePage = () => {
       </div>
 
     {/* Table of Contents */}
-    <div className="flex flex-col lg:items-center lg:flex-row lg:space-x-2 lg:sticky top-0 z-10 lg:py-2 text-moss text-lg bg-white rounded">
+    <div className="flex flex-col lg:items-center lg:flex-row lg:space-x-2 lg:sticky top-0 z-10 lg:py-2 text-moss text-lg bg-[#f6fbf2]">
       <a href="#description" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
         Overview
       </a>
@@ -140,13 +140,13 @@ const PosePage = () => {
       {/* Overview */}
       {poseDesc && poseDesc.desc && (
         <div id="description" className="group">
-          <h3 className="font-medium text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Overview</h3>
+          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-2 group-hover:text-moss transition duration-300">Overview</h3>
           <p>{poseDesc.desc}</p>
         </div>
       )}
       {poseBenefit && (poseBenefit.physical || poseBenefit.mental) && (
         <div id="benefits" className="group">
-          <h3 className="font-medium text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">
+          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-2 group-hover:text-moss transition duration-300">
             Benefits
           </h3>
           {poseBenefit.physical && (
@@ -164,28 +164,28 @@ const PosePage = () => {
       {/* Origins */}
       {poseSanskirt && poseSanskirt.context && (
         <div id="origins" className="group">
-          <h3 className="font-medium text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Origins</h3>
+          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-2 group-hover:text-moss transition duration-300">Origins</h3>
           <p>{poseSanskirt.context}</p>
         </div>
       )}
       {/* Precautions */}
       {posePrecaution && posePrecaution.precaution && (
         <div id="precautions" className="group">
-          <h3 className="font-medium text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Precautions</h3>
+          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-2 group-hover:text-moss transition duration-300">Precautions</h3>
           <p>{posePrecaution.precaution}</p>
         </div>
       )}
       {/* Modifications */}
       {poseModification && poseModification.modification && (
         <div id="modifications" className="group">
-          <h3 className="font-medium text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Modifications</h3>
+          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-2 group-hover:text-moss transition duration-300">Modifications</h3>
           <p>{poseModification.modification}</p>
         </div>
       )}
       {/* Cues */}
       {poseCues && poseCues.cues && (
         <div id="cues" className="group">
-          <h3 className="font-medium text-2xl md:text-4xl tracking-wider my-2 group-hover:text-moss transition duration-300">Step-By-Step Breakdown</h3>
+          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-2 group-hover:text-moss transition duration-300">Step-By-Step Breakdown</h3>
           <ol className="list-decimal list-inside">
             {poseCues.cues.map((cue, index) => {
               const linkPoseNames = (cueText) => {
