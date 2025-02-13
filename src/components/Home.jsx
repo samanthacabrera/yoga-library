@@ -1,7 +1,8 @@
-import { Parallax } from 'react-parallax';
 import { Helmet } from 'react-helmet';
+import { Parallax } from 'react-parallax';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-// Photo by <a href="https://unsplash.com/@nkuutz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Eneko Uruñuela</a> on <a href="https://unsplash.com/photos/woman-stretching-on-mountain-top-during-sunrise-I2YSmEUAgDY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
 const Home = () => {
   return (
     <>
@@ -119,26 +120,57 @@ const Home = () => {
         >
         </Parallax>
 
-        {/* Featured Categories */}
+      {/* Featured Categories */}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.2 }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: { staggerChildren: 0.3 },
+          },
+        }}
+      > 
         <div className="grid md:grid-cols-2 gap-32 items-center py-32">
-          <div className="text-center md:text-left">
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+            }}
+            className="text-center md:text-left"
+          >
             <h2 className="heading text-3xl md:text-5xl">Featured Categories</h2>
             <p className="mt-6 md:text-xl mx-12 md:mx-0">
               These curated selections offer guidance and inspiration for your journey this February.
             </p>
-          </div>
+          </motion.div>
+
           <div className="space-y-12 text-center">
-            <Link to="/poses/benefit/improve posture" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
-              <h3>Improve Posture</h3>
-            </Link>
-            <Link to="/poses/benefit/build strength" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
-              <h3>Build Strength</h3>
-            </Link>
-            <Link to="/poses/benefit/restore energy" className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
-              <h3>Restore Energy</h3>
-            </Link>
+            {[
+              { link: "/poses/benefit/improve posture", text: "Improve Posture" },
+              { link: "/poses/benefit/build strength", text: "Build Strength" },
+              { link: "/poses/benefit/restore energy", text: "Restore Energy" },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                variants={{
+                  hidden: { opacity: 0, y: 50 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+                }}
+              >
+                <Link
+                  to={item.link}
+                  className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
+                >
+                  <h3>{item.text}</h3>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
+      </motion.div>
+
 
         {/* Featured Poses */}
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-32 items-center py-32">
@@ -217,7 +249,7 @@ const Home = () => {
 
         {/* Testimonials */}
         <div className="border-t-8 border-moss py-32 text-center">
-          <h2 className="heading text-3xl md:text-5xl uppercase tracking-wider">What Others Are Saying</h2>
+          <h2 className="heading text-3xl md:text-5xl  tracking-wider">What Others Are Saying</h2>
           <div className="mt-12 grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
             <div className="p-6 border border-moss text-left rounded-xl shadow">
               <p className="text-lg italic">"This site makes learning yoga approachable. The instructions are clear, the layout is simple, and it creates a welcoming space to grow my practice without feeling overwhelmed."</p>
