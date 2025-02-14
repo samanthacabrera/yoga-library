@@ -252,15 +252,18 @@ const Home = () => {
         <div className="border-t-8 border-moss py-32 text-center">
           <motion.h2 
             variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="heading text-3xl md:text-5xl tracking-wider"
+            className="heading text-3xl md:text-6xl tracking-wider py-12"
           >
             What Others Are Saying
           </motion.h2>
-          <div className="mt-12 grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+          <div className="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-12 lg:mx-auto">
             {[
-              { quote: "This site makes learning yoga approachable. The instructions are clear, the layout is simple, and it creates a welcoming space to grow my practice without feeling overwhelmed.", author: "Justin M." },
-              { quote: "I really appreciate the simplicity of this site. The guidance is clear, thoughtful, and easy to follow without unnecessary distractions.", author: "Sabrina F." },
-              { quote: "Even after years of practice, I keep coming back to this site. It’s perfect for refreshing the basics and staying grounded.", author: "Shaela B." },
+              { quote: "This site makes learning yoga inviting. The instructions are clear, the layout is simple, and it creates a welcoming space to grow my practice without feeling overwhelmed.", author: "Savanna L." },
+                { quote: "As someone who's been practicing yoga for years, I wasn’t sure if I’d find much value in another yoga site. But I was wrong. What I love here is the attention to detail — each pose breakdown is thoughtful, and it’s helped me refine my practice in ways I didn’t think I needed. ", author: "Bri H." },
+                { quote: "Learn Yoga Online strikes the perfect balance of offering substance, while remaining accessible. It's evident that this site was designed with the user’s growth in mind.", author: "Sunny C." },
+                { quote: "As someone completely new to yoga, this platform made learning the basics feel easy. The clear instructions and thoughtful guidance gave me the confidence to start my practice and keep improving.", author: "Darlene A." },
+                { quote: "A standout tool for yoga practitioners at any level. The depth of instruction has significantly enhanced my understanding and appreciation for this practice.", author: "Wendy R." },
+                { quote: "This site delivers clear, well-organized yoga instruction with a clean, minimalist design that keeps you focused. The guidance is easy to follow for any level, whether you're just starting out or building on your practice. If you're looking for a simple, reliable yoga resource, this is definitely worth trying.", author: "Justin M." }
             ].map((testimonial, index) => (
               <motion.div
                 key={index}
@@ -268,10 +271,10 @@ const Home = () => {
                   hidden: { opacity: 0, y: 50 },
                   visible: { opacity: 1, y: 0, transition: { duration: 1 } },
                 }}
-                className="p-6 border border-moss text-left rounded-xl shadow"
+                className="flex flex-col justify-between bg-transparent h-[500px] p-6 border border-moss text-left rounded-xl shadow"
               >
-                <p className="text-lg italic">"{testimonial.quote}"</p>
-                <p className="mt-4 font-bold">— {testimonial.author}</p>
+                <p className="mt-4 text-lg italic">"{testimonial.quote}"</p>
+                <p className="mt-4 font-medium uppercase">— {testimonial.author}</p>
               </motion.div>
             ))}
           </div>
