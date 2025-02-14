@@ -27,7 +27,7 @@ const Home = () => {
         {/* Hero */}
         <motion.div
           initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-          className="grid md:grid-cols-2 h-[80vh] items-center pb-12 text-center md:text-left border-b-8 border-moss lg:border-b-0">
+          className="grid md:grid-cols-2 h-[80vh] items-center pb-12 text-center md:text-left border-b-2 border-moss lg:border-b-0">
           <div>
             <h1 className="heading text-4xl md:text-9xl">
               Learn <br className="hidden md:block" /> Yoga <br className="hidden md:block" /> Online
@@ -53,10 +53,10 @@ const Home = () => {
         {/* About */}
         <motion.div
           initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-          className="grid md:grid-cols-2 items-start pt-24 text-center md:text-right pb-52 border-b-8 border-moss lg:border-b-0">
+          className="grid md:grid-cols-2 items-start pt-24 text-center md:text-right pb-52 border-b-2 border-moss lg:border-b-0">
           <div className="hidden md:block"></div>
           <div>
-            <h2 className="heading text-3xl md:text-5xl">
+            <h2 className="heading text-3xl md:text-6xl tracking-wider py-12">
               About
             </h2>
             <div className="mt-8 mx-8 md:mx-0 space-y-12 text-lg md:text-xl tracking-wide">
@@ -92,9 +92,9 @@ const Home = () => {
         {/* Call To Action */}
         <motion.div
           initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-          className="py-32 text-center border-b-8 border-moss lg:border-b-0"
+          className="py-32 text-center border-b-2 border-moss lg:border-b-0"
         >
-          <h2 className="heading text-3xl md:text-5xl">
+          <h2 className="heading text-3xl md:text-6xl tracking-wider py-12">
             Start Your Practice
           </h2>
           <p className="mt-8 text-lg md:text-xl max-w-lg mx-auto tracking-wider">
@@ -134,8 +134,8 @@ const Home = () => {
             variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } },}}
             className="text-center md:text-left"
           >
-            <h2 className="heading text-3xl md:text-5xl">Featured Categories</h2>
-            <p className="mt-6 md:text-xl mx-12 md:mx-0">
+            <h2 className="heading text-3xl md:text-6xl tracking-wider py-12">Featured Categories</h2>
+            <p className="md:text-xl mx-12 md:mx-0">
               Check out this month's featured categores. Each offering guidance and inspiration for your journey this February.
             </p>
           </motion.div>
@@ -195,8 +195,8 @@ const Home = () => {
             variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
             className="text-center md:text-right"
           >
-            <h2 className="heading text-3xl md:text-5xl">Featured Poses</h2>
-            <p className="mt-6 text-lg md:text-xl mx-12 md:mx-0">
+            <h2 className="heading text-3xl md:text-6xl tracking-wider py-12">Featured Poses</h2>
+            <p className="text-lg md:text-xl mx-12 md:mx-0">
               This month's featured poses are here. <br/> Learn proper alignment and refine your practice with these foundational poses.
             </p>
           </motion.div>
@@ -206,16 +206,16 @@ const Home = () => {
 
         {/* Learn More */}
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}>
-          <div className="border-t-8 border-moss py-32 text-center">
+          <div className="border-t-2 border-moss py-32 text-center">
             <motion.h2 
               variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-              className="heading text-3xl md:text-5xl"
+              className="heading text-3xl md:text-6xl tracking-wider py-12"
             >
               Deepen Your Understanding
             </motion.h2>
             <motion.p 
               variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-              className="mt-6 text-lg md:text-xl max-w-lg mx-auto tracking-wide"
+              className="text-lg md:text-xl max-w-lg mx-auto tracking-wide"
             >
               Check out these essential guides to learn more about the history and philosophy of yoga.
             </motion.p>
@@ -249,7 +249,7 @@ const Home = () => {
 
        {/* Testimonials */}
       <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}>
-        <div className="border-t-8 border-moss py-32 text-center">
+        <div className="border-t-2 border-moss py-32 text-center">
           <motion.h2 
             variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
             className="heading text-3xl md:text-6xl tracking-wider py-12"
@@ -285,10 +285,10 @@ const Home = () => {
       {/* Newsletter */}
       <motion.div 
       initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-        className="border-t-8 border-moss py-32 text-center"
+        className="border-t-2 border-moss py-32 text-center"
       >
-        <h2 className="heading text-3xl md:text-5xl">Stay Connected</h2>
-        <p className="mt-8 text-lg md:text-xl max-w-lg mx-auto tracking-wider">
+        <h2 className="heading text-3xl md:text-6xl tracking-wider py-12">Stay Connected</h2>
+        <p className="text-lg md:text-xl max-w-2xl mx-auto tracking-wider">
           Discover new insights, tips, and stories about yoga and mindfulness every month. 
         </p>
         <p className="mt-4 text-lg md:text-xl max-w-lg mx-auto tracking-wide">
