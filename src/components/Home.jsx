@@ -84,7 +84,7 @@ const Home = () => {
           bgImage="bg2.jpg" 
           bgImageAlt="zoomed in photo of ocean waves at sunset" 
           strength={500} 
-          className="w-full h-[100vh] hidden lg:block"
+          className="w-full h-[50vh] hidden lg:block"
           bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
         >
         </Parallax>
@@ -122,7 +122,7 @@ const Home = () => {
           bgImage="bg3.avif" 
           bgImageAlt="photo of sunrise behind mountains" 
           strength={500} 
-          className="w-full h-[100vh] hidden lg:block"
+          className="w-full h-[50vh] hidden lg:block"
           bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
         >
         </Parallax>

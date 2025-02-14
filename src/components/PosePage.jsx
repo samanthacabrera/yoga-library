@@ -54,28 +54,27 @@ const PosePage = () => {
   return (
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 md:space-y-20 p-8 mx-auto">
 
-    <nav className="flex items-center space-x-2 py-2">
-      <Link
-        to="/poses"
-        className="text-moss hover:border-b-2 hover:border-moss border-b-2 border-transparent transition-all duration-300"
-      >
-        All Poses
-      </Link>
-      {pose.type.length > 0 && (
-        <>
-          <span className="text-gray-600">/</span>
-          <Link
-            to={`/poses/type/${pose.type[0]}`}
-            className="text-moss hover:border-b-2 hover:border-moss border-b-2 border-transparent transition-all duration-300"
-          >
-            {pose.type[0]} Poses
-          </Link>
-        </>
-      )}
-      <span className="text-gray-600">/</span>
-      <span className="text-charcoal">{pose.name}</span>
-    </nav>
-
+      <nav className="flex items-center space-x-2 py-2 text-sm tracking-widest">
+        <Link
+          to="/poses"
+          className="hover:text-moss hover:border-b-2 hover:border-moss transition-all duration-300"
+        >
+          All Poses
+        </Link>
+        {pose.type.length > 0 && (
+          <>
+            <span>/</span>
+            <Link
+              to={`/poses/type/${pose.type[0]}`}
+              className="hover:text-moss hover:border-b-2 hover:border-moss transition-all duration-300"
+            >
+              {pose.type[0]} Poses
+            </Link>
+          </>
+        )}
+        <span>/</span>
+        <span className="font-medium">{pose.name}</span>
+      </nav>
 
       <header className="relative p-6 md:p-8 flex group bg-moss bg-opacity-30 border border-moss rounded-2xl">
         <h2 className="text-4xl md:text-6xl tracking-tight text-left opacity-90 relative">
@@ -133,30 +132,30 @@ const PosePage = () => {
         Modifications
       </a>
       <a href="#cues" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
-        Step-By-Step
+        Cues
       </a>
     </div>
       
       {/* Overview */}
       {poseDesc && poseDesc.desc && (
         <div id="description" className="group">
-          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-2 group-hover:text-moss transition duration-300">Overview</h3>
-          <p>{poseDesc.desc}</p>
+          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Overview</h3>
+          <p className="tracking-wider">{poseDesc.desc}</p>
         </div>
       )}
       {poseBenefit && (poseBenefit.physical || poseBenefit.mental) && (
         <div id="benefits" className="group">
-          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-2 group-hover:text-moss transition duration-300">
+          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">
             Benefits
           </h3>
           {poseBenefit.physical && (
-            <p>
-              <span className="font-medium tracking-wide">Physical Benefits:</span> {poseBenefit.physical}
+            <p className="tracking-wider">
+              <span className="font-medium">Physical Benefits:</span> {poseBenefit.physical}
             </p>
           )}
           {poseBenefit.mental && (
-            <p>
-              <span className="font-medium tracking-wide">Mental Benefits:</span> {poseBenefit.mental}
+            <p className="tracking-wider">
+              <span className="font-medium">Mental Benefits:</span> {poseBenefit.mental}
             </p>
           )}
         </div>
@@ -164,29 +163,29 @@ const PosePage = () => {
       {/* Origins */}
       {poseSanskirt && poseSanskirt.context && (
         <div id="origins" className="group">
-          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-2 group-hover:text-moss transition duration-300">Origins</h3>
-          <p>{poseSanskirt.context}</p>
+          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Origins</h3>
+          <p className="tracking-wider">{poseSanskirt.context}</p>
         </div>
       )}
       {/* Precautions */}
       {posePrecaution && posePrecaution.precaution && (
         <div id="precautions" className="group">
-          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-2 group-hover:text-moss transition duration-300">Precautions</h3>
-          <p>{posePrecaution.precaution}</p>
+          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Precautions</h3>
+          <p className="tracking-wider">{posePrecaution.precaution}</p>
         </div>
       )}
       {/* Modifications */}
       {poseModification && poseModification.modification && (
         <div id="modifications" className="group">
-          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-2 group-hover:text-moss transition duration-300">Modifications</h3>
-          <p>{poseModification.modification}</p>
+          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Modifications</h3>
+          <p className="tracking-wider">{poseModification.modification}</p>
         </div>
       )}
       {/* Cues */}
       {poseCues && poseCues.cues && (
         <div id="cues" className="group">
-          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-2 group-hover:text-moss transition duration-300">Step-By-Step Breakdown</h3>
-          <ol className="list-decimal list-inside">
+          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Alignment & <br/>Breath Cues</h3>
+          <ol className="list-decimal list-inside tracking-wider">
             {poseCues.cues.map((cue, index) => {
               const linkPoseNames = (cueText) => {
                 const matchedPoseCue = posesData.find((p) => cueText.includes(p.name));
