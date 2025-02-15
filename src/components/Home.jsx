@@ -173,7 +173,7 @@ const Home = () => {
             {[
               { link: "/poses/Downward-Facing Dog", text: "Downward-Facing Dog" },
               { link: "/poses/Triangle Pose", text: "Triangle Pose" },
-              { link: "/poses/warrior-ii", text: "Bridge Pose" },
+              { link: "/poses/Bridge Pose", text: "Bridge Pose" },
             ].map((item, index) => (
               <motion.div
                 key={index}
