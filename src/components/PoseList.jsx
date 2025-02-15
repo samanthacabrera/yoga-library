@@ -7,7 +7,7 @@ const PoseList = () => {
     <div className="mt-40 py-8 px-8 md:px-20">
       <Link
         to="/poses"
-        className="text-white text-2xl lg:text-4xl tracking-tight hover:opacity-70 transition duration-300 block border-b border-white py-2 my-12">
+        className="text-white text-2xl lg:text-4xl tracking-tight hover:opacity-50 transition duration-500 ease-in-out block border-b border-white py-2 my-12">
         Yoga Pose Directory
       </Link>
 
@@ -18,16 +18,16 @@ const PoseList = () => {
           {posesData.map((pose) => (
             <div 
               key={pose.id} 
-              className="relative group p-4 border border-white rounded-lg hover:border-black transition duration-500"
+              className="relative group p-4 border border-white rounded-lg hover:border-charcoal transition duration-500"
             >
               <Link 
                 to={`/poses/${pose.name}`} 
-                className="block text-xs tracking-wide text-left group-hover:text-black transition-colors duration-500"
+                className="block text-xs tracking-wide text-left group-hover:text-charcoal transition-colors duration-500"
               >
                 {pose.name}
+              <span className="absolute bottom-4 right-4 text-sm text-gray-400 group-hover:text-charcoal transition duration-500">→</span>
+              <div className="absolute top-0 left-0 w-0 h-full bg-charcoal opacity-5 group-hover:w-full transition-all duration-500"></div>
               </Link>
-              <span className="absolute bottom-4 right-4 text-sm text-gray-400 group-hover:text-black transition duration-500">→</span>
-              <div className="absolute top-0 left-0 w-0 h-full bg-black opacity-5 group-hover:w-full transition-all duration-500"></div>
             </div>
           ))}
         </div>
