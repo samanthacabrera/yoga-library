@@ -76,6 +76,28 @@ const PosePage = () => {
         <span className="font-medium">{pose.name}</span>
       </nav>
 
+      <div>
+
+      <div className="flex justify-between items-center transform -translate-y-1/2 mx-2">
+        {prevPose && (
+          <Link 
+            to={`/poses/${prevPose.name}`} 
+            className="text-sm tracking-wide text-gray-700 hover:text-moss hover:border-b-2 hover:border-moss transition-all duration-300 bg-transparent border-b-0 hover:border-black pb-1"
+          >
+            ← {prevPose.name}
+          </Link>
+        )}
+        {nextPose && (
+          <Link 
+            to={`/poses/${nextPose.name}`} 
+            className="text-sm tracking-wide text-gray-700 hover:text-moss hover:border-b-2 hover:border-moss transition-all duration-300 bg-transparent border-b-0 hover:border-black pb-1"
+          >
+            {nextPose.name} →
+          </Link>
+        )}
+      </div>
+
+
       <header className="relative p-6 md:p-8 flex group bg-moss bg-opacity-30 border border-moss rounded-2xl">
         <h2 className="text-4xl md:text-6xl tracking-tight text-left opacity-90 relative">
           <span className="heading block">
@@ -90,6 +112,7 @@ const PosePage = () => {
           </span>
         </h2>
       </header>
+      </div>
       
       {/* Image */}
       {pose.image && (
@@ -100,19 +123,6 @@ const PosePage = () => {
           className="mx-auto "
         />
       )}
-
-      <div className="invisible md:visible absolute top-3/4 left-0 right-0 flex justify-between mx-12">
-        {prevPose && (
-          <Link to={`/poses/${prevPose.name}`} className="lowercase px-4 py-1 rounded-full border border-moss bg-moss bg-opacity-20 hover:bg-opacity-30 transition-all duration-300">
-            ← {prevPose.name}
-          </Link>
-        )}
-        {nextPose && (
-          <Link to={`/poses/${nextPose.name}`} className="lowercase px-4 py-1 rounded-full border border-moss bg-moss bg-opacity-20 hover:bg-opacity-30 transition-all duration-300">
-            {nextPose.name} →
-          </Link>
-        )}
-      </div>
 
     {/* Table of Contents */}
     <div className="flex flex-col lg:items-center lg:flex-row lg:space-x-2 lg:sticky top-0 z-10 lg:py-2 text-moss text-lg bg-[#f9faf4]">
