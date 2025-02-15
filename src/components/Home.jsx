@@ -70,7 +70,7 @@ const Home = () => {
                 This website is more than just a collection of yoga poses. It’s a reflection of my journey, and a way to share what yoga has given me. My goal was to create a space that’s simple and welcoming, where everyone can find valuable resources and support. 
               </p>
               <p>
-                As someone who loves to build and improve things, I’m always working to make this site better. If you have any feedback or suggestions, feel free to email <span className="italic">samantha.n.cabrera@gmail.com</span>. Your input helps me make the site better for you and others.
+                As someone who loves to build and improve things, I’m always working to make this site better. If you have any feedback or suggestions, feel free to email <a href="mailto:samantha.n.cabrera@gmail.com" className="italic opacity-80 hover:opacity-100 hover:cursor-pointer">samantha.n.cabrera@gmail.com</a>. Your input helps me make the site better for you and others. 
               </p>
               <p>
                 Thank you for being part of this community. I hope that this website can be a source of guidance on your own yoga journey.
