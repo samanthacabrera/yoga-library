@@ -84,6 +84,27 @@ const Newsletter = () => {
                     </li>
                 </ul>
             </div>
+
+            <hr></hr>
+            {/* Meet the Author */}
+            <h2 className="heading text-4xl lg:text-6xl" >Meet the Author</h2>
+            <div className="flex flex-col md:flex-row items-start space-y-8 md:space-y-0 md:space-x-12 py-12 my-16">
+                <img 
+                    src="/me.png" 
+                    alt="Sam" 
+                    className="w-40 h-40 md:w-60 md:h-60 object-cover object-[75%_15%] rounded-t-2xl shadow hover:shadow-lg transition"
+                />
+                <div className="flex-1 text-center md:text-left space-y-12">
+                    <p> Hi there, my name is Sam and I am a web developer who also happens to spend a lot of time on a yoga mat. Yoga has been a constant in my life for years now, offering a sense of grounding when everything else feels unsteady.</p>
+                    <p>Over time, I've realized that yoga is as much about the moments off the mat as it is about the time spent on it. It has taught me patience, humility, and the importance of being present.</p>
+                    <p>I’m not a writer by trade, and I don’t aim to be. This space is simply where I share what yoga means to me — the lessons, struggles, and small moments that come with maintaining a regular practice. My hope is that these reflections resonate with others who are also exploring their own relationship with yoga, no matter where they are on their journey.</p>
+                    <p>However you’ve found your way here, I hope you’ll find something that resonates with you.</p>
+                    <div className="flex justify-center md:justify-start space-x-4">
+                        <a href="https://medium.com/@samantha.n.cabrera" target="_blank" rel="noopener noreferrer" className="hover:text-moss transition duration-300">Medium</a>
+                        <a href="mailto:samantha.n.cabrera@gmail.com" className="hover:text-moss transition duration-300">Email</a>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

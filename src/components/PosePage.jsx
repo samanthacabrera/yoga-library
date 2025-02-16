@@ -78,7 +78,7 @@ const PosePage = () => {
 
       <div>
 
-      <div className="flex justify-between items-center transform -translate-y-1/2 mx-2">
+      <div className="flex justify-between items-center transform -translate-y-1/2 m-1">
         {prevPose && (
           <Link 
             to={`/poses/${prevPose.name}`} 
@@ -125,23 +125,23 @@ const PosePage = () => {
       )}
 
     {/* Table of Contents */}
-    <div className="flex flex-col lg:items-center lg:flex-row lg:space-x-2 lg:sticky top-0 z-10 lg:py-2 text-moss text-lg bg-[#f9faf4]">
-      <a href="#description" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+    <div className="flex flex-col lg:flex-row lg:space-x-6 lg:sticky top-0 z-10 lg:py-2 text-moss text-xl w-full bg-[#f9faf4]">
+      <a href="#description" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 p-1">
         Overview
       </a>
-      <a href="#benefits" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+      <a href="#benefits" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 p-1">
         Benefits
       </a>
-      <a href="#origins" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+      <a href="#origins" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 p-1">
         Origins
       </a>
-      <a href="#precautions" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+      <a href="#precautions" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 p-1">
         Precautions
       </a>
-      <a href="#modifications" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+      <a href="#modifications" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 p-1">
         Modifications
       </a>
-      <a href="#cues" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 px-2 py-1">
+      <a href="#cues" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 p-1">
         Cues
       </a>
     </div>
