@@ -3,7 +3,7 @@ import Search from "./Search";
 
 const Header = () => {
     return (
-        <header className="flex justify-between">
+        <header className="fixed top-0 left-0 w-full z-10 bg-[#f9faf4] flex justify-between">
             <Link to="/" className="heading md:text-xl m-2 md:m-4">Learn Yoga Online</Link>
             <Search />
         </header>
