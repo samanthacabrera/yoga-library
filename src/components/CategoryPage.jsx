@@ -167,7 +167,7 @@ const CategoryPage = () => {
 
   return (
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
-     <h1 className="heading text-center my-12 text-4xl lg:text-8xl">Yoga Pose Directory</h1>
+     <h1 className="heading text-center mt-20 py-12 text-4xl lg:text-9xl">Yoga Pose Directory</h1>
 
       <div className="flex gap-2 justify-center text-sm lg:text-lg">
         <Link to="/poses">
@@ -227,7 +227,7 @@ const CategoryPage = () => {
         )}
       </div>
 
-      <h2 className="text-xl lg:text-4xl pt-12 font-medium text-center tracking-wide">{getHeadingText()}</h2>
+      <h2 className="text-xl lg:text-6xl pt-12 font-medium text-center tracking-wider">{getHeadingText()}</h2>
       <p className="text-charcoal tracking-wider leading-loose">{getDescText()}</p>
 
 {filteredPoses.length === 0 ? (
