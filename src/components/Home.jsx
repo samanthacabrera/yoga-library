@@ -29,7 +29,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
           className="grid md:grid-cols-2 h-[80vh] items-center pb-12 text-center md:text-left border-b-2 border-moss lg:border-b-0">
           <div>
-            <h1 className="heading text-4xl md:text-9xl">
+            <h1 className="heading text-4xl md:text-9xl pt-40">
               Learn <br className="hidden md:block" /> Yoga <br className="hidden md:block" /> Online
             </h1>
             <p className="mt-8 mx-8 md:mx-0 text-lg md:text-xl tracking-wide">
@@ -81,137 +81,150 @@ const Home = () => {
 
         {/* Photo by <a href="https://unsplash.com/@jeremybishop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jeremy Bishop</a> on <a href="https://unsplash.com/photos/calm-water-QtIXL7C4bB0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */}
         <Parallax 
-          bgImage="bg2.jpg" 
-          bgImageAlt="zoomed in photo of ocean waves at sunset" 
-          strength={500} 
-          className="w-full h-[50vh] hidden lg:block"
-          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
-        >
-        </Parallax>
-
-     {/* Unique Call To Action */}
-<motion.div
-  initial={{ opacity: 0, y: 50 }} 
-  whileInView={{ opacity: 1, y: 0 }} 
-  viewport={{ once: false, amount: 0.2 }} 
-  transition={{ duration: 1 }}
-  className="relative py-32 text-center flex flex-col items-center"
->
-
-  <h2 className="text-[clamp(2.5rem,8vw,6rem)] heading uppercase leading-none tracking-tight">
-    Start Your Practice
-  </h2>
-
-  <p className="mt-8 text-lg md:text-xl max-w-xl text-opacity-80 tracking-wide italic">
-    Strengthen your body. Still your mind. Move with purpose. 
-  </p>
-  <p className="mt-4 text-lg md:text-xl max-w-lg px-1 tracking-tight uppercase bg-moss text-white">
-    Your yoga journey starts now.
-  </p>
-
-  <div className="mt-16 relative flex flex-col md:flex-row items-center justify-center gap-4">
-    {[
-      { link: "/poses", text: "Browse Poses" },
-      { link: "/what-is-yoga/beginners-guide", text: "Learn More" },
-    ].map((item, index) => (
-      <Link 
-        key={index}
-        to={item.link} 
-        className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
-      >
-        {item.text}
-      </Link>
-    ))}
-  </div>
-
-</motion.div>
-
-
-        {/* Photo by <a href="https://unsplash.com/@jhonkasalo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joakim Honkasalo</a> on <a href="https://unsplash.com/photos/sunset-over-the-horizon-ufQ-HKgShCo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */}
-        <Parallax 
           bgImage="bg3.avif" 
-          bgImageAlt="photo of sunrise behind mountains" 
+          bgImageAlt="zoomed in photo of ocean waves at sunset" 
           strength={500} 
           className="w-full h-[100vh] hidden lg:block"
           bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
         >
         </Parallax>
 
-      {/* Featured Categories */}
-      <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 },},}}> 
-        <div className="grid md:grid-cols-2 gap-32 items-center py-32">
-          <motion.div 
-            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } },}}
-            className="text-center md:text-left"
-          >
-            <h2 className="heading text-3xl md:text-6xl tracking-wider py-12">Featured Categories</h2>
-            <p className="md:text-xl mx-12 md:mx-0">
-              Check out this month's featured categores. Each offering guidance and inspiration for your journey this February.
-            </p>
-          </motion.div>
+        {/* Call To Action */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }} 
+          whileInView={{ opacity: 1, y: 0 }} 
+          viewport={{ once: false, amount: 0.2 }} 
+          transition={{ duration: 1 }}
+          className="relative py-40 text-center flex flex-col items-center"
+        >
+          <h2 className="text-7xl heading leading-none tracking-tight">
+            Start Your Practice
+          </h2>
 
-          <div className="space-y-12 text-center">
+          <p className="mt-10 text-xl md:text-2xl max-w-2xl text-opacity-80 tracking-wide italic">
+            Strengthen your body. Still your mind. Move with purpose. 
+          </p>
+
+          <div className="mt-20 flex flex-col md:flex-row items-center justify-center gap-8">
             {[
-              { link: "/poses/benefit/improve posture", text: "Improve Posture" },
-              { link: "/poses/benefit/build strength", text: "Build Strength" },
-              { link: "/poses/benefit/restore energy", text: "Restore Energy" },
+              { link: "/poses", text: "Browse Poses" },
+              { link: "/what-is-yoga/beginners-guide", text: "Learn More" },
             ].map((item, index) => (
-              <motion.div
+              <Link 
                 key={index}
-                variants={{
-                  hidden: { opacity: 0, y: 50 },
-                  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-                }}
+                to={item.link} 
+                className="group relative flex items-center justify-center w-[420px] h-[220px] text-xl rounded font-medium uppercase tracking-wider border border-moss transition-all duration-300 hover:bg-moss hover:text-white"
               >
-                <Link
-                  to={item.link}
-                  className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
-                >
-                  <h3>{item.text}</h3>
-                </Link>
-              </motion.div>
+                <span className="absolute inset-0 flex items-center justify-center transition-all duration-300 group-hover:scale-105">
+                  {item.text}
+                </span>
+              </Link>
             ))}
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
 
-        
-      {/* Featured Poses */}
-      <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}>
-        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-32 items-center py-32">
-          <div className="space-y-12 text-center">
-            {[
-              { link: "/poses/Downward-Facing Dog", text: "Downward-Facing Dog" },
-              { link: "/poses/Triangle Pose", text: "Triangle Pose" },
-              { link: "/poses/Bridge Pose", text: "Bridge Pose" },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                variants={{
-                  hidden: { opacity: 0, y: 50 },
-                  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-                }}
-              >
-                <Link
-                  to={item.link}
-                  className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
+
+
+
+        {/* Photo by <a href="https://unsplash.com/@jhonkasalo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joakim Honkasalo</a> on <a href="https://unsplash.com/photos/sunset-over-the-horizon-ufQ-HKgShCo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */}
+        {/* <Parallax 
+          bgImage="bg2.jpg" 
+          bgImageAlt="photo of sunrise behind mountains" 
+          strength={500} 
+          className="w-full h-[100vh] hidden lg:block"
+          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
+        >
+        </Parallax> */}
+
+        {/* Featured Categories */}
+        <motion.div 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: false, amount: 0.2 }} 
+          variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}
+        > 
+          <div className="grid md:grid-cols-2 gap-48 items-center py-48 border-t-2 border-moss">
+            <motion.div 
+              variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+              className="text-left mx-12 md:mx-0"
+            >
+              <h2 className="heading text-[5vw] leading-[1.1] tracking-tight uppercase">
+                Featured Categories
+              </h2>
+              <p className="mt-12 text-xl md:text-2xl tracking-wide">
+                Check out this month's featured categores. Each offering guidance and inspiration for your journey this February.
+              </p>
+            </motion.div>
+
+            <div className="flex flex-col items-center space-y-20 text-right">
+              {[
+                { link: "/poses/benefit/improve posture", text: "Improve Posture" },
+                { link: "/poses/benefit/build strength", text: "Build Strength" },
+                { link: "/poses/benefit/restore energy", text: "Restore Energy" },
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
                 >
-                  <h3>{item.text}</h3>
-                </Link>
-              </motion.div>
-            ))}
+                  <Link 
+                    to={item.link} 
+                    className="relative flex items-center justify-center w-[360px] h-[200px] text-lg font-medium uppercase tracking-wider rounded border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
+                  >
+                    <span className="absolute inset-0 flex items-center justify-center">
+                      {item.text}
+                    </span>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
           </div>
-          <motion.div 
-            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="text-center md:text-right"
-          >
-            <h2 className="heading text-3xl md:text-6xl tracking-wider py-12">Featured Poses</h2>
-            <p className="text-lg md:text-xl mx-12 md:mx-0">
-              This month's featured poses are here. <br/> Learn proper alignment and refine your practice with these foundational poses.
-            </p>
-          </motion.div>
-        </div>
-      </motion.div>
+        </motion.div>
+
+        {/* Featured Poses */}
+        <motion.div 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: false, amount: 0.2 }} 
+          variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}
+        >
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-48 items-center py-48">
+            <div className="space-y-20 text-left">
+              {[
+                { link: "/poses/Downward-Facing Dog", text: "Downward-Facing Dog" },
+                { link: "/poses/Triangle Pose", text: "Triangle Pose" },
+                { link: "/poses/Bridge Pose", text: "Bridge Pose" },
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+                >
+                  <Link 
+                    to={item.link} 
+                    className="relative flex items-center justify-center w-[360px] h-[200px] text-lg font-medium uppercase tracking-wider rounded border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
+                  >
+                    <span className="absolute inset-0 flex items-center justify-center ">
+                      {item.text}
+                    </span>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.div 
+              variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+              className="text-right mx-12 md:mx-0"
+            >
+              <h2 className="heading text-[5vw] leading-[1.1] tracking-tight uppercase">
+                Featured Poses
+              </h2>
+              <p className="mt-12 text-xl md:text-2xl tracking-wide">
+                This month's featured poses are here.
+                Learn proper alignment and refine your practice with these foundational poses.
+              </p>
+            </motion.div>
+          </div>
+        </motion.div>
+
 
 
         {/* Learn More */}
