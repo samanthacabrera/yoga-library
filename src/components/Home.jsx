@@ -89,33 +89,43 @@ const Home = () => {
         >
         </Parallax>
 
-        {/* Call To Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-          className="py-32 text-center border-b-2 border-moss lg:border-b-0"
-        >
-          <h2 className="heading text-3xl md:text-6xl tracking-wider py-12">
-            Start Your Practice
-          </h2>
-          <p className="mt-8 text-lg md:text-xl max-w-lg mx-auto tracking-wider">
-            Strengthen your body. Still your mind. Move with purpose. 
-          </p>
-          <p className="mt-4 text-lg md:text-xl max-w-lg mx-auto tracking-wide">Your yoga journey starts now.</p>
-          <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-6">
-            <Link 
-              to="/poses" 
-              className="px-6 py-2 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
-            >
-              Browse Poses
-            </Link>
-            <Link 
-              to="/what-is-yoga/beginners-guide" 
-              className="px-6 py-2 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
-            >
-              Learn More
-            </Link>
-          </div>
-        </motion.div>
+     {/* Unique Call To Action */}
+<motion.div
+  initial={{ opacity: 0, y: 50 }} 
+  whileInView={{ opacity: 1, y: 0 }} 
+  viewport={{ once: false, amount: 0.2 }} 
+  transition={{ duration: 1 }}
+  className="relative py-32 text-center flex flex-col items-center"
+>
+
+  <h2 className="text-[clamp(2.5rem,8vw,6rem)] heading uppercase leading-none tracking-tight">
+    Start Your Practice
+  </h2>
+
+  <p className="mt-8 text-lg md:text-xl max-w-xl text-opacity-80 tracking-wide italic">
+    Strengthen your body. Still your mind. Move with purpose. 
+  </p>
+  <p className="mt-4 text-lg md:text-xl max-w-lg px-1 tracking-tight uppercase bg-moss text-white">
+    Your yoga journey starts now.
+  </p>
+
+  <div className="mt-16 relative flex flex-col md:flex-row items-center justify-center gap-4">
+    {[
+      { link: "/poses", text: "Browse Poses" },
+      { link: "/what-is-yoga/beginners-guide", text: "Learn More" },
+    ].map((item, index) => (
+      <Link 
+        key={index}
+        to={item.link} 
+        className="block w-64 mx-auto p-4 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
+      >
+        {item.text}
+      </Link>
+    ))}
+  </div>
+
+</motion.div>
+
 
         {/* Photo by <a href="https://unsplash.com/@jhonkasalo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joakim Honkasalo</a> on <a href="https://unsplash.com/photos/sunset-over-the-horizon-ufQ-HKgShCo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */}
         <Parallax 
