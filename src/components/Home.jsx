@@ -113,18 +113,15 @@ const Home = () => {
               <Link 
                 key={index}
                 to={item.link} 
-                className="group relative flex items-center justify-center w-[420px] h-[220px] text-xl rounded font-medium uppercase tracking-wider border border-moss transition-all duration-300 hover:bg-moss hover:text-white"
+                className="relative flex items-center justify-center w-[420px] h-[220px] text-xl rounded font-medium uppercase tracking-wider border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
               >
-                <span className="absolute inset-0 flex items-center justify-center transition-all duration-300 group-hover:scale-105">
+                <span className="absolute inset-0 flex items-center justify-center">
                   {item.text}
                 </span>
               </Link>
             ))}
           </div>
         </motion.div>
-
-
-
 
         {/* Photo by <a href="https://unsplash.com/@jhonkasalo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joakim Honkasalo</a> on <a href="https://unsplash.com/photos/sunset-over-the-horizon-ufQ-HKgShCo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */}
         {/* <Parallax 
@@ -294,7 +291,7 @@ const Home = () => {
                   hidden: { opacity: 0, y: 50 },
                   visible: { opacity: 1, y: 0, transition: { duration: 1 } },
                 }}
-                className="flex flex-col justify-between bg-transparent h-[500px] p-6 border border-moss text-left rounded-xl shadow"
+                className="flex flex-col justify-between bg-transparent h-[500px] p-6 border border-moss text-left rounded-t-xl shadow"
               >
                 <p className="mt-4 text-lg italic">"{testimonial.quote}"</p>
                 <p className="mt-4 font-medium uppercase">— {testimonial.author}</p>
@@ -307,22 +304,32 @@ const Home = () => {
 
       {/* Newsletter */}
       <motion.div 
-      initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-        className="border-t-2 border-moss py-32 text-center"
+        initial={{ opacity: 0, y: 50 }} 
+        whileInView={{ opacity: 1, y: 0 }} 
+        viewport={{ once: false, amount: 0.2 }} 
+        transition={{ duration: 1 }}
+        className="border-t border-moss py-48 flex flex-col items-center text-center"
       >
-        <h2 className="heading text-3xl md:text-6xl tracking-wider py-12">Stay Connected</h2>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto tracking-wider">
-          Discover new insights, tips, and stories about yoga and mindfulness every month. 
+        <h2 className="heading text-[5vw] leading-[1.1] tracking-tight uppercase max-w-4xl">
+          Stay Connected
+        </h2>
+
+        <p className="mt-16 text-2xl max-w-3xl leading-relaxed tracking-wide opacity-80">
+          Discover new insights, tips, and stories about yoga and mindfulness every month.
         </p>
-        <p className="mt-4 text-lg md:text-xl max-w-lg mx-auto tracking-wide">
-          Read our latest articles and deepen your practice.
+
+        <p className="mt-4 text-lg max-w-xl leading-relaxed opacity-60">
+        Read our latest articles and deepen your practice.
         </p>
-        <div className="mt-12">
+
+        <div className="mt-20">
           <Link
             to="/newsletter" 
-            className="px-6 py-2 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl"
+            className="flex items-center justify-center px-12 py-2 rounded font-medium uppercase tracking-wider border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
           >
-            Read Now
+            <span>
+              Read Now
+            </span>
           </Link>
         </div>
       </motion.div>
