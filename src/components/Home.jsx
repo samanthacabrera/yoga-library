@@ -80,14 +80,14 @@ const Home = () => {
         </motion.div>
 
         {/* Photo by <a href="https://unsplash.com/@jeremybishop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jeremy Bishop</a> on <a href="https://unsplash.com/photos/calm-water-QtIXL7C4bB0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */}
-        <Parallax 
+        {/* <Parallax 
           bgImage="bg3.avif" 
           bgImageAlt="zoomed in photo of ocean waves at sunset" 
           strength={500} 
           className="w-full h-[100vh] hidden lg:block"
           bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
         >
-        </Parallax>
+        </Parallax> */}
 
         {/* Call To Action */}
         <motion.div
@@ -95,7 +95,7 @@ const Home = () => {
           whileInView={{ opacity: 1, y: 0 }} 
           viewport={{ once: false, amount: 0.2 }} 
           transition={{ duration: 1 }}
-          className="relative py-40 text-center flex flex-col items-center"
+          className="relative py-40 text-center flex flex-col items-center border-t-2 border-moss"
         >
           <h2 className="text-7xl heading leading-none tracking-tight">
             Start Your Practice
@@ -124,14 +124,14 @@ const Home = () => {
         </motion.div>
 
         {/* Photo by <a href="https://unsplash.com/@jhonkasalo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joakim Honkasalo</a> on <a href="https://unsplash.com/photos/sunset-over-the-horizon-ufQ-HKgShCo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */}
-        {/* <Parallax 
+        <Parallax 
           bgImage="bg2.jpg" 
           bgImageAlt="photo of sunrise behind mountains" 
           strength={500} 
           className="w-full h-[100vh] hidden lg:block"
           bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
         >
-        </Parallax> */}
+        </Parallax>
 
         {/* Featured Categories */}
         <motion.div 
@@ -140,7 +140,7 @@ const Home = () => {
           viewport={{ once: false, amount: 0.2 }} 
           variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}
         > 
-          <div className="grid md:grid-cols-2 gap-48 items-center py-48 border-t-2 border-moss">
+          <div className="grid md:grid-cols-2 gap-48 items-center py-48">
             <motion.div 
               variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
               className="text-left mx-12 md:mx-0"

@@ -227,40 +227,40 @@ const CategoryPage = () => {
         )}
       </div>
 
-      <h2 className="text-xl lg:text-6xl pt-12 font-medium text-center tracking-wider">{getHeadingText()}</h2>
+      <h2 className="text-xl lg:text-6xl pt-12 text-center tracking-wider">{getHeadingText()}</h2>
       <p className="text-charcoal tracking-wider leading-loose">{getDescText()}</p>
 
-{filteredPoses.length === 0 ? (
-  <p className="text-lg font-bold text-black bg-moss p-4 text-center">
-    No poses found for this category.
-  </p>
-) : (
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-8">
-    {filteredPoses.map((pose) => (
-      <div
-        key={pose.id}
-        className="relative p-4 border border-charcoal bg-white bg-opacity-50 rounded shadow hover:shadow-lg transition-shadow duration-300"
-      >
-        <Link to={`/poses/${pose.name}`} className="group flex flex-col items-center">
-          {pose.image ? (
-            <img
-              src={pose.image}
-              alt={pose.name}
-              className="w-full h-full object-cover"
-            />
-          ) : (
-            <div className="w-full h-96 sm:h-72 md:h-48 lg:h-32 flex items-center justify-center bg-gray-100">
-              <span className="text-xs opacity-30">No Image</span>
+      {filteredPoses.length === 0 ? (
+        <p className="text-lg font-bold text-black bg-moss p-4 text-center">
+          No poses found for this category.
+        </p>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-8">
+          {filteredPoses.map((pose) => (
+            <div
+              key={pose.id}
+              className="relative p-4 border border-charcoal bg-white bg-opacity-50 rounded shadow hover:shadow-lg transition-shadow duration-300"
+            >
+              <Link to={`/poses/${pose.name}`} className="group flex flex-col items-center">
+                {pose.image ? (
+                  <img
+                    src={pose.image}
+                    alt={pose.name}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-96 sm:h-72 md:h-48 lg:h-32 flex items-center justify-center bg-gray-100">
+                    <span className="text-xs opacity-30">No Image</span>
+                  </div>
+                )}
+                <span className="mt-2 lowercase tracking-wide text-center leading-relaxed group-hover:text-moss transition-all duration-300">
+                  {pose.name}
+                </span>
+              </Link>
             </div>
-          )}
-          <span className="mt-2 lowercase tracking-wide text-center leading-relaxed group-hover:text-moss transition-all duration-300">
-            {pose.name}
-          </span>
-        </Link>
-      </div>
-    ))}
-  </div>
-)}
+          ))}
+        </div>
+      )}
 
 
       <div className="flex flex-col text-sm opacity-50">
