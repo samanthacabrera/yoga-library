@@ -79,16 +79,6 @@ const Home = () => {
           </div>
         </motion.div>
 
-        {/* Photo by <a href="https://unsplash.com/@jeremybishop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jeremy Bishop</a> on <a href="https://unsplash.com/photos/calm-water-QtIXL7C4bB0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */}
-        {/* <Parallax 
-          bgImage="bg3.avif" 
-          bgImageAlt="zoomed in photo of ocean waves at sunset" 
-          strength={500} 
-          className="w-full h-[100vh] hidden lg:block"
-          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
-        >
-        </Parallax> */}
-
         {/* Call To Action */}
         <motion.div
           initial={{ opacity: 0, y: 50 }} 
@@ -122,16 +112,6 @@ const Home = () => {
             ))}
           </div>
         </motion.div>
-
-        {/* Photo by <a href="https://unsplash.com/@jhonkasalo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joakim Honkasalo</a> on <a href="https://unsplash.com/photos/sunset-over-the-horizon-ufQ-HKgShCo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */}
-        <Parallax 
-          bgImage="bg2.jpg" 
-          bgImageAlt="photo of sunrise behind mountains" 
-          strength={500} 
-          className="w-full h-[100vh] hidden lg:block"
-          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
-        >
-        </Parallax>
 
         {/* Featured Categories */}
         <motion.div 
@@ -256,7 +236,7 @@ const Home = () => {
                     visible: { opacity: 1, y: 0, transition: { duration: 1 } },
                   }}
                 >
-                  <Link to={item.link} className="block w-[400px] h-[150px] p-6 bg-moss bg-opacity-20 hover:bg-opacity-30 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
+                  <Link to={item.link} className="block w-[400px] h-[150px] p-6 bg-moss bg-opacity-10 hover:bg-opacity-20 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
                     <h3 className="text-xl font-medium">{item.title}</h3>
                     <p className="mt-2 text-sm">{item.description}</p>
                   </Link>
