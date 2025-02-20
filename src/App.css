@@ -15,7 +15,7 @@ body {
 }
 
 ::selection {
-  background-color: #78825b;
+  background-color: #747d65;
   color: whitesmoke;
 }
 
@@ -24,10 +24,7 @@ body {
 }
 
 .heading {
-  /* color: #c76e36; */
-  /* color: #a86a5d; */
-  /* color: #5b708b; */
   color: #747d65;
   font-family: "DM Sans", serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }

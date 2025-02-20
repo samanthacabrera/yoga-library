@@ -56,7 +56,7 @@ const Home = () => {
           className="grid md:grid-cols-2 items-start pt-24 text-center md:text-right pb-52 border-b-2 border-moss lg:border-b-0">
           <div className="hidden md:block"></div>
           <div>
-            <h2 className="heading text-3xl md:text-6xl tracking-wider py-12">
+            <h2 className="heading text-5xl md:text-7xl py-12">
               About
             </h2>
             <div className="mt-8 mx-8 md:mx-0 space-y-12 text-lg md:text-xl tracking-wide">
@@ -87,7 +87,7 @@ const Home = () => {
           transition={{ duration: 1 }}
           className="relative py-40 text-center flex flex-col items-center border-t-2 border-moss"
         >
-          <h2 className="text-7xl heading leading-none tracking-tight">
+          <h2 className="heading text-5xl md:text-7xl py-12">
             Start Your Practice
           </h2>
 
@@ -103,7 +103,7 @@ const Home = () => {
               <Link 
                 key={index}
                 to={item.link} 
-                className="relative flex items-center justify-center w-[420px] h-[220px] text-xl rounded font-medium uppercase tracking-wider border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
+                className="relative flex items-center justify-center w-[300px] h-[100px] text-xl rounded font-medium uppercase tracking-wider border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
               >
                 <span className="absolute inset-0 flex items-center justify-center">
                   {item.text}
@@ -123,9 +123,9 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-48 items-center py-48">
             <motion.div 
               variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-              className="text-left mx-12 md:mx-0"
+              className="text-center md:text-left mx-12 md:mx-0"
             >
-              <h2 className="heading text-[5vw] leading-[1.1] tracking-tight uppercase">
+              <h2 className="heading text-5xl md:text-7xl py-12">
                 Featured Categories
               </h2>
               <p className="mt-12 text-xl md:text-2xl tracking-wide">
@@ -179,7 +179,7 @@ const Home = () => {
                     to={item.link} 
                     className="relative flex items-center justify-center w-[360px] h-[200px] text-lg font-medium uppercase tracking-wider rounded border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
                   >
-                    <span className="absolute inset-0 flex items-center justify-center ">
+                    <span className="absolute inset-0 flex items-center justify-center">
                       {item.text}
                     </span>
                   </Link>
@@ -189,9 +189,9 @@ const Home = () => {
 
             <motion.div 
               variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-              className="text-right mx-12 md:mx-0"
+              className="text-center md:text-right mx-12 md:mx-0"
             >
-              <h2 className="heading text-[5vw] leading-[1.1] tracking-tight uppercase">
+              <h2 className="heading text-5xl md:text-7xl py-12">
                 Featured Poses
               </h2>
               <p className="mt-12 text-xl md:text-2xl tracking-wide">
@@ -202,63 +202,63 @@ const Home = () => {
           </div>
         </motion.div>
 
-{/* Learn More */}
-<motion.div 
-  initial="hidden" 
-  whileInView="visible" 
-  viewport={{ once: false, amount: 0.2 }} 
-  variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}
-  className="border-t-2 border-moss py-32 text-left"
->
-  <motion.h2 
-    variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-    className="heading text-3xl md:text-6xl tracking-wider text-center py-12"
-  >
-    Deepen Your Understanding
-  </motion.h2>
-  
-  <motion.p 
-    variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-    className="text-lg md:text-xl max-w-lg mx-auto text-center tracking-wide leading-relaxed"
-  >
-    Check out these essential guides to explore the history and philosophy of yoga.
-  </motion.p>
-
-  <div className="mt-16 grid md:grid-cols-2 gap-16 max-w-5xl mx-auto">
-    {[
-      { link: "/what-is-yoga/beginners-guide", title: "Start Here: Beginner’s Guide", description: "New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started." },
-      { link: "/what-is-yoga/overview", title: "What Is Yoga?", description: "Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today." },
-      { link: "/what-is-yoga/eight-limbed-path", title: "The 8-Limbed Path", description: "Explore the eight limbs of yoga, from ethical principles and breath control to meditation and self-realization." },
-      { link: "/what-is-yoga/seven-chakras", title: "The 7 Chakras", description: "Understand the seven energy centers of the body and how they influence your physical, emotional, and spiritual well-being." },
-      { link: "/what-is-yoga/three-gunas", title: "The 3 Gunas", description: "Learn about the three fundamental qualities of nature—Sattva, Rajas, and Tamas—and how they shape your actions and mindset." },
-      { link: "/resources", title: "Resources", description: "Find recommended books, tools, and external guides to deepen your yoga knowledge and practice." },
-    ].map((item, index) => (
-      <motion.div
-        key={index}
-        variants={{
-          hidden: { opacity: 0, y: 50 },
-          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-        }}
+      {/* Learn More */}
+      <motion.div 
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: false, amount: 0.2 }} 
+        variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}
+        className="border-t-2 border-moss py-32 text-left"
       >
-        <Link 
-          to={item.link} 
-          className="block w-full h-[280px] md:h-[300px] p-8 border border-moss rounded-xl transition-all duration-300 hover:scale-[1.03] hover:bg-moss hover:text-white flex flex-col justify-center"
+        <motion.h2 
+          variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+          className="heading text-5xl md:text-7xl py-12 text-center"
         >
-          <h3 className="text-2xl font-medium leading-snug">{item.title}</h3>
-          <p className="mt-2 text-lg opacity-70">{item.description}</p>
-        </Link>
+          Deepen Your Understanding
+        </motion.h2>
+        
+        <motion.p 
+          variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+          className="text-lg md:text-xl max-w-lg mx-auto text-center tracking-wide leading-relaxed"
+        >
+          Check out these essential guides to explore the history and philosophy of yoga.
+        </motion.p>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-16 max-w-5xl mx-auto">
+          {[
+            { link: "/what-is-yoga/beginners-guide", title: "Start Here: Beginner’s Guide", description: "New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started." },
+            { link: "/what-is-yoga/overview", title: "What Is Yoga?", description: "Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today." },
+            { link: "/what-is-yoga/eight-limbed-path", title: "The 8-Limbed Path", description: "Explore the eight limbs of yoga, from ethical principles and breath control to meditation and self-realization." },
+            { link: "/what-is-yoga/seven-chakras", title: "The 7 Chakras", description: "Understand the seven energy centers of the body and how they influence your physical, emotional, and spiritual well-being." },
+            { link: "/what-is-yoga/three-gunas", title: "The 3 Gunas", description: "Learn about the three fundamental qualities of nature—Sattva, Rajas, and Tamas—and how they shape your actions and mindset." },
+            { link: "/resources", title: "Resources", description: "Find recommended books, tools, and external guides to deepen your yoga knowledge and practice." },
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+              }}
+            >
+              <Link 
+                to={item.link} 
+                className="block w-full h-[280px] md:h-[300px] p-8 border border-moss rounded-xl transition-all duration-300 hover:scale-[1.03] hover:bg-moss hover:text-white flex flex-col justify-center"
+              >
+                <h3 className="text-2xl font-medium leading-snug">{item.title}</h3>
+                <p className="mt-2 text-lg opacity-70">{item.description}</p>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
-    ))}
-  </div>
-</motion.div>
 
 
-       {/* Testimonials */}
+      {/* Testimonials */}
       <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}>
         <div className="border-t-2 border-moss py-32 text-center">
           <motion.h2 
             variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="heading text-3xl md:text-6xl tracking-wider py-12"
+            className="heading text-5xl md:text-7xl py-12"
           >
             What Others Are Saying
           </motion.h2>

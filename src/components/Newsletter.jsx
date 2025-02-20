@@ -92,7 +92,7 @@ const Newsletter = () => {
                 <img 
                     src="/me.png" 
                     alt="Sam" 
-                    className="w-40 h-40 md:w-60 md:h-60 object-cover object-[75%_15%] rounded-t-2xl shadow hover:shadow-lg transition"
+                    className="w-40 h-40 md:w-60 md:h-60 object-cover object-[75%_15%] rounded-t-xl shadow"
                 />
                 <div className="flex-1 text-center md:text-left space-y-12">
                     <p> Hi there, my name is Sam and I am a web developer who also happens to spend a lot of time on a yoga mat. Yoga has been a constant in my life for years now, offering a sense of grounding when everything else feels unsteady.</p>
