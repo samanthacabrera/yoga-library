@@ -202,50 +202,55 @@ const Home = () => {
           </div>
         </motion.div>
 
-
-
         {/* Learn More */}
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}>
-          <div className="flex flex-col border-t-2 border-moss py-32 text-center">
-            <motion.h2 
-              variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-              className="heading text-3xl md:text-6xl tracking-wider py-12"
-            >
-              Deepen Your Understanding
-            </motion.h2>
-            <motion.p 
-              variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-              className="text-lg md:text-xl max-w-lg mx-auto tracking-wide"
-            >
-              Check out these essential guides to learn more about the history and philosophy of yoga.
-            </motion.p>
+        <motion.div 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: false, amount: 0.2 }} 
+          variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}
+          className="border-t-2 border-moss py-32 text-center"
+        >
+          <motion.h2 
+            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+            className="heading text-3xl md:text-6xl tracking-wider py-12"
+          >
+            Deepen Your Understanding
+          </motion.h2>
+          
+          <motion.p 
+            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+            className="text-lg md:text-xl max-w-lg mx-auto tracking-wide leading-relaxed"
+          >
+            Check out these essential guides to explore the history and philosophy of yoga.
+          </motion.p>
 
-            <div className="mt-12 grid md:grid-cols-2 gap-20 max-w-4xl mx-auto items-center text-left">
-              {[
-                { link: "/what-is-yoga/beginners-guide", title: "Start Here: Beginner’s Guide", description: "New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started." },
-                { link: "/what-is-yoga/overview", title: "What Is Yoga?", description: "Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today." },
-                { link: "/what-is-yoga/eight-limbed-path", title: "The 8-Limbed Path", description: "Explore the eight limbs of yoga, from ethical principles and breath control to meditation and self-realization." },
-                { link: "/what-is-yoga/seven-chakras", title: "The 7 Chakras", description: "Understand the seven energy centers of the body and how they influence your physical, emotional, and spiritual well-being." },
-                { link: "/what-is-yoga/three-gunas", title: "The 3 Gunas", description: "Learn about the three fundamental qualities of nature—Sattva, Rajas, and Tamas—and how they shape your actions and mindset." },
-                { link: "/resources", title: "Resources", description: "Find recommended books, tools, and external guides to deepen your yoga knowledge and practice." },
-              ].map((item, index) => (
-                <motion.div
-                  key={index}
-                  variants={{
-                    hidden: { opacity: 0, y: 50 },
-                    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-                  }}
+          <div className="mt-12 grid md:grid-cols-2 gap-12 max-w-4xl mx-auto items-center text-left">
+            {[
+              { link: "/what-is-yoga/beginners-guide", title: "Start Here: Beginner’s Guide", description: "New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started." },
+              { link: "/what-is-yoga/overview", title: "What Is Yoga?", description: "Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today." },
+              { link: "/what-is-yoga/eight-limbed-path", title: "The 8-Limbed Path", description: "Explore the eight limbs of yoga, from ethical principles and breath control to meditation and self-realization." },
+              { link: "/what-is-yoga/seven-chakras", title: "The 7 Chakras", description: "Understand the seven energy centers of the body and how they influence your physical, emotional, and spiritual well-being." },
+              { link: "/what-is-yoga/three-gunas", title: "The 3 Gunas", description: "Learn about the three fundamental qualities of nature—Sattva, Rajas, and Tamas—and how they shape your actions and mindset." },
+              { link: "/resources", title: "Resources", description: "Find recommended books, tools, and external guides to deepen your yoga knowledge and practice." },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                variants={{
+                  hidden: { opacity: 0, y: 50 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+                }}
+              >
+                <Link 
+                  to={item.link} 
+                  className="block p-6 border border-moss rounded-2xl transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
                 >
-                  <Link to={item.link} className="block w-[400px] h-[150px] p-6 bg-moss bg-opacity-5 hover:bg-opacity-20 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
-                    <h3 className="text-xl font-medium">{item.title}</h3>
-                    <p className="mt-2 text-sm">{item.description}</p>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
+                  <h3 className="text-xl font-medium">{item.title}</h3>
+                  <p className="mt-2 text-sm">{item.description}</p>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
-
 
        {/* Testimonials */}
       <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}>
