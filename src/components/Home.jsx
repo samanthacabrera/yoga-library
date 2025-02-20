@@ -220,7 +220,7 @@ const Home = () => {
               Check out these essential guides to learn more about the history and philosophy of yoga.
             </motion.p>
 
-            <div className="mt-12 grid md:grid-cols-2 gap-12 max-w-4xl mx-auto items-center text-left">
+            <div className="mt-12 grid md:grid-cols-2 gap-20 max-w-4xl mx-auto items-center text-left">
               {[
                 { link: "/what-is-yoga/beginners-guide", title: "Start Here: Beginner’s Guide", description: "New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started." },
                 { link: "/what-is-yoga/overview", title: "What Is Yoga?", description: "Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today." },
@@ -236,7 +236,7 @@ const Home = () => {
                     visible: { opacity: 1, y: 0, transition: { duration: 1 } },
                   }}
                 >
-                  <Link to={item.link} className="block w-[400px] h-[150px] p-6 bg-moss bg-opacity-10 hover:bg-opacity-20 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
+                  <Link to={item.link} className="block w-[400px] h-[150px] p-6 bg-moss bg-opacity-5 hover:bg-opacity-20 hover:shadow transition-all duration-300 border border-moss rounded-2xl">
                     <h3 className="text-xl font-medium">{item.title}</h3>
                     <p className="mt-2 text-sm">{item.description}</p>
                   </Link>

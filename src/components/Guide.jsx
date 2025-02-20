@@ -39,6 +39,43 @@ const Guide = () => {
                 </li>
             </ul>
         </div>
+        
+        {/* Yoga Props */}
+        <h3 className="text-2xl font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[250px]">
+            Yoga Props
+        </h3>
+        <p className="lg:col-span-2">
+            Props are an essential part of yoga, especially for beginners. They help with alignment, provide support, and make postures more accessible. Using props doesn't mean you're less skilled—it means you're practicing safely and effectively.
+        </p>
+        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4 lg:col-span-2">
+            <h2 className="text-2xl sm:text-3xl text-center mb-2">Essential Yoga Props & How to Use Them</h2>
+            <ul className="list-inside space-y-4 tracking-wide text-sm sm:text-base">
+                <li>
+                    <strong>Yoga Blocks: </strong> 
+                    These provide support in standing and seated poses by bringing the floor closer to you. They help with balance, alignment, and deepening stretches.
+                </li>
+                <li>
+                    <strong>Yoga Straps: </strong> 
+                    Useful for improving flexibility, straps help you extend your reach in poses like seated forward folds and shoulder stretches.
+                </li>
+                <li>
+                    <strong>Bolsters: </strong> 
+                    Commonly used in restorative yoga, bolsters provide cushioning and support for deep relaxation and breathwork.
+                </li>
+                <li>
+                    <strong>Blankets: </strong> 
+                    Great for extra padding under knees or hips, blankets also provide warmth during meditation and Savasana.
+                </li>
+                <li>
+                    <strong>Yoga Wheel: </strong> 
+                    Helps with deep backbends, improving flexibility, and providing gentle spinal support.
+                </li>
+                <li>
+                    <strong>Wall & Chair: </strong> 
+                    A wall or sturdy chair can be used for balance in standing poses or seated postures if getting to the floor is difficult.
+                </li>
+            </ul>
+        </div>
 
         <h3 className="text-2xl font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[350px]">Before Starting Your Flow</h3>
         {/* Preparing the Mind */}
