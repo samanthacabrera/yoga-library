@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 const ResourceCard = ({ to, title, description }) => (
-    <Link to={to} target="_blank" rel="noopener noreferrer" className="bg-white border border-moss rounded-lg shadow-lg p-4 hover:bg-moss hover:bg-opacity-20 transition-all duration-300">
+    <Link to={to} target="_blank" rel="noopener noreferrer" className="bg-transparent h-fit md:h-[150px] p-6 border border-moss text-left rounded-t-xl shadow hover:scale-105 transition duration-500 ease-in-out">
         <div className="font-medium tracking-wider">{title}</div>
         <p className="text-sm leading-loose">{description}</p>
     </Link>
