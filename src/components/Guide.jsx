@@ -78,11 +78,11 @@ const Guide = () => {
         </div>
         
         {/* Benefits of Yoga */}
-        <h3 className="text-2xl font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[350px]">
-            Benefits of Yoga
+        <h3 className="text-2xl font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[300px]">
+            Benefits of Consistent Yoga Practice
         </h3>
         <p className="lg:col-span-2">
-            Consistently practicing yoga leads to deep physical, mental, and emotional benefits. Whether you're looking to build strength, improve flexibility, or find mental clarity, yoga creates lasting positive changes in daily life.
+            Yoga offers a wealth of benefits beyond physical movement. It nurtures the body, mind, and spirit, fostering balance and well-being. Whether you're practicing for flexibility, strength, or inner peace, yoga enhances daily life in profound ways.
         </p>
 
         <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-6 lg:col-span-2">
@@ -90,47 +90,39 @@ const Guide = () => {
 
             <div className="grid lg:grid-cols-2 gap-8">
                 {/* Physical Benefits */}
-                <div>
+                <div className="bg-white p-6 rounded-xl">
                     <h3 className="text-xl sm:text-2xl mb-3">Physical Benefits</h3>
-                    <ul className="list-inside space-y-3 tracking-wide text-sm sm:text-base">
-                        <li><strong>Increased Flexibility:</strong> Gradually enhances mobility and reduces stiffness.</li>
-                        <li><strong>Improved Strength:</strong> Builds endurance and muscle tone through active postures.</li>
-                        <li><strong>Better Posture & Alignment:</strong> Strengthens core muscles, reducing strain on joints.</li>
-                        <li><strong>Boosted Circulation:</strong> Encourages healthy blood flow, supporting cardiovascular health.</li>
+                    <ul className="space-y-3 text-sm sm:text-base">
+                        <li><strong>Increases Flexibility:</strong> Improves range of motion and reduces muscle stiffness.</li>
+                        <li><strong>Builds Strength:</strong> Enhances muscle tone and endurance through weight-bearing poses.</li>
+                        <li><strong>Boosts Posture:</strong> Strengthens core muscles, reducing strain on the back and joints.</li>
+                        <li><strong>Supports Joint Health:</strong> Encourages fluid movement and reduces inflammation.</li>
+                        <li><strong>Enhances Circulation:</strong> Promotes better blood flow and cardiovascular health.</li>
                     </ul>
                 </div>
 
                 {/* Mental & Emotional Benefits */}
-                <div>
+                <div className="bg-white p-6 rounded-xl">
                     <h3 className="text-xl sm:text-2xl mb-3">Mental & Emotional Benefits</h3>
-                    <ul className="list-inside space-y-3 tracking-wide text-sm sm:text-base">
-                        <li><strong>Reduces Stress & Anxiety:</strong> Calms the nervous system and enhances relaxation.</li>
-                        <li><strong>Improves Focus & Clarity:</strong> Strengthens concentration and mindfulness in daily tasks.</li>
-                        <li><strong>Encourages Emotional Balance:</strong> Helps regulate emotions and cultivate inner peace.</li>
+                    <ul className="space-y-3 text-sm sm:text-base">
+                        <li><strong>Reduces Stress:</strong> Lowers cortisol levels and promotes relaxation.</li>
+                        <li><strong>Improves Focus:</strong> Enhances concentration and mental clarity.</li>
+                        <li><strong>Encourages Emotional Balance:</strong> Helps manage anxiety and mood swings.</li>
+                        <li><strong>Boosts Self-Awareness:</strong> Fosters mindfulness and self-acceptance.</li>
+                        <li><strong>Enhances Sleep Quality:</strong> Helps relax the body and mind for deeper rest.</li>
                     </ul>
                 </div>
             </div>
 
             {/* Daily Life Benefits */}
-            <div>
-                <h3 className="text-xl sm:text-2xl mb-3">Integrating Yoga Into Daily Life</h3>
-                <ul className="list-inside space-y-3 tracking-wide text-sm sm:text-base">
-                    <li><strong>Better Sleep Quality:</strong> Relaxing postures and breathing techniques improve rest.</li>
-                    <li><strong>Increased Energy Levels:</strong> Gentle movement and breathwork promote sustained vitality.</li>
-                    <li><strong>More Mindful Eating:</strong> Enhances awareness of hunger cues and food choices.</li>
-                </ul>
-            </div>
-
-            {/* Science Behind Yoga */}
-            <div>
-                <h3 className="text-xl sm:text-2xl mb-3">The Science Behind Yoga</h3>
-                <ul className="list-inside space-y-3 tracking-wide text-sm sm:text-base">
-                    <li>Yoga reduces cortisol levels, helping manage stress effectively.</li>
-                    <li>Enhances brain function and neuroplasticity, improving memory and focus.</li>
-                    <li>Regulates heart rate variability, supporting a balanced autonomic nervous system.</li>
-                </ul>
+            <div className="bg-white p-6 rounded-xl">
+                <h3 className="text-xl sm:text-2xl mb-3"> Integrating Yoga Into Daily Life</h3>
+                <p className="text-sm sm:text-base">
+                    The benefits of yoga extend beyond the mat. Many practitioners experience <strong>improved sleep</strong>, <strong>better energy levels</strong>, and <strong>mindful daily habits</strong>. By fostering self-awareness, yoga encourages healthier lifestyle choices and a deeper connection between the body and mind.
+                </p>
             </div>
         </div>
+
 
 
         <h3 className="text-2xl font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[350px]">Before Starting Your Flow</h3>
