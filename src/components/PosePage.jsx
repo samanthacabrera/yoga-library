@@ -53,8 +53,8 @@ const PosePage = () => {
 
   return (
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-12 md:space-y-40 leading-[3.5] p-8 mt-12 mx-auto">
-
-      <nav className="flex items-center space-x-2 py-2 text-sm tracking-widest">
+      <div>
+      <nav className="flex items-center space-x-2 py-12 text-sm tracking-widest">
         <Link
           to="/poses"
           className="hover:text-moss hover:border-b-2 hover:border-moss transition-all duration-300"
@@ -75,9 +75,6 @@ const PosePage = () => {
         <span>/</span>
         <span className="font-medium">{pose.name}</span>
       </nav>
-
-      <div>
-
       <div className="flex justify-between items-center transform -translate-y-1/2 m-1">
         {prevPose && (
           <Link 
