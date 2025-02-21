@@ -52,7 +52,7 @@ const PosePage = () => {
   }
 
   return (
-    <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 md:space-y-20 p-8 mt-12 mx-auto">
+    <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-12 md:space-y-40 leading-[3.5] p-8 mt-12 mx-auto">
 
       <nav className="flex items-center space-x-2 py-2 text-sm tracking-widest">
         <Link
