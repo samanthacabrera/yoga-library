@@ -91,27 +91,43 @@ const Newsletter = () => {
             </div>
 
             <hr></hr>
-            {/* Meet the Author */}
-            <div>
-                <h2 className="heading text-4xl lg:text-6xl py-12 text-center" >Meet the Author</h2>
-                <div className="flex flex-col md:flex-row items-start space-y-8 md:space-y-0 md:space-x-12 my-16">
+         {/* Meet the Author */}
+            <div className="relative py-20 px-6">
+                <h2 className="heading text-4xl lg:text-6xl py-24 text-center">
+                    Meet the Author
+                </h2>
+            <div className="max-w-4xl mx-auto bg-white p-8 lg:p-12">
+                <div className="grid md:grid-cols-[auto_1fr] gap-10 md:gap-14 items-start">
                     <img 
                         src="/me.png" 
                         alt="Sam" 
-                        className="w-40 h-40 md:w-60 md:h-60 object-cover object-[75%_15%] rounded-t-xl shadow"
+                        className="w-60 h-60 object-cover object-[75%_15%] mx-auto rounded-t-xl shadow-md"
                     />
-                    <div className="flex-1 text-center md:text-left space-y-12">
-                        <p> Hi there, my name is Sam and I am a web developer who also happens to spend a lot of time on a yoga mat. Yoga has been a constant in my life for years now, offering a sense of grounding when everything else feels unsteady.</p>
-                        <p>Over time, I've realized that yoga is as much about the moments off the mat as it is about the time spent on it. It has taught me patience, humility, and the importance of being present.</p>
-                        <p>I’m not a writer by trade, and I don’t aim to be. This space is simply where I share what yoga means to me — the lessons, struggles, and small moments that come with maintaining a regular practice. My hope is that these reflections resonate with others who are also exploring their own relationship with yoga, no matter where they are on their journey.</p>
-                        <p>However you’ve found your way here, I hope you’ll find something that resonates with you.</p>
-                        <div className="flex justify-center md:justify-start space-x-4">
-                            <a href="https://medium.com/@samantha.n.cabrera" target="_blank" rel="noopener noreferrer" className="hover:text-moss transition duration-300">Medium</a>
-                            <a href="mailto:samantha.n.cabrera@gmail.com" className="hover:text-moss transition duration-300">Email</a>
-                        </div>
+                    <div>
+                        <p className="">
+                            Hi there, my name is Sam, and I am a web developer who also happens to spend a lot of time on a yoga mat. Yoga has been a constant in my life for years now, offering a sense of grounding when everything else feels unsteady.
+                        </p>
                     </div>
                 </div>
+                <div className="mt-6 space-y-6">
+                    <p>
+                        Over time, I've realized that yoga is as much about the moments off the mat as it is about the time spent on it. It has taught me patience, humility, and the importance of being present.
+                    </p>
+                    <p>
+                        I’m not a writer by trade, and I don’t aim to be. This space is simply where I share what yoga means to me — the lessons, struggles, and small moments that come with maintaining a regular practice. My hope is that these reflections resonate with others who are also exploring their own relationship with yoga, no matter where they are on their journey.
+                    </p>
+                    <p>However you’ve found your way here, I hope you’ll find something that resonates with you.</p>
+                </div>
+                <div className="flex justify-center md:justify-start space-x-6 pt-6">
+                    <a href="https://medium.com/@samantha.n.cabrera" target="_blank" rel="noopener noreferrer" className="text-lg font-medium hover:opacity-50 transition duration-300">
+                        Medium
+                    </a>
+                    <a href="mailto:samantha.n.cabrera@gmail.com" className="text-lg font-medium hover:opacity-50 transition duration-300">
+                        Email
+                    </a>
+                </div>
             </div>
+        </div>
         </div>
     );
 };
