@@ -50,34 +50,49 @@ const Home = () => {
         >
         </Parallax>
 
-        {/* About */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-          className="grid md:grid-cols-2 items-start pt-24 text-center md:text-right pb-52 border-b-2 border-moss lg:border-b-0">
-          <div className="hidden md:block"></div>
-          <div>
-            <h2 className="heading text-5xl md:text-7xl py-12">
-              About
-            </h2>
-            <div className="mt-8 mx-8 md:mx-0 space-y-12 text-lg md:text-xl tracking-wide">
-              <p>
-                This website began with a simple, personal journey. In 2020, life felt particularly overwhelming. The uncertainty and stress of daily life led me to seek something that could offer me a bit of peace. I turned to yoga, unsure of what to expect but hopeful it would help.
-              </p>
-              <p>
-                Over time, yoga became not just a physical practice, but a path of personal growth. The more I practiced, the more I wanted to learn—about different styles, the philosophy behind yoga, and even how mindfulness could be integrated into my everyday life. As yoga had such a positive impact on my life, I wanted to offer a resource that could support others on their own journeys.
-              </p>
-              <p>
-                This website is more than just a collection of yoga poses. It’s a reflection of my journey, and a way to share what yoga has given me. My goal was to create a space that’s simple and welcoming, where everyone can find valuable resources and support. 
-              </p>
-              <p>
-                As someone who loves to build and improve things, I’m always working to make this site better. If you have any feedback or suggestions, feel free to email <a href="mailto:samantha.n.cabrera@gmail.com" className="italic opacity-80 hover:opacity-100 hover:cursor-pointer">samantha.n.cabrera@gmail.com</a>. Your input helps me make the site better for you and others. 
-              </p>
-              <p>
-                Thank you for being part of this community. I hope that this website can be a source of guidance on your own yoga journey.
-              </p>
-            </div>
-          </div>
-        </motion.div>
+    {/* About */}
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false, amount: 0.2 }}
+      transition={{ duration: 1 }}
+      className="grid md:grid-cols-2 items-start pt-24 text-center md:text-right pb-52 border-b-2 border-moss lg:border-b-0"
+    >
+      <div className="hidden md:block"></div>
+      <div>
+        <h2 className="heading text-5xl md:text-7xl py-12">About</h2>
+        <div className="mt-8 mx-8 md:mx-0 space-y-12 text-lg md:text-xl tracking-wide">
+          <p className="group">
+            This website began with a simple, personal journey. In 2020, life felt particularly overwhelming. The uncertainty and stress of daily life led me to seek something that could offer me a bit of{" "}
+            <span className="group-hover:text-moss transition-all duration-300">peace</span>. I turned to yoga, unsure of what to expect but hopeful it would help.
+          </p>
+          <p className="group">
+            Over time, yoga became not just a physical practice, but a path of{" "}
+            <span className="group-hover:text-moss transition-all duration-300">personal growth</span>. The more I practiced, the more I wanted to learn—about different styles, the philosophy behind yoga, and even how mindfulness could be integrated into my everyday life. As yoga had such a{" "}
+            <span className="group-hover:text-moss transition-all duration-300">positive impact</span> on my life, I wanted to offer a resource that could support others on their own journeys.
+          </p>
+          <p className="group">
+            This website is more than just a collection of yoga poses. It’s a{" "}
+            <span className="group-hover:text-moss transition-all duration-300">reflection</span> of my journey, and a way to share what yoga has given me. My goal was to create a space that’s simple and welcoming, where everyone can find valuable resources and support.
+          </p>
+          <p className="group">
+            As someone who{" "}
+            <span className="group-hover:text-moss transition-all duration-300">loves</span> to build and improve things, I’m always working to make this site better. If you have any feedback or suggestions, feel free to email{" "}
+            <a
+              href="mailto:samantha.n.cabrera@gmail.com"
+              className="italic opacity-80 hover:opacity-100 hover:cursor-pointer"
+            >
+              samantha.n.cabrera@gmail.com
+            </a>. Your input helps me make the site{" "}
+            <span className="group-hover:text-moss transition-all duration-300">better</span> for you and others.
+          </p>
+          <p className="group">
+            Thank you for being part of this community. I hope that this website can be a source of{" "}
+            <span className="group-hover:text-moss transition-all duration-300">guidance</span> on your own yoga journey.
+          </p>
+        </div>
+      </div>
+    </motion.div>
 
         {/* Call To Action */}
         <motion.div
