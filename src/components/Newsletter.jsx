@@ -78,13 +78,13 @@ const Newsletter = () => {
             <div>
                 <h3 className="heading text-4xl lg:text-6xl py-24">What's New</h3>
                 <div className="border border-moss bg-white bg-opacity-50 rounded-lg shadow p-6">
-                    <h3 className="uppercase tracking-wider heading font-medium">Feb 2025</h3>
-                    <ul className="space-y-2">
+                    <h3 className="uppercase tracking-wider heading font-medium">March 2025</h3>
+               <ul className="space-y-2">
                         <li>
-                            <span className="font-medium tracking-wide">Launch of Medium Blog:</span> Our new Medium blog is live, offering monthly articles on yoga and holistic wellness. You can find the latest posts on our website or at <a href="https://medium.com/me/stories/public" className="italic hover:underline">Medium</a>.
+                            <span className="font-medium tracking-wide">Introducing Yarnsana:</span> We're excited to share the launch of Yarnsana, our sustainable, upcycled, hand-crocheted yoga accessories brand. Stay tuned for updates as we build our eCommerce platform!
                         </li>
                         <li>
-                            <span className="font-medium tracking-wide">New Resources Page:</span> We've launched a dedicated Resources Page featuring a curated collection of tools, articles, and videos designed to support your yoga practice.
+                            <span className="font-medium tracking-wide">"What Is Yoga?" Page Revamped:</span> We've redesigned our "What Is Yoga?" page to include a simple quiz that helps you discover the best yoga style for you. Check it out and find your perfect practice!
                         </li>
                     </ul>
                 </div>
