@@ -82,7 +82,7 @@ const Guide = () => {
             Benefits of Consistent Yoga Practice
         </h3>
         <p className="lg:col-span-2">
-            Yoga offers a wealth of benefits beyond physical movement. It nurtures the body, mind, and spirit, fostering balance and well-being. Whether you're practicing for flexibility, strength, or inner peace, yoga enhances daily life in profound ways.
+           Yoga is more than just movement—it’s a transformative practice that enhances physical health, mental clarity, and emotional balance. Committing to a regular yoga routine creates lasting benefits that extend beyond the mat and into daily life.
         </p>
 
         <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-6 lg:col-span-2">

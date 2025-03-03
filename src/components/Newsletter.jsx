@@ -21,19 +21,19 @@ const Newsletter = () => {
 
     const displayBlogs = () => {
         return blog.items.map((post, index) => (
-            <li key={index} className="group flex flex-col md:flex-row items-start md:items-center space-y-6 md:space-y-0 md:space-x-6 bg-white bg-opacity-50 border border-moss rounded-lg shadow p-6">
-                <span className="text-2xl text-gray-400">
+            <li key={index} className="group flex flex-col md:flex-row items-start md:items-center space-y-6 md:space-y-0 md:space-x-6 bg-moss bg-opacity-10 border border-moss rounded-t-xl p-6 lg:p-12 ">
+                <span className="text-2xl text-moss opacity-50">
                     {String(totalArticles - index).padStart(2, "0")}
                 </span>
                 <div className="flex-1">
-                    <div className="text-sm text-gray-500 mb-2">
+                    <div className="text-sm opacity-90 mb-2">
                         Published on {new Date(post.pubDate).toLocaleDateString()}
                     </div>
                     <a href={post.link} target="_blank" rel="noopener noreferrer" className="text-2xl font-light tracking-wide leading-snug">
                         {post.title}
                     </a>
                 </div>
-                <a href={post.link} target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 text-sm hover:scale-[1.03] hover:bg-moss hover:text-white transition-all duration-300 ease-in-out">
+                <a href={post.link} target="_blank" rel="noopener noreferrer" className="">
                     Read More
                 </a>
             </li>
@@ -41,43 +41,45 @@ const Newsletter = () => {
     };
 
     return (
-        <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-40 px-8 py-4 mx-auto">
-           <div className="my-12">
+        <div className="flex flex-col min-h-screen w-full max-w-3xl mx-auto space-y-40">
+           <div className="mt-40">
                 <h2 className="text-lg lg:text-xl heading tracking-wider uppercase">Our Monthly Column:</h2>
                 <h1 className="heading my-12 lg:mb-20 text-4xl lg:text-8xl text-center">Beyond the Mat</h1>
-                <p className="tracking-wide mt-4 text-lg lg:text-xl text-gray-700 max-w-2xl">
+                <p className="mt-4 text-lg lg:text-xl text-gray-700 max-w-2xl">
                     Stay inspired and connected with our monthly yoga column. Each edition delivers 
                     insightful articles and practical tips to deepen your practice, both on and off the mat.
                 </p>
             </div>
 
             {latestArticle && (
-                <div className="bg-moss bg-opacity-10 border border-moss rounded-t-xl p-6 lg:p-12 space-y-6">
-                    <h2 className="text-lg lg:text-4xl text-moss">This Month's Feature</h2>
-                    <h3 className="text-base lg:text-2xl leading-tight">
+                <div>
+                <h2 className="text-2xl lg:text-6xl text-moss">This Month's Feature</h2>
+                <div className="bg-moss bg-opacity-10 border border-moss rounded-t-xl p-6 lg:p-12 space-y-6 my-24">
+                    <h3 className="text-4xl lg:text-8xl text-moss tracking-tight opacity-50 font-bold">March</h3>
+                    <h6 className="text-base lg:text-2xl ">
                         {latestArticle.title}
-                    </h3>
+                    </h6>
                     <p className="text-gray-700">{latestArticle.description}</p>
                     <a href={latestArticle.link} target="_blank" rel="noopener noreferrer" 
-                       className="inline-block bg-moss text-xs lg:text-sm text-white px-6 py-3 rounded-full font-medium tracking-wider bg-opacity-90 hover:bg-opacity-100 transition duration-300">
-                        Read Full Article →
+                       className="">
+                        Read Full Article 
                     </a>
+                </div>
                 </div>
             )}
 
             {/* All Articles  */}
             <div>
-                <h3 className="py-24 heading text-4xl lg:text-6xl">All Editions</h3>
-                <ul className="space-y-12 mb-12">
+                <h2 className="text-2xl lg:text-6xl text-moss">All Editions</h2>
+                <ul className="space-y-12 py-24">
                     {displayBlogs()}
                 </ul>
             </div>
 
-            <hr></hr>
             {/* Whats New */}
             <div>
-                <h3 className="heading text-4xl lg:text-6xl py-24">What's New</h3>
-                <div className="border border-moss bg-white bg-opacity-50 rounded-lg shadow p-6">
+                <h3 className="text-2xl lg:text-6xl text-moss">What's New</h3>
+                <div className="bg-moss bg-opacity-10 border border-moss rounded-t-xl p-6 lg:p-12 space-y-6 my-24">
                     <h3 className="uppercase tracking-wider heading font-medium">March 2025</h3>
                <ul className="space-y-2">
                         <li>
@@ -90,18 +92,17 @@ const Newsletter = () => {
                 </div>
             </div>
 
-            <hr></hr>
          {/* Meet the Author */}
             <div className="relative py-20 px-6">
-                <h2 className="heading text-4xl lg:text-6xl py-24 text-center">
+                <h2 className="text-2xl lg:text-6xl text-moss text-center">
                     Meet the Author
                 </h2>
-            <div className="max-w-4xl mx-auto bg-white p-8 lg:p-12">
+            <div className="max-w-4xl mx-auto bg-white border border-moss shadow p-8 lg:p-12 my-24">
                 <div className="grid md:grid-cols-[auto_1fr] gap-10 md:gap-14 items-start">
                     <img 
                         src="/me.png" 
                         alt="Sam" 
-                        className="w-60 h-60 object-cover object-[75%_15%] mx-auto rounded-t-xl shadow-md"
+                        className="w-60 h-60 object-cover object-[75%_15%] mx-auto rounded-t-lg"
                     />
                     <div>
                         <p className="">
@@ -119,10 +120,10 @@ const Newsletter = () => {
                     <p>However you’ve found your way here, I hope you’ll find something that resonates with you.</p>
                 </div>
                 <div className="flex justify-center md:justify-start space-x-6 pt-6">
-                    <a href="https://medium.com/@samantha.n.cabrera" target="_blank" rel="noopener noreferrer" className="text-lg font-medium hover:opacity-50 transition duration-300">
+                    <a href="https://medium.com/@samantha.n.cabrera" target="_blank" rel="noopener noreferrer" className="text-lg font-light hover:text-moss transition duration-300 ease-in-out">
                         Medium
                     </a>
-                    <a href="mailto:samantha.n.cabrera@gmail.com" className="text-lg font-medium hover:opacity-50 transition duration-300">
+                    <a href="mailto:samantha.n.cabrera@gmail.com" className="text-lg font-light hover:text-moss transition duration-300 ease-in-out">
                         Email
                     </a>
                 </div>
