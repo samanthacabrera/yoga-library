@@ -47,6 +47,7 @@ const Resources = () => {
         {
             title: "Yoga Accessories",
             links: [
+                                { to: "https://yarnsara-samanthacabreras-projects.vercel.app/", title: "Yarnsara Mat Strap", description: "100% upcycled & handcrafted yoga accessories." },
                 { to: "https://www.aloyoga.com/products/warrior-mat", title: "Alo Yoga Warrior Mat", description: "Durable, non-slip, eco-friendly mat with a smooth, supportive surface." },
                 { to: "https://www.manduka.com/collections/yoga-mats-pro-series/products/prolite-yoga-mat", title: "Manduka ProLite Mat", description: "High-performance, eco-conscious mat built to last." },
                 { to: "https://www.manduka.com/collections/equa-yoga-towels/products/equa-yoga-hand-towel", title: "Manduka eQua Yoga Hand Towel", description: "Lightweight, quick-drying yoga towels that enhance your practice." },
