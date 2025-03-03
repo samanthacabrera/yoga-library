@@ -117,7 +117,12 @@ const Newsletter = () => {
                     <p>
                         I’m not a writer by trade, and I don’t aim to be. This space is simply where I share what yoga means to me — the lessons, struggles, and small moments that come with maintaining a regular practice. My hope is that these reflections resonate with others who are also exploring their own relationship with yoga, no matter where they are on their journey.
                     </p>
-                    <p>However you’ve found your way here, I hope you’ll find something that resonates with you.</p>
+                    <p>
+                        Beyond yoga and coding, I also run an online store called <a href="https://yarnsara-samanthacabreras-projects.vercel.app/"  target="_blank" rel="noopener noreferrer" className="font-medium tracking-wider" >yarn<span className="italic">sara</span></a>, where I create and sell 100% upcycled, hand-crocheted yoga accessories. It’s been a rewarding way to merge my passions for sustainability, creating, and yoga.
+                    </p>
+                    <p>
+                        However you’ve found your way here, I hope you’ll find something that resonates with you.
+                    </p>
                 </div>
                 <div className="flex justify-center md:justify-start space-x-6 pt-6">
                     <a href="https://medium.com/@samantha.n.cabrera" target="_blank" rel="noopener noreferrer" className="text-lg font-light hover:text-moss transition duration-300 ease-in-out">
