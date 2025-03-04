@@ -43,8 +43,8 @@ const Newsletter = () => {
     return (
         <div className="flex flex-col min-h-screen w-full max-w-3xl mx-auto space-y-40">
            <div className="mt-40">
-                <h2 className="text-lg lg:text-xl heading tracking-wider uppercase">Our Monthly Column:</h2>
-                <h1 className="heading my-12 lg:mb-20 text-4xl lg:text-8xl text-center">Beyond the Mat</h1>
+                <h2 className="text-lg lg:text-xl tracking-wider uppercase">Our Monthly Column:</h2>
+                <h1 className="my-12 lg:mb-20 text-4xl lg:text-8xl text-center">Beyond the Mat</h1>
                 <p className="mt-4 text-lg lg:text-xl text-gray-700 max-w-2xl">
                     Stay inspired and connected with our monthly yoga column. Each edition delivers 
                     insightful articles and practical tips to deepen your practice, both on and off the mat.
@@ -56,9 +56,9 @@ const Newsletter = () => {
                 <h2 className="text-2xl lg:text-6xl text-moss">This Month's Feature</h2>
                 <div className="bg-moss bg-opacity-10 border border-moss rounded-t-xl p-6 lg:p-12 space-y-6 my-24">
                     <h3 className="text-4xl lg:text-8xl text-moss tracking-tight opacity-50 font-bold">March</h3>
-                    <h6 className="text-base lg:text-2xl ">
+                    <h3 className="text-base lg:text-2xl ">
                         {latestArticle.title}
-                    </h6>
+                    </h3>
                     <p className="text-gray-700">{latestArticle.description}</p>
                     <a href={latestArticle.link} target="_blank" rel="noopener noreferrer" 
                        className="">
@@ -80,7 +80,7 @@ const Newsletter = () => {
             <div>
                 <h3 className="text-2xl lg:text-6xl text-moss">What's New</h3>
                 <div className="bg-moss bg-opacity-10 border border-moss rounded-t-xl p-6 lg:p-12 space-y-6 my-24">
-                    <h3 className="uppercase tracking-wider heading font-medium">March 2025</h3>
+                    <h3 className="uppercase tracking-wider font-medium">March 2025</h3>
                <ul className="space-y-2">
                         <li>
                             <span className="font-medium tracking-wide">Introducing Yarnsana:</span> We're excited to share the launch of Yarnsana, our sustainable, upcycled, hand-crocheted yoga accessories brand. Stay tuned for updates as we build our eCommerce platform!

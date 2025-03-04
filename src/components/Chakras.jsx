@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 
 const Chakras = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndexes, setOpenIndexes] = useState([]);
+
   const chakras = [
     {
       name: "Root Chakra",
@@ -145,54 +146,58 @@ const Chakras = () => {
     },
   ];
 
-  const toggleAccordion = (index) => {
-      setOpenIndex(openIndex === index ? null : index);
+ const toggleAccordion = (index) => {
+    setOpenIndexes(prev => {
+      if (prev.includes(index)) {
+        // If index is already open, remove it
+        return prev.filter(i => i !== index);
+      } else {
+        // Otherwise, add it
+        return [...prev, index];
+      }
+    });
   };
 
   return (
-    <div className="max-w-3xl px-8 py-4 mx-auto">
-      <h1 className="heading text-center my-12 text-4xl lg:text-8xl">The Seven Chakras</h1>
+    <div className="max-w-2xl mx-auto my-24 space-y-12">
+      <h1 className="text-center my-12 text-4xl lg:text-8xl">The Seven Chakras</h1>
+        <p>
+            The human body is not just a physical structure—it is an intricate network of energy, emotions, and consciousness. At the core of this energetic system lie the seven chakras, powerful centers that govern different aspects of our well-being. Rooted in ancient yogic traditions, chakras are believed to regulate the flow of life force energy, or prana, throughout our body. When these energy centers are open and balanced, we experience physical health, emotional harmony, and spiritual connection. However, when blockages or imbalances occur, they can manifest as stress, emotional struggles, or even physical ailments.
+        </p>
+        <p>
+            Each chakra holds a unique vibration and purpose, influencing everything from our sense of security and self-expression to our intuition and spiritual growth. Understanding these chakras allows us to take an active role in our personal well-being by fostering balance through mindful practices such as meditation, yoga, breathwork, and self-reflection. Whether you’re seeking greater confidence, deeper relationships, or spiritual clarity, exploring the chakras can provide profound insights into your journey of self-discovery and transformation.
+        </p>
+        <p>
+            This guide will introduce you to each of the seven chakras, detailing their qualities, signs of imbalance, and ways to restore harmony. By learning to cultivate the energy flow within, you open the door to greater awareness, empowerment, and inner peace.
+        </p>
 
-        <div className="my-12 space-y-12">
-          <p>
-             The human body is not just a physical structure—it is an intricate network of energy, emotions, and consciousness. At the core of this energetic system lie the seven chakras, powerful centers that govern different aspects of our well-being. Rooted in ancient yogic traditions, chakras are believed to regulate the flow of life force energy, or prana, throughout our body. When these energy centers are open and balanced, we experience physical health, emotional harmony, and spiritual connection. However, when blockages or imbalances occur, they can manifest as stress, emotional struggles, or even physical ailments.
-          </p>
-          <p>
-              Each chakra holds a unique vibration and purpose, influencing everything from our sense of security and self-expression to our intuition and spiritual growth. Understanding these chakras allows us to take an active role in our personal well-being by fostering balance through mindful practices such as meditation, yoga, breathwork, and self-reflection. Whether you’re seeking greater confidence, deeper relationships, or spiritual clarity, exploring the chakras can provide profound insights into your journey of self-discovery and transformation.
-          </p>
-          <p>
-              This guide will introduce you to each of the seven chakras, detailing their qualities, signs of imbalance, and ways to restore harmony. By learning to cultivate the energy flow within, you open the door to greater awareness, empowerment, and inner peace.
-          </p>
-      </div>
-
-    {chakras.map((chakra, index) => (
-      <div key={index} className="border-b border-gray-300 mb-4">
-          <button
+        {chakras.map((chakra, index) => (
+          <div key={index} className="border-b border-gray-300 mb-4">
+            <button
               onClick={() => toggleAccordion(index)}
               className="w-full text-left py-4 px-2 flex justify-between items-center"
-          >
-              <h3 className={`text-2xl font-medium text-charcoal tracking-wide ${openIndex === index ? 'opacity-0' : 'opacity-100'}`}>{chakra.name}</h3>
-              <span className="text-xl">{openIndex === index ? "−" : "+"}</span>
-          </button>
-          {openIndex === index && (
-                <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16 lg:space-y-0 space-y-12 pb-20">
-                  <div>
-                      <h3 className="text-2xl text-left font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[350px]">
-                      {chakra.name}
-                      </h3>
-                      <p className="mt-2 text-lg sm:text-xl text-charcoal">{chakra.description}</p>
-                  </div>
-                  <div></div>
-                  <div className="my-8 col-span-2">{chakra.content}</div> 
+            >
+              <h2 className={`text-2xl font-medium text-charcoal tracking-wide ${openIndexes.includes(index) ? 'opacity-0' : 'opacity-100'}`}>
+                {chakra.name}
+              </h2>
+              <span className="text-xl">{openIndexes.includes(index) ? "−" : "+"}</span>
+            </button>
+            {openIndexes.includes(index) && (
+              <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16 lg:space-y-0 space-y-12 pb-20">
+                <div>
+                  <h2 className="text-2xl text-left font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[350px]">
+                    {chakra.name}
+                  </h2>
+                  <p className="mt-2 text-lg sm:text-xl text-charcoal">{chakra.description}</p>
+                </div>
+                <div className="my-8 col-span-2">{chakra.content}</div>
               </div>
-          )}
-      </div>
-  ))}
+            )}
+          </div>
+        ))}
 
-      <div className="my-12 space-y-12">
-          <p>The chakras serve as an essential blueprint for our holistic well-being, influencing our physical, emotional, and spiritual health. When in balance, they allow us to experience stability, creativity, confidence, love, clear communication, insight, and enlightenment. However, modern life often disrupts this energy flow, leading to imbalances that impact our mood, mindset, and vitality. Recognizing these signs and working toward alignment helps us live with greater purpose and awareness.</p>
-          <p>As you explore and work with your chakras, remember that healing and balance are ongoing processes. Every step you take toward greater awareness brings you closer to inner peace, self-acceptance, and a more vibrant, connected life.</p>
-      </div>
+        <p>The chakras serve as an essential blueprint for our holistic well-being, influencing our physical, emotional, and spiritual health. When in balance, they allow us to experience stability, creativity, confidence, love, clear communication, insight, and enlightenment. However, modern life often disrupts this energy flow, leading to imbalances that impact our mood, mindset, and vitality. Recognizing these signs and working toward alignment helps us live with greater purpose and awareness.</p>
+        <p>As you explore and work with your chakras, remember that healing and balance are ongoing processes. Every step you take toward greater awareness brings you closer to inner peace, self-acceptance, and a more vibrant, connected life.</p>
     </div>
   );
 };

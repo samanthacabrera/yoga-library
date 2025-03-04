@@ -22,8 +22,7 @@ body {
   display: none;
 }
 
-.heading {
+h1,
+h2 {
   color: #747d65;
-  font-family: "DM Sans", serif;
-  letter-spacing: 2px;
 }

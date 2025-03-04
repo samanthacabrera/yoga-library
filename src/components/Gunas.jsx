@@ -73,7 +73,7 @@ const Gunas = () => {
 
   return (
     <div className="max-w-3xl px-8 py-4 mx-auto">
-      <h1 className="heading text-center my-12 text-4xl lg:text-8xl">The Three Gunas</h1>
+      <h1 className="text-center my-12 text-4xl lg:text-8xl">The Three Gunas</h1>
 
       <div className="my-12 space-y-12">
           <p>

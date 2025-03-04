@@ -97,7 +97,7 @@ const PosePage = () => {
 
       <header className="relative p-6 md:p-8 flex group bg-moss bg-opacity-30 border border-moss rounded-2xl">
         <h2 className="text-4xl md:text-6xl tracking-tight text-left opacity-90 relative">
-          <span className="heading block">
+          <span className="block">
             {pose.name}
           </span>
           <span className="text-2xl tracking-wide block italic mt-4">

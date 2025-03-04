@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 const ResourceCard = ({ to, title, description }) => (
-    <Link to={to} target="_blank" rel="noopener noreferrer" className="bg-transparent h-fit md:h-[150px] p-6 border border-moss text-left rounded-t-xl shadow hover:scale-105 transition duration-500 ease-in-out">
+    <Link to={to} target="_blank" rel="noopener noreferrer" className="bg-moss bg-opacity-10 border border-moss h-fit md:h-[150px] p-6 text-left rounded-t-xl shadow hover:scale-105 transition duration-500 ease-in-out">
         <div className="font-medium tracking-wider">{title}</div>
         <p className="text-sm leading-loose">{description}</p>
     </Link>
@@ -60,7 +60,7 @@ const Resources = () => {
     return (
         <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-12 px-8 py-4 mx-auto">
             <div className="mb-8">
-                <h1 className="heading text-center my-12 lg:mb-20 text-4xl lg:text-8xl">Resources</h1>
+                <h1 className="text-center my-12 lg:mb-20 text-4xl lg:text-8xl">Resources</h1>
                 <p className="tracking-wide">
                     Handpicked tutorials and articles to deepen your yoga journey. Whether you're refining your technique, discovering new practices, or finding the perfect gear, our resources are here to support and inspire your growth every step of the way.
                 </p>

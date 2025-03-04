@@ -29,7 +29,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
           className="grid md:grid-cols-2 h-[80vh] items-center pb-12 text-center md:text-left border-b-2 border-moss lg:border-b-0">
           <div>
-            <h1 className="heading text-4xl md:text-9xl pt-40">
+            <h1 className="text-4xl md:text-9xl mt-40">
               Learn <br className="hidden md:block" /> Yoga <br className="hidden md:block" /> Online
             </h1>
             <p className="mt-8 mx-8 md:mx-0 text-lg md:text-xl tracking-wide">
@@ -60,7 +60,7 @@ const Home = () => {
     >
       <div className="hidden md:block"></div>
       <div>
-        <h2 className="heading text-5xl md:text-7xl py-12">About</h2>
+        <h2 className="text-5xl md:text-7xl py-12">About</h2>
         <div className="mt-8 mx-8 md:mx-0 space-y-12 text-lg md:text-xl tracking-wide">
           <p className="group">
             This website began with a simple, personal journey. In 2020, life felt particularly overwhelming. The uncertainty and stress of daily life led me to seek something that could offer me a bit of{" "}
@@ -102,7 +102,7 @@ const Home = () => {
           transition={{ duration: 1 }}
           className="relative py-40 text-center flex flex-col items-center border-t-2 border-moss"
         >
-          <h2 className="heading text-5xl md:text-7xl py-12">
+          <h2 className="text-5xl md:text-7xl py-12">
             Start Your Practice
           </h2>
 
@@ -140,7 +140,7 @@ const Home = () => {
               variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
               className="text-center md:text-left mx-12 md:mx-0"
             >
-              <h2 className="heading text-5xl md:text-7xl py-12">
+              <h2 className="text-5xl md:text-7xl py-12">
                 Featured Categories
               </h2>
               <p className="mt-12 text-xl md:text-2xl tracking-wide">
@@ -206,7 +206,7 @@ const Home = () => {
               variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
               className="text-center md:text-right mx-12 md:mx-0"
             >
-              <h2 className="heading text-5xl md:text-7xl py-12">
+              <h2 className="text-5xl md:text-7xl py-12">
                 Featured Poses
               </h2>
               <p className="mt-12 text-xl md:text-2xl tracking-wide">
@@ -227,7 +227,7 @@ const Home = () => {
       >
         <motion.h2 
           variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-          className="heading text-5xl md:text-7xl py-12 text-center"
+          className="text-5xl md:text-7xl py-12 text-center"
         >
           Deepen Your Understanding
         </motion.h2>
@@ -273,7 +273,7 @@ const Home = () => {
         <div className="border-t-2 border-moss py-32 text-center">
           <motion.h2 
             variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="heading text-5xl md:text-7xl py-12"
+            className="text-5xl md:text-7xl py-12"
           >
             What Others Are Saying
           </motion.h2>
@@ -311,7 +311,7 @@ const Home = () => {
         transition={{ duration: 1 }}
         className="border-t border-moss py-48 flex flex-col items-center text-center"
       >
-        <h2 className="heading text-[5vw] leading-[1.1] tracking-tight uppercase max-w-4xl">
+        <h2 className="text-[5vw] leading-[1.1] tracking-tight uppercase max-w-4xl">
           Stay Connected
         </h2>
 
