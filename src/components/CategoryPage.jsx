@@ -235,11 +235,11 @@ const CategoryPage = () => {
           No poses found for this category.
         </p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-8">
           {filteredPoses.map((pose) => (
             <div
               key={pose.id}
-              className="relative p-4 border border-charcoal bg-white bg-opacity-50 rounded shadow hover:shadow-lg transition-shadow duration-300"
+              className="relative p-4 border bg-white bg-opacity-50 rounded shadow hover:shadow-lg transition-shadow duration-300"
             >
               <Link to={`/poses/${pose.name}`} className="group flex flex-col items-center">
                 {pose.image ? (

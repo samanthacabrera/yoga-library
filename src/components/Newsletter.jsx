@@ -97,7 +97,7 @@ const Newsletter = () => {
                 <h2 className="text-2xl lg:text-6xl text-moss text-center">
                     Meet the Author
                 </h2>
-            <div className="max-w-4xl mx-auto bg-white border border-moss shadow p-8 lg:p-12 my-24">
+            <div className="max-w-4xl mx-auto bg-white border shadow p-8 lg:p-12 my-24">
                 <div className="grid md:grid-cols-[auto_1fr] gap-10 md:gap-14 items-start">
                     <img 
                         src="/me.png" 
