@@ -2,8 +2,8 @@ import React from "react";
 
 const Guide = () => {
     return (
-        <div className="max-w-3xl px-8 py-4 space-y-12 mx-auto">
-        <h1 className="text-center my-12 lg:mb-20 text-4xl lg:text-8xl">
+        <div className="max-w-2xl mx-auto my-40 space-y-12">
+        <h1 className="text-center text-4xl lg:text-8xl">
             Beginner's Guide to Yoga
         </h1>
         <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-16 lg:space-y-0 space-y-12 pb-20">
@@ -48,7 +48,7 @@ const Guide = () => {
             Props are an essential part of yoga, especially for beginners. They help with alignment, provide support, and make postures more accessible. Using props doesn't mean you're less skilled—it means you're practicing safely and effectively.
         </p>
         <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4 lg:col-span-2">
-            <h2 className="text-2xl sm:text-3xl text-center mb-2">Essential Yoga Props & How to Use Them</h2>
+            <h2 className="text-2xl sm:text-3xl text-center mb-2">Helpful Yoga Props</h2>
             <ul className="list-inside space-y-4 tracking-wide text-sm sm:text-base">
                 <li>
                     <strong>Yoga Blocks: </strong> 
@@ -76,57 +76,36 @@ const Guide = () => {
                 </li>
             </ul>
         </div>
+        <p className="lg:col-span-2">While yoga props can be helpful, it’s important to know that you don’t always need to buy expensive equipment to practice yoga. In fact, you can often use items you already have around your house. For instance, a thick,sturdy book can substitute for a yoga block, or a towel can serve as a yoga strap.</p>
         
         {/* Benefits of Yoga */}
-        <h3 className="text-2xl font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[300px]">
+        <h2 className="text-2xl font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[300px]">
             Benefits of Consistent Yoga Practice
-        </h3>
-        <p className="lg:col-span-2">
+        </h2>
+        <div className="lg:col-span-2 space-y-4">
+        <p>
            Yoga is more than just movement—it’s a transformative practice that enhances physical health, mental clarity, and emotional balance. Committing to a regular yoga routine creates lasting benefits that extend beyond the mat and into daily life.
         </p>
-
-        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-6 lg:col-span-2">
-            <h2 className="text-2xl sm:text-3xl text-center mb-4">How Yoga Enhances Your Well-Being</h2>
-
-            <div className="grid lg:grid-cols-2 gap-8">
-                {/* Physical Benefits */}
-                <div className="bg-white p-6 rounded-xl">
-                    <h3 className="text-xl sm:text-2xl mb-3">Physical Benefits</h3>
-                    <ul className="space-y-3 text-sm sm:text-base">
-                        <li><strong>Increases Flexibility:</strong> Improves range of motion and reduces muscle stiffness.</li>
-                        <li><strong>Builds Strength:</strong> Enhances muscle tone and endurance through weight-bearing poses.</li>
-                        <li><strong>Boosts Posture:</strong> Strengthens core muscles, reducing strain on the back and joints.</li>
-                        <li><strong>Supports Joint Health:</strong> Encourages fluid movement and reduces inflammation.</li>
-                        <li><strong>Enhances Circulation:</strong> Promotes better blood flow and cardiovascular health.</li>
-                    </ul>
-                </div>
-
-                {/* Mental & Emotional Benefits */}
-                <div className="bg-white p-6 rounded-xl">
-                    <h3 className="text-xl sm:text-2xl mb-3">Mental & Emotional Benefits</h3>
-                    <ul className="space-y-3 text-sm sm:text-base">
-                        <li><strong>Reduces Stress:</strong> Lowers cortisol levels and promotes relaxation.</li>
-                        <li><strong>Improves Focus:</strong> Enhances concentration and mental clarity.</li>
-                        <li><strong>Encourages Emotional Balance:</strong> Helps manage anxiety and mood swings.</li>
-                        <li><strong>Boosts Self-Awareness:</strong> Fosters mindfulness and self-acceptance.</li>
-                        <li><strong>Enhances Sleep Quality:</strong> Helps relax the body and mind for deeper rest.</li>
-                    </ul>
-                </div>
-            </div>
-
-            {/* Daily Life Benefits */}
-            <div className="bg-white p-6 rounded-xl">
-                <h3 className="text-xl sm:text-2xl mb-3"> Integrating Yoga Into Daily Life</h3>
-                <p className="text-sm sm:text-base">
-                    The benefits of yoga extend beyond the mat. Many practitioners experience <strong>improved sleep</strong>, <strong>better energy levels</strong>, and <strong>mindful daily habits</strong>. By fostering self-awareness, yoga encourages healthier lifestyle choices and a deeper connection between the body and mind.
-                </p>
-            </div>
+        <p>
+            Yoga’s impact is far-reaching, offering advantages for both the body and mind. By practicing yoga regularly, individuals can experience improvements in their physical health as well as their mental and emotional state. Let’s explore these benefits in greater detail.
+        </p>
+        <h3 className="font-medium tracking-wider">Physical Benefits</h3>
+        <p>
+            One of the most noticeable effects of yoga is an improvement in flexibility. Through various poses, yoga increases the range of motion in the joints and helps alleviate muscle stiffness. This improvement in flexibility is often accompanied by increased strength. Many yoga poses involve weight-bearing actions that build muscle tone and endurance, leading to a more resilient and stronger body. Moreover, yoga strengthens the core muscles, which in turn improves posture, reduces back pain, and prevents strain on the joints. Consistent practice of yoga also supports joint health by encouraging fluid movement, reducing inflammation, and promoting better circulation. As a result, the cardiovascular system benefits from enhanced blood flow, leading to improved heart health.
+        </p>
+        <h3 className="font-medium tracking-wider">Mental & Emotional Benefits</h3>
+        <p>
+            Yoga is not only beneficial for the body, but it also has profound effects on the mind. One of the primary mental health benefits of yoga is stress reduction. Through controlled breathing and mindfulness, yoga helps lower cortisol levels, promoting a state of relaxation. This relaxed state also improves mental clarity and focus, allowing practitioners to concentrate more effectively both on and off the mat. Additionally, yoga encourages emotional balance by helping individuals manage stress, anxiety, and mood swings. The practice of mindfulness cultivates self-awareness, which leads to a greater sense of self-acceptance and emotional stability. Another benefit of yoga is its ability to improve sleep quality. By relaxing the body and calming the mind, yoga helps facilitate deeper and more restorative sleep, allowing practitioners to feel more rested and energized.
+        </p>
+        <h3 className="font-medium tracking-wider">Integrating Yoga Into Daily Life</h3>
+        <p>
+            The advantages of yoga are not confined to the practice sessions themselves. As practitioners develop a deeper understanding of their bodies and minds, they often notice improvements in their daily lives. Yoga promotes improved sleep, better energy levels, and an overall sense of well-being. The mindfulness cultivated during yoga practice carries over into everyday activities, leading to more intentional and mindful choices. By fostering self-awareness, yoga encourages individuals to adopt healthier habits, both physically and mentally. This integration of yoga into daily life helps individuals maintain a consistent sense of balance, ensuring that the benefits of the practice continue to support them long after their yoga sessions have ended.
+        </p>
         </div>
 
 
-
+        {/* Before Starting Your Flow */}
         <h3 className="text-2xl font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[350px]">Before Starting Your Flow</h3>
-        {/* Preparing the Mind */}
         <p className="lg:col-span-2">
             Before you begin your practice, it’s essential to prepare your mind. These mental preparations allow you to step onto the mat with purpose, leaving behind distractions and focusing on the present moment. The following tips can help calm your mind and open up space for a peaceful and mindful practice: 
         </p>
@@ -138,8 +117,6 @@ const Guide = () => {
                 <li><strong>Clear Your Mind:</strong> Let go of any distractions or stresses of the day. Focus on your breath and be present.</li>
             </ul>
         </div>
-
-        {/* Preparing the Body */}
         <p className="lg:col-span-2">
             Preparing your body physically is just as important as preparing your mind. The more you tune into your body’s needs, the more effective and enjoyable your practice will be. These tips can help ensure your body is physically ready for your practice:
         </p>
@@ -151,20 +128,6 @@ const Guide = () => {
                 <li><strong>Hydrate:</strong> Drink water before and after your practice, but avoid drinking too much immediately before starting.</li>
                 <li><strong>Clear Your Schedule:</strong> Set aside a dedicated time for your yoga practice and remove any distractions so you can focus fully.</li>
                 <li><strong>Check in With Your Body:</strong> Assess how you feel before starting. Are there areas of tension or discomfort? Understanding your body’s state will help you practice more safely.</li>
-            </ul>
-        </div>
-        
-        {/* Routine */}
-        <p className="lg:col-span-2">
-            Creating a consistent yoga routine is essential for making steady progress. It helps build strength, flexibility, and mindfulness over time. As a beginner, it’s important to start with a simple, manageable routine and gradually increase the intensity. 
-        </p>
-        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4 lg:col-span-2">
-            <h2 className="text-2xl sm:text-3xl text-center mb-2">Building Your Yoga Routine</h2>
-            <ul className="list-inside space-y-4 text-sm sm:text-base">
-                <li><strong>Start Slow:</strong> Begin with short sessions (10-15 minutes) and gradually increase the time as you feel more comfortable.</li>
-                <li><strong>Include a Warm-Up:</strong> Start each session with gentle stretches or a few rounds of Sun Salutations to prepare your body.</li>
-                <li><strong>Incorporate Breathing Exercises:</strong> Add pranayama to your practice to help with focus and relaxation.</li>
-                <li><strong>End with Relaxation:</strong> Finish each practice with Savasana (Corpse Pose) to allow your body to integrate the benefits of the practice.</li>
             </ul>
         </div>
     
