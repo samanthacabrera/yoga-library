@@ -249,7 +249,7 @@ const CategoryPage = () => {
                     className="w-full h-full object-cover"
                   />
                 ) : (
-                  <div className="w-full h-96 sm:h-72 md:h-48 lg:h-32 flex items-center justify-center bg-gray-100">
+                  <div className="w-full h-96 sm:h-72 flex items-center justify-center bg-gray-100">
                     <span className="text-xs opacity-30">No Image</span>
                   </div>
                 )}

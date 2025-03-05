@@ -22,20 +22,16 @@ const ScrollToTop = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
-
   return null;
-};
+  };
 
 const App = () => {
   return (
     <Router> 
       <ScrollToTop /> 
-
       <Header />
-
       <div className="flex">
         <Drawer /> 
-        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/poses" element={<CategoryPage />} />
@@ -51,7 +47,6 @@ const App = () => {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </div>
-
       <Footer />
     </Router>
   );

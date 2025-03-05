@@ -23,23 +23,21 @@ const Home = () => {
         <meta property="og:type" content="website" />
       </Helmet>
    
-      <div className="min-h-screen max-w-4xl mx-4 md:mx-auto grid gap-y-40 text-charcoal">
+      <div className="max-w-4xl mx-4 md:mx-auto my-80 grid gap-y-40 md:gap-y-80 text-charcoal tracking-wider">
         {/* Hero */}
         <motion.div
           initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-          className="grid md:grid-cols-2 h-[80vh] items-center pb-12 text-center md:text-left border-b-2 border-moss lg:border-b-0">
-          <div>
-            <h1 className="text-4xl md:text-9xl mt-40">
-              Learn <br className="hidden md:block" /> Yoga <br className="hidden md:block" /> Online
+        >
+          <div className="justify-center items-center space-y-12 text-center">
+            <h1 className="text-4xl md:text-8xl">
+              Learn Yoga Online
             </h1>
-            <p className="mt-8 mx-8 md:mx-0 text-lg md:text-xl tracking-wide">
-                A simple, intuitive platform for deepening your yoga practice. Whether you're a beginner or an experienced yogi, explore essential poses with clear instructions and in-depth guidance.
+            <p className="text-lg md:text-xl">
+              A simple, intuitive platform for deepening your yoga practice. Whether you're a beginner or an experienced yogi, explore essential poses with clear instructions and in-depth guidance.
             </p>
           </div>
-          <div className="hidden md:block"></div>
         </motion.div>
 
-        
         {/* https://unsplash.com/photos/woman-stretching-on-mountain-top-during-sunrise-I2YSmEUAgDY */}
         <Parallax 
           bgImage="bg1.jpg" 
@@ -50,49 +48,44 @@ const Home = () => {
         >
         </Parallax>
 
-    {/* About */}
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false, amount: 0.2 }}
-      transition={{ duration: 1 }}
-      className="grid md:grid-cols-2 items-start pt-24 text-center md:text-right pb-52 border-b-2 border-moss lg:border-b-0"
-    >
-      <div className="hidden md:block"></div>
-      <div>
-        <h2 className="text-5xl md:text-7xl py-12">About</h2>
-        <div className="mt-8 mx-8 md:mx-0 space-y-12 text-lg md:text-xl tracking-wide">
-          <p className="group">
-            This website began with a simple, personal journey. In 2020, life felt particularly overwhelming. The uncertainty and stress of daily life led me to seek something that could offer me a bit of{" "}
-            <span className="group-hover:text-moss transition-all duration-300">peace</span>. I turned to yoga, unsure of what to expect but hopeful it would help.
-          </p>
-          <p className="group">
-            Over time, yoga became not just a physical practice, but a path of{" "}
-            <span className="group-hover:text-moss transition-all duration-300">personal growth</span>. The more I practiced, the more I wanted to learn—about different styles, the philosophy behind yoga, and even how mindfulness could be integrated into my everyday life. As yoga had such a{" "}
-            <span className="group-hover:text-moss transition-all duration-300">positive impact</span> on my life, I wanted to offer a resource that could support others on their own journeys.
-          </p>
-          <p className="group">
-            This website is more than just a collection of yoga poses. It’s a{" "}
-            <span className="group-hover:text-moss transition-all duration-300">reflection</span> of my journey, and a way to share what yoga has given me. My goal was to create a space that’s simple and welcoming, where everyone can find valuable resources and support.
-          </p>
-          <p className="group">
-            As someone who{" "}
-            <span className="group-hover:text-moss transition-all duration-300">loves</span> to build and improve things, I’m always working to make this site better. If you have any feedback or suggestions, feel free to email{" "}
-            <a
-              href="mailto:samantha.n.cabrera@gmail.com"
-              className="italic opacity-80 hover:opacity-100 hover:cursor-pointer"
-            >
-              samantha.n.cabrera@gmail.com
-            </a>. Your input helps me make the site{" "}
-            <span className="group-hover:text-moss transition-all duration-300">better</span> for you and others.
-          </p>
-          <p className="group">
-            Thank you for being part of this community. I hope that this website can be a source of{" "}
-            <span className="group-hover:text-moss transition-all duration-300">guidance</span> on your own yoga journey.
-          </p>
-        </div>
-      </div>
-    </motion.div>
+        {/* About */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
+        >
+          <div>
+            <h2 className="text-5xl md:text-7xl">About</h2>
+            <div className="mt-8 mx-8 md:mx-0 space-y-12 text-lg md:text-xl tracking-wide">
+              <p className="group">
+                This website began with a simple, personal journey. In 2020, life felt particularly overwhelming. The uncertainty and stress of daily life led me to seek something that could offer me a bit of{" "}
+                <span className="group-hover:text-moss transition-all duration-300">peace</span>. I turned to yoga, unsure of what to expect but hopeful it would help.
+              </p>
+              <p className="group">
+                Over time, yoga became not just a physical practice, but a path of{" "}
+                <span className="group-hover:text-moss transition-all duration-300">personal growth</span>. The more I practiced, the more I wanted to learn—about different styles, the philosophy behind yoga, and even how mindfulness could be integrated into my everyday life. As yoga had such a{" "}
+                <span className="group-hover:text-moss transition-all duration-300">positive impact</span> on my life, I wanted to offer a resource that could support others on their own journeys.
+              </p>
+              <p className="group">
+                This website is more than just a collection of yoga poses. It’s a{" "}
+                <span className="group-hover:text-moss transition-all duration-300">reflection</span> of my journey, and a way to share what yoga has given me. My goal was to create a space that’s simple and welcoming, where everyone can find valuable resources and support.
+              </p>
+              <p className="group">
+                As someone who{" "}
+                <span className="group-hover:text-moss transition-all duration-300">loves</span> to build and improve things, I’m always working to make this site better. If you have any feedback or suggestions, feel free to email{" "}
+                <a
+                  href="mailto:samantha.n.cabrera@gmail.com"
+                  className="italic opacity-80 hover:opacity-100 hover:cursor-pointer"
+                >
+                  samantha.n.cabrera@gmail.com
+                </a>. Your input helps me make the site{" "}
+                <span className="group-hover:text-moss transition-all duration-300">better</span> for you and others.
+              </p>
+              <p className="group">
+                Thank you for being part of this community. I hope that this website can be a source of{" "}
+                <span className="group-hover:text-moss transition-all duration-300">guidance</span> on your own yoga journey.
+              </p>
+            </div>
+          </div>
+        </motion.div>
 
         {/* Call To Action */}
         <motion.div
@@ -100,7 +93,7 @@ const Home = () => {
           whileInView={{ opacity: 1, y: 0 }} 
           viewport={{ once: false, amount: 0.2 }} 
           transition={{ duration: 1 }}
-          className="relative py-40 text-center flex flex-col items-center border-t-2 border-moss"
+          className="relative py-40 text-center flex flex-col items-center"
         >
           <h2 className="text-5xl md:text-7xl py-12">
             Start Your Practice
@@ -223,7 +216,7 @@ const Home = () => {
         whileInView="visible" 
         viewport={{ once: false, amount: 0.2 }} 
         variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}
-        className="border-t-2 border-moss py-32 text-left"
+        className="py-32 text-left"
       >
         <motion.h2 
           variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
@@ -270,7 +263,7 @@ const Home = () => {
 
       {/* Testimonials */}
       <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.2 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}>
-        <div className="border-t-2 border-moss py-32 text-center">
+        <div className="py-32 text-center">
           <motion.h2 
             variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
             className="text-5xl md:text-7xl py-12"
@@ -309,10 +302,10 @@ const Home = () => {
         whileInView={{ opacity: 1, y: 0 }} 
         viewport={{ once: false, amount: 0.2 }} 
         transition={{ duration: 1 }}
-        className="border-t border-moss py-48 flex flex-col items-center text-center"
+        className="py-48 flex flex-col items-center text-center"
       >
         <h2 className="text-[5vw] leading-[1.1] tracking-tight uppercase max-w-4xl">
-          Stay Connected
+          Read Our Column
         </h2>
 
         <p className="mt-16 text-2xl max-w-3xl leading-relaxed tracking-wide opacity-80">
