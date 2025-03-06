@@ -126,23 +126,19 @@ const Home = () => {
           </div>
       </motion.div>
       
-        {/* Call To Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }} 
-          whileInView={{ opacity: 1, y: 0 }} 
-          viewport={{ once: false, amount: 0.2 }} 
-          transition={{ duration: 1 }}
-          className="relative py-40 text-center flex flex-col items-center"
+       <motion.div
+          initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
+          className="justify-center items-center text-center"
         >
-          <h2 className="text-5xl md:text-7xl py-12">
+          <h2 className="text-center text-2xl md:text-6xl mb-12">
             Start Your Practice
           </h2>
 
-          <p className="mt-10 text-xl md:text-2xl max-w-2xl text-opacity-80 tracking-wide italic">
+          <p className="text-lg md:text-2xl">
             Strengthen your body. Still your mind. Move with purpose. 
           </p>
 
-          <div className="mt-20 flex flex-col md:flex-row items-center justify-center gap-8">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 my-12">
             {[
               { link: "/poses", text: "Browse Poses" },
               { link: "/what-is-yoga/beginners-guide", text: "Learn More" },
@@ -167,20 +163,20 @@ const Home = () => {
           viewport={{ once: false, amount: 0.2 }} 
           variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}
         > 
-          <div className="grid md:grid-cols-2 gap-48 items-center py-48">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-24 items-center">
             <motion.div 
               variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-              className="text-center md:text-left mx-12 md:mx-0"
+              className="text-center md:text-left"
             >
-              <h2 className="text-5xl md:text-7xl py-12">
+              <h2 className="text-2xl md:text-6xl mb-12">
                 Featured Categories
               </h2>
-              <p className="mt-12 text-xl md:text-2xl tracking-wide">
+              <p className="text-lg">
                 Check out this month's featured categores. Each offering guidance and inspiration for your journey this February.
               </p>
             </motion.div>
 
-            <div className="flex flex-col items-center space-y-20 text-right">
+            <div className="space-y-12">
               {[
                 { link: "/poses/benefit/improve posture", text: "Improve Posture" },
                 { link: "/poses/benefit/build strength", text: "Build Strength" },
@@ -192,7 +188,7 @@ const Home = () => {
                 >
                   <Link 
                     to={item.link} 
-                    className="relative flex items-center justify-center w-[360px] h-[200px] text-lg font-medium uppercase tracking-wider rounded border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
+                    className="relative flex items-center justify-center w-[300px] h-[100px] text-lg font-medium uppercase tracking-wider rounded border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
                   >
                     <span className="absolute inset-0 flex items-center justify-center">
                       {item.text}
@@ -211,8 +207,8 @@ const Home = () => {
           viewport={{ once: false, amount: 0.2 }} 
           variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}
         >
-          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-48 items-center py-48">
-            <div className="space-y-20 text-left">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-24 items-center">
+            <div className="space-y-12">
               {[
                 { link: "/poses/Downward-Facing Dog", text: "Downward-Facing Dog" },
                 { link: "/poses/Triangle Pose", text: "Triangle Pose" },
@@ -224,7 +220,7 @@ const Home = () => {
                 >
                   <Link 
                     to={item.link} 
-                    className="relative flex items-center justify-center w-[360px] h-[200px] text-lg font-medium uppercase tracking-wider rounded border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
+                    className="relative flex items-center justify-center w-[300px] h-[100px] text-lg font-medium uppercase tracking-wider rounded border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
                   >
                     <span className="absolute inset-0 flex items-center justify-center">
                       {item.text}
@@ -236,9 +232,9 @@ const Home = () => {
 
             <motion.div 
               variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-              className="text-center md:text-right mx-12 md:mx-0"
+              className="text-center md:text-right"
             >
-              <h2 className="text-5xl md:text-7xl py-12">
+              <h2 className="text-2xl md:text-6xl mb-12">
                 Featured Poses
               </h2>
               <p className="mt-12 text-xl md:text-2xl tracking-wide">
