@@ -277,35 +277,26 @@ const Home = () => {
         </motion.div>
 
       {/* Newsletter */}
-      <motion.div 
-        initial={{ opacity: 0, y: 50 }} 
-        whileInView={{ opacity: 1, y: 0 }} 
-        viewport={{ once: false, amount: 0.2 }} 
-        transition={{ duration: 1 }}
-        className="py-48 flex flex-col items-center text-center"
-      >
-        <h2 className="text-[5vw] leading-[1.1] tracking-tight uppercase max-w-4xl">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
+          className="flex flex-col justify-center items-center text-center space-y-12"
+        >
+        <h2 className="text-2xl md:text-6xl">
           Read My Column
         </h2>
 
-        <p className="mt-16 text-2xl max-w-3xl leading-relaxed tracking-wide opacity-80">
-          Discover new insights, tips, and stories about yoga and mindfulness every month.
+        <p className="text-lg">
+          Discover new insights, tips, and stories about yoga and mindfulness every month.<br />
+          Read our latest articles and deepen your practice.
         </p>
-
-        <p className="mt-4 text-lg max-w-xl leading-relaxed opacity-60">
-        Read our latest articles and deepen your practice.
-        </p>
-
-        <div className="mt-20">
-          <Link
-            to="/newsletter" 
-            className="flex items-center justify-center px-12 py-2 rounded font-medium uppercase tracking-wider border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
-          >
-            <span>
-              Read Now
-            </span>
-          </Link>
-        </div>
+        <Link
+          to="/newsletter" 
+          className="flex items-center justify-center w-fit px-4 py-2 rounded font-medium uppercase tracking-wider border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
+        >
+          <span>
+            Read Now
+          </span>
+        </Link>
         </motion.div>
       </div>
     </>
