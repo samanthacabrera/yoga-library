@@ -1,7 +1,18 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const WhatIsYoga = () => {
   return (
+    <>
+    <Helmet>
+      <title>What is Yoga?</title>
+      <meta name="description" content="Discover the origins, evolution, and different types of yoga practices in this comprehensive guide. Learn about the ancient discipline of yoga and find the right style for you." />
+      <meta name="keywords" content="yoga, types of yoga, yoga guide, yoga history, yoga practices, yoga styles, what is yoga" />
+      <meta property="og:title" content="What is Yoga?" />
+      <meta property="og:description" content="Discover the origins, evolution, and different types of yoga practices in this comprehensive guide. Learn about the ancient discipline of yoga and find the right style for you." />
+      <meta name="twitter:title" content="What is Yoga?" />
+      <meta name="twitter:description" content="Discover the origins, evolution, and different types of yoga practices in this comprehensive guide. Learn about the ancient discipline of yoga and find the right style for you." />
+    </Helmet>
     <div className="max-w-2xl mx-auto my-40 space-y-12">
       <h1 className="text-center text-4xl lg:text-8xl">
         What is Yoga?
@@ -117,11 +128,10 @@ const WhatIsYoga = () => {
 
         <p className="lg:col-span-2 mt-8">
           No matter which style you choose, yoga offers a path to physical strength, mental clarity, and inner peace. Begin your journey today and discover the practice that speaks to you.
-        </p>
-
-                
+        </p>        
       </div>      
     </div>
+    </>
   );
 };
 
