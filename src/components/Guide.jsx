@@ -1,7 +1,18 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const Guide = () => {
     return (
+        <>
+        <Helmet>
+            <title>Beginner's Guide to Yoga</title>
+            <meta name="description" content="Start your yoga journey with our comprehensive guide designed for beginners. Learn key yoga terminology, props, benefits, and safe practice tips." />
+            <meta name="keywords" content="yoga, yoga for beginners, yoga guide, yoga props, yoga benefits, yoga practice" />
+            <meta property="og:title" content="Beginner's Guide to Yoga" />
+            <meta property="og:description" content="Start your yoga journey with our comprehensive guide designed for beginners. Learn key yoga terminology, props, benefits, and safe practice tips." />
+            <meta name="twitter:title" content="Beginner's Guide to Yoga" />
+            <meta name="twitter:description" content="Start your yoga journey with our comprehensive guide designed for beginners. Learn key yoga terminology, props, benefits, and safe practice tips." />
+        </Helmet>
         <div className="max-w-2xl mx-auto my-40 space-y-12">
         <h1 className="text-center text-4xl lg:text-8xl">
             Beginner's Guide to Yoga
@@ -146,6 +157,7 @@ const Guide = () => {
         </div>
     </div>
     </div>
+    </>
     );
 };
 
