@@ -48,7 +48,32 @@ const Home = () => {
       </div>
    
       <div className="max-w-2xl mx-12 md:mx-auto my-80 grid gap-y-40 md:gap-y-80 text-charcoal">
-        {/* Call to Action */}
+        {/* Intro  */}
+        <motion.div
+            initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}
+            className="space-y-12"
+        >
+          <motion.h2 
+            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+            className="text-center text-2xl md:text-6xl mb-12"
+          >
+            What is Learn Yoga Online?
+          </motion.h2>
+          <motion.p 
+            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+            className="tracking-tight text-justify text-lg"
+          >
+          Learn Yoga Online is a simple, intuitive platform for deepening your yoga practice. Whether you're a beginner or an experienced yogi, explore essential poses with clear instructions and in-depth guidance.
+          </motion.p>
+          <motion.p 
+            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+            className="tracking-tight text-justify text-lg"
+          >
+           Alongside the practice of physical poses, you’ll also have the opportunity to explore the deeper aspects of yoga that connect mind, body, and spirit. From the principles of the Eight Limbs of Yoga to understanding the importance of breath, meditation, and mindfulness, you'll gain a deeper awareness of the holistic nature of yoga. This knowledge will not only enrich your practice but also help you integrate yoga into your daily life for greater mental and emotional well-being.
+          </motion.p>
+        </motion.div>
+          
+      {/* Call to Action */}
        <motion.div
           initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
           className="justify-center items-center text-center"
@@ -164,7 +189,7 @@ const Home = () => {
           className="justify-center items-center"
         >
           <h2 className="text-center text-2xl md:text-6xl mb-24">About</h2>
-          <div className="text-center space-y-12">
+          <div className="text-justify tracking-tight space-y-12">
             <p>
               This website began with a simple, personal journey. In 2020, life felt particularly overwhelming. The uncertainty and stress of daily life led me to seek something that could offer me a bit of peace. I turned to yoga, unsure of what to expect but hopeful it would help.
             </p>
