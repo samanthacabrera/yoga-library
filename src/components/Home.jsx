@@ -51,23 +51,23 @@ const Home = () => {
         {/* Intro  */}
         <motion.div
             initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}
-            className="space-y-12"
+            className="text-center space-y-12"
         >
           <motion.h2 
             variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="text-center text-2xl md:text-6xl mb-12"
+            className="text-2xl md:text-6xl mb-12"
           >
             What is Learn Yoga Online?
           </motion.h2>
           <motion.p 
             variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="tracking-tight text-justify text-lg"
+            className="text-lg"
           >
           Learn Yoga Online is a simple, intuitive platform for deepening your yoga practice. Whether you're a beginner or an experienced yogi, explore essential poses with clear instructions and in-depth guidance.
           </motion.p>
           <motion.p 
             variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="tracking-tight text-justify text-lg"
+            className="text-lg"
           >
            Alongside the practice of physical poses, you’ll also have the opportunity to explore the deeper aspects of yoga that connect mind, body, and spirit. From the principles of the Eight Limbs of Yoga to understanding the importance of breath, meditation, and mindfulness, you'll gain a deeper awareness of the holistic nature of yoga. This knowledge will not only enrich your practice but also help you integrate yoga into your daily life for greater mental and emotional well-being.
           </motion.p>
@@ -148,6 +148,29 @@ const Home = () => {
           </div>
         </motion.div>
         
+        {/* Newsletter */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
+          className="flex flex-col justify-center items-center text-center space-y-12"
+        >
+        <h2 className="text-2xl md:text-6xl">
+          Read My Column
+        </h2>
+
+        <p className="text-lg">
+          Discover new insights, tips, and stories about yoga and mindfulness every month.<br />
+          Read our latest articles and deepen your practice.
+        </p>
+        <Link
+          to="/newsletter" 
+          className="flex items-center justify-center w-fit px-4 py-2 rounded font-medium uppercase tracking-wider border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
+        >
+          <span>
+            Read Now
+          </span>
+        </Link>
+        </motion.div>
+        
         {/* Testimonials */}
        <motion.div
           initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
@@ -182,60 +205,6 @@ const Home = () => {
             ))}
           </div>
       </motion.div>
-
-        {/* About */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-          className="justify-center items-center"
-        >
-          <h2 className="text-center text-2xl md:text-6xl mb-24">About</h2>
-          <div className="text-justify tracking-tight space-y-12">
-            <p>
-              This website began with a simple, personal journey. In 2020, life felt particularly overwhelming. The uncertainty and stress of daily life led me to seek something that could offer me a bit of peace. I turned to yoga, unsure of what to expect but hopeful it would help.
-            </p>
-            <p>
-              Over time, yoga became not just a physical practice, but a path of personal growth. The more I practiced, the more I wanted to learn—about different styles, the philosophy behind yoga, and even how mindfulness could be integrated into my everyday life. As yoga had such a positive impact on my life, I wanted to offer a resource that could support others on their own journeys.
-            </p>
-            <p>
-              This website is more than just a collection of yoga poses. It’s a reflection of my journey, and a way to share what yoga has given me. My goal was to create a space that’s simple and welcoming, where everyone can find valuable resources and support.
-            </p>
-            <p>
-              As someone who loves to build and improve things, I’m always working to make this site better. If you have any feedback or suggestions, feel free to email {""}
-              <a
-                href="mailto:samantha.n.cabrera@gmail.com"
-                className="italic opacity-80 hover:opacity-100 hover:cursor-pointer"
-              >
-                samantha.n.cabrera@gmail.com
-              </a>. Your input helps me make the site better for you and others.
-            </p>
-            <p>
-              Thank you for being part of this community. I hope that this website can be a source of guidance on your own yoga journey.
-            </p>
-          </div>
-        </motion.div>
-
-      {/* Newsletter */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-          className="flex flex-col justify-center items-center text-center space-y-12"
-        >
-        <h2 className="text-2xl md:text-6xl">
-          Read My Column
-        </h2>
-
-        <p className="text-lg">
-          Discover new insights, tips, and stories about yoga and mindfulness every month.<br />
-          Read our latest articles and deepen your practice.
-        </p>
-        <Link
-          to="/newsletter" 
-          className="flex items-center justify-center w-fit px-4 py-2 rounded font-medium uppercase tracking-wider border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
-        >
-          <span>
-            Read Now
-          </span>
-        </Link>
-        </motion.div>
         </div>
       </div>
     </>
