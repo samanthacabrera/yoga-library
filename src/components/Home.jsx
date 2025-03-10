@@ -32,31 +32,22 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://learnyoga.online" />
       </Helmet>
+
+      <div className="flex flex-col w-screen">
+      
+      {/* Hero */}
+      <div className="relative h-screen">
+        <img
+          src="bg1.jpg" 
+          alt="Yoga Hero"
+          className="object-cover w-full h-full"
+        />
+        <div className="absolute inset-0 flex items-center justify-center -translate-y-1/4 text-white text-center">
+          <h1 className="text-4xl md:text-8xl text-white opacity-70">Learn Yoga Online</h1>
+        </div>
+      </div>
    
       <div className="max-w-2xl mx-12 md:mx-auto my-80 grid gap-y-40 md:gap-y-80 text-charcoal">
-        {/* Hero */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-          className="justify-center items-center"
-        >
-          <h1 className="text-center text-4xl md:text-8xl mb-12">
-            Learn Yoga Online
-          </h1>
-          <p className="text-center">
-            A simple, intuitive platform for deepening your yoga practice. Whether you're a beginner or an experienced yogi, explore essential poses with clear instructions and in-depth guidance.
-          </p>
-        </motion.div>
-
-        {/* https://unsplash.com/photos/woman-stretching-on-mountain-top-during-sunrise-I2YSmEUAgDY */}
-        <Parallax 
-          bgImage="bg1.jpg" 
-          bgImageAlt="woman in tree pose on top of mountain" 
-          strength={500} 
-          className="w-full h-[100vh] hidden lg:block"
-          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
-        >
-        </Parallax>
-
         {/* Call to Action */}
        <motion.div
           initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
@@ -220,6 +211,7 @@ const Home = () => {
           </span>
         </Link>
         </motion.div>
+        </div>
       </div>
     </>
   );
