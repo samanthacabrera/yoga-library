@@ -181,6 +181,7 @@ const PosePage = () => {
           <p className="tracking-wider">{posePrecaution.precaution}</p>
         </div>
       )}
+
       {/* Modifications */}
       {poseModification && poseModification.modification && (
         <div id="modifications" className="group">
@@ -188,11 +189,12 @@ const PosePage = () => {
           <p className="tracking-wider">{poseModification.modification}</p>
         </div>
       )}
+
       {/* Cues */}
       {poseCues && poseCues.cues && (
-        <div id="cues" className="group">
-          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Alignment & <br/>Breath Cues</h3>
-          <ol className="list-decimal list-inside tracking-wider">
+        <div id="cues" className="group scroll-mt-20">
+          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Alignment Cues</h3>
+          <div className="space-y-6">
             {poseCues.cues.map((cue, index) => {
               const linkPoseNames = (cueText) => {
                 const matchedPoseCue = posesData.find((p) => cueText.includes(p.name));
@@ -201,27 +203,34 @@ const PosePage = () => {
                   return (
                     <>
                       {cueText.split(matchedPoseCue.name).map((part, partIndex) => (
-                        <>
+                        <React.Fragment key={`${index}-${partIndex}`}>
                           {part}
                           {partIndex < cueText.split(matchedPoseCue.name).length - 1 && (
                             <Link
-                              key={`${index}-${partIndex}`} 
-                              to={`/pose/${matchedPoseCue.id}`}
-                              className="text-moss hover:underline"
+                              to={`/poses/${matchedPoseCue.name}`}
+                              className="text-moss hover:underline font-medium"
                             >
                               {matchedPoseCue.name}
                             </Link>
                           )}
-                        </>
+                        </React.Fragment>
                       ))}
                     </>
                   );
                 }
                 return cueText; 
               };
-              return <li key={index}>{linkPoseNames(cue)}</li>;
+              
+              return (
+                <div key={index} className="flex items-start space-x-4 bg-white p-6 rounded-2xl border border-moss border-opacity-30 shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-moss bg-opacity-80 text-white flex items-center justify-center font-medium">
+                    {index + 1}
+                  </div>
+                  <div className="flex-1 tracking-wide leading-relaxed">{linkPoseNames(cue)}</div>
+                </div>
+              );
             })}
-          </ol>
+          </div>
         </div>
       )}
 
