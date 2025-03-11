@@ -34,65 +34,48 @@ const Home = () => {
       </Helmet>
       <div className="flex flex-col w-screen">
       
-{/* Hero */}
-<div className="relative h-screen overflow-hidden">
-  {/* Background Image with Overlay */}
-  <div className="absolute inset-0">
-    <img
-      src="bg1.jpg" 
-      alt="Women in tree pose on a mountain at sunset"
-      className="object-cover w-full h-full transition-all duration-1000"
-    />
-    <div className="absolute inset-0"></div>
-  </div>
-  
-  <div className="relative h-full flex flex-col items-center justify-center -translate-y-[9rem]">
-    <motion.div 
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.8, ease: "easeOut" }}
-      className="text-center px-4 max-w-4xl mx-auto space-y-6"
-    >
-      <h1 className="text-5xl md:text-7xl lg:text-8xl text-white opacity-80 tracking-wide">
-        Learn Yoga Online
-      </h1>
-      
-      <p className="text-lg text-white opacity-80 tracking-wide">
-        A mindful approach to developing your yoga practice
-      </p>
-      
-      {/* CTA Button */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.8, duration: 1.2 }}
-      >
-        <Link
-          to="/poses"
-          className="inline-block mt-12 px-8 py-3 border border-white/50 rounded-sm text-white opacity-80 hover:scale-[103%] transition-all duration-500 tracking-wide uppercase text-sm"
-        >
-          Explore
-        </Link>
-      </motion.div>
-    </motion.div>
-    
-    {/* Scroll Indicator */}
-    <motion.div 
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 0.7 }}
-      transition={{ delay: 2, duration: 1 }}
-      className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center"
-    >
-      <span className="text-xs uppercase tracking-widest text-charcoal/70 mb-4 font-light">Scroll</span>
-      <motion.div 
-        animate={{ y: [0, 8, 0] }} 
-        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-        className="w-px h-12 bg-gradient-to-b from-moss/70 to-moss/10"
-      ></motion.div>
-    </motion.div>
-  </div>
-</div>
-   
+      {/* Hero */}
+      <div className="relative h-screen overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="bg1.jpg" 
+            alt="Women in tree pose on a mountain at sunset"
+            className="object-cover w-full h-full transition-all duration-1000"
+          />
+          <div className="absolute inset-0"></div>
+        </div>
+        
+        <div className="relative h-full flex flex-col items-center justify-center -translate-y-[9rem]">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.8, ease: "easeOut" }}
+            className="text-center px-4 max-w-4xl mx-auto space-y-6"
+          >
+            <h1 className="text-5xl md:text-7xl lg:text-8xl text-white opacity-80 tracking-wide">
+              Learn Yoga Online
+            </h1>
+            
+            <p className="text-lg text-white opacity-80 tracking-wide">
+              A mindful approach to developing your yoga practice
+            </p>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.8, duration: 1.2 }}
+            >
+              <Link
+                to="/poses"
+                className="inline-block mt-12 px-8 py-3 border border-white/50 rounded-sm text-white opacity-80 hover:scale-[103%] transition-all duration-500 tracking-wide uppercase text-sm"
+              >
+                Explore
+              </Link>
+            </motion.div>
+          </motion.div>
+        </div>
+      </div>
+        
         <div className="max-w-3xl mx-12 md:mx-auto py-40 grid gap-y-40 md:gap-y-80 text-charcoal">
           {/* About */}
           <motion.div
@@ -115,6 +98,31 @@ const Home = () => {
             </div>
           </motion.div>
 
+          {/* What makes this site different */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: false, amount: 0.1 }}
+            transition={{ duration: 1.5 }}
+            className="space-y-28"
+          >
+            <div>
+              <h2 className="text-2xl md:text-4xl mb-16 text-center tracking-wider">
+                Our Unique Approach
+              </h2>
+              
+              <div className="grid grid-cols-1 gap-y-16 text-lg leading-relaxed opacity-90">
+                <p>At Learn Yoga Online, we’re dedicated to creating a welcoming and accessible space for everyone, especially absolute beginners. Our approach is designed to help you build confidence in your yoga journey with clear, well-researched guidance.</p>
+                <ul className="pl-6 list-disc space-y-4">
+                  <li>Beginner-Focused: We know starting yoga can feel overwhelming, so we keep things simple, structured, and approachable. Every pose is explained step by step, with modifications to help you practice at your own pace.</li>
+                  <li>Thorough & Accurate: Yoga is a tradition with deep roots, and we respect that by ensuring all of our content is accurate and well-researched. We provide sources for further exploration so you can feel confident in the information you’re learning.</li>
+                  <li>A Holistic Approach: Yoga is more than just poses. We introduce key philosophical and mindfulness concepts in an accessible way, helping you connect with yoga beyond the mat.</li>
+                </ul>
+                <p>Wherever you are in your yoga journey, we’re here to support you with clear, reliable, and beginner-friendly resources designed to help you grow with confidence.</p>
+              </div>
+            </div>
+          </motion.div>
+
           {/* Intro */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -124,7 +132,7 @@ const Home = () => {
             className="space-y-24"
           >
   
-          <div className="p-8 border border-moss/50 rounded-t-2xl">
+          <div className="p-8 border-l-2 border-moss/50">
             <h3 className="text-xl mb-6 font-light tracking-wide">The Beginner's Mind: Your Greatest Strength</h3>
             <p className="text-lg leading-relaxed mb-8 opacity-90">
               In yoga philosophy, there's a concept called "beginner's mind" or <span className="italic">shoshin</span> that views your newcomer status not as a limitation, but as your greatest asset. Approaching yoga with fresh eyes allows you to:
@@ -156,17 +164,51 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="p-8 border border-moss/50 rounded-t-2xl">
+          <div className="p-8 border-l-2 border-moss/50">
             <h3 className="text-xl mb-6 font-light tracking-wide">Yoga for Every Body</h3>
             <p className="text-lg leading-relaxed opacity-90">
-            Yoga is for everyone, regardless of age, body type, or fitness level. Your practice should never cause pain or discomfort. Always listen to your body and modify poses as needed. If you have any medical conditions or injuries, please consult with a healthcare professional before beginning. Remember that the most advanced practitioner isn't the one who can achieve the deepest stretch, but the one who practices with awareness and respect for their body's unique needs and limitations.
+              Yoga is for everyone, regardless of age, body type, or fitness level. It is not about achieving a particular look or executing the most advanced poses—it’s about tuning in to your body, breath, and mind. Your practice should never cause pain or discomfort; instead, it should foster ease, strength, and awareness.
+            </p>
+            <ul className="text-lg leading-relaxed space-y-4 opacity-90 mt-6">
+              <li className="flex items-start">
+                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                Listen to your body: Every day is different, and some poses may feel accessible one day and challenging the next. Honor where you are.
+              </li>
+              <li className="flex items-start">
+                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                Modify as needed: There is no "right" way for a pose to look—only what feels good and safe for you. Props like blocks, straps, and blankets can support your practice.
+              </li>
+              <li className="flex items-start">
+                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                Be patient with progress: Flexibility and strength develop over time. Yoga is not a race; it’s a lifelong journey.
+              </li>
+            </ul>
+            <p className="text-lg leading-relaxed mt-6 opacity-90">
+              If you have any medical conditions, injuries, or concerns, check in with a healthcare professional before beginning. Most importantly, remember that the most advanced yogi isn’t the one who can perform the deepest backbend—it’s the one who practices with mindfulness, respect, and care for their body’s needs.
             </p>
           </div>
-          
-          <div className="p-8 border border-moss/50 rounded-t-2xl">
+
+          <div className="p-8 border-l-2 border-moss/50">
             <h3 className="text-xl mb-6 font-light tracking-wide">Practicing Yoga with Disabilities</h3>
             <p className="text-lg leading-relaxed opacity-90">
-              Yoga is adaptable for all bodies, including those with disabilities or limited mobility. Chair yoga and modified poses can make the practice accessible and beneficial. If lying down or certain positions are uncomfortable, explore seated or standing variations. There are many online resources and teachers specializing in accessible yoga who can guide you in finding movements that work for your unique body.
+              Yoga is an adaptable practice that can be modified to suit every body, including those with disabilities or limited mobility. It’s not about fitting into a specific mold—it’s about exploring movement, breath, and stillness in a way that works for you.
+            </p>
+            <ul className="text-lg leading-relaxed space-y-4 opacity-90 mt-6">
+              <li className="flex items-start">
+                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                Chair Yoga: Seated variations can offer all the benefits of traditional yoga while providing stability and support.
+              </li>
+              <li className="flex items-start">
+                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                Prop-supported Poses: Using straps, bolsters, or blocks can help make postures more accessible and comfortable.
+              </li>
+              <li className="flex items-start">
+                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                Wall-assisted or standing yoga: If getting up and down from the floor is difficult, standing sequences or using a wall for support can provide a safe and effective practice.
+              </li>
+            </ul>
+            <p className="text-lg leading-relaxed mt-6 opacity-90">
+              We are actively working on expanding our content on accessible yoga.
             </p>
           </div>
           </motion.div>
