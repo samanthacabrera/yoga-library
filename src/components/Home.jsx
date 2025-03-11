@@ -32,94 +32,159 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://learnyoga.online" />
       </Helmet>
-
       <div className="flex flex-col w-screen">
       
-      {/* Hero */}
-      <div className="relative h-screen">
-        <img
-          src="bg1.jpg" 
-          alt="Yoga Hero"
-          className="object-cover w-full h-full"
-        />
-        <div className="absolute inset-0 flex items-center justify-center -translate-y-1/3 text-white text-center">
-          <h1 className="text-4xl md:text-8xl text-moss opacity-70">Learn Yoga Online</h1>
-        </div>
-      </div>
-   
-      <div className="max-w-2xl mx-12 md:mx-auto my-80 grid gap-y-40 md:gap-y-80 text-charcoal">
-        {/* Intro  */}
-        <motion.div
-            initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}
-            className="text-center space-y-24"
-        >
-          <motion.h2 
-            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="text-2xl md:text-4xl mb-12"
-          >
-            What is Learn Yoga Online?
-          </motion.h2>
-          <motion.div 
-            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="text-lg"
+        {/* Hero */}
+        <div className="relative h-screen overflow-hidden">
+          <img
+            src="bg1.jpg" 
+            alt="Yoga Hero"
+            className="object-cover w-full h-full transition-all duration-700"
+          />
+          <div className="absolute inset-0 flex items-center justify-center -translate-y-1/3">
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.5 }}
+              className="text-center px-4"
             >
-              <p>Learn Yoga Online is a simple, intuitive platform for deepening your yoga practice. Whether you're a beginner or an experienced yogi, explore essential poses with clear instructions and in-depth guidance.</p>
-          
-          </motion.div>
-          <motion.p 
-            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="text-lg"
-          >
-           Alongside the practice of physical poses, you’ll also have the opportunity to explore the deeper aspects of yoga that connect mind, body, and spirit. This knowledge will not only enrich your practice but also help you integrate yoga into your daily life for greater mental and emotional well-being.
-          </motion.p>
-          
-           <motion.h2 
-            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="text-2xl md:text-4xl mb-12"
-          >
-            What You Can Do Here
-          </motion.h2>
-
-          <motion.div 
-            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="space-y-6 text-lg"
-          >
-            <p><strong>1.</strong> Learn the names of essential yoga poses</p>
-            <p><strong>2.</strong> Understand the cues for proper alignment</p>
-            <p><strong>3.</strong> Explore the origins and meanings of each pose</p>
-          </motion.div>
-        </motion.div>
-          
-      {/* Call to Action */}
-       <motion.div
-          initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-          className="justify-center items-center text-center"
-        >
-          <h2 className="text-center text-2xl md:text-6xl mb-12">
-            Start Your Practice
-          </h2>
-
-          <p className="text-lg md:text-2xl">
-            Strengthen your body. Still your mind. Move with purpose. 
-          </p>
-
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 my-12">
-            {[
-              { link: "/poses", text: "Browse Poses" },
-              { link: "/what-is-yoga/beginners-guide", text: "Learn More" },
-            ].map((item, index) => (
-              <Link 
-                key={index}
-                to={item.link} 
-                className="relative flex items-center justify-center w-[300px] h-[100px] rounded font-medium uppercase tracking-wider border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
-              >
-                <span className="absolute inset-0 flex items-center justify-center">
-                  {item.text}
-                </span>
-              </Link>
-            ))}
+              <h1 className="text-6xl md:text-8xl text-moss opacity-80">Learn Yoga Online</h1>
+            </motion.div>
           </div>
-        </motion.div>
+        </div>
+   
+        <div className="max-w-3xl mx-auto py-40 grid gap-y-40 text-charcoal">
+          {/* Intro */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: false, amount: 0.1 }}
+            transition={{ duration: 1.5 }}
+            className="space-y-28"
+          >
+            <div>
+              <h2 className="text-2xl md:text-3xl mb-16 text-center tracking-wider font-light">
+                What is Learn Yoga Online
+              </h2>
+              
+              <div className="grid grid-cols-1 gap-y-16 text-lg leading-relaxed opacity-90">
+                <p>Learn Yoga Online is a simple, intuitive platform for deepening your yoga practice. Whether you're a beginner or an experienced yogi, explore essential poses with clear instructions and in-depth guidance.</p>
+                
+                <p>Alongside the practice of physical poses, you'll also have the opportunity to explore the deeper aspects of yoga that connect mind, body, and spirit. This knowledge will help you integrate yoga into your daily life for greater well-being.</p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* FAQs */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: false, amount: 0.1 }}
+            transition={{ duration: 1.5 }}
+            className="space-y-24"
+          >
+          {/* Beginner Mindset */}
+          <div className="p-8 border border-moss/50 rounded-t-2xl">
+            <h3 className="text-xl mb-6 font-light tracking-wide">The Beginner's Mind: Your Greatest Strength</h3>
+            <p className="text-lg leading-relaxed mb-8 opacity-90">
+              In yoga philosophy, there's a concept called "beginner's mind" or <span className="italic">shoshin</span> that views your newcomer status not as a limitation, but as your greatest asset. Approaching yoga with fresh eyes allows you to:
+            </p>
+            <ul className="text-lg leading-relaxed space-y-4 opacity-90">
+              <li className="flex items-start">
+                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                Experience each pose without preconceptions or expectations
+              </li>
+              <li className="flex items-start">
+                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                Stay present with sensations rather than rushing toward goals
+              </li>
+              <li className="flex items-start">
+                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                Develop self-compassion that will serve your practice for years to come
+              </li>
+              <li className="flex items-start">
+                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                Build awareness of subtle energies and connections within your body
+              </li>
+              <li className="flex items-start">
+                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                Embrace the journey rather than focusing solely on destinations
+              </li>
+            </ul>
+            <p className="text-lg leading-relaxed mt-8 opacity-90">
+              Yoga is not about perfection but presence. The ancient yogic texts remind us that yoga is the practice of stilling the fluctuations of the mind. As you begin, remember that even the most advanced practitioners continually return to these fundamental principles.
+            </p>
+          </div>
+
+          {/* Safety & Accessibility */}
+          <div className="p-8 border border-moss/50 rounded-t-2xl">
+            <h3 className="text-xl mb-6 font-light tracking-wide">Yoga for Every Body</h3>
+            <p className="text-lg leading-relaxed opacity-90">
+            Yoga is for everyone, regardless of age, body type, or fitness level. Your practice should never cause pain or discomfort. Always listen to your body and modify poses as needed. If you have any medical conditions or injuries, please consult with a healthcare professional before beginning. Remember that the most advanced practitioner isn't the one who can achieve the deepest stretch, but the one who practices with awareness and respect for their body's unique needs and limitations.
+            </p>
+          </div>
+
+          {/* Accessible Yoga */}
+          <div className="p-8 border border-moss/50 rounded-t-2xl">
+            <h3 className="text-xl mb-6 font-light tracking-wide">Practicing Yoga with Disabilities</h3>
+            <p className="text-lg leading-relaxed opacity-90">
+              Yoga is adaptable for all bodies, including those with disabilities or limited mobility. Chair yoga and modified poses can make the practice accessible and beneficial. If lying down or certain positions are uncomfortable, explore seated or standing variations. There are many online resources and teachers specializing in accessible yoga who can guide you in finding movements that work for your unique body.
+            </p>
+          </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: false, amount: 0.1 }}
+            transition={{ duration: 1.5 }}
+            className="py-24 space-y-24"
+          >
+          <div>
+            <h2 className="text-2xl md:text-3xl mb-16 text-center tracking-wider font-light">
+              Transform Your Practice
+            </h2>
+            
+            <div className="grid md:grid-cols-3 gap-x-12 gap-y-16">
+              {[
+                { number: "01", text: "Learn the names of essential yoga poses" },
+                { number: "02", text: "Understand the cues for proper alignment" },
+                { number: "03", text: "Explore the origins and meanings of each pose" }
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: false, amount: 0.1 }}
+                  transition={{ duration: 1.5, delay: index * 0.3 }}
+                  className="border-t border-moss/30 pt-6"
+                >
+                  <div className="text-moss/70 text-sm mb-4">{item.number}</div>
+                  <p className="text-lg opacity-90">{item.text}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+          
+          {/* CTA */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: false, amount: 0.1 }}
+            transition={{ duration: 1.5 }}
+            className="flex justify-center pt-8"
+          >
+            <Link
+              to="/poses"
+              className="inline-flex flex-col items-center"
+            >
+              <span className="text-lg tracking-widest text-charcoal/80 hover:text-moss hover:scale-[103%] transition-all duration-300 uppercase">
+                Begin
+              </span>
+            </Link>
+            </motion.div>
+          </motion.div>
+
 
         {/* Quick Links */}
         <motion.div
