@@ -26,10 +26,11 @@ const ScrollToTop = () => {
   };
 
 const App = () => {
+  const isHomePage = location.pathname === "/";
   return (
     <Router> 
       <ScrollToTop /> 
-      <Header />
+      {!isHomePage && <Header />}
       <div className="flex">
         <Drawer /> 
         <Routes>

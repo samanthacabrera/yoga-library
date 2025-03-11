@@ -42,8 +42,8 @@ const Home = () => {
           alt="Yoga Hero"
           className="object-cover w-full h-full"
         />
-        <div className="absolute inset-0 flex items-center justify-center -translate-y-1/4 text-white text-center">
-          <h1 className="text-4xl md:text-8xl text-white opacity-70">Learn Yoga Online</h1>
+        <div className="absolute inset-0 flex items-center justify-center -translate-y-1/3 text-white text-center">
+          <h1 className="text-4xl md:text-8xl text-moss opacity-70">Learn Yoga Online</h1>
         </div>
       </div>
    
