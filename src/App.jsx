@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
@@ -26,11 +26,17 @@ const ScrollToTop = () => {
   };
 
 const App = () => {
-  const isHomePage = location.pathname === "/";
+  const location = useLocation();
+  const [showHeader, setShowHeader] = useState(false);
+
+  useEffect(() => {
+    setShowHeader(location.pathname !== "/");
+  }, [location]);
+
   return (
-    <Router> 
+    <>
       <ScrollToTop /> 
-      {!isHomePage && <Header />}
+      {showHeader && <Header />}
       <div className="flex">
         <Drawer /> 
         <Routes>
@@ -49,7 +55,7 @@ const App = () => {
         </Routes>
       </div>
       <Footer />
-    </Router>
+    </>
   );
 };
 
