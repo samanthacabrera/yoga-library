@@ -157,8 +157,8 @@ const Chakras = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto my-40 space-y-12">
-      <h1 className="text-center text-4xl lg:text-8xl">The Seven Chakras</h1>
+    <div className="max-w-2xl mx-auto my-24 space-y-12">
+      <h1 className="text-center text-4xl">The Seven Chakras</h1>
         <p>
             The human body is not just a physical structure—it is an intricate network of energy, emotions, and consciousness. At the core of this energetic system lie the seven chakras, powerful centers that govern different aspects of our well-being. Rooted in ancient yogic traditions, chakras are believed to regulate the flow of life force energy, or prana, throughout our body. When these energy centers are open and balanced, we experience physical health, emotional harmony, and spiritual connection. However, when blockages or imbalances occur, they can manifest as stress, emotional struggles, or even physical ailments.
         </p>
@@ -181,9 +181,9 @@ const Chakras = () => {
               <span className="text-xl">{openIndexes.includes(index) ? "−" : "+"}</span>
             </button>
             {openIndexes.includes(index) && (
-              <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16 lg:space-y-0 space-y-12 pb-20">
+              <div className="flex flex-col space-y-12 pb-20">
                 <div>
-                  <h2 className="text-2xl text-left font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[350px]">
+                  <h2 className="text-2xl text-left font-medium text-charcoal tracking-wide">
                     {chakra.name}
                   </h2>
                   <p className="mt-2 text-lg sm:text-xl text-charcoal">{chakra.description}</p>

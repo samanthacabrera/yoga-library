@@ -89,7 +89,7 @@ const Home = () => {
             </div>
           </motion.div>
 
-          {/* What makes this site different */}
+          {/* Approach */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -104,7 +104,7 @@ const Home = () => {
               
               <div className="grid grid-cols-1 gap-y-16 text-lg leading-relaxed opacity-90">
                 <p>At Learn Yoga Online, we’re dedicated to creating a welcoming and accessible space for everyone, especially absolute beginners. Our approach is designed to help you build confidence in your yoga journey with clear, well-researched guidance.</p>
-                <ul className="pl-6 list-disc space-y-4">
+                <ul className="space-y-6">
                   <li>Beginner-Focused: We know starting yoga can feel overwhelming, so we keep things simple, structured, and approachable. Every pose is explained step by step, with modifications to help you practice at your own pace.</li>
                   <li>Thorough & Accurate: Yoga is a tradition with deep roots, and we respect that by ensuring all of our content is accurate and well-researched. We provide sources for further exploration so you can feel confident in the information you’re learning.</li>
                   <li>A Holistic Approach: Yoga is more than just poses. We introduce key philosophical and mindfulness concepts in an accessible way, helping you connect with yoga beyond the mat.</li>
@@ -293,8 +293,8 @@ const Home = () => {
                   to={item.link} 
                   className="block w-full h-[280px] md:h-[300px] p-8 border border-moss rounded-xl transition-all duration-300 hover:scale-[1.03] hover:bg-moss hover:text-white flex flex-col justify-center"
                 >
-                  <h3 className="text-2xl font-medium mb-2">{item.title}</h3>
-                  <p className="text-lg opacity-70">{item.description}</p>
+                  <h3 className="text-xl mb-2">{item.title}</h3>
+                  <p>{item.description}</p>
                 </Link>
               </motion.div>
             ))}
@@ -310,7 +310,7 @@ const Home = () => {
           Read My Column
         </h2>
 
-        <p className="text-lg">
+        <p>
           Discover new insights, tips, and stories about yoga and mindfulness every month.<br />
           Read our latest articles and deepen your practice.
         </p>
@@ -319,7 +319,7 @@ const Home = () => {
           className="flex items-center justify-center w-fit px-4 py-2 rounded font-medium uppercase tracking-wider border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
         >
           <span>
-            Read Now
+            Read Latest
           </span>
         </Link>
         </motion.div>
@@ -352,8 +352,8 @@ const Home = () => {
                 }}
                 className="flex flex-col justify-between bg-transparent h-[400px] p-6 border border-moss text-left rounded-t-xl shadow"
               >
-                <p className="mt-4 text-lg italic">"{testimonial.quote}"</p>
-                <p className="mt-4 font-medium uppercase">— {testimonial.author}</p>
+                <p className="text-lg italic">"{testimonial.quote}"</p>
+                <p className="font-medium uppercase">— {testimonial.author}</p>
               </motion.div>
             ))}
           </div>

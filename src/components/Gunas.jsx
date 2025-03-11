@@ -79,8 +79,8 @@ const Gunas = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto my-40 space-y-12">
-      <h1 className="text-center text-4xl lg:text-8xl">The Three Gunas</h1>
+    <div className="max-w-2xl mx-auto my-24 space-y-12">
+      <h1 className="text-center text-4xl">The Three Gunas</h1>
         <p>
           In yogic philosophy, the universe and everything within it, including our thoughts, emotions, and actions, are influenced by three fundamental qualities known as the Three Gunas: Sattva (purity and harmony), Rajas (activity and passion), and Tamas (inertia and darkness). These qualities shape our perception of the world, our decision-making, and our overall state of being. By understanding and working with these energies, we can cultivate balance and align ourselves with a life of greater clarity, purpose, and well-being.
         </p>
@@ -103,14 +103,14 @@ const Gunas = () => {
               <span className="text-xl">{openIndexes.includes(index) ? "−" : "+"}</span>
             </button>
             {openIndexes.includes(index) && (
-              <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16 lg:space-y-0 space-y-12 pb-20">
+              <div className="flex flex-col space-y-12 pb-20">
                 <div>
-                  <h2 className="text-2xl text-left font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[350px]">
+                  <h2 className="text-2xl text-left font-medium text-charcoal tracking-wide">
                     {guna.name}
                   </h2>
                   <p className="mt-2 text-lg sm:text-xl text-charcoal">{guna.description}</p>
                 </div>
-                <div className="my-8 col-span-2">{guna.content}</div>
+                <div className="my-8">{guna.content}</div>
               </div>
             )}
           </div>
