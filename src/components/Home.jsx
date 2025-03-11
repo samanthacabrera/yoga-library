@@ -51,26 +51,43 @@ const Home = () => {
         {/* Intro  */}
         <motion.div
             initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}
-            className="text-center space-y-12"
+            className="text-center space-y-24"
         >
           <motion.h2 
             variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="text-2xl md:text-6xl mb-12"
+            className="text-2xl md:text-4xl mb-12"
           >
             What is Learn Yoga Online?
           </motion.h2>
+          <motion.div 
+            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+            className="text-lg"
+            >
+              <p>Learn Yoga Online is a simple, intuitive platform for deepening your yoga practice. Whether you're a beginner or an experienced yogi, explore essential poses with clear instructions and in-depth guidance.</p>
+          
+          </motion.div>
           <motion.p 
             variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
             className="text-lg"
           >
-          Learn Yoga Online is a simple, intuitive platform for deepening your yoga practice. Whether you're a beginner or an experienced yogi, explore essential poses with clear instructions and in-depth guidance.
+           Alongside the practice of physical poses, you’ll also have the opportunity to explore the deeper aspects of yoga that connect mind, body, and spirit. This knowledge will not only enrich your practice but also help you integrate yoga into your daily life for greater mental and emotional well-being.
           </motion.p>
-          <motion.p 
+          
+           <motion.h2 
             variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="text-lg"
+            className="text-2xl md:text-4xl mb-12"
           >
-           Alongside the practice of physical poses, you’ll also have the opportunity to explore the deeper aspects of yoga that connect mind, body, and spirit. From the principles of the Eight Limbs of Yoga to understanding the importance of breath, meditation, and mindfulness, you'll gain a deeper awareness of the holistic nature of yoga. This knowledge will not only enrich your practice but also help you integrate yoga into your daily life for greater mental and emotional well-being.
-          </motion.p>
+            What You Can Do Here
+          </motion.h2>
+
+          <motion.div 
+            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+            className="space-y-6 text-lg"
+          >
+            <p><strong>1.</strong> Learn the names of essential yoga poses</p>
+            <p><strong>2.</strong> Understand the cues for proper alignment</p>
+            <p><strong>3.</strong> Explore the origins and meanings of each pose</p>
+          </motion.div>
         </motion.div>
           
       {/* Call to Action */}
