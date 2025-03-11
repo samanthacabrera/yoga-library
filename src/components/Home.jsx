@@ -34,47 +34,38 @@ const Home = () => {
       </Helmet>
       <div className="flex flex-col w-screen">
       
-      {/* Hero */}
-      <div className="relative h-screen overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="bg1.jpg" 
-            alt="Women in tree pose on a mountain at sunset"
-            className="object-cover w-full h-full transition-all duration-1000"
-          />
-          <div className="absolute inset-0"></div>
-        </div>
-        
-        <div className="relative h-full flex flex-col items-center justify-center -translate-y-[9rem]">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.8, ease: "easeOut" }}
-            className="text-center px-4 max-w-4xl mx-auto space-y-6"
-          >
-            <h1 className="text-5xl md:text-7xl lg:text-8xl text-white opacity-80 tracking-wide">
-              Learn Yoga Online
-            </h1>
-            
-            <p className="text-lg text-white opacity-80 tracking-wide">
-              A mindful approach to developing your yoga practice
-            </p>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.8, duration: 1.2 }}
+        {/* Hero */}
+        <Parallax bgImage="bg1.jpg" strength={300}>
+          <div className="relative h-screen flex flex-col items-center justify-center">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.8, ease: "easeOut" }}
+              className="text-center px-4 max-w-4xl mx-auto space-y-6"
             >
-              <Link
-                to="/poses"
-                className="inline-block mt-12 px-8 py-3 border border-white/50 rounded-sm text-white opacity-80 hover:scale-[103%] transition-all duration-500 tracking-wide uppercase text-sm"
+              <h1 className="text-5xl md:text-7xl lg:text-8xl text-white opacity-80 tracking-wide">
+                Learn Yoga Online
+              </h1>
+              
+              <p className="text-lg text-white opacity-80 tracking-wide">
+                A mindful approach to developing your yoga practice
+              </p>
+
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.8, duration: 1.2 }}
               >
-                Explore
-              </Link>
+                <Link
+                  to="/poses"
+                  className="inline-block mt-12 px-8 py-3 border border-white/50 rounded-sm text-white opacity-80 hover:scale-[103%] transition-all duration-500 tracking-wide uppercase text-sm"
+                >
+                  Explore
+                </Link>
+              </motion.div>
             </motion.div>
-          </motion.div>
-        </div>
-      </div>
+          </div>
+        </Parallax>
         
         <div className="max-w-3xl mx-12 md:mx-auto py-40 grid gap-y-40 md:gap-y-80 text-charcoal">
           {/* About */}
