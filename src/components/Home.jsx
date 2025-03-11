@@ -53,8 +53,8 @@ const Home = () => {
           </div>
         </div>
    
-        <div className="max-w-3xl mx-auto py-40 grid gap-y-40 text-charcoal">
-          {/* Intro */}
+        <div className="max-w-3xl mx-12 md:mx-auto py-40 grid gap-y-40 md:gap-y-80 text-charcoal">
+          {/* About */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -63,7 +63,7 @@ const Home = () => {
             className="space-y-28"
           >
             <div>
-              <h2 className="text-2xl md:text-3xl mb-16 text-center tracking-wider font-light">
+              <h2 className="text-2xl md:text-4xl mb-16 text-center tracking-wider">
                 What is Learn Yoga Online
               </h2>
               
@@ -75,7 +75,7 @@ const Home = () => {
             </div>
           </motion.div>
 
-          {/* FAQs */}
+          {/* Intro */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -83,7 +83,7 @@ const Home = () => {
             transition={{ duration: 1.5 }}
             className="space-y-24"
           >
-          {/* Beginner Mindset */}
+  
           <div className="p-8 border border-moss/50 rounded-t-2xl">
             <h3 className="text-xl mb-6 font-light tracking-wide">The Beginner's Mind: Your Greatest Strength</h3>
             <p className="text-lg leading-relaxed mb-8 opacity-90">
@@ -116,15 +116,13 @@ const Home = () => {
             </p>
           </div>
 
-          {/* Safety & Accessibility */}
           <div className="p-8 border border-moss/50 rounded-t-2xl">
             <h3 className="text-xl mb-6 font-light tracking-wide">Yoga for Every Body</h3>
             <p className="text-lg leading-relaxed opacity-90">
             Yoga is for everyone, regardless of age, body type, or fitness level. Your practice should never cause pain or discomfort. Always listen to your body and modify poses as needed. If you have any medical conditions or injuries, please consult with a healthcare professional before beginning. Remember that the most advanced practitioner isn't the one who can achieve the deepest stretch, but the one who practices with awareness and respect for their body's unique needs and limitations.
             </p>
           </div>
-
-          {/* Accessible Yoga */}
+          
           <div className="p-8 border border-moss/50 rounded-t-2xl">
             <h3 className="text-xl mb-6 font-light tracking-wide">Practicing Yoga with Disabilities</h3>
             <p className="text-lg leading-relaxed opacity-90">
@@ -141,7 +139,7 @@ const Home = () => {
             className="py-24 space-y-24"
           >
           <div>
-            <h2 className="text-2xl md:text-3xl mb-16 text-center tracking-wider font-light">
+            <h2 className="text-2xl md:text-4xl mb-16 text-center tracking-wider">
               Transform Your Practice
             </h2>
             
@@ -192,7 +190,7 @@ const Home = () => {
         >
           <motion.h2 
             variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="text-center text-2xl md:text-6xl mb-12"
+            className="text-2xl md:text-4xl mb-8 text-center tracking-wider"
           >
             Deepen Your Understanding
           </motion.h2>
@@ -235,7 +233,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
           className="flex flex-col justify-center items-center text-center space-y-12"
         >
-        <h2 className="text-2xl md:text-6xl">
+        <h2 className="text-2xl md:text-4xl text-center tracking-wider">
           Read My Column
         </h2>
 
@@ -260,7 +258,7 @@ const Home = () => {
         >
           <motion.h2 
             variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="text-center text-2xl md:text-6xl"
+            className="text-2xl md:text-4xl mb-8 text-center tracking-wider"
           >
             What Others Are Saying
           </motion.h2>
