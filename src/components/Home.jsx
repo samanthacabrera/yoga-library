@@ -207,7 +207,7 @@ const Home = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 1.5 }}
-            className="py-24 space-y-24"
+            className="space-y-24 p-24 bg-moss/5"
           >
           <div>
             <h2 className="text-2xl md:text-4xl mb-16 text-center tracking-wider">
@@ -302,7 +302,7 @@ const Home = () => {
         {/* Newsletter */}
         <motion.div
           initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-          className="flex flex-col justify-center items-center text-center space-y-12"
+          className="flex flex-col justify-center items-center text-center space-y-12 p-24 bg-moss/5"
         >
         <h2 className="text-2xl md:text-4xl text-center tracking-wider">
           Read My Column
