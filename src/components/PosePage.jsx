@@ -94,21 +94,21 @@ const PosePage = () => {
         )}
       </div>
 
-
-      <header className="relative p-6 md:p-8 flex group bg-moss bg-opacity-30 border border-moss rounded-2xl">
-        <h2 className="text-4xl md:text-6xl tracking-tight text-left opacity-90 relative">
-          <span className="block">
-            {pose.name}
-          </span>
-          <span className="text-2xl tracking-wide block italic mt-4">
-            {poseSanskirt.sanskrit_translation} 
-          </span>
-          <span className="block text-lg">{poseSanskirt.sanskrit_pronunciation}</span>
-          <span className="text-4xl text-white font-medium">
-            {poseSanskirt.sanskrit_name}
-          </span>
+      <header className="relative px-6 py-8 group w-full bg-moss bg-opacity-20 rounded-2xl">
+        <p className="text-4xl md:text-6xl text-center tracking-tight opacity-90 relative text-white font-medium">
+          {poseSanskirt.sanskrit_name}
+        </p>
+        <h2 className="text-4xl md:text-6xl text-center my-4 transition-all duration-300 ease-in-out hover:opacity-80">
+          {pose.name}
         </h2>
+        <p className="text-lg md:text-xl italic tracking-wide text-center mt-3 opacity-80">
+          {poseSanskirt.sanskrit_translation}
+          <span className="ml-2 text-base md:text-lg opacity-75">
+            {poseSanskirt.sanskrit_pronunciation}
+          </span>
+        </p>
       </header>
+
       </div>
       
       {/* Image */}
