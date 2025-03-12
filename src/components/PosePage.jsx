@@ -52,7 +52,7 @@ const PosePage = () => {
   }
 
   return (
-    <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-12 md:space-y-40 leading-[3.5] p-8 mt-12 mx-auto">
+    <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-12 md:space-y-40 leading-loose p-8 mt-12 mx-auto">
       <div>
       <nav className="flex items-center space-x-2 py-12 text-sm tracking-widest">
         <Link
@@ -145,23 +145,24 @@ const PosePage = () => {
       
       {/* Overview */}
       {poseDesc && poseDesc.desc && (
-        <div id="description" className="group">
+        <div id="description" className="group scroll-mt-20">
           <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Overview</h3>
-          <p className="tracking-wider">{poseDesc.desc}</p>
+          <p className="tracking-wider bg-moss/5 p-4">{poseDesc.desc}</p>
         </div>
       )}
+      {/* Benefits */}
       {poseBenefit && (poseBenefit.physical || poseBenefit.mental) && (
-        <div id="benefits" className="group">
+        <div id="benefits" className="group scroll-mt-20">
           <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">
             Benefits
           </h3>
           {poseBenefit.physical && (
-            <p className="tracking-wider">
+            <p className="tracking-wider bg-moss/5 p-4 mb-6">
               <span className="font-medium">Physical Benefits:</span> {poseBenefit.physical}
             </p>
           )}
           {poseBenefit.mental && (
-            <p className="tracking-wider">
+            <p className="tracking-wider bg-moss/5 p-4">
               <span className="font-medium">Mental Benefits:</span> {poseBenefit.mental}
             </p>
           )}
@@ -169,24 +170,24 @@ const PosePage = () => {
       )}
       {/* Origins */}
       {poseSanskirt && poseSanskirt.context && (
-        <div id="origins" className="group">
+        <div id="origins" className="group scroll-mt-20">
           <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Origins</h3>
-          <p className="tracking-wider">{poseSanskirt.context}</p>
+          <p className="tracking-wider bg-moss/5 p-4">{poseSanskirt.context}</p>
         </div>
       )}
       {/* Precautions */}
       {posePrecaution && posePrecaution.precaution && (
-        <div id="precautions" className="group">
+        <div id="precautions" className="group scroll-mt-20">
           <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Precautions</h3>
-          <p className="tracking-wider">{posePrecaution.precaution}</p>
+          <p className="tracking-wider bg-moss/5 p-4">{posePrecaution.precaution}</p>
         </div>
       )}
 
       {/* Modifications */}
       {poseModification && poseModification.modification && (
-        <div id="modifications" className="group">
+        <div id="modifications" className="group scroll-mt-20">
           <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Modifications</h3>
-          <p className="tracking-wider">{poseModification.modification}</p>
+          <p className="tracking-wider bg-moss/5 p-4">{poseModification.modification}</p>
         </div>
       )}
 
