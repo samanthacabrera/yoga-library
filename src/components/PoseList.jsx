@@ -18,15 +18,15 @@ const PoseList = () => {
           {posesData.map((pose) => (
             <div 
               key={pose.id} 
-              className="relative group p-4 border border-white rounded-lg hover:border-charcoal transition duration-500"
+              className="relative group p-4 border border-white rounded-lg transition duration-500"
             >
               <Link 
                 to={`/poses/${pose.name}`} 
-                className="block text-xs tracking-wide text-left group-hover:text-charcoal transition-colors duration-500"
+                className="block text-xs tracking-wide text-left transition-colors duration-500"
               >
                 {pose.name}
-              <span className="absolute bottom-4 right-4 text-sm text-gray-400 group-hover:text-charcoal transition duration-500">→</span>
-              <div className="absolute top-0 left-0 w-0 h-full bg-charcoal opacity-5 group-hover:w-full transition-all duration-500"></div>
+              <span className="absolute bottom-4 right-4 text-sm text-white  transition duration-500">→</span>
+              <div className="absolute top-0 left-0 w-0 h-full bg-white/5 group-hover:w-full transition-all duration-500"></div>
               </Link>
             </div>
           ))}
