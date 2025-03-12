@@ -104,11 +104,9 @@ const Home = () => {
               
               <div className="grid grid-cols-1 gap-y-16 text-lg leading-relaxed opacity-90">
                 <p>At Learn Yoga Online, we’re dedicated to creating a welcoming and accessible space for everyone, especially absolute beginners. Our approach is designed to help you build confidence in your yoga journey with clear, well-researched guidance.</p>
-                <ul className="space-y-6">
-                  <li>Beginner-Focused: We know starting yoga can feel overwhelming, so we keep things simple, structured, and approachable. Every pose is explained step by step, with modifications to help you practice at your own pace.</li>
-                  <li>Thorough & Accurate: Yoga is a tradition with deep roots, and we respect that by ensuring all of our content is accurate and well-researched. We provide sources for further exploration so you can feel confident in the information you’re learning.</li>
-                  <li>A Holistic Approach: Yoga is more than just poses. We introduce key philosophical and mindfulness concepts in an accessible way, helping you connect with yoga beyond the mat.</li>
-                </ul>
+                <p>We know starting yoga can feel overwhelming with so many poses, terms, and techniques to learn. That's why we keep our instruction simple, structured, and approachable. Every pose is explained step by step with careful attention to alignment and safety. We provide modifications for different body types and experience levels, allowing you to practice comfortably at your own pace while gradually building strength and flexibility.</p>
+                <p>The physical poses are just one part of yoga. We also cover breathing techniques, meditation, and key concepts that enhance your practice. These elements are presented in clear, everyday language with practical examples of how they can benefit your wellbeing. Understanding these aspects helps create a more complete and rewarding yoga experience.</p>
+                <p>Yoga comes from a rich tradition that spans thousands of years. We research each topic thoroughly and check multiple sources to ensure the information we share is accurate. You'll find references throughout our content if you want to learn more about specific topics. This helps you build your practice on solid, trustworthy foundations.</p>
                 <p>Wherever you are in your yoga journey, we’re here to support you with clear, reliable, and beginner-friendly resources designed to help you grow with confidence.</p>
               </div>
             </div>
@@ -228,7 +226,7 @@ const Home = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false, amount: 0.1 }}
                   transition={{ duration: 1.5, delay: index * 0.3 }}
-                  className="border-t border-moss/30 pt-6"
+                  className="border-b border-moss/30 py-6"
                 >
                   <div className="text-moss/70 text-sm mb-4">{item.number}</div>
                   <p className="text-lg opacity-90">{item.text}</p>
