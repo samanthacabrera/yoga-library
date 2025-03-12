@@ -7,7 +7,7 @@ const PoseList = () => {
     <div className="mt-40 py-8 px-8 md:px-20">
       <Link
         to="/poses"
-        className="text-white text-2xl lg:text-4xl tracking-tight hover:opacity-50 transition duration-500 ease-in-out block border-b border-white py-2 my-12">
+        className="text-white text-2xl lg:text-4xl tracking-tight hover:opacity-80 hover:scale-[100.5%] transition-all duration-500 ease-in-out block border-b border-white py-2 my-12">
         Yoga Pose Directory
       </Link>
 
