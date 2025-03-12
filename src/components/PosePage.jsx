@@ -1,3 +1,4 @@
+import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import posesData from '../data/poses.json';
 import descriptions from '../data/descriptions.json';
@@ -52,7 +53,7 @@ const PosePage = () => {
   }
 
   return (
-    <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-12 md:space-y-40 leading-loose p-8 mt-12 mx-auto">
+    <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-12 md:space-y-24 leading-loose p-8 mt-12 mx-auto">
       <div>
       <nav className="flex items-center space-x-2 py-12 text-sm tracking-widest">
         <Link
@@ -75,21 +76,39 @@ const PosePage = () => {
         <span>/</span>
         <span className="font-medium">{pose.name}</span>
       </nav>
-      <div className="flex justify-between items-center transform -translate-y-1/2 m-1">
+      
+      <div className="flex justify-between items-center my-6 lg:my-0">
         {prevPose && (
           <Link 
             to={`/poses/${prevPose.name}`} 
-            className="text-sm tracking-wide text-gray-700 hover:text-moss hover:border-b-2 hover:border-moss transition-all duration-300 bg-transparent border-b-0 hover:border-black pb-1"
+            className="fixed top-1/2 left-0 -translate-y-1/2 group flex items-center gap-1 z-50"
           >
-            ← {prevPose.name}
+            <div className="flex items-center justify-center w-12 h-24 bg-moss/20 hover:bg-moss/30 rounded-r-full pr-2 transition-all duration-300 ease-in-out group-hover:scale-[103%] group-hover:shadow-md">
+              <svg className="text-gray-400 group-hover:text-moss transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </div>
+            
+            <div className="block absolute left-16 top-1/2 -translate-y-1/2 bg-white rounded-md px-3 py-1 border border-moss/20 opacity-0 -translate-x-4 pointer-events-none group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 whitespace-nowrap">
+              <span className="text-sm">{prevPose.name}</span>
+            </div>
           </Link>
         )}
+
         {nextPose && (
           <Link 
             to={`/poses/${nextPose.name}`} 
-            className="text-sm tracking-wide text-gray-700 hover:text-moss hover:border-b-2 hover:border-moss transition-all duration-300 bg-transparent border-b-0 hover:border-black pb-1"
+            className="fixed top-1/2 right-0 -translate-y-1/2 group flex items-center gap-1 z-50"
           >
-            {nextPose.name} →
+            <div className="block absolute right-16 top-1/2 -translate-y-1/2 bg-white rounded-md px-3 py-1 border border-moss/20 opacity-0 translate-x-4 pointer-events-none group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 whitespace-nowrap">
+              <span className="text-sm">{nextPose.name}</span>
+            </div>
+            
+            <div className="flex items-center justify-center w-12 h-24 bg-moss/20 hover:bg-moss/30 rounded-l-full pl-2 transition-all duration-300 ease-in-out group-hover:scale-[103%] group-hover:shadow-md">
+              <svg className="text-gray-400 group-hover:text-moss transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </div>
           </Link>
         )}
       </div>
@@ -107,9 +126,35 @@ const PosePage = () => {
             {poseSanskirt.sanskrit_pronunciation}
           </span>
         </p>
-      </header>
-
+        
+      {/* Tags */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
+        {[
+          { title: "Benefits", data: pose.benefit, slug: "benefit" },
+          { title: "Body Parts", data: pose.part, slug: "part" },
+          { title: "Pose Types", data: pose.type, slug: "type" },
+          { title: "Chakras", data: pose.chakra, slug: "chakra" }
+        ].map(section => 
+          section.data.length > 0 && (
+            <div key={section.slug} className="bg-moss/15 rounded-xl p-3">
+              <p className="font-medium text-sm">{section.title}</p>
+              <div className="flex flex-wrap gap-1.5 mt-2">
+                {section.data.map(item => (
+                  <Link
+                    key={item}
+                    to={`/poses/${section.slug}/${item.toLowerCase().replace(/\s/g, '%20')}`}
+                    className="bg-white text-moss text-xs font-medium px-2 py-1 rounded-md hover:scale-[103%] transition duration-300 ease-in-out"
+                  >
+                    {item}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )
+        )}
       </div>
+      </header>
+    </div>
       
       {/* Image */}
       {pose.image && (
@@ -121,27 +166,53 @@ const PosePage = () => {
         />
       )}
 
-    {/* Table of Contents */}
-    <div className="flex flex-col lg:flex-row lg:space-x-6 lg:sticky top-0 z-10 lg:py-2 text-moss text-xl w-full bg-[#f9faf4]">
-      <a href="#description" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 p-1">
-        Overview
-      </a>
-      <a href="#benefits" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 p-1">
-        Benefits
-      </a>
-      <a href="#origins" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 p-1">
-        Origins
-      </a>
-      <a href="#precautions" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 p-1">
-        Precautions
-      </a>
-      <a href="#modifications" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 p-1">
-        Modifications
-      </a>
-      <a href="#cues" className="border-b-2 border-transparent hover:border-moss transition-all duration-500 p-1">
-        Cues
-      </a>
-    </div>
+      {/* Table of Contents */}
+      <nav className="sticky top-0 z-10 my-12">
+        <div className="backdrop-blur-sm bg-white/80 rounded px-1 py-4">
+          <div className="flex items-center justify-between mb-3">
+            <h4 className="text-moss tracking-wider">Table of Contents</h4>
+            <div className="h-px flex-1 bg-moss/20 ml-4"></div>
+          </div>
+          <div className="flex flex-col md:flex-row flex-wrap gap-x-8 gap-y-3">
+            <a 
+              href="#description" 
+              className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
+            >
+              Overview
+            </a>
+            <a 
+              href="#benefits" 
+              className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
+            >
+              Benefits
+            </a>
+            <a 
+              href="#origins" 
+              className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
+            >
+              Origins
+            </a>
+            <a 
+              href="#precautions" 
+              className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
+            >
+              Precautions
+            </a>
+            <a 
+              href="#modifications" 
+              className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
+            >
+              Modifications
+            </a>
+            <a 
+              href="#cues" 
+              className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
+            >
+              Cues
+            </a>
+          </div>
+        </div>
+      </nav>
       
       {/* Overview */}
       {poseDesc && poseDesc.desc && (
@@ -235,54 +306,39 @@ const PosePage = () => {
         </div>
       )}
 
-     {/* Tags */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-        {[
-          { title: "Benefits", data: pose.benefit, slug: "benefit" },
-          { title: "Body Parts", data: pose.part, slug: "part" },
-          { title: "Pose Types", data: pose.type, slug: "type" },
-          { title: "Chakras", data: pose.chakra, slug: "chakra" }
-        ].map(
-          (section, idx) =>
-            section.data.length > 0 && (
-              <div key={idx} className="bg-moss bg-opacity-30 border border-moss rounded-2xl text-sm p-4">
-                <p className="font-medium tracking-wide">{section.title}</p>
-                <div className="flex flex-wrap mt-2 gap-2">
-                  {section.data.map((item, index) => (
-                    <Link
-                      key={index}
-                      to={`/poses/${section.slug}/${item.toLowerCase().replace(/\s/g, '%20')}`}
-                      className="bg-white text-moss font-medium px-2 py-1 rounded-lg hover:scale-105 transition"
-                    >
-                      {item}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )
-        )}
-      </div>
-
       {/* Related Poses */}
       {relatedPoses.length > 0 && (
-        <div className="p-8 space-y-6 bg-moss bg-opacity-30 border border-moss rounded-2xl">
-          <p className="font-medium tracking-wide text-center text-xl lg:text-2xl">
-            Related Poses
-          </p>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="mt-12">
+          <h3 className="text-2xl md:text-4xl text-center tracking-wide my-24 text-moss">Explore Similar Poses</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {relatedPoses.slice(0, 6).map((relatedPose) => (
               <Link
                 key={relatedPose.id}
                 to={`/poses/${relatedPose.name}`}
-                className="bg-white text-moss text-center mx-auto w-[300px] lg:w-full font-medium px-2 py-1 rounded-lg hover:scale-105 transition"
+                className="group relative overflow-hidden rounded-lg aspect-square"
               >
-                {relatedPose.name}
+                <img 
+                  src={relatedPose.image} 
+                  alt={relatedPose.name}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 to-transparent flex flex-col justify-end p-4">
+                  <h4 className="text-white font-medium text-lg">{relatedPose.name}</h4>
+                  {relatedPose.type && (
+                    <div className="flex flex-wrap gap-1 mt-1">
+                      {relatedPose.type.slice(0, 2).map((type, index) => (
+                        <span key={index} className="text-white/80 text-xs">
+                          {type}{index < Math.min(relatedPose.type.length, 2) - 1 && " · "}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </Link>
             ))}
           </div>
         </div>
       )}
-
 
       {/* Sources */}
       {sources.length > 0 && (

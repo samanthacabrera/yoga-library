@@ -271,7 +271,7 @@ const Home = () => {
           >
             Check out these essential guides to explore the history and philosophy of yoga.
           </motion.p>
-          <div className="grid gap-12 my-24">
+          <div className="grid gap-12 my-12">
             {[
               { link: "/what-is-yoga/beginners-guide", title: "Start Here: Beginner’s Guide", description: "New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started." },
               { link: "/what-is-yoga/overview", title: "What Is Yoga?", description: "Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today." },
@@ -289,7 +289,7 @@ const Home = () => {
               >
                 <Link 
                   to={item.link} 
-                  className="block w-full h-[280px] md:h-[300px] p-8 border border-moss rounded-xl transition-all duration-300 hover:scale-[1.03] hover:bg-moss hover:text-white flex flex-col justify-center"
+                  className="block w-full p-8 border border-moss/50 transition-all duration-300 hover:scale-[1.01] hover:bg-moss/80 hover:text-white flex flex-col justify-center"
                 >
                   <h3 className="text-xl mb-2">{item.title}</h3>
                   <p>{item.description}</p>
@@ -305,16 +305,15 @@ const Home = () => {
           className="flex flex-col justify-center items-center text-center space-y-12 p-24 bg-moss/5"
         >
         <h2 className="text-2xl md:text-4xl text-center tracking-wider">
-          Read My Column
+          Explore My Column
         </h2>
 
         <p>
-          Discover new insights, tips, and stories about yoga and mindfulness every month.<br />
-          Read our latest articles and deepen your practice.
+          Monthly insights, tips, and stories to deepen your yoga practice.
         </p>
         <Link
           to="/newsletter" 
-          className="flex items-center justify-center w-fit px-4 py-2 rounded font-medium uppercase tracking-wider border border-moss transition-all duration-300 hover:scale-105 hover:bg-moss hover:text-white"
+          className="text-lg tracking-wider text-charcoal/80 hover:text-moss hover:scale-[103%] transition-all duration-300 uppercase"
         >
           <span>
             Read Latest
