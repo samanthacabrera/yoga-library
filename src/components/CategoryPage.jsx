@@ -168,67 +168,79 @@ const CategoryPage = () => {
 
   return (
     <>
-      <PageNav/>
+    <PageNav/>
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
      <h1 className="heading text-center mt-20 py-12 text-4xl lg:text-6xl">Yoga Pose Directory</h1>
+        
+      {/* Filter */}
+      <section className="relative py-10 px-4 md:px-6 bg-white">
+        <div className="max-w-3xl mx-auto">
 
-      <div className="flex gap-2 justify-center text-sm lg:text-lg">
-        <Link to="/poses">
-          <button
-            onClick={() => toggleCategory("all")}
-            className={`px-6 py-2 font-medium tracking-wide text-charcoal lowercase border rounded-md transition-all duration-300
-              ${
-                activeCategories.all
-                  ? "bg-moss text-white border-moss"
-                  : "bg-transparent border-charcoal border-opacity-70"
-              } 
-              hover:bg-moss hover:bg-opacity-70 hover:text-white hover:border-moss focus:outline-none focus:ring-4 focus:ring-moss focus:ring-opacity-30`}
-          >
-            All
-          </button>
-        </Link>
-
-        {["type", "benefit", "chakra", "part"].map((categoryType) => (
-          <button
-            key={categoryType}
-            onClick={() => toggleCategory(categoryType)}
-            className={`px-6 py-2 font-medium tracking-wide text-charcoal lowercase border rounded-md transition-all duration-300 
-              ${
-                activeCategories[categoryType]
-                  ? "bg-moss text-white border-moss"
-                  : "bg-transparent border-charcoal border-opacity-70"
-              } 
-              hover:bg-moss hover:bg-opacity-70 hover:text-white hover:border-moss focus:outline-none focus:ring-4 focus:ring-moss focus:ring-opacity-30`}
-          >
-            {categoryType.charAt(0).toUpperCase() + categoryType.slice(1)}
-          </button>
-        ))}
-      </div>
-
-      <div className="flex flex-wrap gap-4 mt-8">
-        {categories.map(
-          (category) =>
-            activeCategories[category.type] && (
-              <div key={category.type} className="w-full">
-                <h4 className="text-lg lg:text-2xl tracking-wide text-charcoal mb-4">
-                  {category.type}
-                </h4>
-                <div className="flex flex-wrap gap-3">
-                  {category.values.map((value) => (
-                    <Link
-                      key={value}
-                      onClick={() => toggleCategory("close")}
-                      to={`/poses/${category.type}/${value.toLowerCase()}`}
-                      className="px-3 py-1 text-xs lg:text-sm rounded-full border border-charcoal bg-white bg-opacity-50 text-charcoal tracking-tight transition-all duration-200 hover:bg-moss hover:text-white hover:border-moss"
-                    >
-                      {value}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )
-        )}
-      </div>
+          
+          {/* Main Category Buttons */}
+          <div className="flex flex-wrap justify-center gap-2 mb-8">
+            <button
+              onClick={() => toggleCategory("all")}
+              className={`
+                px-6 py-2 font-light text-xs md:text-sm tracking-wide rounded-full transition-all duration-300
+                ${activeCategories.all
+                  ? "bg-moss/90 text-white shadow-sm"
+                  : "bg-transparent text-charcoal border border-gray-200"
+                }
+                focus:outline-none focus:ring-1 focus:ring-moss focus:ring-opacity-50
+              `}
+            >
+              All Poses
+            </button>
+            
+            {["type", "benefit", "chakra", "part"].map((categoryType) => (
+              <button
+                key={categoryType}
+                onClick={() => toggleCategory(categoryType)}
+                className={`
+                  px-6 py-2 font-light text-xs md:text-sm tracking-wide rounded-full transition-all duration-300
+                  ${activeCategories[categoryType]
+                    ? "bg-moss/90 text-white shadow-sm"
+                    : "bg-transparent text-charcoal border border-gray-200"
+                  }
+                  focus:outline-none focus:ring-1 focus:ring-moss focus:ring-opacity-50
+                `}
+              >
+                {categoryType === "type" ? "Type" :
+                  categoryType === "benefit" ? "Benefits" :
+                  categoryType === "chakra" ? "Chakras" : "Body Parts"}
+              </button>
+            ))}
+          </div>
+          
+          {/* Sub category Buttons */}
+          <div className={`overflow-y-scroll transition-all duration-400 ${Object.values(activeCategories).some(v => v) ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+            <div className="flex flex-wrap gap-2 pb-2">
+              {categories.map(
+                (category) =>
+                  activeCategories[category.type] && (
+                    <>
+                    <p>{category.type}</p>
+                    <div key={category.type} className="flex flex-wrap gap-2 w-full">
+                      {category.values.sort().map((value) => (
+                        <Link
+                          key={value}
+                          onClick={() => toggleCategory("close")}
+                          to={`/poses/${category.type}/${value.toLowerCase()}`}
+                          className="px-5 py-2 text-xs rounded-full border border-gray-200 bg-white w-fit text-charcoal transition-all duration-300
+                            hover:bg-gray-50 hover:border-moss hover:text-moss"
+                        >
+                          {value.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+                        </Link>
+                      ))}
+                    </div>
+                    </>
+                  )
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
 
       <h2 className="text-xl lg:text-2xl pt-12 text-center tracking-wider">{getHeadingText()}</h2>
       <p className="text-charcoal tracking-wider leading-loose">{getDescText()}</p>
