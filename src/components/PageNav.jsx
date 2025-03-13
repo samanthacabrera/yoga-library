@@ -1,0 +1,54 @@
+import { Link, useLocation } from 'react-router-dom';
+
+const menuItems = [
+    { label: "Start Here", to: "/what-is-yoga/beginners-guide" },
+    { label: "What Is Yoga?", to: "/what-is-yoga/overview" },
+    { label: "The 8-Limbed Path", to: "/what-is-yoga/eight-limbed-path" },
+    { label: "The 7 Chakras", to: "/what-is-yoga/seven-chakras" },
+    { label: "The 3 Gunas", to: "/what-is-yoga/three-gunas" },
+    { label: "List of Poses", to: "/poses" },
+    { label: "Newsletter", to: "/newsletter" },
+    { label: "Resources", to: "/resources" },
+];
+
+const PageNav = () => {
+    const location = useLocation();
+    const currentIndex = menuItems.findIndex((item) => item.to.toLowerCase() === location.pathname.toLowerCase());
+
+    if (currentIndex === -1) return null; 
+
+    const prevPage = menuItems[(currentIndex - 1 + menuItems.length) % menuItems.length];
+    const nextPage = menuItems[(currentIndex + 1) % menuItems.length];
+
+
+  return (
+    <div className="flex justify-between items-center my-6 lg:my-0">
+      {prevPage && (
+        <Link to={prevPage.to} className="fixed top-1/2 left-0 -translate-y-1/2 group flex items-center gap-1 z-50">
+          <div className="flex items-center justify-center w-12 h-24 bg-moss/20 hover:bg-moss/30 rounded-r-full pr-2 transition-all duration-300 ease-in-out group-hover:scale-[103%] group-hover:shadow-md">
+            <svg className="text-gray-400 group-hover:text-moss transition-colors duration-300" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </div>
+          <div className="block absolute left-16 top-1/2 -translate-y-1/2 bg-white rounded-md px-3 py-1 border border-moss/20 opacity-0 -translate-x-4 pointer-events-none group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 whitespace-nowrap">
+            <span className="text-sm">{prevPage.label}</span>
+          </div>
+        </Link>
+      )}
+      {nextPage && (
+        <Link to={nextPage.to} className="fixed top-1/2 right-0 -translate-y-1/2 group flex items-center gap-1 z-50">
+          <div className="block absolute right-16 top-1/2 -translate-y-1/2 bg-white rounded-md px-3 py-1 border border-moss/20 opacity-0 translate-x-4 pointer-events-none group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 whitespace-nowrap">
+            <span className="text-sm">{nextPage.label}</span>
+          </div>
+          <div className="flex items-center justify-center w-12 h-24 bg-moss/20 hover:bg-moss/30 rounded-l-full pl-2 transition-all duration-300 ease-in-out group-hover:scale-[103%] group-hover:shadow-md">
+            <svg className="text-gray-400 group-hover:text-moss transition-colors duration-300" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </div>
+        </Link>
+      )}
+    </div>
+  );
+};
+
+export default PageNav;

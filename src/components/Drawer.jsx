@@ -28,7 +28,7 @@ const Drawer = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-  
+
   const menuItems = [
     { label: "Start Here", to: "/what-is-yoga/beginners-guide" },
     { label: "What Is Yoga?", to: "/what-is-yoga/overview" },
@@ -114,4 +114,4 @@ const Drawer = () => {
   );
 }
 
-  export default Drawer;
+export default Drawer;

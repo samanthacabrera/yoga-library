@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import PageNav from "./PageNav";
 
 const Path = () => {
     const [openIndexes, setOpenIndexes] = useState([]);
@@ -108,7 +109,9 @@ const Path = () => {
         });
     };
 
-   return (
+    return (
+       <>
+        <PageNav />
        <div className="max-w-2xl mx-auto my-24 space-y-12">
            <h1 className="text-center my-12 text-4xl">The Eight-Limbed Path of Yoga</h1>
     
@@ -156,6 +159,7 @@ const Path = () => {
                 <p>Whether you are taking your first steps or have been practicing for years, the teachings of yoga remain a constant source of wisdom and guidance. By integrating these principles into daily life—not just in movement, but in thoughts, words, and actions—we cultivate a life of balance, clarity, and fulfillment.</p>
             </div>
         </div>
+    </>
     );
 };
 

@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import PageNav from "./PageNav";
 
 const Gunas = () => {
   const [openIndexes, setOpenIndexes] = useState([]);
@@ -79,6 +80,8 @@ const Gunas = () => {
   };
 
   return (
+    <>
+    <PageNav/>
     <div className="max-w-2xl mx-auto my-24 space-y-12">
       <h1 className="text-center text-4xl">The Three Gunas</h1>
         <p>
@@ -122,8 +125,8 @@ const Gunas = () => {
       <p>
         Ultimately, our journey toward balance is not about eliminating any one guna but about learning to navigate their interplay with awareness and intention. By observing our habits and gently steering ourselves toward clarity and harmony, we can cultivate a life filled with light, joy, and self-realization.
       </p>
-
-    </div>
+      </div>
+    </>
   );
 };
 

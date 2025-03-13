@@ -171,7 +171,7 @@ const PosePage = () => {
         <div className="backdrop-blur-sm bg-white/80 rounded px-1 py-4">
           <button 
             onClick={() => setTocOpen(!tocOpen)} 
-            className="md:hidden absolute top-4 right-0 px-2 py-1 text-sm border border-moss/50 text-moss bg-white rounded-md shadow hover:scale-[103%] transition-all"
+            className="absolute top-4 right-0 px-2 py-1 text-sm border border-moss/50 text-moss bg-white rounded-md shadow hover:scale-[103%] transition-all"
           >
             {tocOpen ? 'Hide' : 'Show'}
           </button>

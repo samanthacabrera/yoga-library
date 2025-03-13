@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import posesData from "../data/poses.json";
+import PageNav from "./PageNav";
 
 const extractCategories = (data, categoryType) => {
   const categories = new Set();
@@ -166,6 +167,8 @@ const CategoryPage = () => {
   };
 
   return (
+    <>
+      <PageNav/>
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
      <h1 className="heading text-center mt-20 py-12 text-4xl lg:text-6xl">Yoga Pose Directory</h1>
 
@@ -269,6 +272,7 @@ const CategoryPage = () => {
         <a href="https://www.flaticon.com/free-icons/lunge" title="lunge icons">Lunge icons created by Eideticmemo - Flaticon</a>
       </div>
     </div>
+    </>
   );
 };
 

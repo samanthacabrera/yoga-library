@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import PageNav from "./PageNav";
 
 const WhatIsYoga = () => {
   return (
@@ -13,6 +14,7 @@ const WhatIsYoga = () => {
       <meta name="twitter:title" content="What is Yoga?" />
       <meta name="twitter:description" content="Discover the origins, evolution, and different types of yoga practices in this comprehensive guide. Learn about the ancient discipline of yoga and find the right style for you." />
     </Helmet>
+    <PageNav />
     <div className="max-w-2xl mx-auto my-40 space-y-12">
       <h1 className="text-center text-4xl">
         What is Yoga?

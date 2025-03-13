@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import PageNav from "./PageNav";
 
 const Chakras = () => {
   const [openIndexes, setOpenIndexes] = useState([]);
@@ -157,6 +158,8 @@ const Chakras = () => {
   };
 
   return (
+    <>
+      <PageNav/>
     <div className="max-w-2xl mx-auto my-24 space-y-12">
       <h1 className="text-center text-4xl">The Seven Chakras</h1>
         <p>
@@ -197,6 +200,7 @@ const Chakras = () => {
         <p>The chakras serve as an essential blueprint for our holistic well-being, influencing our physical, emotional, and spiritual health. When in balance, they allow us to experience stability, creativity, confidence, love, clear communication, insight, and enlightenment. However, modern life often disrupts this energy flow, leading to imbalances that impact our mood, mindset, and vitality. Recognizing these signs and working toward alignment helps us live with greater purpose and awareness.</p>
         <p>As you explore and work with your chakras, remember that healing and balance are ongoing processes. Every step you take toward greater awareness brings you closer to inner peace, self-acceptance, and a more vibrant, connected life.</p>
     </div>
+    </>
   );
 };
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PageNav from "./PageNav";
 
 const Newsletter = () => {
     const [blog, setBlog] = useState({ items: [], error: null });
@@ -49,6 +50,8 @@ const Newsletter = () => {
     };
 
     return (
+        <>
+        <PageNav/>
         <div className="flex flex-col min-h-screen w-full max-w-3xl mx-auto space-y-40">
            <div className="mt-40">
                 <h2 className="text-lg text-center tracking-wider uppercase">Our Monthly Column:</h2>
@@ -128,7 +131,8 @@ const Newsletter = () => {
                 </div>
             </div>
         </div>
-        </div>
+    </div>
+    </>
     );
 };
 

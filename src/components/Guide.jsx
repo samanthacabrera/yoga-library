@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import PageNav from '../components/PageNav';
 
 const Guide = () => {
     return (
@@ -13,6 +14,7 @@ const Guide = () => {
             <meta name="twitter:title" content="Beginner's Guide to Yoga" />
             <meta name="twitter:description" content="Start your yoga journey with our comprehensive guide designed for beginners. Learn key yoga terminology, props, benefits, and safe practice tips." />
         </Helmet>
+        <PageNav />
         <div className="max-w-2xl mx-auto my-40 space-y-12">
         <h1 className="text-center text-4xl">
             Beginner's Guide to Yoga
