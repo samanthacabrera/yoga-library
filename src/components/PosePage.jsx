@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useParams, Link } from 'react-router-dom';
 import posesData from '../data/poses.json';
 import descriptions from '../data/descriptions.json';
@@ -12,15 +12,8 @@ const PosePage = () => {
   const { name } = useParams();
   const poseIndex = posesData.findIndex((p) => p.name.toLowerCase() === name.toLowerCase());
   const pose = posesData[poseIndex];
-
-  if (!pose) {
-    return <div>Pose not found</div>;
-  }
-
-
   const prevPose = posesData[(poseIndex - 1 + posesData.length) % posesData.length];
   const nextPose = posesData[(poseIndex + 1) % posesData.length];
-
   const poseDesc = descriptions.find((d) => d.id === pose.id);
   const poseSanskirt = sanskirts.find((s) => s.id === pose.id);
   const poseBenefit = benefits.find((b) => b.id === pose.id);
@@ -31,6 +24,11 @@ const PosePage = () => {
     p.id !== pose.id && 
     p.type.some((type) => pose.type.includes(type))
   );
+  const [tocOpen, setTocOpen] = useState(true);
+
+  if (!pose) {
+    return <div>Pose not found</div>;
+  }
   
   const sources = [];
   if (poseDesc && poseDesc.source) {
@@ -55,6 +53,7 @@ const PosePage = () => {
   return (
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-12 md:space-y-24 leading-loose p-8 mt-12 mx-auto">
       <div>
+      {/* Breadcrumb */}
       <nav className="flex items-center space-x-2 py-12 text-sm tracking-widest">
         <Link
           to="/poses"
@@ -77,6 +76,7 @@ const PosePage = () => {
         <span className="font-medium">{pose.name}</span>
       </nav>
       
+      {/* Prev/Next Pose */}
       <div className="flex justify-between items-center my-6 lg:my-0">
         {prevPose && (
           <Link 
@@ -94,7 +94,6 @@ const PosePage = () => {
             </div>
           </Link>
         )}
-
         {nextPose && (
           <Link 
             to={`/poses/${nextPose.name}`} 
@@ -113,6 +112,7 @@ const PosePage = () => {
         )}
       </div>
 
+      {/* Header */}
       <header className="relative px-6 py-8 group w-full bg-moss bg-opacity-20 rounded-2xl">
         <p className="text-4xl md:text-6xl text-center tracking-tight opacity-90 relative text-white font-medium">
           {poseSanskirt.sanskrit_name}
@@ -156,74 +156,84 @@ const PosePage = () => {
       </header>
     </div>
       
-      {/* Image */}
-      {pose.image && (
-        <img
-          src={pose.image}
-          alt={pose.name}
-          style={{ maxWidth: '300px', height: 'auto' }}
-          className="mx-auto "
-        />
-      )}
+    {/* Image */}
+    {pose.image && (
+      <img
+        src={pose.image}
+        alt={pose.name}
+        style={{ maxWidth: '300px', height: 'auto' }}
+        className="mx-auto "
+      />
+    )}
 
       {/* Table of Contents */}
-      <nav className="sticky top-0 z-10 my-12">
+      <nav className="sticky top-12 z-10 my-12">
         <div className="backdrop-blur-sm bg-white/80 rounded px-1 py-4">
-          <div className="flex items-center justify-between mb-3">
-            <h4 className="text-moss tracking-wider">Table of Contents</h4>
-            <div className="h-px flex-1 bg-moss/20 ml-4"></div>
-          </div>
-          <div className="flex flex-col md:flex-row flex-wrap gap-x-8 gap-y-3">
-            <a 
-              href="#description" 
-              className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
-            >
-              Overview
-            </a>
-            <a 
-              href="#benefits" 
-              className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
-            >
-              Benefits
-            </a>
-            <a 
-              href="#origins" 
-              className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
-            >
-              Origins
-            </a>
-            <a 
-              href="#precautions" 
-              className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
-            >
-              Precautions
-            </a>
-            <a 
-              href="#modifications" 
-              className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
-            >
-              Modifications
-            </a>
-            <a 
-              href="#cues" 
-              className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
-            >
-              Cues
-            </a>
-          </div>
+          <button 
+            onClick={() => setTocOpen(!tocOpen)} 
+            className="md:hidden absolute top-4 right-0 px-2 py-1 text-sm border border-moss/50 text-moss bg-white rounded-md shadow hover:scale-[103%] transition-all"
+          >
+            {tocOpen ? 'Hide' : 'Show'}
+          </button>
+            <div className="flex items-center justify-between mb-3">
+              <h4 className="text-moss tracking-wider">Table of Contents</h4>
+              <div className="h-px flex-1 bg-moss/20 ml-4"></div>
+            </div>
+          {tocOpen && (
+          <>
+            <div className="flex flex-col md:flex-row flex-wrap gap-x-8 gap-y-3">
+              <a
+                href="#description" 
+                className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
+              >
+                Overview
+              </a>
+              <a 
+                href="#benefits" 
+                className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
+              >
+                Benefits
+              </a>
+              <a 
+                href="#origins" 
+                className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
+              >
+                Origins
+              </a>
+              <a 
+                href="#precautions" 
+                className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
+              >
+                Precautions
+              </a>
+              <a 
+                href="#modifications" 
+                className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
+              >
+                Modifications
+              </a>
+              <a 
+                href="#cues" 
+                className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
+              >
+                Cues
+              </a>
+            </div>
+          </>
+          )}
         </div>
       </nav>
       
       {/* Overview */}
       {poseDesc && poseDesc.desc && (
-        <div id="description" className="group scroll-mt-20">
+        <div id="description" className="group scroll-mt-96 md:scroll-mt-40">
           <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Overview</h3>
           <p className="tracking-wider bg-moss/5 p-4">{poseDesc.desc}</p>
         </div>
       )}
       {/* Benefits */}
       {poseBenefit && (poseBenefit.physical || poseBenefit.mental) && (
-        <div id="benefits" className="group scroll-mt-20">
+        <div id="benefits" className="group scroll-mt-96 md:scroll-mt-40">
           <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">
             Benefits
           </h3>
@@ -241,14 +251,14 @@ const PosePage = () => {
       )}
       {/* Origins */}
       {poseSanskirt && poseSanskirt.context && (
-        <div id="origins" className="group scroll-mt-20">
+        <div id="origins" className="group scroll-mt-96 md:scroll-mt-40">
           <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Origins</h3>
           <p className="tracking-wider bg-moss/5 p-4">{poseSanskirt.context}</p>
         </div>
       )}
       {/* Precautions */}
       {posePrecaution && posePrecaution.precaution && (
-        <div id="precautions" className="group scroll-mt-20">
+        <div id="precautions" className="group scroll-mt-96 md:scroll-mt-40">
           <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Precautions</h3>
           <p className="tracking-wider bg-moss/5 p-4">{posePrecaution.precaution}</p>
         </div>
@@ -256,7 +266,7 @@ const PosePage = () => {
 
       {/* Modifications */}
       {poseModification && poseModification.modification && (
-        <div id="modifications" className="group scroll-mt-20">
+        <div id="modifications" className="group scroll-mt-96 md:scroll-mt-40">
           <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Modifications</h3>
           <p className="tracking-wider bg-moss/5 p-4">{poseModification.modification}</p>
         </div>
@@ -264,7 +274,7 @@ const PosePage = () => {
 
       {/* Cues */}
       {poseCues && poseCues.cues && (
-        <div id="cues" className="group scroll-mt-20">
+        <div id="cues" className="group scroll-mt-96 md:scroll-mt-40">
           <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Alignment Cues</h3>
           <div className="space-y-6">
             {poseCues.cues.map((cue, index) => {

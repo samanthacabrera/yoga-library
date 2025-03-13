@@ -83,9 +83,7 @@ const Search = () => {
 
   const handleClickOutside = (event) => {
     if (searchRef.current && !searchRef.current.contains(event.target)) {
-      if (searchTerm === "") {
         setIsExpanded(false);
-      }
       setIsDropdownOpen(false);
     }
   };
