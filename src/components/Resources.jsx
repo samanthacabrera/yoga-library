@@ -17,7 +17,7 @@ const ResourceCard = ({ to, title, description }) => (
 
 const ResourceSection = ({ title, links }) => (
   <div className="w-full max-w-2xl">
-    <h2 className="text-2xl text-charcoal tracking-wider font-medium border-b border-moss border-opacity-30 pb-2">{title}</h2>
+    <h2 className="text-2xl text-charcoal tracking-wider">{title}</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-8">
       {links.map((link, index) => (
         <ResourceCard key={index} {...link} />
@@ -106,7 +106,7 @@ const Resources = () => {
 
       <div className="space-y-16">
         {resourceCategories.map((category, index) => (
-          <div key={index} id={category.id}>
+          <div key={index} id={category.id} className="scroll-mt-20">
             <ResourceSection {...category} />
           </div>
         ))}

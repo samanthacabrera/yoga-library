@@ -83,87 +83,75 @@ const CategoryPage = () => {
   const { categoryType, categoryValue } = useParams();
   const [filteredPoses, setFilteredPoses] = useState(posesData);
   const [activeCategories, setActiveCategories] = useState({
-    all: false,
+    all: true,
     type: false,
     benefit: false,
     chakra: false,
     part: false,
   });
+  const [selectedCategory, setSelectedCategory] = useState({ type: "all", value: "" });
 
   useEffect(() => {
-    const uniqueCategories = [];
-    ["type", "benefit", "chakra", "part"].forEach((categoryType) => {
-      const categoryItems = extractCategories(posesData, categoryType);
-      uniqueCategories.push({ type: categoryType, values: categoryItems });
-    });
+    const uniqueCategories = ["type", "benefit", "chakra", "part"].map((type) => ({
+      type,
+      values: extractCategories(posesData, type),
+    }));
     setCategories(uniqueCategories);
   }, []);
 
-  useEffect(() => {
-    if (categoryType && categoryValue) {
+  useEffect(() => {    
+    if (!categoryType || categoryType === "all") {
+      setFilteredPoses(posesData);
+      setActiveCategories({ all: true, type: false, benefit: false, chakra: false, part: false });
+      setSelectedCategory({ type: "all", value: "" });
+    } else {
       const matchingPoses = posesData.filter((pose) =>
         pose[categoryType]?.some((item) => item.toLowerCase() === categoryValue.toLowerCase())
       );
       setFilteredPoses(matchingPoses);
-    } else {
-      setFilteredPoses(posesData); 
+      setActiveCategories((prev) => ({ ...prev, all: false }));
+      setSelectedCategory({ type: categoryType, value: categoryValue });
     }
-  }, [categoryType, categoryValue]);
+      }, [categoryType, categoryValue]);
 
-  const toggleCategory = (categoryType) => {
+  const toggleCategory = (categoryType, isSubcategory = false) => {    
     if (categoryType === "all") {
-      setActiveCategories((prevState) => ({
-        type: false,
-        benefit: false,
-        chakra: false,
-        part: false,
-        all: !prevState.all, 
-      }));
-    }
-    if (categoryType === "close") {
-      setActiveCategories(() => ({
-        all: false,
-        type: false,
-        benefit: false,
-        chakra: false,
-        part: false,
-        }));
-    }
-    else {
-      setActiveCategories((prevState) => ({
-        ...prevState,
-        [categoryType]: !prevState[categoryType],
-        all: false, 
-      }));
+      setFilteredPoses(posesData);
+      setActiveCategories({ all: true, type: false, benefit: false, chakra: false, part: false });
+      setSelectedCategory({ type: "all", value: "" });
+    } else {
+      setActiveCategories((prevState) => {
+        const newState = { all: false, type: false, benefit: false, chakra: false, part: false };
+        if (!isSubcategory) {
+          newState[categoryType] = !prevState[categoryType];
+        }
+        return newState;
+      });
     }
   };
 
   const getHeadingText = () => {
-    if (categoryType && categoryValue) {
-      const formattedValue = categoryValue
-        .split(" ")
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-        .join(" ");
-        
-      if (categoryType === "type") {
-        return `${formattedValue} Yoga Poses`;
-      } else if (categoryType === "benefit") {
-        return `Yoga Poses to ${formattedValue}`;
-      } else if (categoryType === "chakra") {
-        return `Poses for the ${formattedValue} Chakra`;
-      } else if (categoryType === "part") {
-        return `Poses for the ${formattedValue}`;
-      }
+    if (selectedCategory.type === "all") return "All Yoga Poses";
+
+    const formattedValue = selectedCategory.value
+      .split(" ")
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(" ");
+
+    switch (selectedCategory.type) {
+      case "type": return `${formattedValue} Yoga Poses`;
+      case "benefit": return `Yoga Poses to ${formattedValue}`;
+      case "chakra": return `Poses for the ${formattedValue} Chakra`;
+      case "part": return `Poses for the ${formattedValue}`;
+      default: return "All Yoga Poses";
     }
-    return "All Yoga Poses";
   };
 
   const getDescText = () => {
-    if (categoryType && categoryValue) {
-       const formattedValue = categoryValue.toLowerCase().replace(/\s+/g, '_');
-    return categoryDescriptions[categoryType]?.[formattedValue] || "";
+    if (selectedCategory.type === "all") {
+      return "Here are the top 50 yoga poses. These carefully selected poses will help you build a solid foundation in your practice, improve flexibility, increase strength, and promote mindfulness.";
     }
-    return "Here are the top 50 yoga poses. These carefully selected poses will help you build a solid foundation in your practice, improve flexibility, increase strength, and promote mindfulness.";
+    return categoryDescriptions[selectedCategory.type]?.[selectedCategory.value.toLowerCase().replace(/\s+/g, "_")] || "";
   };
 
   return (
@@ -176,7 +164,6 @@ const CategoryPage = () => {
       <section className="relative py-10 px-4 md:px-6 bg-white">
         <div className="max-w-3xl mx-auto">
 
-          
           {/* Main Category Buttons */}
           <div className="flex flex-wrap justify-center gap-2 mb-8">
             <button
@@ -190,7 +177,7 @@ const CategoryPage = () => {
                 focus:outline-none focus:ring-1 focus:ring-moss focus:ring-opacity-50
               `}
             >
-              All Poses
+              All
             </button>
             
             {["type", "benefit", "chakra", "part"].map((categoryType) => (
@@ -214,18 +201,18 @@ const CategoryPage = () => {
           </div>
           
           {/* Sub category Buttons */}
-          <div className={`overflow-y-scroll transition-all duration-400 ${Object.values(activeCategories).some(v => v) ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
-            <div className="flex flex-wrap gap-2 pb-2">
+          <div className={`transition-all duration-400 ${Object.values(activeCategories).some(v => v) ? 'max-h-auto opacity-100' : 'max-h-0 opacity-0'}`}>
+            <div className="flex flex-wrap justify-center gap-2 pb-2">
               {categories.map(
                 (category) =>
                   activeCategories[category.type] && (
                     <>
-                    <p>{category.type}</p>
-                    <div key={category.type} className="flex flex-wrap gap-2 w-full">
+                    <p className="capitalize">{category.type}s</p>
+                    <div key={category.type} className="flex flex-wrap gap-2 justify-center w-full">
                       {category.values.sort().map((value) => (
                         <Link
                           key={value}
-                          onClick={() => toggleCategory("close")}
+                          onClick={() => toggleCategory(categoryType, true)}
                           to={`/poses/${category.type}/${value.toLowerCase()}`}
                           className="px-5 py-2 text-xs rounded-full border border-gray-200 bg-white w-fit text-charcoal transition-all duration-300
                             hover:bg-gray-50 hover:border-moss hover:text-moss"
@@ -242,8 +229,12 @@ const CategoryPage = () => {
         </div>
       </section>
 
-      <h2 className="text-xl lg:text-2xl pt-12 text-center tracking-wider">{getHeadingText()}</h2>
-      <p className="text-charcoal tracking-wider leading-loose">{getDescText()}</p>
+      <h2 className="text-xl lg:text-2xl font-light pt-12 text-center tracking-wider text-charcoal/90 mx-auto max-w-xl">
+        {getHeadingText()}
+      </h2>
+      <p className="text-charcoal/80 text-sm tracking-wide leading-relaxed py-6 max-w-xl mx-auto">
+        {getDescText()}
+      </p>
 
       {filteredPoses.length === 0 ? (
         <p className="text-lg font-bold text-black bg-moss p-4 text-center">
