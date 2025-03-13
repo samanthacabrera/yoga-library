@@ -229,6 +229,7 @@ const PosePage = () => {
         <div id="description" className="group scroll-mt-96 md:scroll-mt-40">
           <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Overview</h3>
           <p className="tracking-wider bg-moss/5 p-4">{poseDesc.desc}</p>
+          {poseDesc.source && <p className="text-sm italic opacity-80 mt-6">Source: {poseDesc.source}</p>}
         </div>
       )}
       {/* Benefits */}
@@ -247,6 +248,7 @@ const PosePage = () => {
               <span className="font-medium">Mental Benefits:</span> {poseBenefit.mental}
             </p>
           )}
+          {poseBenefit.source && <p className="text-sm italic opacity-80 mt-6">Source: {poseBenefit.source}</p>}
         </div>
       )}
       {/* Origins */}
@@ -254,6 +256,7 @@ const PosePage = () => {
         <div id="origins" className="group scroll-mt-96 md:scroll-mt-40">
           <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Origins</h3>
           <p className="tracking-wider bg-moss/5 p-4">{poseSanskirt.context}</p>
+          {poseSanskirt.source && <p className="text-sm italic opacity-80 mt-6">Source: {poseSanskirt.source}</p>}
         </div>
       )}
       {/* Precautions */}
@@ -261,6 +264,7 @@ const PosePage = () => {
         <div id="precautions" className="group scroll-mt-96 md:scroll-mt-40">
           <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Precautions</h3>
           <p className="tracking-wider bg-moss/5 p-4">{posePrecaution.precaution}</p>
+          {posePrecaution.source && <p className="text-sm italic opacity-80 mt-6">Source: {posePrecaution.source}</p>}
         </div>
       )}
 
@@ -269,6 +273,7 @@ const PosePage = () => {
         <div id="modifications" className="group scroll-mt-96 md:scroll-mt-40">
           <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Modifications</h3>
           <p className="tracking-wider bg-moss/5 p-4">{poseModification.modification}</p>
+          {poseModification.source && <p className="text-sm italic opacity-80 mt-6">Source: {poseModification.source}</p>}
         </div>
       )}
 
