@@ -11,14 +11,21 @@ const menuItems = [
     { label: "Resources", to: "/resources" },
 ];
 
-const PageNav = () => {
+const PageNav = ({ customPrev, customNext }) => {
     const location = useLocation();
-    const currentIndex = menuItems.findIndex((item) => item.to.toLowerCase() === location.pathname.toLowerCase());
+    const decodedPathname = decodeURIComponent(location.pathname);
+    const isDynamicPoseRoute = ["/poses/type", "/poses/benefit", "/poses/chakra", "/poses/part"]
+      .some(prefix => decodedPathname.startsWith(prefix));
+    let currentIndex = menuItems.findIndex(item => decodedPathname === item.to);
+
+    if (isDynamicPoseRoute) {
+      currentIndex = menuItems.findIndex(item => item.to === "/poses");
+    }
 
     if (currentIndex === -1) return null; 
 
-    const prevPage = menuItems[(currentIndex - 1 + menuItems.length) % menuItems.length];
-    const nextPage = menuItems[(currentIndex + 1) % menuItems.length];
+    let prevPage = customPrev || menuItems[(currentIndex - 1 + menuItems.length) % menuItems.length];
+    let nextPage = customNext || menuItems[(currentIndex + 1) % menuItems.length];
 
 
   return (
