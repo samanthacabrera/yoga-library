@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 const Drawer = () => {
@@ -81,8 +82,8 @@ const Drawer = () => {
         <nav className="flex-1 p-4 overflow-y-auto">
           <ul className="space-y-6 py-4">
             {menuItems.map((item, index) => (
-              <li key={index}  className="relative">
-                <a href={item.to}  className="block text-center py-2 font-light tracking-wider
+              <li key={index} className="relative">
+                <Link to={item.to} className="block text-center py-2 font-light tracking-wider
                   transition-all duration-500 ease-in-out text-sm text-white/80
                   hover:text-white relative group"
                 >
@@ -90,7 +91,7 @@ const Drawer = () => {
                     {item.label}
                     <span className="absolute -bottom-1 left-1/2 w-0 h-px bg-white/60 transition-all duration-700 ease-out group-hover:w-full group-hover:left-0"></span>
                   </span>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
