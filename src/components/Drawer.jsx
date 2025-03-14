@@ -41,13 +41,13 @@ const Drawer = () => {
   ];
 
   return (
-    <div className="fixed top-0 left-0 h-full flex items-center z-40">
+    <div className="fixed top-0 left-0 h-full flex items-center z-50">
       {/* Toggle Button */}
       <button
         ref={buttonRef}
         onClick={toggleDrawer}
-        className={`absolute top-4 bg-transparent border-none focus:outline-none transition-all duration-300 ease-in-out
-        ${isDrawerOpen ? "left-56" : "left-4"}`}
+        className={`absolute top-5 bg-transparent border-none focus:outline-none transition-all duration-300 ease-in-out
+        ${isDrawerOpen ? "left-56" : "left-5"}`}
         aria-label={isDrawerOpen ? "Close menu" : "Open menu"}
       >
         {isDrawerOpen ? (

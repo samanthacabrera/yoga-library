@@ -167,7 +167,7 @@ const PosePage = () => {
     )}
 
       {/* Table of Contents */}
-      <nav className="sticky top-12 z-10 my-12">
+      <nav className="sticky top-16 z-10 my-12">
         <div className="backdrop-blur-sm bg-white/80 rounded px-1 py-4">
           <button 
             onClick={() => setTocOpen(!tocOpen)} 
@@ -223,64 +223,95 @@ const PosePage = () => {
           )}
         </div>
       </nav>
-      
+
       {/* Overview */}
       {poseDesc && poseDesc.desc && (
-        <div id="description" className="group scroll-mt-96 md:scroll-mt-40">
-          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Overview</h3>
-          <p className="tracking-wider bg-moss/5 p-4">{poseDesc.desc}</p>
-          {poseDesc.source && <p className="text-sm italic opacity-80 mt-6">Source: {poseDesc.source}</p>}
-        </div>
+        <section id="description" className="group scroll-mt-96 md:scroll-mt-40">
+          <h2 className="text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">
+            Overview
+          </h2>
+          <div className="bg-white/50 backdrop-blur-sm p-6 shadow-sm rounded border border-moss/20">
+            <p className="text-gray-700 leading-loose">{poseDesc.desc}</p>
+            {poseDesc.source && (
+              <p className="text-xs text-gray-500 mt-4 italic">Source: {poseDesc.source}</p>
+            )}
+          </div>
+        </section>
       )}
+
       {/* Benefits */}
       {poseBenefit && (poseBenefit.physical || poseBenefit.mental) && (
-        <div id="benefits" className="group scroll-mt-96 md:scroll-mt-40">
-          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">
+        <section id="benefits" className="group scroll-mt-96 md:scroll-mt-40">
+          <h2 className="text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">
             Benefits
-          </h3>
-          {poseBenefit.physical && (
-            <p className="tracking-wider bg-moss/5 p-4 mb-6">
-              <span className="font-medium">Physical Benefits:</span> {poseBenefit.physical}
-            </p>
-          )}
-          {poseBenefit.mental && (
-            <p className="tracking-wider bg-moss/5 p-4">
-              <span className="font-medium">Mental Benefits:</span> {poseBenefit.mental}
-            </p>
-          )}
-          {poseBenefit.source && <p className="text-sm italic opacity-80 mt-6">Source: {poseBenefit.source}</p>}
-        </div>
+          </h2>
+          <div className="bg-white/50 backdrop-blur-sm p-6 shadow-sm rounded border border-moss/20">
+            {poseBenefit.physical && (
+              <p className="text-gray-700 leading-loose mb-4">
+                <span className="font-medium">Physical Benefits:</span> {poseBenefit.physical}
+              </p>
+            )}
+            {poseBenefit.mental && (
+              <p className="text-gray-700 leading-loose">
+                <span className="font-medium">Mental Benefits:</span> {poseBenefit.mental}
+              </p>
+            )}
+            {poseBenefit.source && (
+              <p className="text-xs text-gray-500 mt-4 italic">Source: {poseBenefit.source}</p>
+            )}
+          </div>
+        </section>
       )}
+
       {/* Origins */}
       {poseSanskirt && poseSanskirt.context && (
-        <div id="origins" className="group scroll-mt-96 md:scroll-mt-40">
-          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Origins</h3>
-          <p className="tracking-wider bg-moss/5 p-4">{poseSanskirt.context}</p>
-          {poseSanskirt.source && <p className="text-sm italic opacity-80 mt-6">Source: {poseSanskirt.source}</p>}
-        </div>
+        <section id="origins" className="group scroll-mt-96 md:scroll-mt-40">
+          <h2 className="text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">
+            Origins
+          </h2>
+          <div className="bg-white/50 backdrop-blur-sm p-6 shadow-sm rounded border border-moss/20">
+            <p className="text-gray-700 leading-loose">{poseSanskirt.context}</p>
+            {poseSanskirt.source && (
+              <p className="text-xs text-gray-500 mt-4 italic">Source: {poseSanskirt.source}</p>
+            )}
+          </div>
+        </section>
       )}
+
       {/* Precautions */}
       {posePrecaution && posePrecaution.precaution && (
-        <div id="precautions" className="group scroll-mt-96 md:scroll-mt-40">
-          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Precautions</h3>
-          <p className="tracking-wider bg-moss/5 p-4">{posePrecaution.precaution}</p>
-          {posePrecaution.source && <p className="text-sm italic opacity-80 mt-6">Source: {posePrecaution.source}</p>}
-        </div>
+        <section id="precautions" className="group scroll-mt-96 md:scroll-mt-40">
+          <h2 className="text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">
+            Precautions
+          </h2>
+          <div className="bg-white/50 backdrop-blur-sm p-6 shadow-sm rounded border border-moss/20">
+            <p className="text-gray-700 leading-loose">{posePrecaution.precaution}</p>
+            {posePrecaution.source && (
+              <p className="text-xs text-gray-500 mt-4 italic">Source: {posePrecaution.source}</p>
+            )}
+          </div>
+        </section>
       )}
 
       {/* Modifications */}
       {poseModification && poseModification.modification && (
-        <div id="modifications" className="group scroll-mt-96 md:scroll-mt-40">
-          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Modifications</h3>
-          <p className="tracking-wider bg-moss/5 p-4">{poseModification.modification}</p>
-          {poseModification.source && <p className="text-sm italic opacity-80 mt-6">Source: {poseModification.source}</p>}
-        </div>
+        <section id="modifications" className="group scroll-mt-96 md:scroll-mt-40">
+          <h2 className="text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">
+            Modifications
+          </h2>
+          <div className="bg-white/50 backdrop-blur-sm p-6 shadow-sm rounded border border-moss/20">
+            <p className="text-gray-700 leading-loose">{poseModification.modification}</p>
+            {poseModification.source && (
+              <p className="text-xs text-gray-500 mt-4 italic">Source: {poseModification.source}</p>
+            )}
+          </div>
+        </section>
       )}
 
       {/* Cues */}
       {poseCues && poseCues.cues && (
         <div id="cues" className="group scroll-mt-96 md:scroll-mt-40">
-          <h3 className="font-medium text-2xl md:text-6xl tracking-wider my-8 group-hover:text-moss transition duration-300">Alignment Cues</h3>
+          <h3 className="text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">Alignment Cues</h3>
           <div className="space-y-6">
             {poseCues.cues.map((cue, index) => {
               const linkPoseNames = (cueText) => {
