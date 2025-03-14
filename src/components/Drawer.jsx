@@ -46,7 +46,7 @@ const Drawer = () => {
       <button
         ref={buttonRef}
         onClick={toggleDrawer}
-        className={`absolute top-6 bg-transparent border-none focus:outline-none transition-all duration-300 ease-in-out
+        className={`absolute top-4 bg-transparent border-none focus:outline-none transition-all duration-300 ease-in-out
         ${isDrawerOpen ? "left-56" : "left-4"}`}
         aria-label={isDrawerOpen ? "Close menu" : "Open menu"}
       >
@@ -77,7 +77,7 @@ const Drawer = () => {
           className="absolute top-4 right-4 text-charcoal/60 hover:text-charcoal transition-all duration-300"
           aria-label="Close menu"
         >
-          <X size={24} className="text-white/50 hover:text-charcoal transition-all duration-300" />
+          <X size={20} className="text-white/50 hover:text-charcoal transition-all duration-300" />
         </button>
         {/* Logo */}
         <div className="p-4 mt-4 border-b border-white/10">

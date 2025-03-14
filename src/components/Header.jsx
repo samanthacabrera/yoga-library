@@ -3,8 +3,8 @@ import Search from "./Search";
 
 const Header = () => {
     return (
-        <header className="fixed top-0 left-0 w-full z-10 bg-white flex justify-between">
-            <Link to="/" className="text-moss md:text-xl m-2 md:m-4 ml-[9vw] md:ml-[3vw]">Learn Yoga Online</Link>
+        <header className="fixed top-0 left-0 w-full h-[9vh] z-10 bg-white flex justify-center items-center space-x-8">
+            <Link to="/" className="text-moss md:text-xl">Learn Yoga Online</Link>
             <Search />
         </header>
     );
