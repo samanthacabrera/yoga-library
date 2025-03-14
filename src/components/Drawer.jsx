@@ -41,19 +41,19 @@ const Drawer = () => {
   ];
 
   return (
-    <div className="fixed top-0 left-0 h-full flex items-center z-50">
+    <div className="fixed top-0 left-0 h-full flex items-center z-40">
       {/* Toggle Button */}
       <button
         ref={buttonRef}
         onClick={toggleDrawer}
-        className={`absolute top-0 left-0 z-50 mt-2 py-3 px-2 rounded-r-lg bg-moss/90 transition-all duration-500 ease-in-out focus:outline-none 
-        ${isDrawerOpen ? "translate-x-64" : "translate-x-0"}`}
+        className={`absolute top-6 bg-transparent border-none focus:outline-none transition-all duration-300 ease-in-out
+        ${isDrawerOpen ? "left-56" : "left-4"}`}
         aria-label={isDrawerOpen ? "Close menu" : "Open menu"}
       >
         {isDrawerOpen ? (
-          <X size={20} className="text-white transition-all duration-300" />
+          <X size={20} className="hidden" />
         ) : (
-          <Menu size={20} className="text-white transition-all duration-300" />
+          <Menu size={20} className="text-charcoal/60 hover:text-charcoal transition-all duration-300" />
         )}
       </button>
 
@@ -71,6 +71,14 @@ const Drawer = () => {
         className={`fixed left-0 top-0 h-full flex flex-col w-64 bg-moss shadow transition-all duration-700 ease-in-out z-50
         ${isDrawerOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
+        {/* Close Button */}
+        <button
+          onClick={toggleDrawer}
+          className="absolute top-4 right-4 text-charcoal/60 hover:text-charcoal transition-all duration-300"
+          aria-label="Close menu"
+        >
+          <X size={24} className="text-white/50 hover:text-charcoal transition-all duration-300" />
+        </button>
         {/* Logo */}
         <div className="p-4 mt-4 border-b border-white/10">
           <a href="/" className="block text-white/80 hover:text-white text-center font-light tracking-widest py-2">
