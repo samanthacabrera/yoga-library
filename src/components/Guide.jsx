@@ -27,7 +27,7 @@ const Guide = () => {
         {/* Terminology */}
         <h3 className="text-2xl font-medium text-charcoal tracking-wide">Yoga Foundations</h3>
         <p>Yoga is more than just physical movement—it's a holistic practice that includes breathwork, meditation, and philosophy. Understanding key yoga terms and concepts will help you feel more confident as you step onto the mat.</p>
-        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+        <div className="bg-moss bg-opacity-20 rounded-2xl shadow p-4 sm:p-8 space-y-4">
             <h2 className="text-2xl sm:text-3xl text-center mb-2">Common Terms in Yoga</h2>
             <ul className="list-inside space-y-4 tracking-wide text-sm sm:text-base">
                 <li>
@@ -60,7 +60,7 @@ const Guide = () => {
         <p>
             Props are an essential part of yoga, especially for beginners. They help with alignment, provide support, and make postures more accessible. Using props doesn't mean you're less skilled—it means you're practicing safely and effectively.
         </p>
-        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+        <div className="bg-moss bg-opacity-20 rounded-2xl shadow p-4 sm:p-8 space-y-4">
             <h2 className="text-2xl sm:text-3xl text-center mb-2">Helpful Yoga Props</h2>
             <ul className="list-inside space-y-4 tracking-wide text-sm sm:text-base">
                 <li>
@@ -122,7 +122,7 @@ const Guide = () => {
         <p>
             Before you begin your practice, it’s essential to prepare your mind. These mental preparations allow you to step onto the mat with purpose, leaving behind distractions and focusing on the present moment. The following tips can help calm your mind and open up space for a peaceful and mindful practice: 
         </p>
-        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+        <div className="bg-moss bg-opacity-20 rounded-2xl shadow p-4 sm:p-8 space-y-4">
             <h2 className="text-2xl sm:text-3xl text-center mb-2">Mental Preparation</h2>
             <ul className="list-inside space-y-4 text-sm sm:text-base">
                 <li><strong>Breathing Exercises:</strong> Start with deep, diaphragmatic breathing to calm your mind and focus your attention on the present moment.</li>
@@ -133,7 +133,7 @@ const Guide = () => {
         <p>
             Preparing your body physically is just as important as preparing your mind. The more you tune into your body’s needs, the more effective and enjoyable your practice will be. These tips can help ensure your body is physically ready for your practice:
         </p>
-        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+        <div className="bg-moss bg-opacity-20 rounded-2xl shadow p-4 sm:p-8 space-y-4">
             <h2 className="text-2xl sm:text-3xl text-center mb-2">Physical Preparation</h2>
             <ul className="list-inside space-y-4 text-sm sm:text-base">
                 <li><strong>Wear Comfortable Clothing:</strong> Choose clothes that allow for freedom of movement. Avoid anything too tight or restrictive.</li>
@@ -148,7 +148,7 @@ const Guide = () => {
          <p>
                 Here are a few safe practice tips to help ensure that your yoga practice is enjoyable and injury-free:
         </p>
-        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+        <div className="bg-moss bg-opacity-20 rounded-2xl shadow p-4 sm:p-8 space-y-4">
             <h2 className="text-2xl sm:text-3xl text-center mb-2">Safe Practice Tips</h2>
             <div className="list-inside space-y-4 text-sm sm:text-base">
                 <p><strong>Listen to your body:</strong> Avoid pain or strain, and adjust your posture if needed.</p>

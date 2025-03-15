@@ -34,7 +34,7 @@ const WhatIsYoga = () => {
           The word "yoga" comes from the Sanskrit root "yuj," meaning "to unite" or "to join." This reflects the central idea of yoga: the union of the body, mind, and spirit, or the connection between the individual self and the universal consciousness. Early yogic practices were predominantly focused on meditation, breath control, and self-discipline to transcend the physical body and achieve spiritual enlightenment.
         </p>
 
-        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+        <div className="bg-moss bg-opacity-20 rounded-2xl shadow p-4 sm:p-8 space-y-4">
           <p>
             The development of yoga can be divided into several key periods:
           </p>
@@ -50,7 +50,7 @@ const WhatIsYoga = () => {
   
         <p>Over the millennia, yoga has evolved into many different styles and schools of thought, each focusing on unique aspects of the practice. These styles can be traced back to ancient teachings but have been adapted and modernized to meet the needs of contemporary practitioners. Some of the major styles of yoga include:</p>
         
-        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+        <div className="bg-moss bg-opacity-20 rounded-2xl shadow p-4 sm:p-8 space-y-4">
           <ul className="list-inside">
             <li><strong>Hatha Yoga:</strong> Hatha Yoga, meaning "forceful" or "sun and moon," is the foundation for many modern yoga practices. It emphasizes physical postures (asanas) and breath control (pranayama) to prepare the body for meditation. The practice is often slower-paced and focuses on alignment, balance, and flexibility.</li>
             <li><strong>Vinyasa Yoga:</strong> Vinyasa, which means "breath-synchronized movement," involves flowing from one pose to the next in coordination with breath. This style is dynamic and often practiced in a faster-paced sequence. It incorporates elements of both Hatha Yoga and modern movement, emphasizing fluidity and creative transitions between postures.</li>
@@ -74,7 +74,7 @@ const WhatIsYoga = () => {
           Choosing the right type of yoga depends on your goals, experience level, and preferences. Answer the questions below and see which yoga style fits you best!
         </p>
 
-        <div className="bg-moss bg-opacity-20 border border-moss rounded-2xl shadow p-4 sm:p-8 space-y-4">
+        <div className="bg-moss bg-opacity-20 rounded-2xl shadow p-4 sm:p-8 space-y-4">
           <p className="font-medium text-lg">Take the Quiz:</p>
           <ul className="list-inside space-y-4">
             <li>

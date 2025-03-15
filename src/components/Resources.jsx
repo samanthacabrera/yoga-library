@@ -7,7 +7,7 @@ const ResourceCard = ({ to, title, description }) => (
     to={to} 
     target="_blank" 
     rel="noopener noreferrer" 
-    className="group bg-moss bg-opacity-10 border border-moss h-fit md:h-[150px] p-6 text-left rounded-t-xl shadow hover:shadow-lg hover:scale-105 transition duration-500 ease-in-out flex flex-col justify-between"
+    className="group bg-moss/10 h-fit md:h-[150px] p-6 text-left rounded-t-xl shadow hover:shadow-lg hover:scale-105 transition duration-500 ease-in-out flex flex-col justify-between"
     aria-label={`Visit ${title}`}
   >
     <div className="font-medium tracking-wider group-hover:text-moss transition-colors duration-300">{title}</div>
@@ -95,7 +95,7 @@ const Resources = () => {
               className={`px-4 py-2 rounded-full text-sm transition-all duration-300 ${
                 activeCategory === category.id 
                   ? "bg-moss text-white" 
-                  : "bg-moss bg-opacity-10 hover:bg-opacity-30"
+                  : "bg-moss bg-opacity-10 hover:bg-opacity-40"
               }`}
             >
               {category.title}
