@@ -112,7 +112,7 @@ const Path = () => {
     return (
        <>
         <PageNav />
-       <div className="max-w-2xl mx-auto my-24 space-y-12">
+       <div className="max-w-2xl md:mx-auto mx-12 my-24 space-y-12">
            <h1 className="text-center my-12 text-4xl">The Eight-Limbed Path of Yoga</h1>
     
                 <p>

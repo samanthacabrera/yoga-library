@@ -32,7 +32,7 @@ const PageNav = ({ customPrev, customNext }) => {
     <div className="flex justify-between items-center my-6 lg:my-0">
       {prevPage && (
         <Link to={prevPage.to} className="fixed top-1/2 left-0 -translate-y-1/2 group flex items-center gap-1 z-40">
-          <div className="flex items-center justify-center w-12 h-24 bg-moss/20 hover:bg-moss/30 rounded-r-full pr-2 transition-all duration-300 ease-in-out group-hover:scale-[103%] group-hover:shadow-md">
+          <div className="flex items-center justify-center w-6 h-12 md:w-8 md:h-16 bg-moss/20 hover:bg-moss/30 rounded-r-full pr-2 transition-all duration-300 ease-in-out group-hover:scale-[103%] group-hover:shadow-md">
             <svg className="text-gray-400 group-hover:text-moss transition-colors duration-300" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M15 18l-6-6 6-6" />
             </svg>
@@ -47,7 +47,7 @@ const PageNav = ({ customPrev, customNext }) => {
           <div className="block absolute right-16 top-1/2 -translate-y-1/2 bg-white rounded-md px-3 py-1 border border-moss/20 opacity-0 translate-x-4 pointer-events-none group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 whitespace-nowrap">
             <span className="text-sm">{nextPage.label}</span>
           </div>
-          <div className="flex items-center justify-center w-12 h-24 bg-moss/20 hover:bg-moss/30 rounded-l-full pl-2 transition-all duration-300 ease-in-out group-hover:scale-[103%] group-hover:shadow-md">
+          <div className="flex items-center justify-center w-6 h-12 md:w-8 md:h-16 bg-moss/20 hover:bg-moss/30 rounded-l-full pl-2 transition-all duration-300 ease-in-out group-hover:scale-[103%] group-hover:shadow-md">
             <svg className="text-gray-400 group-hover:text-moss transition-colors duration-300" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M9 18l6-6-6-6" />
             </svg>

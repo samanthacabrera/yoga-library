@@ -83,7 +83,7 @@ const PosePage = () => {
             to={`/poses/${prevPose.name}`} 
             className="fixed top-1/2 left-0 -translate-y-1/2 group flex items-center gap-1 z-50"
           >
-            <div className="flex items-center justify-center w-12 h-24 bg-moss/20 hover:bg-moss/30 rounded-r-full pr-2 transition-all duration-300 ease-in-out group-hover:scale-[103%] group-hover:shadow-md">
+            <div className="flex items-center justify-center w-6 h-12 md:w-8 md:h-16 bg-moss/20 hover:bg-moss/30 rounded-r-full pr-2 transition-all duration-300 ease-in-out group-hover:scale-[103%] group-hover:shadow-md">
               <svg className="text-gray-400 group-hover:text-moss transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M15 18l-6-6 6-6" />
               </svg>
@@ -103,7 +103,7 @@ const PosePage = () => {
               <span className="text-sm">{nextPose.name}</span>
             </div>
             
-            <div className="flex items-center justify-center w-12 h-24 bg-moss/20 hover:bg-moss/30 rounded-l-full pl-2 transition-all duration-300 ease-in-out group-hover:scale-[103%] group-hover:shadow-md">
+            <div className="flex items-center justify-center w-6 h-12 md:w-8 md:h-16 bg-moss/20 hover:bg-moss/30 rounded-l-full pl-2 transition-all duration-300 ease-in-out group-hover:scale-[103%] group-hover:shadow-md">
               <svg className="text-gray-400 group-hover:text-moss transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M9 18l6-6-6-6" />
               </svg>

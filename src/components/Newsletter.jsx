@@ -52,7 +52,7 @@ const Newsletter = () => {
     return (
         <>
         <PageNav/>
-        <div className="flex flex-col min-h-screen w-full max-w-3xl mx-auto space-y-40">
+        <div className="flex flex-col min-h-screen w-full max-w-3xl md:mx-auto mx-12 space-y-40">
            <div className="mt-40">
                 <h2 className="text-lg text-center tracking-wider uppercase">Our Monthly Column:</h2>
                 <h1 className="my-12 lg:mb-20 text-6xl text-center">Beyond the Mat</h1>

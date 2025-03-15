@@ -15,7 +15,7 @@ const WhatIsYoga = () => {
       <meta name="twitter:description" content="Discover the origins, evolution, and different types of yoga practices in this comprehensive guide. Learn about the ancient discipline of yoga and find the right style for you." />
     </Helmet>
     <PageNav />
-    <div className="max-w-2xl mx-auto my-40 space-y-12">
+    <div className="max-w-2xl md:mx-auto mx-12 my-40 space-y-12">
       <h1 className="text-center text-4xl">
         What is Yoga?
       </h1>

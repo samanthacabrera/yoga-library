@@ -79,7 +79,7 @@ const Resources = () => {
   return (
     <>
     <PageNav/>
-    <div className="flex flex-col min-h-screen w-full max-w-3xl px-8 py-4 my-24 mx-auto">
+    <div className="flex flex-col min-h-screen w-full max-w-3xl px-8 py-4 my-24 md:mx-auto mx-12">
       <div className="mb-12">
         <h1 className="text-center my-12 text-4xl tracking-wide">Resources</h1>
         <p className="tracking-wide text-center max-w-2xl mx-auto">

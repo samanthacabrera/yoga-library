@@ -82,7 +82,7 @@ const Gunas = () => {
   return (
     <>
     <PageNav/>
-    <div className="max-w-2xl mx-auto my-24 space-y-12">
+    <div className="max-w-2xl md:mx-auto mx-12 my-24 space-y-12">
       <h1 className="text-center text-4xl">The Three Gunas</h1>
         <p>
           In yogic philosophy, the universe and everything within it, including our thoughts, emotions, and actions, are influenced by three fundamental qualities known as the Three Gunas: Sattva (purity and harmony), Rajas (activity and passion), and Tamas (inertia and darkness). These qualities shape our perception of the world, our decision-making, and our overall state of being. By understanding and working with these energies, we can cultivate balance and align ourselves with a life of greater clarity, purpose, and well-being.

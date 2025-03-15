@@ -160,7 +160,7 @@ const Chakras = () => {
   return (
     <>
       <PageNav/>
-    <div className="max-w-2xl mx-auto my-24 space-y-12">
+    <div className="max-w-2xl md:mx-auto mx-12 my-24 space-y-12">
       <h1 className="text-center text-4xl">The Seven Chakras</h1>
         <p>
             The human body is not just a physical structure—it is an intricate network of energy, emotions, and consciousness. At the core of this energetic system lie the seven chakras, powerful centers that govern different aspects of our well-being. Rooted in ancient yogic traditions, chakras are believed to regulate the flow of life force energy, or prana, throughout our body. When these energy centers are open and balanced, we experience physical health, emotional harmony, and spiritual connection. However, when blockages or imbalances occur, they can manifest as stress, emotional struggles, or even physical ailments.
