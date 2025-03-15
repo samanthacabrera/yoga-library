@@ -143,7 +143,7 @@ const Search = () => {
   }, {});
 
   return (
-    <div ref={searchRef} className="relative z-50">
+    <div ref={searchRef} className="absolute right-4 z-50">
       <form onSubmit={handleSearch} className="relative">
         <div 
           className={`flex items-center transition-all duration-200 ease-out border border-moss/20
