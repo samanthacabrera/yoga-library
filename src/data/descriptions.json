@@ -11,194 +11,194 @@
     "desc": "Hero Pose, or Virasana, stretches the thighs, knees, and ankles while improving posture and cultivating a sense of groundedness. This pose involves sitting on the heels with the knees bent and legs folded beneath the body. Hero Pose stretches the thighs, knees, and ankles while encouraging better posture by aligning the spine and opening the chest."
   },
   {
+    "id": 3,
+    "name": "Lotus Pose",
+    "desc": "Lotus Pose, or Padmāsana, is a foundational seated posture in yoga that emphasizes flexibility, stability, and inner calm. In this pose, you sit with your legs crossed, placing each foot on the opposite thigh, with the soles facing upward and the knees gently resting on the floor. The spine is kept tall and aligned, and the hands can rest on the knees in a mudra or with palms facing up."
+  },
+  {
     "id": 4,
     "name": "Staff Pose",
     "desc": "Staff Pose, or Dandasana in Sanskrit, is a foundational seated posture that emphasizes alignment and strength. In this pose, practitioners sit on the floor with their legs extended straight ahead, feet flexed, and hands placed on the ground beside the hips, fingers pointing forward. The spine remains tall and elongated, with the chest open and the shoulders relaxed."
   },
   {
-    "id": 25,
-    "name": "Downward-Facing Dog",
-    "desc": "Downward Dog, or Adho Mukha Svanasana, is a foundational yoga pose that promotes strength, flexibility, and balance. In this pose, your body forms an inverted 'V' shape, with hands and feet firmly grounded, hips lifted high, and the spine elongated."
-  },
-  {
-    "id": 3,
-    "name": "Plank Pose",
-    "desc": "Plank Pose, or Phalakasana, is a fundamental yoga posture that focuses on building strength and stability. The pose involves holding a position similar to a push-up, with the body in a straight line from head to heels. Plank Pose is commonly used in both beginner and advanced yoga practices as a building block for more complex poses."
-  },
-  {
-    "id": 24,
-    "name": "Four-Limbed Staff Pose",
-    "desc": "Four-Limbed Staff Pose, or Chaturanga Dandasana, is a foundational yoga pose that builds strength, stability, and focus. In this pose, the body is held parallel to the floor, supported by the hands and toes, with the elbows bent at a 90-degree angle and tucked close to the sides."
-  },
-  {
     "id": 5,
-    "name": "Upward-Facing Dog",
-    "desc": "Upward-Facing Dog, or Urdhva Mukha Svanasana in Sanskrit, is a foundational backbend and heart-opening pose.  To perform the pose, the body is supported by the hands and the tops of the feet, with the thighs and pelvis lifted off the ground. The heart is drawn forward, and the shoulders are rolled back, creating an expansive and open posture."
+    "name": "Table Top Pose",
+    "desc": "Tabletop Pose, or Bharmanasana, is a foundational posture in yoga that forms the basis for many other poses and transitions. In this pose, the practitioner starts on their hands and knees, with the wrists directly under the shoulders and the knees aligned with the hips. The back is held neutral, creating a straight line from the crown of the head to the tailbone."
   },
   {
     "id": 6,
-    "name": "Child's Pose",
-    "desc": "Child’s Pose, or Balasana in Sanskrit, is a restorative yoga pose that offers a deep sense of relaxation.  To perform Child’s Pose, you start by kneeling on the mat, then fold your torso forward, bringing your forehead to the ground while extending your arms out in front or resting them alongside your body. "
-  },
-  {
-    "id": 7,
-    "name": "Warrior I",
-    "desc": "Warrior I Pose, or Virabhadrasana I, is a foundational yoga posture symbolizing strength and focus. It involves stepping one leg forward into a lunge, with the back foot angled outward and arms extended overhead."
-  },
-  {
-    "id": 8,
-    "name": "Warrior II",
-    "desc": "Warrior II Pose, or Virabhadrasana II, is a powerful standing yoga posture that enhances strength and stability. In this pose, the practitioner steps into a wide stance, with the front knee bent at a 90-degree angle and the back leg straight. The hips and shoulders are aligned to face the side, with the arms extended parallel to the floor, palms facing down."
-  },
-  {
-    "id": 9,
-    "name": "Warrior III",
-    "desc": "Warrior III Pose, or Virabhadrasana III, is a standing balance posture that builds strength, stability, and concentration. To achieve this pose, begin by grounding one leg firmly into the mat while extending the opposite leg straight behind. The body is hinged at the hips, with the torso parallel to the floor and the arms extended forward, creating a straight line from fingertips to toes."
-  },
-  {
-    "id": 10,
-    "name": "Reverse Warrior",
-    "desc": "Reverse Warrior Pose, or Viparita Virabhadrasana, is a variation of the traditional Warrior pose.  In this pose, one leg is bent deeply, with the front knee aligned over the ankle, while the back leg remains straight and strong. The arms are extended, with one reaching down toward the front leg and the other stretching overhead, creating a deep lateral stretch through the torso and hips. "
-  },
-  {
-    "id": 11,
-    "name": "Extended Side Angle",
-    "desc": "Extended Side Angle Pose or Utthita Parsvakonasana is a dynamic standing yoga posture that stretches and strengthens the body. In this pose, one leg is bent at a right angle, while the other leg remains straight, grounding through the foot. One arm extends down to rest on the floor or a block next to the front foot, while the other arm stretches overhead, reaching in line with the body."
-  },
-  {
-    "id": 12,
-    "name": "Triangle Pose",
-    "desc": "Triangle Pose or Trikonasana is a standing posture that emphasizes balance, flexibility, and strength. In this pose, the body forms a triangle shape as the legs are spread wide, and one arm reaches towards the floor while the other extends upward, creating a line of energy from the feet to the fingertips."
-  },
-  {
-    "id": 13,
-    "name": "Half Moon Pose",
-    "desc": "Half Moon Pose or Ardha Chandrasana is a standing balance posture that combines strength and focus. In this pose, the practitioner balances on one leg while the opposite leg extends straight back and parallel to the ground, creating a crescent moon shape with the body. The torso opens to the side, with one hand reaching toward the ground for support and the other arm extended skyward, forming a long line from the fingertips to the lifted foot."
-  },
-  {
-    "id": 14,
-    "name": "Chair Pose",
-    "desc": "Chair Pose or Utkatasana is a standing posture that engages the entire body white strengthening the legs, core, and upper body. To enter the pose, begin by standing with your feet hip-width apart, then bend your knees as if you are sitting back into an invisible chair, lowering your hips toward the floor while keeping the chest lifted. The arms extend overhead with the palms facing inward, creating a strong line from the fingertips to the hips."
-  },
-  {
-    "id": 15,
-    "name": "Goddess Pose",
-    "desc": "Goddess Pose or Utkata Konasana is a powerful standing pose. To enter the pose, begin by standing with your feet wide apart, slightly turned outward, and your knees bent deeply as if sitting into an imaginary chair. The legs should be positioned in a wide stance, with the knees aligned over the toes, while the thighs remain parallel to the floor or slightly lower. Your arms are extended outward at shoulder height, with palms facing upward, engaging the shoulders and arms."
-  },
-  {
-    "id": 16,
-    "name": "Crescent High Lunge Pose",
-    "desc": "High Lunge Pose or Utthita Ashwa Sanchalanasana is a dynamic standing pose that strengthens the legs while opening the hips. To enter the pose, step one foot forward into a deep lunge, keeping the front knee bent at a 90-degree angle while the back leg is extended straight behind you with the heel lifted. The arms can be extended overhead, and the chest remains lifted with a focus on maintaining balance and alignment."
-  },
-  {
-    "id": 17,
-    "name": "Low Lunge",
-    "desc": "Low Lunge Pose or Anjaneyasana is a deep hip-opening posture. To enter the pose, start in a standing position and step one leg back, lowering the knee to the floor, and keeping the other leg bent at a 90-degree angle. The back leg remains extended, with the knee gently touching the ground and the top of the foot facing down. The arms can be extended overhead, or placed on the hips, with the chest open and the spine elongated. "
-  },
-  {
-    "id": 18,
-    "name": "Pyramid Pose",
-    "desc": "Pyramid Pose or Parsvottanasana is a standing forward fold that offers a deep stretch to the legs, hips, and spine. To enter the pose, begin with a wide stance, with one foot facing forward and the other foot turned slightly inward. As you fold over your front leg, keep your spine long and your chest open, aiming to bring your torso toward your thigh while keeping the hips squared. The back leg remains straight, with the back heel grounded, and the hands can rest on the floor or behind your back."
-  },
-  {
-    "id": 19,
-    "name": "Wide-Legged Forward Fold",
-    "desc": "Wide-Legged Forward Fold or Prasarita Padottanasana is a grounding yoga posture that stretches and strengthens the lower body. To enter the pose, you begin by standing with your feet wide apart, then slowly fold forward from the hips, allowing your chest to drop towards the floor. The hands can rest on the floor, a block, or your legs, depending on your flexibility."
-  },
-  {
-    "id": 20,
-    "name": "Side Plank Pose",
-    "desc": "Side Plank Pose, or Vasisthasana, is a balancing posture that strengthens the arms, shoulders, core, and legs while promoting flexibility and stability. In this pose, the practitioner shifts their weight onto one hand and the outside edge of the same-side foot, lifting the hips and stacking the top leg over the bottom. The body forms a straight line from head to heels, with the other arm extended upward, creating a side plank shape."
-  },
-  {
-    "id": 21,
-    "name": "Tree Pose",
-    "desc": "Tree Pose or Vrksasana is a standing balance yoga posture. In this pose, one leg is rooted firmly to the ground, while the other leg is bent and the foot is placed either on the inner thigh. The arms are typically raised above the head, with palms pressing together in a prayer position."
-  },
-  {
-    "id": 22,
-    "name": "Dancer Pose",
-    "desc": "Dancer Pose, or Natarajasana in Sanskrit, is a yoga pose that combines balance, strength, and flexibility. To enter the pose, one stands tall on one leg, grounding through the standing foot while the opposite leg is lifted backward, with the hand on the same side reaching to clasp the ankle or foot. The free arm extends forward for balance, creating a dynamic arch through the body."
-  },
-  {
-    "id": 23,
-    "name": "Eagle Pose",
-    "desc": "Eagle Pose, or Garudasana, is a posture that embodies balance and focus. In this pose, practitioners begin by standing tall and then cross one leg over the other, wrapping it around the standing leg while simultaneously crossing the arms in front of the body, bringing the palms to touch."
-  },
-  {
-    "id": 26,
-    "name": "Garland Pose",
-    "desc": "Garland Pose, or Malasana, is a deep squat that helps open the hips, stretch the lower back, and strengthen the legs. In this pose, the feet are flat on the ground with the knees bent wide apart, and the palms come together in a prayer position. Garland Pose promotes flexibility in the hips and groins while improving ankle mobility. It also encourages a sense of grounding and stability, making it a great posture for centering the mind and relieving tension in the lower body."
-  },
-  {
-    "id": 27,
-    "name": "Lotus Pose",
-    "desc": "Lotus Pose, or Padmāsana, is a foundational seated posture in yoga that emphasizes flexibility, stability, and inner calm. In this pose, you sit with your legs crossed, placing each foot on the opposite thigh, with the soles facing upward and the knees gently resting on the floor. The spine is kept tall and aligned, and the hands can rest on the knees in a mudra or with palms facing up."
-  },
-  {
-    "id": 28,
-    "name": "Lizard Pose",
-    "desc": "Lizard Pose, or Utthan Pristhasana, is a deep hip opener that targets the hips, thighs, and groin while also stretching the chest, shoulders, and spine. In this pose, the practitioner begins in a low lunge with one foot forward, and then lowers the hips while bringing the forearms to the floor, deepening the stretch. The back leg extends straight behind, and the chest stays open, allowing for a stretch in the hip flexors and the inner thighs."
-  },
-  {
-    "id": 29,
-    "name": "Frog Pose",
-    "desc": "Frog Pose, or Mandukasana, is a hip-opening posture that stretches and strengthens the lower body. To enter the pose, begin by kneeling on the mat with your knees wide apart and your feet turned outward, so the soles face each other. Place your hands on the floor between your legs, keeping your arms straight, and lower your torso towards the ground, aiming to bring your chest closer to the floor."
-  },
-  {
-    "id": 30,
-    "name": "Supine Spinal Twist Pose",
-    "desc": "Supine Spinal Twist Pose, or Supta Matsyendrasana, is a soothing pose that gently stretches the spine, hips, and shoulders while promoting relaxation and flexibility. In this pose, you lie on your back and draw one knee toward your chest, then guide it across your body for a deep twist, extending the opposite arm out to the side."
-  },
-  {
-    "id": 31,
-    "name": "Camel Pose",
-    "desc": "Camel Pose, or Ustrasana, is a backbend that opens up the chest, stretches the spine, and strengthens the legs. In this pose, you kneel with your knees hip-width apart and your hands placed on your lower back. As you inhale, you arch your back, lifting your chest towards the sky while reaching for your heels with your hands."
-  },
-  {
-    "id": 32,
-    "name": "Bridge Pose",
-    "desc": "Bridge Pose, or Setu Bandhasana, is a gentle backbend that strengthens the glutes, lower back, and legs while opening the chest. To enter the pose, lie on your back with your feet flat on the floor, hip-width apart, and your knees bent. Press your feet into the ground and lift your hips toward the ceiling, creating a backbend."
-  },
-  {
-    "id": 33,
-    "name": "Wheel Pose",
-    "desc": "Wheel Pose, or Chakrasana (also known as Urdhva Dhanurasana), is a deep backbend that opens the chest, strengthens the arms and legs, and stretches the spine. In the finished shape, the body forms an arch with the hands and feet pressing into the floor, lifting the hips and chest toward the ceiling."
-  },
-  {
-    "id": 34,
-    "name": "Standing Forward Fold",
-    "desc": "Standing Forward Fold, or Uttānāsana, is a grounding forward bend that stretches the hamstrings, calves, and lower back while calming the mind. In this pose, you hinge at the hips with a long spine, allowing your upper body to drape over your legs as you ground through your feet. The crown of your head reaches toward the earth, creating a gentle release for the back, while your hamstrings and calves stretch deeply."
-  },
-  {
-    "id": 35,
-    "name": "Boat Pose",
-    "desc": "Boat Pose or Navasana is a dynamic seated posture that builds core strength, balance, and focus. In this pose, the body forms a V-shape, with the legs lifted and extended forward, the spine elongated, and the arms reaching out parallel to the floor."
-  },
-  {
-    "id": 36,
     "name": "Cat Pose",
     "desc": "Cat Pose, or Marjaryasana in Sanskrit, is a dynamic yoga pose that promotes spinal flexibility and releases tension. To perform Cat Pose, begin on your hands and knees in a tabletop position, with your wrists directly beneath your shoulders and your knees beneath your hips. As you exhale, round your spine upward, drawing your belly button toward your spine and tucking your chin to your chest. This pose helps improve posture, relieve tension in the back, and enhance mobility in the spine."
   },
   {
-    "id": 37,
+    "id": 7,
     "name": "Cow Pose",
     "desc": "Cow Pose, or Bitilasana in Sanskrit, is a gentle backbend that works to open the chest and stretch the spine. To perform Cow Pose, begin on your hands and knees in a tabletop position, with your wrists aligned under your shoulders and your knees under your hips. As you inhale, drop your belly toward the mat, lifting your tailbone and chest upward while gazing forward, creating a slight arch in your back. This pose helps improve spinal flexibility, encourages deep breathing, and stretches the front of the body, particularly the chest and abdomen."
   },
   {
-    "id": 38,
+    "id": 8,
+    "name": "Child's Pose",
+    "desc": "Child’s Pose, or Balasana in Sanskrit, is a restorative yoga pose that offers a deep sense of relaxation.  To perform Child’s Pose, you start by kneeling on the mat, then fold your torso forward, bringing your forehead to the ground while extending your arms out in front or resting them alongside your body. "
+  },
+  {
+    "id": 9,
+    "name": "Puppy Pose",
+    "desc": "Puppy Pose, known in Sanskrit as Uttana Shishosana, stretches the spine, shoulders, and chest, creating space and relieving tension in the upper back. The practitioner stretches forward from all fours, with hips over knees, arms extended, and chest melting toward the floor. The forehead or chin rests on the mat, creating a gentle arch in the spine and a playful, heart-opening shape."
+  },
+  {
+    "id": 10,
+    "name": "Tree Pose",
+    "desc": "Tree Pose or Vrksasana is a standing balance yoga posture. In this pose, one leg is rooted firmly to the ground, while the other leg is bent and the foot is placed either on the inner thigh. The arms are typically raised above the head, with palms pressing together in a prayer position."
+  },
+  {
+    "id": 11,
     "name": "Bound Angle Pose",
     "desc": "Bound Angle Pose, or Baddha Konasana, is a seated yoga posture that deeply stretches the inner thighs, hips, and groin while promoting flexibility and relaxation. In this pose, you sit on the floor with your spine tall and legs bent, bringing the soles of your feet together, allowing your knees to open wide to each side."
   },
   {
-    "id": 39,
+    "id": 12,
+    "name": "Supine Spinal Twist Pose",
+    "desc": "Supine Spinal Twist Pose, or Supta Matsyendrasana, is a soothing pose that gently stretches the spine, hips, and shoulders while promoting relaxation and flexibility. In this pose, you lie on your back and draw one knee toward your chest, then guide it across your body for a deep twist, extending the opposite arm out to the side."
+  },
+  {
+    "id": 13,
     "name": "Happy Baby Pose",
     "desc": "Happy Baby Pose, or Ananda Balasana, is a restorative pose that relaxes the body and gently stretches the hips, lower back, and thighs. Lying on your back, draw your knees toward your chest and grasp the outsides of your feet with your hands, keeping your arms inside your legs. Bend your knees and open them wide, bringing them toward the floor beside your torso, with the soles of your feet facing the ceiling."
   },
   {
-    "id": 40,
+    "id": 14,
     "name": "Corpse Pose",
     "desc": "Corpse Pose or Savasana is a deeply restorative and meditative yoga posture that allows the body and mind to fully relax. Typically performed at the end of a yoga session, it involves lying flat on the back with the legs extended and the arms relaxed by the sides, palms facing upward."
+  },
+  {
+    "id": 15,
+    "name": "Plank Pose",
+    "desc": "Plank Pose, or Phalakasana, is a fundamental yoga posture that focuses on building strength and stability. The pose involves holding a position similar to a push-up, with the body in a straight line from head to heels. Plank Pose is commonly used in both beginner and advanced yoga practices as a building block for more complex poses."
+  },
+  {
+    "id": 16,
+    "name": "Four-Limbed Staff Pose",
+    "desc": "Four-Limbed Staff Pose, or Chaturanga Dandasana, is a foundational yoga pose that builds strength, stability, and focus. In this pose, the body is held parallel to the floor, supported by the hands and toes, with the elbows bent at a 90-degree angle and tucked close to the sides."
+  },
+  {
+    "id": 17,
+    "name": "Upward-Facing Dog",
+    "desc": "Upward-Facing Dog, or Urdhva Mukha Svanasana in Sanskrit, is a foundational backbend and heart-opening pose.  To perform the pose, the body is supported by the hands and the tops of the feet, with the thighs and pelvis lifted off the ground. The heart is drawn forward, and the shoulders are rolled back, creating an expansive and open posture."
+  },
+  {
+    "id": 18,
+    "name": "Downward-Facing Dog",
+    "desc": "Downward Dog, or Adho Mukha Svanasana, is a foundational yoga pose that promotes strength, flexibility, and balance. In this pose, your body forms an inverted 'V' shape, with hands and feet firmly grounded, hips lifted high, and the spine elongated."
+  },
+  {
+    "id": 19,
+    "name": "Garland Pose",
+    "desc": "Garland Pose, or Malasana, is a deep squat that helps open the hips, stretch the lower back, and strengthen the legs. In this pose, the feet are flat on the ground with the knees bent wide apart, and the palms come together in a prayer position. Garland Pose promotes flexibility in the hips and groins while improving ankle mobility. It also encourages a sense of grounding and stability, making it a great posture for centering the mind and relieving tension in the lower body."
+  },
+  {
+    "id": 20,
+    "name": "Frog Pose",
+    "desc": "Frog Pose, or Mandukasana, is a hip-opening posture that stretches and strengthens the lower body. To enter the pose, begin by kneeling on the mat with your knees wide apart and your feet turned outward, so the soles face each other. Place your hands on the floor between your legs, keeping your arms straight, and lower your torso towards the ground, aiming to bring your chest closer to the floor."
+  },
+  {
+    "id": 21,
+    "name": "Goddess Pose",
+    "desc": "Goddess Pose or Utkata Konasana is a powerful standing pose. To enter the pose, begin by standing with your feet wide apart, slightly turned outward, and your knees bent deeply as if sitting into an imaginary chair. The legs should be positioned in a wide stance, with the knees aligned over the toes, while the thighs remain parallel to the floor or slightly lower. Your arms are extended outward at shoulder height, with palms facing upward, engaging the shoulders and arms."
+  },
+  {
+    "id": 22,
+    "name": "Pyramid Pose",
+    "desc": "Pyramid Pose or Parsvottanasana is a standing forward fold that offers a deep stretch to the legs, hips, and spine. To enter the pose, begin with a wide stance, with one foot facing forward and the other foot turned slightly inward. As you fold over your front leg, keep your spine long and your chest open, aiming to bring your torso toward your thigh while keeping the hips squared. The back leg remains straight, with the back heel grounded, and the hands can rest on the floor or behind your back."
+  },
+  {
+    "id": 23,
+    "name": "Lizard Pose",
+    "desc": "Lizard Pose, or Utthan Pristhasana, is a deep hip opener that targets the hips, thighs, and groin while also stretching the chest, shoulders, and spine. In this pose, the practitioner begins in a low lunge with one foot forward, and then lowers the hips while bringing the forearms to the floor, deepening the stretch. The back leg extends straight behind, and the chest stays open, allowing for a stretch in the hip flexors and the inner thighs."
+  },
+  {
+    "id": 24,
+    "name": "Low Lunge",
+    "desc": "Low Lunge Pose or Anjaneyasana is a deep hip-opening posture. To enter the pose, start in a standing position and step one leg back, lowering the knee to the floor, and keeping the other leg bent at a 90-degree angle. The back leg remains extended, with the knee gently touching the ground and the top of the foot facing down. The arms can be extended overhead, or placed on the hips, with the chest open and the spine elongated. "
+  },
+  {
+    "id": 25,
+    "name": "Crescent High Lunge Pose",
+    "desc": "High Lunge Pose or Utthita Ashwa Sanchalanasana is a dynamic standing pose that strengthens the legs while opening the hips. To enter the pose, step one foot forward into a deep lunge, keeping the front knee bent at a 90-degree angle while the back leg is extended straight behind you with the heel lifted. The arms can be extended overhead, and the chest remains lifted with a focus on maintaining balance and alignment."
+  },
+  {
+    "id": 26,
+    "name": "Warrior I",
+    "desc": "Warrior I Pose, or Virabhadrasana I, is a foundational yoga posture symbolizing strength and focus. It involves stepping one leg forward into a lunge, with the back foot angled outward and arms extended overhead."
+  },
+  {
+    "id": 27,
+    "name": "Warrior II",
+    "desc": "Warrior II Pose, or Virabhadrasana II, is a powerful standing yoga posture that enhances strength and stability. In this pose, the practitioner steps into a wide stance, with the front knee bent at a 90-degree angle and the back leg straight. The hips and shoulders are aligned to face the side, with the arms extended parallel to the floor, palms facing down."
+  },
+  {
+    "id": 28,
+    "name": "Warrior III",
+    "desc": "Warrior III Pose, or Virabhadrasana III, is a standing balance posture that builds strength, stability, and concentration. To achieve this pose, begin by grounding one leg firmly into the mat while extending the opposite leg straight behind. The body is hinged at the hips, with the torso parallel to the floor and the arms extended forward, creating a straight line from fingertips to toes."
+  },
+  {
+    "id": 29,
+    "name": "Reverse Warrior",
+    "desc": "Reverse Warrior Pose, or Viparita Virabhadrasana, is a variation of the traditional Warrior pose.  In this pose, one leg is bent deeply, with the front knee aligned over the ankle, while the back leg remains straight and strong. The arms are extended, with one reaching down toward the front leg and the other stretching overhead, creating a deep lateral stretch through the torso and hips. "
+  },
+  {
+    "id": 30,
+    "name": "Extended Side Angle",
+    "desc": "Extended Side Angle Pose or Utthita Parsvakonasana is a dynamic standing yoga posture that stretches and strengthens the body. In this pose, one leg is bent at a right angle, while the other leg remains straight, grounding through the foot. One arm extends down to rest on the floor or a block next to the front foot, while the other arm stretches overhead, reaching in line with the body."
+  },
+  {
+    "id": 31,
+    "name": "Triangle Pose",
+    "desc": "Triangle Pose or Trikonasana is a standing posture that emphasizes balance, flexibility, and strength. In this pose, the body forms a triangle shape as the legs are spread wide, and one arm reaches towards the floor while the other extends upward, creating a line of energy from the feet to the fingertips."
+  },
+  {
+    "id": 32,
+    "name": "Half Moon Pose",
+    "desc": "Half Moon Pose or Ardha Chandrasana is a standing balance posture that combines strength and focus. In this pose, the practitioner balances on one leg while the opposite leg extends straight back and parallel to the ground, creating a crescent moon shape with the body. The torso opens to the side, with one hand reaching toward the ground for support and the other arm extended skyward, forming a long line from the fingertips to the lifted foot."
+  },
+  {
+    "id": 33,
+    "name": "Side Plank Pose",
+    "desc": "Side Plank Pose, or Vasisthasana, is a balancing posture that strengthens the arms, shoulders, core, and legs while promoting flexibility and stability. In this pose, the practitioner shifts their weight onto one hand and the outside edge of the same-side foot, lifting the hips and stacking the top leg over the bottom. The body forms a straight line from head to heels, with the other arm extended upward, creating a side plank shape."
+  },
+  {
+    "id": 34,
+    "name": "Upward Plank Pose",
+    "desc": "The Upward Plank Pose, or Purvottanasana, is a rejuvenating and strength-building yoga posture that opens the chest, shoulders, and front body. To perform this pose, the practitioner starts seated with legs extended forward and palms pressed into the mat slightly behind the hips, fingers pointing toward the feet, then lifts the hips to create a straight line from shoulders to heels, resembling an upward-facing plank."
+  },
+  {
+    "id": 35,
+    "name": "Chair Pose",
+    "desc": "Chair Pose or Utkatasana is a standing posture that engages the entire body white strengthening the legs, core, and upper body. To enter the pose, begin by standing with your feet hip-width apart, then bend your knees as if you are sitting back into an invisible chair, lowering your hips toward the floor while keeping the chest lifted. The arms extend overhead with the palms facing inward, creating a strong line from the fingertips to the hips."
+  },
+  {
+    "id": 36,
+    "name": "Eagle Pose",
+    "desc": "Eagle Pose, or Garudasana, is a posture that embodies balance and focus. In this pose, practitioners begin by standing tall and then cross one leg over the other, wrapping it around the standing leg while simultaneously crossing the arms in front of the body, bringing the palms to touch."
+  },
+  {
+    "id": 37,
+    "name": "Standing Forward Fold",
+    "desc": "Standing Forward Fold, or Uttānāsana, is a grounding forward bend that stretches the hamstrings, calves, and lower back while calming the mind. In this pose, you hinge at the hips with a long spine, allowing your upper body to drape over your legs as you ground through your feet. The crown of your head reaches toward the earth, creating a gentle release for the back, while your hamstrings and calves stretch deeply."
+  },
+  {
+    "id": 38,
+    "name": "Wide-Legged Forward Fold",
+    "desc": "Wide-Legged Forward Fold or Prasarita Padottanasana is a grounding yoga posture that stretches and strengthens the lower body. To enter the pose, you begin by standing with your feet wide apart, then slowly fold forward from the hips, allowing your chest to drop towards the floor. The hands can rest on the floor, a block, or your legs, depending on your flexibility."
+  },
+  {
+    "id": 39,
+    "name": "Thread the Needle",
+    "desc": "Thread the Needle Pose, or Urdhva Mukha Pasasana,  is a gentle, grounding yoga pose that fosters relaxation and connection. In this posture, one arm threads under the opposite arm, bringing a twist to the upper body while resting the shoulder and cheek on the mat. This action promotes release in the shoulders, neck, and upper back, while also encouraging introspection and balance."
+  },
+  {
+    "id": 40,
+    "name": "Gate Pose",
+    "desc": "Gate Pose ,or Parighasana, is a yoga posture that offers a deep stretch to the entire body, particularly the sides, hips, and legs. To enter the pose, begin by kneeling on the mat with your knees hip-width apart and your legs extended wide apart. One leg is kept straight, and the other knee remains bent with the foot firmly planted on the floor. Reach the arm on the side of the straight leg overhead, while the opposite hand rests on the bent knee or the floor for support."
   },
   {
     "id": 41,
@@ -207,47 +207,47 @@
   },
   {
     "id": 42,
+    "name": "Camel Pose",
+    "desc": "Camel Pose, or Ustrasana, is a backbend that opens up the chest, stretches the spine, and strengthens the legs. In this pose, you kneel with your knees hip-width apart and your hands placed on your lower back. As you inhale, you arch your back, lifting your chest towards the sky while reaching for your heels with your hands."
+  },
+  {
+    "id": 43,
+    "name": "Bridge Pose",
+    "desc": "Bridge Pose, or Setu Bandhasana, is a gentle backbend that strengthens the glutes, lower back, and legs while opening the chest. To enter the pose, lie on your back with your feet flat on the floor, hip-width apart, and your knees bent. Press your feet into the ground and lift your hips toward the ceiling, creating a backbend."
+  },
+  {
+    "id": 44,
     "name": "Locust Pose",
     "desc": "Locust Pose, or Salabhasana, is a strengthening backbend that targets the back, glutes, and legs while improving spinal flexibility. From a prone position with arms extended behind and palms facing down, the practitioner lifts the chest, legs, and arms, creating a deep front-body extension."
   },
   {
-    "id": 43,
-    "name": "Bow Pose",
-    "desc": "Bow Pose, known as Dhanurasana in Sanskrit, is a yoga posture that embodies strength, flexibility, and openness. It is practiced by lying on the stomach, bending the knees, and grasping the ankles while lifting the chest and thighs off the ground."
-  },
-  {
-    "id": 44,
-    "name": "Puppy Pose",
-    "desc": "Puppy Pose, known in Sanskrit as Uttana Shishosana, stretches the spine, shoulders, and chest, creating space and relieving tension in the upper back. The practitioner stretches forward from all fours, with hips over knees, arms extended, and chest melting toward the floor. The forehead or chin rests on the mat, creating a gentle arch in the spine and a playful, heart-opening shape."
-  },
-  {
     "id": 45,
-    "name": "Table Top Pose",
-    "desc": "Tabletop Pose, or Bharmanasana, is a foundational posture in yoga that forms the basis for many other poses and transitions. In this pose, the practitioner starts on their hands and knees, with the wrists directly under the shoulders and the knees aligned with the hips. The back is held neutral, creating a straight line from the crown of the head to the tailbone."
-  },
-  {
-    "id": 46,
-    "name": "Thread the Needle",
-    "desc": "Thread the Needle Pose, or Urdhva Mukha Pasasana,  is a gentle, grounding yoga pose that fosters relaxation and connection. In this posture, one arm threads under the opposite arm, bringing a twist to the upper body while resting the shoulder and cheek on the mat. This action promotes release in the shoulders, neck, and upper back, while also encouraging introspection and balance."
-  },
-  {
-    "id": 47,
-    "name": "Upward Plank Pose",
-    "desc": "The Upward Plank Pose, or Purvottanasana, is a rejuvenating and strength-building yoga posture that opens the chest, shoulders, and front body. To perform this pose, the practitioner starts seated with legs extended forward and palms pressed into the mat slightly behind the hips, fingers pointing toward the feet, then lifts the hips to create a straight line from shoulders to heels, resembling an upward-facing plank."
-  },
-  {
-    "id": 48,
     "name": "Half Pigeon Pose",
     "desc": "Half Pigeon Pose, or Ardha Kapotasana, is a deeply restorative yoga posture that targets the hips, glutes, and lower back, offering a profound stretch and release of tension. To perform this pose, the practitioner begins in a tabletop position and brings one knee forward, placing it behind the wrist while extending the opposite leg straight back behind them. The torso is then lowered toward the floor, with the arms either extended forward or resting on the mat."
   },
   {
-    "id": 49,
+    "id": 46,
+    "name": "Boat Pose",
+    "desc": "Boat Pose or Navasana is a dynamic seated posture that builds core strength, balance, and focus. In this pose, the body forms a V-shape, with the legs lifted and extended forward, the spine elongated, and the arms reaching out parallel to the floor."
+  },
+  {
+    "id": 47,
     "name": "Plow Pose",
     "desc": "Plow Pose, or Halasana, is an inversion that stretches the spine, shoulders, and neck while calming the mind and revitalizing the body. To enter the pose, start by lying flat on your back with your arms alongside your body. Lift your legs overhead, engaging your core, and slowly guide them toward the floor behind your head, keeping your torso lifted and supported by your shoulders. Your hands can remain on the floor for support or interlace behind your back to deepen the shoulder stretch."
   },
   {
+    "id": 48,
+    "name": "Dancer Pose",
+    "desc": "Dancer Pose, or Natarajasana in Sanskrit, is a yoga pose that combines balance, strength, and flexibility. To enter the pose, one stands tall on one leg, grounding through the standing foot while the opposite leg is lifted backward, with the hand on the same side reaching to clasp the ankle or foot. The free arm extends forward for balance, creating a dynamic arch through the body."
+  },
+  {
+    "id": 49,
+    "name": "Bow Pose",
+    "desc": "Bow Pose, known as Dhanurasana in Sanskrit, is a yoga posture that embodies strength, flexibility, and openness. It is practiced by lying on the stomach, bending the knees, and grasping the ankles while lifting the chest and thighs off the ground."
+  },
+  {
     "id": 50,
-    "name": "Gate Pose",
-    "desc": "Gate Pose ,or Parighasana, is a yoga posture that offers a deep stretch to the entire body, particularly the sides, hips, and legs. To enter the pose, begin by kneeling on the mat with your knees hip-width apart and your legs extended wide apart. One leg is kept straight, and the other knee remains bent with the foot firmly planted on the floor. Reach the arm on the side of the straight leg overhead, while the opposite hand rests on the bent knee or the floor for support."
+    "name": "Wheel Pose",
+    "desc": "Wheel Pose, or Chakrasana (also known as Urdhva Dhanurasana), is a deep backbend that opens the chest, strengthens the arms and legs, and stretches the spine. In the finished shape, the body forms an arch with the hands and feet pressing into the floor, lifting the hips and chest toward the ceiling."
   }
 ]
