@@ -8,7 +8,7 @@
     "benefit": ["Improve Posture", "Increase Awareness", "Improve Balance"],
     "part": ["Spine", "Legs"]
   },
-  {
+  { 
     "id": 2,
     "name": "Hero Pose",
     "image": "/hero-pose.png",
@@ -18,7 +18,7 @@
     "part": ["Hips", "Spine"]
   },
   {
-    "id": 27,
+    "id": 3,
     "name": "Lotus Pose",
     "image": "/lotus-pose.png",
     "chakra": ["Root", "Crown", "Third Eye", "Sacral"],
@@ -36,7 +36,7 @@
     "part": ["Hips", "Spine"]
   },
   {
-    "id": 45,
+    "id": 5,
     "name": "Table Top Pose",
     "image": "/tabletop-pose.png",
     "chakra": ["Sacral", "Root"],
@@ -45,7 +45,7 @@
     "part": ["Back", "Arms"]
   },
   {
-    "id": 36,
+    "id": 6,
     "name": "Cat Pose",
     "image": "/cat-pose.png",
     "chakra": ["Sacral", "Root", "Solar Plexus"],
@@ -54,7 +54,7 @@
     "part": ["Spine"]
   },
   {
-    "id": 37,
+    "id": 7,
     "name": "Cow Pose",
     "image": "/cow-pose.png",
     "chakra": ["Heart", "Root"],
@@ -63,7 +63,7 @@
     "part": ["Chest", "Shoulders"]
   },
   {
-    "id": 6,
+    "id": 8,
     "name": "Child's Pose",
     "image": "/child-pose.png",
     "chakra": ["Root", "Third Eye","Solar Plexus", "Crown"],
@@ -72,7 +72,7 @@
     "part": ["Spine", "Hips"]
   },
   {
-    "id": 44,
+    "id": 9,
     "name": "Puppy Pose",
     "image": "/puppy-pose.png",
     "chakra": ["Heart", "Throat", "Sacral", "Root"],
@@ -81,7 +81,7 @@
     "part": ["Spine", "Shoulders"]
   },
   {
-    "id": 21,
+    "id": 10,
     "name": "Tree Pose",
     "image": "/tree-pose.png",
     "chakra": ["Root", "Third Eye", "Sacral"],
@@ -90,7 +90,7 @@
     "part": ["Legs", "Hips"]
   },
   {
-    "id": 38,
+    "id": 11,
     "name": "Bound Angle Pose",
     "image": "/bound-angle-pose.png",
     "chakra": ["Root","Sacral"],
@@ -99,7 +99,7 @@
     "part": ["Hips", "Back"]
   },
   {
-    "id": 30,
+    "id": 12,
     "name": "Supine Spinal Twist Pose",
     "image": "/supine-twist.png",
     "chakra": ["Root", "Sacral"],
@@ -108,7 +108,7 @@
     "part": ["Spine", "Back"]
   },
   {
-    "id": 39,
+    "id": 13,
     "name": "Happy Baby Pose",
     "image": "/happy-baby-pose.png",
     "chakra": ["Root", "Sacral"],
@@ -117,7 +117,7 @@
     "part": ["Hips", "Back"]
   },
   {
-    "id": 40,
+    "id": 14,
     "name": "Corpse Pose",
     "image": "/corpse-pose.png",
     "chakra": ["Crown", "Heart"],
@@ -126,7 +126,7 @@
     "part": ["Back"]
   },
   {
-    "id": 3,
+    "id": 15,
     "name": "Plank Pose",
     "image": "/plank-pose.png",
     "chakra": ["Solar Plexus", "Root"],
@@ -135,7 +135,7 @@
     "part": ["Core", "Shoulders"]
   },
   {
-    "id": 24,
+    "id": 16,
     "name": "Four-Limbed Staff Pose",
     "image": "/chaturanga.png",
     "chakra": ["Solar Plexus", "Root"],
@@ -144,7 +144,7 @@
     "part": ["Core", "Shoulders"]
   },
   {
-    "id": 5,
+    "id": 17,
     "name": "Upward-Facing Dog",
     "image": "/upward-facing-dog.png",
     "chakra": ["Heart", "Solar Plexus"],
@@ -153,7 +153,7 @@
     "part": ["Spine", "Chest"]
   },
   {
-    "id": 25,
+    "id": 18,
     "name": "Downward-Facing Dog",
     "image": "/downward-facing-dog.png",
     "chakra": ["Root", "Solar Plexus", "Heart", "Throat", "Third Eye", "Crown"],
@@ -162,7 +162,7 @@
     "part": ["Arms", "Shoulders", "Spine", "Legs"]
   },
   {
-    "id": 26,
+    "id": 19,
     "name": "Garland Pose",
     "image": "/garland-pose.png",
     "chakra": ["Root", "Sacral"],
@@ -171,7 +171,7 @@
     "part": ["Hips", "Back"]
   },
   {
-    "id": 29,
+    "id": 20,
     "name": "Frog Pose",
     "image": "/frog-pose.png",
     "chakra": ["Root"],
@@ -180,7 +180,7 @@
     "part": ["Hips", "Thighs"]
   },
   {
-    "id": 15,
+    "id": 21,
     "name": "Goddess Pose",
     "image": "/goddess-pose.png",
     "chakra": ["Root", "Sacral", "Heart"],
@@ -189,7 +189,7 @@
     "part": ["Legs", "Hips", "Arms"]
   },
   {
-    "id": 18,
+    "id": 22,
     "name": "Pyramid Pose",
     "image": "/pyramid-pose.png",
     "chakra": ["Root", "Sacral", "Solar Plexus"],
@@ -198,7 +198,7 @@
     "part": ["Legs", "Spine", "Hips"]
   },
   {
-    "id": 28,
+    "id": 23,
     "name": "Lizard Pose",
     "image": "/lizard-pose.png",
     "chakra": ["Root", "Solar Plexus", "Sacral"],
@@ -207,7 +207,7 @@
     "part": ["Hips"]
   },
   {
-    "id": 17,
+    "id": 24,
     "name": "Low Lunge",
     "image": "/low-lunge.png",
     "chakra": ["Root", "Sacral", "Heart"],
@@ -216,7 +216,7 @@
     "part": ["Legs", "Hips"]
   },
   {
-    "id": 16,
+    "id": 25,
     "name": "Crescent High Lunge Pose",
     "image": "/high-lunge.png",
     "chakra": ["Root", "Solar Plexus", "Heart"],
@@ -225,7 +225,7 @@
     "part": ["Legs", "Hips", "Shoulders"]
   },
   {
-    "id": 7,
+    "id": 26,
     "name": "Warrior I",
     "image": "/warrior-I.png",
     "chakra": ["Root", "Heart", "Solar Plexus"],
@@ -234,7 +234,7 @@
     "part": ["Legs", "Arms", "Chest"]
   },
   {
-    "id": 8,
+    "id": 27,
     "name": "Warrior II",
     "image": "/warrior-II.png",
     "chakra": ["Root", "Solar Plexus", "Sacral", "Third Eye"],
@@ -243,7 +243,7 @@
     "part": ["Legs", "Hips", "Arms", "Spine"]
   },
   {
-    "id": 9,
+    "id": 28,
     "name": "Warrior III",
     "image": "",
     "chakra": ["Root", "Heart", "Solar Plexus", "Sacral", "Third Eye", "Throat", "Crown"],
@@ -252,7 +252,7 @@
     "part": ["Legs", "Hips", "Arms"]
   },
   { 
-    "id": 10,
+    "id": 29,
     "name": "Reverse Warrior",
     "image": "/reverse-warrior.png",
     "chakra": ["Root", "Heart"],
@@ -261,7 +261,7 @@
     "part": ["Legs", "Arms", "Side Body"]
   },
   {
-    "id": 11,
+    "id": 30,
     "name": "Extended Side Angle",
     "image": "/extended-side-angle.png",
     "chakra": ["Root", "Sacral", "Heart", "Solar Plexus"],
@@ -270,7 +270,7 @@
     "part": ["Legs", "Hips", "Side Body", "Shoulders"]
   },
   {
-    "id": 12,
+    "id": 31,
     "name": "Triangle Pose",
     "image": "/triangle-pose.png",
     "chakra": ["Root", "Heart"],
@@ -279,7 +279,7 @@
     "part": ["Legs", "Hips", "Spine","Side Body"]
   },
   {
-    "id": 13,
+    "id": 32,
     "name": "Half Moon Pose",
     "image": "/half-moon-pose.png",
     "chakra": ["Root", "Heart", "Solar Plexus", "Sacral"],
@@ -288,7 +288,7 @@
     "part": ["Legs", "Core", "Hips", "Spine"]
   },
   {
-    "id": 20,
+    "id": 33,
     "name": "Side Plank Pose",
     "image": "/side-plank-pose.png",
     "chakra": ["Solar Plexus"],
@@ -297,7 +297,7 @@
     "part": ["Arms", "Core"]
   },
   {
-    "id": 47,
+    "id": 34,
     "name": "Upward Plank Pose",
     "image": "/reverse-plank-pose.png",
     "chakra": ["Solar Plexus", "Heart", "Third Eye", "Throat"],
@@ -306,7 +306,7 @@
     "part": ["Core", "Arms"]
   },
   {
-    "id": 14,
+    "id": 35,
     "name": "Chair Pose",
     "image": "/chair-pose.png",
     "chakra": ["Root", "Solar Plexus", "Heart"],
@@ -315,7 +315,7 @@
     "part": ["Legs", "Glutes", "Arms"]
   },
   {
-    "id": 23,
+    "id": 36,
     "name": "Eagle Pose",
     "image": "/eagle-pose.png",
     "chakra": ["Root", "Sacral"],
@@ -324,7 +324,7 @@
     "part": ["Legs", "Arms"]
   },
   {
-    "id": 34,
+    "id": 37,
     "name": "Standing Forward Fold",
     "image": "/standing-forward-fold.png",
     "chakra": ["Root", "Crown", "Sacral", "Solar Plexus"],
@@ -333,7 +333,7 @@
     "part": ["Spine", "Legs"]
   },
   {
-    "id": 19,
+    "id": 38,
     "name": "Wide-Legged Forward Fold",
     "image": "/wide-leg-forward-fold.png",
     "chakra": ["Root", "Sacral"],
@@ -342,7 +342,7 @@
     "part": ["Spine", "Legs", "Hips"]
   },
   {
-    "id": 46,
+    "id": 39,
     "name": "Thread the Needle",
     "image": "/thread-the-needle.png",
     "chakra": ["Heart","Sacral"],
@@ -351,7 +351,7 @@
     "part": ["Shoulders", "Back"]
   },
   {
-    "id": 50,
+    "id": 40,
     "name": "Gate Pose",
     "image": "/gate-pose.png",
     "chakra": ["Root", "Sacral", "Solar Plexus"],
@@ -369,7 +369,7 @@
     "part": ["Spine", "Chest"]
   },
   {
-    "id": 31,
+    "id": 42,
     "name": "Camel Pose",
     "image": "/camel-pose.png",
     "chakra": ["Crown", "Third Eye", "Throat", "Heart", "Solar Plexus"],
@@ -378,7 +378,7 @@
     "part": ["Back", "Chest"]
   },
   {
-    "id": 32,
+    "id": 43,
     "name": "Bridge Pose",
     "image": "/bridge-pose.png",
     "chakra": ["Crown", "Heart", "Third Eye", "Throat", "Solar Plexus", "Root"],
@@ -387,7 +387,7 @@
     "part": ["Back", "Glutes"]
   },
   {
-    "id": 42,
+    "id": 44,
     "name": "Locust Pose",
     "image": "/locust-pose.png",
     "chakra": ["Solar Plexus", "Sacral", "Throat","Root"],
@@ -396,7 +396,7 @@
     "part": ["Back", "Glutes"]
   },
   {
-    "id": 48,
+    "id": 45,
     "name": "Half Pigeon Pose",
     "image": "/pigeon-pose.png",
     "chakra": ["Root", "Throat", "Heart","Sacral"],
@@ -405,7 +405,7 @@
     "part": ["Hips", "Legs"]
   },
   {
-    "id": 35,
+    "id": 46,
     "name": "Boat Pose",
     "image": "/boat-pose.png",
     "chakra": ["Solar Plexus"],
@@ -414,7 +414,7 @@
     "part": ["Core"]
   },
   {
-    "id": 49,
+    "id": 47,
     "name": "Plow Pose",
     "image": "/plow-pose.png",
     "chakra": ["Throat", "Crown", "Third Eye", "Solar Plexus"],
@@ -423,7 +423,7 @@
     "part": ["Spine", "Back"]
   },
   {
-    "id": 22,
+    "id": 48,
     "name": "Dancer Pose",
     "image": "/dancer-pose.png",
     "chakra": ["Heart", "Solar Plexus"],
@@ -432,7 +432,7 @@
     "part": ["Legs", "Chest"]
   },
   {
-    "id": 43,
+    "id": 49,
     "name": "Bow Pose",
     "image": "/bow-pose.png",
     "chakra": ["Heart", "Throat", "Solar Plexus", "Sacral"],
@@ -441,7 +441,7 @@
     "part": ["Spine", "Chest"]
   },
   {
-    "id": 33,
+    "id": 50,
     "name": "Wheel Pose",
     "image": "/wheel-pose.png",
     "chakra": ["Heart", "Crown", "Third Eye", "Third Eye", "Solar Plexus"],
