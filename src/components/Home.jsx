@@ -574,6 +574,157 @@ const Home = () => {
           </div>
         </motion.div>
         
+        {/* Private Sessions */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false, amount: 0.1 }}
+          transition={{ duration: 1.5 }}
+          className="py-12 bg-moss/5"
+        >
+          <div className="max-w-5xl mx-auto px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.1 }}
+              transition={{ duration: 1.5 }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-2xl md:text-4xl mb-6 tracking-wider">Private Sessions</h2>
+              <p className="text-lg leading-relaxed opacity-90 max-w-3xl mx-auto">
+                Experience personalized guidance tailored to your unique needs and goals. 
+              </p>
+            </motion.div>
+
+            {/* Featured Private Sessions */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+              {[
+                {
+                  title: "Yoga Practice Consultation",
+                  instructor: "Sam Cabrera",
+                  time: "Flexible Scheduling",
+                  level: "All Levels",
+                  description: "A personalized consultation to discuss your goals, challenges, and create a structured plan for your practice. Perfect if you're looking for guidance on where to start or how to progress.",
+                  price: "$75 per hour",
+                  image: "consultation-session.jpg"
+                },
+                {
+                  title: "Guided Flow Session",
+                  instructor: "Sam Cabrera",
+                  time: "Flexible Scheduling",
+                  level: "All Levels",
+                  description: "Move through a complete yoga flow with Sam, tailored to your skill level and goals. This session is a hands-on experience with real-time guidance, adjustments, and breathwork.",
+                  price: "$125 per hour",
+                  image: "guided-flow-session.jpg"
+                }
+              ].map((session, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: false, amount: 0.1 }}
+                  transition={{ duration: 1.5, delay: index * 0.2 }}
+                  className="border border-moss/30 overflow-hidden h-full flex flex-col"
+                >
+                  <div className="h-48 bg-moss/20 relative">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="text-moss text-sm uppercase tracking-wider">Session Image</span>
+                    </div>
+                    <div className="absolute bottom-0 right-0 bg-moss/80 text-white px-3 py-1 text-sm">
+                      {session.price}
+                    </div>
+                  </div>
+                  <div className="p-6 flex-grow flex flex-col">
+                    <h3 className="text-xl mb-2 font-light tracking-wide">{session.title}</h3>
+                    <div className="flex items-center mb-4">
+                      <span className="text-moss/80 text-sm mr-2">with</span>
+                      <span className="font-medium">{session.instructor}</span>
+                    </div>
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-moss/70 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span className="text-sm">{session.time}</span>
+                      </div>
+                      <div className="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-moss/70 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        <span className="text-sm">{session.level}</span>
+                      </div>
+                    </div>
+                    <p className="text-base leading-relaxed opacity-90 mb-6">{session.description}</p>
+                    <div className="mt-auto">
+                      <Link
+                        to="/"
+                        className="cursor-not-allowed inline-block px-6 py-2 border border-moss text-moss hover:bg-moss hover:text-white transition-all duration-300 tracking-wide text-sm"
+                      >
+                        Book Session
+                      </Link>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* How It Works */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: false, amount: 0.1 }}
+              transition={{ duration: 1.5, delay: 0.6 }}
+              className="p-8 border border-moss/30 rounded-sm"
+            >
+              <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div className="w-full">
+                  <h3 className="text-xl mb-4 font-light tracking-wide">How Private Sessions Work</h3>
+                  <p className="text-base leading-relaxed opacity-90 mb-4">
+                    Booking a private session with Sam is simple. After scheduling, you'll receive personalized guidance on how to prepare for your session.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                      <span>Initial consultation to understand your goals and needs</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                      <span>Flexible scheduling to fit your calendar</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                      <span>Connect via your preferred platform (Zoom, Google Meet, or Microsoft Teams)</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                      <span>Personalized follow-up materials and practice guides</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              {/* CTA */}
+                <div className="mt-12"
+                >
+                  <h3 className="text-xl mb-6 font-light tracking-wide">Ready for Personalized Support on Your Yoga Journey?</h3>
+                  <div className="space-x-4">
+                    <Link
+                      to="/newsletter#meet-the-author"
+                      className="inline-block px-8 py-3 bg-moss text-white rounded-sm hover:bg-moss/80 transition-all duration-500 tracking-wide uppercase text-xs"
+                    >
+                      Learn About Sam
+                    </Link>
+                    <Link
+                      to="/"
+                      className="cursor-not-allowed inline-block px-8 py-3 border border-moss text-moss rounded-sm hover:bg-moss/10 transition-all duration-500 tracking-wide uppercase text-xs"
+                    >
+                      Book a Session
+                    </Link>
+                  </div>
+                </div>
+            </motion.div>
+          </div>
+        </motion.div>
+                
         {/* Testimonials */}
        <motion.div
           initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}

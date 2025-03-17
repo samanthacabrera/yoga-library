@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import PageNav from "./PageNav";
 
 const Newsletter = () => {
     const [blog, setBlog] = useState({ items: [], error: null });
+    const location = useLocation(); 
 
     useEffect(() => {
         fetch("/blog.json") 
@@ -16,6 +18,15 @@ const Newsletter = () => {
             })
             .catch(err => setBlog({ error: err.message }));
     }, []);
+
+    useEffect(() => {
+        if (location.hash) {
+            const element = document.getElementById(location.hash.substring(1));
+            if (element) {
+                element.scrollIntoView();
+            }
+        }
+    }, [location]);
 
     const totalArticles = blog.items.length;
     const latestArticle = blog.items[0];
@@ -104,8 +115,7 @@ const Newsletter = () => {
             </div>
 
          {/* Meet the Author */}
-            <div className="relative py-20 px-6">
-               
+        <div id="meet-the-author" className="relative py-20 px-6">  
             <div className="max-w-4xl mx-auto bg-white border shadow p-8 lg:p-12 my-24">
                 <div className="flex flex-col space-y-6 py-12 tracking-wide text-justify">
                     <img 
