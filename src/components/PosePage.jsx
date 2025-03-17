@@ -7,6 +7,7 @@ import benefits from '../data/benefits.json';
 import precautions from '../data/precautions.json';
 import modifications from '../data/modifications.json';
 import cues from '../data/cues.json';
+import Quiz from './Quiz';
 
 const PosePage = () => {
   const { name } = useParams();
@@ -24,6 +25,13 @@ const PosePage = () => {
     p.id !== pose.id && 
     p.type.some((type) => pose.type.includes(type))
   );
+  const quizContent = {
+    description: poseDesc?.desc || "",
+    benefits: poseBenefit ? `${poseBenefit.physical || ""} ${poseBenefit.mental || ""}`.trim() : "",
+    origins: poseSanskirt?.context || "",
+    precautions: posePrecaution?.precaution || "",
+    modifications: poseModification?.modification || "",
+  };
   const [tocOpen, setTocOpen] = useState(true);
 
   if (!pose) {
@@ -218,6 +226,12 @@ const PosePage = () => {
               >
                 Cues
               </a>
+              <a 
+                href="#quiz" 
+                className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
+              >
+                Quiz
+              </a>
             </div>
           </>
           )}
@@ -352,51 +366,51 @@ const PosePage = () => {
         </div>
       )}
 
-      {/* Related Poses */}
-      {relatedPoses.length > 0 && (
-        <div className="mt-12">
-          <h3 className="text-2xl md:text-4xl text-center tracking-wide my-24 text-moss">Explore Similar Poses</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {relatedPoses.slice(0, 6).map((relatedPose) => (
-              <Link
-                key={relatedPose.id}
-                to={`/poses/${relatedPose.name}`}
-                className="group relative overflow-hidden rounded-lg aspect-square"
-              >
-                <img 
-                  src={relatedPose.image} 
-                  alt={relatedPose.name}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 to-transparent flex flex-col justify-end p-4">
-                  <h4 className="text-white font-medium text-lg">{relatedPose.name}</h4>
-                  {relatedPose.type && (
-                    <div className="flex flex-wrap gap-1 mt-1">
-                      {relatedPose.type.slice(0, 2).map((type, index) => (
-                        <span key={index} className="text-white/80 text-xs">
-                          {type}{index < Math.min(relatedPose.type.length, 2) - 1 && " · "}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </Link>
-            ))}
+      <Quiz content={quizContent}/>
+
+{/* Related Poses */}
+{relatedPoses.length > 0 && (
+  <section className="group py-16">
+    <h3 className="text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">Related Poses</h3>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {relatedPoses.slice(0, 6).map((relatedPose) => (
+        <Link
+          key={relatedPose.id}
+          to={`/poses/${relatedPose.name}`}
+          className="block border border-moss/20 rounded p-2 transition-all duration-500 hover:shadow hover:scale-105"
+        >
+          <div className="overflow-hidden mb-3">
+            <img 
+              src={relatedPose.image} 
+              alt={relatedPose.name}
+              className="w-full aspect-square object-cover"
+            />
           </div>
-        </div>
-      )}
+          <h4 className="text-base font-medium tracking-wide mb-1">{relatedPose.name}</h4>
+          {relatedPose.type && (
+            <div className="flex gap-2">
+              {relatedPose.type.slice(0, 2).map((type, index) => (
+                <span key={index} className="text-xs text-charcoal/80">
+                  {type}
+                </span>
+              ))}
+            </div>
+          )}
+        </Link>
+      ))}
+    </div>
+  </section>
+)}
 
       {/* Sources */}
       {sources.length > 0 && (
         <div
           id="sources"
-          className="mt-6 pt-4 border-t border-gray-300 text-sm space-y-2"
+          className="group mt-6 pt-4 border-t border-gray-300"
           style={{ marginTop: '1.5rem' }}
         >
-          <h3 className="text-lg" style={{ marginBottom: '0.5rem' }}>
-            Sources
-          </h3>
-          <ul className="list-inside list-disc space-y-1">
+        <h3 className="text-lg md:text-2xl tracking-wider my-8 group-hover:text-moss transition duration-300">Sources</h3>
+          <ul className="list-inside list-decimal space-y-1">
             {sources.map((source, index) => (
               <li key={index} className="text-justify">
                 <em>{source.section}</em> - {source.text} 
