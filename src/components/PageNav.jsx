@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 
 const menuItems = [
+    { label: "Welcome", to: "/" },
     { label: "Start Here", to: "/what-is-yoga/beginners-guide" },
     { label: "What Is Yoga?", to: "/what-is-yoga/overview" },
     { label: "The 8-Limbed Path", to: "/what-is-yoga/eight-limbed-path" },

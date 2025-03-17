@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet';
 import { Parallax } from 'react-parallax';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import PageNav from './PageNav';
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://learnyoga.online" />
       </Helmet>
+      <PageNav/>
       <div className="flex flex-col w-screen">
       
         {/* Hero */}
@@ -296,6 +298,134 @@ const Home = () => {
                 </Link>
               </motion.div>
             ))}
+          </div>
+        </motion.div>
+        
+        {/* Yoga For Every Need */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false, amount: 0.1 }}
+          transition={{ duration: 1.5 }}
+          className="space-y-28 py-24"
+        >
+          <div>
+            <h2 className="text-2xl md:text-4xl mb-16 text-center tracking-wider">
+              Yoga for Every Need
+            </h2>
+            
+            <div className="flex flex-col space-y-12 max-w-6xl mx-auto px-6">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false, amount: 0.1 }}
+                transition={{ duration: 1.5 }}
+                className="flex flex-col p-8 border-l-2 border-moss/50 h-full"
+              >
+                <h3 className="text-xl mb-6 font-light tracking-wide">Yoga for Flexibility</h3>
+                <p className="text-lg leading-relaxed opacity-90 mb-6">
+                  Yoga offers a gentle yet effective way to improve flexibility throughout your body. Unlike forceful stretching, yoga teaches you to breathe into areas of tension and release them mindfully.
+                </p>
+                <ul className="text-lg leading-relaxed space-y-4 opacity-90 mb-8">
+                  <li className="flex items-start">
+                    <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                    Gradually increases range of motion in joints
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                    Lengthens muscles safely through breath-synchronized movement
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                    Reduces tension and stiffness from sedentary lifestyles
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                    Creates space in the body for improved circulation and energy flow
+                  </li>
+                </ul>
+                <Link
+                  to="/poses/benefit/improve%20flexibility"
+                  className="mt-auto inline-block text-moss hover:text-moss/80 transition-colors duration-300 tracking-wide uppercase text-sm"
+                >
+                  Explore Flexibility Poses →
+                </Link>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false, amount: 0.1 }}
+                transition={{ duration: 1.5, delay: 0.2 }}
+                className="flex flex-col p-8 border-l-2 border-moss/50 h-full"
+              >
+                <h3 className="text-xl mb-6 font-light tracking-wide">Yoga for Strength</h3>
+                <p className="text-lg leading-relaxed opacity-90 mb-6">
+                  Yoga builds functional strength by using your own body weight as resistance. This creates balanced muscle development that supports daily activities and prevents injuries.
+                </p>
+                <ul className="text-lg leading-relaxed space-y-4 opacity-90 mb-8">
+                  <li className="flex items-start">
+                    <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                    Develops core stability and postural muscles
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                    Builds isometric strength through holding poses
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                    Strengthens oft-neglected muscle groups for whole-body conditioning
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                    Improves muscle endurance through flowing sequences
+                  </li>
+                </ul>
+                <Link
+                  to="/poses/benefit/build%20strength"
+                  className="mt-auto inline-block text-moss hover:text-moss/80 transition-colors duration-300 tracking-wide uppercase text-sm"
+                >
+                  Explore Strength Poses →
+                </Link>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false, amount: 0.1 }}
+                transition={{ duration: 1.5, delay: 0.4 }}
+                className="flex flex-col p-8 border-l-2 border-moss/50 h-full"
+              >
+                <h3 className="text-xl mb-6 font-light tracking-wide">Yoga for Balance</h3>
+                <p className="text-lg leading-relaxed opacity-90 mb-6">
+                  Balance in yoga extends beyond physical steadiness—it cultivates equilibrium between effort and ease, strength and flexibility, and mind and body.
+                </p>
+                <ul className="text-lg leading-relaxed space-y-4 opacity-90 mb-8">
+                  <li className="flex items-start">
+                    <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                    Enhances proprioception and body awareness
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                    Strengthens stabilizing muscles often underutilized in daily life
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                    Improves focus and concentration through mindful practice
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
+                    Creates a centered foundation for all other movement practices
+                  </li>
+                </ul>
+                <Link
+                  to="/poses/benefit/improve%20balance"
+                  className="mt-auto inline-block text-moss hover:text-moss/80 transition-colors duration-300 tracking-wide uppercase text-sm"
+                >
+                  Explore Balance Poses →
+                </Link>
+              </motion.div>
+            </div>
           </div>
         </motion.div>
         
