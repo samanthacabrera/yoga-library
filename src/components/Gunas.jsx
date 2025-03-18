@@ -119,12 +119,20 @@ const Gunas = () => {
           </div>
         ))}
       
-      <p>
-        The Three Gunas serve as a framework for understanding the dynamic forces that shape our thoughts, emotions, and behaviors. Just as the external world fluctuates between light and darkness, stillness and movement, our inner world also shifts between clarity, passion, and inertia. Recognizing these qualities within ourselves allows us to take intentional steps toward cultivating a more balanced and fulfilling life.
-      </p>
-      <p>
-        Ultimately, our journey toward balance is not about eliminating any one guna but about learning to navigate their interplay with awareness and intention. By observing our habits and gently steering ourselves toward clarity and harmony, we can cultivate a life filled with light, joy, and self-realization.
-      </p>
+        <p>
+          The Three Gunas serve as a framework for understanding the dynamic forces that shape our thoughts, emotions, and behaviors. Just as the external world fluctuates between light and darkness, stillness and movement, our inner world also shifts between clarity, passion, and inertia. Recognizing these qualities within ourselves allows us to take intentional steps toward cultivating a more balanced and fulfilling life.
+        </p>
+        <p>
+          Ultimately, our journey toward balance is not about eliminating any one guna but about learning to navigate their interplay with awareness and intention. By observing our habits and gently steering ourselves toward clarity and harmony, we can cultivate a life filled with light, joy, and self-realization.
+        </p>
+
+        <section className="pt-24 border-t border-charcoal/30">
+              <div className="bg-moss/5 rounded-xl shadow-sm p-6">
+                  <p className="text-sm tracking-wide">
+                  Next Up: Explore foundational yoga poses and learn how to practice them safely.
+                  </p>
+              </div>
+        </section>
       </div>
     </>
   );

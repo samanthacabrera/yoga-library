@@ -314,7 +314,7 @@ const WhatIsYoga = () => {
         <YogaStyleQuiz/>
 
         <p className="mt-12">
-          No matter which style of yoga you practice, these foundational poses and lessons taught on this site will be the building blocks of your journey. Mastering them will support your growth, whether your focus is strength, flexibility, relaxation, or mindfulness.
+          No matter which style of yoga you practice, the foundational poses and lessons taught on this site will be the building blocks of your journey. Mastering them will support your growth, whether your focus is strength, flexibility, relaxation, or mindfulness.
         </p>
      
       </div>  

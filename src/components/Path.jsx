@@ -158,6 +158,14 @@ const Path = () => {
                 <p>Walking the 8-limbed path is not about perfection; it is about progress, patience, and practice. There will be challenges, moments of doubt, and times when we fall short of our ideals—but yoga teaches us resilience, self-compassion, and the ability to begin again.</p>
                 <p>Whether you are taking your first steps or have been practicing for years, the teachings of yoga remain a constant source of wisdom and guidance. By integrating these principles into daily life—not just in movement, but in thoughts, words, and actions—we cultivate a life of balance, clarity, and fulfillment.</p>
             </div>
+            
+            <section className="pt-24 border-t border-charcoal/30">
+                <div className="bg-moss/5 rounded-xl shadow-sm p-6">
+                    <p className="text-sm tracking-wide">
+                    Next Up: Learn about the seven chakras
+                    </p>
+                </div>
+            </section>
         </div>
     </>
     );
