@@ -23,7 +23,7 @@ const Guide = () => {
                 </h1>
                 
                 <div className="bg-moss/5 rounded-xl shadow-sm p-8 space-y-6">
-                    <p className="tracking-wide leading-loose">
+                    <p className="text-sm tracking-wide leading-loose">
                         Objective: This guide is designed to provide beginners with a comprehensive introduction to yoga. This guide will help you understand key yoga concepts, essential terminology, and safe practice techniques. By the end, you'll feel more confident stepping onto the mat and building a sustainable yoga routine.
                     </p>
                 </div>
@@ -232,9 +232,9 @@ const Guide = () => {
                         </div>
                     </div>
                 </section>
-                <section className="pt-12 border-t border-charcoal/50">
-                    <div className="bg-moss/5 rounded-xl shadow-sm p-8 space-y-6">
-                        <p className="tracking-wide ">
+                <section className="pt-24 border-t border-charcoal/30">
+                    <div className="bg-moss/5 rounded-xl shadow-sm p-6">
+                        <p className="text-sm tracking-wide ">
                         Next Up: Learn about the philosophy and origins of yoga
                         </p>
                     </div>
