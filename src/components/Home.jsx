@@ -513,11 +513,11 @@ const Home = () => {
                     </div>
                     <div className="flex items-center text-sm">
                       <span className="inline-block w-2 h-2 rounded-full bg-moss/70 mr-2"></span>
-                      30 guided sessions
+                      28 guided sessions
                     </div>
                     <div className="flex items-center text-sm">
                       <span className="inline-block w-2 h-2 rounded-full bg-moss/70 mr-2"></span>
-                      Downloadable materials
+                      Instant Digital Access
                     </div>
                   </div>
                 </div>
@@ -534,16 +534,8 @@ const Home = () => {
                       <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-0 mr-3"></span>
                       <span>Day 1: Gentle Introduction</span>
                     </li>
-                    <li className="flex items-center text-sm opacity-90">
-                      <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-0 mr-3"></span>
-                      <span>Day 2: Breath Awareness</span>
-                    </li>
-                    <li className="flex items-center text-sm opacity-90">
-                      <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-0 mr-3"></span>
-                      <span>Day 3: Standing Basics</span>
-                    </li>
                   </ul>
-                  <div className="text-sm opacity-70 italic">And 4 more sessions...</div>
+                  <div className="text-sm opacity-70 italic">And 6 more sessions...</div>
                 </div>
                 
                 {/* Weeks 2-4 */}
