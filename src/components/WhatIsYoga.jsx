@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 import PageNav from "./PageNav";
 
@@ -320,10 +321,10 @@ const WhatIsYoga = () => {
       </div>  
       
       <section className="pt-24 border-t border-charcoal/30">
-          <div className="bg-moss/5 rounded-xl shadow-sm p-6">
-              <p className="text-sm tracking-wide">
+          <div className="bg-moss/5 rounded-xl shadow-sm p-6 text-sm tracking-wide hover:scale-[101%] transition">
+              <Link to="/what-is-yoga/eight-limbed-path">
               Next Up: Learn about the eight limbs of yoga
-              </p>
+              </Link>
           </div>
       </section>
     </div>

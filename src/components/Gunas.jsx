@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import PageNav from "./PageNav";
 
 const Gunas = () => {
@@ -127,10 +128,10 @@ const Gunas = () => {
         </p>
 
         <section className="pt-24 border-t border-charcoal/30">
-              <div className="bg-moss/5 rounded-xl shadow-sm p-6">
-                  <p className="text-sm tracking-wide">
+              <div className="bg-moss/5 rounded-xl shadow-sm p-6 text-sm tracking-wide hover:scale-[101%] transition">
+                  <Link to="/poses">
                   Next Up: Explore foundational yoga poses and learn how to practice them safely.
-                  </p>
+                  </Link>
               </div>
         </section>
       </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import PageNav from "./PageNav";
 
 const Chakras = () => {
@@ -201,10 +202,10 @@ const Chakras = () => {
         <p>As you explore and work with your chakras, remember that healing and balance are ongoing processes. Every step you take toward greater awareness brings you closer to inner peace, self-acceptance, and a more vibrant, connected life.</p>
 
         <section className="pt-24 border-t border-charcoal/30">
-              <div className="bg-moss/5 rounded-xl shadow-sm p-6">
-                  <p className="text-sm tracking-wide">
+              <div className="bg-moss/5 rounded-xl shadow-sm p-6 text-sm tracking-wide hover:scale-[101%] transition">
+                  <Link to="/what-is-yoga/three-gunas">
                   Next Up: Learn about the three gunas
-                  </p>
+                  </Link>
               </div>
         </section>
       </div>

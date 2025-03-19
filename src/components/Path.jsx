@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import PageNav from "./PageNav";
 
 const Path = () => {
@@ -160,10 +161,10 @@ const Path = () => {
             </div>
             
             <section className="pt-24 border-t border-charcoal/30">
-                <div className="bg-moss/5 rounded-xl shadow-sm p-6">
-                    <p className="text-sm tracking-wide">
+                <div className="bg-moss/5 rounded-xl shadow-sm p-6 text-sm tracking-wide hover:scale-[101%] transition">
+                    <Link to="/what-is-yoga/seven-chakras" >
                     Next Up: Learn about the seven chakras
-                    </p>
+                    </Link>
                 </div>
             </section>
         </div>
