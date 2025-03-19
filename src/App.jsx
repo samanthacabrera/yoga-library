@@ -12,6 +12,7 @@ import Path from "./components/Path";
 import Gunas from "./components/Gunas";
 import Chakras from "./components/Chakras";
 import Newsletter from "./components/Newsletter";
+import Program from "./components/Program";
 import Resources from "./components/Resources";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Footer from "./components/Footer";
@@ -50,6 +51,7 @@ const App = () => {
           <Route path="/what-is-yoga/three-gunas" element={<Gunas />} />
           <Route path="/what-is-yoga/seven-chakras" element={<Chakras/>} />
           <Route path="/newsletter" element={<Newsletter />} />
+          <Route path="/program" element={<Program />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>

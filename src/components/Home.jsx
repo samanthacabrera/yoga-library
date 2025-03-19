@@ -37,7 +37,7 @@ const Home = () => {
       <div className="flex flex-col w-screen">
       
       {/* Hero */}
-      <Parallax bgImage="bg1.jpg" strength={300}>
+      <Parallax bgImage="bg1.jpg" strength={300} bgImageStyle={{ objectFit: "cover", width: "100%", height: "100vh" }}>
         <div className="relative h-screen flex flex-col items-center justify-center">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -501,7 +501,6 @@ const Home = () => {
               <div className="p-8 bg-moss/10">
                 <div className="flex justify-between items-center mb-8">
                   <h3 className="text-2xl tracking-wide">30-Day Yoga Journey</h3>
-                  <span className="bg-moss/80 text-white px-4 py-1 text-sm uppercase tracking-wider">$49.99</span>
                 </div>
                 <p className="text-lg leading-relaxed opacity-90 mb-6">
                   A comprehensive month-long program that builds progressively to transform your practice and establish sustainable yoga habits for life.
@@ -574,8 +573,8 @@ const Home = () => {
               
               <div className="p-8 flex justify-center">
                 <Link
-                  to="/"
-                  className="cursor-not-allowed inline-block px-8 py-3 bg-moss text-white rounded-sm hover:bg-moss/80 transition-all duration-500 tracking-wide uppercase text-sm"
+                  to="/program"
+                  className="inline-block px-8 py-3 bg-moss text-white rounded-sm hover:bg-moss/80 transition-all duration-500 tracking-wide uppercase text-sm"
                 >
                   Get Full Access
                 </Link>
