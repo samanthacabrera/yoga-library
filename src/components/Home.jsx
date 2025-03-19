@@ -132,37 +132,33 @@ const Home = () => {
             transition={{ duration: 1.5 }}
             className="space-y-24"
           >
+          {/* Beginner's Mind */}
+          <div className="">
+            <div className="flex items-center mb-16">
+              <div className="w-16 h-px bg-moss"></div>
+              <h3 className="ml-4 text-2xl font-light tracking-widest text-gray-800">BEGINNER'S MIND</h3>
+            </div>
+
+            <p className="text-sm uppercase tracking-widest text-moss mb-16">YOUR GREATEST STRENGTH</p>
   
-          <div className="p-8 border-l-2 border-moss/50">
-            <h3 className="text-xl mb-6 font-light tracking-wide">The Beginner's Mind: Your Greatest Strength</h3>
-            <p className="text-lg leading-relaxed mb-8 opacity-90">
-              In yoga philosophy, there's a concept called "beginner's mind" or <span className="italic">shoshin</span> that views your newcomer status not as a limitation, but as your greatest asset. Approaching yoga with fresh eyes allows you to:
+            <p className="text-base leading-relaxed mb-16 text-gray-700">
+              In yoga philosophy, there's a concept called "beginner's mind" or <span className="font-normal">shoshin</span> that views your newcomer status not as a limitation, but as your greatest asset. Approaching yoga with fresh eyes allows you to:
             </p>
-            <ul className="text-lg leading-relaxed space-y-4 opacity-90">
-              <li className="flex items-start">
-                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
-                Experience each pose without preconceptions or expectations
-              </li>
-              <li className="flex items-start">
-                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
-                Stay present with sensations rather than rushing toward goals
-              </li>
-              <li className="flex items-start">
-                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
-                Develop self-compassion that will serve your practice for years to come
-              </li>
-              <li className="flex items-start">
-                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
-                Build awareness of subtle energies and connections within your body
-              </li>
-              <li className="flex items-start">
-                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
-                Embrace the journey rather than focusing solely on destinations
-              </li>
-            </ul>
-            <p className="text-lg leading-relaxed mt-8 opacity-90">
-              Yoga is not about perfection but presence. The ancient yogic texts remind us that yoga is the practice of stilling the fluctuations of the mind. As you begin, remember that even the most advanced practitioners continually return to these fundamental principles.
-            </p>
+
+            <div className="space-y-8 mb-16">
+              {[
+                "Experience each pose without preconceptions",
+                "Stay present with sensations rather than rushing",
+                "Develop self-compassion for your practice",
+                "Build awareness of subtle body connections",
+                "Embrace the journey, not just destinations"
+              ].map((item, index) => (
+                <div key={index} className="pl-8 relative">
+                  <span className="absolute left-0 top-2 text-xs text-moss">0{index + 1}</span>
+                  <p className="text-base text-gray-700">{item}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="p-8 border-l-2 border-moss/50">
