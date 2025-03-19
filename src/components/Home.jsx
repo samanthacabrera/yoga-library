@@ -130,7 +130,7 @@ const Home = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 1.5 }}
-            className="space-y-24"
+            className="space-y-40"
           >
           {/* Beginner's Mind */}
           <div className="">
@@ -161,51 +161,68 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="p-8 border-l-2 border-moss/50">
-            <h3 className="text-xl mb-6 font-light tracking-wide">Yoga for Every Body</h3>
-            <p className="text-lg leading-relaxed opacity-90">
-              Yoga is for everyone, regardless of age, body type, or fitness level. It is not about achieving a particular look or executing the most advanced poses—it’s about tuning in to your body, breath, and mind. Your practice should never cause pain or discomfort; instead, it should foster ease, strength, and awareness.
+          {/* Yoga for Everyone */}
+          <div className="">
+            <div className="flex items-center mb-16">
+              <div className="w-16 h-px bg-moss"></div>
+              <h3 className="ml-4 text-2xl font-light tracking-widest text-gray-800">YOGA FOR EVERYONE</h3>
+            </div>
+
+            <p className="text-sm uppercase tracking-widest text-moss mb-16">INCLUSIVE & ACCESSIBLE PRACTICE</p>
+
+            <p className="text-base leading-relaxed mb-16 text-gray-700">
+              Yoga is for everybody, regardless of age, body type, or fitness level. It’s not about achieving the perfect pose but about cultivating a practice that supports your body, breath, and mind. The most rewarding yoga practice is one that feels safe, accessible, and empowering.
             </p>
-            <ul className="text-lg leading-relaxed space-y-4 opacity-90 mt-6">
-              <li className="flex items-start">
-                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
-                Listen to your body: Every day is different, and some poses may feel accessible one day and challenging the next. Honor where you are.
-              </li>
-              <li className="flex items-start">
-                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
-                Modify as needed: There is no "right" way for a pose to look—only what feels good and safe for you. Props like blocks, straps, and blankets can support your practice.
-              </li>
-              <li className="flex items-start">
-                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
-                Be patient with progress: Flexibility and strength develop over time. Yoga is not a race; it’s a lifelong journey.
-              </li>
-            </ul>
-            <p className="text-lg leading-relaxed mt-6 opacity-90">
-              If you have any medical conditions, injuries, or concerns, check in with a healthcare professional before beginning. Most importantly, remember that the most advanced yogi isn’t the one who can perform the deepest backbend—it’s the one who practices with mindfulness, respect, and care for their body’s needs.
+
+            <div className="space-y-8 mb-16">
+              {[
+                "Honor your body’s needs and limitations without judgment",
+                "Use props like blocks, straps, and blankets for added support",
+                "Modify poses to suit your range of motion and comfort",
+                "Embrace progress at your own pace—flexibility and strength develop over time",
+                "Remember that yoga is about presence, not perfection"
+              ].map((item, index) => (
+                <div key={index} className="pl-8 relative">
+                  <span className="absolute left-0 top-2 text-xs text-moss">0{index + 1}</span>
+                  <p className="text-base text-gray-700">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Practicing Yoga with Disabilities */}
+          <div className="">
+            <div className="flex items-center mb-16">
+              <div className="w-16 h-px bg-moss"></div>
+              <h3 className="ml-4 text-2xl font-light tracking-widest text-gray-800">PRACTICING YOGA WITH DISABILITIES</h3>
+            </div>
+
+            <p className="text-sm uppercase tracking-widest text-moss mb-16">ADAPTABLE & EMPOWERING</p>
+
+            <p className="text-base leading-relaxed mb-16 text-gray-700">
+              Yoga is an adaptable practice that can be modified to fit every body. It’s not about conforming to a specific shape—it’s about exploring movement, breath, and stillness in a way that supports your individual needs.  
             </p>
+
+            <div className="space-y-8 mb-16">
+              {[
+                "Chair yoga offers seated variations that provide stability and support",
+                "Props like straps, bolsters, and blocks can enhance comfort and accessibility",
+                "Wall-assisted or standing yoga can offer balance and security",
+                "Breathwork and meditation are powerful practices accessible to everyone",
+                "Adaptive yoga techniques ensure that movement is safe and supportive"
+              ].map((item, index) => (
+                <div key={index} className="pl-8 relative">
+                  <span className="absolute left-0 top-2 text-xs text-moss">0{index + 1}</span>
+                  <p className="text-base text-gray-700">{item}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="p-8 border-l-2 border-moss/50">
-            <h3 className="text-xl mb-6 font-light tracking-wide">Practicing Yoga with Disabilities</h3>
+            <h3 className="text-xl mb-6 font-light tracking-wide">Accessible Yoga for All</h3>
             <p className="text-lg leading-relaxed opacity-90">
-              Yoga is an adaptable practice that can be modified to suit every body, including those with disabilities or limited mobility. It’s not about fitting into a specific mold—it’s about exploring movement, breath, and stillness in a way that works for you.
-            </p>
-            <ul className="text-lg leading-relaxed space-y-4 opacity-90 mt-6">
-              <li className="flex items-start">
-                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
-                Chair Yoga: Seated variations can offer all the benefits of traditional yoga while providing stability and support.
-              </li>
-              <li className="flex items-start">
-                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
-                Prop-supported Poses: Using straps, bolsters, or blocks can help make postures more accessible and comfortable.
-              </li>
-              <li className="flex items-start">
-                <span className="inline-block w-1 h-1 rounded-full bg-moss/70 mt-3 mr-3"></span>
-                Wall-assisted or standing yoga: If getting up and down from the floor is difficult, standing sequences or using a wall for support can provide a safe and effective practice.
-              </li>
-            </ul>
-            <p className="text-lg leading-relaxed mt-6 opacity-90">
-              We are actively working on expanding our content on accessible yoga.
+              If you have mobility challenges, chronic pain, or other conditions, yoga can still be a meaningful and accessible practice. We are committed to expanding our content on adaptive yoga and creating resources that support every practitioner.
             </p>
           </div>
           </motion.div>
