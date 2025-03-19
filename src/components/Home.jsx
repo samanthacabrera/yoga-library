@@ -36,38 +36,48 @@ const Home = () => {
       <PageNav/>
       <div className="flex flex-col w-screen">
       
-        {/* Hero */}
-        <Parallax bgImage="bg1.jpg" strength={300}>
-          <div className="relative h-screen flex flex-col items-center justify-center">
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.8, ease: "easeOut" }}
-              className="text-center px-4 max-w-4xl mx-auto space-y-6"
+      {/* Hero */}
+      <Parallax bgImage="bg1.jpg" strength={300}>
+        <div className="relative h-screen flex flex-col items-center justify-center">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.8, ease: "easeOut" }}
+            className="text-center px-4 max-w-4xl mx-auto space-y-6"
+          >
+            <motion.h1 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 2.2, ease: "easeOut" }}
+              className="text-5xl md:text-7xl lg:text-8xl text-white tracking-wider"
             >
-              <h1 className="text-5xl md:text-7xl lg:text-8xl text-white opacity-80 tracking-wide">
-                Learn Yoga Online
-              </h1>
-              
-              <p className="text-lg text-white opacity-80 tracking-wide">
-                A mindful approach to developing your yoga practice
-              </p>
+              Learn Yoga Online
+            </motion.h1>
+            
+            <motion.p 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4, duration: 1.6 }}
+              className="text-lg md:text-xl text-white/90 tracking-wide max-w-2xl mx-auto"
+            >
+              A mindful approach to developing your yoga practice
+            </motion.p>
 
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.8, duration: 1.2 }}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.8, duration: 1.2 }}
+            >
+              <Link
+                to="/poses"
+                className="inline-block mt-8 px-10 py-4 border border-white/40 rounded-sm text-white hover:bg-white/10 hover:border-white/60 transition-all duration-500 tracking-wider uppercase text-sm font-light"
               >
-                <Link
-                  to="/poses"
-                  className="inline-block mt-12 px-8 py-3 border border-white/50 rounded-sm text-white opacity-80 hover:scale-[103%] transition-all duration-500 tracking-wide uppercase text-sm"
-                >
-                  Explore
-                </Link>
-              </motion.div>
+                Begin Your Journey
+              </Link>
             </motion.div>
-          </div>
-        </Parallax>
+          </motion.div>
+        </div>
+      </Parallax>
         
         <div className="max-w-3xl mx-12 md:mx-auto py-40 grid gap-y-40 md:gap-y-80 text-charcoal">
           {/* About */}
