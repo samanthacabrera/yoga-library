@@ -60,10 +60,10 @@ const Resources = () => {
       links: [
         { to: "https://yarnsara-samanthacabreras-projects.vercel.app/", title: "Yarnsara Mat Strap", description: "100% upcycled & handcrafted yoga accessories." },
         { to: "https://www.aloyoga.com/products/warrior-mat", title: "Alo Yoga Warrior Mat", description: "Durable, non-slip, eco-friendly mat with a smooth, supportive surface." },
-        { to: "https://www.manduka.com/collections/yoga-mats-pro-series/products/prolite-yoga-mat", title: "Manduka ProLite Mat", description: "High-performance, eco-conscious mat built to last." },
-        { to: "https://www.manduka.com/collections/equa-yoga-towels/products/equa-yoga-hand-towel", title: "Manduka eQua Yoga Hand Towel", description: "Lightweight, quick-drying yoga towels that enhance your practice." },
-        { to: "https://www.manduka.com/collections/yoga-mat-bags-carriers/products/go-play-4-0-mat-carrier?variant=23736530960442", title: "Manduka Go Play Mat Carrier", description: "A lightweight yoga mat sling with external storage pockets for practice essentials." },
-        { to: "https://yogo.net/?srsltid=AfmBOooZUmrXT8Nv6gQXNSTFF7Nh47w9J_l32GTyh8v0V39-n_Ln_Cy_", title: "Yogo Travel Mat", description: "Portable, foldable yoga mat for on-the-go practice." }
+        { to: "https://amzn.to/4iDdAFT", title: "Manduka PRO Yoga Mat", description: "High-performance, eco-conscious mat built to last." },
+        { to: "https://amzn.to/4iJYnlP", title: "Manduka Yogitoes Yoga Towel", description: "Lightweight, quick-drying yoga towels that enhance your practice." },
+        { to: "https://amzn.to/4bJXQhA", title: "Manduka Go Play 3.0 Yoga Mat Bag", description: "A lightweight yoga mat sling with external storage pockets for practice essentials." },
+        { to: "https://amzn.to/4iJYyO1", title: "Yogo Ultralight Folding Travel Yoga Mat", description: "Portable, foldable yoga mat for on-the-go practice." }
       ]
     }
   ];
@@ -110,6 +110,10 @@ const Resources = () => {
             <ResourceSection {...category} />
           </div>
         ))}
+          
+        <p className="py-12 text-xs text-center tracking-wide opacity-70">
+          As an Amazon Associate, I earn from qualifying purchases. This helps support the site at no extra cost to you.
+        </p>
       </div>
       
         <div className="mt-24 border-t border-moss border-opacity-20 pt-40 text-center">
