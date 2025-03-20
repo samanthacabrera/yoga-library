@@ -468,62 +468,67 @@ const Home = () => {
           </div>
         </motion.div>
         
-        {/* Newsletter */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-          className="flex flex-col justify-center items-center text-center space-y-12 p-24 bg-moss/5"
-        >
-        <h2 className="text-2xl md:text-4xl text-center tracking-wider">
-          Explore My Column
-        </h2>
-
-        <p>
-          Monthly insights, tips, and stories to deepen your yoga practice.
-        </p>
-        <Link
-          to="/newsletter" 
-          className="text-lg tracking-wider text-charcoal/80 hover:text-moss hover:scale-[103%] transition-all duration-300 uppercase"
-        >
-          <span>
-            Read Latest
-          </span>
-        </Link>
-        </motion.div>
-                
-        {/* Testimonials */}
-       <motion.div
-          initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-          className="justify-center items-center"
-        >
-          <motion.h2 
-            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="text-2xl md:text-4xl mb-8 text-center tracking-wider"
+          {/* Newsletter */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="flex flex-col justify-center items-center text-center space-y-8 py-20 px-6 md:px-12 lg:px-24 bg-moss/10 border-t border-b border-moss/20"
           >
-            What Others Are Saying
-          </motion.h2>
-          <div className="grid md:grid-cols-2 gap-x-6 gap-y-12 my-24">
-            {[
-              { quote: "This site makes learning yoga inviting. The instructions are clear, the layout is simple, and it creates a welcoming space to grow my practice without feeling overwhelmed.", author: "Savanna L." },
-                { quote: "As someone who's been practicing yoga for years, I wasn’t sure if I’d find much value in another yoga site. But I was wrong. What I love here is the attention to detail — each pose breakdown is thoughtful, and it’s helped me refine my practice in ways I didn’t think I needed. ", author: "Bri H." },
-                { quote: "Learn Yoga Online strikes the perfect balance of offering substance, while remaining accessible. It's evident that this site was designed with the user’s growth in mind.", author: "Sunny C." },
-                { quote: "As someone completely new to yoga, this platform made learning the basics feel easy. The clear instructions and thoughtful guidance gave me the confidence to start my practice and keep improving.", author: "Darlene A." },
-                { quote: "A standout tool for yoga practitioners at any level. The depth of instruction has significantly enhanced my understanding and appreciation for this practice.", author: "Wendy R." },
-                { quote: "This site delivers clear, well-organized yoga instruction with a clean, minimalist design that keeps you focused. The guidance is easy to follow for any level, whether you're just starting out or building on your practice. If you're looking for a simple, reliable yoga resource, this is definitely worth trying.", author: "Justin M." }
-            ].map((testimonial, index) => (
-              <motion.div
-                key={index}
-                variants={{
-                  hidden: { opacity: 0, y: 50 },
-                  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-                }}
-                className="flex flex-col justify-between bg-transparent h-[400px] p-6 border border-moss text-left rounded-t-xl shadow"
+            <h2 className="text-3xl md:text-5xl font-light text-center tracking-widest">
+              Explore My Column
+            </h2>
+
+            <p className="max-w-xl text-lg text-charcoal/80 font-light">
+              Monthly insights, tips, and stories to deepen your yoga practice.
+            </p>
+            
+            <Link
+              to="/newsletter" 
+              className="mt-4 inline-flex items-center border-b border-moss/40 pb-1 text-lg tracking-wider text-charcoal/80 hover:text-moss hover:border-moss transition-all duration-300"
+            >
+              <span>Read Latest</span>
+              <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </Link>
+          </motion.div>
+                
+          {/* Testimonials */}
+          <motion.div
+              initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
+              className="justify-center items-center"
+            >
+              <motion.h2 
+                variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+                className="text-2xl md:text-4xl mb-8 text-center tracking-wider"
               >
-                <p className="text-lg italic">"{testimonial.quote}"</p>
-                <p className="font-medium uppercase">— {testimonial.author}</p>
-              </motion.div>
-            ))}
-          </div>
-      </motion.div>
+                What Others Are Saying
+              </motion.h2>
+              <div className="grid md:grid-cols-2 gap-x-6 gap-y-12 my-24">
+                {[
+                  { quote: "This site makes learning yoga inviting. The instructions are clear, the layout is simple, and it creates a welcoming space to grow my practice without feeling overwhelmed.", author: "Savanna L." },
+                    { quote: "As someone who's been practicing yoga for years, I wasn’t sure if I’d find much value in another yoga site. But I was wrong. What I love here is the attention to detail — each pose breakdown is thoughtful, and it’s helped me refine my practice in ways I didn’t think I needed. ", author: "Bri H." },
+                    { quote: "Learn Yoga Online strikes the perfect balance of offering substance, while remaining accessible. It's evident that this site was designed with the user’s growth in mind.", author: "Sunny C." },
+                    { quote: "As someone completely new to yoga, this platform made learning the basics feel easy. The clear instructions and thoughtful guidance gave me the confidence to start my practice and keep improving.", author: "Darlene A." },
+                    { quote: "A standout tool for yoga practitioners at any level. The depth of instruction has significantly enhanced my understanding and appreciation for this practice.", author: "Wendy R." },
+                    { quote: "This site delivers clear, well-organized yoga instruction with a clean, minimalist design that keeps you focused. The guidance is easy to follow for any level, whether you're just starting out or building on your practice. If you're looking for a simple, reliable yoga resource, this is definitely worth trying.", author: "Justin M." }
+                ].map((testimonial, index) => (
+                  <motion.div
+                    key={index}
+                    variants={{
+                      hidden: { opacity: 0, y: 50 },
+                      visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+                    }}
+                    className="flex flex-col justify-between bg-moss/5 h-[400px] p-6 border border-moss/20 text-left rounded-t-xl shadow"
+                  >
+                    <p className="text-lg italic">"{testimonial.quote}"</p>
+                    <p className="font-medium uppercase">— {testimonial.author}</p>
+                  </motion.div>
+                ))}
+              </div>
+          </motion.div>
         </div>
       </div>
     </>
