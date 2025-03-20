@@ -280,49 +280,65 @@ const Home = () => {
           </motion.div>
 
 
-        {/* Quick Links */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.3 } } }}
-        >
-          <motion.h2 
-            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="text-2xl md:text-4xl mb-8 text-center tracking-wider"
+          {/* Quick Links */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: false, amount: 0.2 }} 
+            transition={{ duration: 1 }}
+            className="py-32"
           >
-            Deepen Your Understanding
-          </motion.h2>
-          <motion.p 
-            variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-            className="text-center text-lg"
-          >
-            Check out these essential guides to explore the history and philosophy of yoga.
-          </motion.p>
-          <div className="grid gap-12 my-12">
-            {[
-              { link: "/what-is-yoga/beginners-guide", title: "Start Here: Beginner’s Guide", description: "New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started." },
-              { link: "/what-is-yoga/overview", title: "What Is Yoga?", description: "Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today." },
-              { link: "/what-is-yoga/eight-limbed-path", title: "The 8-Limbed Path", description: "Explore the eight limbs of yoga, from ethical principles and breath control to meditation and self-realization." },
-              { link: "/what-is-yoga/seven-chakras", title: "The 7 Chakras", description: "Understand the seven energy centers of the body and how they influence your physical, emotional, and spiritual well-being." },
-              { link: "/what-is-yoga/three-gunas", title: "The 3 Gunas", description: "Learn about the three fundamental qualities of nature—Sattva, Rajas, and Tamas—and how they shape your actions and mindset." },
-              { link: "/resources", title: "Resources", description: "Find recommended books, tools, and external guides to deepen your yoga knowledge and practice." },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                variants={{
-                  hidden: { opacity: 0, y: 50 },
-                  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-                }}
+            <div className="px-8">
+              <motion.div 
+                className="text-center mb-16"
+                variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
               >
-                <Link 
-                  to={item.link} 
-                  className="block w-full p-8 border border-moss/50 transition-all duration-300 hover:scale-[1.01] hover:bg-moss/80 hover:text-white flex flex-col justify-center"
-                >
-                  <h3 className="text-xl mb-2">{item.title}</h3>
-                  <p>{item.description}</p>
-                </Link>
+                <div className="flex items-center justify-center mb-8">
+                  <h2 className="text-3xl md:text-4xl tracking-wider font-light">Deepen Your Understanding</h2>
+                </div>
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                  Explore these essential guides to discover the rich history and transformative philosophy of yoga.
+                </p>
               </motion.div>
-            ))}
-          </div>
-        </motion.div>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                {[
+                  { link: "/what-is-yoga/beginners-guide", title: "Start Here: Beginner's Guide", description: "New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started." },
+                  { link: "/what-is-yoga/overview", title: "What Is Yoga?", description: "Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today." },
+                  { link: "/what-is-yoga/eight-limbed-path", title: "The 8-Limbed Path", description: "Explore the eight limbs of yoga, from ethical principles and breath control to meditation and self-realization." },
+                  { link: "/what-is-yoga/seven-chakras", title: "The 7 Chakras", description: "Understand the seven energy centers of the body and how they influence your physical, emotional, and spiritual well-being." },
+                  { link: "/what-is-yoga/three-gunas", title: "The 3 Gunas", description: "Learn about the three fundamental qualities of nature—Sattva, Rajas, and Tamas—and how they shape your actions and mindset." },
+                  { link: "/resources", title: "Resources", description: "Find recommended books, tools, and external guides to deepen your yoga knowledge and practice." },
+                ].map((item, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: false, amount: 0.1 }}
+                    transition={{ duration: 0.8, delay: index * 0.1 }}
+                    className="group"
+                  >
+                    <Link 
+                      to={item.link} 
+                      className="flex flex-col h-full overflow-hidden bg-moss/5 shadow-sm border border-moss/10 rounded-sm transition-all duration-300 hover:shadow-md hover:border-moss/30 group-hover:scale-[1.01]"
+                    >
+                      <div className="h-1 bg-moss/70 w-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                      <div className="p-8 flex flex-col h-full">
+                        <h3 className="text-xl font-light tracking-wide mb-4 text-gray-800 group-hover:text-moss transition-colors duration-300">{item.title}</h3>
+                        <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                        <div className="mt-6 pt-4 border-t border-gray-100 flex items-center text-moss opacity-0 transform translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                          <span className="text-sm uppercase tracking-wider">Explore</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                          </svg>
+                        </div>
+                      </div>
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
         
         {/* Yoga For Every Need */}
         <motion.div
