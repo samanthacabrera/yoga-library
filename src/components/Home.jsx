@@ -7,6 +7,20 @@ import PageNav from './PageNav';
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState(0);
+  const [goals, setGoals] = useState([]);
+
+
+  const handleGoalSelection = (goal) => {
+    if (goals.includes(goal)) {
+      setGoals(goals.filter(g => g !== goal));
+    } else {
+      setGoals([...goals, goal]);
+    }
+  };
+
+  const generateRecommendations = () => {
+    setShowRecommendations(true);
+  };
   
   const approaches = [
     {
@@ -96,27 +110,65 @@ const Home = () => {
         </div>
       </Parallax>
         
-        <div className="max-w-3xl mx-12 md:mx-auto py-40 grid gap-y-40 md:gap-y-80 text-charcoal">
-          {/* About */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: false, amount: 0.1 }}
-            transition={{ duration: 1.5 }}
-            className="space-y-28"
-          >
-            <div>
-              <h2 className="text-2xl md:text-4xl mb-16 text-center tracking-wider">
-                What is Learn Yoga Online
-              </h2>
-              
-              <div className="grid grid-cols-1 gap-y-16 text-lg leading-relaxed opacity-90">
-                <p>Learn Yoga Online is a simple, intuitive platform for deepening your yoga practice. Whether you're a beginner or an experienced yogi, explore essential poses with clear instructions and in-depth guidance.</p>
-                
-                <p>Alongside the practice of physical poses, you'll also have the opportunity to explore the deeper aspects of yoga that connect mind, body, and spirit. This knowledge will help you integrate yoga into your daily life for greater well-being.</p>
+    <div className="max-w-3xl mx-12 md:mx-auto py-40 grid gap-y-40 md:gap-y-80 text-charcoal">
+      
+      {/* About */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false, amount: 0.1 }}
+        transition={{ duration: 1.5 }}
+        className="mb-40"
+      >
+        <div className="flex items-center mt-24 py-12">
+          <div className="w-16 h-px bg-moss"></div>
+          <h3 className="ml-4 text-2xl font-light tracking-widest text-gray-800">ABOUT US</h3>
+        </div>
+
+        <p className="text-sm uppercase tracking-widest text-moss mb-10">HOLISTIC JOURNEY INTO YOGA</p>
+
+        <div className="space-y-6 text-gray-700">
+          <p className="text-base leading-relaxed">
+            Learn Yoga Online is a simple, intuitive platform for deepening your yoga practice. Whether you're a beginner or an experienced yogi, explore essential poses with clear instructions and in-depth guidance.          
+          </p>
+          
+          <p className="text-base leading-relaxed">
+            Alongside the practice of physical poses, you'll also have the opportunity to explore the deeper aspects of yoga that connect mind, body, and spirit. This knowledge will help you integrate yoga into your daily life for greater well-being.         
+          </p>
+        </div>
+      </motion.div>
+
+      {/* What We Offer */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false, amount: 0.1 }}
+          transition={{ duration: 1.5 }}
+          className="mt-40"
+        >
+          <div className="flex items-center mb-12">
+            <div className="w-16 h-px bg-moss"></div>
+            <h3 className="ml-4 text-2xl font-light tracking-widest text-gray-800">WHAT WE OFFER</h3>
+          </div>
+
+          <p className="text-sm uppercase tracking-widest text-moss mb-10">COMPREHENSIVE YOGA RESOURCES</p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            {[
+              { title: "Extensive Pose Library", description: "Access detailed breakdowns of over 200 yoga poses, from foundational postures to advanced variations." },
+              { title: "Progressive Learning Paths", description: "Follow structured sequences that gradually build your strength, flexibility, and understanding." },
+              { title: "Live & On-Demand Classes", description: "Connect with expert instructors in real-time or practice at your own pace." },
+              { title: "Personalized Feedback", description: "Upload videos of your practice and receive guidance from certified yoga teachers." },
+              { title: "Meditation & Breathwork", description: "Explore techniques that calm the mind and enhance your overall wellbeing." },
+              { title: "Philosophy & History", description: "Discover the rich traditions and ancient wisdom behind the physical practice." }
+            ].map((item, index) => (
+              <div key={index} className="border-l border-moss/30 pl-6 py-2">
+                <h4 className="text-base font-medium text-gray-800 mb-2">{item.title}</h4>
+                <p className="text-base text-gray-700">{item.description}</p>
               </div>
-            </div>
-          </motion.div>
+            ))}
+          </div>
+        </motion.div>
 
           {/* Approach */}
           <motion.div
