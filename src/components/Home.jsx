@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Parallax } from 'react-parallax';
 import { motion } from 'framer-motion';
@@ -5,6 +6,22 @@ import { Link } from 'react-router-dom';
 import PageNav from './PageNav';
 
 const Home = () => {
+  const [activeTab, setActiveTab] = useState(0);
+  
+  const approaches = [
+    {
+      title: "Accessible",
+      mainText: "We know starting yoga can feel overwhelming with so many poses, terms, and techniques to learn. That's why we keep our instruction simple, structured, and approachable. Every pose is explained step by step with careful attention to alignment and safety. We provide modifications for different body types and experience levels, allowing you to practice comfortably at your own pace while gradually building strength and flexibility."
+    },
+    {
+      title: "Holistic",
+      mainText: "The physical poses are just one part of yoga. We also cover breathing techniques, meditation, and key concepts that enhance your practice. These elements are presented in clear, everyday language with practical examples of how they can benefit your wellbeing. Understanding these aspects helps create a more complete and rewarding yoga experience."
+    },
+    {
+      title: "Authentic",
+      mainText: "Yoga comes from a rich tradition that spans thousands of years. We research each topic thoroughly and check multiple sources to ensure the information we share is accurate. You'll find references throughout our content if you want to learn more about specific topics. This helps you build your practice on solid, trustworthy foundations."
+    },
+  ];
   return (
     <>
       <Helmet>
@@ -107,22 +124,76 @@ const Home = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 1.5 }}
-            className="space-y-28"
+            className="py-24"
           >
-            <div>
-              <h2 className="text-2xl md:text-4xl mb-16 text-center tracking-wider">
-                Our Unique Approach
-              </h2>
-              
-              <div className="grid grid-cols-1 gap-y-16 text-lg leading-relaxed opacity-90">
-                <p>At Learn Yoga Online, we’re dedicated to creating a welcoming and accessible space for everyone, especially absolute beginners. Our approach is designed to help you build confidence in your yoga journey with clear, well-researched guidance.</p>
-                <p>We know starting yoga can feel overwhelming with so many poses, terms, and techniques to learn. That's why we keep our instruction simple, structured, and approachable. Every pose is explained step by step with careful attention to alignment and safety. We provide modifications for different body types and experience levels, allowing you to practice comfortably at your own pace while gradually building strength and flexibility.</p>
-                <p>The physical poses are just one part of yoga. We also cover breathing techniques, meditation, and key concepts that enhance your practice. These elements are presented in clear, everyday language with practical examples of how they can benefit your wellbeing. Understanding these aspects helps create a more complete and rewarding yoga experience.</p>
-                <p>Yoga comes from a rich tradition that spans thousands of years. We research each topic thoroughly and check multiple sources to ensure the information we share is accurate. You'll find references throughout our content if you want to learn more about specific topics. This helps you build your practice on solid, trustworthy foundations.</p>
-                <p>Wherever you are in your yoga journey, we’re here to support you with clear, reliable, and beginner-friendly resources designed to help you grow with confidence.</p>
+            <h2 className="text-2xl md:text-4xl mb-16 text-center tracking-wider">
+              Our Unique Approach
+            </h2>
+            
+            {/* Tab Navigation */}
+            <div className="mb-12">
+              <div className="flex flex-wrap justify-center gap-6">
+                {approaches.map((approach, index) => (
+                  <motion.button
+                    key={index}
+                    onClick={() => setActiveTab(index)}
+                    whileHover={{ y: -2 }}
+                    whileTap={{ scale: 0.98 }}
+                    className={`py-4 px-8 transition-all duration-300 focus:outline-none border shadow-sm text-sm tracking-wider ${
+                      activeTab === index 
+                        ? "bg-moss/80 text-white shadow-md border-transparent" 
+                        : "bg-white text-charcoal hover:bg-moss/20 border-gray-200"
+                    }`}
+                  >
+                    {approach.title}
+                  </motion.button>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden rounded-t-2xl min-h-[340px] bg-moss/5 border border-moss/10">
+              {approaches.map((approach, index) => (
+                <motion.div
+                  key={index}
+                  initial={false}
+                  animate={{ 
+                    opacity: activeTab === index ? 1 : 0,
+                    x: activeTab === index ? 0 : activeTab > index ? -100 : 100,
+                    display: activeTab === index ? "block" : "none"
+                  }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                  className="absolute inset-0 p-10"
+                >
+                  <div className="flex flex-col h-full justify-center text-justify">
+                    <h3 className="text-xl text-center tracking-wide text-gray-900 mb-4">
+                      {approach.title}
+                    </h3>
+                    <p className="leading-relaxed tracking-wide ">
+                      {approach.mainText}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+            
+            <div className="mt-6 flex justify-center">
+              <div className="flex space-x-2">
+                {approaches.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveTab(index)}
+                    className={`transition-all duration-300 rounded-full ${
+                      activeTab === index 
+                        ? "w-8 h-2 bg-moss/80" 
+                        : "w-2 h-2 bg-gray-300 hover:bg-gray-400"
+                    }`}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
               </div>
             </div>
           </motion.div>
+
 
           {/* Intro */}
           <motion.div
