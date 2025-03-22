@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Parallax } from 'react-parallax';
 import { motion } from 'framer-motion';
@@ -7,21 +7,49 @@ import PageNav from './PageNav';
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState(0);
-  const [goals, setGoals] = useState([]);
+  const [current, setCurrent] = useState(0);
 
-
-  const handleGoalSelection = (goal) => {
-    if (goals.includes(goal)) {
-      setGoals(goals.filter(g => g !== goal));
-    } else {
-      setGoals([...goals, goal]);
+  const carouselItems = [
+    {
+      image: "bg1.jpg",
+      heading: "Learn Yoga Online",
+      subheading: "",
+      features: [
+        "Explore the origins and meanings of each pose",
+        "Discover the philosophy behind the practice",
+        "Deepen your understanding with guided insights",
+      ]
+    },
+    {
+      image: "bg1.jpg",
+      heading: "Learn Yoga Online",
+      subheading: "",
+      features: [
+        "Enhance your practice with proper technique",
+        "Learn the traditional names of essential yoga poses",
+        "Understand the cues for proper alignment",
+      ]
+    },
+    {
+      image: "bg1.jpg",
+      heading: "Learn Yoga Online",
+      subheading: "",
+      features: [
+        "Deepen your connection between mind and body",
+        "Synchronize breath with movement",
+        "Cultivate present-moment awareness"
+      ]
     }
-  };
+  ];
 
-  const generateRecommendations = () => {
-    setShowRecommendations(true);
-  };
-  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev === carouselItems.length - 1 ? 0 : prev + 1));
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const approaches = [
     {
       title: "Accessible",
@@ -67,48 +95,75 @@ const Home = () => {
       <PageNav/>
       <div className="flex flex-col w-screen">
       
-      {/* Hero */}
-      <Parallax bgImage="bg1.jpg" strength={300} bgImageStyle={{ objectFit: "cover", width: "100%", height: "100vh" }}>
-        <div className="relative h-screen flex flex-col items-center justify-center">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.8, ease: "easeOut" }}
-            className="text-center px-4 max-w-4xl mx-auto space-y-6"
+    <Parallax 
+      bgImage={carouselItems[current].image} 
+      strength={300} 
+      bgImageStyle={{ objectFit: "cover", width: "100%", height: "100vh" }}
+    >
+      <div className="relative h-screen flex flex-col items-center justify-center">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/70" />
+        <motion.div 
+          key={current}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 1.8, ease: "easeOut" }}
+          className="relative text-center max-w-4xl mx-auto space-y-12 z-10"
+        >
+          <motion.h1 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2.2, ease: "easeOut" }}
+            className="text-2xl md:text-4xl lg:text-6xl text-white font-light tracking-wide"
           >
-            <motion.h1 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 2.2, ease: "easeOut" }}
-              className="text-5xl md:text-7xl lg:text-8xl text-white tracking-wider"
-            >
-              Learn Yoga Online
-            </motion.h1>
-            
-            <motion.p 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4, duration: 1.6 }}
-              className="text-lg md:text-xl text-white/90 tracking-wide max-w-2xl mx-auto"
-            >
-              A mindful approach to developing your yoga practice
-            </motion.p>
+            {carouselItems[current].heading}
+          </motion.h1>
 
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.8, duration: 1.2 }}
-            >
-              <Link
-                to="/poses"
-                className="inline-block mt-8 px-10 py-4 border border-white/40 rounded-sm text-white hover:bg-white/10 hover:border-white/60 transition-all duration-500 tracking-wider uppercase text-sm font-light"
+          <div className="flex flex-col gap-y-8 text-white/80 text-xs uppercase tracking-wider max-w-3xl mx-auto">
+            {carouselItems[current].features.map((text, index) => (
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6 + index * 0.2, duration: 1.2 }}
+                className="border-b border-white/30 pb-2"
               >
-                Begin Your Journey
-              </Link>
-            </motion.div>
+                {text}
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2, duration: 1.2 }}
+            className="mt-6"
+          >
+            <Link
+              to="/poses"
+              className="inline-block px-10 py-4 border border-white/40 rounded-sm text-white hover:bg-white/10 hover:border-white/60 transition-all duration-500 tracking-wider uppercase text-sm font-light"
+            >
+              Begin Your Journey
+            </Link>
           </motion.div>
+        </motion.div>
+        
+        <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-10">
+          {carouselItems.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                index === current 
+                  ? "bg-white w-6" 
+                  : "bg-white/40 hover:bg-white/60"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
         </div>
-      </Parallax>
+      </div>
+    </Parallax>
         
     <div className="max-w-3xl mx-12 md:mx-auto py-40 grid gap-y-40 md:gap-y-80 text-charcoal">
       
@@ -122,7 +177,7 @@ const Home = () => {
       >
         <div className="flex items-center mt-24 py-12">
           <div className="w-16 h-px bg-moss"></div>
-          <h3 className="ml-4 text-2xl font-light tracking-widest text-gray-800">ABOUT US</h3>
+          <h3 className="ml-4 text-2xl font-light tracking-widest text-gray-800">WHAT IS LEARN YOGA ONLINE</h3>
         </div>
 
         <p className="text-sm uppercase tracking-widest text-moss mb-10">HOLISTIC JOURNEY INTO YOGA</p>
