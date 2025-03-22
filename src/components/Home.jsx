@@ -16,8 +16,8 @@ const Home = () => {
       subheading: "",
       features: [
         "Explore the origins and meanings of each pose",
-        "Discover the philosophy behind the practice",
-        "Deepen your understanding with guided insights",
+        // "Discover the philosophy behind the practice",
+        // "Deepen your understanding with guided insights",
       ]
     },
     {
@@ -25,9 +25,9 @@ const Home = () => {
       heading: "Learn Yoga Online",
       subheading: "",
       features: [
-        "Enhance your practice with proper technique",
+        // "Enhance your practice with proper technique",
         "Learn the traditional names of essential yoga poses",
-        "Understand the cues for proper alignment",
+        // "Understand the cues for proper alignment",
       ]
     },
     {
@@ -35,9 +35,9 @@ const Home = () => {
       heading: "Learn Yoga Online",
       subheading: "",
       features: [
-        "Deepen your connection between mind and body",
+        // "Deepen your connection between mind and body",
         "Synchronize breath with movement",
-        "Cultivate present-moment awareness"
+        // "Cultivate present-moment awareness"
       ]
     }
   ];
@@ -94,59 +94,52 @@ const Home = () => {
       </Helmet>
       <PageNav/>
       <div className="flex flex-col w-screen">
-      
-    <Parallax 
-      bgImage={carouselItems[current].image} 
-      strength={300} 
-      bgImageStyle={{ objectFit: "cover", width: "100%", height: "100vh" }}
-    >
-      <div className="relative h-screen flex flex-col items-center justify-center">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/70" />
-        <motion.div 
-          key={current}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 1.8, ease: "easeOut" }}
-          className="relative text-center max-w-4xl mx-auto space-y-12 z-10"
-        >
-          <motion.h1 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2.2, ease: "easeOut" }}
-            className="text-4xl lg:text-6xl text-white"
-          >
-            {carouselItems[current].heading}
-          </motion.h1>
+      {/* Hero */}
+      <Parallax 
+        bgImage={carouselItems[current].image} 
+        strength={300} 
+        bgImageStyle={{ objectFit: "cover", width: "100%", height: "100vh" }}
+      >
+        <div className="relative h-screen flex flex-col items-center justify-center">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/70" />
+          <div className="relative text-center space-y-20">
+            <motion.h1 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 2.2, ease: "easeOut" }}
+              className="text-4xl lg:text-6xl text-white"
+            >
+              {carouselItems[current].heading}
+            </motion.h1>
 
-          <div className="flex flex-col gap-y-8 text-white/80 text-xs uppercase tracking-wider max-w-3xl mx-auto">
-            {carouselItems[current].features.map((text, index) => (
-              <motion.div 
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 + index * 0.2, duration: 1.2 }}
-                className=""
+            <div key={current} className="flex flex-col gap-y-8 text-white/80 text-xs italic uppercase tracking-widest">
+              {carouselItems[current].features.map((text, index) => (
+                <motion.div 
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 + index * 0.2, duration: 1.2 }}
+                >
+                  {text}
+                </motion.div>
+              ))}
+            </div>
+            
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.2, duration: 1.2 }}
+              className="mt-6"
+            >
+              <Link
+                to="/poses"
+                className="inline-block text-white/80 text-sm md:text-md rounded-full bg-moss px-6 py-2 hover:scale-[102%] transition duration-500"
               >
-                {text}
-              </motion.div>
-            ))}
+                Explore Foundational Yoga Poses
+              </Link>
+            </motion.div>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.2, duration: 1.2 }}
-            className="mt-6"
-          >
-            <Link
-              to="/poses"
-              className="inline-block px-10 py-4 border border-white/40 rounded-sm text-white hover:bg-white/10 hover:border-white/60 transition-all duration-500 tracking-wider uppercase text-sm font-light"
-            >
-              Begin Your Journey
-            </Link>
-          </motion.div>
-        </motion.div>
         
         <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-10">
           {carouselItems.map((_, index) => (
