@@ -405,59 +405,6 @@ const Home = () => {
           </div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: false, amount: 0.1 }}
-            transition={{ duration: 1.5 }}
-            className="space-y-24 p-24 bg-moss/5"
-          >
-          <div>
-            <h2 className="text-2xl md:text-4xl mb-16 text-center tracking-wider">
-              Transform Your Practice
-            </h2>
-            
-            <div className="grid md:grid-cols-3 gap-x-12 gap-y-16">
-              {[
-                { number: "01", text: "Learn the names of essential yoga poses" },
-                { number: "02", text: "Understand the cues for proper alignment" },
-                { number: "03", text: "Explore the origins and meanings of each pose" }
-              ].map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false, amount: 0.1 }}
-                  transition={{ duration: 1.5, delay: index * 0.3 }}
-                  className="border-b border-moss/30 py-6"
-                >
-                  <div className="text-moss/70 text-sm mb-4">{item.number}</div>
-                  <p className="text-lg opacity-90">{item.text}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-          
-          {/* CTA */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: false, amount: 0.1 }}
-            transition={{ duration: 1.5 }}
-            className="flex justify-center pt-8"
-          >
-            <Link
-              to="/poses"
-              className="inline-flex flex-col items-center"
-            >
-              <span className="text-lg tracking-widest text-charcoal/80 hover:text-moss hover:scale-[103%] transition-all duration-300 uppercase">
-                Begin
-              </span>
-            </Link>
-            </motion.div>
-          </motion.div>
-
-
           {/* Quick Links */}
           <motion.div
             initial={{ opacity: 0, y: 50 }} 
@@ -498,13 +445,13 @@ const Home = () => {
                   >
                     <Link 
                       to={item.link} 
-                      className="flex flex-col h-full overflow-hidden bg-moss/5 shadow-sm border border-moss/10 rounded-sm transition-all duration-300 hover:shadow-md hover:border-moss/30 group-hover:scale-[1.01]"
+                      className="flex flex-col h-full overflow-hidden shadow-sm border border-moss/20 rounded-sm transition-all duration-300 hover:shadow-md hover:border-moss/30 group-hover:scale-[1.01]"
                     >
-                      <div className="h-1 bg-moss/70 w-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                      <div className="h-[1px] bg-moss/70 w-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                       <div className="p-8 flex flex-col h-full">
                         <h3 className="text-xl font-light tracking-wide mb-4 text-gray-800 group-hover:text-moss transition-colors duration-300">{item.title}</h3>
                         <p className="text-gray-600 leading-relaxed">{item.description}</p>
-                        <div className="mt-6 pt-4 border-t border-gray-100 flex items-center text-moss opacity-0 transform translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                        <div className="mt-6 border-gray-100 flex items-center text-moss opacity-0 transform translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                           <span className="text-sm uppercase tracking-wider">Explore</span>
                           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -596,7 +543,7 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.2 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex flex-col justify-center items-center text-center space-y-8 py-20 px-6 md:px-12 lg:px-24 bg-moss/10"
+            className="flex flex-col justify-center items-center text-center space-y-8 py-20 px-6 md:px-12 lg:px-24 bg-moss/[2%]"
           >
             <h2 className="text-3xl md:text-5xl font-light text-center tracking-widest">
               Explore My Column
@@ -643,13 +590,64 @@ const Home = () => {
                       hidden: { opacity: 0, y: 50 },
                       visible: { opacity: 1, y: 0, transition: { duration: 1 } },
                     }}
-                    className="flex flex-col justify-between bg-moss/5 h-[400px] p-6 border border-moss/20 text-left rounded-t-xl shadow"
+                    className="flex flex-col justify-between bg-moss/[2%] h-[400px] p-6 border border-moss/20 text-left rounded-t-xl hover:shadow-sm transition duration-300"
                   >
                     <p className="text-lg italic">"{testimonial.quote}"</p>
                     <p className="font-medium uppercase">— {testimonial.author}</p>
                   </motion.div>
                 ))}
               </div>
+          </motion.div>
+
+          {/* CTA */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: false, amount: 0.1 }}
+            transition={{ duration: 1.5 }}
+            className="space-y-24 p-24 bg-moss/[2%]"
+          >
+          <div>
+            <h2 className="text-2xl md:text-4xl mb-16 text-center tracking-wider">
+              Transform Your Practice
+            </h2>
+            
+            <div className="grid md:grid-cols-3 gap-x-12 gap-y-16">
+              {[
+                { number: "01", text: "Learn the names of essential yoga poses" },
+                { number: "02", text: "Understand the cues for proper alignment" },
+                { number: "03", text: "Explore the origins and meanings of each pose" }
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: false, amount: 0.1 }}
+                  transition={{ duration: 1.5, delay: index * 0.3 }}
+                  className="border-b border-moss/30 py-6"
+                >
+                  <div className="text-moss/70 text-sm mb-4">{item.number}</div>
+                  <p className="text-lg opacity-90">{item.text}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: false, amount: 0.1 }}
+            transition={{ duration: 1.5 }}
+            className="flex justify-center pt-8"
+          >
+            <Link
+              to="/poses"
+              className="inline-flex flex-col items-center"
+            >
+              <span className="text-lg tracking-widest text-charcoal/80 hover:text-moss hover:scale-[103%] transition-all duration-300 uppercase">
+                Begin
+              </span>
+            </Link>
+            </motion.div>
           </motion.div>
         </div>
       </div>
