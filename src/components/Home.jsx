@@ -208,19 +208,15 @@ const Home = () => {
 
           <p className="text-sm uppercase tracking-widest text-moss mb-10">COMPREHENSIVE YOGA RESOURCES</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 gap-8 mb-16">
             {[
-              { title: "Extensive Pose Library", description: "Access detailed breakdowns of over 200 yoga poses, from foundational postures to advanced variations." },
-              { title: "Progressive Learning Paths", description: "Follow structured sequences that gradually build your strength, flexibility, and understanding." },
-              { title: "Live & On-Demand Classes", description: "Connect with expert instructors in real-time or practice at your own pace." },
-              { title: "Personalized Feedback", description: "Upload videos of your practice and receive guidance from certified yoga teachers." },
-              { title: "Meditation & Breathwork", description: "Explore techniques that calm the mind and enhance your overall wellbeing." },
-              { title: "Philosophy & History", description: "Discover the rich traditions and ancient wisdom behind the physical practice." }
+              { title: "Pose Library", link: "/poses", description: "Access detailed breakdowns of 50 foundational yoga poses." },
+              { title: "Philosophy & History", link: "/what-is-yoga/overview", description: "Discover the rich traditions and ancient wisdom behind the physical practice." }
             ].map((item, index) => (
-              <div key={index} className="border-l border-moss/30 pl-6 py-2">
+              <Link to={item.link} key={index} className="border-l border-moss/30 pl-6 py-2 hover:scale-[102%] transition duration-500">
                 <h4 className="text-base font-medium text-gray-800 mb-2">{item.title}</h4>
                 <p className="text-base text-gray-700">{item.description}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </motion.div>
