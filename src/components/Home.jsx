@@ -114,7 +114,7 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2.2, ease: "easeOut" }}
-            className="text-2xl md:text-4xl lg:text-6xl text-white font-light tracking-wide"
+            className="text-4xl lg:text-8xl text-white"
           >
             {carouselItems[current].heading}
           </motion.h1>
@@ -180,7 +180,7 @@ const Home = () => {
           <h3 className="ml-4 text-2xl font-light tracking-widest text-gray-800">WHAT IS LEARN YOGA ONLINE</h3>
         </div>
 
-        <p className="text-sm uppercase tracking-widest text-moss mb-10">HOLISTIC JOURNEY INTO YOGA</p>
+        <p className="text-sm uppercase tracking-widest text-moss mb-10">A HOLISTIC JOURNEY INTO YOGA</p>
 
         <div className="space-y-6 text-gray-700">
           <p className="text-base leading-relaxed">
@@ -246,7 +246,7 @@ const Home = () => {
                     onClick={() => setActiveTab(index)}
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.98 }}
-                    className={`py-4 px-8 transition-all duration-300 focus:outline-none border shadow-sm text-sm tracking-wider ${
+                    className={`py-4 px-8 transition-all duration-300 focus:outline-none border shadow-sm text-xs md:text-sm tracking-wider ${
                       activeTab === index 
                         ? "bg-moss/80 text-white shadow-md border-transparent" 
                         : "bg-white text-charcoal hover:bg-moss/20 border-gray-200"
@@ -258,7 +258,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="relative overflow-hidden rounded-t-2xl min-h-[340px] bg-moss/5 border border-moss/10">
+            <div className="relative overflow-hidden min-h-[400px] bg-moss/[2%]">
               {approaches.map((approach, index) => (
                 <motion.div
                   key={index}
@@ -271,11 +271,8 @@ const Home = () => {
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                   className="absolute inset-0 p-10"
                 >
-                  <div className="flex flex-col h-full justify-center text-justify">
-                    <h3 className="text-xl text-center tracking-wide text-gray-900 mb-4">
-                      {approach.title}
-                    </h3>
-                    <p className="leading-relaxed tracking-wide ">
+                  <div className="flex flex-col h-full justify-center">
+                    <p className="text-base leading-loose tracking-wide text-center">
                       {approach.mainText}
                     </p>
                   </div>
