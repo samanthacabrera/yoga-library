@@ -114,7 +114,7 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2.2, ease: "easeOut" }}
-            className="text-4xl lg:text-8xl text-white"
+            className="text-4xl lg:text-6xl text-white"
           >
             {carouselItems[current].heading}
           </motion.h1>
@@ -126,7 +126,7 @@ const Home = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 + index * 0.2, duration: 1.2 }}
-                className="border-b border-white/30 pb-2"
+                className=""
               >
                 {text}
               </motion.div>
@@ -423,7 +423,7 @@ const Home = () => {
                 </p>
               </motion.div>
 
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid  gap-8">
                 {[
                   { link: "/what-is-yoga/beginners-guide", title: "Start Here: Beginner's Guide", description: "New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started." },
                   { link: "/what-is-yoga/overview", title: "What Is Yoga?", description: "Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today." },
