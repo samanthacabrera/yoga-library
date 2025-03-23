@@ -12,7 +12,9 @@ const Home = () => {
   const featuresList = [
   "Explore the origins and meanings of each pose",
   "Learn the traditional names of essential yoga poses",
-  "Synchronize breath with movement",
+  "Modify poses for different body types and abilities",
+  "Incorporate mindfulness techniques into your yoga practice",
+  "Understand the philosophical foundations of yoga"
 ];
 
   useEffect(() => {
@@ -109,7 +111,7 @@ const Home = () => {
                 to="/poses"
                 className="inline-block text-white/80 text-sm md:text-md rounded-full bg-moss px-6 py-2 hover:scale-[102%] transition duration-500"
               >
-                Explore Foundational Yoga Poses
+                Explore Yoga Poses
               </Link>
             </motion.div>
           </div>
