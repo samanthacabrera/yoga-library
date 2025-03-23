@@ -9,44 +9,16 @@ const Home = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [current, setCurrent] = useState(0);
 
-  const carouselItems = [
-    {
-      image: "bg1.jpg",
-      heading: "Learn Yoga Online",
-      subheading: "",
-      features: [
-        "Explore the origins and meanings of each pose",
-        // "Discover the philosophy behind the practice",
-        // "Deepen your understanding with guided insights",
-      ]
-    },
-    {
-      image: "bg1.jpg",
-      heading: "Learn Yoga Online",
-      subheading: "",
-      features: [
-        // "Enhance your practice with proper technique",
-        "Learn the traditional names of essential yoga poses",
-        // "Understand the cues for proper alignment",
-      ]
-    },
-    {
-      image: "bg1.jpg",
-      heading: "Learn Yoga Online",
-      subheading: "",
-      features: [
-        // "Deepen your connection between mind and body",
-        "Synchronize breath with movement",
-        // "Cultivate present-moment awareness"
-      ]
-    }
-  ];
+  const featuresList = [
+  "Explore the origins and meanings of each pose",
+  "Learn the traditional names of essential yoga poses",
+  "Synchronize breath with movement",
+];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev === carouselItems.length - 1 ? 0 : prev + 1));
+      setCurrent((prev) => (prev === featuresList.length - 1 ? 0 : prev + 1));
     }, 5000);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -96,7 +68,7 @@ const Home = () => {
       <div className="flex flex-col w-screen">
       {/* Hero */}
       <Parallax 
-        bgImage={carouselItems[current].image} 
+        bgImage="bg1.jpg" 
         strength={300} 
         bgImageStyle={{ objectFit: "cover", width: "100%", height: "100vh" }}
       >
@@ -109,20 +81,22 @@ const Home = () => {
               transition={{ duration: 2.2, ease: "easeOut" }}
               className="text-4xl lg:text-6xl text-white"
             >
-              {carouselItems[current].heading}
+              
+            Learn Yoga Online
             </motion.h1>
 
             <div key={current} className="flex flex-col gap-y-8 text-white/80 text-xs italic uppercase tracking-widest">
-              {carouselItems[current].features.map((text, index) => (
-                <motion.div 
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 + index * 0.2, duration: 1.2 }}
-                >
-                  {text}
-                </motion.div>
-              ))}
+             
+            <motion.div
+              key={current} 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1, duration: 1.2 }}
+            >
+              {featuresList[current]}
+            </motion.div>
+
+         
             </div>
             
             <motion.div
@@ -142,7 +116,7 @@ const Home = () => {
 
         
         <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-10">
-          {carouselItems.map((_, index) => (
+          {featuresList.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrent(index)}
