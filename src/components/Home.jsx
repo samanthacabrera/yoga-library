@@ -133,7 +133,7 @@ const Home = () => {
         </div>
       </div>
     </Parallax>
-    <p className="absolute bottom-2 right-2 text-white/90 text-xs">Photo by <a href="https://unsplash.com/@nkuutz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Eneko Uruñuela</a> on <a href="https://unsplash.com/photos/woman-stretching-on-mountain-top-during-sunrise-I2YSmEUAgDY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    <p className="absolute bottom-2 right-2 text-xs opacity-70 translate-y-[30px]">Photo by <a href="https://unsplash.com/@nkuutz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Eneko Uruñuela</a> on <a href="https://unsplash.com/photos/woman-stretching-on-mountain-top-during-sunrise-I2YSmEUAgDY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
     </p>
         
     <div className="max-w-3xl mx-12 md:mx-auto py-40 grid gap-y-40 md:gap-y-80 text-charcoal">
