@@ -165,32 +165,78 @@ const Home = () => {
       </motion.div>
 
       {/* What We Offer */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: false, amount: 0.1 }}
-          transition={{ duration: 1.5 }}
-          className="mt-40"
-        >
-          <div className="flex items-center mb-12">
-            <div className="w-16 h-px bg-moss"></div>
-            <h3 className="ml-4 text-2xl font-light tracking-widest text-gray-800">WHAT WE OFFER</h3>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false, amount: 0.1 }}
+        transition={{ duration: 1.5 }}
+        className="max-w-7xl mx-auto px-4 py-16 md:py-24"
+      >
+        <div className="grid gap-16 items-center">
+          {/* Section Header */}
+          <div className="space-y-6">
+            <div className="flex items-center">
+              <div className="w-12 h-0.5 bg-black/30"></div>
+              <h2 className="ml-4 text-3xl tracking-wide">
+                What We Offer
+              </h2>
+            </div>
+            
+            <p className="text-xs uppercase tracking-[0.2em] text-gray-500">
+              Comprehensive Yoga Resources
+            </p>
+            
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Elevate your yoga journey with curated resources designed to deepen your practice and understanding.
+            </p>
           </div>
-
-          <p className="text-sm uppercase tracking-widest text-moss mb-10">COMPREHENSIVE YOGA RESOURCES</p>
-
-          <div className="grid grid-cols-1 gap-8 mb-16">
+          
+          {/* Offer Cards */}
+          <div className="grid md:grid-cols-1 gap-8">
             {[
-              { title: "Pose Library", link: "/poses", description: "Access detailed breakdowns of 50 foundational yoga poses." },
-              { title: "Philosophy & History", link: "/what-is-yoga/overview", description: "Discover the rich traditions and ancient wisdom behind the physical practice." }
+              { 
+                title: "Pose Library", 
+                link: "/poses", 
+                description: "Explore detailed breakdowns of 50 foundational yoga poses.",
+              },
+              { 
+                title: "Philosophy & History", 
+                link: "/what-is-yoga/overview", 
+                description: "Uncover the traditions and ancient wisdom behind yoga practice.",
+              }
             ].map((item, index) => (
-              <Link to={item.link} key={index} className="border-l border-moss/30 pl-6 py-2 hover:scale-[102%] transition duration-500">
-                <h4 className="text-base font-medium text-gray-800 mb-2">{item.title}</h4>
-                <p className="text-base text-gray-700">{item.description}</p>
+              <Link 
+                key={index} 
+                to={item.link} 
+                className="group relative overflow-hidden border border-moss/30 p-6 transition-all duration-500 hover:shadow-xl hover:border-gray-200"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-white to-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                <div className="relative z-10 space-y-4">
+                  <h4 className="text-2xl font-medium text-gray-900 transition-colors group-hover:text-black">
+                    {item.title}
+                  </h4>
+                  <p className="text-base text-gray-600 group-hover:text-gray-800 transition-colors">
+                    {item.description}
+                  </p>
+                  <div className="mt-4 inline-flex items-center text-moss opacity-0 group-hover:opacity-100 transition-all">
+                    <span className="mr-2">Explore</span>
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      className="h-5 w-5 transform transition-transform group-hover:translate-x-1" 
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </div>
+                </div>
               </Link>
             ))}
           </div>
-        </motion.div>
+        </div>
+      </motion.div>
 
           {/* Approach */}
           <motion.div
