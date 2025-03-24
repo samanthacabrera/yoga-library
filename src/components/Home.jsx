@@ -26,18 +26,22 @@ const Home = () => {
 
   const approaches = [
     {
+      number: '01',
       title: "Accessible",
       mainText: "We know starting yoga can feel overwhelming with so many poses, terms, and techniques to learn. That's why we keep our instruction simple, structured, and approachable. Every pose is explained step by step with careful attention to alignment and safety. We provide modifications for different body types and experience levels, allowing you to practice comfortably at your own pace while gradually building strength and flexibility."
     },
     {
+      number: '02',
       title: "Holistic",
       mainText: "The physical poses are just one part of yoga. We also cover breathing techniques, meditation, and key concepts that enhance your practice. These elements are presented in clear, everyday language with practical examples of how they can benefit your wellbeing. Understanding these aspects helps create a more complete and rewarding yoga experience."
     },
     {
+      number: '03',
       title: "Authentic",
       mainText: "Yoga comes from a rich tradition that spans thousands of years. We research each topic thoroughly and check multiple sources to ensure the information we share is accurate. You'll find references throughout our content if you want to learn more about specific topics. This helps you build your practice on solid, trustworthy foundations."
     },
   ];
+
   return (
     <>
       <Helmet>
@@ -163,6 +167,42 @@ const Home = () => {
           </p>
         </div>
       </motion.div>
+      
+      {/* Approach */}
+      <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: false, amount: 0.1 }}
+      transition={{ duration: 0.8 }}
+      className="container mx-auto px-4 py-16"
+    >
+      <h2 className="text-4xl font-thin text-center mb-16">
+        Our Approach
+      </h2>
+
+      <div className="grid gap-8 md:gap-24">
+        {approaches.map((approach) => (
+          <motion.div
+            key={approach.number}
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="group"
+          >
+            <div className="flex items-center mb-6">
+              <span className="text-6xl font-extralight text-neutral-300 mr-6 group-hover:text-moss/80 transition-colors duration-300">
+                {approach.number}
+              </span>
+              <h3 className="text-2xl font-light text-neutral-700 group-hover:text-moss/90 transition-colors duration-300">
+                {approach.title}
+              </h3>
+            </div>
+            <p className="text-neutral-600 leading-relaxed tracking-tight">
+              {approach.mainText}
+            </p>
+          </motion.div>
+        ))}
+      </div>
+    </motion.section>
 
       {/* What We Offer */}
       <motion.div
@@ -173,7 +213,7 @@ const Home = () => {
         className="max-w-7xl mx-auto px-4 py-16 md:py-24"
       >
         <div className="grid gap-16 items-center">
-          {/* Section Header */}
+
           <div className="space-y-6">
             <div className="flex items-center">
               <div className="w-12 h-0.5 bg-black/30"></div>
@@ -190,8 +230,7 @@ const Home = () => {
               Elevate your yoga journey with curated resources designed to deepen your practice and understanding.
             </p>
           </div>
-          
-          {/* Offer Cards */}
+
           <div className="grid md:grid-cols-1 gap-8">
             {[
               { 
@@ -238,88 +277,14 @@ const Home = () => {
         </div>
       </motion.div>
 
-          {/* Approach */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: false, amount: 0.1 }}
-            transition={{ duration: 1.5 }}
-            className="py-24"
-          >
-            <h2 className="text-2xl md:text-4xl mb-16 text-center tracking-wider">
-              Our Unique Approach
-            </h2>
-            
-            {/* Tab Navigation */}
-            <div className="mb-12">
-              <div className="flex flex-wrap justify-center gap-6">
-                {approaches.map((approach, index) => (
-                  <motion.button
-                    key={index}
-                    onClick={() => setActiveTab(index)}
-                    whileHover={{ y: -2 }}
-                    whileTap={{ scale: 0.98 }}
-                    className={`py-4 px-8 transition-all duration-300 focus:outline-none border shadow-sm text-xs md:text-sm tracking-wider ${
-                      activeTab === index 
-                        ? "bg-moss/80 text-white shadow-md border-transparent" 
-                        : "bg-white text-charcoal hover:bg-moss/20 border-gray-200"
-                    }`}
-                  >
-                    {approach.title}
-                  </motion.button>
-                ))}
-              </div>
-            </div>
-
-            <div className="relative overflow-hidden min-h-[400px] bg-moss/[2%]">
-              {approaches.map((approach, index) => (
-                <motion.div
-                  key={index}
-                  initial={false}
-                  animate={{ 
-                    opacity: activeTab === index ? 1 : 0,
-                    x: activeTab === index ? 0 : activeTab > index ? -100 : 100,
-                    display: activeTab === index ? "block" : "none"
-                  }}
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
-                  className="absolute inset-0 p-10"
-                >
-                  <div className="flex flex-col h-full justify-center">
-                    <p className="text-base leading-loose tracking-wide text-center">
-                      {approach.mainText}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-            
-            <div className="mt-6 flex justify-center">
-              <div className="flex space-x-2">
-                {approaches.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setActiveTab(index)}
-                    className={`transition-all duration-300 rounded-full ${
-                      activeTab === index 
-                        ? "w-8 h-2 bg-moss/80" 
-                        : "w-2 h-2 bg-gray-300 hover:bg-gray-400"
-                    }`}
-                    aria-label={`Go to slide ${index + 1}`}
-                  />
-                ))}
-              </div>
-            </div>
-          </motion.div>
-
-
-          {/* Intro */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: false, amount: 0.1 }}
-            transition={{ duration: 1.5 }}
-            className="space-y-40"
-          >
+      {/* Intro */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false, amount: 0.1 }}
+        transition={{ duration: 1.5 }}
+        className="space-y-40"
+      >
           {/* Beginner's Mind */}
           <div className="">
             <div className="flex items-center mb-16">
