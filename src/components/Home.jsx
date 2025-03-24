@@ -213,13 +213,13 @@ const Home = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-white to-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div className="relative z-10 space-y-4">
-                  <h4 className="text-2xl font-medium text-gray-900 transition-colors group-hover:text-black">
+                  <h4 className="text-2xl transition-colors group-hover:text-black">
                     {item.title}
                   </h4>
-                  <p className="text-base text-gray-600 group-hover:text-gray-800 transition-colors">
+                  <p className="text-base opacity-70 group-hover:text-gray-800 transition-colors">
                     {item.description}
                   </p>
-                  <div className="mt-4 inline-flex items-center text-moss opacity-0 group-hover:opacity-100 transition-all">
+                  <div className="mt-2 inline-flex items-center text-moss opacity-0 group-hover:opacity-100 transition-all">
                     <span className="mr-2">Explore</span>
                     <svg 
                       xmlns="http://www.w3.org/2000/svg" 
@@ -546,33 +546,49 @@ const Home = () => {
               </div>
             </div>
           </motion.div>
-        
-          {/* Newsletter */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.2 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex flex-col justify-center items-center text-center space-y-8 py-20 px-6 md:px-12 lg:px-24 bg-moss/[2%]"
-          >
-            <h2 className="text-3xl md:text-5xl font-light text-center tracking-widest">
-              Explore My Column
-            </h2>
 
-            <p className="max-w-xl text-lg text-charcoal/80 font-light">
-              Monthly insights, tips, and stories to deepen your yoga practice.
-            </p>
-            
-            <Link
-              to="/newsletter" 
-              className="mt-4 inline-flex items-center border-b border-moss/40 pb-1 text-lg tracking-wider text-charcoal/80 hover:text-moss hover:border-moss transition-all duration-300"
+        {/* Newsletter */}
+        <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="max-w-4xl mx-auto text-center space-y-6"
+      >
+        <div className="relative inline-block group">
+          <h2 className="text-4xl font-thin tracking-tight relative inline-block">
+          Read My Column
+          </h2>
+        </div>
+
+        <div className="max-w-2xl mx-auto">
+          <p className="text-neutral-600 text-lg leading-relaxed opacity-80">
+            Each month, I reflect on how yoga has shaped my journey—going <span className="italic">beyond the mat</span> to explore the shifts in awareness, connection, and personal growth along the way.
+          </p>
+        </div>
+
+        <div className="flex justify-center items-center space-x-4">
+          <Link
+            to="/newsletter"
+            className="group inline-flex items-center relative"
+          >
+            <span className="text-neutral-700 transition-colors duration-300 group-hover:text-neutral-900 relative">
+              Explore Insights
+              <span className="absolute bottom-0 left-0 w-full h-[1px] bg-neutral-400 origin-left transform transition-transform duration-500 group-hover:scale-x-100 scale-x-0" />
+            </span>
+            <svg 
+              className="ml-2 w-4 h-4 text-neutral-500 transition-all duration-300 group-hover:translate-x-1 group-hover:text-neutral-900"
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <span>Read Latest</span>
-              <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-              </svg>
-            </Link>
-          </motion.div>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </Link>
+        </div>
+      </motion.div>
+
                 
           {/* Testimonials */}
           <motion.div
