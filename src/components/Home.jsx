@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Parallax } from 'react-parallax';
 import { motion } from 'framer-motion';
@@ -6,24 +6,6 @@ import { Link } from 'react-router-dom';
 import PageNav from './PageNav';
 
 const Home = () => {
-  const [activeTab, setActiveTab] = useState(0);
-  const [current, setCurrent] = useState(0);
-
-  const featuresList = [
-  "Explore the origins and meanings of each pose",
-  "Learn the traditional names of essential yoga poses",
-  "Modify poses for different body types and abilities",
-  "Incorporate mindfulness techniques into your yoga practice",
-  "Understand the philosophical foundations of yoga"
-];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev === featuresList.length - 1 ? 0 : prev + 1));
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
   const approaches = [
     {
       number: '01',
@@ -80,30 +62,21 @@ const Home = () => {
       >
         <div className="relative h-screen flex flex-col items-center justify-center">
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/70" />
-          <div className="relative text-center space-y-20">
+          <div className="relative text-center space-y-12">
             <motion.h1 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 2.2, ease: "easeOut" }}
-              className="text-4xl lg:text-6xl text-white"
+              className="text-4xl lg:text-6xl text-white/90"
             >
               
             Learn Yoga Online
             </motion.h1>
-
-            <div key={current} className="flex flex-col gap-y-8 text-white/80 text-xs italic uppercase tracking-widest">
-             
-            <motion.div
-              key={current} 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1, duration: 1.2 }}
+            <motion.h3
+              className="text-white/80 max-w-2xl mx-auto"            
             >
-              {featuresList[current]}
-            </motion.div>
-
-         
-            </div>
+              Mindful practices designed for beginners, guiding you towards inner balance and wellness.
+            </motion.h3>
             
             <motion.div
               initial={{ opacity: 0 }}
@@ -119,22 +92,6 @@ const Home = () => {
               </Link>
             </motion.div>
           </div>
-
-        
-        <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-10">
-          {featuresList.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrent(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === current 
-                  ? "bg-white w-6" 
-                  : "bg-white/40 hover:bg-white/60"
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
       </div>
     </Parallax>
     <p className="absolute bottom-2 right-2 text-xs opacity-70 translate-y-[30px]">Photo by <a href="https://unsplash.com/@nkuutz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Eneko Uruñuela</a> on <a href="https://unsplash.com/photos/woman-stretching-on-mountain-top-during-sunrise-I2YSmEUAgDY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
