@@ -2,6 +2,153 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import PageNav from "./PageNav";
 
+const ChakrasQuiz = () => {
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [showResults, setShowResults] = useState(false);
+  const [answers, setAnswers] = useState({});
+
+  const questions = [
+    {
+      question: "Which chakra is associated with grounding and stability?",
+      options: [
+        { value: 'A', text: 'Root Chakra' },
+        { value: 'B', text: 'Sacral Chakra' },
+        { value: 'C', text: 'Solar Plexus Chakra' },
+        { value: 'D', text: 'Throat Chakra' }
+      ],
+      correctAnswer: 'A'
+    },
+    {
+      question: "The Sacral Chakra governs which aspect of life?",
+      options: [
+        { value: 'A', text: 'Creativity and pleasure' },
+        { value: 'B', text: 'Confidence and power' },
+        { value: 'C', text: 'Love and compassion' },
+        { value: 'D', text: 'Intuition and wisdom' }
+      ],
+      correctAnswer: 'A'
+    },
+    {
+      question: "Which chakra is linked to personal power and self-esteem?",
+      options: [
+        { value: 'A', text: 'Heart Chakra' },
+        { value: 'B', text: 'Solar Plexus Chakra' },
+        { value: 'C', text: 'Third Eye Chakra' },
+        { value: 'D', text: 'Root Chakra' }
+      ],
+      correctAnswer: 'B'
+    },
+    {
+      question: "The Throat Chakra is associated with which key aspect?",
+      options: [
+        { value: 'A', text: 'Self-expression and communication' },
+        { value: 'B', text: 'Spiritual awakening' },
+        { value: 'C', text: 'Emotional balance' },
+        { value: 'D', text: 'Grounding and stability' }
+      ],
+      correctAnswer: 'A'
+    },
+    {
+      question: "Which chakra is linked to intuition and wisdom?",
+      options: [
+        { value: 'A', text: 'Third Eye Chakra' },
+        { value: 'B', text: 'Crown Chakra' },
+        { value: 'C', text: 'Sacral Chakra' },
+        { value: 'D', text: 'Heart Chakra' }
+      ],
+      correctAnswer: 'A'
+    }
+  ];
+
+  const handleAnswer = (value) => {
+    const newAnswers = { ...answers, [currentQuestion]: value };
+    setAnswers(newAnswers);
+
+    if (currentQuestion < questions.length - 1) {
+      setCurrentQuestion(currentQuestion + 1);
+    } else {
+      setShowResults(true);
+    }
+  };
+
+  const progressPercentage = (currentQuestion / questions.length) * 100;
+
+  const calculateScore = () => {
+    return questions.reduce((score, question, index) => {
+      if (answers[index] === question.correctAnswer) {
+        return score + 1;
+      }
+      return score;
+    }, 0);
+  };
+
+    const score = calculateScore();
+    const totalQuestions = questions.length;
+    
+    const restartQuiz = () => {
+        setCurrentQuestion(0);
+        setAnswers({});
+        setShowResults(false);
+    };
+
+  return (
+    <div className="max-w-2xl mx-auto">
+      <div className="bg-moss/5 rounded-2xl shadow p-4 sm:p-8">
+        {!showResults ? (
+          <div className="space-y-6">
+            <div className="mb-6">
+              <div className="h-2 w-full bg-gray-200 rounded-full">
+                <div
+                  className="h-2 bg-moss/70 rounded-full transition-all duration-500"
+                  style={{ width: `${progressPercentage}%` }}
+                ></div>
+              </div>
+              <div className="flex justify-between mt-1 text-sm text-gray-500">
+                <span>Question {currentQuestion + 1} of {questions.length}</span>
+                <span>{Math.round(progressPercentage)}% Complete</span>
+              </div>
+            </div>
+
+            <h3 className="text-xl font-medium mb-4">
+              {currentQuestion + 1}. {questions[currentQuestion].question}
+            </h3>
+
+            <div className="space-y-3">
+              {questions[currentQuestion].options.map((option, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleAnswer(option.value)}
+                  className="w-full text-left p-4 rounded-lg border-2 hover:bg-moss/20 transition-colors"
+                >
+                  <span className="inline-block w-6 h-6 text-center mr-3">
+                    {option.value}
+                  </span>
+                  {option.text}
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <>
+            <div className="p-6 text-center">
+              <p>
+                You scored {score} out of {totalQuestions}!
+              </p>
+
+            </div>
+            <button
+                onClick={restartQuiz}
+                className="mt-6 w-full py-3 bg-moss/80 hover:bg-moss text-white rounded-lg font-medium transition"
+            >
+              Take the Quiz Again
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+  );
+};
+
 const Chakras = () => {
   const [openIndexes, setOpenIndexes] = useState([]);
 
@@ -201,12 +348,14 @@ const Chakras = () => {
         <p>The chakras serve as an essential blueprint for our holistic well-being, influencing our physical, emotional, and spiritual health. When in balance, they allow us to experience stability, creativity, confidence, love, clear communication, insight, and enlightenment. However, modern life often disrupts this energy flow, leading to imbalances that impact our mood, mindset, and vitality. Recognizing these signs and working toward alignment helps us live with greater purpose and awareness.</p>
         <p>As you explore and work with your chakras, remember that healing and balance are ongoing processes. Every step you take toward greater awareness brings you closer to inner peace, self-acceptance, and a more vibrant, connected life.</p>
 
+        <ChakrasQuiz />
+        
         <section className="pt-24 border-t border-charcoal/30">
-              <div className="bg-moss/5 rounded-xl shadow-sm p-6 text-sm tracking-wide hover:scale-[101%] transition">
-                  <Link to="/what-is-yoga/three-gunas">
-                  Next Up: Learn about the three gunas
-                  </Link>
-              </div>
+          <div className="bg-moss/5 rounded-xl shadow-sm p-6 text-sm tracking-wide hover:scale-[101%] transition">
+              <Link to="/what-is-yoga/three-gunas">
+              Next Up: Learn about the three gunas
+              </Link>
+          </div>
         </section>
       </div>
     </>

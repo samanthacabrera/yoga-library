@@ -93,13 +93,6 @@ const PathQuiz = () => {
 
   return (
     <div className="max-w-2xl mx-auto">
-      <h2 className="text-3xl font-light tracking-wide mb-3">
-        Beginning Yoga Quiz
-      </h2>
-      <p className="mb-6">
-        These questions will help you assess your current understanding and build a strong foundation for your yoga practice. Take your time, have fun, and most importantly, enjoy the process of learning!
-      </p>
-
       <div className="bg-moss/5 rounded-2xl shadow p-4 sm:p-8">
         {!showResults ? (
           <div className="space-y-6">
