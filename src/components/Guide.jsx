@@ -1,7 +1,145 @@
-import React from "react";
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import PageNav from '../components/PageNav';
+
+const BeginnerQuiz = () => {
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [showResults, setShowResults] = useState(false);
+  const [answers, setAnswers] = useState({});
+
+  const questions = [
+    {
+      question: "What does the term 'Asana' refer to in yoga?",
+      options: [
+        { value: 'A', text: 'Breathing exercises' },
+        { value: 'B', text: 'Physical postures or poses' },
+        { value: 'C', text: 'A type of meditation' },
+        { value: 'D', text: 'Chakras' }
+      ],
+      correctAnswer: 'B'
+    },
+    {
+      question: "Which yoga prop is used to bring the floor closer to you during poses?",
+      options: [
+        { value: 'A', text: 'Yoga Block' },
+        { value: 'B', text: 'Yoga Strap' },
+        { value: 'C', text: 'Yoga Wheel' },
+        { value: 'D', text: 'Bolster' }
+      ],
+      correctAnswer: 'A'
+    },
+    {
+      question: "What is 'Pranayama' in yoga?",
+      options: [
+        { value: 'A', text: 'Breathing control practices' },
+        { value: 'B', text: 'Physical postures' },
+        { value: 'C', text: 'A type of mantra' },
+        { value: 'D', text: 'A style of meditation' }
+      ],
+      correctAnswer: 'A'
+    },
+    {
+      question: "Which of the following is a safe practice tip for beginners?",
+      options: [
+        { value: 'A', text: 'Push yourself to your limits to deepen poses' },
+        { value: 'B', text: 'Listen to your body and avoid pushing into pain' },
+        { value: 'C', text: 'Hold each pose for as long as possible' },
+        { value: 'D', text: 'Skip warm-ups to save time' }
+      ],
+      correctAnswer: 'B'
+    }
+  ];
+
+  const handleAnswer = (value) => {
+    const newAnswers = { ...answers, [currentQuestion]: value };
+    setAnswers(newAnswers);
+
+    if (currentQuestion < questions.length - 1) {
+      setCurrentQuestion(currentQuestion + 1);
+    } else {
+      setShowResults(true);
+    }
+  };
+
+  const progressPercentage = (currentQuestion / questions.length) * 100;
+
+  const calculateScore = () => {
+    return questions.reduce((score, question, index) => {
+      if (answers[index] === question.correctAnswer) {
+        return score + 1;
+      }
+      return score;
+    }, 0);
+  };
+
+  const score = calculateScore();
+  const totalQuestions = questions.length;
+
+  return (
+    <div className="max-w-2xl mx-auto">
+      <h2 className="text-3xl font-light tracking-wide mb-3">
+        Beginning Yoga Quiz
+      </h2>
+      <p className="mb-6">
+        These questions will help you assess your current understanding and build a strong foundation for your yoga practice. Take your time, have fun, and most importantly, enjoy the process of learning!
+      </p>
+
+      <div className="bg-moss/5 rounded-2xl shadow p-4 sm:p-8">
+        {!showResults ? (
+          <div className="space-y-6">
+            <div className="mb-6">
+              <div className="h-2 w-full bg-gray-200 rounded-full">
+                <div
+                  className="h-2 bg-moss/70 rounded-full transition-all duration-500"
+                  style={{ width: `${progressPercentage}%` }}
+                ></div>
+              </div>
+              <div className="flex justify-between mt-1 text-sm text-gray-500">
+                <span>Question {currentQuestion + 1} of {questions.length}</span>
+                <span>{Math.round(progressPercentage)}% Complete</span>
+              </div>
+            </div>
+
+            <h3 className="text-xl font-medium mb-4">
+              {currentQuestion + 1}. {questions[currentQuestion].question}
+            </h3>
+
+            <div className="space-y-3">
+              {questions[currentQuestion].options.map((option, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleAnswer(option.value)}
+                  className="w-full text-left p-4 rounded-lg border-2 hover:bg-moss/20 transition-colors"
+                >
+                  <span className="inline-block w-6 h-6 text-center mr-3">
+                    {option.value}
+                  </span>
+                  {option.text}
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <>
+            <div className="p-6 text-center">
+              <p>
+                You scored {score} out of {totalQuestions}!
+              </p>
+
+            </div>
+            <button
+              onClick={() => setShowResults(false)}
+              className="mt-6 w-full py-3 bg-moss/80 hover:bg-moss text-white rounded-lg font-medium transition"
+            >
+              Take the Quiz Again
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+  );
+};
 
 const Guide = () => {
     return (
@@ -233,6 +371,9 @@ const Guide = () => {
                         </div>
                     </div>
                 </section>
+                
+                <BeginnerQuiz/>
+                
                 <section className="pt-24 border-t border-charcoal/30">
                     <div className="bg-moss/5 rounded-xl shadow-sm p-6 text-sm tracking-wide hover:scale-[101%] transition">
                         <Link to="/what-is-yoga/overview">
