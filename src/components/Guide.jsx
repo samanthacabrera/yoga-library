@@ -73,8 +73,14 @@ const BeginnerQuiz = () => {
     }, 0);
   };
 
-  const score = calculateScore();
-  const totalQuestions = questions.length;
+    const score = calculateScore();
+    const totalQuestions = questions.length;
+    
+    const restartQuiz = () => {
+        setCurrentQuestion(0);
+        setAnswers({});
+        setShowResults(false);
+    };
 
   return (
     <div className="max-w-2xl mx-auto">
@@ -129,8 +135,8 @@ const BeginnerQuiz = () => {
 
             </div>
             <button
-              onClick={() => setShowResults(false)}
-              className="mt-6 w-full py-3 bg-moss/80 hover:bg-moss text-white rounded-lg font-medium transition"
+                onClick={restartQuiz}
+                className="mt-6 w-full py-3 bg-moss/80 hover:bg-moss text-white rounded-lg font-medium transition"
             >
               Take the Quiz Again
             </button>
