@@ -2,6 +2,157 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import PageNav from "./PageNav";
 
+const GunasQuiz = () => {
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [showResults, setShowResults] = useState(false);
+  const [answers, setAnswers] = useState({});
+
+  const questions = [
+    {
+      question: "Which guna is associated with purity, harmony, and balance?",
+      options: [
+        { value: 'A', text: 'Sattva' },
+        { value: 'B', text: 'Rajas' },
+        { value: 'C', text: 'Tamas' },
+      ],
+      correctAnswer: 'A'
+    },
+    {
+      question: "Which guna represents activity, passion, and restlessness?",
+      options: [
+        { value: 'A', text: 'Sattva' },
+        { value: 'B', text: 'Rajas' },
+        { value: 'C', text: 'Tamas' },
+      ],
+      correctAnswer: 'B'
+    },
+    {
+      question: "Which guna is linked to inertia, darkness, and ignorance?",
+      options: [
+        { value: 'A', text: 'Sattva' },
+        { value: 'B', text: 'Rajas' },
+        { value: 'C', text: 'Tamas' },
+      ],
+      correctAnswer: 'C'
+    },
+    {
+      question: "Which of the following is a way to cultivate Sattva?",
+      options: [
+        { value: 'A', text: 'Engaging in selfless service' },
+        { value: 'B', text: 'Pursuing material success' },
+        { value: 'C', text: 'Indulging in impulsive desires' },
+      ],
+      correctAnswer: 'A'
+    },
+    {
+      question: "Which sign is associated with excess Rajas?",
+      options: [
+        { value: 'A', text: 'Lack of motivation' },
+        { value: 'B', text: 'Overworking and burnout' },
+        { value: 'C', text: 'Resistance to change' },
+      ],
+      correctAnswer: 'B'
+    },
+    {
+      question: "How does Tamas manifest in our lives?",
+      options: [
+        { value: 'A', text: 'Feeling calm and balanced' },
+        { value: 'B', text: 'Feeling stuck, lethargic, or disconnected' },
+        { value: 'C', text: 'Engaging in purposeful activity' },
+      ],
+      correctAnswer: 'B'
+    },
+  ];
+
+  const handleAnswer = (value) => {
+    const newAnswers = { ...answers, [currentQuestion]: value };
+    setAnswers(newAnswers);
+
+    if (currentQuestion < questions.length - 1) {
+      setCurrentQuestion(currentQuestion + 1);
+    } else {
+      setShowResults(true);
+    }
+  };
+
+  const progressPercentage = (currentQuestion / questions.length) * 100;
+
+  const calculateScore = () => {
+    return questions.reduce((score, question, index) => {
+      if (answers[index] === question.correctAnswer) {
+        return score + 1;
+      }
+      return score;
+    }, 0);
+  };
+
+    const score = calculateScore();
+    const totalQuestions = questions.length;
+    
+    const restartQuiz = () => {
+        setCurrentQuestion(0);
+        setAnswers({});
+        setShowResults(false);
+    };
+
+  return (
+    <div className="max-w-2xl mx-auto">
+      <div className="bg-moss/5 rounded-2xl shadow p-4 sm:p-8">
+        {!showResults ? (
+          <div className="space-y-6">
+            <div className="mb-6">
+              <div className="h-2 w-full bg-gray-200 rounded-full">
+                <div
+                  className="h-2 bg-moss/70 rounded-full transition-all duration-500"
+                  style={{ width: `${progressPercentage}%` }}
+                ></div>
+              </div>
+              <div className="flex justify-between mt-1 text-sm text-gray-500">
+                <span>Question {currentQuestion + 1} of {questions.length}</span>
+                <span>{Math.round(progressPercentage)}% Complete</span>
+              </div>
+            </div>
+
+            <h3 className="text-xl font-medium mb-4">
+              {currentQuestion + 1}. {questions[currentQuestion].question}
+            </h3>
+
+            <div className="space-y-3">
+              {questions[currentQuestion].options.map((option, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleAnswer(option.value)}
+                  className="w-full text-left p-4 rounded-lg border-2 hover:bg-moss/20 transition-colors"
+                >
+                  <span className="inline-block w-6 h-6 text-center mr-3">
+                    {option.value}
+                  </span>
+                  {option.text}
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <>
+            <div className="p-6 text-center">
+              <p>
+                You scored {score} out of {totalQuestions}!
+              </p>
+
+            </div>
+            <button
+                onClick={restartQuiz}
+                className="mt-6 w-full py-3 bg-moss/80 hover:bg-moss text-white rounded-lg font-medium transition"
+            >
+              Take the Quiz Again
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+  );
+};
+
 const Gunas = () => {
   const [openIndexes, setOpenIndexes] = useState([]);
 
@@ -127,12 +278,14 @@ const Gunas = () => {
           Ultimately, our journey toward balance is not about eliminating any one guna but about learning to navigate their interplay with awareness and intention. By observing our habits and gently steering ourselves toward clarity and harmony, we can cultivate a life filled with light, joy, and self-realization.
         </p>
 
+        <GunasQuiz/>
+
         <section className="pt-24 border-t border-charcoal/30">
-              <div className="bg-moss/5 rounded-xl shadow-sm p-6 text-sm tracking-wide hover:scale-[101%] transition">
-                  <Link to="/poses">
-                  Next Up: Explore foundational yoga poses and learn how to practice them safely.
-                  </Link>
-              </div>
+          <div className="bg-moss/5 rounded-xl shadow-sm p-6 text-sm tracking-wide hover:scale-[101%] transition">
+              <Link to="/poses">
+              Next Up: Explore foundational yoga poses and learn how to practice them safely.
+              </Link>
+          </div>
         </section>
       </div>
     </>
