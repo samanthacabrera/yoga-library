@@ -291,35 +291,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Practicing Yoga with Disabilities */}
-          <div className="">
-            <div className="flex items-center mb-16">
-              <div className="w-16 h-px bg-moss"></div>
-              <h3 className="ml-4 text-2xl font-light tracking-widest text-gray-800">PRACTICING YOGA WITH DISABILITIES</h3>
-            </div>
-
-            <p className="text-sm uppercase tracking-widest text-moss mb-16">ADAPTABLE & EMPOWERING</p>
-
-            <p className="text-base leading-relaxed mb-16 text-gray-700">
-              Yoga is an adaptable practice that can be modified to fit every body. It’s not about conforming to a specific shape—it’s about exploring movement, breath, and stillness in a way that supports your individual needs.  
-            </p>
-
-            <div className="space-y-8 mb-16">
-              {[
-                "Chair yoga offers seated variations that provide stability and support",
-                "Props like straps, bolsters, and blocks can enhance comfort and accessibility",
-                "Wall-assisted or standing yoga can offer balance and security",
-                "Breathwork and meditation are powerful practices accessible to everyone",
-                "Adaptive yoga techniques ensure that movement is safe and supportive"
-              ].map((item, index) => (
-                <div key={index} className="pl-8 relative">
-                  <span className="absolute left-0 top-2 text-xs text-moss">0{index + 1}</span>
-                  <p className="text-base text-gray-700">{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
           <div className="p-8 border-l-2 border-moss/50">
             <h3 className="text-xl mb-6 font-light tracking-wide">Accessible Yoga for All</h3>
             <p className="text-lg leading-relaxed opacity-90">
@@ -347,7 +318,7 @@ const Home = () => {
                 </p>
               </motion.div>
 
-              <div className="grid gap-8">
+              <div className="grid lg:grid-cols-2 gap-x-6 gap-y-10">
                 {[
                   { link: "/what-is-yoga/beginners-guide", title: "Start Here: Beginner's Guide", description: "New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started." },
                   { link: "/what-is-yoga/overview", title: "What Is Yoga?", description: "Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today." },
@@ -524,7 +495,7 @@ const Home = () => {
                     hidden: { opacity: 0, y: 50 },
                     visible: { opacity: 1, y: 0, transition: { duration: 1 } },
                   }}
-                  className="flex flex-col justify-between bg-moss/10 h-[400px] p-8 text-left rounded-t-2xl hover:shadow-sm transition duration-300"
+                  className="flex flex-col justify-between bg-moss/5 border border-moss/5 h-[400px] p-8 text-left rounded-t-2xl hover:shadow-sm transition duration-300"
                 >
                   <p className="italic">"{testimonial.quote}"</p>
                   <p className="uppercase">— {testimonial.author}</p>
