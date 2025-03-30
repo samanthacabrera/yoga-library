@@ -82,7 +82,6 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 1.2 }}
-            className=""
           >
           <Link
             to="/poses"
@@ -130,7 +129,7 @@ const Home = () => {
       transition={{ duration: 0.8 }}
       className="container my-20"
       >
-      <h2 className="text-lg lg:text-2xl text-center tracking-widest mb-24">
+      <h2 className="mb-24">
         Our Approach
       </h2>
       
@@ -362,7 +361,6 @@ const Home = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false, amount: 0.1 }}
-                    transition={{ duration: 0.8, delay: index * 0.1 }}
                     className="group card"
                   >
                     <Link 
@@ -399,45 +397,45 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }} 
             viewport={{ once: false, amount: 0.2 }} 
             transition={{ duration: 1 }}
-            className="py-24 max-w-4xl mx-auto px-6"
+            className="container my-20"
           >
-            <h2 className="text-center my-24 text-3xl md:text-4xl tracking-wider">
+            <h2 className="mb-12">
               Yoga for Every Need
             </h2>
             
-            <div className="space-y-16">
+            <div className="space-y-24">
               {/* Flexibility */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-gray-100 pt-8 hover:scale-[102%] transition ease-in-out duration-500">
-                <h3 className="text-md font-light uppercase tracking-widest text-gray-500">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-moss/20 pt-12 hover:scale-[101%] transition-all ease-in-out duration-500">
+                <h3>
                   Flexibility
                 </h3>
                 <div className="md:col-span-2">
-                  <p className="mb-6 text-sm leading-relaxed">
-                    Yoga offers a gentle yet effective way to improve flexibility. Unlike forceful stretching, 
-                    yoga teaches you to breathe into areas of tension and release them mindfully.
+                  <p>
+                    Yoga offers a gentle yet effective way to improve flexibility.
                   </p>
+               
                   <a 
                     href="/poses/benefit/improve-flexibility" 
-                    className="text-xs uppercase tracking-widest hover:text-moss transition duration-300"
+                    className=""
                   >
                     View poses
                   </a>
+
                 </div>
               </div>
 
               {/* Strength */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-gray-100 pt-8 hover:scale-[102%] transition ease-in-out duration-500">
-                <h3 className="text-md font-light uppercase tracking-widest text-gray-500">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-moss/20 pt-12 hover:scale-[101%] transition ease-in-out duration-500">
+                <h3>
                   Strength
                 </h3>
                 <div className="md:col-span-2">
-                  <p className="mb-6 text-sm leading-relaxed">
-                    Yoga builds functional strength using your own body weight as resistance, creating 
-                    balanced muscle development that supports daily activities and prevents injuries.
+                  <p>
+                    Yoga builds functional strength using your own body weight as resistance.
                   </p>
                   <a 
                     href="/poses/benefit/build-strength" 
-                    className="text-xs uppercase tracking-widest hover:text-moss transition duration-300"
+                    className=""
                   >
                     View poses
                   </a>
@@ -445,18 +443,17 @@ const Home = () => {
               </div>
 
               {/* Balance */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-gray-100 pt-8 hover:scale-[102%] transition ease-in-out duration-500">
-                <h3 className="text-md font-light uppercase tracking-widest text-gray-500">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-moss/20 pt-12 hover:scale-[101%] transition ease-in-out duration-500">
+                <h3>
                   Balance
                 </h3>
                 <div className="md:col-span-2">
-                  <p className="mb-6 text-sm leading-relaxed">
-                    Balance in yoga extends beyond physical steadiness—it cultivates equilibrium 
-                    between effort and ease, strength and flexibility, and mind and body.
+                  <p>
+                    Balance in yoga cultivates equilibrium mind and body.
                   </p>
                   <a 
                     href="/poses/benefit/improve-balance" 
-                    className="text-xs uppercase tracking-widest hover:text-moss transition duration-300"
+                    className=""
                   >
                     View poses
                   </a>
@@ -473,18 +470,12 @@ const Home = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="max-w-4xl mx-auto text-center space-y-6"
       >
-        <div className="relative inline-block group">
-          <h2 className="text-4xl font-thin tracking-tight relative inline-block">
-          Read My Column
-          </h2>
-        </div>
-
-        <div className="max-w-2xl mx-auto">
-          <p className="text-neutral-600 text-lg leading-relaxed opacity-80">
-            Each month, I reflect on how yoga has shaped my journey—going <span className="italic">beyond the mat</span> to explore the shifts in awareness, connection, and personal growth along the way.
-          </p>
-        </div>
-
+        <h2>
+        Read My Column
+        </h2>
+        <p className="max-w-2xl mx-auto">
+          Each month, I reflect on how yoga has shaped my journey—going <span className="italic">beyond the mat</span> to explore the shifts in awareness, connection, and personal growth along the way.
+        </p>
         <div className="flex justify-center items-center space-x-4">
           <Link
             to="/newsletter"
@@ -510,15 +501,15 @@ const Home = () => {
         {/* Testimonials */}
         <motion.div
             initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-            className="justify-center items-center"
+            className="container my-20"
           >
             <motion.h2 
               variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-              className="text-2xl md:text-4xl mb-8 text-center tracking-wider"
+              className="mb-24"
             >
               What Others Are Saying
             </motion.h2>
-            <div className="grid md:grid-cols-2 gap-x-6 gap-y-12 my-24">
+            <div className="grid md:grid-cols-2 gap-x-6 gap-y-12">
               {[
                 { quote: "This site makes learning yoga inviting. The instructions are clear, the layout is simple, and it creates a welcoming space to grow my practice without feeling overwhelmed.", author: "Savanna L." },
                   { quote: "As someone who's been practicing yoga for years, I wasn’t sure if I’d find much value in another yoga site. But I was wrong. What I love here is the attention to detail — each pose breakdown is thoughtful, and it’s helped me refine my practice in ways I didn’t think I needed. ", author: "Bri H." },
@@ -533,10 +524,10 @@ const Home = () => {
                     hidden: { opacity: 0, y: 50 },
                     visible: { opacity: 1, y: 0, transition: { duration: 1 } },
                   }}
-                  className="flex flex-col justify-between bg-moss/[2%] h-[400px] p-6 border border-moss/20 text-left rounded-t-xl hover:shadow-sm transition duration-300"
+                  className="flex flex-col justify-between bg-moss/10 h-[400px] p-8 text-left rounded-t-2xl hover:shadow-sm transition duration-300"
                 >
-                  <p className="text-lg italic">"{testimonial.quote}"</p>
-                  <p className="font-medium uppercase">— {testimonial.author}</p>
+                  <p className="italic">"{testimonial.quote}"</p>
+                  <p className="uppercase">— {testimonial.author}</p>
                 </motion.div>
               ))}
             </div>

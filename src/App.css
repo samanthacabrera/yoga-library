@@ -21,13 +21,16 @@ body {
   display: none;
 }
 
-h1,
+h1 {
+  @apply text-moss;
+}
+
 h2 {
-  color: #747d65;
+  @apply text-lg lg:text-2xl text-moss tracking-widest text-center;
 }
 
 h3 {
-  @apply text-sm lg:text-lg tracking-widest text-moss;
+  @apply text-sm lg:text-lg text-moss tracking-widest;
 }
 
 p {
