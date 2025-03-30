@@ -72,11 +72,11 @@ const Home = () => {
           >
           Learn Yoga Online
           </motion.h1>
-          <motion.h3
+          <motion.p
             className="text-md lg:text-lg mb-6"
           >
           Explore helpful resources designed especially for beginner yogis
-          </motion.h3>
+          </motion.p>
           
           <motion.div
             initial={{ opacity: 0 }}
@@ -102,14 +102,14 @@ const Home = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: false, amount: 0.1 }}
         transition={{ duration: 1.5 }}
-        className="my-40"
+        className="container my-20"
       >
         <div className="flex items-center mb-12">
           <div className="w-16 h-px bg-moss"></div>
-          <h3 className="text-lg lg:text-2xl ml-4 tracking-widest">What is Learn Yoga Online?</h3>
+          <h2 className="text-lg lg:text-2xl tracking-widest ml-4">What is Learn Yoga Online?</h2>
         </div>
 
-        <p className="text-sm lg:text-lg tracking-widest text-moss mb-6">A Holistic Journey Into Yoga</p>
+        <h3 className="mb-6">A Holistic Journey Into Yoga</h3>
 
         <div className="space-y-6 text-charcoal tracking-wide leading-loose">
           <p>
@@ -128,12 +128,12 @@ const Home = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: false, amount: 0.1 }}
       transition={{ duration: 0.8 }}
-      className="container mx-auto px-4 py-16"
-    >
-      <h2 className="text-4xl font-thin text-center mb-16">
+      className="container my-20"
+      >
+      <h2 className="text-lg lg:text-2xl text-center tracking-widest mb-24">
         Our Approach
       </h2>
-
+      
       <div className="grid gap-8 md:gap-24">
         {approaches.map((approach) => (
           <motion.div
@@ -142,15 +142,15 @@ const Home = () => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="group"
           >
-            <div className="flex items-center mb-6">
-              <span className="text-6xl font-extralight text-neutral-300 mr-6 group-hover:text-moss/80 transition-colors duration-300">
+            <div className="flex items-center mb-4">
+              <span className="text-4xl text-neutral-300 mr-6 group-hover:text-moss/80 transition-colors duration-300">
                 {approach.number}
               </span>
-              <h3 className="text-2xl font-light text-neutral-700 group-hover:text-moss/90 transition-colors duration-300">
+              <h3 className="group-hover:text-moss/90 transition-colors duration-300">
                 {approach.title}
               </h3>
             </div>
-            <p className="text-neutral-600 leading-relaxed tracking-tight">
+            <p>
               {approach.mainText}
             </p>
           </motion.div>
@@ -164,28 +164,24 @@ const Home = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: false, amount: 0.1 }}
         transition={{ duration: 1.5 }}
-        className="max-w-7xl mx-auto px-4 py-16 md:py-24"
+        className="container my-20"
       >
-        <div className="grid gap-16 items-center">
-
-          <div className="space-y-6">
-            <div className="flex items-center">
-              <div className="w-12 h-0.5 bg-black/30"></div>
-              <h2 className="ml-4 text-3xl tracking-wide">
-                What We Offer
-              </h2>
-            </div>
-            
-            <p className="text-xs uppercase tracking-[0.2em] text-gray-500">
-              Comprehensive Yoga Resources
-            </p>
-            
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Elevate your yoga journey with curated resources designed to deepen your practice and understanding.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-1 gap-8">
+        <div className="flex items-center mb-12">
+          <div className="w-16 h-px bg-moss"></div>
+          <h2 className="text-lg lg:text-2xl tracking-widest ml-4">
+            What We Offer
+          </h2>
+        </div>
+          
+        <h3 className="mb-6">
+          Comprehensive Yoga Resources
+        </h3>
+        
+        <p>
+          Elevate your yoga journey with curated resources designed to deepen your practice and understanding.
+        </p>
+  
+          <div className="grid md:grid-cols-1 gap-8 py-12">
             {[
               { 
                 title: "Pose Library", 
@@ -201,19 +197,18 @@ const Home = () => {
               <Link 
                 key={index} 
                 to={item.link} 
-                className="group relative overflow-hidden border border-moss/30 p-6 transition-all duration-500 hover:shadow-xl hover:border-gray-200"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-white to-gray-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                
-                <div className="relative z-10 space-y-4">
-                  <h4 className="text-2xl transition-colors group-hover:text-black">
+                className="group card"
+              >                
+                <div className="space-y-2">
+                  <h3>
                     {item.title}
-                  </h4>
-                  <p className="text-base opacity-70 group-hover:text-gray-800 transition-colors">
+                  </h3>
+                  <p>
                     {item.description}
                   </p>
-                  <div className="mt-2 inline-flex items-center text-moss opacity-0 group-hover:opacity-100 transition-all">
+                  <div className="inline-flex items-center text-moss">
                     <span className="mr-2">Explore</span>
+                    <span className="opacity-0 group-hover:opacity-100 transition-all">
                     <svg 
                       xmlns="http://www.w3.org/2000/svg" 
                       className="h-5 w-5 transform transition-transform group-hover:translate-x-1" 
@@ -223,12 +218,12 @@ const Home = () => {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
+                    </span>
                   </div>
                 </div>
               </Link>
             ))}
           </div>
-        </div>
       </motion.div>
 
       {/* Intro */}

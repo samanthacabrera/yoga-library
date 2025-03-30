@@ -25,3 +25,15 @@ h1,
 h2 {
   color: #747d65;
 }
+
+h3 {
+  @apply text-sm lg:text-lg tracking-widest text-moss;
+}
+
+p {
+  @apply text-charcoal tracking-wide leading-loose;
+}
+
+.card {
+  @apply relative overflow-hidden border border-moss/20 p-8 transition-all duration-500 hover:shadow hover:border-moss/30;
+}
