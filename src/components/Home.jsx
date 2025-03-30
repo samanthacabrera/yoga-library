@@ -55,47 +55,41 @@ const Home = () => {
       <PageNav/>
       <div className="flex flex-col w-screen">
       {/* Hero */}
-      <Parallax 
-        bgImage="bg1.jpg" 
-        strength={300} 
-        bgImageStyle={{ objectFit: "cover", width: "100%", height: "100vh" }}
-      >
-        <div className="relative h-screen flex flex-col items-center justify-center">
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/70" />
-          <div className="relative text-center space-y-12">
-            <motion.h1 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 2.2, ease: "easeOut" }}
-              className="text-4xl lg:text-6xl text-white/90"
-            >
-              
-            Learn Yoga Online
-            </motion.h1>
-            <motion.h3
-              className="text-white/80 max-w-2xl mx-auto"            
-            >
-              Mindful practices designed for beginners, guiding you towards inner balance and wellness.
-            </motion.h3>
-            
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.2, duration: 1.2 }}
-              className="mt-6"
-            >
-              <Link
-                to="/poses"
-                className="inline-block text-white/80 text-sm md:text-md rounded-full bg-moss px-6 py-2 hover:scale-[102%] transition duration-500"
-              >
-                Explore Yoga Poses
-              </Link>
-            </motion.div>
-          </div>
+      <div className="relative h-screen flex flex-col space-y-12">
+        <div className="flex justify-center items-center relative">
+          <img src="/bg1.jpg" className="w-screen h-[60vh] object-cover object-top" />
+          <div className="absolute bottom-0 w-full h-[25vh] bg-gradient-to-t from-white via-tranparent to-transparent"></div>
+        </div>
+        <div className="flex flex-col items-center justify-center inline relative text-center mx-8">
+          <motion.h1 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2.2, ease: "easeOut" }}
+            className="text-5xl lg:text-6xl tracking-tight mb-8"
+          >
+          Learn Yoga Online
+          </motion.h1>
+          <motion.h3
+            className="text-md lg:text-lg mb-6"
+          >
+          Explore helpful resources designed especially for beginner yogis
+          </motion.h3>
+          
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2, duration: 1.2 }}
+            className=""
+          >
+          <Link
+            to="/poses"
+            className="inline-block text-moss rounded-full border border-moss/50 px-6 py-1 hover:opacity-90 hover:scale-[101%] transition-all duration-300 ease-in-out shadow-sm focus:outline-none"
+          >
+            Start Learning
+          </Link>
+          </motion.div>
+        </div>
       </div>
-    </Parallax>
-    <p className="absolute bottom-2 right-2 text-xs opacity-70 translate-y-[30px]">Photo by <a href="https://unsplash.com/@nkuutz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Eneko Uruñuela</a> on <a href="https://unsplash.com/photos/woman-stretching-on-mountain-top-during-sunrise-I2YSmEUAgDY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-    </p>
         
     <div className="max-w-3xl mx-12 md:mx-auto py-40 grid gap-y-40 md:gap-y-80 text-charcoal">
       
