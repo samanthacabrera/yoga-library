@@ -55,10 +55,13 @@ const Home = () => {
       <PageNav/>
       <div className="flex flex-col w-screen">
       {/* Hero */}
-      <div className="relative h-screen flex flex-col space-y-12">
-        <div className="flex justify-center items-center relative">
-          <img src="/bg1.jpg" className="w-screen h-[60vh] object-cover object-top" />
-          <div className="absolute bottom-0 w-full h-[25vh] bg-gradient-to-t from-white via-tranparent to-transparent"></div>
+      <div className="relative h-screen flex flex-col space-y-12 p-0 lg:p-8">
+          <div className="flex justify-center items-center relative">
+            <div className="absolute top-0 w-full h-[25vh] lg:h-[2vh] bg-gradient-to-b from-white via-tranparent to-transparent"></div>
+            <div className="absolute bottom-0 w-full h-[25vh] lg:h-[2vh] bg-gradient-to-t from-white via-tranparent to-transparent"></div>
+            <div className="h-full w-[10vw] lg:w-[2vw] bg-gradient-to-r translate-x-full from-white via-transparent to-transparent"></div>
+            <img src="/bg1.jpg" className="w-screen lg:w-[50vw] h-[60vh] object-cover object-top" />
+            <div className="h-full w-[10vw] lg:w-[2vw] bg-gradient-to-l -translate-x-full from-white via-transparent to-transparent"></div>
         </div>
         <div className="flex flex-col items-center justify-center inline relative text-center mx-8">
           <motion.h1 
