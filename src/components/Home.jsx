@@ -102,22 +102,22 @@ const Home = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: false, amount: 0.1 }}
         transition={{ duration: 1.5 }}
-        className="mb-40"
+        className="my-40"
       >
-        <div className="flex items-center mt-24 py-12">
+        <div className="flex items-center mb-12">
           <div className="w-16 h-px bg-moss"></div>
-          <h3 className="ml-4 text-2xl font-light tracking-widest text-gray-800">WHAT IS LEARN YOGA ONLINE</h3>
+          <h3 className="text-lg lg:text-2xl ml-4 tracking-widest">What is Learn Yoga Online?</h3>
         </div>
 
-        <p className="text-sm uppercase tracking-widest text-moss mb-10">A HOLISTIC JOURNEY INTO YOGA</p>
+        <p className="text-sm lg:text-lg tracking-widest text-moss mb-6">A Holistic Journey Into Yoga</p>
 
-        <div className="space-y-6 text-gray-700">
-          <p className="text-base leading-relaxed">
-            Learn Yoga Online is a simple, intuitive platform for deepening your yoga practice. Whether you're a beginner or an experienced yogi, explore essential poses with clear instructions and in-depth guidance.          
+        <div className="space-y-6 text-charcoal tracking-wide leading-loose">
+          <p>
+            Learn Yoga Online is a simple, intuitive platform made just for beginner yogis. You'll find clear, step-by-step instructions for essential yoga poses—no experience needed.          
           </p>
           
-          <p className="text-base leading-relaxed">
-            Alongside the practice of physical poses, you'll also have the opportunity to explore the deeper aspects of yoga that connect mind, body, and spirit. This knowledge will help you integrate yoga into your daily life for greater well-being.         
+          <p>
+            You will also have the opportunity to explore the deeper aspects of yoga that connect mind, body, and spirit. This knowledge will help you integrate yoga into your daily life for greater well-being.         
           </p>
         </div>
       </motion.div>
