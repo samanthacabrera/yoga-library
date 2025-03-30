@@ -335,22 +335,20 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }} 
             viewport={{ once: false, amount: 0.2 }} 
             transition={{ duration: 1 }}
-            className="py-32"
+            className="container my-20"
           >
-            <div className="px-8">
+            <div>
               <motion.div 
                 className="text-center mb-16"
                 variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
               >
-                <div className="flex items-center justify-center mb-8">
-                  <h2 className="text-3xl md:text-4xl tracking-wider">Deepen Your Understanding</h2>
-                </div>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                <h2 className="text-lg lg:text-2xl tracking-widest mb-12">Deepen Your Understanding</h2>
+                <p>
                   Explore these essential guides to discover the rich history and transformative philosophy of yoga.
                 </p>
               </motion.div>
 
-              <div className="grid  gap-8">
+              <div className="grid gap-8">
                 {[
                   { link: "/what-is-yoga/beginners-guide", title: "Start Here: Beginner's Guide", description: "New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started." },
                   { link: "/what-is-yoga/overview", title: "What Is Yoga?", description: "Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today." },
@@ -365,21 +363,27 @@ const Home = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false, amount: 0.1 }}
                     transition={{ duration: 0.8, delay: index * 0.1 }}
-                    className="group"
+                    className="group card"
                   >
                     <Link 
                       to={item.link} 
-                      className="flex flex-col h-full overflow-hidden shadow-sm border border-moss/20 rounded-sm transition-all duration-300 hover:shadow-md hover:border-moss/30 group-hover:scale-[1.01]"
                     >
-                      <div className="h-[1px] bg-moss/70 w-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-                      <div className="p-8 flex flex-col h-full">
-                        <h3 className="text-xl font-light tracking-wide mb-4 text-gray-800 group-hover:text-moss transition-colors duration-300">{item.title}</h3>
-                        <p className="text-gray-600 leading-relaxed">{item.description}</p>
-                        <div className="mt-6 border-gray-100 flex items-center text-moss opacity-0 transform translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
-                          <span className="text-sm uppercase tracking-wider">Explore</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <div className="flex flex-col space-y-2">
+                        <h3>{item.title}</h3>
+                        <p>{item.description}</p>
+                        <div className="inline-flex items-center text-moss">
+                          <span className="mr-2">Explore</span>
+                          <span className="opacity-0 group-hover:opacity-100 transition-all">
+                          <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            className="h-5 w-5 transform transition-transform group-hover:translate-x-1" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke="currentColor"
+                          >
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                           </svg>
+                          </span>
                         </div>
                       </div>
                     </Link>
