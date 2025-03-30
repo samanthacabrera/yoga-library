@@ -30,7 +30,7 @@ h2 {
 }
 
 h3 {
-  @apply text-sm lg:text-lg text-moss tracking-widest;
+  @apply text-sm lg:text-base text-moss tracking-widest uppercase;
 }
 
 p {

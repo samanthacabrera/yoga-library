@@ -231,22 +231,22 @@ const Home = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: false, amount: 0.1 }}
         transition={{ duration: 1.5 }}
-        className="space-y-40"
+        className="container my-20 space-y-40"
       >
           {/* Beginner's Mind */}
-          <div className="">
-            <div className="flex items-center mb-16">
+          <div>
+            <div className="flex items-center mb-12">
               <div className="w-16 h-px bg-moss"></div>
-              <h3 className="ml-4 text-2xl font-light tracking-widest text-gray-800">BEGINNER'S MIND</h3>
+              <h2 className="text-lg lg:text-2xl tracking-widest ml-4">Beginner's Mind</h2>
             </div>
 
-            <p className="text-sm uppercase tracking-widest text-moss mb-16">YOUR GREATEST STRENGTH</p>
+            <h3 className="mb-6">Your Greatest Strength</h3>
   
-            <p className="text-base leading-relaxed mb-16 text-gray-700">
+            <p>
               In yoga philosophy, there's a concept called "beginner's mind" or <span className="font-normal">shoshin</span> that views your newcomer status not as a limitation, but as your greatest asset. Approaching yoga with fresh eyes allows you to:
             </p>
 
-            <div className="space-y-8 mb-16">
+            <div className="space-y-6 my-12">
               {[
                 "Experience each pose without preconceptions",
                 "Stay present with sensations rather than rushing",
@@ -254,28 +254,28 @@ const Home = () => {
                 "Build awareness of subtle body connections",
                 "Embrace the journey, not just destinations"
               ].map((item, index) => (
-                <div key={index} className="pl-8 relative">
-                  <span className="absolute left-0 top-2 text-xs text-moss">0{index + 1}</span>
-                  <p className="text-base text-gray-700">{item}</p>
+                <div key={index} className="flex items-center space-x-4">
+                  <span className="text-moss">0{index + 1}</span>
+                  <p>{item}</p>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Yoga for Everyone */}
-          <div className="">
-            <div className="flex items-center mb-16">
+          <div>
+            <div className="flex items-center mb-12">
               <div className="w-16 h-px bg-moss"></div>
-              <h3 className="ml-4 text-2xl font-light tracking-widest text-gray-800">YOGA FOR EVERYONE</h3>
+              <h2 className="text-lg lg:text-2xl tracking-widest ml-4">Yoga For Everyone</h2>
             </div>
 
-            <p className="text-sm uppercase tracking-widest text-moss mb-16">INCLUSIVE & ACCESSIBLE PRACTICE</p>
+            <h3 className="mb-6">Inclusive & Accessible Practice</h3>
 
-            <p className="text-base leading-relaxed mb-16 text-gray-700">
+            <p>
               Yoga is for everybody, regardless of age, body type, or fitness level. It’s not about achieving the perfect pose but about cultivating a practice that supports your body, breath, and mind. The most rewarding yoga practice is one that feels safe, accessible, and empowering.
             </p>
 
-            <div className="space-y-8 mb-16">
+            <div className="space-y-6 my-12">
               {[
                 "Honor your body’s needs and limitations without judgment",
                 "Use props like blocks, straps, and blankets for added support",
@@ -283,9 +283,9 @@ const Home = () => {
                 "Embrace progress at your own pace—flexibility and strength develop over time",
                 "Remember that yoga is about presence, not perfection"
               ].map((item, index) => (
-                <div key={index} className="pl-8 relative">
-                  <span className="absolute left-0 top-2 text-xs text-moss">0{index + 1}</span>
-                  <p className="text-base text-gray-700">{item}</p>
+                <div key={index} className="flex items-center space-x-4">
+                  <span className="text-moss">0{index + 1}</span>
+                  <p>{item}</p>
                 </div>
               ))}
             </div>
@@ -293,8 +293,8 @@ const Home = () => {
 
           <div className="p-8 border-l-2 border-moss/50">
             <h3 className="text-xl mb-6 font-light tracking-wide">Accessible Yoga for All</h3>
-            <p className="text-lg leading-relaxed opacity-90">
-              If you have mobility challenges, chronic pain, or other conditions, yoga can still be a meaningful and accessible practice. We are committed to expanding our content on adaptive yoga and creating resources that support every practitioner.
+            <p>
+              We are committed to expanding our content on adaptive yoga and creating resources that support every practitioner.
             </p>
           </div>
           </motion.div>
@@ -495,7 +495,7 @@ const Home = () => {
                     hidden: { opacity: 0, y: 50 },
                     visible: { opacity: 1, y: 0, transition: { duration: 1 } },
                   }}
-                  className="flex flex-col justify-between bg-moss/5 border border-moss/5 h-[400px] p-8 text-left rounded-t-2xl hover:shadow-sm transition duration-300"
+                  className="flex flex-col justify-between bg-moss/5 h-[400px] p-8 text-left rounded-t-2xl hover:shadow-sm transition duration-300"
                 >
                   <p className="italic">"{testimonial.quote}"</p>
                   <p className="uppercase">— {testimonial.author}</p>
