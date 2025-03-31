@@ -376,9 +376,9 @@ const Home = () => {
             </div>
             <p>Don't worry about touching your toes or holding perfect form on day one—yoga meets you at your current level and grows with you as you build your practice.</p>
             
-            <div className="py-20">
+            <div className="py-20 space-y-6">
               {/* Flexibility */}
-              <div className="card grid grid-cols-1 md:grid-cols-3 gap-6 gap-y-12">
+              <div className="card grid grid-cols-1 md:grid-cols-3 gap-6">
                 <h3>
                   Flexibility
                 </h3>
@@ -389,11 +389,11 @@ const Home = () => {
                
                   <a 
                     href="/poses/benefit/improve-flexibility" 
-                    className="flex items-center"
+                    className="group flex items-center"
                   >
                     View poses
                     <svg 
-                      className="ml-2 w-4 h-4 text-neutral-500 transition-all duration-300 group-hover:translate-x-1 group-hover:text-neutral-900"
+                      className="ml-2 w-4 h-4 transition-all duration-300 group-hover:translate-x-1 group-hover:text-moss"
                       fill="none" 
                       stroke="currentColor" 
                       viewBox="0 0 24 24" 
@@ -416,11 +416,11 @@ const Home = () => {
                   </p>
                   <a 
                     href="/poses/benefit/build-strength" 
-                    className="flex items-center"
+                    className="group flex items-center"
                   >
                     View poses
                     <svg 
-                      className="ml-2 w-4 h-4 text-neutral-500 transition-all duration-300 group-hover:translate-x-1 group-hover:text-neutral-900"
+                      className="ml-2 w-4 h-4 transition-all duration-300 group-hover:translate-x-1 group-hover:text-moss"
                       fill="none" 
                       stroke="currentColor" 
                       viewBox="0 0 24 24" 
@@ -443,11 +443,11 @@ const Home = () => {
                   </p>
                   <a 
                     href="/poses/benefit/improve-balance" 
-                    className="flex items-center"
+                    className="group flex items-center"
                   >
                     View poses
                      <svg 
-                      className="ml-2 w-4 h-4 text-neutral-500 transition-all duration-300 group-hover:translate-x-1 group-hover:text-neutral-900"
+                      className="ml-2 w-4 h-4 transition-all duration-300 group-hover:translate-x-1 group-hover:text-moss"
                       fill="none" 
                       stroke="currentColor" 
                       viewBox="0 0 24 24" 
