@@ -218,6 +218,12 @@ const PosePage = () => {
               >
                 Cues
               </a>
+              <a 
+                href="#related" 
+                className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
+              >
+                Related
+              </a>
             </div>
           </>
           )}
@@ -230,7 +236,7 @@ const PosePage = () => {
           <h2 className="text-left text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">
             Overview
           </h2>
-          <div className="bg-white/50 backdrop-blur-sm p-6 shadow-sm rounded border border-moss/20">
+          <div className="bg-white/50 backdrop-blur-sm p-8 shadow-sm rounded border border-moss/20">
             <p>{poseDesc.desc}</p>
             {poseDesc.source && (
               <p className="text-xs text-gray-500 mt-4 italic">Source: {poseDesc.source}</p>
@@ -245,7 +251,7 @@ const PosePage = () => {
           <h2 className="text-left text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">
             Benefits
           </h2>
-          <div className="bg-white/50 backdrop-blur-sm p-6 shadow-sm rounded border border-moss/20">
+          <div className="bg-white/50 backdrop-blur-sm p-8 shadow-sm rounded border border-moss/20">
             {poseBenefit.physical && (
               <p className="mb-4">
                 <span className="font-medium">Physical Benefits:</span> {poseBenefit.physical}
@@ -269,7 +275,7 @@ const PosePage = () => {
           <h2 className="text-left text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">
             Origins
           </h2>
-          <div className="bg-white/50 backdrop-blur-sm p-6 shadow-sm rounded border border-moss/20">
+          <div className="bg-white/50 backdrop-blur-sm p-8 shadow-sm rounded border border-moss/20">
             <p>{poseSanskirt.context}</p>
             {poseSanskirt.source && (
               <p className="text-xs text-gray-500 mt-4 italic">Source: {poseSanskirt.source}</p>
@@ -284,7 +290,7 @@ const PosePage = () => {
           <h2 className="text-left text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">
             Precautions
           </h2>
-          <div className="bg-white/50 backdrop-blur-sm p-6 shadow-sm rounded border border-moss/20">
+          <div className="bg-white/50 backdrop-blur-sm p-8 shadow-sm rounded border border-moss/20">
             <p>{posePrecaution.precaution}</p>
             {posePrecaution.source && (
               <p className="text-xs text-gray-500 mt-4 italic">Source: {posePrecaution.source}</p>
@@ -299,7 +305,7 @@ const PosePage = () => {
           <h2 className="text-left text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">
             Modifications
           </h2>
-          <div className="bg-white/50 backdrop-blur-sm p-6 shadow-sm rounded border border-moss/20">
+          <div className="bg-white/50 backdrop-blur-sm p-8 shadow-sm rounded border border-moss/20">
             <p>{poseModification.modification}</p>
             {poseModification.source && (
               <p className="text-xs text-gray-500 mt-4 italic">Source: {poseModification.source}</p>
@@ -311,7 +317,7 @@ const PosePage = () => {
       {/* Cues */}
       {poseCues && poseCues.cues && (
         <div id="cues" className="group scroll-mt-96 md:scroll-mt-40">
-          <h3 className="text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">Alignment Cues</h3>
+          <h2 className="text-left text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">Alignment Cues</h2>
           <div className="space-y-6">
             {poseCues.cues.map((cue, index) => {
               const linkPoseNames = (cueText) => {
@@ -354,8 +360,8 @@ const PosePage = () => {
 
       {/* Related Poses */}
       {relatedPoses.length > 0 && (
-        <section className="group py-16">
-          <h3 className="text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">Related Poses</h3>
+        <section id="related" className="group scroll-mt-96 md:scroll-mt-40">
+          <h2 className="text-left text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">Related Poses</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {relatedPoses.slice(0, 6).map((relatedPose) => (
               <Link
@@ -393,10 +399,10 @@ const PosePage = () => {
           className="group mt-6 pt-4 border-t border-gray-300"
           style={{ marginTop: '1.5rem' }}
         >
-        <h3 className="text-lg md:text-2xl tracking-wider my-8 group-hover:text-moss transition duration-300">Sources</h3>
-          <ul className="list-inside list-decimal space-y-1">
+        <h3 className="my-4">Sources</h3>
+          <ul className="list-inside list-decimal space-y-2">
             {sources.map((source, index) => (
-              <li key={index} className="text-justify">
+              <li key={index} >
                 {source.text} 
               </li>
             ))}
