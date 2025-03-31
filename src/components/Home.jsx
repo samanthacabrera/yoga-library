@@ -57,8 +57,8 @@ const Home = () => {
       {/* Hero */}
       <div className="relative h-screen flex flex-col space-y-12">
           <div className="flex justify-center items-center relative">
-            <div className="absolute bottom-0 w-full h-[20vh] bg-gradient-to-t from-white via-transparent to-transparent"></div>
-            <div className="absolute bottom-0 w-full h-[25vh] bg-gradient-to-t from-white via-orange-400/20 to-transparent opacity-50"></div>
+            <div className="absolute bottom-0 w-full h-[30vh] bg-gradient-to-t from-white via-transparent to-transparent"></div>
+            <div className="absolute bottom-0 w-full h-[20vh] bg-gradient-to-t from-white via-orange-400/20 to-transparent opacity-50"></div>
             <img src="/bg1.jpg" className="w-screen h-[65vh] lg:h-[70vh] object-cover object-center lg:object-[25%_70%]" />
         </div>
         <div className="flex flex-col inline relative text-center">
@@ -66,12 +66,12 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-4xl lg:text-4xl tracking-tight mb-2"
+            className="text-4xl lg:text-4xl tracking-tight mb-4"
           >
           Learn Yoga Online
           </motion.h1>
           <motion.p
-            className="text-md lg:text-lg m-4"
+            className="text-md lg:text-lg max-w-md mx-auto mb-4"
           >
           Explore helpful resources designed especially for <span className="italic">beginning</span> yogis
           </motion.p>
@@ -83,9 +83,18 @@ const Home = () => {
           >
           <Link
             to="/poses"
-            className="inline-block text-moss rounded-full border border-moss/50 px-6 py-1 hover:opacity-90 hover:scale-[101%] transition-all duration-300 ease-in-out shadow-sm focus:outline-none"
+            className="inline-block flex items-center justify-center w-fit mx-auto group text-center text-lg text-moss pl-6 pr-3 py-1 border border-moss/80 rounded hover:scale-[101%] transition-all duration-300 ease-in-out focus:outline-none"
           >
             Start Learning
+            <svg 
+              className="ml-2 w-4 h-4 transition-all duration-300 group-hover:translate-x-1 group-hover:text-moss"
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
           </Link>
           </motion.div>
         </div>
