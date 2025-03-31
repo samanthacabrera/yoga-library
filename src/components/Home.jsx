@@ -291,8 +291,8 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="p-8 border-l-2 border-moss/50">
-            <h3 className="text-xl mb-6 font-light tracking-wide">Accessible Yoga for All</h3>
+          <div className="p-8 border-l border-moss/50">
+            <h3 className="mb-6">Accessible Yoga for All</h3>
             <p>
               We are committed to expanding our content on adaptive yoga and creating resources that support every practitioner.
             </p>
@@ -318,7 +318,7 @@ const Home = () => {
                 </p>
               </motion.div>
 
-              <div className="grid lg:grid-cols-2 gap-x-6 gap-y-10">
+              <div className="grid gap-8">
                 {[
                   { link: "/what-is-yoga/beginners-guide", title: "Start Here: Beginner's Guide", description: "New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started." },
                   { link: "/what-is-yoga/overview", title: "What Is Yoga?", description: "Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today." },
@@ -370,13 +370,15 @@ const Home = () => {
             transition={{ duration: 1 }}
             className="container my-20"
           >
-            <h2 className="mb-12">
-              Yoga for Every Need
-            </h2>
+            <div className="flex items-center mb-12">
+              <div className="w-16 h-px bg-moss"></div>
+              <h2 className="text-lg lg:text-2xl tracking-widest ml-4">Yoga For Every Need</h2>
+            </div>
+            <p>Don't worry about touching your toes or holding perfect form on day one—yoga meets you at your current level and grows with you as you build your practice.</p>
             
-            <div className="space-y-24">
+            <div className="py-20">
               {/* Flexibility */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-moss/20 pt-12 hover:scale-[101%] transition-all ease-in-out duration-500">
+              <div className="card grid grid-cols-1 md:grid-cols-3 gap-6 gap-y-12">
                 <h3>
                   Flexibility
                 </h3>
@@ -387,16 +389,24 @@ const Home = () => {
                
                   <a 
                     href="/poses/benefit/improve-flexibility" 
-                    className=""
+                    className="flex items-center"
                   >
                     View poses
+                    <svg 
+                      className="ml-2 w-4 h-4 text-neutral-500 transition-all duration-300 group-hover:translate-x-1 group-hover:text-neutral-900"
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24" 
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
                   </a>
-
                 </div>
               </div>
 
               {/* Strength */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-moss/20 pt-12 hover:scale-[101%] transition ease-in-out duration-500">
+              <div className="card grid grid-cols-1 md:grid-cols-3 gap-6">
                 <h3>
                   Strength
                 </h3>
@@ -406,15 +416,24 @@ const Home = () => {
                   </p>
                   <a 
                     href="/poses/benefit/build-strength" 
-                    className=""
+                    className="flex items-center"
                   >
                     View poses
+                    <svg 
+                      className="ml-2 w-4 h-4 text-neutral-500 transition-all duration-300 group-hover:translate-x-1 group-hover:text-neutral-900"
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24" 
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
                   </a>
                 </div>
               </div>
 
               {/* Balance */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-moss/20 pt-12 hover:scale-[101%] transition ease-in-out duration-500">
+              <div className="card grid grid-cols-1 md:grid-cols-3 gap-6">
                 <h3>
                   Balance
                 </h3>
@@ -424,9 +443,18 @@ const Home = () => {
                   </p>
                   <a 
                     href="/poses/benefit/improve-balance" 
-                    className=""
+                    className="flex items-center"
                   >
                     View poses
+                     <svg 
+                      className="ml-2 w-4 h-4 text-neutral-500 transition-all duration-300 group-hover:translate-x-1 group-hover:text-neutral-900"
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24" 
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -454,7 +482,6 @@ const Home = () => {
           >
             <span className="text-neutral-700 transition-colors duration-300 group-hover:text-neutral-900 relative">
               Explore Insights
-              <span className="absolute bottom-0 left-0 w-full h-[1px] bg-neutral-400 origin-left transform transition-transform duration-500 group-hover:scale-x-100 scale-x-0" />
             </span>
             <svg 
               className="ml-2 w-4 h-4 text-neutral-500 transition-all duration-300 group-hover:translate-x-1 group-hover:text-neutral-900"

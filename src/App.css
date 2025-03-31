@@ -38,5 +38,5 @@ p {
 }
 
 .card {
-  @apply relative overflow-hidden border border-moss/20 p-8 transition-all duration-500 hover:shadow hover:border-moss/30;
+  @apply relative overflow-hidden border-b border-moss/20 hover:border-moss/80 px-2 py-8 transition-all duration-500;
 }
