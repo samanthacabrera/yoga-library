@@ -55,33 +55,31 @@ const Home = () => {
       <PageNav/>
       <div className="flex flex-col w-screen">
       {/* Hero */}
-      <div className="relative h-screen flex flex-col space-y-12 p-0 lg:p-8">
+      <div className="relative h-screen flex flex-col space-y-12">
           <div className="flex justify-center items-center relative">
-            <div className="absolute top-0 w-full h-[25vh] lg:h-[2vh] bg-gradient-to-b from-white via-tranparent to-transparent"></div>
-            <div className="absolute bottom-0 w-full h-[25vh] lg:h-[2vh] bg-gradient-to-t from-white via-tranparent to-transparent"></div>
-            <div className="h-full w-[10vw] lg:w-[2vw] bg-gradient-to-r translate-x-full from-white via-transparent to-transparent"></div>
-            <img src="/bg1.jpg" className="w-screen lg:w-[50vw] h-[60vh] object-cover object-top" />
-            <div className="h-full w-[10vw] lg:w-[2vw] bg-gradient-to-l -translate-x-full from-white via-transparent to-transparent"></div>
+            <div className="absolute bottom-0 w-full h-[20vh] bg-gradient-to-t from-white via-transparent to-transparent"></div>
+            <div className="absolute bottom-0 w-full h-[25vh] bg-gradient-to-t from-white via-orange-400/20 to-transparent opacity-50"></div>
+            <img src="/bg1.jpg" className="w-screen h-[50vh] lg:h-[70vh] object-cover object-center lg:object-[25%_70%]" />
         </div>
-        <div className="flex flex-col items-center justify-center inline relative text-center mx-8">
+        <div className="flex flex-col inline relative text-center">
           <motion.h1 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 2.2, ease: "easeOut" }}
-            className="text-5xl lg:text-6xl tracking-tight mb-8"
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="text-4xl lg:text-4xl tracking-tight mb-2"
           >
           Learn Yoga Online
           </motion.h1>
           <motion.p
-            className="text-md lg:text-lg mb-6"
+            className="text-md lg:text-lg m-4"
           >
-          Explore helpful resources designed especially for beginner yogis
+          Explore helpful resources designed especially for <span className="italic">beginning</span> yogis
           </motion.p>
           
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1.2, duration: 1.2 }}
+            transition={{ duration: 1 }}
           >
           <Link
             to="/poses"
@@ -262,11 +260,42 @@ const Home = () => {
             </div>
           </div>
 
+          {/* Ahimsa */}
+          <div>
+            <div className="flex items-center mb-12">
+              <div className="w-16 h-px bg-moss"></div>
+              <h2 className="text-lg lg:text-2xl tracking-widest ml-4">The Practice of Kindness</h2>
+            </div>
+
+            <h3 className="mb-6">Ahimsa</h3>
+
+            <p>
+              In yoga philosophy, <span className="font-normal">ahimsa</span> means "non-harming" or "compassion."  
+              It teaches us to approach ourselves and others with kindness, both on and off the mat.  
+              Practicing ahimsa allows you to:
+            </p>
+
+            <div className="space-y-6 my-12">
+              {[
+                "Listen to your body and practice without force",
+                "Let go of self-judgment and embrace patience",
+                "Move with care rather than comparison",
+                "Honor your own pace instead of rushing progress",
+                "Extend kindness beyond the mat into daily life"
+              ].map((item, index) => (
+                <div key={index} className="flex items-center space-x-4">
+                  <span className="text-moss">0{index + 1}</span>
+                  <p>{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Yoga for Everyone */}
           <div>
             <div className="flex items-center mb-12">
               <div className="w-16 h-px bg-moss"></div>
-              <h2 className="text-lg lg:text-2xl tracking-widest ml-4">Yoga For Everyone</h2>
+              <h2 className="text-lg lg:text-2xl tracking-widest ml-4">A Path for Every Yogi</h2>
             </div>
 
             <h3 className="mb-6">Inclusive & Accessible Practice</h3>
