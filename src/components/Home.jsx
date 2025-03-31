@@ -59,7 +59,7 @@ const Home = () => {
           <div className="flex justify-center items-center relative">
             <div className="absolute bottom-0 w-full h-[20vh] bg-gradient-to-t from-white via-transparent to-transparent"></div>
             <div className="absolute bottom-0 w-full h-[25vh] bg-gradient-to-t from-white via-orange-400/20 to-transparent opacity-50"></div>
-            <img src="/bg1.jpg" className="w-screen h-[50vh] lg:h-[70vh] object-cover object-center lg:object-[25%_70%]" />
+            <img src="/bg1.jpg" className="w-screen h-[65vh] lg:h-[70vh] object-cover object-center lg:object-[25%_70%]" />
         </div>
         <div className="flex flex-col inline relative text-center">
           <motion.h1 

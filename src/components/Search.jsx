@@ -146,10 +146,10 @@ const Search = () => {
     <div ref={searchRef} className="absolute right-4 z-50">
       <form onSubmit={handleSearch} className="relative">
         <div 
-          className={`flex items-center transition-all duration-200 ease-out border border-moss/20
+          className={`flex items-center transition-all duration-200 ease-out
             ${isExpanded 
-              ? "rounded-lg bg-white/5 backdrop-blur-sm shadow-sm" 
-              : "rounded-full hover:border-moss/30 hover:bg-white/5 hover:shadow-sm"}`}
+              ? "rounded-lg bg-white/5 backdrop-blur-sm border border-moss/20 shadow-sm" 
+              : "p-1 rounded-full hover:bg-white/5 hover:shadow-sm"}`}
           onClick={!isExpanded ? expandSearch : undefined}
         >
           <div className={`flex items-center transition-all duration-200 ${isExpanded ? "p-1" : "p-1.5"}`}>

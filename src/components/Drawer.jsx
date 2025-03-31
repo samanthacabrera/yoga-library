@@ -46,8 +46,8 @@ const Drawer = () => {
       <button
         ref={buttonRef}
         onClick={toggleDrawer}
-        className={`absolute top-5 bg-transparent border-none focus:outline-none transition-all duration-300 ease-in-out
-        ${isDrawerOpen ? "left-56" : "left-5"}`}
+        className={`absolute top-3 bg-white/5 backdrop-blur-sm p-2 rounded-full border-none focus:outline-none transition-all duration-300 ease-in-out
+        ${isDrawerOpen ? "left-56" : "left-4"}`}
         aria-label={isDrawerOpen ? "Close menu" : "Open menu"}
       >
         {isDrawerOpen ? (
