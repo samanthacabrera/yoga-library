@@ -125,6 +125,9 @@ const Home = () => {
           <p>
             You will also have the opportunity to explore the deeper aspects of yoga that connect mind, body, and spirit. This knowledge will help you integrate yoga into your daily life for greater well-being.         
           </p>
+          <p>
+            It’s a great way to fill in the gaps from your yoga classes, reinforcing what you’ve learned and giving you more confidence in your practice.
+          </p>
         </div>
       </motion.div>
       
@@ -244,7 +247,7 @@ const Home = () => {
           <div>
             <div className="flex items-center mb-12">
               <div className="w-16 h-px bg-moss"></div>
-              <h2 className="text-lg lg:text-2xl tracking-widest ml-4">Beginner's Mind</h2>
+              <h2 className="text-lg lg:text-2xl tracking-widest ml-4">The Beginner's Mind</h2>
             </div>
 
             <h3 className="mb-6">Your Greatest Strength</h3>
