@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet";
-import PageNav from "./PageNav";
 
 const YogaStyleQuiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -221,7 +220,6 @@ const WhatIsYoga = () => {
       <meta name="twitter:title" content="What is Yoga?" />
       <meta name="twitter:description" content="Discover the origins, evolution, and different types of yoga practices in this comprehensive guide. Learn about the ancient discipline of yoga and find the right style for you." />
     </Helmet>
-    <PageNav />
     <div className="max-w-2xl md:mx-auto mx-12 my-24 space-y-24">
       <header> 
         <h1 className="my-12 text-center text-4xl">

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import PageNav from "./PageNav";
 
 const GunasQuiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -233,7 +232,6 @@ const Gunas = () => {
 
   return (
     <>
-    <PageNav/>
     <div className="max-w-2xl md:mx-auto mx-12 my-24 space-y-12">
       <h1 className="text-center text-4xl">The Three Gunas</h1>
         <p>

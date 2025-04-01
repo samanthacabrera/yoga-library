@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import PageNav from "./PageNav";
 
 const ChakrasQuiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -307,7 +306,6 @@ const Chakras = () => {
 
   return (
     <>
-      <PageNav/>
     <div className="max-w-2xl md:mx-auto mx-12 my-24 space-y-12">
       <h1 className="text-center text-4xl">The Seven Chakras</h1>
         <p>

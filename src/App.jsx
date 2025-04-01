@@ -42,7 +42,7 @@ useEffect(() => {
       console.log("Footer visibility changed:", entry.isIntersecting);
       setIsFooterVisible(entry.isIntersecting);
     },
-    { threshold: 0.1 } // 10% of the footer should be visible to trigger
+    { threshold: 0.1 } 
   );
 
   if (footerRef.current) {

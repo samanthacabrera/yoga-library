@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import posesData from "../data/poses.json";
-import PageNav from "./PageNav";
 
 const extractCategories = (data, categoryType) => {
   const categories = new Set();
@@ -156,9 +155,6 @@ const CategoryPage = () => {
 
   return (
     <>
-    <PageNav  customPrev={{ label: "The 3 Gunas", to: "/what-is-yoga/three-gunas" }} 
-              customNext={{ label: "Newsletter", to: "/newsletter" }}
-      />
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
      <h1 className="heading text-center mt-20 py-12 text-4xl lg:text-6xl">Yoga Pose Directory</h1>
         
