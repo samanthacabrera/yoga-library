@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { Parallax } from 'react-parallax';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -52,23 +53,29 @@ const Home = () => {
       </Helmet>
       <div className="flex flex-col w-screen">
       {/* Hero */}
-      <div className="relative h-screen flex flex-col space-y-12">
-          <div className="flex justify-center items-center relative">
+      <div className="relative flex flex-col">
+          {/* <div className="flex justify-center items-center relative">
             <div className="absolute bottom-0 w-full h-[30vh] bg-gradient-to-t from-white via-transparent to-transparent"></div>
             <div className="absolute bottom-0 w-full h-[20vh] bg-gradient-to-t from-white via-orange-400/20 to-transparent opacity-50"></div>
             <img src="/bg1.jpg" className="w-screen h-[65vh] lg:h-[70vh] object-cover object-center lg:object-[25%_70%]" />
-        </div>
-        <div className="flex flex-col inline relative text-center">
+          </div> */}
+          <Parallax
+            bgImage="/bg1.jpg"
+            strength={300}
+            className="mx-8 lg:mx-[20vw] mt-24 mb-6 h-[40vh] lg:h-[60vh]"
+          >
+          </Parallax>
+        <div className="flex flex-col inline relative text-center space-y-4 my-6">
           <motion.h1 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-4xl lg:text-4xl tracking-tight mb-4"
+            className="text-3xl"
           >
           Learn Yoga Online
           </motion.h1>
           <motion.p
-            className="text-md lg:text-lg max-w-md mx-auto mb-4"
+            className="text-md lg:text-lg mx-8"
           >
           Explore helpful resources designed especially for <span className="italic">beginning</span> yogis
           </motion.p>
@@ -80,7 +87,7 @@ const Home = () => {
           >
           <Link
             to="/poses"
-            className="inline-block flex items-center justify-center w-fit mx-auto group text-center text-lg text-moss pl-6 pr-3 py-1 border border-moss/80 rounded hover:scale-[101%] transition-all duration-300 ease-in-out focus:outline-none"
+            className="inline-block flex items-center justify-center w-fit mx-auto group text-center text-md lg:text-lg text-moss pl-6 pr-3 py-1 border border-moss/80 rounded hover:scale-[101%] transition-all duration-300 ease-in-out focus:outline-none"
           >
             Start Learning
             <svg 

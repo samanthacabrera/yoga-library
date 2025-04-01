@@ -156,11 +156,11 @@ const CategoryPage = () => {
   return (
     <>
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
-     <h1 className="heading text-center mt-20 py-12 text-4xl lg:text-6xl">Yoga Pose Directory</h1>
+     <h1 className="">Yoga Pose Directory</h1>
         
       {/* Filter */}
       <section className="relative py-10 px-4 md:px-6 bg-white">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-2xl mx-auto">
 
           {/* Main Category Buttons */}
           <div className="flex flex-wrap justify-center gap-2 mb-8">
@@ -227,15 +227,15 @@ const CategoryPage = () => {
         </div>
       </section>
 
-      <h2 className="text-xl lg:text-2xl font-light pt-12 text-center tracking-wider text-charcoal/90 mx-auto max-w-xl">
+      <h2 className="">
         {getHeadingText()}
       </h2>
-      <p className="text-charcoal/80 text-sm tracking-wide leading-relaxed py-6 max-w-xl mx-auto">
+      <p className="text-center">
         {getDescText()}
       </p>
 
       {filteredPoses.length === 0 ? (
-        <p className="text-lg font-bold text-black bg-moss p-4 text-center">
+        <p className="text-center">
           No poses found for this category.
         </p>
       ) : (

@@ -62,10 +62,10 @@ const Newsletter = () => {
     return (
         <>
         <div className="flex flex-col min-h-screen w-full max-w-3xl md:mx-auto mx-12 space-y-40">
-           <div className="mt-40">
-                <h2 className="text-lg text-center tracking-wider uppercase">Our Monthly Column:</h2>
-                <h1 className="my-12 lg:mb-20 text-6xl text-center">Beyond the Mat</h1>
-                <p className="mt-4 text-lg text-center tracking-wide text-gray-700 max-w-2xl mx-auto">
+           <div className="text-center mt-40">
+                <h3>Our Monthly Column:</h3>
+                <h1 className="my-12 text-4xl lg:text-6xl">Beyond the Mat</h1>
+                <p>
                     Stay inspired and connected with our monthly yoga column. Each edition delivers 
                     insightful articles and practical tips to deepen your practice, both on and off the mat.
                 </p>
@@ -73,7 +73,7 @@ const Newsletter = () => {
 
             {latestArticle && (
                 <div>
-                <h2 className="text-4xl text-moss text-center">Latest Edition</h2>
+                <h2 className="text-4xl">Latest Edition</h2>
                 <div className="bg-moss bg-opacity-10 rounded-xl p-6 lg:p-12 space-y-6 my-24 hover:scale-[102%] transition duration-300 ease-in-out">
                     <h3 className="text-4xl text-moss tracking-tight opacity-50 font-bold">March</h3>
                     <h3 className="text-base lg:text-2xl ">
@@ -90,7 +90,7 @@ const Newsletter = () => {
 
             {/* All Articles  */}
             <div>
-                <h2 className="text-4xl text-moss text-center">All Editions</h2>
+                <h2 className="text-4xl">All Editions</h2>
                 <ul className="space-y-12 py-24">
                     {displayBlogs()}
                 </ul>
@@ -98,7 +98,7 @@ const Newsletter = () => {
 
             {/* Whats New */}
             <div>
-                <h3 className="text-4xl text-moss text-center">What's New</h3>
+                <h2 className="text-4xl">What's New</h2>
                 <div className="bg-moss bg-opacity-10 rounded-xl p-6 lg:p-12 space-y-6 my-24">
                     <h3 className="uppercase tracking-wider font-medium">March 2025</h3>
                <ul className="space-y-2">
@@ -114,7 +114,7 @@ const Newsletter = () => {
             
         {/* Meet the Author  */}
         <div id="meet-the-author" className="relative py-32">  
-            <h3 className="text-4xl text-moss text-center my-24">Meet the Author</h3>
+            <h2 className="text-4xl my-24">Meet the Author</h2>
             <div className="max-w-4xl mx-auto px-6">
                 <div className="flex flex-col md:flex-row md:items-start md:space-x-16">
                     <div className="md:w-1/3 flex flex-col items-center mb-10 md:mb-0">
