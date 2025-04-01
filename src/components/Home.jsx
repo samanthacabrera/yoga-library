@@ -135,6 +135,38 @@ const Home = () => {
         </div>
       </motion.div>
       
+      {/* Recommended Use */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false, amount: 0.1 }}
+        transition={{ duration: 1.5 }}
+        className="container my-20"
+      >
+        <div className="flex items-center mb-12">
+          <div className="w-16 h-px bg-moss"></div>
+          <h2 className="text-lg lg:text-2xl tracking-widest ml-4">How Can We Enhance Your Practice?</h2>
+        </div>
+
+        <h3 className="mb-6">Building a Strong Foundation</h3>
+
+        <div className="space-y-6 text-charcoal tracking-wide leading-loose">
+          <p>
+            Whether you’re attending solo classes, joining a group session, or practicing online or in person, Learn Yoga Online is designed to help you establish a solid foundation for your yoga journey.
+          </p>
+
+          <p>
+            Start by exploring our library of essential poses. Understanding the correct alignment, breathing techniques, and safety tips is key to building a strong base for any practice. As you go through the instructions, take your time and repeat poses to build familiarity and confidence.
+          </p>
+          <p>
+            This platform is meant to complement your yoga practice, whether you're attending classes at a studio or practicing at home. The goal is not only to help you memorize poses but to deepen your understanding, creating a stronger connection between your body and mind.
+          </p>
+          <p>
+            Use Learn Yoga Online to review what you’ve learned in class, gain confidence, and enhance your flexibility and strength. By supplementing your yoga practice with this resource, you’ll feel more prepared and grounded, no matter what type of class or style you choose to practice.
+          </p>
+        </div>
+      </motion.div>
+      
       {/* Approach */}
       <motion.section
       initial={{ opacity: 0 }}
