@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
@@ -14,6 +14,7 @@ import Chakras from "./components/Chakras";
 import Newsletter from "./components/Newsletter";
 import Resources from "./components/Resources";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import PageNav from "./components/PageNav";
 import Footer from "./components/Footer";
 
 const ScrollToTop = () => {
@@ -28,10 +29,32 @@ const ScrollToTop = () => {
 const App = () => {
   const location = useLocation();
   const [showHeader, setShowHeader] = useState(false);
+  const [isFooterVisible, setIsFooterVisible] = useState(false);
+  const footerRef = useRef(null)
 
   useEffect(() => {
     setShowHeader(location.pathname !== "/");
   }, [location]);
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      console.log("Footer visibility changed:", entry.isIntersecting);
+      setIsFooterVisible(entry.isIntersecting);
+    },
+    { threshold: 0.1 } // 10% of the footer should be visible to trigger
+  );
+
+  if (footerRef.current) {
+    observer.observe(footerRef.current);
+  }
+
+  return () => {
+    if (footerRef.current) {
+      observer.unobserve(footerRef.current);
+    }
+  };
+}, []);
 
   return (
     <>
@@ -54,7 +77,8 @@ const App = () => {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </div>
-      <Footer />
+      {!isFooterVisible && <PageNav />}
+      <Footer ref={footerRef}/>
     </>
   );
 };

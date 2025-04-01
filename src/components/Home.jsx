@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet';
 import { Parallax } from 'react-parallax';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import PageNav from './PageNav';
 
 const Home = () => {
   const approaches = [
@@ -52,7 +51,6 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://learnyoga.online" />
       </Helmet>
-      <PageNav/>
       <div className="flex flex-col w-screen">
       {/* Hero */}
       <div className="relative h-screen flex flex-col space-y-12">

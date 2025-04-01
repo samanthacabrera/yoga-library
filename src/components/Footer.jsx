@@ -1,10 +1,10 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { Link } from "react-router-dom";
 import posesData from "../data/poses.json";
 
-const Footer = () => {
+const Footer = forwardRef((props, ref) => {
     return (
-        <div className="bg-gradient-to-b from-moss/80 to-moss/95 text-white">
+        <div ref={ref} className="bg-gradient-to-b from-moss/80 to-moss/95 text-white">
             <div className="mt-40 py-8 px-8 md:px-20">
                 <Link
                     to="/poses"
@@ -70,6 +70,6 @@ const Footer = () => {
             </footer>
         </div>
     );
-}
+})
 
 export default Footer;
