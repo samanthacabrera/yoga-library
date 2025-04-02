@@ -142,7 +142,7 @@ const Home = () => {
       >
         <div className="flex items-center mb-12">
           <div className="w-16 h-px bg-moss"></div>
-          <h2 className="text-md lg:text-2xl tracking-widest ml-4">Why Choose Learn Yoga Online?</h2>
+          <h2 className="text-md lg:text-2xl tracking-widest ml-4">How to Use Learn Yoga Online?</h2>
         </div>
 
         <h3 className="mb-6">An Accessible Path to Yoga Mastery</h3>
@@ -206,7 +206,7 @@ const Home = () => {
         ))}
       </div>
     </motion.section>
-
+    
       {/* What We Offer */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -215,22 +215,14 @@ const Home = () => {
         transition={{ duration: 1.5 }}
         className="container my-20"
       >
-        <div className="flex items-center mb-12">
-          <div className="w-16 h-px bg-moss"></div>
-          <h2 className="text-lg lg:text-2xl tracking-widest ml-4">
-            What Do We Offer?
-          </h2>
-        </div>
-          
-        <h3 className="mb-6">
-          Comprehensive Yoga Resources
-        </h3>
-        
+    
+        <h2 className="mb-12">
+          Our Essential Yoga Tools
+        </h2>
         <p>
-          Elevate your yoga journey with curated resources designed to deepen your practice and understanding.
+          Elevate your yoga journey with resources designed to deepen your practice and understanding.
         </p>
-  
-          <div className="grid md:grid-cols-1 gap-8 py-12">
+          <div className="grid md:grid-cols-1 gap-8 py-8">
             {[
               { 
                 title: "Pose Library", 
@@ -275,56 +267,6 @@ const Home = () => {
           </div>
       </motion.div>
 
-      {/* Intro */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: false, amount: 0.1 }}
-        transition={{ duration: 1.5 }}
-        className="container my-20 space-y-40"
-      >
-
-          {/* Yoga for Everyone */}
-          <div>
-            <div className="flex items-center mb-12">
-              <div className="w-16 h-px bg-moss"></div>
-              <h2 className="text-lg lg:text-2xl tracking-widest ml-4">A Path for Every Yogi</h2>
-            </div>
-
-            <h3 className="mb-6">Inclusive & Accessible Practice</h3>
-            
-            <p className="mb-4">
-              In yoga philosophy, ahimsa means "non-harming" or "compassion." It teaches us to approach ourselves and others with kindness, both on and off the mat.     
-            </p>
-
-            <p>
-              Yoga is for everybody, regardless of age, body type, or fitness level. It’s not about achieving the perfect pose but about cultivating a practice that supports your body, breath, and mind. The most rewarding yoga practice is one that feels safe, accessible, and empowering.
-            </p>
-
-
-            <div className="space-y-6 my-12">
-              {[
-                "Honor your body’s needs and limitations without judgment",
-                "Use props like blocks, straps, and blankets for added support",
-                "Modify poses to suit your range of motion and comfort",
-                "Embrace progress at your own pace—flexibility and strength develop over time",
-                "Remember that yoga is about presence, not perfection"
-              ].map((item, index) => (
-                <div key={index} className="flex items-center space-x-4">
-                  <span className="text-moss">0{index + 1}</span>
-                  <p>{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="p-8 border-l border-moss/50">
-            <h3 className="mb-6">Accessible Yoga for All</h3>
-            <p>
-              We are committed to expanding our content on adaptive yoga and creating resources that support every practitioner.
-            </p>
-          </div>
-          </motion.div>
 
           {/* Quick Links */}
           <motion.div
@@ -388,6 +330,53 @@ const Home = () => {
               </div>
             </div>
           </motion.div>
+
+      {/* Philosophy */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false, amount: 0.1 }}
+        transition={{ duration: 1.5 }}
+        className="container my-20 space-y-40"
+      >
+          <div>
+    
+            <h2 className="mb-24">Our Philosophy</h2>
+
+            <h3 className="mb-6">A Path for Every Yogi</h3>
+            
+            <p className="mb-4">
+              In yoga, the principle of ahimsa teaches us to practice "non-harming" and compassion—both for ourselves and others. It reminds us to approach our practice with kindness, whether we're on or off the mat.
+            </p>
+            <p className="mb-4">
+              At Learn Yoga Online, we believe yoga is for everyone, regardless of your age, experience, or fitness level. Our goal is to help you create a practice that fits your unique journey, one that honors your body’s needs and lets you progress at your own pace.
+            </p>
+            <p>
+              To help you on this journey, we focus on three key principles that guide your practice. Embrace these principles as you move forward in your practice:
+            </p>
+
+            <div className="space-y-6 my-12">
+              {[
+                "Build awareness of subtle body connections",
+                "Experience each pose without preconceptions",
+                "Honor your body’s needs and limitations without judgment"
+                
+              ].map((item, index) => (
+                <div key={index} className="flex items-center space-x-4">
+                  <span className="text-moss">0{index + 1}</span>
+                  <p>{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="p-8 border-l border-moss/50">
+            <h3 className="mb-6">Accessible Yoga for All</h3>
+            <p>
+              We are committed to expanding our content on adaptive yoga and creating resources that support every practitioner.
+            </p>
+          </div>
+        </motion.div>
         
           {/* Yoga For Every Need  */}
           <motion.div
