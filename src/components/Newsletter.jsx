@@ -9,11 +9,8 @@ const Newsletter = () => {
         fetch("/blog.json") 
             .then(response => response.json())
             .then(data => {
-                const yogaArticles = data.items.filter(post =>
-                    post.title.toLowerCase().includes("yoga") || 
-                    post.description.toLowerCase().includes("yoga")
-                );
-                setBlog({ items: yogaArticles });
+                // console.log("blogs fetched:", data);
+                setBlog({ items: Array.isArray(data.items) ? data.items : [], error: null });
             })
             .catch(err => setBlog({ error: err.message }));
     }, []);
@@ -32,16 +29,16 @@ const Newsletter = () => {
 
     const displayBlogs = () => {
         return blog.items.map((post, index) => (
-            <li key={index} className="group flex flex-col md:flex-row items-start md:items-center space-y-6 md:space-y-0 md:space-x-6 bg-moss bg-opacity-10 rounded-xl p-6 lg:p-12 hover:scale-[102%] transition duration-300 ease-in-out">
+            <li key={index} className="group flex flex-col md:flex-row items-start md:items-center space-y-6 md:space-y-0 md:space-x-6 bg-moss/5 rounded-xl p-6 lg:p-12 hover:scale-[101%] hover:bg-moss/10 transition-all duration-300 ease-in-out">
                 <span className="text-2xl text-moss opacity-50">
                     {String(totalArticles - index).padStart(2, "0")}
                 </span>
                 <div className="flex-1">
-                    <div className="text-sm opacity-90 mb-2">
+                    <div className="text-sm text-moss/70 mb-2">
                         Published on {new Date(post.pubDate).toLocaleDateString()}
                     </div>
-                    <a href={post.link} target="_blank" rel="noopener noreferrer" className="text-2xl font-light tracking-wide leading-snug">
-                        {post.title}
+                    <a href={post.link} target="_blank" rel="noopener noreferrer" >
+                        <h3 className="text-left">{post.title}</h3>
                     </a>
                 </div>
                 <a 
@@ -74,50 +71,34 @@ const Newsletter = () => {
             {latestArticle && (
                 <div>
                 <h2 className="text-4xl">Latest Edition</h2>
-                <div className="bg-moss bg-opacity-10 rounded-xl p-6 lg:p-12 space-y-6 my-24 hover:scale-[102%] transition duration-300 ease-in-out">
-                    <h3 className="text-4xl text-moss tracking-tight opacity-50 font-bold">March</h3>
-                    <h3 className="text-base lg:text-2xl ">
+                <div className="bg-moss/5 rounded-xl p-6 lg:p-12 space-y-6 my-24 hover:scale-[101%] hover:bg-moss/10 transition-all duration-300 ease-in-out">
+                    <h3 className="text-4xl text-moss tracking-tight opacity-50 font-medium">April 2025</h3>
+                    <h3 className="text-left">
                         {latestArticle.title}
                     </h3>
                     <p className="text-gray-700">{latestArticle.description}</p>
                     <a href={latestArticle.link} target="_blank" rel="noopener noreferrer" 
-                       className="w-fit px-4 py-2 border border-moss text-moss rounded-lg hover:bg-moss hover:text-white transition-all duration-300 text-sm font-medium flex items-center">
+                       className="">
                         Read Full Article 
                     </a>
                 </div>
                 </div>
             )}
 
-            {/* All Articles  */}
-            <div>
-                <h2 className="text-4xl">All Editions</h2>
-                <ul className="space-y-12 py-24">
-                    {displayBlogs()}
-                </ul>
-            </div>
-
-            {/* Whats New */}
-            <div>
-                <h2 className="text-4xl">What's New</h2>
-                <div className="bg-moss bg-opacity-10 rounded-xl p-6 lg:p-12 space-y-6 my-24">
-                    <h3 className="uppercase tracking-wider font-medium">March 2025</h3>
-               <ul className="space-y-2">
-                        <li>
-                            <span className="font-medium tracking-wide">Introducing Yarnsana:</span> We're excited to share the launch of Yarnsana, our sustainable, upcycled, hand-crocheted yoga accessories brand. Stay tuned for updates as we build our eCommerce platform!
-                        </li>
-                        <li>
-                            <span className="font-medium tracking-wide">"What Is Yoga?" Page Revamped:</span> We've redesigned our "What Is Yoga?" page to include a simple quiz that helps you discover the best yoga style for you. Check it out and find your perfect practice!
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        {/* All Articles  */}
+        <div>
+            <h2 className="text-4xl">All Editions</h2>
+            <ul className="space-y-12 py-24">
+                {displayBlogs()}
+            </ul>
+        </div>
             
         {/* Meet the Author  */}
         <div id="meet-the-author" className="relative py-32">  
             <h2 className="text-4xl my-24">Meet the Author</h2>
             <div className="max-w-4xl mx-auto px-6">
-                <div className="flex flex-col md:flex-row md:items-start md:space-x-16">
-                    <div className="md:w-1/3 flex flex-col items-center mb-10 md:mb-0">
+                <div className="flex flex-col">
+                    <div className="flex flex-col items-center mb-10">
                         <img 
                             src="/me.png" 
                             alt="Sam" 
@@ -138,8 +119,8 @@ const Newsletter = () => {
                         </div>
                     </div>
                     
-                    <div className="md:w-2/3">                
-                        <div className="space-y-6 text-gray-600 leading-relaxed font-light">
+                    <div >                
+                        <div className="border border-charcoal rounded-2xl p-12 space-y-6">
                             <p>Hi, my name is Sam Cabrera and I'm so glad you're here. My yoga journey started in 2020 when life felt particularly overwhelming. In the midst of the uncertainty and stress, I turned to yoga, hoping it might offer me some peace. What I didn't expect was how deeply yoga would transform my life.</p>
                             
                             <p>As I practiced more, I realized yoga was not just about the physical postures—it became a path of self-discovery and personal growth. I delved into different styles, explored yoga's philosophy, and began integrating mindfulness into my everyday life.</p>
@@ -147,6 +128,8 @@ const Newsletter = () => {
                             <p>In 2024, I created this website to share my journey and provide a simple, welcoming space for others to find inspiration and support on their own paths. And in 2025, I combined my love for yoga with my passion for sustainability by launching Yarnsana, an online store where I sell 100% upcycled, hand-crocheted yoga accessories.</p>
                             
                             <p>However you've found your way here, I hope you'll find something that resonates with you.</p>
+                            
+                            <p>— Sam</p>
                         </div>
                     </div>
                 </div>

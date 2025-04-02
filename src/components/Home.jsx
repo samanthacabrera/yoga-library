@@ -127,10 +127,7 @@ const Home = () => {
           </p>
           
           <p>
-            You will also have the opportunity to explore the deeper aspects of yoga that connect mind, body, and spirit. This knowledge will help you integrate yoga into your daily life for greater well-being.         
-          </p>
-          <p>
-            It’s a great way to fill in the gaps from your yoga classes, reinforcing what you’ve learned and giving you more confidence in your practice.
+            You will also have the opportunity to explore the deeper aspects of yoga that connect mind, body, and spirit. This holistic approach goes beyond physical postures, incorporating breathwork, meditation, and mindfulness practices to cultivate inner balance and awareness. You will gain insights into the philosophical foundations of yoga, such as the Eight Limbs of Yoga and the principles of self-discipline, compassion, and inner peace.        
           </p>
         </div>
       </motion.div>
@@ -145,21 +142,28 @@ const Home = () => {
       >
         <div className="flex items-center mb-12">
           <div className="w-16 h-px bg-moss"></div>
-          <h2 className="text-lg lg:text-2xl tracking-widest ml-4">How Can We Enhance Your Practice?</h2>
+          <h2 className="text-md lg:text-2xl tracking-widest ml-4">Why Choose Learn Yoga Online?</h2>
         </div>
 
-        <h3 className="mb-6">Building a Strong Foundation</h3>
+        <h3 className="mb-6">An Accessible Path to Yoga Mastery</h3>
 
         <div className="space-y-6 text-charcoal tracking-wide leading-loose">
           <p>
             Whether you’re attending solo classes, joining a group session, or practicing online or in person, Learn Yoga Online is designed to help you establish a solid foundation for your yoga journey.
           </p>
-
-          <p>
-            Start by exploring our library of essential poses. Understanding the correct alignment, breathing techniques, and safety tips is key to building a strong base for any practice. As you go through the instructions, take your time and repeat poses to build familiarity and confidence.
+          <p>First, start with our 
+            <Link to="/what-is-yoga/beginners-guide" className="border-b border-moss mx-1 py-1 hover:bg-moss/10 transition-all duration-300">
+              Beginner’s Guide to Yoga.
+            </Link> This guide will help you understand yoga’s core principles, basic terminology, and how to approach your practice with mindfulness and awareness.
           </p>
           <p>
-            This platform is meant to complement your yoga practice, whether you're attending classes at a studio or practicing at home. The goal is not only to help you memorize poses but to deepen your understanding, creating a stronger connection between your body and mind.
+            Next, we recommend going through all the philosophy of yoga lessons, starting with an <Link to="/what-is-yoga/overview" className="border-b border-moss mx-1 py-1 hover:bg-moss/10 transition-all duration-300">
+            Overview of Yoga.
+            </Link>These lessons will introduce you to key concepts such as breathwork, meditation, and the deeper philosophy behind the practice, helping you cultivate a well-rounded understanding.
+          </p>
+          <p>Then, begin exploring our 
+          <Link to="/poses" className="border-b border-moss mx-1 py-1 hover:bg-moss/10 transition-all duration-300">
+            library of essential poses.</Link> Understanding the correct alignment, breathing techniques, and safety tips is key to building a strong base for any practice. As you go through the instructions, take your time and repeat poses to build familiarity.
           </p>
           <p>
             Use Learn Yoga Online to review what you’ve learned in class, gain confidence, and enhance your flexibility and strength. By supplementing your yoga practice with this resource, you’ll feel more prepared and grounded, no matter what type of class or style you choose to practice.
@@ -214,7 +218,7 @@ const Home = () => {
         <div className="flex items-center mb-12">
           <div className="w-16 h-px bg-moss"></div>
           <h2 className="text-lg lg:text-2xl tracking-widest ml-4">
-            What We Offer
+            What Do We Offer?
           </h2>
         </div>
           
@@ -279,65 +283,6 @@ const Home = () => {
         transition={{ duration: 1.5 }}
         className="container my-20 space-y-40"
       >
-          {/* Beginner's Mind */}
-          <div>
-            <div className="flex items-center mb-12">
-              <div className="w-16 h-px bg-moss"></div>
-              <h2 className="text-lg lg:text-2xl tracking-widest ml-4">The Beginner's Mind</h2>
-            </div>
-
-            <h3 className="mb-6">Your Greatest Strength</h3>
-  
-            <p>
-              In yoga philosophy, there's a concept called "beginner's mind" or <span className="font-normal">shoshin</span> that views your newcomer status not as a limitation, but as your greatest asset. Approaching yoga with fresh eyes allows you to:
-            </p>
-
-            <div className="space-y-6 my-12">
-              {[
-                "Experience each pose without preconceptions",
-                "Stay present with sensations rather than rushing",
-                "Develop self-compassion for your practice",
-                "Build awareness of subtle body connections",
-                "Embrace the journey, not just destinations"
-              ].map((item, index) => (
-                <div key={index} className="flex items-center space-x-4">
-                  <span className="text-moss">0{index + 1}</span>
-                  <p>{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Ahimsa */}
-          <div>
-            <div className="flex items-center mb-12">
-              <div className="w-16 h-px bg-moss"></div>
-              <h2 className="text-lg lg:text-2xl tracking-widest ml-4">The Practice of Kindness</h2>
-            </div>
-
-            <h3 className="mb-6">Ahimsa</h3>
-
-            <p>
-              In yoga philosophy, <span className="font-normal">ahimsa</span> means "non-harming" or "compassion."  
-              It teaches us to approach ourselves and others with kindness, both on and off the mat.  
-              Practicing ahimsa allows you to:
-            </p>
-
-            <div className="space-y-6 my-12">
-              {[
-                "Listen to your body and practice without force",
-                "Let go of self-judgment and embrace patience",
-                "Move with care rather than comparison",
-                "Honor your own pace instead of rushing progress",
-                "Extend kindness beyond the mat into daily life"
-              ].map((item, index) => (
-                <div key={index} className="flex items-center space-x-4">
-                  <span className="text-moss">0{index + 1}</span>
-                  <p>{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
 
           {/* Yoga for Everyone */}
           <div>
@@ -347,10 +292,15 @@ const Home = () => {
             </div>
 
             <h3 className="mb-6">Inclusive & Accessible Practice</h3>
+            
+            <p className="mb-4">
+              In yoga philosophy, ahimsa means "non-harming" or "compassion." It teaches us to approach ourselves and others with kindness, both on and off the mat.     
+            </p>
 
             <p>
               Yoga is for everybody, regardless of age, body type, or fitness level. It’s not about achieving the perfect pose but about cultivating a practice that supports your body, breath, and mind. The most rewarding yoga practice is one that feels safe, accessible, and empowering.
             </p>
+
 
             <div className="space-y-6 my-12">
               {[
@@ -391,7 +341,7 @@ const Home = () => {
               >
                 <h2 className="text-lg lg:text-2xl tracking-widest mb-12">Deepen Your Understanding</h2>
                 <p>
-                  Explore these essential guides to discover the rich history and transformative philosophy of yoga.
+                  Explore these essential lessons to discover the rich history and transformative philosophy of yoga.
                 </p>
               </motion.div>
 
