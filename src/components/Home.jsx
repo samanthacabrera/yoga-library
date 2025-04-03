@@ -51,59 +51,61 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://learnyoga.online" />
       </Helmet>
+
       <div className="flex flex-col w-screen">
       {/* Hero */}
       <div className="relative flex flex-col">
-          {/* <div className="flex justify-center items-center relative">
-            <div className="absolute bottom-0 w-full h-[30vh] bg-gradient-to-t from-white via-transparent to-transparent"></div>
-            <div className="absolute bottom-0 w-full h-[20vh] bg-gradient-to-t from-white via-orange-400/20 to-transparent opacity-50"></div>
-            <img src="/bg1.jpg" className="w-screen h-[65vh] lg:h-[70vh] object-cover object-center lg:object-[25%_70%]" />
-          </div> */}
-          <Parallax
-            bgImage="/bg1.jpg"
-            strength={300}
-            className="mx-8 lg:mx-[20vw] mt-24 mb-6 h-[40vh] lg:h-[60vh]"
-          >
-          </Parallax>
-        <div className="flex flex-col inline relative text-center space-y-4 my-6">
-          <motion.h1 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            className="text-3xl"
-          >
-          Learn Yoga Online
-          </motion.h1>
-          <motion.p
-            className="text-md lg:text-lg mx-8"
-          >
-          Explore helpful resources designed especially for <span className="italic">beginning</span> yogis
-          </motion.p>
-          
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-          <Link
-            to="/poses"
-            className="inline-block flex items-center justify-center w-fit mx-auto group text-center text-md lg:text-lg text-moss pl-6 pr-3 py-1 border border-moss/80 rounded hover:scale-[101%] transition-all duration-300 ease-in-out focus:outline-none"
-          >
-            Start Learning
-            <svg 
-              className="ml-2 w-4 h-4 transition-all duration-300 group-hover:translate-x-1 group-hover:text-moss"
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24" 
-              xmlns="http://www.w3.org/2000/svg"
+        <Parallax
+          bgImage="/bg1.jpg"
+          strength={300}
+          className="mx-auto w-full h-screen lg:h-[80vh] mt-20"
+        >
+        </Parallax>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="bg-white/50 backdrop-blur-sm p-4 md:p-8 max-w-lg mx-2 text-center">
+            <motion.h1 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.5, ease: "easeOut" }}
+              className="text-2xl md:text-3xl text-neutral-600 tracking-wider"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-            </svg>
-          </Link>
-          </motion.div>
+              Learn Yoga Online
+            </motion.h1>
+            
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
+              className="text-sm md:text-md font-light mt-4 mb-6"
+            >
+              Discover resources designed to support new yogis as they start their yoga journey
+            </motion.p>
+            
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.5, delay: 0.6 }}
+            >
+              <Link
+                to="/poses"
+                className="inline-block flex items-center justify-center w-fit mx-auto group text-center text-sm md:text-md text-white/90 font-medium bg-moss pl-6 pr-3 py-1 border border-moss/80 rounded-sm hover:scale-[101%] transition-all duration-300 ease-in-out focus:outline-none"
+              >
+                Start Learning
+                <svg 
+                  className="ml-2 w-4 h-4 transition-all duration-300 group-hover:translate-x-1"
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24" 
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </Link>
+            </motion.div>
+          </div>
         </div>
       </div>
-        
+
     <div className="max-w-3xl mx-12 md:mx-auto py-40 grid gap-y-40 md:gap-y-80 text-charcoal">
       
       {/* About */}
@@ -171,166 +173,6 @@ const Home = () => {
         </div>
       </motion.div>
       
-      {/* Approach */}
-      <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: false, amount: 0.1 }}
-      transition={{ duration: 0.8 }}
-      className="container my-20"
-      >
-      <h2 className="mb-24">
-        Our Approach
-      </h2>
-      
-      <div className="grid gap-8 md:gap-24">
-        {approaches.map((approach) => (
-          <motion.div
-            key={approach.number}
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="group"
-          >
-            <div className="flex items-center mb-4">
-              <span className="text-4xl text-neutral-300 mr-6 group-hover:text-moss/80 transition-colors duration-300">
-                {approach.number}
-              </span>
-              <h3 className="group-hover:text-moss/90 transition-colors duration-300">
-                {approach.title}
-              </h3>
-            </div>
-            <p>
-              {approach.mainText}
-            </p>
-          </motion.div>
-        ))}
-      </div>
-    </motion.section>
-    
-      {/* What We Offer */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: false, amount: 0.1 }}
-        transition={{ duration: 1.5 }}
-        className="container my-20"
-      >
-    
-        <h2 className="mb-12">
-          Our Essential Yoga Tools
-        </h2>
-        <p>
-          Elevate your yoga journey with resources designed to deepen your practice and understanding.
-        </p>
-          <div className="grid md:grid-cols-1 gap-8 py-8">
-            {[
-              { 
-                title: "Pose Library", 
-                link: "/poses", 
-                description: "Explore detailed breakdowns of 50 foundational yoga poses.",
-              },
-              { 
-                title: "Philosophy & History", 
-                link: "/what-is-yoga/overview", 
-                description: "Uncover the traditions and ancient wisdom behind yoga practice.",
-              }
-            ].map((item, index) => (
-              <Link 
-                key={index} 
-                to={item.link} 
-                className="group card"
-              >                
-                <div className="space-y-2">
-                  <h3>
-                    {item.title}
-                  </h3>
-                  <p>
-                    {item.description}
-                  </p>
-                  <div className="inline-flex items-center text-moss">
-                    <span className="mr-2">Explore</span>
-                    <span className="opacity-0 group-hover:opacity-100 transition-all">
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      className="h-5 w-5 transform transition-transform group-hover:translate-x-1" 
-                      fill="none" 
-                      viewBox="0 0 24 24" 
-                      stroke="currentColor"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                    </span>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-      </motion.div>
-
-
-          {/* Quick Links */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }} 
-            whileInView={{ opacity: 1, y: 0 }} 
-            viewport={{ once: false, amount: 0.2 }} 
-            transition={{ duration: 1 }}
-            className="container my-20"
-          >
-            <div>
-              <motion.div 
-                className="text-center mb-16"
-                variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-              >
-                <h2 className="text-lg lg:text-2xl tracking-widest mb-12">Deepen Your Understanding</h2>
-                <p>
-                  Explore these essential lessons to discover the rich history and transformative philosophy of yoga.
-                </p>
-              </motion.div>
-
-              <div className="grid gap-8">
-                {[
-                  { link: "/what-is-yoga/beginners-guide", title: "Start Here: Beginner's Guide", description: "New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started." },
-                  { link: "/what-is-yoga/overview", title: "What Is Yoga?", description: "Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today." },
-                  { link: "/what-is-yoga/eight-limbed-path", title: "The 8-Limbed Path", description: "Explore the eight limbs of yoga, from ethical principles and breath control to meditation and self-realization." },
-                  { link: "/what-is-yoga/seven-chakras", title: "The 7 Chakras", description: "Understand the seven energy centers of the body and how they influence your physical, emotional, and spiritual well-being." },
-                  { link: "/what-is-yoga/three-gunas", title: "The 3 Gunas", description: "Learn about the three fundamental qualities of nature—Sattva, Rajas, and Tamas—and how they shape your actions and mindset." },
-                  { link: "/resources", title: "Resources", description: "Find recommended books, tools, and external guides to deepen your yoga knowledge and practice." },
-                ].map((item, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: false, amount: 0.1 }}
-                    className="group card"
-                  >
-                    <Link 
-                      to={item.link} 
-                    >
-                      <div className="flex flex-col space-y-2">
-                        <h3>{item.title}</h3>
-                        <p>{item.description}</p>
-                        <div className="inline-flex items-center text-moss">
-                          <span className="mr-2">Explore</span>
-                          <span className="opacity-0 group-hover:opacity-100 transition-all">
-                          <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            className="h-5 w-5 transform transition-transform group-hover:translate-x-1" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke="currentColor"
-                          >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                          </svg>
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </motion.div>
-
       {/* Philosophy */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -377,7 +219,107 @@ const Home = () => {
             </p>
           </div>
         </motion.div>
-        
+      
+      {/* Approach */}
+      <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: false, amount: 0.1 }}
+      transition={{ duration: 0.8 }}
+      className="container my-20"
+      >
+      <h2 className="mb-24">
+        Our Approach
+      </h2>
+      
+      <div className="grid gap-8 md:gap-24">
+        {approaches.map((approach) => (
+          <motion.div
+            key={approach.number}
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="group"
+          >
+            <div className="flex items-center mb-4">
+              <span className="text-4xl text-neutral-300 mr-6 group-hover:text-moss/80 transition-colors duration-300">
+                {approach.number}
+              </span>
+              <h3 className="group-hover:text-moss/90 transition-colors duration-300">
+                {approach.title}
+              </h3>
+            </div>
+            <p>
+              {approach.mainText}
+            </p>
+          </motion.div>
+        ))}
+      </div>
+    </motion.section>
+    
+    {/* Quick Links */}
+    <motion.div
+      initial={{ opacity: 0, y: 50 }} 
+      whileInView={{ opacity: 1, y: 0 }} 
+      viewport={{ once: false, amount: 0.2 }} 
+      transition={{ duration: 1 }}
+      className="container my-20"
+    >
+      <div>
+        <motion.div 
+          className="text-center mb-16"
+          variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+        >
+          <h2 className="text-lg lg:text-2xl tracking-widest mb-12">Deepen Your Understanding</h2>
+          <p>
+            Dive into these key lessons to uncover the profound history and philosophy of yoga.
+          </p>
+        </motion.div>
+
+        <div className="grid gap-8">
+          {[
+            { link: "/what-is-yoga/beginners-guide", title: "Start Here: Beginner's Guide", description: "New to yoga? This guide covers the fundamentals—what yoga is, how to begin, and key concepts to help you get started." },
+            { link: "/what-is-yoga/overview", title: "What Is Yoga?", description: "Discover the history, philosophy, and purpose of yoga. Learn how this ancient practice continues to evolve today." },
+            { link: "/what-is-yoga/eight-limbed-path", title: "The 8-Limbed Path", description: "Explore the eight limbs of yoga, from ethical principles and breath control to meditation and self-realization." },
+            { link: "/what-is-yoga/seven-chakras", title: "The 7 Chakras", description: "Understand the seven energy centers of the body and how they influence your physical, emotional, and spiritual well-being." },
+            { link: "/what-is-yoga/three-gunas", title: "The 3 Gunas", description: "Learn about the three fundamental qualities of nature—Sattva, Rajas, and Tamas—and how they shape your actions and mindset." },
+            { link: "/poses", title: "Pose Library", description: "Explore a wide variety of yoga poses, each designed to enhance your strength, flexibility, and balance." },
+            { link: "/resources", title: "Resources", description: "Find recommended books, tools, and external guides to deepen your yoga knowledge and practice." },
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.1 }}
+              className="group card"
+            >
+              <Link 
+                to={item.link} 
+              >
+                <div className="flex flex-col space-y-2">
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                  <div className="inline-flex items-center text-moss">
+                    <span className="mr-2">Explore</span>
+                    <span className="opacity-0 group-hover:opacity-100 transition-all">
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      className="h-5 w-5 transform transition-transform group-hover:translate-x-1" 
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </motion.div>
+    
           {/* Yoga For Every Need  */}
           <motion.div
             initial={{ opacity: 0, y: 50 }} 
@@ -386,10 +328,9 @@ const Home = () => {
             transition={{ duration: 1 }}
             className="container my-20"
           >
-            <div className="flex items-center mb-12">
-              <div className="w-16 h-px bg-moss"></div>
-              <h2 className="text-lg lg:text-2xl tracking-widest ml-4">Yoga For Every Need</h2>
-            </div>
+           
+            <h2 className="text-lg lg:text-2xl tracking-widest mb-12">Yoga For Every Need</h2>
+           
             <p>Don't worry about touching your toes or holding perfect form on day one—yoga meets you at your current level and grows with you as you build your practice.</p>
             
             <div className="py-20 space-y-6">
