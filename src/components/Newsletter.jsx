@@ -120,8 +120,10 @@ const Newsletter = () => {
                     </div>
                     
                     <div >                
-                        <div className="border border-charcoal rounded-2xl p-12 space-y-6">
-                            <p>Hi, my name is Sam Cabrera and I'm so glad you're here. My yoga journey started in 2020 when life felt particularly overwhelming. In the midst of the uncertainty and stress, I turned to yoga, hoping it might offer me some peace. What I didn't expect was how deeply yoga would transform my life.</p>
+                        <div className="border border-charcoal/50 shadow-sm rounded-2xl p-12 space-y-6">
+                            <p>Hi! My name is Sam Cabrera and I'm so glad you're here. </p> 
+                            
+                            <p>My yoga journey started in 2020 when life felt particularly overwhelming. In the midst of the uncertainty and stress, I turned to yoga, hoping it might offer me some peace. What I didn't expect was how deeply yoga would transform my life.</p>
                             
                             <p>As I practiced more, I realized yoga was not just about the physical postures—it became a path of self-discovery and personal growth. I delved into different styles, explored yoga's philosophy, and began integrating mindfulness into my everyday life.</p>
                             
