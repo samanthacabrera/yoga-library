@@ -6,7 +6,7 @@ const ResourceCard = ({ to, title, description }) => (
     to={to} 
     target="_blank" 
     rel="noopener noreferrer" 
-    className="group bg-moss/10 h-fit md:h-[150px] p-6 text-left rounded-t-xl shadow hover:shadow-lg hover:scale-105 transition duration-500 ease-in-out flex flex-col justify-between"
+    className="group bg-moss/10 h-auto p-4 sm:p-6 text-left rounded-t-xl shadow hover:shadow-lg hover:scale-105 transition duration-500 ease-in-out flex flex-col justify-between"
     aria-label={`Visit ${title}`}
   >
     <div className="font-medium tracking-wider group-hover:text-moss transition-colors duration-300">{title}</div>
@@ -16,8 +16,8 @@ const ResourceCard = ({ to, title, description }) => (
 
 const ResourceSection = ({ title, links }) => (
   <div className="w-full max-w-2xl">
-    <h2 className="text-2xl text-charcoal tracking-wider">{title}</h2>
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-8">
+    <h2 className="text-xl sm:text-2xl text-charcoal tracking-wider">{title}</h2>
+    <div className="grid grid-cols-1 gap-4 sm:gap-6 my-4 sm:my-8">
       {links.map((link, index) => (
         <ResourceCard key={index} {...link} />
       ))}
@@ -76,21 +76,20 @@ const Resources = () => {
   };
 
   return (
-    <>
-    <div className="flex flex-col min-h-screen w-full max-w-3xl px-8 py-4 my-24 md:mx-auto mx-12">
-      <div className="mb-12">
-        <h1 className="text-center my-12 text-4xl tracking-wide">Resources</h1>
-        <p className="tracking-wide text-center max-w-2xl mx-auto">
+    <div className="flex flex-col min-h-screen w-full max-w-3xl px-4 sm:px-8 py-4 my-12 sm:my-24 mx-auto">
+      <div className="mb-8 sm:mb-12">
+        <h1 className="text-center my-8 sm:my-12 text-3xl sm:text-4xl tracking-wide">Resources</h1>
+        <p className="tracking-wide text-center max-w-2xl mx-auto text-sm sm:text-base">
           Handpicked tutorials and articles to deepen your yoga journey. Whether you're refining your technique, discovering new practices, or finding the perfect gear, our resources are here to support and inspire your growth every step of the way.
         </p>
         
         {/* Nav */}
-        <div className="flex flex-wrap justify-center gap-3 mt-8">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mt-6 sm:mt-8">
           {resourceCategories.map((category) => (
             <button
               key={category.id}
               onClick={() => scrollToSection(category.id)}
-              className={`px-4 py-2 rounded-full text-sm transition-all duration-300 ${
+              className={`px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm transition-all duration-300 ${
                 activeCategory === category.id 
                   ? "bg-moss text-white" 
                   : "bg-moss bg-opacity-10 hover:bg-opacity-40"
@@ -102,34 +101,32 @@ const Resources = () => {
         </div>
       </div>
 
-      <div className="space-y-16">
+      <div className="space-y-12 sm:space-y-16">
         {resourceCategories.map((category, index) => (
-          <div key={index} id={category.id} className="scroll-mt-20">
+          <div key={index} id={category.id} className="scroll-mt-16 sm:scroll-mt-20">
             <ResourceSection {...category} />
           </div>
         ))}
           
-        <p className="py-12 text-xs text-center tracking-wide opacity-70">
+        <p className="py-8 sm:py-12 text-xs text-center tracking-wide opacity-70">
           As an Amazon Associate, I earn from qualifying purchases. This helps support the site at no extra cost to you.
         </p>
       </div>
       
-        <div className="mt-24 border-t border-moss border-opacity-20 pt-40 text-center">
-        <h2 className="text-xl text-charcoal tracking-wider font-light mb-6">Suggest a Resource</h2>
-        <p className="max-w-md mx-auto leading-relaxed text-charcoal text-opacity-80">
-            Have a suggestion for our collection? I'm always looking to expand these resources 
-            with valuable recommendations for the yoga community. {" "}
-            <a 
+      <div className="mt-16 sm:mt-24 border-t border-moss border-opacity-20 pt-16 sm:pt-40 text-center">
+        <p className="max-w-md mx-auto leading-relaxed text-charcoal text-opacity-80 text-sm sm:text-base">
+          Have a suggestion for our collection? I'm always looking to expand these resources 
+          with valuable recommendations for the yoga community. {" "}
+          <a 
             href="mailto:samantha.n.cabrera@gmail.com?subject=Resource Suggestion for Learn Yoga Online" 
             className="inline-block font-medium text-moss hover:underline transition-all duration-300"
-            >
+          >
             Contact me
-            </a>{" "}
-            with your ideas.
+          </a>{" "}
+          with your ideas.
         </p>
-        </div>
+      </div>
     </div>
-    </>
   );
 };
 
