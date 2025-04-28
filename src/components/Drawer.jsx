@@ -36,7 +36,6 @@ const Drawer = () => {
     { label: "The 7 Chakras", to: "/what-is-yoga/seven-chakras" },
     { label: "The 3 Gunas", to: "/what-is-yoga/three-gunas" },
     { label: "List of Poses", to: "/poses" },
-    { label: "Newsletter", to: "/newsletter" },
     { label: "Resources", to: "/resources" },
   ];
 

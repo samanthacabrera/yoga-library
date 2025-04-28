@@ -9,7 +9,6 @@ const pages = [
   { name: "The Eight-Limbed Path", path: "/what-is-yoga/eight-limbed-path" },
   { name: "The Three Gunas", path: "/what-is-yoga/three-gunas" },
   { name: "The Seven Chakras", path: "/what-is-yoga/seven-chakras" },
-  { name: "Newsletter", path: "/newsletter" },
   { name: "Resources", path: "/resources" },
   { name: "Privacy Policy", path: "/privacy-policy" },
 ];

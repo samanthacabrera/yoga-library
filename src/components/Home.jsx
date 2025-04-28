@@ -418,41 +418,6 @@ const Home = () => {
             </div>
           </motion.div>
 
-        {/* Newsletter */}
-        <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.1 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className="max-w-4xl mx-auto text-center space-y-6"
-      >
-        <h2>
-        Read My Column
-        </h2>
-        <p className="max-w-2xl mx-auto">
-          Each month, I reflect on how yoga has shaped my journey—going <span className="italic">beyond the mat</span> to explore the shifts in awareness, connection, and personal growth along the way.
-        </p>
-        <div className="flex justify-center items-center space-x-4">
-          <Link
-            to="/newsletter"
-            className="group inline-flex items-center relative"
-          >
-            <span className="text-neutral-700 transition-colors duration-300 group-hover:text-neutral-900 relative">
-              Explore Insights
-            </span>
-            <svg 
-              className="ml-2 w-4 h-4 text-neutral-500 transition-all duration-300 group-hover:translate-x-1 group-hover:text-neutral-900"
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24" 
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-            </svg>
-          </Link>
-        </div>
-      </motion.div>
-                
         {/* Testimonials */}
         <motion.div
             initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
