@@ -57,7 +57,6 @@ const Resources = () => {
       id: "accessories",
       title: "Yoga Accessories",
       links: [
-        { to: "https://www.aloyoga.com/products/warrior-mat", title: "Alo Yoga Warrior Mat", description: "Durable, non-slip, eco-friendly mat with a smooth, supportive surface." },
         { to: "https://amzn.to/4iDdAFT", title: "Manduka PRO Yoga Mat", description: "High-performance, eco-conscious mat built to last." },
         { to: "https://amzn.to/4iJYnlP", title: "Manduka Yogitoes Yoga Towel", description: "Lightweight, quick-drying yoga towels that enhance your practice." },
         { to: "https://amzn.to/4bJXQhA", title: "Manduka Go Play 3.0 Yoga Mat Bag", description: "A lightweight yoga mat sling with external storage pockets for practice essentials." },
