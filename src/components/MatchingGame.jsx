@@ -43,7 +43,7 @@ const MatchingGame = () => {
 
   return (
     <div className="pt-24 px-4 max-w-4xl mx-auto">
-      <h2 className="text-center text-2xl font-semibold mb-6">Matching Game</h2>
+      <h2 className="text-center text-2xl mb-6">Matching Game</h2>
         <div className="mb-8">
             <p>1. Tap on any two cards to flip them over.</p>
             <p>2. Try to match the English and Sanskrit names of the same yoga pose.</p> 
