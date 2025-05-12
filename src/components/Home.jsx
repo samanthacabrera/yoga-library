@@ -173,53 +173,6 @@ const Home = () => {
         </div>
       </motion.div>
       
-      {/* Philosophy */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: false, amount: 0.1 }}
-        transition={{ duration: 1.5 }}
-        className="container my-20 space-y-40"
-      >
-          <div>
-    
-            <h2 className="mb-24">Our Philosophy</h2>
-
-            <h3 className="mb-6">A Path for Every Yogi</h3>
-            
-            <p className="mb-4">
-              In yoga, the principle of ahimsa teaches us to practice "non-harming" and compassion—both for ourselves and others. It reminds us to approach our practice with kindness, whether we're on or off the mat.
-            </p>
-            <p className="mb-4">
-              At Learn Yoga Online, we believe yoga is for everyone, regardless of your age, experience, or fitness level. Our goal is to help you create a practice that fits your unique journey, one that honors your body’s needs and lets you progress at your own pace.
-            </p>
-            <p>
-              To help you on this journey, we focus on three key principles that guide your practice. Embrace these principles as you move forward in your practice:
-            </p>
-
-            <div className="space-y-6 my-12">
-              {[
-                "Build awareness of subtle body connections",
-                "Experience each pose without preconceptions",
-                "Honor your body’s needs and limitations without judgment"
-                
-              ].map((item, index) => (
-                <div key={index} className="flex items-center space-x-4">
-                  <span className="text-moss">0{index + 1}</span>
-                  <p>{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="p-8 border-l border-moss/50">
-            <h3 className="mb-6">Accessible Yoga for All</h3>
-            <p>
-              We are committed to expanding our content on adaptive yoga and creating resources that support every practitioner.
-            </p>
-          </div>
-        </motion.div>
-      
       {/* Approach */}
       <motion.section
       initial={{ opacity: 0 }}

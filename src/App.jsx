@@ -11,6 +11,7 @@ import WhatIsYoga from "./components/WhatIsYoga";
 import Path from "./components/Path";
 import Gunas from "./components/Gunas";
 import Chakras from "./components/Chakras";
+import MatchingGame from "./components/MatchingGame";
 import Quiz from "./components/Quiz";
 import Resources from "./components/Resources";
 import PrivacyPolicy from "./components/PrivacyPolicy";
@@ -72,6 +73,7 @@ useEffect(() => {
           <Route path="/what-is-yoga/eight-limbed-path" element={<Path />} />
           <Route path="/what-is-yoga/three-gunas" element={<Gunas />} />
           <Route path="/what-is-yoga/seven-chakras" element={<Chakras />} />
+          <Route path="/game" element={<MatchingGame />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

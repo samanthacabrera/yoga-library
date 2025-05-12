@@ -36,6 +36,7 @@ const Drawer = () => {
     { label: "The 7 Chakras", to: "/what-is-yoga/seven-chakras" },
     { label: "The 3 Gunas", to: "/what-is-yoga/three-gunas" },
     { label: "List of Poses", to: "/poses" },
+    { label: "Matching Game", to: "/game" },
     { label: "Quiz", to: "/quiz" },
     { label: "Resources", to: "/resources" },
   ];
@@ -88,7 +89,7 @@ const Drawer = () => {
 
         {/* Nav Links */}
         <nav className="flex-1 p-4 overflow-y-auto">
-          <ul className="space-y-6 py-4">
+          <ul className="space-y-6">
             {menuItems.map((item, index) => (
               <li key={index} className="relative">
                 <Link to={item.to} className="block text-center py-2 font-light tracking-wider
