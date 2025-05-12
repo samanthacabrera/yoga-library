@@ -43,8 +43,15 @@ const MatchingGame = () => {
 
   return (
     <div className="pt-24 px-4 max-w-4xl mx-auto">
-      <h2 className="text-center text-2xl font-semibold mb-6">Pose Pairs: Sanskrit ↔ English</h2>
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 justify-items-center">
+      <h2 className="text-center text-2xl font-semibold mb-6">Matching Game</h2>
+        <div className="mb-8">
+            <p>1. Tap on any two cards to flip them over.</p>
+            <p>2. Try to match the English and Sanskrit names of the same yoga pose.</p> 
+            <p>3. If they match, they’ll stay flipped with a lighter color.</p>
+            <p>4. If they don’t match, they’ll flip back after a moment.</p>
+            <p>5. Continue until you’ve matched all the pose pairs!</p>
+        </div>
+      <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 justify-items-center">
         {cards.map((card) => (
           <div
             key={card.id}
