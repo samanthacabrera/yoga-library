@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { XCircle } from "lucide-react";
 import poses from "../data/sanskrits.json";
 
 const shuffleArray = (array) => {
@@ -9,6 +10,7 @@ const MatchingGame = () => {
   const [cards, setCards] = useState([]);
   const [flipped, setFlipped] = useState([]);
   const [matched, setMatched] = useState([]);
+  const [showInstructions, setShowInstructions] = useState(true);
 
   useEffect(() => {
     const sampledPoses = shuffleArray(poses).slice(0, 6); // 6 poses = 12 cards
@@ -36,41 +38,101 @@ const MatchingGame = () => {
     }
   };
 
-  const isFlipped = (card) =>
-    flipped.includes(card) || matched.includes(card.id);
+  const resetGame = () => {
+    const sampledPoses = shuffleArray(poses).slice(0, 6);
+    const preparedCards = shuffleArray(
+      sampledPoses.flatMap((pose) => [
+        { id: `${pose.name}-eng`, label: pose.name, matchId: pose.sanskrit_translation },
+        { id: `${pose.name}-sanskrit`, label: pose.sanskrit_translation, matchId: pose.name },
+      ])
+    );
+    setCards(preparedCards);
+    setFlipped([]);
+    setMatched([]);
+  };
 
+  const isFlipped = (card) => flipped.includes(card) || matched.includes(card.id);
   const isMatched = (card) => matched.includes(card.id);
 
   return (
-    <div className="pt-24 px-4 max-w-4xl mx-auto">
-      <h2 className="text-center text-2xl mb-6">Matching Game</h2>
-        <div className="mb-8">
-            <p>1. Tap on any two cards to flip them over.</p>
-            <p>2. Try to match the English and Sanskrit names of the same yoga pose.</p> 
-            <p>3. If they match, they’ll stay flipped with a lighter color.</p>
-            <p>4. If they don’t match, they’ll flip back after a moment.</p>
-            <p>5. Continue until you’ve matched all the pose pairs!</p>
+    <div className="max-w-lg mx-auto px-4 py-20 flex flex-col items-center">
+      <h2 className="text-3xl text-center my-4 text-moss">Yoga Pose Matching</h2>
+      
+      {showInstructions && (
+        <div className="bg-moss/10 rounded-lg p-4 mb-6 relative shadow-sm w-full">
+          <button 
+            onClick={() => setShowInstructions(false)}
+            className="absolute top-2 right-2 text-moss"
+          >
+            <XCircle size={20} />
+          </button>
+          <h3 className="text-lg font-semibold text-moss mb-2">How to Play:</h3>
+          <ul className="space-y-1 text-sm text-moss">
+            <li className="flex items-start">
+              <span className="inline-block w-5 font-bold">1.</span>
+              <span>Tap cards to flip them and reveal yoga pose names</span>
+            </li>
+            <li className="flex items-start">
+              <span className="inline-block w-5 font-bold">2.</span>
+              <span>Match English names with their Sanskrit translations</span>
+            </li>
+            <li className="flex items-start">
+              <span className="inline-block w-5 font-bold">3.</span>
+              <span>Matched pairs remain flipped with a lighter color</span>
+            </li>
+            <li className="flex items-start">
+              <span className="inline-block w-5 font-bold">4.</span>
+              <span>Continue until all poses are matched!</span>
+            </li>
+          </ul>
         </div>
-      <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 justify-items-center">
+      )}
+
+      {!showInstructions && (
+        <button 
+          onClick={() => setShowInstructions(true)}
+          className="text-sm text-moss my-12 hover:text-moss transition-colors"
+        >
+          Show Instructions
+        </button>
+      )}
+      
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-3 w-full">
         {cards.map((card) => (
           <div
             key={card.id}
-            className={`w-24 h-24 flex items-center justify-center border rounded text-center cursor-pointer transition-transform duration-300 text-sm sm:text-base font-medium
+            onClick={() => handleCardClick(card)}
+            className={`
+              aspect-square flex items-center justify-center p-2
+              rounded-lg shadow-md text-center cursor-pointer
               ${
                 isFlipped(card)
                   ? isMatched(card)
-                    ? "bg-moss/60 text-white" 
+                    ? "bg-moss/50 text-white" 
                     : "bg-moss text-white"
-                  : "bg-gray-100"
-              }`}
-            onClick={() => handleCardClick(card)}
+                  : "bg-white border-2 border-moss/50 hover:border-moss"
+              }
+            `}
           >
-            {isFlipped(card) ? card.label : ""}
+              <p className="text-xs sm:text-sm">
+              {isFlipped(card) ? card.label : ""}
+            </p>
           </div>
         ))}
       </div>
-      {matched.length === cards.length && (
-        <p className="text-center mt-6 text-green-700 font-bold">You matched all pairs! 🎉</p>
+      
+      {matched.length === cards.length && cards.length > 0 && (
+        <div className="mt-8 flex flex-col items-center">
+          <p className="text-center text-xl font-bold text-moss mb-4">
+            You matched all pairs! 🧘‍♀️
+          </p>
+          <button
+            onClick={resetGame}
+            className="px-6 py-2 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-colors font-medium shadow-md"
+          >
+            Play Again
+          </button>
+        </div>
       )}
     </div>
   );
