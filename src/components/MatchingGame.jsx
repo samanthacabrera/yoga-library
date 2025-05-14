@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { XCircle } from "lucide-react";
 import poses from "../data/sanskrits.json";
 
@@ -11,9 +11,12 @@ const MatchingGame = () => {
   const [flipped, setFlipped] = useState([]);
   const [matched, setMatched] = useState([]);
   const [showInstructions, setShowInstructions] = useState(true);
+  const [startTime, setStartTime] = useState(null);
+  const [elapsedTime, setElapsedTime] = useState(0);
+  const timerRef = useRef(null);
 
   useEffect(() => {
-    const sampledPoses = shuffleArray(poses).slice(0, 6); // 6 poses = 12 cards
+    const sampledPoses = shuffleArray(poses).slice(0, 6);
     const preparedCards = shuffleArray(
       sampledPoses.flatMap((pose) => [
         { id: `${pose.name}-eng`, label: pose.name, matchId: pose.sanskrit_translation },
@@ -23,8 +26,28 @@ const MatchingGame = () => {
     setCards(preparedCards);
   }, []);
 
+  useEffect(() => {
+    if (startTime !== null) {
+      timerRef.current = setInterval(() => {
+        setElapsedTime(Math.floor((Date.now() - startTime) / 1000));
+      }, 1000);
+    }
+    return () => clearInterval(timerRef.current);
+  }, [startTime]);
+
+  useEffect(() => {
+    if (matched.length === cards.length && cards.length > 0) {
+      clearInterval(timerRef.current);
+    }
+  }, [matched, cards]);
+
   const handleCardClick = (card) => {
     if (flipped.length === 2 || flipped.includes(card) || matched.includes(card.id)) return;
+
+    // Start the timer on the first card click
+    if (startTime === null) {
+      setStartTime(Date.now());
+    }
 
     const newFlipped = [...flipped, card];
     setFlipped(newFlipped);
@@ -49,6 +72,9 @@ const MatchingGame = () => {
     setCards(preparedCards);
     setFlipped([]);
     setMatched([]);
+    setStartTime(null);
+    setElapsedTime(0);
+    clearInterval(timerRef.current);
   };
 
   const isFlipped = (card) => flipped.includes(card) || matched.includes(card.id);
@@ -120,15 +146,22 @@ const MatchingGame = () => {
           </div>
         ))}
       </div>
+
+      <div className="mt-2 self-end">
+        {startTime !== null && (
+          <p>Time: {elapsedTime}s</p>
+        )}
+      </div>
       
       {matched.length === cards.length && cards.length > 0 && (
         <div className="mt-8 flex flex-col items-center">
-          <p className="text-center text-xl font-bold text-moss mb-4">
-            You matched all pairs! 🧘‍♀️
+          <p className="text-center text-xl text-moss mb-2">
+            You matched all pairs!
           </p>
+          <p className="text-moss mb-4">Final Time: {elapsedTime} seconds</p>
           <button
             onClick={resetGame}
-            className="px-6 py-2 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-colors font-medium shadow-md"
+            className="px-6 py-1 bg-moss/80 text-white rounded-full hover:bg-moss transition-colors font-medium shadow-md"
           >
             Play Again
           </button>
