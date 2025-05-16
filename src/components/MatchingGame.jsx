@@ -123,14 +123,14 @@ const MatchingGame = () => {
         </button>
       )}
       
-      <div className="grid grid-cols-4 gap-3 w-full">
+      <div className="grid grid-cols-3 sm:grid-cols-4 gap-2 sm:gap-3 w-full">
         {cards.map((card) => (
           <div
             key={card.id}
             onClick={() => handleCardClick(card)}
             className={`
-              w-28 h-28 flex items-center justify-center
-              rounded-lg shadow-md text-center cursor-pointer
+              ml-[10%] sm:ml-0 w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center
+              rounded-lg shadow-md text-xs sm:text-base text-center cursor-pointer
               ${
                 isFlipped(card)
                   ? isMatched(card)
@@ -140,7 +140,7 @@ const MatchingGame = () => {
               }
             `}
           >
-            <p className="text-sm">
+            <p>
               {isFlipped(card) ? card.label : ""}
             </p>
           </div>
