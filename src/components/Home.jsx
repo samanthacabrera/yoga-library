@@ -9,17 +9,17 @@ const Home = () => {
     {
       number: '01',
       title: "Accessible",
-      mainText: "We know starting yoga can feel overwhelming with so many poses, terms, and techniques to learn. That's why we keep our instruction simple, structured, and approachable. Every pose is explained step by step with careful attention to alignment and safety. We provide modifications for different body types and experience levels, allowing you to practice comfortably at your own pace while gradually building strength and flexibility."
+      mainText: "We believe that yoga is for everyone, regardless of age, ability, or experience. We’ve created an approach that welcomes people who practice in chairs, need more support, or are exploring movement later in life."
     },
     {
       number: '02',
       title: "Holistic",
-      mainText: "The physical poses are just one part of yoga. We also cover breathing techniques, meditation, and key concepts that enhance your practice. These elements are presented in clear, everyday language with practical examples of how they can benefit your wellbeing. Understanding these aspects helps create a more complete and rewarding yoga experience."
+      mainText: "Our practice goes beyond physical poses. We explore the full spectrum of practice, including breathwork, meditation, and inner awareness."
     },
     {
       number: '03',
-      title: "Authentic",
-      mainText: "Yoga comes from a rich tradition that spans thousands of years. We research each topic thoroughly and check multiple sources to ensure the information we share is accurate. You'll find references throughout our content if you want to learn more about specific topics. This helps you build your practice on solid, trustworthy foundations."
+      title: "Empowering",
+      mainText: "We offer tools, not rules for how you can practice yoga. Encouraging you to explore yoga with agency and self-trust."
     },
   ];
 
@@ -125,11 +125,11 @@ const Home = () => {
 
         <div className="space-y-6 text-charcoal tracking-wide leading-loose">
           <p>
-            Learn Yoga Online is a simple, intuitive platform made just for beginner yogis. You'll find clear, step-by-step instructions for essential yoga poses—no experience needed.          
+            Learn Yoga Online is a simple, intuitive platform made just for beginner yogis. You’ll find clear, step-by-step instructions for accessible yoga poses that can be done entirely from a chair and no prior experience required.          
           </p>
           
           <p>
-            You will also have the opportunity to explore the deeper aspects of yoga that connect mind, body, and spirit. This holistic approach goes beyond physical postures, incorporating breathwork, meditation, and mindfulness practices to cultivate inner balance and awareness. You will gain insights into the philosophical foundations of yoga, such as the Eight Limbs of Yoga and the principles of self-discipline, compassion, and inner peace.        
+          In addition to gentle physical movement, you’ll be invited to explore the deeper, more holistic dimensions of yoga that nurture the mind, body, and spirit. This approach includes breathwork, seated meditation, and mindfulness practices that promote inner calm and body awareness.
           </p>
         </div>
       </motion.div>
@@ -150,9 +150,6 @@ const Home = () => {
         <h3 className="mb-6">An Accessible Path to Yoga Mastery</h3>
 
         <div className="space-y-6 text-charcoal tracking-wide leading-loose">
-          <p>
-            Whether you’re attending solo classes, joining a group session, or practicing online or in person, Learn Yoga Online is designed to help you establish a solid foundation for your yoga journey.
-          </p>
           <p>First, start with our 
             <Link to="/what-is-yoga/beginners-guide" className="border-b border-moss mx-1 py-1 hover:bg-moss/10 transition-all duration-300">
               Beginner’s Guide to Yoga.
@@ -167,145 +164,131 @@ const Home = () => {
           <Link to="/poses" className="border-b border-moss mx-1 py-1 hover:bg-moss/10 transition-all duration-300">
             library of essential poses.</Link> Understanding the correct alignment, breathing techniques, and safety tips is key to building a strong base for any practice. As you go through the instructions, take your time and repeat poses to build familiarity.
           </p>
-          <p>
-            Use Learn Yoga Online to review what you’ve learned in class, gain confidence, and enhance your flexibility and strength. By supplementing your yoga practice with this resource, you’ll feel more prepared and grounded, no matter what type of class or style you choose to practice.
-          </p>
         </div>
       </motion.div>
-      
-      {/* Approach */}
-      <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: false, amount: 0.1 }}
-      transition={{ duration: 0.8 }}
-      className="container my-20"
-      >
-      <h2 className="mb-24">
-        Our Approach
-      </h2>
-      
-      <div className="grid gap-8 md:gap-24">
-        {approaches.map((approach) => (
-          <motion.div
-            key={approach.number}
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="group"
-          >
-            <div className="flex items-center mb-4">
-              <span className="text-4xl text-neutral-300 mr-6 group-hover:text-moss/80 transition-colors duration-300">
-                {approach.number}
-              </span>
-              <h3 className="group-hover:text-moss/90 transition-colors duration-300">
-                {approach.title}
-              </h3>
-            </div>
-            <p>
-              {approach.mainText}
-            </p>
-          </motion.div>
-        ))}
-      </div>
-    </motion.section>
+
+        {/* Approach */}
+        <motion.section
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false, amount: 0.1 }}
+          transition={{ duration: 0.8 }}
+          className="container my-20"
+        >
+          <h2 className="text-8xl font-medium my-40">
+            Our Philosophy 
+          </h2>
+
+          <div className="grid gap-8 md:gap-24">
+            {approaches.map((approach) => (
+              <motion.div
+                key={approach.number}
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="group"
+              >
+                <div className="flex items-center mb-4">
+                  <span className="text-8xl text-neutral-300 mr-6 group-hover:text-moss/80 transition-colors duration-300">
+                    {approach.number}
+                  </span>
+                  <h3 className="text-4xl group-hover:text-moss/90 transition-colors duration-300">
+                    {approach.title}
+                  </h3>
+                </div>
+                <p className="text-charcoal tracking-wide leading-loose">
+                    {approach.mainText}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.section>
     
-          {/* Yoga For Every Need  */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }} 
-            whileInView={{ opacity: 1, y: 0 }} 
-            viewport={{ once: false, amount: 0.2 }} 
-            transition={{ duration: 1 }}
-            className="container my-20"
-          >
-           
-            <h2 className="text-lg lg:text-2xl tracking-widest mb-12">Yoga For Every Need</h2>
-           
-            <p>Don't worry about touching your toes or holding perfect form on day one—yoga meets you at your current level and grows with you as you build your practice.</p>
-            
-            <div className="py-20 space-y-6">
-              {/* Flexibility */}
-              <div className="card grid grid-cols-1 md:grid-cols-3 gap-6">
-                <h3>
+        {/* Yoga For Every Need */}
+        <motion.section
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 1 }}
+          className="container my-40"
+        >
+          <h2 className="text-8xl font-medium my-40">
+            Yoga For Every Need
+          </h2>
+
+          <div className="grid gap-24">
+            {/* Flexibility */}
+            <div className="group">
+              <div className="flex items-center mb-4">
+                <h3 className="text-6xl group-hover:text-moss/90 transition-colors duration-300">
                   Flexibility
                 </h3>
-                <div className="md:col-span-2">
-                  <p>
-                    Yoga offers a gentle yet effective way to improve flexibility.
-                  </p>
-               
-                  <a 
-                    href="/poses/benefit/improve-flexibility" 
-                    className="group flex items-center"
-                  >
-                    View poses
-                    <svg 
-                      className="ml-2 w-4 h-4 transition-all duration-300 group-hover:translate-x-1 group-hover:text-moss"
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24" 
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                  </a>
-                </div>
               </div>
+              <a
+                href="/poses/benefit/improve-flexibility"
+                className="group inline-flex items-center text-xl text-charcoal hover:text-moss transition-colors"
+              >
+                View poses
+                <svg
+                  className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-moss"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+            </div>
 
-              {/* Strength */}
-              <div className="card grid grid-cols-1 md:grid-cols-3 gap-6">
-                <h3>
+            {/* Strength */}
+            <div className="group">
+              <div className="flex items-center mb-4">
+                <h3 className="text-6xl group-hover:text-moss/90 transition-colors duration-300">
                   Strength
                 </h3>
-                <div className="md:col-span-2">
-                  <p>
-                    Yoga builds functional strength using your own body weight as resistance.
-                  </p>
-                  <a 
-                    href="/poses/benefit/build-strength" 
-                    className="group flex items-center"
-                  >
-                    View poses
-                    <svg 
-                      className="ml-2 w-4 h-4 transition-all duration-300 group-hover:translate-x-1 group-hover:text-moss"
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24" 
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                  </a>
-                </div>
               </div>
+              <a
+                href="/poses/benefit/build-strength"
+                className="group inline-flex items-center text-xl text-charcoal hover:text-moss transition-colors"
+              >
+                View poses
+                <svg
+                  className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-moss"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+            </div>
 
-              {/* Balance */}
-              <div className="card grid grid-cols-1 md:grid-cols-3 gap-6">
-                <h3>
+            {/* Balance */}
+            <div className="group">
+              <div className="flex items-center mb-4">
+                <h3 className="text-6xl group-hover:text-moss/90 transition-colors duration-300">
                   Balance
                 </h3>
-                <div className="md:col-span-2">
-                  <p>
-                    Balance in yoga cultivates equilibrium mind and body.
-                  </p>
-                  <a 
-                    href="/poses/benefit/improve-balance" 
-                    className="group flex items-center"
-                  >
-                    View poses
-                     <svg 
-                      className="ml-2 w-4 h-4 transition-all duration-300 group-hover:translate-x-1 group-hover:text-moss"
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24" 
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                  </a>
-                </div>
               </div>
+              <a
+                href="/poses/benefit/improve-balance"
+                className="group inline-flex items-center text-xl text-charcoal hover:text-moss transition-colors"
+              >
+                View poses
+                <svg
+                  className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-moss"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
             </div>
-          </motion.div>
+          </div>
+        </motion.section>
 
         {/* Testimonials */}
         <motion.div
