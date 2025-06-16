@@ -76,9 +76,9 @@ const Home = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
-              className="text-sm md:text-md font-light mt-4 mb-6"
+              className="text-sm md:text-xl my-6"
             >
-              Discover resources designed to support new yogis as they start their yoga journey
+              Discover resources designed to support new yogis in yoga journey
             </motion.p>
             
             <motion.div
@@ -88,7 +88,7 @@ const Home = () => {
             >
               <Link
                 to="/poses"
-                className="inline-block flex items-center justify-center w-fit mx-auto group text-center text-sm md:text-md text-white/90 font-medium bg-moss pl-6 pr-3 py-1 border border-moss/80 rounded-sm hover:scale-[101%] transition-all duration-300 ease-in-out focus:outline-none"
+                className="inline-block flex items-center justify-center w-fit mx-auto group text-center text-sm md:text-lg text-white/90 font-medium bg-moss pl-8 pr-4 py-2 border border-moss/80 rounded-sm hover:scale-[101%] transition-all duration-300 ease-in-out focus:outline-none"
               >
                 Start Learning
                 <svg 
@@ -118,12 +118,12 @@ const Home = () => {
       >
         <div className="flex items-center mb-12">
           <div className="w-16 h-px bg-moss"></div>
-          <h2 className="text-lg lg:text-2xl tracking-widest ml-4">What is Learn Yoga Online?</h2>
+          <h2 className="text-lg lg:text-4xl ml-4">What is Learn Yoga Online?</h2>
         </div>
 
-        <h3 className="mb-6">A Holistic Journey Into Yoga</h3>
+        <h3 className="text-2xl mb-6">A Holistic Journey Into Yoga</h3>
 
-        <div className="space-y-6 text-charcoal tracking-wide leading-loose">
+        <div className="space-y-6 text-xl text-charcoal tracking-wide leading-loose">
           <p>
             Learn Yoga Online is a simple, intuitive platform made just for beginner yogis. You’ll find clear, step-by-step instructions for accessible yoga poses that can be done entirely from a chair and no prior experience required.          
           </p>
@@ -144,12 +144,10 @@ const Home = () => {
       >
         <div className="flex items-center mb-12">
           <div className="w-16 h-px bg-moss"></div>
-          <h2 className="text-md lg:text-2xl tracking-widest ml-4">How to Use Learn Yoga Online?</h2>
+          <h2 className="text-md lg:text-4xl ml-4">How to Use Learn Yoga Online?</h2>
         </div>
 
-        <h3 className="mb-6">An Accessible Path to Yoga Mastery</h3>
-
-        <div className="space-y-6 text-charcoal tracking-wide leading-loose">
+        <div className="space-y-6 text-xl text-charcoal tracking-wide leading-loose">
           <p>First, start with our 
             <Link to="/what-is-yoga/beginners-guide" className="border-b border-moss mx-1 py-1 hover:bg-moss/10 transition-all duration-300">
               Beginner’s Guide to Yoga.
@@ -175,7 +173,7 @@ const Home = () => {
           transition={{ duration: 0.8 }}
           className="container my-20"
         >
-          <h2 className="text-8xl font-medium my-40">
+          <h2 className="text-6xl font-medium my-40">
             Our Philosophy 
           </h2>
 
@@ -211,7 +209,7 @@ const Home = () => {
           transition={{ duration: 1 }}
           className="container my-40"
         >
-          <h2 className="text-8xl font-medium my-40">
+          <h2 className="text-6xl font-medium my-40">
             Yoga For Every Need
           </h2>
 
