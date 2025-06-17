@@ -4,8 +4,6 @@ import posesData from '../data/poses.json';
 import descriptions from '../data/descriptions.json';
 import sanskirts from '../data/sanskrits.json';
 import benefits from '../data/benefits.json';
-import precautions from '../data/precautions.json';
-import modifications from '../data/modifications.json';
 import cues from '../data/cues.json';
 
 const PosePage = () => {
@@ -17,8 +15,6 @@ const PosePage = () => {
   const poseDesc = descriptions.find((d) => d.id === pose.id);
   const poseSanskirt = sanskirts.find((s) => s.id === pose.id);
   const poseBenefit = benefits.find((b) => b.id === pose.id);
-  const posePrecaution = precautions.find((p) => p.id === pose.id);
-  const poseModification = modifications.find((m) => m.id === pose.id);
   const poseCues = cues.find((c) => c.id === pose.id);
   const relatedPoses = posesData.filter((p) => 
     p.id !== pose.id && 
@@ -39,12 +35,6 @@ const PosePage = () => {
   }
   if (poseSanskirt && poseSanskirt.source) {
     sources.push({ section: 'Origins', text: poseSanskirt.source });
-  }
-  if (posePrecaution && posePrecaution.source) {
-    sources.push({ section: 'Precautions', text: posePrecaution.source });
-  }
-  if (poseModification && poseModification.source) {
-    sources.push({ section: 'Modifications', text: poseModification.source });
   }
   if (poseCues && poseCues.source) {
     sources.push({ section: 'Step-By-Step', text: poseCues.source });
@@ -201,18 +191,6 @@ const PosePage = () => {
                 Origins
               </a>
               <a 
-                href="#precautions" 
-                className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
-              >
-                Precautions
-              </a>
-              <a 
-                href="#modifications" 
-                className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
-              >
-                Modifications
-              </a>
-              <a 
                 href="#cues" 
                 className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
               >
@@ -279,36 +257,6 @@ const PosePage = () => {
             <p>{poseSanskirt.context}</p>
             {poseSanskirt.source && (
               <p className="text-xs text-gray-500 mt-4 italic">Source: {poseSanskirt.source}</p>
-            )}
-          </div>
-        </section>
-      )}
-
-      {/* Precautions */}
-      {posePrecaution && posePrecaution.precaution && (
-        <section id="precautions" className="group scroll-mt-96 md:scroll-mt-40">
-          <h2 className="text-left text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">
-            Precautions
-          </h2>
-          <div className="bg-white/50 backdrop-blur-sm p-8 shadow-sm rounded border border-moss/20">
-            <p>{posePrecaution.precaution}</p>
-            {posePrecaution.source && (
-              <p className="text-xs text-gray-500 mt-4 italic">Source: {posePrecaution.source}</p>
-            )}
-          </div>
-        </section>
-      )}
-
-      {/* Modifications */}
-      {poseModification && poseModification.modification && (
-        <section id="modifications" className="group scroll-mt-96 md:scroll-mt-40">
-          <h2 className="text-left text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">
-            Modifications
-          </h2>
-          <div className="bg-white/50 backdrop-blur-sm p-8 shadow-sm rounded border border-moss/20">
-            <p>{poseModification.modification}</p>
-            {poseModification.source && (
-              <p className="text-xs text-gray-500 mt-4 italic">Source: {poseModification.source}</p>
             )}
           </div>
         </section>

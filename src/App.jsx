@@ -26,14 +26,8 @@ const ScrollToTop = () => {
   };
 
 const App = () => {
-  const location = useLocation();
-  const [showHeader, setShowHeader] = useState(false);
   const [isFooterVisible, setIsFooterVisible] = useState(false);
   const footerRef = useRef(null)
-
-  useEffect(() => {
-    setShowHeader(location.pathname !== "/");
-  }, [location]);
 
 useEffect(() => {
   const observer = new IntersectionObserver(
@@ -58,7 +52,7 @@ useEffect(() => {
   return (
     <>
       <ScrollToTop /> 
-      {showHeader && <Header />}
+      <Header />
       <div className="flex">
         <Drawer /> 
         <Routes>

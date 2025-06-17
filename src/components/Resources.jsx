@@ -76,10 +76,7 @@ const Resources = () => {
   return (
     <div className="flex flex-col min-h-screen w-full max-w-3xl px-4 sm:px-8 py-4 my-12 sm:my-24 mx-auto">
       <div className="mb-8 sm:mb-12">
-        <h1 className="text-center my-8 sm:my-12 text-3xl sm:text-4xl tracking-wide">Resources</h1>
-        <p className="tracking-wide text-center max-w-2xl mx-auto text-sm sm:text-base">
-          Handpicked tutorials and articles to deepen your yoga journey. Whether you're refining your technique, discovering new practices, or finding the perfect gear, our resources are here to support and inspire your growth every step of the way.
-        </p>
+        <h1 className="">Resources</h1>
         
         {/* Nav */}
         <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mt-6 sm:mt-8">

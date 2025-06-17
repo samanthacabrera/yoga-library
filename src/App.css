@@ -22,21 +22,13 @@ body {
 }
 
 h1 {
-  @apply text-moss;
+  @apply text-center text-moss text-4xl lg:text-6xl my-20;
 }
 
 h2 {
-  @apply text-lg lg:text-2xl text-moss tracking-widest text-center;
-}
-
-h3 {
-  @apply text-sm lg:text-base text-moss tracking-widest uppercase;
+  @apply text-center text-moss text-2xl lg:text-6xl my-10 lg:my-20;
 }
 
 p {
-  @apply text-charcoal tracking-wide leading-loose;
-}
-
-.card {
-  @apply relative overflow-hidden border-b border-moss/20 hover:border-moss/80 px-2 py-8 transition-all duration-500;
+  @apply text-charcoal text-xl tracking-wide leading-loose;
 }

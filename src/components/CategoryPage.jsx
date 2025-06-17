@@ -156,7 +156,6 @@ const CategoryPage = () => {
   return (
     <>
     <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
-     <h1 className="">Yoga Pose Directory</h1>
         
       {/* Filter */}
       <section className="relative py-10 px-4 md:px-6 bg-white">
@@ -227,7 +226,7 @@ const CategoryPage = () => {
         </div>
       </section>
 
-      <h2 className="">
+      <h2>
         {getHeadingText()}
       </h2>
       <p className="text-center">

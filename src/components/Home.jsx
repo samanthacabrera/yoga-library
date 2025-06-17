@@ -36,20 +36,8 @@ const Home = () => {
         <meta property="og:title" content="Learn Yoga Online" />
         <meta
           property="og:description"
-          content="Explore a wide variety of vinyasa yoga poses with clear instructions and detailed explanations."
+          content="Explore a variety of beginner yoga poses with clear instructions and detailed explanations."
         />
-        <meta property="og:url" content="https://learnyoga.online" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://learnyoga.online/assets/og-image.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Learn Yoga Online" />
-        <meta
-          name="twitter:description"
-          content="Explore a wide variety of vinyasa yoga poses with clear instructions and detailed explanations."
-        />
-        <meta name="twitter:image" content="https://learnyoga.online/assets/twitter-image.jpg" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://learnyoga.online" />
       </Helmet>
 
       <div className="flex flex-col w-screen">
@@ -59,7 +47,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-5xl md:text-6xl text-moss"
+          className="md:text-left"
         >
           Learn Yoga Online
         </motion.h1>
@@ -68,9 +56,9 @@ const Home = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.2 }}
-          className="text-lg md:text-xl text-neutral-600 leading-relaxed"
+          className=""
         >
-          Clear, calming yoga instruction designed to fit your lifestyle. Flow at your own pace — wherever you are.
+          Discover resources designed to meet yogis wherever they are on their journey.
         </motion.p>
 
         <motion.div
@@ -87,7 +75,6 @@ const Home = () => {
         </motion.div>
       </div>
 
-      {/* Image Section */}
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -111,18 +98,18 @@ const Home = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: false, amount: 0.1 }}
         transition={{ duration: 1.5 }}
-        className="container my-20"
+        className="container"
       >
 
-        <h2 className="text-lg lg:text-6xl mb-20">What is Learn Yoga Online?</h2>
+        <h2 className="leading-relaxed">What makes Learn Yoga Online Different?</h2>
 
         <div className="space-y-6 text-xl text-charcoal tracking-wide leading-loose">
           <p>
-            Learn Yoga Online is a simple, intuitive platform made just for beginner yogis. You’ll find clear, step-by-step instructions for accessible yoga poses that can be done entirely from a chair and no prior experience required.          
+          Learn Yoga Online focuses on chair and modified yoga, making it easier for people of all ages and mobility levels to start practicing.
           </p>
           
           <p>
-          In addition to gentle physical movement, you’ll be invited to explore the deeper, more holistic dimensions of yoga that nurture the mind, body, and spirit. This approach includes breathwork, seated meditation, and mindfulness practices that promote inner calm and body awareness.
+          While we often use chairs in our teaching, we don’t label it as 'chair yoga.' It’s simply yoga that is adapted to support your body's needs. We believe yoga should meet you where you are, and our resources are designed to help you get started with confidence.         
           </p>
         </div>
       </motion.div>
@@ -135,9 +122,9 @@ const Home = () => {
         transition={{ duration: 1.5 }}
         className="container my-20"
       >
-        <h2 className="text-md lg:text-6xl mb-20">Getting Started with Learn Yoga Online</h2>
+        <h2 className="leading-relaxed">Getting Started with Learn Yoga Online</h2>
 
-        <div className="space-y-6 text-xl text-charcoal tracking-wide leading-loose">
+        <div className="space-y-6">
           <p>First, start with our 
             <Link to="/what-is-yoga/beginners-guide" className="border-b border-moss mx-1 py-1 hover:bg-moss/10 transition-all duration-300">
               Beginner’s Guide to Yoga.
@@ -146,11 +133,11 @@ const Home = () => {
           <p>
             Next, we recommend going through all the philosophy of yoga lessons, starting with an <Link to="/what-is-yoga/overview" className="border-b border-moss mx-1 py-1 hover:bg-moss/10 transition-all duration-300">
             Overview of Yoga.
-            </Link>These lessons will introduce you to key concepts such as breathwork, meditation, and the deeper philosophy behind the practice, helping you cultivate a well-rounded understanding.
+            </Link>These lessons will introduce you to key concepts and the philosophy behind the practice, helping you cultivate a well-rounded understanding.
           </p>
           <p>Then, begin exploring our 
           <Link to="/poses" className="border-b border-moss mx-1 py-1 hover:bg-moss/10 transition-all duration-300">
-            library of essential poses.</Link> Understanding the correct alignment, breathing techniques, and safety tips is key to building a strong base for any practice. As you go through the instructions, take your time and repeat poses to build familiarity.
+            library of essential poses.</Link> Understanding the correct alignment, breathing techniques, and safety tips is key to building a strong base for any practice. 
           </p>
         </div>
       </motion.div>
@@ -163,9 +150,7 @@ const Home = () => {
           transition={{ duration: 0.8 }}
           className="container my-20"
         >
-          <h2 className="text-6xl mb-40">
-            Our Philosophy 
-          </h2>
+          <h1>Our Philosophy</h1>    
 
           <div className="grid gap-8 md:gap-24">
             {approaches.map((approach) => (
@@ -179,9 +164,9 @@ const Home = () => {
                   <span className="text-8xl text-neutral-300 mr-6 group-hover:text-moss/80 transition-colors duration-300">
                     {approach.number}
                   </span>
-                  <h3 className="text-4xl group-hover:text-moss/90 transition-colors duration-300">
+                  <h2 className="group-hover:text-moss/90 transition-colors duration-300">
                     {approach.title}
-                  </h3>
+                  </h2>
                 </div>
                 <p className="text-charcoal tracking-wide leading-loose">
                     {approach.mainText}
@@ -197,19 +182,17 @@ const Home = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 1 }}
-          className="container my-40"
+          className="container my-20"
         >
-          <h2 className="text-6xl font-medium my-40">
-            Yoga For Every Need
-          </h2>
+        <h2>Yoga For Every Need</h2>
 
           <div className="grid gap-24">
             {/* Flexibility */}
             <div className="group">
               <div className="flex items-center mb-4">
-                <h3 className="text-6xl group-hover:text-moss/90 transition-colors duration-300">
+                <p className="text-4xl text-moss group-hover:text-moss/90 transition-colors duration-300">
                   Flexibility
-                </h3>
+                </p>
               </div>
               <a
                 href="/poses/benefit/improve-flexibility"
@@ -231,9 +214,9 @@ const Home = () => {
             {/* Strength */}
             <div className="group">
               <div className="flex items-center mb-4">
-                <h3 className="text-6xl group-hover:text-moss/90 transition-colors duration-300">
+                <p className="text-4xl text-moss group-hover:text-moss/90 transition-colors duration-300">
                   Strength
-                </h3>
+                </p>
               </div>
               <a
                 href="/poses/benefit/build-strength"
@@ -255,9 +238,9 @@ const Home = () => {
             {/* Balance */}
             <div className="group">
               <div className="flex items-center mb-4">
-                <h3 className="text-6xl group-hover:text-moss/90 transition-colors duration-300">
+                <p className="text-4xl text-moss group-hover:text-moss/90 transition-colors duration-300">
                   Balance
-                </h3>
+                </p>
               </div>
               <a
                 href="/poses/benefit/improve-balance"
@@ -292,11 +275,11 @@ const Home = () => {
             <div className="grid md:grid-cols-2 gap-x-6 gap-y-12">
               {[
                 { quote: "This site makes learning yoga inviting. The instructions are clear, the layout is simple, and it creates a welcoming space to grow my practice without feeling overwhelmed.", author: "Savanna L." },
-                  { quote: "As someone who's been practicing yoga for years, I wasn’t sure if I’d find much value in another yoga site. But I was wrong. What I love here is the attention to detail — each pose breakdown is thoughtful, and it’s helped me refine my practice in ways I didn’t think I needed. ", author: "Bri H." },
-                  { quote: "Learn Yoga Online strikes the perfect balance of offering substance, while remaining accessible. It's evident that this site was designed with the user’s growth in mind.", author: "Sunny C." },
-                  { quote: "As someone completely new to yoga, this platform made learning the basics feel easy. The clear instructions and thoughtful guidance gave me the confidence to start my practice and keep improving.", author: "Darlene A." },
-                  { quote: "A standout tool for yoga practitioners at any level. The depth of instruction has significantly enhanced my understanding and appreciation for this practice.", author: "Wendy R." },
-                  { quote: "This site delivers clear, well-organized yoga instruction with a clean, minimalist design that keeps you focused. The guidance is easy to follow for any level, whether you're just starting out or building on your practice. If you're looking for a simple, reliable yoga resource, this is definitely worth trying.", author: "Justin M." }
+                { quote: "After my stroke, I thought yoga was completely out of reach. This site helped me reconnect with my body and feel hopeful again. ", author: "Bri H." },
+                { quote: "Learn Yoga Online strikes the perfect balance of offering substance, while remaining accessible. It's evident that this site was designed with the user’s growth in mind.", author: "Sunny C." },
+                { quote: "As someone completely new to yoga, this platform made learning the basics feel easy. The clear instructions and thoughtful guidance gave me the confidence to start my practice and keep improving.", author: "Darlene A." },
+                { quote: "A standout tool for yoga practitioners at any level. The depth of instruction has significantly enhanced my understanding and appreciation for this practice.", author: "Wendy R." },
+                { quote: "I never thought I’d feel confident doing yoga from my wheelchair. But with this platform’s help, I’ve developed a regular practice that keeps me active and grounded.", author: "Justin M." }
               ].map((testimonial, index) => (
                 <motion.div
                   key={index}
