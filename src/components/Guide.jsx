@@ -15,7 +15,7 @@ const Section = ({ title, children }) => {
         </span>
       </button>
       {open && (
-        <div className="px-8 py-6 border-t border-gray-100 bg-gray-50 transition-all duration-300">
+        <div className="px-8 py-6 border-t border-gray-100 transition-all duration-300">
           <div className="text-xl leading-relaxed text-gray-700 space-y-4">
             {children}
           </div>
@@ -40,20 +40,13 @@ const Guide = () => {
       <div className="my-[10vh] w-full max-w-screen-md">
 
         <header className="text-center my-16">
-          <h1 className="text-7xl font-bold text-gray-900 mb-6 tracking-tight">
-            Beginner's Guide to Chair Yoga
+          <h1 className="text-7xl font-medium text-gray-900 mb-6 tracking-tight">
+            Beginner's Guide to Yoga
           </h1>
         </header>
         
         <div className="space-y-6">
-          <Section title="What is Chair Yoga?">
-            <p>
-              Chair yoga adapts traditional yoga poses so you can practice them while seated or using a chair for support. This makes yoga accessible to people with mobility challenges, balance concerns, or those who simply prefer not to get down on the floor.
-            </p>
-            <p>
-              What makes chair yoga special is that it maintains all the core benefits of regular yoga; like improved flexibility, better circulation, reduced stress, and enhanced mental clarity while being completely safe and comfortable.
-            </p>
-          </Section>
+    
           
           <Section title="What You'll Need">
             <div className="space-y-3">

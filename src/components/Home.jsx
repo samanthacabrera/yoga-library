@@ -116,12 +116,8 @@ const Home = () => {
         transition={{ duration: 1.5 }}
         className="container my-20"
       >
-        <div className="flex items-center mb-12">
-          <div className="w-16 h-px bg-moss"></div>
-          <h2 className="text-lg lg:text-4xl ml-4">What is Learn Yoga Online?</h2>
-        </div>
 
-        <h3 className="text-2xl mb-6">A Holistic Journey Into Yoga</h3>
+        <h2 className="text-lg lg:text-6xl mb-20">What is Learn Yoga Online?</h2>
 
         <div className="space-y-6 text-xl text-charcoal tracking-wide leading-loose">
           <p>
@@ -142,10 +138,7 @@ const Home = () => {
         transition={{ duration: 1.5 }}
         className="container my-20"
       >
-        <div className="flex items-center mb-12">
-          <div className="w-16 h-px bg-moss"></div>
-          <h2 className="text-md lg:text-4xl ml-4">How to Use Learn Yoga Online?</h2>
-        </div>
+        <h2 className="text-md lg:text-6xl mb-20">Getting Started with Learn Yoga Online</h2>
 
         <div className="space-y-6 text-xl text-charcoal tracking-wide leading-loose">
           <p>First, start with our 
@@ -173,7 +166,7 @@ const Home = () => {
           transition={{ duration: 0.8 }}
           className="container my-20"
         >
-          <h2 className="text-6xl font-medium my-40">
+          <h2 className="text-6xl mb-40">
             Our Philosophy 
           </h2>
 
