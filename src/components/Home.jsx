@@ -53,58 +53,55 @@ const Home = () => {
       </Helmet>
 
       <div className="flex flex-col w-screen">
-      {/* Hero */}
-      <div className="relative flex flex-col">
-        <Parallax
-          bgImage="/bg1.jpg"
-          strength={300}
-          className="mx-auto w-full h-screen lg:h-[80vh] mt-20"
+      <div className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-12 py-12 gap-10">
+      <div className="flex-1 max-w-xl text-center md:text-left space-y-8">
+        <motion.h1
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-5xl md:text-6xl text-moss"
         >
-        </Parallax>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="bg-white/50 backdrop-blur-sm p-4 md:p-8 max-w-lg mx-2 text-center">
-            <motion.h1 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.5, ease: "easeOut" }}
-              className="text-2xl md:text-3xl text-neutral-600 tracking-wider"
-            >
-              Learn Yoga Online
-            </motion.h1>
-            
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
-              className="text-sm md:text-xl my-6"
-            >
-              Discover resources designed to support new yogis in yoga journey
-            </motion.p>
-            
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.5, delay: 0.6 }}
-            >
-              <Link
-                to="/poses"
-                className="inline-block flex items-center justify-center w-fit mx-auto group text-center text-sm md:text-lg text-white/90 font-medium bg-moss pl-8 pr-4 py-2 border border-moss/80 rounded-sm hover:scale-[101%] transition-all duration-300 ease-in-out focus:outline-none"
-              >
-                Start Learning
-                <svg 
-                  className="ml-2 w-4 h-4 transition-all duration-300 group-hover:translate-x-1"
-                  fill="none" 
-                  stroke="currentColor" 
-                  viewBox="0 0 24 24" 
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
-              </Link>
-            </motion.div>
-          </div>
-        </div>
+          Learn Yoga Online
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.2 }}
+          className="text-lg md:text-xl text-neutral-600 leading-relaxed"
+        >
+          Clear, calming yoga instruction designed to fit your lifestyle. Flow at your own pace — wherever you are.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.9, delay: 0.4 }}
+        >
+          <Link
+            to="/poses"
+            className="inline-block px-6 py-3 text-base font-medium text-white bg-moss hover:bg-moss/90 rounded-full transition"
+          >
+            Explore Poses
+          </Link>
+        </motion.div>
       </div>
+
+      {/* Image Section */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.9, delay: 0.3 }}
+        className="flex-1 max-w-lg"
+      >
+        <img
+          src="/bg1.jpg" 
+          alt="Peaceful yoga practice"
+          className="w-full rounded-2xl shadow-md object-cover"
+        />
+      </motion.div>
+    </div>
+
 
     <div className="max-w-3xl mx-12 md:mx-auto py-40 grid gap-y-40 md:gap-y-80 text-charcoal">
       
@@ -130,7 +127,7 @@ const Home = () => {
         </div>
       </motion.div>
       
-      {/* Recommended Use */}
+      {/* Getting Started */}
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
