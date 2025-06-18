@@ -1,212 +1,5 @@
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet";
-
-const YogaStyleQuiz = () => {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [showResults, setShowResults] = useState(false);
-  const [answers, setAnswers] = useState({
-    0: null,
-    1: null,
-    2: null,
-    3: null
-  });
-
-  const questions = [
-    {
-      question: "What's your primary goal with yoga?",
-      options: [
-        { value: 'A', text: 'Build strength and endurance' },
-        { value: 'B', text: 'Improve flexibility and balance' },
-        { value: 'C', text: 'Reduce stress and relax' },
-        { value: 'D', text: 'Explore spirituality and mindfulness' }
-      ]
-    },
-    {
-      question: "What type of pace do you prefer in a class?",
-      options: [
-        { value: 'A', text: 'Fast-paced and challenging' },
-        { value: 'B', text: 'Moderate with structured sequences' },
-        { value: 'C', text: 'Slow and soothing' },
-        { value: 'D', text: 'Gentle with long holds and meditation' }
-      ]
-    },
-    {
-      question: "What's your current fitness level?",
-      options: [
-        { value: 'A', text: 'High – I am active and ready for a challenge' },
-        { value: 'B', text: 'Moderate – I am comfortable with physical activity' },
-        { value: 'C', text: 'Beginner – I need something approachable' },
-        { value: 'D', text: 'I need something restorative and easy on my body' }
-      ]
-    },
-    {
-      question: "What's most important to you during yoga?",
-      options: [
-        { value: 'A', text: 'Physical intensity and sweat' },
-        { value: 'B', text: 'Structure, alignment, and technique' },
-        { value: 'C', text: 'Relaxation and stress relief' },
-        { value: 'D', text: 'Deep meditation and spiritual connection' }
-      ]
-    }
-  ];
-
-  const results = {
-    'A': {
-      title: 'Vinyasa or Ashtanga Yoga',
-      description: 'These dynamic, challenging flows offer physical intensity - perfect for those seeking a workout with their practice.'
-    },
-    'B': {
-      title: 'Hatha or Iyengar Yoga',
-      description: 'These balanced, structured practices focus on alignment and proper technique - ideal for methodical learners.'
-    },
-    'C': {
-      title: 'Restorative or Yin Yoga',
-      description: 'These gentle, calming sessions focus on relaxation and release - perfect for stress relief and recovery.'
-    },
-    'D': {
-      title: 'Kundalini Yoga',
-      description: 'This spiritual practice emphasizes meditation, breathwork, and energy work - ideal for those seeking inner growth.'
-    }
-  };
-
-  const handleAnswer = (value) => {
-    const newAnswers = { ...answers, [currentQuestion]: value };
-    setAnswers(newAnswers);
-    
-    if (currentQuestion < questions.length - 1) {
-      setCurrentQuestion(currentQuestion + 1);
-    } else {
-      setShowResults(true);
-    }
-  };
-
-  const calculateResults = () => {
-
-    const counts = { 'A': 0, 'B': 0, 'C': 0, 'D': 0 };
-    
-    Object.values(answers).forEach(answer => {
-      if (answer) counts[answer]++;
-    });
-
-    const maxCount = Math.max(...Object.values(counts));
-
-    const topResults = Object.keys(counts).filter(key => counts[key] === maxCount);
-    
-    return {
-      results: topResults,
-      counts: counts,
-      maxCount: maxCount
-    };
-  };
-
-  const restartQuiz = () => {
-    setAnswers({
-      0: null,
-      1: null,
-      2: null,
-      3: null
-    });
-    setCurrentQuestion(0);
-    setShowResults(false);
-  };
-
-  const progressPercentage = (currentQuestion / questions.length) * 100;
-
-  return (
-    <div className="max-w-2xl mx-auto">
-      <h2 className="text-3xl font-light tracking-wide mb-3">
-        What Type of Yoga Is Right for Me?
-      </h2>
-      <p className="mb-6">
-        Choosing the right type of yoga depends on your goals, experience level, and preferences. Answer the questions below and see which yoga style fits you best!
-      </p>
-
-      <div className="bg-moss/5 rounded-2xl shadow p-4 sm:p-8">
-        {!showResults ? (
-          <div className="space-y-6">
-            <div className="mb-6">
-              <div className="h-2 w-full bg-gray-200 rounded-full">
-                <div 
-                  className="h-2 bg-moss/70 rounded-full transition-all duration-500" 
-                  style={{ width: `${progressPercentage}%` }}
-                ></div>
-              </div>
-              <div className="flex justify-between mt-1 text-sm text-gray-500">
-                <span>Question {currentQuestion + 1} of {questions.length}</span>
-                <span>{Math.round(progressPercentage)}% Complete</span>
-              </div>
-            </div>
-
-            <h3 className="text-xl font-medium mb-4">
-              {currentQuestion + 1}. {questions[currentQuestion].question}
-            </h3>
-            
-            <div className="space-y-3">
-              {questions[currentQuestion].options.map((option, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleAnswer(option.value)}
-                  className="w-full text-left p-4 rounded-lg border-2 hover:bg-moss/20 transition-colors"                  
-                >
-                  <span className="inline-block w-6 h-6 text-center mr-3">
-                    {option.value}
-                  </span>
-                  {option.text}
-                </button>
-              ))}
-            </div>
-          </div>
-        ) : (
-          <>
-          <div className="p-6 text-center">
-            {(() => {
-              const resultData = calculateResults();
-              const topResults = resultData.results;
-              
-              if (topResults.length > 1) {
-                return (
-                  <>
-                    <p>You have a tie! Based on your answers, we recommend:</p>
-                    {topResults.map((result, index) => (
-                      <div key={index} className="my-4">
-                        <h4 className="text-xl font-medium text-moss">
-                          {results[result].title}
-                        </h4>
-                        <p>{results[result].description}</p>
-                      </div>
-                    ))}
-                    <p className="text-sm opacity-70">
-                      You scored {resultData.maxCount} point{resultData.maxCount !== 1 ? 's' : ''} for each of these styles.
-                    </p>
-                  </>
-                );
-              } else {
-                const topResult = topResults[0];
-                return (
-                  <>
-                    <p>Based on your answers, we recommend:</p>
-                    <h4 className="text-xl font-medium text-moss">
-                      {results[topResult].title}
-                    </h4>
-                    <p>{results[topResult].description}</p>
-                  </>
-                );
-              }
-            })()}
-          </div>
-          <button 
-            onClick={restartQuiz}
-            className="mt-6 w-full py-3 bg-moss/80 hover:bg-moss text-white rounded-lg font-medium transition"
-          >
-            Take the Quiz Again
-          </button>
-        </>
-        )} 
-     </div>
-    </div>
-  );
-};
 
 const WhatIsYoga = () => {
   return (
@@ -222,14 +15,9 @@ const WhatIsYoga = () => {
     </Helmet>
     <div className="max-w-2xl md:mx-auto mx-12 my-24 space-y-24">
       <header> 
-        <h1 className="my-12 text-center text-4xl">
+        <h1>
           What is Yoga?
         </h1>
-        <div className="bg-moss/5 rounded-xl shadow-sm p-8 space-y-6">
-          <p className="text-sm tracking-wide leading-loose">
-              Objective: This page explores the origins, evolution, and various styles of yoga. Understanding the historical and philosophical foundations of yoga will deepen your appreciation of the practice and help you choose the style that best aligns with your goals.
-          </p>
-        </div>
       </header>
 
       <div className="flex flex-col space-y-12">
@@ -258,7 +46,7 @@ const WhatIsYoga = () => {
           </ul>
         </div>
 
-        <h2 className="text-3xl font-light tracking-wide">The Evolution of Yoga Styles</h2>
+        <h2>The Evolution of Yoga Styles</h2>
   
         <p>Over the millennia, yoga has evolved into many different styles and schools of thought, each focusing on unique aspects of the practice. These styles can be traced back to ancient teachings but have been adapted and modernized to meet the needs of contemporary practitioners. Some of the major styles of yoga include:</p>
         
@@ -309,8 +97,6 @@ const WhatIsYoga = () => {
                 </div>
             </div>
         </section>
-        
-        <YogaStyleQuiz/>
 
         <p className="mt-12">
           No matter which style of yoga you practice, the foundational poses and lessons taught on this site will be the building blocks of your journey. Mastering them will support your growth, whether your focus is strength, flexibility, relaxation, or mindfulness.
@@ -318,7 +104,7 @@ const WhatIsYoga = () => {
      
       </div>  
       
-      <section className="pt-24 border-t border-charcoal/30">
+      <section>
           <div className="bg-moss/5 rounded-xl shadow-sm p-6 text-sm tracking-wide hover:scale-[101%] transition">
               <Link to="/what-is-yoga/eight-limbed-path">
               Next Up: Learn about the eight limbs of yoga
