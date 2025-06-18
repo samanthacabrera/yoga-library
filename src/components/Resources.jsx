@@ -16,7 +16,7 @@ const ResourceCard = ({ to, title, description }) => (
 
 const ResourceSection = ({ title, links }) => (
   <div className="w-full max-w-2xl">
-    <h2 className="text-xl sm:text-2xl text-charcoal tracking-wider">{title}</h2>
+    <h2>{title}</h2>
     <div className="grid grid-cols-1 gap-4 sm:gap-6 my-4 sm:my-8">
       {links.map((link, index) => (
         <ResourceCard key={index} {...link} />
@@ -76,7 +76,7 @@ const Resources = () => {
   return (
     <div className="flex flex-col min-h-screen w-full max-w-3xl px-4 sm:px-8 py-4 my-12 sm:my-24 mx-auto">
       <div className="mb-8 sm:mb-12">
-        <h1 className="">Resources</h1>
+        <h1>Resources</h1>
         
         {/* Nav */}
         <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mt-6 sm:mt-8">
@@ -103,22 +103,8 @@ const Resources = () => {
           </div>
         ))}
           
-        <p className="py-8 sm:py-12 text-xs text-center tracking-wide opacity-70">
+        <p className="text-xs text-center tracking-wide opacity-70">
           As an Amazon Associate, I earn from qualifying purchases. This helps support the site at no extra cost to you.
-        </p>
-      </div>
-      
-      <div className="mt-16 sm:mt-24 border-t border-moss border-opacity-20 pt-16 sm:pt-40 text-center">
-        <p className="max-w-md mx-auto leading-relaxed text-charcoal text-opacity-80 text-sm sm:text-base">
-          Have a suggestion for our collection? I'm always looking to expand these resources 
-          with valuable recommendations for the yoga community. {" "}
-          <a 
-            href="mailto:samantha.n.cabrera@gmail.com?subject=Resource Suggestion for Learn Yoga Online" 
-            className="inline-block font-medium text-moss hover:underline transition-all duration-300"
-          >
-            Contact me
-          </a>{" "}
-          with your ideas.
         </p>
       </div>
     </div>
