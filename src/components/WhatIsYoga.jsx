@@ -66,37 +66,6 @@ const WhatIsYoga = () => {
         <p>
           Each style of yoga offers its unique benefits, and practitioners may find that different styles resonate with them depending on their personal goals, physical condition, and spiritual path. While the core principles of yoga remain the same, the diversity of styles provides something for everyone, from high-intensity practices to gentle, restorative options.
         </p>
-        
-        {/* Benefits of Yoga */}
-        <section className="space-y-6">
-            <h2 className="text-3xl font-light tracking-wide">Benefits of Consistent Practice</h2>
-            <p>
-                Yoga transcends mere movement—it's a transformative practice enhancing physical health, mental clarity, and emotional balance. Regular practice creates lasting benefits that extend beyond the mat into everyday life.
-            </p>
-            
-            <div className="space-y-6">
-                <div className="space-y-6">
-                    <h3 className="text-xl font-medium text-moss">Physical Benefits</h3>
-                    <p>
-                        Yoga notably improves flexibility by increasing joint range of motion and alleviating muscle stiffness. Weight-bearing poses simultaneously build strength and muscle tone, enhancing overall physical resilience. Core strengthening improves posture, reduces back pain, and protects joints, while the practice promotes joint health through fluid movement and reduced inflammation. Enhanced circulation benefits the cardiovascular system, supporting heart health.
-                    </p>
-                </div>
-                
-                <div className="space-y-6">
-                    <h3 className="text-xl font-medium text-moss">Mental & Emotional Benefits</h3>
-                    <p>
-                        Yoga significantly impacts mental wellness through stress reduction, lowering cortisol levels through controlled breathing and mindfulness. This cultivates mental clarity and improved focus that extends beyond practice sessions. The discipline fosters emotional balance by helping practitioners manage stress, anxiety, and mood fluctuations. Mindfulness practice develops self-awareness, nurturing self-acceptance and emotional stability. Additionally, yoga enhances sleep quality by relaxing the body and calming the mind, promoting deeper, more restorative rest.
-                    </p>
-                </div>
-                
-                <div className="space-y-6">
-                    <h3 className="text-xl font-medium text-moss">Integration Into Daily Life</h3>
-                    <p>
-                        Yoga's benefits transcend formal practice sessions. As practitioners develop body-mind awareness, they experience improved sleep, elevated energy, and enhanced well-being. Mindfulness cultivated during yoga infuses daily activities, encouraging more intentional choices. This self-awareness fosters healthier physical and mental habits, maintaining balance long after practice ends.
-                    </p>
-                </div>
-            </div>
-        </section>
 
         <p className="mt-12">
           No matter which style of yoga you practice, the foundational poses and lessons taught on this site will be the building blocks of your journey. Mastering them will support your growth, whether your focus is strength, flexibility, relaxation, or mindfulness.
