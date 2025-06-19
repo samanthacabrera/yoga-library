@@ -7,15 +7,14 @@ const Section = ({ title, children }) => (
 
 const ListItem = ({ children, strong }) => (
   <div className="flex">
-    {strong && <strong className="mr-1 font-medium">{strong}:</strong>}
-    <span>{children}</span>
+    {strong} : {children}
   </div>
 );
 
 const Guide = () => {
   return (
     <div className="max-w-3xl mx-auto px-6 py-12 text-black bg-white font-sans">
-      <header className="mb-12 border-b border-black pb-8">
+      <header className="mb-12">
         <h1>Beginner’s Guide to Yoga</h1>
         <p className="text-lg leading-relaxed">
           Yoga is for every body. You don’t need to be flexible, strong, or young to begin. 
