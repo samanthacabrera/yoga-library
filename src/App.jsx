@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Drawer from "./components/Drawer";
 import Home from "./components/Home";
-import CategoryPage from "./components/CategoryPage";
+import PoseList from "./components/PoseList";
 import PosePage from "./components/PosePage";
 import Guide from "./components/Guide";
 import WhatIsYoga from "./components/WhatIsYoga";
@@ -57,8 +57,7 @@ useEffect(() => {
         <Drawer /> 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/poses" element={<CategoryPage />} />
-          <Route path="/poses/:categoryType/:categoryValue" element={<CategoryPage />} />
+          <Route path="/poses" element={<PoseList />} />
           <Route path="/poses/:name" element={<PosePage />} />
           <Route path="/what-is-yoga/overview" element={<WhatIsYoga />} />
           <Route path="/what-is-yoga/beginners-guide" element={<Guide />} />
