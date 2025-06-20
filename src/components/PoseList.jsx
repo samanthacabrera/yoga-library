@@ -3,7 +3,8 @@ import posesData from "../data/poses.json";
 
 const PoseList = () => {
   return (
-    <>
+    <div className="flex flex-col w-screen">
+      <h1>Pose Library</h1>
       <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
         {posesData.length === 0 ? (
           <p className="text-center">
@@ -37,7 +38,7 @@ const PoseList = () => {
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
