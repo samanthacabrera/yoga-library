@@ -1,15 +1,40 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { List, ImageIcon } from "lucide-react";
 import posesData from "../data/poses.json";
 
 const PoseList = () => {
+  const [isListView, setIsListView] = useState(false);
+
   return (
     <div className="flex flex-col w-screen">
-      <h1>Pose Library</h1>
+      <div className="flex justify-between items-center px-8 pt-6 max-w-3xl mx-auto w-full">
+        <h1>Pose Library</h1>
+        <button
+          onClick={() => setIsListView(!isListView)}
+          className="flex items-center gap-2 px-3 py-1 border rounded hover:bg-gray-100 transition"
+        >
+          {isListView ? <ImageIcon className="w-5 h-5" /> : <List className="w-5 h-5" />}
+          <span className="text-sm">{isListView ? "Grid View" : "List View"}</span>
+        </button>
+      </div>
+
       <div className="flex flex-col min-h-screen w-full max-w-3xl space-y-8 px-8 py-4 mx-auto">
         {posesData.length === 0 ? (
-          <p className="text-center">
-            No poses found for this category.
-          </p>
+          <p className="text-center">No poses found for this category.</p>
+        ) : isListView ? (
+          <ul className="space-y-4 pt-6">
+            {posesData.map((pose) => (
+              <li key={pose.id}>
+                <Link
+                  to={`/poses/${pose.name}`}
+                  className="text-moss hover:underline lowercase tracking-wide"
+                >
+                  {pose.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-8">
             {posesData.map((pose) => (
