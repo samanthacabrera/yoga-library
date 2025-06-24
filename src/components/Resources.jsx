@@ -34,15 +34,7 @@ const Resources = () => {
       title: "Yoga Tutorials",
       links: [
         { to: "https://www.youtube.com/c/yogawithadriene", title: "Yoga with Adriene", description: "Inclusive, beginner-friendly practices for every level." },
-        { to: "https://www.youtube.com/c/breatheandflow", title: "Breathe and Flow", description: "Dynamic flows and strength-building sequences." }
-      ]
-    },
-    {
-      id: "articles",
-      title: "Articles & Blogs",
-      links: [
-        { to: "https://www.yogajournal.com/", title: "Yoga Journal", description: "In-depth insights into yoga philosophy, poses, and lifestyle." },
-        { to: "https://www.ekhartyoga.com/articles/browse_all", title: "EkhartYoga", description: "Guides and resources on meditation, wellbeing, and more." }
+        { to: "https://www.youtube.com/@LEAPService", title: "LEAPService", description: "Team of professionals sharing simple, chair yoga routines" }
       ]
     },
     {
