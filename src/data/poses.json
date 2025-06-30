@@ -3,90 +3,60 @@
     "id": 1,
     "name": "Mountain Pose",
     "image": "/mountain-pose.png",
-    "chakra": ["Root"],
-    "type": ["Standing"],
-    "benefit": ["Improve Posture", "Increase Awareness", "Improve Balance"],
-    "part": ["Spine", "Legs"]
+    "chakra": ["Root"]
   },
   { 
     "id": 2,
     "name": "Hero Pose",
     "image": "/hero-pose.png",
-    "chakra": ["Root", "Sacral"],
-    "type": ["Restorative", "Kneeling"],
-    "benefit": ["Enhance Focus", "Improve Posture"],
-    "part": ["Hips", "Spine"]
+    "chakra": ["Root", "Sacral"]
   },
   {
     "id": 3,
     "name": "Lotus Pose",
     "image": "/lotus-pose.png",
-    "chakra": ["Root", "Crown", "Third Eye", "Sacral"],
-    "type": ["Seated", "Restorative"],
-    "benefit": ["Enhance Focus", "Enhance Openness"],
-    "part": ["Hips", "Spine"]
+    "chakra": ["Root", "Crown", "Third Eye", "Sacral"]
   },
   {
     "id": 4,
     "name": "Staff Pose",
     "image": "/staff-pose.png",
-    "chakra": ["Solar Plexus", "Sacral", "Root"],
-    "type": ["Forward Fold", "Restorative", "Seated"],
-    "benefit": ["Improve Posture", "Restore Energy"],
-    "part": ["Hips", "Spine"]
+    "chakra": ["Solar Plexus", "Sacral", "Root"]
   },
   {
     "id": 5,
     "name": "Table Top Pose",
     "image": "/tabletop-pose.png",
-    "chakra": ["Sacral", "Root"],
-    "type": ["Stretch","Kneeling", "Prone", "Restorative"],
-    "benefit": ["Build Stability", "Improve Balance"],
-    "part": ["Back", "Arms"]
+    "chakra": ["Sacral", "Root"]
   },
   {
     "id": 6,
     "name": "Cat Pose",
     "image": "/cat-pose.png",
-    "chakra": ["Sacral", "Root", "Solar Plexus"],
-    "type": ["Kneeling", "Prone", "Stretch"],
-    "benefit": ["Improve Flexibility", "Improve Posture"],
-    "part": ["Spine"]
+    "chakra": ["Sacral", "Root", "Solar Plexus"]
   },
   {
     "id": 7,
     "name": "Cow Pose",
     "image": "/cow-pose.png",
-    "chakra": ["Heart", "Root"],
-    "type": ["Kneeling", "Prone", "Stretch"],
-    "benefit": ["Improve Flexibility", "Improve Posture"],
-    "part": ["Chest", "Shoulders"]
+    "chakra": ["Heart", "Root"]
   },
   {
     "id": 8,
     "name": "Child's Pose",
     "image": "/child-pose.png",
-    "chakra": ["Root", "Third Eye","Solar Plexus", "Crown"],
-    "type": ["Restorative", "Forward Fold"],
-    "benefit": ["Reduce Stress", "Restore Energy"],
-    "part": ["Spine", "Hips"]
+    "chakra": ["Root", "Third Eye","Solar Plexus", "Crown"]
   },
   {
     "id": 9,
     "name": "Puppy Pose",
     "image": "/puppy-pose.png",
-    "chakra": ["Heart", "Throat", "Sacral", "Root"],
-    "type": ["Stretch","Kneeling"],
-    "benefit": ["Enhance Relaxation", "Improve Flexibility"],
-    "part": ["Spine", "Shoulders"]
+    "chakra": ["Heart", "Throat", "Sacral", "Root"]
   },
   {
     "id": 10,
     "name": "Tree Pose",
     "image": "/tree-pose.png",
-    "chakra": ["Root", "Third Eye", "Sacral"],
-    "type": ["Standing", "Balance"],
-    "benefit": ["Improve Balance", "Improve Posture"],
-    "part": ["Legs", "Hips"]
+    "chakra": ["Root", "Third Eye", "Sacral"]
   }
 ]

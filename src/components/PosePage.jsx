@@ -16,10 +16,6 @@ const PosePage = () => {
   const poseSanskirt = sanskirts.find((s) => s.id === pose.id);
   const poseBenefit = benefits.find((b) => b.id === pose.id);
   const poseCues = cues.find((c) => c.id === pose.id);
-  const relatedPoses = posesData.filter((p) => 
-    p.id !== pose.id && 
-    p.type.some((type) => pose.type.includes(type))
-  );
   const [tocOpen, setTocOpen] = useState(true);
 
   if (!pose) {
@@ -51,17 +47,6 @@ const PosePage = () => {
         >
           All Poses
         </Link>
-        {pose.type.length > 0 && (
-          <>
-            <span>/</span>
-            <Link
-              to={`/poses/type/${pose.type[0]}`}
-              className="hover:text-moss hover:border-b-2 hover:border-moss transition-all duration-300"
-            >
-              {pose.type[0]} Poses
-            </Link>
-          </>
-        )}
         <span>/</span>
         <span className="font-medium">{pose.name}</span>
       </nav>
@@ -116,33 +101,6 @@ const PosePage = () => {
             {poseSanskirt.sanskrit_pronunciation}
           </span>
         </p>
-        
-      {/* Tags */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
-        {[
-          { title: "Benefits", data: pose.benefit, slug: "benefit" },
-          { title: "Body Parts", data: pose.part, slug: "part" },
-          { title: "Pose Types", data: pose.type, slug: "type" },
-          { title: "Chakras", data: pose.chakra, slug: "chakra" }
-        ].map(section => 
-          section.data.length > 0 && (
-            <div key={section.slug} className="bg-moss/15 rounded-xl p-3">
-              <p className="font-medium text-sm">{section.title}</p>
-              <div className="flex flex-wrap gap-1.5 mt-2">
-                {section.data.map(item => (
-                  <Link
-                    key={item}
-                    to={`/poses/${section.slug}/${item.toLowerCase().replace(/\s/g, '%20')}`}
-                    className="bg-white text-moss text-xs font-medium px-2 py-1 rounded-md hover:scale-[103%] transition duration-300 ease-in-out"
-                  >
-                    {item}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          )
-        )}
-      </div>
       </header>
     </div>
       
@@ -195,12 +153,6 @@ const PosePage = () => {
                 className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
               >
                 Cues
-              </a>
-              <a 
-                href="#related" 
-                className="text-charcoal/80 hover:text-moss relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-moss after:transition-all hover:after:w-full"
-              >
-                Related
               </a>
             </div>
           </>
@@ -304,40 +256,6 @@ const PosePage = () => {
             })}
           </div>
         </div>
-      )}
-
-      {/* Related Poses */}
-      {relatedPoses.length > 0 && (
-        <section id="related" className="group scroll-mt-96 md:scroll-mt-40">
-          <h2 className="text-left text-2xl md:text-3xl tracking-wider my-8 group-hover:text-moss transition duration-300">Related Poses</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {relatedPoses.slice(0, 6).map((relatedPose) => (
-              <Link
-                key={relatedPose.id}
-                to={`/poses/${relatedPose.name}`}
-                className="block border border-moss/20 rounded p-2 transition-all duration-500 hover:shadow hover:scale-105"
-              >
-                <div className="overflow-hidden mb-3">
-                  <img 
-                    src={relatedPose.image} 
-                    alt={relatedPose.name}
-                    className="w-full aspect-square object-cover"
-                  />
-                </div>
-                <h4 className="text-base font-medium tracking-wide mb-1">{relatedPose.name}</h4>
-                {relatedPose.type && (
-                  <div className="flex gap-2">
-                    {relatedPose.type.slice(0, 2).map((type, index) => (
-                      <span key={index} className="text-xs text-charcoal/80">
-                        {type}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </Link>
-            ))}
-          </div>
-        </section>
       )}
 
       {/* Sources */}
