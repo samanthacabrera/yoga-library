@@ -5,23 +5,6 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const approaches = [
-    {
-      number: '01',
-      title: "Accessible",
-      mainText: "We believe that yoga is for everyone, regardless of age, ability, or experience. We’ve created an approach that welcomes people who practice in chairs, need more support, or are exploring movement later in life."
-    },
-    {
-      number: '02',
-      title: "Holistic",
-      mainText: "Our practice goes beyond physical poses. We explore the full spectrum of practice, including breathwork, meditation, and inner awareness."
-    },
-    {
-      number: '03',
-      title: "Empowering",
-      mainText: "We offer tools, not rules for how you can practice yoga. Encouraging you to explore yoga with agency and self-trust."
-    },
-  ];
 
   return (
     <>
@@ -141,40 +124,6 @@ const Home = () => {
           </p>
         </div>
       </motion.div>
-
-        {/* Approach */}
-        <motion.section
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: false, amount: 0.1 }}
-          transition={{ duration: 0.8 }}
-          className="container my-20"
-        >
-          <h1>Our Philosophy</h1>    
-
-          <div className="grid gap-8 md:gap-24">
-            {approaches.map((approach) => (
-              <motion.div
-                key={approach.number}
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="group"
-              >
-                <div className="flex items-center mb-4">
-                  <span className="text-8xl text-neutral-300 mr-6 group-hover:text-moss/80 transition-colors duration-300">
-                    {approach.number}
-                  </span>
-                  <h2 className="group-hover:text-moss/90 transition-colors duration-300">
-                    {approach.title}
-                  </h2>
-                </div>
-                <p className="text-charcoal tracking-wide leading-loose">
-                    {approach.mainText}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
     
         {/* Testimonials */}
         <motion.div
