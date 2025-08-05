@@ -9,8 +9,6 @@ import PosePage from "./components/PosePage";
 import Guide from "./components/Guide";
 import WhatIsYoga from "./components/WhatIsYoga";
 import Path from "./components/Path";
-import Gunas from "./components/Gunas";
-import Chakras from "./components/Chakras";
 import Resources from "./components/Resources";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import PageNav from "./components/PageNav";
@@ -62,8 +60,6 @@ useEffect(() => {
           <Route path="/what-is-yoga/overview" element={<WhatIsYoga />} />
           <Route path="/what-is-yoga/beginners-guide" element={<Guide />} />
           <Route path="/what-is-yoga/eight-limbed-path" element={<Path />} />
-          <Route path="/what-is-yoga/three-gunas" element={<Gunas />} />
-          <Route path="/what-is-yoga/seven-chakras" element={<Chakras />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>

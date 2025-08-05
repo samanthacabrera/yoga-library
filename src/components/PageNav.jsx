@@ -5,8 +5,6 @@ const menuItems = [
     { label: "Start Here", to: "/what-is-yoga/beginners-guide" },
     { label: "What Is Yoga?", to: "/what-is-yoga/overview" },
     { label: "The 8-Limbed Path", to: "/what-is-yoga/eight-limbed-path" },
-    { label: "The 7 Chakras", to: "/what-is-yoga/seven-chakras" },
-    { label: "The 3 Gunas", to: "/what-is-yoga/three-gunas" },
     { label: "List of Poses", to: "/poses" },
     { label: "Resources", to: "/resources" },
 ];
