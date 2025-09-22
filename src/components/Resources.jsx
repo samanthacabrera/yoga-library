@@ -94,10 +94,6 @@ const Resources = () => {
             <ResourceSection {...category} />
           </div>
         ))}
-          
-        <p className="text-xs text-center tracking-wide opacity-70">
-          As an Amazon Associate, I earn from qualifying purchases. This helps support the site at no extra cost to you.
-        </p>
       </div>
     </div>
   );

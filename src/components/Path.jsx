@@ -148,23 +148,6 @@ const Path = () => {
                     )}
                 </div>
                 ))}
-
-            <div className="my-12 space-y-12">
-                <p>The <strong>8-Limbed Path of Yoga</strong> is far more than a set of guidelines—it is a profound journey of transformation, leading practitioners toward a life of integrity, self-discipline, and spiritual awareness. Rooted in the teachings of <em>The Yoga Sutras of Patanjali</em>, this path provides a structured framework for cultivating inner peace, ethical living, and deep self-realization.</p>
-                <p>Each limb serves as a stepping stone, guiding the practitioner through ethical disciplines (<em>Yama</em>), self-reflection (<em>Niyama</em>), physical practice (<em>Asana</em>), breath control (<em>Pranayama</em>), sensory withdrawal (<em>Pratyahara</em>), focused concentration (<em>Dharana</em>), meditative absorption (<em>Dhyana</em>), and ultimately, transcendence (<em>Samadhi</em>). When woven together, these practices create a holistic approach to life—one that nurtures the body, refines the mind, and awakens the soul.</p>
-                <p>Yoga is not confined to a mat or a meditation cushion; it is a way of living that permeates every moment, every action, and every interaction. By practicing non-violence (<em>Ahimsa</em>), truthfulness (<em>Satya</em>), and self-discipline (<em>Tapas</em>), we create harmony within ourselves and our surroundings. By cultivating contentment (<em>Santosha</em>), self-inquiry (<em>Svadhyaya</em>), and devotion (<em>Ishvara Pranidhana</em>), we deepen our understanding of life’s greater purpose.</p>
-                <p>In a world filled with distractions and constant stimulation, the practices of <em>Pratyahara</em> and <em>Dharana</em> teach us how to turn inward, reclaim our attention, and focus on what truly matters. Meditation (<em>Dhyana</em>) then becomes the gateway to a still and centered mind, allowing us to connect with our highest self. And when all eight limbs align in harmony, the practitioner experiences <em>Samadhi</em>—a state of profound peace, where the boundaries of the self dissolve, and one merges with the infinite.</p>
-                <p>Walking the 8-limbed path is not about perfection; it is about progress, patience, and practice. There will be challenges, moments of doubt, and times when we fall short of our ideals—but yoga teaches us resilience, self-compassion, and the ability to begin again.</p>
-                <p>Whether you are taking your first steps or have been practicing for years, the teachings of yoga remain a constant source of wisdom and guidance. By integrating these principles into daily life—not just in movement, but in thoughts, words, and actions—we cultivate a life of balance, clarity, and fulfillment.</p>
-            </div>
-            
-            <section>
-                <div className="bg-moss/5 rounded-xl shadow-sm p-6 text-sm tracking-wide hover:scale-[101%] transition">
-                    <Link to="/what-is-yoga/seven-chakras" >
-                    Next Up: Learn about the seven chakras
-                    </Link>
-                </div>
-            </section>
         </div>
     </>
     );

@@ -73,12 +73,6 @@ const Guide = () => {
           Every practice is different, and even a few minutes can make a big difference.
         </p>
       </article>
-
-      <footer>
-        <button className="mt-4">
-          Next: Learn about the origins of yoga →
-        </button>
-      </footer>
     </div>
   );
 };

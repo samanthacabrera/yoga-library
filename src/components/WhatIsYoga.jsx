@@ -72,14 +72,6 @@ const WhatIsYoga = () => {
         </p>
      
       </div>  
-      
-      <section>
-          <div className="bg-moss/5 rounded-xl shadow-sm p-6 text-sm tracking-wide hover:scale-[101%] transition">
-              <Link to="/what-is-yoga/eight-limbed-path">
-              Next Up: Learn about the eight limbs of yoga
-              </Link>
-          </div>
-      </section>
     </div>
     </>
   );
