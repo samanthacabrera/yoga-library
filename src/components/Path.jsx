@@ -1,9 +1,4 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
 const Path = () => {
-    const [openIndexes, setOpenIndexes] = useState([]);
-
     const limbs = [
         { name: "Yama", description: "Ethical disciplines and moral restraints.", content: (
             <div className="space-y-12">
@@ -99,58 +94,26 @@ const Path = () => {
         ) },
     ];
 
-    const toggleAccordion = (index) => {
-        setOpenIndexes(prev => {
-        if (prev.includes(index)) {
-            return prev.filter(i => i !== index);
-        } else {
-            return [...prev, index];
-        }
-        });
-    };
+return (
+    <div className="max-w-2xl md:mx-auto mx-12 my-24 space-y-12">
+      <h1 className="text-center my-12 text-4xl">The Eight-Limbed Path of Yoga</h1>
 
-    return (
-       <>
-       <div className="max-w-2xl md:mx-auto mx-12 my-24 space-y-12">
-           <h1 className="text-center my-12 text-4xl">The Eight-Limbed Path of Yoga</h1>
-    
-                <p>
-                    The <strong>8-Limbed Path of Yoga</strong>, as outlined in the ancient text <em>The Yoga Sutras of Patanjali</em>, is a timeless and holistic framework for living a life of purpose, self-discipline, and spiritual awakening. It is not merely a series of physical postures but a deeply transformative journey that integrates ethical conduct, self-mastery, breath control, mental focus, and meditative awareness—ultimately leading to profound inner peace and enlightenment.
-                </p>
-                <p>
-                    Each of the eight limbs—<em>Yama</em> (ethical principles), <em>Niyama</em> (self-discipline), <em>Asana</em> (physical practice), <em>Pranayama</em> (breath control), <em>Pratyahara</em> (withdrawal of the senses), <em>Dharana</em> (concentration), <em>Dhyana</em> (meditation), and <em>Samadhi</em> (self-realization)—serves as a stepping stone toward a balanced, mindful, and spiritually enriched life. These teachings encourage us to cultivate integrity, develop inner strength, and deepen our awareness, ultimately guiding us toward self-discovery and higher consciousness.
-                </p>
-                <p>
-                    The beauty of this path lies in its adaptability; it is not confined to a particular belief system, nor does it require mastery overnight. Instead, it offers a structured yet fluid approach that meets practitioners wherever they are on their journey. Whether you seek physical well-being, mental clarity, emotional resilience, or spiritual awakening, the 8-limbed path provides the tools to align body, mind, and soul.
-                </p>
-           
-                {limbs.map((limb, index) => (
-                <div key={index} className="border-b border-gray-300 mb-4">
-                    <button
-                    onClick={() => toggleAccordion(index)}
-                    className="w-full text-left py-4 px-2 flex justify-between items-center"
-                    >
-                    <h2 className={`text-2xl font-medium text-charcoal tracking-wide ${openIndexes.includes(index) ? 'opacity-0' : 'opacity-100'}`}>
-                        {limb.name}
-                    </h2>
-                    <span className="text-xl">{openIndexes.includes(index) ? "−" : "+"}</span>
-                    </button>
-                    {openIndexes.includes(index) && (
-                    <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16 lg:space-y-0 space-y-12 pb-20">
-                        <div>
-                        <h2 className="text-2xl text-left font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[350px]">
-                            {limb.name}
-                        </h2>
-                        <p className="mt-2 text-lg sm:text-xl text-charcoal">{limb.description}</p>
-                        </div>
-                        <div className="my-8 col-span-2">{limb.content}</div>
-                    </div>
-                    )}
-                </div>
-                ))}
+      {limbs.map((limb, index) => (
+        <div 
+          key={index} 
+          className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16 lg:space-y-0 space-y-12 pb-20 border-b border-gray-300 mb-4"
+        >
+          <div>
+            <h2 className="text-2xl text-left font-medium text-charcoal tracking-wide lg:text-6xl lg:col-span-1 lg:max-w-[350px]">
+              {limb.name}
+            </h2>
+            <p className="mt-2 text-lg sm:text-xl text-charcoal">{limb.description}</p>
+          </div>
+          <div className="my-8 col-span-2">{limb.content}</div>
         </div>
-    </>
-    );
+      ))}
+    </div>
+  );
 };
 
 export default Path;
