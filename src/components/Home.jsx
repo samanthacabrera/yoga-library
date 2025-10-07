@@ -24,57 +24,48 @@ const Home = () => {
       </Helmet>
 
       <div className="flex flex-col w-screen">
-      <div className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-12 py-12 gap-10">
-      <div className="flex-1 max-w-xl text-center md:text-left space-y-8">
-        <motion.h1
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="md:text-left"
-        >
-          Learn Yoga Online
-        </motion.h1>
+        {/* Hero */}
+        <section className="relative min-h-[100vh] flex items-center justify-center bg-white overflow-hidden">
+          <div className="absolute inset-0 flex flex-col">
+   
+            <div className="w-full h-full">
+              <img
+                src="/bg1.jpg"
+                alt="Peaceful yoga practice"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+          </div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.2 }}
-          className=""
-        >
-          Discover resources designed to meet yogis wherever they are on their journey.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.9, delay: 0.4 }}
-        >
-          <Link
-            to="/poses"
-            className="inline-block px-6 py-3 text-base font-medium text-white bg-moss hover:bg-moss/90 rounded-full transition"
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 1 }}
+            className="relative z-10 -mt-24 md:-mt-64 flex flex-col items-center md:items-start max-w-3xl px-8 md:px-16 text-center md:text-left"
           >
-            Explore Poses
-          </Link>
-        </motion.div>
-      </div>
+            <h1 className="text-5xl md:text-7xl font-light text-moss drop-shadow-sm">
+              Learn Yoga Online
+            </h1>
 
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.9, delay: 0.3 }}
-        className="flex-1 max-w-lg"
-      >
-        <img
-          src="/bg1.jpg" 
-          alt="Peaceful yoga practice"
-          className="w-full rounded-2xl shadow-md object-cover"
-        />
-      </motion.div>
-    </div>
+            <p className="text-xl md:text-2xl max-w-xl font-light -mt-8">
+              Discover resources designed to meet yogis wherever they are on their journey.
+            </p>
 
+            <div>
+              <Link
+                to="/poses"
+                className="inline-block mt-4 px-8 py-2 text-lg font-medium text-white/80 bg-moss hover:bg-moss/90 rounded-full transition-all duration-300 focus:ring-4 focus:ring-moss/30 shadow-sm"
+              >
+                Explore Poses
+              </Link>
+            </div>
+          </motion.div>
+          <div className="absolute inset-y-0 left-0 w-full bg-gradient-to-t from-white/10 via-white/20 to-transparent pointer-events-none" aria-hidden="true"></div>
+        </section>
 
-    <div className="max-w-3xl mx-12 md:mx-auto py-40 grid gap-y-40 md:gap-y-80 text-charcoal">
-      
+    <div className="max-w-3xl mx-12 md:mx-auto py-40 grid gap-y-20 md:gap-y-40 text-charcoal">
+
       {/* About */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -84,7 +75,9 @@ const Home = () => {
         className="container"
       >
 
-        <h2 className="leading-relaxed">What makes Learn Yoga Online Different?</h2>
+        <h2 className="text-4xl md:text-6xl font-light leading-loose text-moss mb-12 px-6 py-12 bg-moss/5 rounded-xl shadow-sm text-center">
+          What makes Learn Yoga Online Different?
+        </h2>
 
         <div className="space-y-6 text-xl text-charcoal tracking-wide leading-loose">
           <p>
@@ -105,7 +98,9 @@ const Home = () => {
         transition={{ duration: 1.5 }}
         className="container my-20"
       >
-        <h2 className="leading-relaxed">Getting Started with Learn Yoga Online</h2>
+        <h2 className="text-4xl md:text-6xl font-light leading-loose text-moss mb-12 px-6 py-12 bg-moss/5 rounded-xl shadow-sm text-center">
+          Getting Started with Learn Yoga Online
+        </h2>
 
         <div className="space-y-6">
           <p>First, start with our 
@@ -127,37 +122,68 @@ const Home = () => {
     
         {/* Testimonials */}
         <motion.div
-            initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 1 }}
-            className="container my-20"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 1 }}
+          className="container my-40 flex flex-col items-center text-center"
+        >
+          <motion.h2
+            className="text-4xl md:text-6xl font-light leading-loose text-moss mb-12 px-6 py-12 bg-moss/5 rounded-xl shadow-sm text-center"
           >
-            <motion.h2 
-              variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 1 } } }}
-              className="mb-24"
-            >
-              What Others Are Saying
-            </motion.h2>
-            <div className="grid md:grid-cols-2 gap-x-6 gap-y-12">
-              {[
+            What Others Are Saying About Learn Yoga Online
+          </motion.h2>
+
+          <div className="relative w-full max-w-6xl h-[500px] md:h-[400px] mx-auto">
+            {(() => {
+              const [activeIndex, setActiveIndex] = React.useState(null); 
+
+              const testimonials = [
                 { quote: "This site makes learning yoga inviting. The instructions are clear, the layout is simple, and it creates a welcoming space to grow my practice without feeling overwhelmed.", author: "Savanna L." },
-                { quote: "After my stroke, I thought yoga was completely out of reach. This site helped me reconnect with my body and feel hopeful again. ", author: "Bri H." },
+                { quote: "After my stroke, I thought yoga was completely out of reach. This site helped me reconnect with my body and feel hopeful again.", author: "Bri H." },
                 { quote: "Learn Yoga Online strikes the perfect balance of offering substance, while remaining accessible. It's evident that this site was designed with the user’s growth in mind.", author: "Sunny C." },
                 { quote: "As someone completely new to yoga, this platform made learning the basics feel easy. The clear instructions and thoughtful guidance gave me the confidence to start my practice and keep improving.", author: "Darlene A." },
                 { quote: "A standout tool for yoga practitioners at any level. The depth of instruction has significantly enhanced my understanding and appreciation for this practice.", author: "Wendy R." },
                 { quote: "I never thought I’d feel confident doing yoga from my wheelchair. But with this platform’s help, I’ve developed a regular practice that keeps me active and grounded.", author: "Justin M." }
-              ].map((testimonial, index) => (
-                <motion.div
-                  key={index}
-                  variants={{
-                    hidden: { opacity: 0, y: 50 },
-                    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-                  }}
-                  className="flex flex-col justify-between bg-moss/5 h-[400px] p-8 text-left rounded-t-2xl hover:shadow-sm transition duration-300"
-                >
-                  <p className="italic">"{testimonial.quote}"</p>
-                  <p className="uppercase">— {testimonial.author}</p>
-                </motion.div>
-              ))}
-            </div>
+              ];
+
+              return testimonials.map((testimonial, index) => {
+                // Spread out semicircle
+                const total = testimonials.length - 1;
+                const spreadFactor = 1;
+                const angle = (index / total - 0.5) * Math.PI * spreadFactor;
+                const radius = 400;
+                const x = radius * Math.sin(angle);
+                const y = radius * (1 - Math.cos(angle));
+
+                const isActive = activeIndex === index;
+
+                return (
+                  <motion.div
+                    key={index}
+                    className="absolute left-[30%] cursor-pointer"
+                    onClick={() => setActiveIndex(isActive ? null : index)}
+                    animate={
+                      isActive
+                        ? { scale: 1.05, zIndex: 50, y: y - 50 }
+                        : { scale: 1, zIndex: 0, y: y }
+                    }
+                    style={{ x }}
+                    transition={{ type: "spring", stiffness: 200, damping: 20 }}
+                  >
+                    <div className="bg-moss/5 backdrop-blur-sm w-64 md:w-72 h-72 md:h-80 p-6 rounded-3xl shadow-md transition-all duration-300 flex flex-col justify-between text-left border border-moss/10">
+                      <p className="italic text-gray-800 text-sm md:text-base leading-relaxed">
+                        "{testimonial.quote}"
+                      </p>
+                      <p className="uppercase text-xs md:text-sm tracking-wide text-gray-600">
+                        — {testimonial.author}
+                      </p>
+                    </div>
+                  </motion.div>
+                );
+              });
+            })()}
+          </div>
         </motion.div>
         </div>
       </div>
