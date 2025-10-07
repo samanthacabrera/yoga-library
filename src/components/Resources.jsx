@@ -44,16 +44,6 @@ const Resources = () => {
         { to: "https://www.calm.com/", title: "Calm", description: "Meditations, sleep stories, and breathing exercises to promote relaxation." },
         { to: "https://insighttimer.com/", title: "Insight Timer", description: "Free guided meditations from experienced teachers around the world." }
       ]
-    },
-    {
-      id: "accessories",
-      title: "Yoga Accessories",
-      links: [
-        { to: "https://amzn.to/4iDdAFT", title: "Manduka PRO Yoga Mat", description: "High-performance, eco-conscious mat built to last." },
-        { to: "https://amzn.to/4iJYnlP", title: "Manduka Yogitoes Yoga Towel", description: "Lightweight, quick-drying yoga towels that enhance your practice." },
-        { to: "https://amzn.to/4bJXQhA", title: "Manduka Go Play 3.0 Yoga Mat Bag", description: "A lightweight yoga mat sling with external storage pockets for practice essentials." },
-        { to: "https://amzn.to/4iJYyO1", title: "Yogo Ultralight Folding Travel Yoga Mat", description: "Portable, foldable yoga mat for on-the-go practice." }
-      ]
     }
   ];
 
