@@ -1,22 +1,30 @@
 const Section = ({ title, children }) => (
-  <section>
-    <h2>{title}</h2>
-    <div className="space-y-3 text-base">{children}</div>
+  <section className="mb-12">
+    <h2 className="text-2xl md:text-3xl font-light text-moss mb-4">{title}</h2>
+    <div className="space-y-3 text-base leading-relaxed">{children}</div>
   </section>
 );
 
 const ListItem = ({ children, strong }) => (
-  <div className="flex">
-    {strong} : {children}
+  <div className="flex mb-2">
+    <span className="font-semibold text-moss w-48">{strong}:</span>
+    <span>{children}</span>
   </div>
 );
 
 const Guide = () => {
   return (
-    <div className="max-w-3xl mx-auto px-6 py-12 text-black bg-white font-sans">
-      <header className="mb-12">
-        <h1>Beginner’s Guide to Yoga</h1>
-        <p className="text-lg leading-relaxed">
+    <div className="max-w-3xl mx-auto px-6 py-12 text-gray-900 font-sans">
+      <header className="mb-12 border-b border-gray-200 pb-12">
+        <h1 className="text-5xl md:text-6xl font-light text-moss tracking-wide mb-8">
+          Beginner’s Guide to Yoga
+        </h1>
+        <div className="flex items-center text-sm text-gray-500 mb-6">
+          <span>By Sam Cabrera</span>
+          <span className="mx-2">•</span>
+          <span>Last Edited: October 7, 2025</span>
+        </div>
+        <p className="text-lg md:text-xl leading-relaxed text-left">
           Yoga is for every body. You don’t need to be flexible, strong, or young to begin. 
           In this guide, you’ll learn the basics of yoga while using a chair for support. 
           This is perfect if you’re brand new to yoga, recovering from injury, or just looking for a gentler start.
@@ -24,7 +32,7 @@ const Guide = () => {
       </header>
 
       <article className="mb-12">
-        <h2>How Yoga Helps</h2>
+        <h2 className="text-2xl md:text-3xl font-light text-moss mb-4">How Yoga Helps</h2>
         <p className="mb-4 leading-relaxed">
           Yoga isn’t just about stretching — it’s about awareness. Even simple movements can help reduce stiffness, 
           ease joint pain, improve circulation, and make everyday tasks like walking, reaching, or standing easier. 
@@ -48,8 +56,8 @@ const Guide = () => {
         </ListItem>
       </Section>
 
-      <article className="my-12">
-        <h2>Why Use a Chair?</h2>
+      <article className="mb-12">
+        <h2 className="text-2xl md:text-3xl font-light text-moss mb-4">Why Use a Chair?</h2>
         <p className="mb-4 leading-relaxed">
           A chair gives you support so you can focus on breathing, posture, and gentle movement without worrying about balance. 
           It helps you stay grounded. Many people find it easier to relax and pay attention to their body when they feel stable.
@@ -61,7 +69,7 @@ const Guide = () => {
       </article>
 
       <article className="mb-12">
-        <h2>What to Expect</h2>
+        <h2 className="text-2xl md:text-3xl font-light text-moss mb-4">What to Expect</h2>
         <p className="mb-4 leading-relaxed">
           You’ll start with very simple movements — things like lifting your arms, turning your head, 
           or leaning gently side to side. You’ll also pay close attention to your breath. 
