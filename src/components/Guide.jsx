@@ -24,7 +24,6 @@ const Guide = () => {
         <p className="text-lg md:text-xl leading-relaxed">
           Yoga is for every body. You don’t need to be flexible, strong, or young to begin. 
           In this guide, you’ll learn the basics of yoga while using a chair for support. 
-          This is perfect if you’re brand new to yoga, recovering from injury, or just looking for a gentler start.
         </p>
       </header>
 

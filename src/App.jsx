@@ -8,7 +8,6 @@ import PoseList from "./components/PoseList";
 import PosePage from "./components/PosePage";
 import Guide from "./components/Guide";
 import WhatIsYoga from "./components/WhatIsYoga";
-import Path from "./components/Path";
 import Resources from "./components/Resources";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import PageNav from "./components/PageNav";
@@ -59,7 +58,6 @@ useEffect(() => {
           <Route path="/poses/:name" element={<PosePage />} />
           <Route path="/what-is-yoga/overview" element={<WhatIsYoga />} />
           <Route path="/what-is-yoga/beginners-guide" element={<Guide />} />
-          <Route path="/what-is-yoga/eight-limbed-path" element={<Path />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>

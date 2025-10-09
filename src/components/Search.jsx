@@ -3,14 +3,10 @@ import { useNavigate } from "react-router-dom";
 import posesData from "../data/poses.json";
 import { Search as SearchIcon, X, ArrowRight } from "lucide-react";
 
-const pages = [
-  { name: "Overview", path: "/what-is-yoga/overview" },
+const articles = [
+  { name: "What is Yoga?", path: "/what-is-yoga/overview" },
   { name: "Beginner's Guide", path: "/what-is-yoga/beginners-guide" },
-  { name: "The Eight-Limbed Path", path: "/what-is-yoga/eight-limbed-path" },
-  { name: "The Three Gunas", path: "/what-is-yoga/three-gunas" },
-  { name: "The Seven Chakras", path: "/what-is-yoga/seven-chakras" },
   { name: "Resources", path: "/resources" },
-  { name: "Privacy Policy", path: "/privacy-policy" },
 ];
 
 const Search = () => {
@@ -57,14 +53,14 @@ const Search = () => {
           type: "Pose"
         }));
 
-      const pageMatches = pages
-        .filter((page) => page.name.toLowerCase().includes(query))
-        .map((page) => ({ 
-          ...page,
-          type: "Page" 
+      const articleMatches = articles
+        .filter((article) => article.name.toLowerCase().includes(query))
+        .map((article) => ({ 
+          ...article,
+          type: "Article" 
         }));
 
-      setFilteredResults([...poseMatches, ...pageMatches]);
+      setFilteredResults([...poseMatches, ...articleMatches]);
       setIsDropdownOpen(true);
       setActiveIndex(-1);
     } else {

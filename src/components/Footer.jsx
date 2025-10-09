@@ -53,6 +53,7 @@ const Footer = forwardRef((props, ref) => {
                     <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-center md:text-right">
                         {[
                             { name: "Home", path: "/" },
+                            { name: "Resources", path: "/resources" },
                             { name: "Privacy", path: "/privacy-policy" }
                         ].map((item, idx) => (
                             <Link 
