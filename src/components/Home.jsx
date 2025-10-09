@@ -75,7 +75,7 @@ const Home = () => {
         className="container"
       >
 
-        <h2 className="text-4xl md:text-6xl font-light leading-loose text-moss mb-12 px-6 py-12 bg-moss/5 rounded-xl shadow-sm text-center">
+        <h2 className="text-2xl md:text-4xl font-light leading-loose text-moss mb-12 px-6 py-12 bg-moss/5 rounded-xl shadow-sm text-center">
           What makes Learn Yoga Online Different?
         </h2>
 
@@ -96,27 +96,51 @@ const Home = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: false, amount: 0.1 }}
         transition={{ duration: 1.5 }}
-        className="container my-20"
+        className="container relative"
       >
-        <h2 className="text-4xl md:text-6xl font-light leading-loose text-moss mb-12 px-6 py-12 bg-moss/5 rounded-xl shadow-sm text-center">
+        <h2 className="text-2xl md:text-4xl font-light leading-loose text-moss mb-12 px-6 py-12 bg-moss/5 rounded-xl shadow-sm text-center relative z-10">
           Getting Started with Learn Yoga Online
         </h2>
 
-        <div className="space-y-6">
-          <p>First, start with our 
-            <Link to="/what-is-yoga/beginners-guide" className="border-b border-moss mx-1 py-1 hover:bg-moss/10 transition-all duration-300">
-              Beginner’s Guide to Yoga.
-            </Link> This guide will help you understand yoga’s core principles, basic terminology, and how to approach your practice with mindfulness and awareness.
-          </p>
-          <p>
-            Next, we recommend going through all the philosophy of yoga lessons, starting with an <Link to="/what-is-yoga/overview" className="border-b border-moss mx-1 py-1 hover:bg-moss/10 transition-all duration-300">
-            Overview of Yoga.
-            </Link>These lessons will introduce you to key concepts and the philosophy behind the practice, helping you cultivate a well-rounded understanding.
-          </p>
-          <p>Then, begin exploring our 
-          <Link to="/poses" className="border-b border-moss mx-1 py-1 hover:bg-moss/10 transition-all duration-300">
-            library of essential poses.</Link> Understanding the correct alignment, breathing techniques, and safety tips is key to building a strong base for any practice. 
-          </p>
+        <div className="space-y-12 md:space-y-24 pt-16 relative">
+          <div className="relative flex items-center pl-16 md:pl-24">
+            <span className="absolute left-0 text-[6rem] md:text-[8rem] font-extrabold text-moss/10 leading-none select-none pointer-events-none">
+              1
+            </span>
+            <p className="text-lg md:text-xl">
+              First, start with our 
+              <Link to="/what-is-yoga/beginners-guide" className="border-b border-moss mx-1 py-1 hover:bg-moss/10 transition-all duration-300">
+                Beginner’s Guide to Yoga.
+              </Link> 
+              This guide will help you understand yoga’s core principles, basic terminology, and how to approach your practice with mindfulness and awareness.
+            </p>
+          </div>
+
+          <div className="relative flex items-center pl-16 md:pl-24">
+            <span className="absolute left-0 text-[6rem] md:text-[8rem] font-extrabold text-moss/10 leading-none select-none pointer-events-none">
+              2
+            </span>
+            <p className="text-lg md:text-xl">
+              Next, we recommend going through all the philosophy of yoga lessons, starting with an 
+              <Link to="/what-is-yoga/overview" className="border-b border-moss mx-1 py-1 hover:bg-moss/10 transition-all duration-300">
+                Overview of Yoga.
+              </Link>
+              These lessons will introduce you to key concepts and the philosophy behind the practice, helping you cultivate a well-rounded understanding.
+            </p>
+          </div>
+
+          <div className="relative flex items-center pl-16 md:pl-24">
+            <span className="absolute left-0 text-[6rem] md:text-[8rem] font-extrabold text-moss/10 leading-none select-none pointer-events-none">
+              3
+            </span>
+            <p className="text-lg md:text-xl">
+              Then, begin exploring our 
+              <Link to="/poses" className="border-b border-moss mx-1 py-1 hover:bg-moss/10 transition-all duration-300">
+                library of essential poses.
+              </Link> 
+              Understanding the correct alignment, breathing techniques, and safety tips is key to building a strong base for any practice. 
+            </p>
+          </div>
         </div>
       </motion.div>
     
@@ -126,7 +150,7 @@ const Home = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 1 }}
-          className="container my-40 flex flex-col items-center text-center"
+          className="container my-12 flex flex-col items-center text-center"
         >
           <motion.h2
             className="text-4xl md:text-6xl font-light leading-loose text-moss mb-12 px-6 py-12 bg-moss/5 rounded-xl shadow-sm text-center"
