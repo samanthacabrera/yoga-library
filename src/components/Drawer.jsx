@@ -30,8 +30,8 @@ const Drawer = () => {
   }, []);
 
   const menuItems = [
-    { label: "Start Here", to: "/what-is-yoga/beginners-guide" },
-    { label: "What Is Yoga?", to: "/what-is-yoga/overview" },
+    { label: "Start Here", to: "/articles/beginners-guide" },
+    { label: "What Is Yoga?", to: "/articles/what-is-yoga" },
     { label: "List of Poses", to: "/poses" },
     { label: "Resources", to: "/resources" },
   ];

@@ -153,7 +153,7 @@ const Home = () => {
           className="container my-12 flex flex-col items-center text-center"
         >
           <motion.h2
-            className="text-4xl md:text-6xl font-light leading-loose text-moss mb-12 px-6 py-12 bg-moss/5 rounded-xl shadow-sm text-center"
+            className="text-2xl md:text-4xl font-light leading-loose text-moss mb-12 px-6 py-12 bg-moss/5 rounded-xl shadow-sm text-center"
           >
             What Others Are Saying About Learn Yoga Online
           </motion.h2>

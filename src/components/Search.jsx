@@ -4,8 +4,8 @@ import posesData from "../data/poses.json";
 import { Search as SearchIcon, X, ArrowRight } from "lucide-react";
 
 const articles = [
-  { name: "What is Yoga?", path: "/what-is-yoga/overview" },
-  { name: "Beginner's Guide", path: "/what-is-yoga/beginners-guide" },
+  { name: "What is Yoga?", path: "/articles/what-is-yoga" },
+  { name: "Beginner's Guide", path: "/articles/beginners-guide" },
   { name: "Resources", path: "/resources" },
 ];
 
