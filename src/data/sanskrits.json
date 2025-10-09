@@ -11,42 +11,15 @@
   },
   {
     "id": 2,
-    "name": "Hero Pose",
-    "sanskrit_name": "वीरासन",
+    "name": "Tree Pose",
+    "sanskrit_name": "वृक्षासन",
     "other_names": [],
-    "sanskrit_translation": "Virasana",
-    "sanskrit_pronunciation": "[ veer-AH-suh-nuh ]",
-    "context": "The etymology of Vīrāsana comes from two Sanskrit words: Vīra (वीर), meaning 'hero' or 'warrior,' and Āsana (आसन), meaning 'posture' or 'seat.' Vīra represents strength, courage, and nobility, qualities associated with a hero, which the pose aims to embody. Āsana, a term commonly used in yoga, refers to any posture, so Vīrāsana translates to 'Hero Pose,' a seated posture that encourages openness, balance, and grounding. In this pose, the practitioner sits on their legs, with their knees bent and thighs grounded, creating a feeling of rootedness and stability. Vīrāsana can also open the chest and stretch the thighs, ankles, and knees. Historically, this posture is mentioned in the classical texts of Hatha Yoga, and it is often practiced as a meditative pose or a preparatory posture for other seated postures. Its practice emphasizes physical endurance, focus, and a sense of strength, embodying the spirit of a hero."
+    "sanskrit_translation": "Vrksasana",
+    "sanskrit_pronunciation": "[ vrik-SHAH-suh-nuh ]",
+    "context": "The term Vrksasana is derived from the Sanskrit word Vṛkṣa (वृक्ष), meaning 'tree,' and Asana (आसन), meaning 'pose' or 'posture.' Together, the name translates to 'Tree Pose,' symbolizing the strength, stability, and rootedness of a tree while embodying the graceful, balanced nature of its form. This posture evokes the image of a tree with deep roots and a tall, steady trunk, reflecting the sense of grounding and growth that the pose nurtures. Historically, Vrksasana has been practiced in various forms within traditional yoga, with its roots deeply embedded in ancient texts that emphasize balance and stillness. In modern yoga, Tree Pose became an essential part of standing sequences and is often used in practices like Vinyasa and Hatha yoga, where it aids in building strength, improving focus, and enhancing coordination. Today, it serves as both a physical posture for improving balance and flexibility and a mental practice for cultivating mindfulness and calm."
   },
   {
     "id": 3,
-    "name": "Lotus Pose",
-    "sanskrit_name": "पद्मासन",
-    "other_names": [],
-    "sanskrit_translation": "Padmasana",
-    "sanskrit_pronunciation": "[ pahd-MAH-suh-nuh ]",
-    "context": "The name Padmāsana is derived from Sanskrit, with Padma (पद्म) meaning 'lotus' and Āsana (आसन) meaning 'posture' or 'pose.' Thus, the name translates to 'Lotus Pose,' evoking the image of a lotus flower, which symbolizes purity, beauty, and spiritual growth. In this pose, the practitioner sits with crossed legs, placing each foot on the opposite thigh, which creates an open, stable base for meditation and deep contemplation. The posture reflects qualities of balance, inner peace, and groundedness, offering a sense of stillness and connection to the present moment. Historically, Padmāsana has been a vital pose in spiritual and meditative practices, particularly in Hinduism and Buddhism, symbolizing the union of body, mind, and spirit. It became widely practiced in modern yoga through the teachings of ancient masters and continues to be a central posture in meditation and pranayama. Today, Lotus Pose is embraced for its ability to improve flexibility in the hips, knees, and ankles, as well as its profound effect on calming the mind and enhancing concentration."
-  },
-  {
-    "id": 4,
-    "name": "Staff Pose",
-    "sanskrit_name": "दण्डासन",
-    "other_names": [],
-    "sanskrit_translation": "Dandasana",
-    "sanskrit_pronunciation": "[ dan-DAH-suh-nuh ]",
-    "context": "The name Dandasana is derived from Sanskrit, with Danda (दण्ड) meaning 'staff' or 'rod' and Asana (आसन) meaning 'pose' or 'posture.' Therefore, Dandasana translates to 'Staff Pose,' symbolizing a straight and stable staff. This pose reflects strength, alignment, and mindfulness, as it requires practitioners to sit tall with the spine elongated and the legs extended forward. Dandasana serves as a foundation for many seated poses and forward bends, helping to build core strength, stability, and awareness of posture. It also promotes mental focus, encouraging practitioners to stay grounded and centered."
-  },
-  {
-    "id": 5,
-    "name": "Table Top Pose",
-    "sanskrit_name": "भार्मणासन",
-    "other_names": [],
-    "sanskrit_translation": "Bharmanasana",
-    "sanskrit_pronunciation": "[ bhahr-mah-NAH-suh-nuh ]",
-    "context": "The name Bharmanasana comes from Sanskrit, with Bharmana (भार्मण) meaning 'stable or balanced,' and Asana (आसन) meaning 'pose' or 'posture.' Thus, Bharmanasana translates to 'Stable Pose,' reflecting the grounded and stable position of the body on all fours, resembling a flat, steady surface like a tabletop. This pose forms the foundation for many yoga movements, providing balance and alignment as it strengthens the wrists, arms, and core. Historically, Bharmanasana is an integral part of yoga, used to develop strength, flexibility, and stability. It has become a cornerstone of modern yoga practice, often used as a preparatory posture for more advanced poses or as a transition within a flowing sequence. Today, Tabletop Pose is a fundamental part of many styles of yoga, such as Vinyasa and Hatha, offering a solid base for improving posture and body awareness."
-  },
-  {
-    "id": 6,
     "name": "Cat Pose",
     "sanskrit_name": "मार्जरासन",
     "other_names": [],
@@ -55,7 +28,7 @@
     "context": "The name Marjaryasana, or Cat Pose, is derived from the Sanskrit words Marjara (मार्जर) meaning 'cat' and Asana (आसन) meaning 'pose' or 'posture.' This pose mimics the natural movement of a cat stretching its spine, offering a rejuvenating stretch that targets both the upper and lower body. Cat Pose has long been an essential part of yoga, incorporated into sequences to promote spinal flexibility and engage the core. Often paired with Cow Pose, this dynamic movement helps to increase mobility in the spine while also providing relief from tension in the back, neck, and shoulders. Practitioners use Cat Pose to connect with their breath, aiding in mental clarity and calming the mind. It has become a fundamental pose in yoga practices such as Hatha, Vinyasa, and Restorative Yoga, valued for both its physical and mental benefits."
   },
   {
-    "id": 7,
+    "id": 4,
     "name": "Cow Pose",
     "sanskrit_name": "बिटिलासन",
     "other_names": [],
@@ -64,30 +37,12 @@
     "context": "The name Bitilasana, or Cow Pose, is derived from the Sanskrit words Bitila (बिटिल) meaning 'cow' and Asana (आसन) meaning 'pose' or 'posture.' This pose is often associated with the graceful, expansive stretch of a cow’s chest and neck, helping to open up the body and encourage a deep, full breath. Cow Pose is a key part of yoga practice, particularly when paired with Cat Pose, forming a fluid motion that stimulates the spine and enhances spinal mobility. Traditionally, Cow Pose is used in sequences to improve posture, stretch the front body, and activate the core. It is recognized for its ability to release tension in the back, chest, and shoulders, while also encouraging an open heart. Frequently incorporated into Vinyasa, Hatha, and other styles of yoga, Cow Pose not only improves physical flexibility but also promotes mental clarity and emotional release."
   },
   {
-    "id": 8,
+    "id": 5,
     "name": "Child's Pose",
     "sanskrit_name": "बालासन",
     "other_names": [""],
     "sanskrit_translation": "Balasana",
     "sanskrit_pronunciation": "[ bah-LAH-suh-nuh ]",
     "context": "The name Balasana, or Child’s Pose, is derived from the Sanskrit words Bala (बाल) meaning 'child' and Asana (आसन) meaning 'pose' or 'posture.' This pose is often likened to the way a child naturally curls up into a restful, protective position. It embodies qualities of relaxation, surrender, and grounding. Child’s Pose has been an integral part of yoga for centuries, used in various traditional practices as a restorative posture to calm the body and mind. It is commonly employed as a resting pose in sequences, allowing practitioners to re-center and restore energy. Over time, it has become a fundamental pose in many yoga styles, including Vinyasa and Hatha Yoga, providing a moment of respite and deep stretching. Today, Child’s Pose is widely recognized not only for its physical benefits, such as easing tension in the back, hips, and thighs, but also for its ability to promote emotional calm and mental clarity."
-  },
-  {
-    "id": 9,
-    "name": "Puppy Pose",
-    "sanskrit_name": "उत्तान शिशोसन",
-    "other_names": [],
-    "sanskrit_translation": "Uttana Shishosana",
-    "sanskrit_pronunciation": "[ ooh-TAH-nuh shih-SHOH-suh-nuh ]",
-    "context": "The name Puppy Pose, or Uttana Shishosana (उत्तान शिशोसन), is derived from Sanskrit, where Uttana (उत्तान) means 'intense stretch,' Shisho (शिशु) means 'puppy' or 'child,' and Asana (आसन) refers to a 'pose' or 'posture.' Together, the name translates to 'Extended Puppy Pose,' evoking the playful and instinctive stretch of a young dog. This name reflects the posture's heart-opening and grounding nature, as well as its connection to innocence and trust. While the pose does not have a direct mention in ancient yoga texts, its alignment and benefits align with traditional practices of creating openness and ease in the body. Today, it is embraced in modern yoga for its restorative qualities and its ability to bridge playful movement with mindful stillness."
-  },
-  {
-    "id": 10,
-    "name": "Tree Pose",
-    "sanskrit_name": "वृक्षासन",
-    "other_names": [],
-    "sanskrit_translation": "Vrksasana",
-    "sanskrit_pronunciation": "[ vrik-SHAH-suh-nuh ]",
-    "context": "The term Vrksasana is derived from the Sanskrit word Vṛkṣa (वृक्ष), meaning 'tree,' and Asana (आसन), meaning 'pose' or 'posture.' Together, the name translates to 'Tree Pose,' symbolizing the strength, stability, and rootedness of a tree while embodying the graceful, balanced nature of its form. This posture evokes the image of a tree with deep roots and a tall, steady trunk, reflecting the sense of grounding and growth that the pose nurtures. Historically, Vrksasana has been practiced in various forms within traditional yoga, with its roots deeply embedded in ancient texts that emphasize balance and stillness. In modern yoga, Tree Pose became an essential part of standing sequences and is often used in practices like Vinyasa and Hatha yoga, where it aids in building strength, improving focus, and enhancing coordination. Today, it serves as both a physical posture for improving balance and flexibility and a mental practice for cultivating mindfulness and calm."
   }
 ]

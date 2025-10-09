@@ -5,58 +5,28 @@
     "image": "/mountain-pose.png",
     "chakra": ["Root"]
   },
-  { 
+  {
     "id": 2,
-    "name": "Hero Pose",
-    "image": "/hero-pose.png",
-    "chakra": ["Root", "Sacral"]
+    "name": "Tree Pose",
+    "image": "/tree-pose.png",
+    "chakra": ["Root", "Third Eye", "Sacral"]
   },
   {
     "id": 3,
-    "name": "Lotus Pose",
-    "image": "/lotus-pose.png",
-    "chakra": ["Root", "Crown", "Third Eye", "Sacral"]
-  },
-  {
-    "id": 4,
-    "name": "Staff Pose",
-    "image": "/staff-pose.png",
-    "chakra": ["Solar Plexus", "Sacral", "Root"]
-  },
-  {
-    "id": 5,
-    "name": "Table Top Pose",
-    "image": "/tabletop-pose.png",
-    "chakra": ["Sacral", "Root"]
-  },
-  {
-    "id": 6,
     "name": "Cat Pose",
     "image": "/cat-pose.png",
     "chakra": ["Sacral", "Root", "Solar Plexus"]
   },
   {
-    "id": 7,
+    "id": 4,
     "name": "Cow Pose",
     "image": "/cow-pose.png",
     "chakra": ["Heart", "Root"]
   },
   {
-    "id": 8,
+    "id": 5,
     "name": "Child's Pose",
     "image": "/child-pose.png",
     "chakra": ["Root", "Third Eye","Solar Plexus", "Crown"]
-  },
-  {
-    "id": 9,
-    "name": "Puppy Pose",
-    "image": "/puppy-pose.png",
-    "chakra": ["Heart", "Throat", "Sacral", "Root"]
-  },
-  {
-    "id": 10,
-    "name": "Tree Pose",
-    "image": "/tree-pose.png",
-    "chakra": ["Root", "Third Eye", "Sacral"]
   }
 ]

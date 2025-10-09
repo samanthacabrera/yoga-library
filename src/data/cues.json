@@ -13,54 +13,19 @@
   },
   {
     "id": 2,
-    "name": "Hero Pose",
+    "name": "Tree Pose",
     "cues": [
-      "Begin by kneeling on the floor with your knees bent and feet together, allowing your thighs to be parallel and your shins to rest flat on the ground.",
-      "Lengthen your spine by drawing the crown of your head toward the ceiling, while gently lifting your chest and rolling your shoulders down and back.",
-      "To deepen the stretch, gently press your shins and feet into the floor while keeping your thighs grounded.",
-      "Hold the pose for 5 to 10 breaths, then slowly release and counter the pose with a gentle stretch such as Child's Pose."
+      "Begin in Mountain Pose, with your feet together and grounding down through all four corners of your standing foot.",
+      "Shift your weight onto one leg, engaging the muscles of the standing leg to create stability.",
+      "Slowly lift your opposite foot, placing the sole of your foot on the inner thigh, calf, or ankle of your standing leg (avoiding the knee). Ensure your foot is pressing gently into your leg for support.",
+      "Press the sole of your foot into your leg while also pressing your leg into your foot, creating a dynamic balance between the two.",
+      "Bring your hands together in front of your heart in a prayer position (Anjali Mudra), or extend your arms overhead with your palms facing each other. Keep your shoulders relaxed and arms active.",
+      "Focus your gaze on a steady point in front of you at eye level to help with balance, and maintain a calm, even breath to help center your focus.",
+      "Hold the pose for 5 to 10 breaths, and to come out of the pose, slowly lower your raised leg and return to Mountain Pose with control."
     ]
   },
   {
     "id": 3,
-    "name": "Lotus Pose",
-    "cues": [
-      "Sit on the floor with your legs extended in front of you, ensuring that your sitting bones are grounded evenly on the floor.",
-      "Bend your right knee and carefully place your right foot on the top of your left thigh, with the sole facing upward, and the heel as close to your hip as possible.",
-      "Next, bend your left knee and place your left foot on the top of your right thigh, also with the sole facing upward and the heel near the hip.",
-      "If the knees do not reach the floor comfortably, place a cushion, blanket, or block under your sit bones to elevate your hips, which will help reduce strain on your knees and ankles.",
-      "Relax your shoulders down and back, keeping your arms relaxed, and rest your hands on your knees, palms facing upward in a mudra or simply relaxed.",
-      "Engage your core gently to support your spine, and focus on maintaining a straight posture while breathing deeply and evenly.",
-      "Hold the pose for 5 to 10 breaths, continuing to breathe slowly and steadily, allowing the body to settle into the stillness of the posture and cultivating a sense of inner peace and focus."
-    ]
-  },
-  {
-    "id": 4,
-    "name": "Staff Pose",
-    "cues": [
-      "Sit on the floor with your legs extended straight out in front of you. Keep your feet flexed and your toes pointing upward.",
-      "Place your hands flat on the floor beside your hips, fingers pointing forward, and press down to activate your arms and shoulders.",
-      "Engage your quadriceps and lift your kneecaps toward the ceiling to create length in the legs. Keep your spine long and avoid slumping or rounding the back.",
-      "Sit up tall, reaching the crown of your head toward the sky, creating a straight line from the base of your spine through to the top of your head.",
-      "Draw your navel toward your spine to activate your core and maintain stability in the torso. Ensure that your chest is open and your shoulders are relaxed, away from the ears.",
-      "Hold the pose while breathing deeply and steadily for 5 to 10 breaths. Focus on maintaining a strong and stable alignment, keeping your legs active and your spine tall."
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Table Top Pose",
-    "cues": [
-      "Start with your wrists aligned under your shoulders and knees directly under your hips.",
-      "Engage your core and press into your hands, creating a long, straight line from your head to your tailbone.",
-      "Ensure that your fingers are spread wide, actively pressing into the floor for stability and balance.",
-      "Keep your shoulders drawn away from your ears and your elbows slightly bent to prevent locking them.",
-      "Align your neck with your spine, keeping your gaze directed down or slightly forward to maintain a neutral head position.",
-      "Focus on keeping your back flat and avoid arching or rounding the spine; imagine a straight line extending from your head through your tailbone.",
-      "Breathe steadily, drawing your breath into your chest and belly, and hold the position for 5 to 10 breaths."
-    ]
-  },
-  {
-    "id": 6,
     "name": "Cat Pose",
     "cues": [
       "Start on all fours, with your wrists directly under your shoulders and knees under your hips.",
@@ -72,7 +37,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 4,
     "name": "Cow Pose",
     "cues": [
       "Start on all fours with your wrists directly under your shoulders and your knees under your hips.",
@@ -83,7 +48,7 @@
     ]
   },
   {
-    "id": 8,
+    "id": 5,
     "name": "Child's Pose",
     "cues": [
       "Start in Hero Pose, then spread your knees wide apart allowing your toes to meet at the back of the mat.",
@@ -91,31 +56,6 @@
       "Slowly lower your forehead toward the floor, keeping your neck relaxed and aligned with your spine. If necessary, place a cushion or block under your forehead for support.",
       "Breathe deeply through your nose, allowing your body to soften with each exhale, releasing any tension in your back, shoulders, and hips. Let the weight of your body gently sink into the floor as you relax further into the pose.",
       "Stay here for several breaths, allowing your body to rest and rejuvenate. If desired, gently rock your body side to side to deepen the stretch and release any remaining tension."
-    ]
-  },
-  {
-    "id": 9,
-    "name": "Puppy Pose",
-    "cues": [
-      "Begin on your hands and knees in Table Top Pose, with your wrists directly under your shoulders and knees directly under your hips.",
-      "On an inhale, slowly walk your hands forward, keeping your hips stacked over your knees, while you begin to lower your chest and forehead toward the floor.",
-      "Extend your arms fully in front of you, pressing your palms into the mat, spreading your fingers wide to create stability.",
-      "Focus on lengthening your spine by drawing your chest forward and keeping your hips lifted high.",
-      "Relax your neck and allow your head to rest on the mat or keep it in line with your spine with your chin lightly touching the floor.",
-      "Hold the pose for 5 to 10 breaths, breathing deeply into your chest and back, feeling a stretch through your shoulders, upper back, and spine."
-    ]
-  },
-  {
-    "id": 10,
-    "name": "Tree Pose",
-    "cues": [
-      "Begin in Mountain Pose, with your feet together and grounding down through all four corners of your standing foot.",
-      "Shift your weight onto one leg, engaging the muscles of the standing leg to create stability.",
-      "Slowly lift your opposite foot, placing the sole of your foot on the inner thigh, calf, or ankle of your standing leg (avoiding the knee). Ensure your foot is pressing gently into your leg for support.",
-      "Press the sole of your foot into your leg while also pressing your leg into your foot, creating a dynamic balance between the two.",
-      "Bring your hands together in front of your heart in a prayer position (Anjali Mudra), or extend your arms overhead with your palms facing each other. Keep your shoulders relaxed and arms active.",
-      "Focus your gaze on a steady point in front of you at eye level to help with balance, and maintain a calm, even breath to help center your focus.",
-      "Hold the pose for 5 to 10 breaths, and to come out of the pose, slowly lower your raised leg and return to Mountain Pose with control."
     ]
   }
 ]

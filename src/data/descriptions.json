@@ -6,47 +6,22 @@
   },
   {
     "id": 2,
-    "name": "Hero Pose",
-    "desc": "Hero Pose, or Virasana, stretches the thighs, knees, and ankles while improving posture and cultivating a sense of groundedness. This pose involves sitting on the heels with the knees bent and legs folded beneath the body. Hero Pose stretches the thighs, knees, and ankles while encouraging better posture by aligning the spine and opening the chest."
+    "name": "Tree Pose",
+    "desc": "Tree Pose or Vrksasana is a standing balance yoga posture. In this pose, one leg is rooted firmly to the ground, while the other leg is bent and the foot is placed either on the inner thigh. The arms are typically raised above the head, with palms pressing together in a prayer position."
   },
   {
     "id": 3,
-    "name": "Lotus Pose",
-    "desc": "Lotus Pose, or Padmāsana, is a foundational seated posture in yoga that emphasizes flexibility, stability, and inner calm. In this pose, you sit with your legs crossed, placing each foot on the opposite thigh, with the soles facing upward and the knees gently resting on the floor. The spine is kept tall and aligned, and the hands can rest on the knees in a mudra or with palms facing up."
-  },
-  {
-    "id": 4,
-    "name": "Staff Pose",
-    "desc": "Staff Pose, or Dandasana in Sanskrit, is a foundational seated posture that emphasizes alignment and strength. In this pose, practitioners sit on the floor with their legs extended straight ahead, feet flexed, and hands placed on the ground beside the hips, fingers pointing forward. The spine remains tall and elongated, with the chest open and the shoulders relaxed."
-  },
-  {
-    "id": 5,
-    "name": "Table Top Pose",
-    "desc": "Tabletop Pose, or Bharmanasana, is a foundational posture in yoga that forms the basis for many other poses and transitions. In this pose, the practitioner starts on their hands and knees, with the wrists directly under the shoulders and the knees aligned with the hips. The back is held neutral, creating a straight line from the crown of the head to the tailbone."
-  },
-  {
-    "id": 6,
     "name": "Cat Pose",
     "desc": "Cat Pose, or Marjaryasana in Sanskrit, is a dynamic yoga pose that promotes spinal flexibility and releases tension. To perform Cat Pose, begin on your hands and knees in a tabletop position, with your wrists directly beneath your shoulders and your knees beneath your hips. As you exhale, round your spine upward, drawing your belly button toward your spine and tucking your chin to your chest. This pose helps improve posture, relieve tension in the back, and enhance mobility in the spine."
   },
   {
-    "id": 7,
+    "id": 4,
     "name": "Cow Pose",
     "desc": "Cow Pose, or Bitilasana in Sanskrit, is a gentle backbend that works to open the chest and stretch the spine. To perform Cow Pose, begin on your hands and knees in a tabletop position, with your wrists aligned under your shoulders and your knees under your hips. As you inhale, drop your belly toward the mat, lifting your tailbone and chest upward while gazing forward, creating a slight arch in your back. This pose helps improve spinal flexibility, encourages deep breathing, and stretches the front of the body, particularly the chest and abdomen."
   },
   {
-    "id": 8,
+    "id": 5,
     "name": "Child's Pose",
     "desc": "Child’s Pose, or Balasana in Sanskrit, is a restorative yoga pose that offers a deep sense of relaxation.  To perform Child’s Pose, you start by kneeling on the mat, then fold your torso forward, bringing your forehead to the ground while extending your arms out in front or resting them alongside your body. "
-  },
-  {
-    "id": 9,
-    "name": "Puppy Pose",
-    "desc": "Puppy Pose, known in Sanskrit as Uttana Shishosana, stretches the spine, shoulders, and chest, creating space and relieving tension in the upper back. The practitioner stretches forward from all fours, with hips over knees, arms extended, and chest melting toward the floor. The forehead or chin rests on the mat, creating a gentle arch in the spine and a playful, heart-opening shape."
-  },
-  {
-    "id": 10,
-    "name": "Tree Pose",
-    "desc": "Tree Pose or Vrksasana is a standing balance yoga posture. In this pose, one leg is rooted firmly to the ground, while the other leg is bent and the foot is placed either on the inner thigh. The arms are typically raised above the head, with palms pressing together in a prayer position."
   }
 ]
